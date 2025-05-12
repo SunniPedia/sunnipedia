@@ -80,21 +80,23 @@
     }
 
     .book-number {
-      width: 46px;
-      height: 46px;
-      margin-right: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-image: url('books.png');
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      font-size: 14px;
-      font-weight: bold;
-      color: #5A0202;
-      text-align: center;
-    }
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+  margin-bottom: 10px; /* margin bottom 10dp */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('books.png');
+  background-size: contain; /* crop না করার জন্য */
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5A0202;
+  text-align: center;
+}
 
     .book-info {
       flex-grow: 1;
