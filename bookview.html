@@ -47,6 +47,28 @@
       line-height: 50px;
     }
 
+    #searchBox {
+      padding: 10px;
+      background-color: #fff;
+      display: none;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'SolaimanLipi', sans-serif;
+      box-sizing: border-box;
+    }
+
+    #loadingText {
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+
     #content {
       padding: 15px;
       background: #fff;
@@ -72,6 +94,7 @@
       font-size: 16px;
       color: #555;
       line-height: 1.6;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -83,6 +106,12 @@
     <img src="search.png" alt="Search" onclick="toggleSearch()">
   </div>
 
+  <div id="searchBox">
+    <input type="text" id="searchInput" placeholder="অনুচ্ছেদ খুঁজুন..." onkeyup="searchContent()">
+  </div>
+
+  <div id="loadingText">লোডিং হচ্ছে...</div>
+
   <div id="content"></div>
 
   <script>
@@ -91,41 +120,64 @@
     const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
     document.getElementById('bookTitle').innerText = bookName;
 
-    // Function to convert English numbers to Bangla
+    let fullData = []; // সার্বজনীন ডেটা
+
     function convertToBanglaNumber(number) {
       const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
       return number.toString().split('').map(digit => banglaDigits[parseInt(digit)]).join('');
     }
 
-    function loadContent() {
-      fetch(`https://islamibook-beryl.vercel.app/book/${bookid}.json`)
-        .then(res => res.json())
-        .then(data => {
-          const contentDiv = document.getElementById('content');
-          contentDiv.innerHTML = '';
+    function toggleSearch() {
+      const box = document.getElementById('searchBox');
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+      if (box.style.display === 'block') {
+        document.getElementById('searchInput').focus();
+      }
+    }
 
-          data.forEach((item, index) => {
-            if (!item["1"]) return;
+    function searchContent() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = fullData.filter(item => item["1"] && item["1"].toLowerCase().includes(searchTerm));
+      displayContent(filtered);
+    }
 
-            const div = document.createElement('div');
-            div.className = 'content-item';
-            div.innerHTML = `
-              <h2>${convertToBanglaNumber(index + 1)}</h2> <!-- Convert index number to Bangla -->
-              <p onclick="openView(${index})" style="cursor: pointer; color: #01837A;">${item["1"]}</p>
-            `;
-            contentDiv.appendChild(div);
-          });
+    function displayContent(dataArray) {
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = '';
 
-          // save whole data temporarily for use in view.html
-          sessionStorage.setItem('bookData', JSON.stringify(data));
-        })
-        .catch(error => console.error('Error loading content:', error));
+      dataArray.forEach((item, index) => {
+        if (!item["1"]) return;
+        const div = document.createElement('div');
+        div.className = 'content-item';
+        div.innerHTML = `
+          <h2>${convertToBanglaNumber(index + 1)}</h2>
+          <p onclick="openView(${index})" style="color: #01837A;">${item["1"]}</p>
+        `;
+        contentDiv.appendChild(div);
+      });
     }
 
     function openView(index) {
-      // store current index so view.html can access it
       sessionStorage.setItem('selectedIndex', index);
       window.location.href = 'view.html';
+    }
+
+    function loadContent() {
+      const loadingDiv = document.getElementById('loadingText');
+      loadingDiv.style.display = 'block';
+
+      fetch(`https://islamibook-beryl.vercel.app/book/${bookid}.json`)
+        .then(res => res.json())
+        .then(data => {
+          fullData = data;
+          sessionStorage.setItem('bookData', JSON.stringify(data));
+          displayContent(fullData);
+          loadingDiv.style.display = 'none';
+        })
+        .catch(error => {
+          loadingDiv.innerText = 'তথ্য লোড করতে সমস্যা হয়েছে!';
+          console.error('Error loading content:', error);
+        });
     }
 
     loadContent();
