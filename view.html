@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ভিউ দেখুন</title>
+  <title>বই পড়ুন</title>
   <style>
     @font-face {
       font-family: 'SolaimanLipi';
@@ -12,56 +12,123 @@
 
     body {
       font-family: 'SolaimanLipi', sans-serif;
-      background: #f4f4f4;
+      background-color: #f4f4f4;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
 
-    h1 {
+    .header {
+      background-color: #00695c;
+      color: white;
+      padding: 15px;
       text-align: center;
-      font-size: 24px;
+      font-size: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-around;
+      background-color: #eeeeee;
+      padding: 10px;
+      position: sticky;
+      top: 50px;
+      z-index: 998;
+    }
+
+    .controls button {
+      padding: 10px 15px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background-color: #009688;
+      color: white;
+      cursor: pointer;
     }
 
     .content {
       background-color: #fff;
       padding: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 15px;
       border-radius: 10px;
-    }
-
-    .content h2 {
-      font-size: 20px;
-    }
-
-    .content p {
-      margin-top: 10px;
-      font-size: 16px;
-      color: #555;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       line-height: 1.6;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #999;
     }
   </style>
 </head>
 <body>
 
-  <h1 id="viewTitle">বই দেখুন</h1>
-  <div id="content" class="content"></div>
+  <div class="header" id="viewTitle">বই পড়ুন</div>
+
+  <div class="controls">
+    <button onclick="increaseFont()">আকার+</button>
+    <button onclick="decreaseFont()">আকার−</button>
+    <button onclick="copyContent()">কপি</button>
+    <button onclick="shareContent()">শেয়ার</button>
+  </div>
+
+  <div class="content" id="content">লোড হচ্ছে...</div>
+
+  <div class="footer">© Bookhozur</div>
 
   <script>
+    let fontSize = 18;
+    const contentDiv = document.getElementById('content');
+
     const selectedIndex = sessionStorage.getItem('selectedIndex');
     const bookData = JSON.parse(sessionStorage.getItem('bookData'));
 
     if (selectedIndex !== null && bookData) {
       const item = bookData[selectedIndex];
-      
-      // Set the h1 title dynamically
       document.getElementById('viewTitle').innerText = item["1"];
-
-      const contentDiv = document.getElementById('content');
-      contentDiv.innerHTML = `
-        <p><strong></strong> ${item["2"]}</p>
-      `;
+      contentDiv.innerHTML = `<p>${item["2"]}</p>`;
     } else {
-      document.getElementById('content').innerHTML = '<p>কোনো তথ্য পাওয়া যায়নি।</p>';
+      contentDiv.innerHTML = '<p>কোনো তথ্য পাওয়া যায়নি।</p>';
+    }
+
+    function increaseFont() {
+      fontSize += 1;
+      contentDiv.style.fontSize = fontSize + 'px';
+    }
+
+    function decreaseFont() {
+      if (fontSize > 10) {
+        fontSize -= 1;
+        contentDiv.style.fontSize = fontSize + 'px';
+      }
+    }
+
+    function copyContent() {
+      const tempInput = document.createElement('textarea');
+      tempInput.value = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      alert('লেখাটি কপি করা হয়েছে');
+    }
+
+    function shareContent() {
+      const textToShare = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText + '\n\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
+      if (navigator.share) {
+        navigator.share({
+          title: 'বই শেয়ার করুন',
+          text: textToShare
+        }).catch(console.error);
+      } else {
+        alert('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
+      }
     }
   </script>
 
