@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>বইয়ের পৃষ্ঠা</title>
   <style>
-    body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
+    body { font-family: 'Siyam Rupali', sans-serif; margin: 0; background: #f4f4f4; }
     .toolbar {
       background: #3949ab; color: white; padding: 10px;
       display: flex; align-items: center; justify-content: space-between;
@@ -18,10 +18,11 @@
     #searchInput { width: 100%; padding: 8px; font-size: 16px; }
     .content-list { padding: 10px; }
     .item {
-      background: white; margin-bottom: 10px; padding: 10px;
+      background: white; margin-bottom: 10px; padding: 15px;
       border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .item h2 { margin: 0; font-size: 16px; color: #333; }
+    .item h2 { margin: 0 0 10px; font-size: 18px; color: #222; }
+    .item p { margin: 0 0 10px; font-size: 15px; line-height: 1.6; color: #333; white-space: pre-line; }
   </style>
 </head>
 <body>
@@ -39,7 +40,6 @@
   <div class="content-list" id="contentList"></div>
 
   <script>
-    let content = [];
     const urlParams = new URLSearchParams(window.location.search);
     const bookid = urlParams.get('bookid');
     const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
@@ -51,32 +51,39 @@
       box.style.display = box.style.display === 'none' ? 'block' : 'none';
     }
 
+    let originalPara = ''; // full paragraph for search
+
     function loadContent() {
       fetch(`https://islamibook-beryl.vercel.app/book/${bookid}`)
         .then(res => res.json())
         .then(data => {
-          content = Object.entries(data); // key-value pair (like 1,2,3...)
-          displayContent(content);
+          const list = document.getElementById('contentList');
+          list.innerHTML = '';
+
+          const keys = Object.keys(data);
+          const title = data["1"] || "শিরোনাম পাওয়া যায়নি";
+          const para = data["2"] || "";
+
+          originalPara = para;
+
+          const div = document.createElement('div');
+          div.className = 'item';
+          div.innerHTML = `
+            <h2>${title}</h2>
+            <p id="contentPara">${para}</p>
+          `;
+          list.appendChild(div);
         });
     }
 
-    function displayContent(items) {
-      const list = document.getElementById('contentList');
-      list.innerHTML = '';
-      items.forEach(([key, value]) => {
-        const div = document.createElement('div');
-        div.className = 'item';
-        div.innerHTML = `<h2>${key}. ${value}</h2>`;
-        list.appendChild(div);
-      });
-    }
-
     function filterContent() {
-      const key = document.getElementById('searchInput').value.toLowerCase();
-      const filtered = content.filter(([_, val]) =>
-        val.toLowerCase().includes(key)
-      );
-      displayContent(filtered);
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const paraElement = document.getElementById('contentPara');
+      if (originalPara.toLowerCase().includes(input)) {
+        paraElement.parentElement.style.display = 'block';
+      } else {
+        paraElement.parentElement.style.display = 'none';
+      }
     }
 
     loadContent();
