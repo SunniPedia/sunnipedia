@@ -191,6 +191,23 @@ body {
   white-space: pre-line;
 }
 
+
+.majhari {
+  color: white;
+  background-color: #0288D1;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.majhari-text {
+  background-color: #E1F5FE;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  white-space: pre-line;
+}
+    
 .kasir {
   color: white;
   background-color: #D84315;
@@ -574,7 +591,10 @@ ${ayah.ibnabbas && ayah.ibnabbas !== 'not' ? `
 ` : ''}
 <div class="irfan">ইরফানুল কুরআন</div>  
 <div class="irfan-text">${ayah.author || ''}</div>
-
+${ayah.majhari && ayah.majhari !== 'not' ? `
+  <div class="majhari">তাফসিরে মাযহারী</div>
+  <div class="majhari-text">${ayah.majhari}</div>
+` : ''}
 
 ${ayah.kasir && ayah.kasir !== 'not' ? `
   <div class="kasir">তাফসিরে ইবনে কাসির</div>
