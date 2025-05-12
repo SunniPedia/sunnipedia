@@ -54,7 +54,7 @@
     let originalPara = ''; // full paragraph for search
 
     function loadContent() {
-      fetch(`https://islamibook-beryl.vercel.app/book/${bookid}`)
+      fetch(`https://islamibook-beryl.vercel.app/book/${bookid}.json`)
         .then(res => res.json())
         .then(data => {
           const list = document.getElementById('contentList');
