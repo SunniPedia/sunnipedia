@@ -1111,10 +1111,10 @@ let HadithCopyDialogComponent = /*#__PURE__*/(() => {
         string += '\n\n';
       }
       if (this.website) {
-        string += `হাদীসের লিংকঃ ${this.baseUrl}hadith/${hadith.id}\n`;
+        string += `হাদীসের লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       }
       if (this.applink) {
-        string += `অ্যাপসের লিংকঃ https://apps.apple.com/us/app/id878084956\n\n`;
+        string += `অ্যাপসের লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       }
       try {
         textarea = document.createElement('textarea');
@@ -1210,10 +1210,10 @@ let HadithCopyDialogComponent = /*#__PURE__*/(() => {
         hadithText += '\n\n';
       }
       if (this.website) {
-        hadithText += `হাদীসের লিংকঃ ${this.baseUrl}hadith/${hadith.id}\n`;
+        hadithText += `হাদীসের লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       }
       if (this.applink) {
-        hadithText += `অ্যাপসের লিংকঃ https://apps.apple.com/us/app/id878084956\n\n`;
+        hadithText += `অ্যাপসের লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       }
       this.closeDialog();
       // @ts-ignore
