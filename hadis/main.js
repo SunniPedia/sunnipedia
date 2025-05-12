@@ -356,12 +356,6 @@ const hadithTables = booksSlug.map(book => {
       options: {
         unique: false
       }
-    }, {
-      name: 'explanation',
-      keypath: 'explanation',
-      options: {
-        unique: false
-      }
     }]
   };
 });
