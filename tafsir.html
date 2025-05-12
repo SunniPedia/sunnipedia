@@ -57,6 +57,8 @@
 
     .surah-list {
       padding: 10px;
+height: calc(100vh - 120px); /* Adjust this based on how tall your toolbar + card section is */
+  overflow-y: auto;
     }
 
     .surah-item {
@@ -158,43 +160,39 @@
       return number.toString().split('').map(char => engToBan[char] || char).join('');
     }
 
-    fetch('https://islamibook.vercel.app/tafsir.json')
+    fetch('https://islamibook.vercel.app/sura.json')
       .then(response => response.json())
       .then(data => {
         const surahList = document.getElementById('surahList');
-        const uniqueSuras = [];
 
-        data.forEach(item => {
-          if (!uniqueSuras.some(s => s.sura === item.sura)) {
-            uniqueSuras.push(item);
-          }
-        });
-
-        uniqueSuras.forEach(surah => {
+        data.forEach(surah => {
           const surahItem = document.createElement('div');
           surahItem.className = 'surah-item';
 
+          const banglaBookId = convertToBanglaNumber(surah.bookid);
+          const banglaVerses = convertToBanglaNumber(surah.verses);
+          const surahUrlName = encodeURIComponent(surah.author.trim());
+
           surahItem.onclick = function () {
-            localStorage.setItem('selectedSura', surah.sura);
-            localStorage.setItem('suraName', surah.suraName);
-            window.location.href = 'tafsirview.html';
+            window.location.href = `tafsirview.html?surah=${surahUrlName}`;
           };
 
           surahItem.innerHTML = `
             <div class="surah-header">
-              <div class="surah-number">সূরা ${convertToBanglaNumber(surah.sura)}</div>
-              <div class="surah-name">${surah.suraName}</div>
+              <div class="surah-number">সূরা ${banglaBookId}</div>
+              <div class="surah-name">${surah.name.trim()}</div>
             </div>
             <div class="surah-details">
-              আয়াত সংখ্যা: ${convertToBanglaNumber(surah.versess)} | অবতীর্ণ স্থান: ${getBanglaType(surah.type)}
+              আয়াত সংখ্যা: ${banglaVerses} | অবতীর্ণ স্থান: ${getBanglaType(surah.type)}
             </div>
-            <div class="surah-arabic">${surah.suraArabic}</div>
+            <div class="surah-arabic">${surah.names}</div>
           `;
 
           surahList.appendChild(surahItem);
         });
 
-        document.getElementById('searchInput').addEventListener('input', function () {
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function () {
           const keyword = this.value.toLowerCase();
           const items = document.querySelectorAll('.surah-item');
 
@@ -210,9 +208,10 @@
             }
           });
         });
+
       })
       .catch(error => {
-        console.error('তাফসির লোড করতে সমস্যা হয়েছে:', error);
+        console.error('সূরা লোড করতে সমস্যা হয়েছে:', error);
       });
   </script>
 
