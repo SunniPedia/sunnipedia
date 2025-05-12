@@ -4,25 +4,112 @@
   <meta charset="UTF-8">
   <title>বইয়ের পৃষ্ঠা</title>
   <style>
-    body { font-family: 'Siyam Rupali', sans-serif; margin: 0; background: #f4f4f4; }
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'SolaimanLipi', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
     .toolbar {
-      background: #3949ab; color: white; padding: 10px;
-      display: flex; align-items: center; justify-content: space-between;
+      background-color: #01837A;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    .toolbar img { width: 24px; height: 24px; cursor: pointer; }
+
+    .toolbar img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
     .toolbar h1 {
-      flex: 1; text-align: center; font-size: 18px; margin: 0;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      flex: 1;
+      text-align: center;
+      font-size: 18px;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-    #searchBox { display: none; padding: 10px; }
-    #searchInput { width: 100%; padding: 8px; font-size: 16px; }
-    .content-list { padding: 10px; }
+
+    #searchBox {
+      display: none;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      font-family: 'SolaimanLipi', sans-serif;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .content-list {
+      padding: 10px;
+    }
+
     .item {
-      background: white; margin-bottom: 10px; padding: 15px;
-      border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: flex-start;
     }
-    .item h2 { margin: 0 0 10px; font-size: 18px; color: #222; }
-    .item p { margin: 0 0 10px; font-size: 15px; line-height: 1.6; color: #333; white-space: pre-line; }
+
+    .book-number {
+      width: 92px;
+      height: 92px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('books.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      font-size: 18px;
+      font-weight: bold;
+      color: #5A0202;
+      text-align: center;
+    }
+
+    .text-block {
+      flex: 1;
+    }
+
+    .item h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .item p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #333;
+      white-space: pre-line;
+    }
   </style>
 </head>
 <body>
@@ -43,7 +130,6 @@
     const urlParams = new URLSearchParams(window.location.search);
     const bookid = urlParams.get('bookid');
     const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
-
     document.getElementById('bookTitle').innerText = bookName;
 
     function toggleSearch() {
@@ -53,6 +139,14 @@
 
     let originalPara = ''; // full paragraph for search
 
+    function convertToBanglaNumber(number) {
+      const engToBan = {
+        '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪',
+        '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯'
+      };
+      return number.toString().split('').map(char => engToBan[char] || char).join('');
+    }
+
     function loadContent() {
       fetch(`https://islamibook-beryl.vercel.app/book/${bookid}.json`)
         .then(res => res.json())
@@ -60,19 +154,30 @@
           const list = document.getElementById('contentList');
           list.innerHTML = '';
 
-          const keys = Object.keys(data);
-          const title = data["1"] || "শিরোনাম পাওয়া যায়নি";
-          const para = data["2"] || "";
+          const keys = Object.keys(data).sort((a, b) => Number(a) - Number(b));
 
-          originalPara = para;
+          keys.forEach((key, index) => {
+            if (key === "id" || !data[key]) return;
 
-          const div = document.createElement('div');
-          div.className = 'item';
-          div.innerHTML = `
-            <h2>${title}</h2>
-            <p id="contentPara">${para}</p>
-          `;
-          list.appendChild(div);
+            const title = key === "1" ? data[key] : '';
+            const para = data[key];
+
+            if (key === "2") originalPara = para;
+
+            const item = document.createElement('div');
+            item.className = 'item';
+
+            const banglaNumber = convertToBanglaNumber(index);
+
+            item.innerHTML = `
+              <div class="book-number">${banglaNumber}</div>
+              <div class="text-block">
+                ${title ? `<h2>${title}</h2>` : ""}
+                <p id="contentPara">${para}</p>
+              </div>
+            `;
+            list.appendChild(item);
+          });
         });
     }
 
@@ -80,9 +185,9 @@
       const input = document.getElementById('searchInput').value.toLowerCase();
       const paraElement = document.getElementById('contentPara');
       if (originalPara.toLowerCase().includes(input)) {
-        paraElement.parentElement.style.display = 'block';
+        paraElement.parentElement.parentElement.style.display = 'flex';
       } else {
-        paraElement.parentElement.style.display = 'none';
+        paraElement.parentElement.parentElement.style.display = 'none';
       }
     }
 
