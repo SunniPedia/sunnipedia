@@ -43,7 +43,7 @@
 </head>
 <body>
 
-  <h1>${item["1"]}</h1>
+  <h1 id="viewTitle">বই দেখুন</h1>
   <div id="content" class="content"></div>
 
   <script>
@@ -52,9 +52,12 @@
 
     if (selectedIndex !== null && bookData) {
       const item = bookData[selectedIndex];
+      
+      // Set the h1 title dynamically
+      document.getElementById('viewTitle').innerText = item["1"];
+
       const contentDiv = document.getElementById('content');
       contentDiv.innerHTML = `
-        <h2>${item["1"]}</h2>
         <p><strong></strong> ${item["2"]}</p>
       `;
     } else {
