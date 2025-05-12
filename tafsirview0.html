@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html lang="bn">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>তাফসির সমগ্র</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <style>  
+    @font-face {  
+      font-family: 'SolaimanLipi';  
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');  
+    }  @font-face {  
+  font-family: 'NooreHuda';  
+  src: url('fonts/noorehuda.ttf') format('truetype');  
+}  
+
+body {  
+  margin: 0;  
+  font-family: 'SolaimanLipi', sans-serif;  
+  background-color: #ffffff;  
+}  
+
+.toolbar {  
+  background-color: #01837A;  
+  color: white;  
+  padding: 15px;  
+  display: flex;  
+  align-items: center;  
+  justify-content: space-between;
+}  
+
+.toolbar-title {  
+  font-size: 18px;  
+  font-weight: bold;  
+}  
+
+.icon-img {  
+  width: 24px;  
+  height: 24px;  
+  cursor: pointer;  
+}  
+
+#loading {  
+  text-align: center;  
+  padding: 20px;  
+  font-size: 18px;  
+  color: #555;  
+}  
+
+.ayah-card {  
+  margin: 10px;  
+  background-color: #ffffff;  
+  border-radius: 8px;  
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+  padding: 10px;
+}  
+
+.top-row {  
+  display: flex;  
+  align-items: center;  
+  margin-bottom: 10px;  
+}  
+
+.number-box {  
+  width: 50px;  
+  height: 50px;  
+  background-image: url('ic_1_4.png');  
+  background-size: cover;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+}  
+
+.number-text {  
+  font-size: 11px;  
+  font-weight: bold;  
+  color: #607D8B;  
+}  
+
+.actions {  
+  margin-left: auto;  
+  display: flex;  
+  gap: 10px;  
+}  
+
+.actions img {  
+  width: 24px;  
+  height: 24px;  
+  cursor: pointer;  
+}  
+
+.verse-arabic {  
+  font-family: 'NooreHuda', serif;  
+  font-size: 28px;  
+  text-align: right;  
+  direction: rtl;  
+  unicode-bidi: plaintext;  
+  color: #000;  
+  margin: 10px 0;  
+}  
+
+.kanzul, .irfan {  
+  font-size: 14px;  
+  padding: 8px;  
+  margin: 10px 0 5px;  
+  font-weight: bold;  
+}  
+
+.kanzul {  
+  background-color: #E0F2F1;  
+  color: #009688;  
+}  
+
+.irfan {  
+  background-color: #E3F2FD;  
+  color: #1E88E5;  
+}  
+
+.kanzul-text, .irfan-text {  
+  font-size: 16px;  
+  color: #000;  
+  margin: 5px 0 10px;  
+}  
+
+#searchBox {  
+  display: none;  
+  padding: 10px;  
+}  
+
+#searchInput {  
+  width: 100%;  
+  padding: 10px;  
+  font-size: 16px;  
+  border-radius: 8px;  
+  font-family: 'SolaimanLipi', sans-serif;  
+  border: 1px solid #ccc;  
+  box-sizing: border-box;  
+}  
+
+.audio-controller {  
+  position: fixed;  
+  bottom: 20px;  
+  left: 50%;  
+  transform: translateX(-50%);  
+  background: #01837A;  
+  color: white;  
+  padding: 10px 20px;  
+  border-radius: 30px;  
+  display: flex;  
+  align-items: center;  
+  gap: 15px;  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);  
+  z-index: 999;  
+  display: none;  
+}  
+
+.audio-controller img {  
+  width: 28px;  
+  height: 28px;  
+  cursor: pointer;  
+}
+.khazinul {
+  background-color: #FFF3E0;
+  color: #F57C00;
+  font-size: 14px;
+  padding: 8px;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.khazinul-text {
+  font-size: 16px;
+  color: #000;
+  margin: 5px 0 10px;
+}
+
+.abbas {
+  color: white;
+  background-color: #0288D1;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.abbas-text {
+  background-color: #E1F5FE;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.kasir {
+  color: white;
+  background-color: #D84315;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.kasir-text {
+  background-color: #FBE9E7;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.nurul {
+  color: white;
+  background-color: #AD1457;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.nurul-text {
+  background-color: #FCE4EC;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.baizabi {
+  color: white;
+  background-color: #455A64;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.baizabi-text {
+  background-color: #ECEFF1;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.tabari {
+  color: white;
+  background-color: #6D4C41;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.tabari-text {
+  background-color: #EFEBE9;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.kurtubi {
+  color: white;
+  background-color: #00897B;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.kurtubi-text {
+  background-color: #E0F2F1;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.rejviya {
+  color: white;
+  background-color: #C62828;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.rejviya-text {
+  background-color: #FFEBEE;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+
+.next-icon {
+transform: rotate(180deg);
+}
+</style>
+
+</head>  
+<body>    <div class="toolbar">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+    <div class="toolbar-title" id="surahTitle">সূরা</div>
+  </div>
+  <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+    <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+    <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+  </div>
+</div>  
+  </div>    <div id="searchBox">  
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">  
+  </div>    <div id="loading">লোড হচ্ছে...</div>  
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;"></div>    <!-- Floating audio controller -->    <div class="audio-controller" id="audioController">  
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">  
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">  
+    <img src="next.png" onclick="playNext()" alt="Next">  
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">  
+  </div>    <script>  
+function jumpToAyah() {
+  const userInput = prompt("কোন আয়াতে যেতে চান? (সংখ্যা লিখুন)", "");
+  if (!userInput) return;
+
+  const target = parseInt(userInput);
+  if (isNaN(target)) {
+    alert("সঠিক সংখ্যা লিখুন");
+    return;
+  }
+
+  const cards = document.querySelectorAll('.ayah-card');
+
+  const surah = getQueryParam('surah');
+  const isExactSurah = ['Al-Fatihah', 'At-Talaq', 'At-Tawbah'].includes(surah);
+
+  const jumpIndex = isExactSurah ? target - 1 : target; // +1 মূলত এখানে বাস্তবায়ন হচ্ছে
+
+  if (jumpIndex >= 0 && jumpIndex < cards.length) {
+    cards[jumpIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+  } else {
+    alert("এই সূরায় এতগুলো আয়াত নেই");
+  }
+}
+    function goBack() {  
+      window.location.href = 'tafsir.html';  
+    }  
+  
+    function toggleSearch() {  
+      const box = document.getElementById('searchBox');  
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';  
+    }  
+  
+    document.getElementById('searchInput').addEventListener('input', function () {  
+      const query = this.value.trim().toLowerCase();  
+      const cards = document.querySelectorAll('.ayah-card');  
+      cards.forEach(card => {  
+        const text = card.innerText.toLowerCase();  
+        card.style.display = text.includes(query) ? 'block' : 'none';  
+      });  
+    });  
+  
+    function getQueryParam(name) {  
+      const urlParams = new URLSearchParams(window.location.search);  
+      return urlParams.get(name);  
+    }  
+  
+    function convertToBanglaNumber(number) {  
+      const engToBan = { '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯' };  
+      return number.toString().split('').map(char => engToBan[char] || char).join('');  
+    }  
+  
+    function formatAyahText(ayahNum, arabic, kanzul, irfan) {  
+      return `আয়াত নং : ${ayahNum}  
+${arabic}  
+  
+কানযুল ঈমান  
+  
+${ayahNum}. ${kanzul}  
+  
+ইরফানুল কুরআন  
+  
+${irfan}  
+  
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :    
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;  
+    }  
+  
+    function copyAyah(el) {  
+      const ayahNum = el.dataset.num;  
+      const arabic = el.dataset.arabic;  
+      const kanzul = el.dataset.kanzul;  
+      const irfan = el.dataset.irfan;  
+      const text = formatAyahText(ayahNum, arabic, kanzul, irfan);  
+      navigator.clipboard.writeText(text).then(() => {  
+        alert("আয়াত কপি হয়েছে!");  
+      });  
+    }  
+  
+    function shareAyah(el) {  
+      const ayahNum = el.dataset.num;  
+      const arabic = el.dataset.arabic;  
+      const kanzul = el.dataset.kanzul;  
+      const irfan = el.dataset.irfan;  
+      const text = formatAyahText(ayahNum, arabic, kanzul, irfan);  
+      if (navigator.share) {  
+        navigator.share({ text: text }).catch(() => alert("শেয়ার ব্যর্থ হয়েছে"));  
+      } else {  
+        alert("এই ব্রাউজারে শেয়ার সাপোর্ট করে না। কপি করে নিতে পারেন।");  
+      }  
+    }  
+  
+    const surahName = getQueryParam('surah');  
+    const loadingElement = document.getElementById('loading');  
+    let currentAudio = null;  
+    let currentIndex = -1;  
+    let audioElements = [];  
+  
+    const controller = document.getElementById('audioController');  
+    const mainPlayPause = document.getElementById('mainPlayPause');  
+  
+    function showController() {  
+      controller.style.display = 'flex';  
+    }  
+  
+    function hideController() {  
+      controller.style.display = 'none';  
+    }  
+  
+    function toggleAudio(el) {
+  const id = el.dataset.id;
+  const index = audioElements.indexOf(el);
+
+  if (currentAudio && !currentAudio.paused && index === currentIndex) {
+    currentAudio.pause();
+    el.src = 'play.png';
+    mainPlayPause.src = 'play.png';
+    
+    // যদি শেষ আয়াত হয়, controller নিচে চলে যাবে
+    if (currentIndex === audioElements.length - 1) {
+      controller.style.position = 'static';
+      controller.style.marginTop = '20px';
+      controller.style.transform = 'none';
+      controller.style.left = 'unset';
+      controller.style.bottom = 'unset';
+    } else {
+      // অন্যথায় controller আবার নিচে স্থির থাকবে
+      controller.style.position = 'fixed';
+      controller.style.bottom = '20px';
+      controller.style.left = '50%';
+      controller.style.transform = 'translateX(-50%)';
+      controller.style.marginTop = '0';
+    }
+    return;
+  }
+
+  
+      if (currentAudio) {  
+        currentAudio.pause();  
+        audioElements[currentIndex].src = 'play.png';  
+      }  
+  
+      currentIndex = index;  
+      const audioUrl = `https://cdn.islamic.network/quran/audio/64/ar.alafasy/${id}.mp3`;  
+      currentAudio = new Audio(audioUrl);  
+      el.src = 'pause.png';  
+      mainPlayPause.src = 'pause.png';  
+      showController();  
+  
+      currentAudio.play().catch(err => {  
+        alert("অডিও চালাতে সমস্যা হচ্ছে");  
+        console.error(err);  
+      });  
+  
+      currentAudio.onended = () => {  
+        el.src = 'play.png';  
+        mainPlayPause.src = 'play.png';  
+        playNext();  
+      };  
+  
+      const card = el.closest('.ayah-card');  
+      if (card) {  
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });  
+      }  
+    }  
+  
+    function toggleMainPlayPause() {  
+      if (currentAudio) {  
+        if (currentAudio.paused) {  
+          currentAudio.play();  
+          mainPlayPause.src = 'pause.png';  
+          audioElements[currentIndex].src = 'pause.png';  
+        } else {  
+          currentAudio.pause();  
+          mainPlayPause.src = 'play.png';  
+          audioElements[currentIndex].src = 'play.png';  
+        }  
+      }  
+    }  
+  
+    function stopAudio() {  
+      if (currentAudio) {  
+        currentAudio.pause();  
+        currentAudio.currentTime = 0;  
+        audioElements[currentIndex].src = 'play.png';  
+        mainPlayPause.src = 'play.png';  
+      }  
+      hideController();  
+    }  
+  
+    function playNext() {
+  const nextIndex = currentIndex + 1;
+  if (nextIndex < audioElements.length) {
+    toggleAudio(audioElements[nextIndex]);
+  } else {
+    // শেষ আয়াতে পৌঁছালে অডিও controller অবস্থান পরিবর্তন হবে
+    controller.style.position = 'static';
+    controller.style.marginTop = '20px';
+    controller.style.transform = 'none';
+    controller.style.left = 'unset';
+    controller.style.bottom = 'unset';
+  }
+}
+  
+    function playPrevious() {  
+      const prevIndex = currentIndex - 1;  
+      if (prevIndex >= 0) {  
+        toggleAudio(audioElements[prevIndex]);  
+      }  
+    }  
+  
+    if (surahName) {  
+      fetch('https://islamibook.vercel.app/sura.json')  
+        .then(res => res.json())  
+        .then(suraList => {  
+          const matched = suraList.find(item => item.author === surahName);  
+          const banglaTitle = matched ? matched.name : surahName.replace(/-/g, ' ');  
+          document.getElementById("surahTitle").innerText = banglaTitle;  
+  
+          return fetch(`surah/${surahName}.json`);  
+        })  
+        .then(res => res.json())  
+        .then(data => {  
+          const ayahList = document.getElementById('ayahList');  
+          const total = data.length;  
+          let loaded = 0;  
+  
+          data.forEach(ayah => {  
+            const ayahNum = convertToBanglaNumber(ayah.verses || '');  
+            const card = document.createElement('div');  
+            card.className = 'ayah-card';  
+  
+            card.innerHTML = `  
+              <div class="top-row">  
+                <div class="number-box"><div class="number-text">${ayahNum}</div></div>  
+                <div class="actions">  
+                  <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="${ayah._id}">  
+                  <img src="share.png" alt="Share" onclick="shareAyah(this)"   
+                       data-num="${ayahNum}" data-arabic="${ayah.names}"   
+                       data-kanzul="${ayah.name}" data-irfan="${ayah.author}">  
+                  <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);"   
+                       onclick="copyAyah(this)" data-num="${ayahNum}" data-arabic="${ayah.names}"   
+                       data-kanzul="${ayah.name}" data-irfan="${ayah.author}">  
+                </div>  
+              </div>  
+              <div class="verse-arabic">${ayah.names || ''}</div>  
+              <div class="kanzul">কানযুল ঈমান</div>  
+              <div class="kanzul-text">${ayahNum}. ${ayah.name || ''}</div>
+${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
+  <div class="khazinul">তাফসিরে খাযাইনুল ইরফান</div>  
+  <div class="khazinul-text">${ayah.khazainulirfan}</div>  
+` : ''}
+
+<div class="irfan">ইরফানুল কুরআন</div>  
+<div class="irfan-text">${ayah.author || ''}</div>
+${ayah.ibnabbas && ayah.ibnabbas !== 'not' ? `
+  <div class="abbas">তাফসিরে ইবনে আব্বাস</div>
+  <div class="abbas-text">${ayah.ibnabbas}</div>
+` : ''}
+
+${ayah.kasir && ayah.kasir !== 'not' ? `
+  <div class="kasir">তাফসিরে ইবনে কাসির</div>
+  <div class="kasir-text">${ayah.kasir}</div>
+` : ''}
+
+${ayah.nurul && ayah.nurul !== 'not' ? `
+  <div class="nurul">তাফসিরে নুরুল ইরফান</div>
+  <div class="nurul-text">${ayah.nurul}</div>
+` : ''}
+
+${ayah.baizabi && ayah.baizabi !== 'not' ? `
+  <div class="baizabi">তাফসিরে বায়যাবী</div>
+  <div class="baizabi-text">${ayah.baizabi}</div>
+` : ''}
+
+${ayah.tabari && ayah.tabari !== 'not' ? `
+  <div class="tabari">তাফসিরে তাবারী</div>
+  <div class="tabari-text">${ayah.tabari}</div>
+` : ''}
+
+${ayah.kurtubi && ayah.kurtubi !== 'not' ? `
+  <div class="kurtubi">তাফসিরে কুরতুবী</div>
+  <div class="kurtubi-text">${ayah.kurtubi}</div>
+` : ''}
+
+${ayah.rejviya && ayah.rejviya !== 'not' ? `
+  <div class="rejviya">তাফসিরে রেজভীয়া</div>
+  <div class="rejviya-text">${ayah.rejviya}</div>
+` : ''}
+
+            `;  
+  
+            ayahList.appendChild(card);  
+            const playBtn = card.querySelector('img[alt="Play"]');  
+            audioElements.push(playBtn);  
+  
+            loaded++;  
+            const percent = Math.round((loaded / total) * 100);  
+            loadingElement.innerText = `লোড হচ্ছে... ${convertToBanglaNumber(percent)}%`;  
+          });  
+  
+          loadingElement.style.display = 'none';  
+        })  
+        .catch(err => {  
+          document.getElementById('ayahList').innerHTML = '<p>ডেটা লোড করা যায়নি।</p>';  
+          loadingElement.innerText = 'ডেটা লোড করা যায়নি';  
+          console.error('Error loading:', err);  
+        });  
+    } else {  
+      document.getElementById('ayahList').innerHTML = '<p>কোন সূরা নির্ধারিত হয়নি।</p>';  
+    }  
+  </script>  </body>  
+</html>
