@@ -163,6 +163,22 @@ body {
 .next-icon {
 transform: rotate(180deg);
 }
+    .khazain {
+  background-color: #FFF3E0; /* হালকা কমলা */
+  color: #E65100; /* গাঢ় কমলা */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 10px 0 5px;
+  border-left: 4px solid #FF9800;
+}
+
+.khazain-text {
+  font-size: 16px;
+  color: #4E342E;
+  margin: 5px 0 10px;
+}
+
 </style>
 
 </head>  
@@ -433,10 +449,11 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
               <div class="kanzul">কানযুল ঈমান</div>  
               <div class="kanzul-text">${ayahNum}. ${ayah.name || ''}</div>
 ${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
-        <div class="irfan">তাফসিরে খাযাইনুল ইরফান</div>  
-        <div class="irfan-text">${ayah.khazainulirfan}</div>  
-              <div class="irfan">ইরফানুল কুরআন</div>  
-              <div class="irfan-text">${ayah.author || ''}</div>` : ''}
+  <div class="khazain">খাযাইনুল ইরফান</div>  
+  <div class="khazain-text">${ayah.khazainulirfan}</div>  
+` : ''}
+<div class="irfan">ইরফানুল কুরআন</div>  
+<div class="irfan-text">${ayah.author || ''}</div>` : ''}
             `;  
   
             ayahList.appendChild(card);  
