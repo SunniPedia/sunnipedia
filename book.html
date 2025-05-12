@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>ইসলামী বই সমাহার</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
+    .toolbar {
+      background: #00897b; color: white; padding: 10px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .toolbar img { width: 24px; height: 24px; cursor: pointer; }
+    .toolbar h1 { flex: 1; text-align: center; font-size: 20px; margin: 0; }
+    #searchBox { display: none; padding: 10px; }
+    #searchInput { width: 100%; padding: 8px; font-size: 16px; }
+    .book-list { padding: 10px; }
+    .book-item {
+      background: white; margin-bottom: 10px; padding: 10px;
+      border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .book-item h2 { margin: 0; font-size: 18px; }
+    .book-item p { margin: 5px 0; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <img src="back.png" alt="Back" onclick="location.href='main.html'">
+    <h1>ইসলামী বই সমাহার</h1>
+    <img src="search.png" alt="Search" onclick="toggleSearch()">
+  </div>
+
+  <div id="searchBox">
+    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা বিষয় লিখুন..." oninput="filterBooks()">
+  </div>
+
+  <div class="book-list" id="bookList"></div>
+
+  <script>
+    let allBooks = [];
+
+    function toggleSearch() {
+      const box = document.getElementById('searchBox');
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function loadBooks() {
+      fetch('https://islamibook-beryl.vercel.app/file.json')
+        .then(res => res.json())
+        .then(data => {
+          allBooks = data;
+          displayBooks(data);
+        });
+    }
+
+    function displayBooks(books) {
+      const list = document.getElementById('bookList');
+      list.innerHTML = '';
+      books.forEach(book => {
+        const div = document.createElement('div');
+        div.className = 'book-item';
+        div.onclick = () => {
+          const encodedID = encodeURIComponent(book.bookid);
+          const encodedName = encodeURIComponent(book.name);
+          window.location.href = `bookview.html?bookid=${encodedID}&name=${encodedName}`;
+        };
+        div.innerHTML = `
+          <h2>${book.name}</h2>
+          <p><strong>লেখকঃ</strong> ${book.author.replace(/\n/g, '<br>')}</p>
+          <p><strong>বিষয়ঃ</strong> ${book.subject}</p>
+        `;
+        list.appendChild(div);
+      });
+    }
+
+    function filterBooks() {
+      const key = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = allBooks.filter(book =>
+        book.name.toLowerCase().includes(key) ||
+        book.author.toLowerCase().includes(key) ||
+        book.subject.toLowerCase().includes(key)
+      );
+      displayBooks(filtered);
+    }
+
+    loadBooks();
+  </script>
+
+</body>
+</html>
