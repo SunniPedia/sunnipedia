@@ -276,7 +276,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const booksSlug = ['bukhari', 'muslim', 'tirmiji', 'daud', 'nasai', 'majah', 'muatta-malik', 'shamail-tirmiji', 'twahabi-sharif', 'musnad-hanifa', 'muatta-muhammad', 'mufrad', 'mishkat-al-misbah', 'fiqh-us-sunnan', 'akhlakhunnabi', 'riaz-us-salihin', 'imam-ahmad', 'bukhari-urdu', 'muslim-urdu', 'tirmiji-urdu', 'abu-daud-urdu', 'nasai-urdu', 'ibn-majah-urdu', 'muatta-malik-urdu', 'shamail-tirmiji-urdu', 'imam-ahmad-urdu', 'ibn-shaibah-urdu', 'dara-kutni-urdu', 'daremi-urdu', 'baihaqi-urdu', 'kanzul-ummal-urdu', 'hammam-urdu', 'maariful-hadith-urdu', 'aat-targib', 'shahifaye-hammam', 'hadith-kudsi'];
+const booksSlug = ['bukhari', 'muslim', 'tirmiji', 'daud', 'nasai', 'majah', 'muatta-malik', 'shamail-tirmiji', 'twahabi-sharif', 'musnad-hanifa', 'muatta-muhammad', 'mufrad', 'mishkat-al-misbah', 'fiqh-us-sunnan', 'akhlakhunnabi',  'imam-ahmad', 'bukhari-urdu', 'muslim-urdu', 'tirmiji-urdu', 'abu-daud-urdu', 'nasai-urdu', 'ibn-majah-urdu', 'muatta-malik-urdu', 'shamail-tirmiji-urdu', 'imam-ahmad-urdu', 'ibn-shaibah-urdu', 'dara-kutni-urdu', 'daremi-urdu', 'baihaqi-urdu', 'kanzul-ummal-urdu', 'hammam-urdu', 'maariful-hadith-urdu', 'aat-targib', 'shahifaye-hammam', 'hadith-kudsi'];
 const hadithTables = booksSlug.map(book => {
   return {
     store: book + 'Hadiths',
