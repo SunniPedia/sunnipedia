@@ -9,10 +9,6 @@
       font-family: 'SolaimanLipi';
       src: url('fonts/SolaimanLipi.ttf') format('truetype');
     }
-    @font-face {
-      font-family: 'Amiri';
-      src: url('fonts/Amiri-Regular.ttf') format('truetype');
-    }
 
     body {
       margin: 0;
@@ -20,44 +16,8 @@
       background-color: #f0f0f0;
     }
 
-    .toolbar {
-      background-color: #01837A;
-      color: white;
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .icon-img {
-      width: 24px;
-      height: 24px;
-    }
-
-    .toolbar-title {
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .search-box {
-      padding: 10px;
-      display: none;
-      background-color: #ffffff;
-    }
-
-    .search-box input {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      font-family: 'SolaimanLipi', sans-serif;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-
     .book-list {
       padding: 10px;
-      height: calc(100vh - 120px); /* Adjust this based on how tall your toolbar + card section is */
       overflow-y: auto;
     }
 
@@ -66,19 +26,33 @@
       margin-bottom: 10px;
       padding: 15px;
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
       cursor: pointer;
-      transition: transform 0.2s ease;
     }
 
     .book-item:hover {
       transform: scale(1.01);
     }
 
-    .book-header {
+    .book-number {
+      width: 46px;
+      height: 46px;
+      margin-right: 10px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      background-color: #f1f1f1;
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: bold;
+      color: #5A0202;
+      text-align: center;
+    }
+
+    .book-info {
+      flex-grow: 1;
     }
 
     .book-title {
@@ -87,64 +61,19 @@
       color: #222;
     }
 
-    .book-details {
-      margin-top: 5px;
-      font-size: 14px;
-      color: #666;
-    }
-
     .book-author {
       font-size: 14px;
-      color: #000;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <!-- Toolbar -->
-  <div class="toolbar">
-    <div class="back-button" onclick="goBack()">
-      <img src="back.png" alt="পেছনে যান" class="icon-img">
-    </div>
-    <div class="toolbar-title">ইসলামী বই সমাহার</div>
-    <div class="search-icon" onclick="toggleSearchBox()">
-      <img src="search.png" alt="অনুসন্ধান" class="icon-img">
-    </div>
-  </div>
-
-  <!-- Search Box -->
-  <div class="search-box" id="searchBox">
-    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন...">
-  </div>
-
-  <!-- Book List -->
   <div class="book-list" id="bookList">
     <!-- বইয়ের ডেটা এখানে লোড হবে -->
   </div>
 
   <script>
-    function goBack() {
-      window.location.href = 'main.html';
-    }
-
-    function toggleSearchBox() {
-      const searchBox = document.getElementById('searchBox');
-      if (searchBox.style.display === 'none' || searchBox.style.display === '') {
-        searchBox.style.display = 'block';
-        document.getElementById('searchInput').focus();
-      } else {
-        searchBox.style.display = 'none';
-      }
-    }
-
-    function convertToBanglaNumber(number) {
-      const engToBan = {
-        '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪',
-        '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯'
-      };
-      return number.toString().split('').map(char => engToBan[char] || char).join('');
-    }
-
     fetch('https://islamibook-beryl.vercel.app/file.json')
       .then(response => response.json())
       .then(data => {
@@ -154,9 +83,9 @@
           const bookItem = document.createElement('div');
           bookItem.className = 'book-item';
 
-          const bookId = convertToBanglaNumber(book.bookid);  // Convert bookId to Bengali number
-          const bookName = book.name.trim();
-          const bookAuthor = book.author.trim();
+          const bookId = book.bookid;  // বইয়ের নাম্বার
+          const bookName = book.name.trim();  // বইয়ের নাম
+          const bookAuthor = book.author.trim();  // লেখক
 
           bookItem.onclick = function () {
             const encodedBookId = encodeURIComponent(book.bookid);
@@ -165,34 +94,15 @@
           };
 
           bookItem.innerHTML = `
-            <div class="book-header">
-              <div class="book-title">বই নং ${bookId}: ${bookName}</div>
-            </div>
-            <div class="book-details">
-              <strong>লেখকঃ</strong> ${bookAuthor}
+            <div class="book-number">${bookId}</div>
+            <div class="book-info">
+              <div class="book-title">${bookName}</div>
+              <div class="book-author"><strong>লেখকঃ</strong> ${bookAuthor}</div>
             </div>
           `;
 
           bookList.appendChild(bookItem);
         });
-
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', function () {
-          const keyword = this.value.toLowerCase();
-          const items = document.querySelectorAll('.book-item');
-
-          items.forEach(item => {
-            const title = item.querySelector('.book-title').textContent.toLowerCase();
-            const author = item.querySelector('.book-details').textContent.toLowerCase();
-
-            if (title.includes(keyword) || author.includes(keyword)) {
-              item.style.display = '';
-            } else {
-              item.style.display = 'none';
-            }
-          });
-        });
-
       })
       .catch(error => {
         console.error('বই লোড করতে সমস্যা হয়েছে:', error);
