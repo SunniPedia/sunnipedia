@@ -131,7 +131,10 @@
   <div class="search-box" id="searchBox">
     <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন..." onkeyup="searchBooks()">
   </div>
-
+<!-- Loading Text -->
+<div id="loadingText" style="text-align:center; padding: 20px; font-size: 16px;">
+  লোডিং হচ্ছে...
+</div>
   <!-- Book List -->
   <div class="book-list" id="bookList">
     <!-- বইয়ের ডেটা এখানে লোড হবে -->
@@ -192,7 +195,7 @@
           <div class="book-number">${bookId}</div>
           <div class="book-info">
             <div class="book-title">${bookName}</div>
-            <div class="book-author"><strong>লেখকঃ</strong> ${bookAuthor}</div>
+            <div class="book-author"><strong></strong> ${bookAuthor}</div>
           </div>
         `;
 
@@ -201,14 +204,16 @@
     }
 
     fetch('https://islamibook-beryl.vercel.app/file.json')
-      .then(response => response.json())
-      .then(data => {
-        allBooks = data;  // Store all books in the global variable
-        displayBooks(allBooks);  // Initially display all books
-      })
-      .catch(error => {
-        console.error('বই লোড করতে সমস্যা হয়েছে:', error);
-      });
+  .then(response => response.json())
+  .then(data => {
+    allBooks = data;
+    displayBooks(allBooks);
+    document.getElementById('loadingText').style.display = 'none'; // লোডিং লেখা লুকাও
+  })
+  .catch(error => {
+    console.error('বই লোড করতে সমস্যা হয়েছে:', error);
+    document.getElementById('loadingText').innerText = 'বই লোড করতে সমস্যা হয়েছে!';
+  });
   </script>
 
 </body>
