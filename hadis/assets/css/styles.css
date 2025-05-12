@@ -1,0 +1,101 @@
+@import "./dark.css";
+@import "./dark_violet.css";
+@import "./gray.css";
+@import "./green.css";
+@import "./green_light.css";
+@import "./light.css";
+@import "./maroon.css";
+@import "./ocean_blue.css";
+
+.snackbar-success {
+  background: #28a745 !important;
+  color: white !important;
+}
+
+.snackbar-warn {
+  background: #dc3545 !important;
+  color: white !important;
+}
+
+.accordion {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+
+.accordion-body {
+    color: unset;
+    background-color: unset;
+    border: unset;
+
+}
+
+.accordion-item {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+
+.accordion-header {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+
+/*.accordion-header-title {*/
+/*    color: unset;*/
+/*    background-color: unset;*/
+/*    border: unset;*/
+/*}*/
+
+.accordion-button {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+
+.card {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+
+.card-body {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+
+.ng-select .ng-select-container {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-placeholder  {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+.ng-select.ng-select-focused .ng-select-container .ng-value-container .ng-placeholder  {
+    color: unset;
+    background-color: unset;
+    border: unset;
+}
+
+/*.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected {*/
+/*    color: unset;*/
+/*    background-color: unset;*/
+/*    border: unset;*/
+/*}*/
+
+/*.ng-dropdown-panel {*/
+/*    color: unset;*/
+/*    background-color: unset;*/
+/*    border: unset;*/
+/*}*/
+
+.mat-mdc-form-field {
+  display: block !important;
+  line-height: 1.5rem !important;
+}
