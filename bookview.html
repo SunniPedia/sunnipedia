@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>বইয়ের পৃষ্ঠা</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
+    .toolbar {
+      background: #3949ab; color: white; padding: 10px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .toolbar img { width: 24px; height: 24px; cursor: pointer; }
+    .toolbar h1 {
+      flex: 1; text-align: center; font-size: 18px; margin: 0;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    #searchBox { display: none; padding: 10px; }
+    #searchInput { width: 100%; padding: 8px; font-size: 16px; }
+    .content-list { padding: 10px; }
+    .item {
+      background: white; margin-bottom: 10px; padding: 10px;
+      border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .item h2 { margin: 0; font-size: 16px; color: #333; }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <img src="back.png" alt="Back" onclick="history.back()">
+    <h1 id="bookTitle">বই</h1>
+    <img src="search.png" alt="Search" onclick="toggleSearch()">
+  </div>
+
+  <div id="searchBox">
+    <input type="text" id="searchInput" placeholder="খুঁজুন..." oninput="filterContent()">
+  </div>
+
+  <div class="content-list" id="contentList"></div>
+
+  <script>
+    let content = [];
+    const urlParams = new URLSearchParams(window.location.search);
+    const bookid = urlParams.get('bookid');
+    const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
+
+    document.getElementById('bookTitle').innerText = bookName;
+
+    function toggleSearch() {
+      const box = document.getElementById('searchBox');
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function loadContent() {
+      fetch(`https://islamibook-beryl.vercel.app/book/${bookid}`)
+        .then(res => res.json())
+        .then(data => {
+          content = Object.entries(data); // key-value pair (like 1,2,3...)
+          displayContent(content);
+        });
+    }
+
+    function displayContent(items) {
+      const list = document.getElementById('contentList');
+      list.innerHTML = '';
+      items.forEach(([key, value]) => {
+        const div = document.createElement('div');
+        div.className = 'item';
+        div.innerHTML = `<h2>${key}. ${value}</h2>`;
+        list.appendChild(div);
+      });
+    }
+
+    function filterContent() {
+      const key = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = content.filter(([_, val]) =>
+        val.toLowerCase().includes(key)
+      );
+      displayContent(filtered);
+    }
+
+    loadContent();
+  </script>
+
+</body>
+</html>
