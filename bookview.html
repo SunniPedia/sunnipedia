@@ -115,6 +115,9 @@
   <div id="content"></div>
 
   <script>
+const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
+document.getElementById('bookTitle').innerText = bookName;
+document.title = `${bookName} পড়ুন`;
     const urlParams = new URLSearchParams(window.location.search);
     const bookid = urlParams.get('bookid');
     const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
