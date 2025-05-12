@@ -1,8 +1,45 @@
-const jsonPath = 'tafsir.json';
+document.addEventListener("DOMContentLoaded", () => {
+  const suraId = localStorage.getItem("selectedSura");
+  const suraName = localStorage.getItem("suraName");
+  
+  if (suraId && suraName) {
+    document.getElementById("suraTitle").innerText = suraName;
+    loadTafsirView(suraId);
+  } else {
+    document.getElementById("tafsirContent").innerHTML = "<p>কোনো সূরা নির্বাচিত হয়নি।</p>";
+  }
+});
 
-document.addEventListener("DOMContentLoaded", () => { const suraId = localStorage.getItem("selectedSura"); const suraName = localStorage.getItem("suraName"); const suraTitle = document.getElementById("suraTitle"); const ayahList = document.getElementById("ayahList"); const loading = document.getElementById("loading");
+function loadTafsirView(suraId) {
+  const jsonPath = 'tafsir.json';
+  const container = document.getElementById("tafsirContent");
+  const loadingElement = document.getElementById("loading");
 
-suraTitle.innerText = suraName || "তাফসির";
+  fetch(jsonPath)
+    .then(res => res.json())
+    .then(data => {
+      const ayahs = data.filter(item => item.sura === suraId);
+      if (ayahs.length === 0) {
+        container.innerHTML = "<p>এই সূরার তাফসির পাওয়া যায়নি।</p>";
+        return;
+      }
 
-if (suraId) { fetch(jsonPath) .then(res => res.json()) .then(data => { const ayahs = data.filter(item => item.sura === suraId); ayahList.innerHTML = ayahs.map(ayah => <div class="ayah-card"> <div class="top-row"> <div class="number-box"> <div class="number-text">${ayah.verses}</div> </div> <div style="flex-grow: 1; padding-left: 10px;"> <h3>${ayah.names}</h3> </div> </div> <p class="tafsir-text">${ayah.irfanul}</p> </div>).join(""); loading.style.display = "none"; }) .catch(err => { console.error(err); ayahList.innerHTML = '<p style="color: red;">ডাটা লোড করতে সমস্যা হয়েছে!</p>'; loading.style.display = "none"; }); } else { ayahList.innerHTML = '<p style="color: red;">সুরা নির্বাচিত করা হয়নি!</p>'; loading.style.display = "none"; } });
+      ayahs.forEach(ayah => {
+        const div = document.createElement("div");
+        div.className = "ayah-card";
+        div.innerHTML = `
+          <div class="verse-arabic">${ayah.names || ''}</div>
+          <div class="kanzul">আয়াত নং: ${ayah.verses || ''}</div>
+          <div class="irfan">তাফসির</div>
+          <div class="irfan-text">${ayah.irfanul || ''}</div>
+        `;
+        container.appendChild(div);
+      });
 
+      loadingElement.style.display = "none";  // লোডিং লুকাও
+    })
+    .catch(err => {
+      console.error("তাফসির লোড করতে সমস্যা হচ্ছে:", err);
+      container.innerHTML = "<p>ডেটা লোড করা যায়নি।</p>";
+    });
+}
