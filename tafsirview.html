@@ -173,6 +173,18 @@ body {
   color: #000;
   margin: 5px 0 10px;
 }
+.abbas { color: #0288D1; font-weight: bold; }
+.kasir { color: #D84315; font-weight: bold; }
+.nurul { color: #AD1457; font-weight: bold; }
+.baizabi { color: #455A64; font-weight: bold; }
+.tabari { color: #6D4C41; font-weight: bold; }
+.kurtubi { color: #00897B; font-weight: bold; }
+.rejviya { color: #C62828; font-weight: bold; }
+
+.abbas-text, .kasir-text, .nurul-text,
+.baizabi-text, .tabari-text, .kurtubi-text, .rejviya-text {
+  margin-bottom: 15px;
+}
 
 .next-icon {
 transform: rotate(180deg);
@@ -453,6 +465,40 @@ ${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
 
 <div class="irfan">ইরফানুল কুরআন</div>  
 <div class="irfan-text">${ayah.author || ''}</div>
+${ayah.abbas && ayah.abbas !== 'not' ? `
+  <div class="abbas">তাফসিরে ইবনে আব্বাস</div>
+  <div class="abbas-text">${ayah.abbas}</div>
+` : ''}
+
+${ayah.kasir && ayah.kasir !== 'not' ? `
+  <div class="kasir">তাফসিরে ইবনে কাসির</div>
+  <div class="kasir-text">${ayah.kasir}</div>
+` : ''}
+
+${ayah.nurul && ayah.nurul !== 'not' ? `
+  <div class="nurul">তাফসিরে নুরুল ইরফান</div>
+  <div class="nurul-text">${ayah.nurul}</div>
+` : ''}
+
+${ayah.baizabi && ayah.baizabi !== 'not' ? `
+  <div class="baizabi">তাফসিরে বায়যাবী</div>
+  <div class="baizabi-text">${ayah.baizabi}</div>
+` : ''}
+
+${ayah.tabari && ayah.tabari !== 'not' ? `
+  <div class="tabari">তাফসিরে তাবারী</div>
+  <div class="tabari-text">${ayah.tabari}</div>
+` : ''}
+
+${ayah.kurtubi && ayah.kurtubi !== 'not' ? `
+  <div class="kurtubi">তাফসিরে কুরতুবী</div>
+  <div class="kurtubi-text">${ayah.kurtubi}</div>
+` : ''}
+
+${ayah.rejviya && ayah.rejviya !== 'not' ? `
+  <div class="rejviya">তাফসিরে রেজভীয়া</div>
+  <div class="rejviya-text">${ayah.rejviya}</div>
+` : ''}
 
             `;  
   
