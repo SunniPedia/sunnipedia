@@ -564,23 +564,24 @@ ${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
   <div class="khazinul">তাফসিরে খাযাইনুল ইরফান</div>  
   <div class="khazinul-text">${ayah.khazainulirfan}</div>  
 ` : ''}
-
+${ayah.nurul && ayah.nurul !== 'not' ? `
+  <div class="nurul">তাফসিরে নুরুল ইরফান</div>
+  <div class="nurul-text">${ayah.nurul}</div>
+` : ''}
+${ayah.ibnabbas && ayah.ibnabbas !== 'not' ? `
+  <div class="abbas">তাফসিরে ইবনে আব্বাস</div>
+  <div class="abbas-text">${ayah.ibnabbas}</div>
+` : ''}
 <div class="irfan">ইরফানুল কুরআন</div>  
 <div class="irfan-text">${ayah.author || ''}</div>
-${ayah.abbas && ayah.abbas !== 'not' ? `
-  <div class="abbas">তাফসিরে ইবনে আব্বাস</div>
-  <div class="abbas-text">${ayah.abbas}</div>
-` : ''}
+
 
 ${ayah.kasir && ayah.kasir !== 'not' ? `
   <div class="kasir">তাফসিরে ইবনে কাসির</div>
   <div class="kasir-text">${ayah.kasir}</div>
 ` : ''}
 
-${ayah.nurul && ayah.nurul !== 'not' ? `
-  <div class="nurul">তাফসিরে নুরুল ইরফান</div>
-  <div class="nurul-text">${ayah.nurul}</div>
-` : ''}
+
 
 ${ayah.baizabi && ayah.baizabi !== 'not' ? `
   <div class="baizabi">তাফসিরে বায়যাবী</div>
