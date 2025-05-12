@@ -137,6 +137,14 @@
       }
     }
 
+    function convertToBanglaNumber(number) {
+      const engToBan = {
+        '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪',
+        '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯'
+      };
+      return number.toString().split('').map(char => engToBan[char] || char).join('');
+    }
+
     fetch('https://islamibook-beryl.vercel.app/file.json')
       .then(response => response.json())
       .then(data => {
@@ -146,19 +154,19 @@
           const bookItem = document.createElement('div');
           bookItem.className = 'book-item';
 
-          const bookId = book.bookid;
+          const bookId = convertToBanglaNumber(book.bookid);  // Convert bookId to Bengali number
           const bookName = book.name.trim();
           const bookAuthor = book.author.trim();
 
           bookItem.onclick = function () {
-            const encodedBookId = encodeURIComponent(bookId);
+            const encodedBookId = encodeURIComponent(book.bookid);
             const encodedBookName = encodeURIComponent(bookName);
             window.location.href = `bookview.html?bookid=${encodedBookId}&name=${encodedBookName}`;
           };
 
           bookItem.innerHTML = `
             <div class="book-header">
-              <div class="book-title">${bookName}</div>
+              <div class="book-title">বই নং ${bookId}: ${bookName}</div>
             </div>
             <div class="book-details">
               <strong>লেখকঃ</strong> ${bookAuthor}
