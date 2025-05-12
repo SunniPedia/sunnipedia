@@ -14,6 +14,7 @@
       margin: 0;
       font-family: 'SolaimanLipi', sans-serif;
       background-color: #f0f0f0;
+      padding-top: 60px; /* To avoid content being hidden behind fixed navbar */
     }
 
     .toolbar {
@@ -23,6 +24,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Ensures the toolbar is on top */
     }
 
     .icon-img {
@@ -54,6 +60,7 @@
     .book-list {
       padding: 10px;
       overflow-y: auto;
+      margin-top: 70px; /* Adds space below fixed toolbar */
     }
 
     .book-item {
