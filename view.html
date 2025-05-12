@@ -127,7 +127,7 @@
 
     function copyContent() {
       const tempInput = document.createElement('textarea');
-      tempInput.value = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText;
+      tempInput.value = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
       document.body.appendChild(tempInput);
       tempInput.select();
       document.execCommand('copy');
@@ -136,7 +136,7 @@
     }
 
     function shareContent() {
-      const textToShare = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText + '\n\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
+      const textToShare = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
       if (navigator.share) {
         navigator.share({
           title: 'বই শেয়ার করুন',
