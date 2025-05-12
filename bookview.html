@@ -98,25 +98,28 @@
           const contentDiv = document.getElementById('content');
           contentDiv.innerHTML = '';
 
-          const keys = Object.keys(data).sort((a, b) => Number(a) - Number(b));
+          data.forEach((item, index) => {
+            if (!item["1"]) return;
 
-          keys.forEach((key, index) => {
-            if (key === "id" || !data[key]) return;
-
-            const title = key === "1" ? data[key] : '';
-            const para = data[key];
-
-            const item = document.createElement('div');
-            item.className = 'content-item';
-
-            item.innerHTML = `
-              <h2>${title || 'অধ্যায়'}</h2>
-              <p>${para}</p>
+            const div = document.createElement('div');
+            div.className = 'content-item';
+            div.innerHTML = `
+              <h2>অধ্যায় ${index + 1}</h2>
+              <p onclick="openView(${index})" style="cursor: pointer; color: #01837A;">${item["1"]}</p>
             `;
-            contentDiv.appendChild(item);
+            contentDiv.appendChild(div);
           });
+
+          // save whole data temporarily for use in view.html
+          sessionStorage.setItem('bookData', JSON.stringify(data));
         })
         .catch(error => console.error('Error loading content:', error));
+    }
+
+    function openView(index) {
+      // store current index so view.html can access it
+      sessionStorage.setItem('selectedIndex', index);
+      window.location.href = 'view.html';
     }
 
     loadContent();
