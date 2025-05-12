@@ -180,12 +180,14 @@
     }
 
     function searchBooks() {
-      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-      const filteredBooks = allBooks.filter(book => {
-        return book.name.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
-      });
-      displayBooks(filteredBooks);
-    }
+  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  const filteredBooks = allBooks.filter(book => {
+    return book.name.toLowerCase().includes(searchTerm) ||
+           book.author.toLowerCase().includes(searchTerm) ||
+           (book.subject && book.subject.toLowerCase().includes(searchTerm)); // গোপন subject ফিল্ড
+  });
+  displayBooks(filteredBooks);
+}
 
     function displayBooks(books) {
       const bookList = document.getElementById('bookList');
@@ -256,12 +258,14 @@
 
   // performSearch ফাংশন ডেফাইন
   function performSearch(term) {
-    const searchTerm = term.toLowerCase();
-    const filteredBooks = allBooks.filter(book => {
-      return book.name.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
-    });
-    displayBooks(filteredBooks);
-  }
+  const searchTerm = term.toLowerCase();
+  const filteredBooks = allBooks.filter(book => {
+    return book.name.toLowerCase().includes(searchTerm) ||
+           book.author.toLowerCase().includes(searchTerm) ||
+           (book.subject && book.subject.toLowerCase().includes(searchTerm)); // গোপন subject ফিল্ড
+  });
+  displayBooks(filteredBooks);
+}
 </script>
 </body>
 </html>
