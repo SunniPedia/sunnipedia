@@ -160,7 +160,7 @@ height: calc(100vh - 120px); /* Adjust this based on how tall your toolbar + car
       return number.toString().split('').map(char => engToBan[char] || char).join('');
     }
 
-    fetch('https://islamiencyclopedia0-github-com.vercel.app/sura.json')
+    fetch('https://islamibook.vercel.app/sura.json')
       .then(response => response.json())
       .then(data => {
         const surahList = document.getElementById('surahList');
