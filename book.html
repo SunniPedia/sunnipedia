@@ -229,6 +229,39 @@
     document.getElementById('loadingText').innerText = 'বই লোড করতে সমস্যা হয়েছে!';
   });
   </script>
+<script>
+  // fetch এর নিচে থাকলেই ভালো কাজ করবে
+  // URL থেকে সার্চ কুয়েরি পড়ে অটো সার্চ
+  window.onload = function () {
+    const params = new URLSearchParams(window.location.search);
+    const searchTerm = params.get('search');
 
+    if (searchTerm) {
+      const input = document.getElementById('searchInput');
+      const searchBox = document.getElementById('searchBox');
+      if (input) {
+        searchBox.style.display = 'block'; // সার্চ বক্স খোলা দেখাও
+        input.value = searchTerm;
+      }
+
+      // wait until books are loaded
+      const checkBooksLoaded = setInterval(() => {
+        if (allBooks.length > 0) {
+          clearInterval(checkBooksLoaded);
+          performSearch(searchTerm);
+        }
+      }, 100);
+    }
+  };
+
+  // performSearch ফাংশন ডেফাইন
+  function performSearch(term) {
+    const searchTerm = term.toLowerCase();
+    const filteredBooks = allBooks.filter(book => {
+      return book.name.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
+    });
+    displayBooks(filteredBooks);
+  }
+</script>
 </body>
 </html>
