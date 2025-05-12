@@ -140,16 +140,24 @@
       }
     }
 
+    function convertToBanglaNumber(number) {
+      const engToBan = {
+        '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪',
+        '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯'
+      };
+      return number.toString().split('').map(char => engToBan[char] || char).join('');
+    }
+
     fetch('https://islamibook-beryl.vercel.app/file.json')
       .then(response => response.json())
       .then(data => {
         const bookList = document.getElementById('bookList');
 
-        data.forEach(book => {
+        data.forEach((book, index) => {
           const bookItem = document.createElement('div');
           bookItem.className = 'book-item';
 
-          const bookId = book.bookid;  // বইয়ের নাম্বার
+          const bookId = convertToBanglaNumber(index + 1);  // বইয়ের পজিশন অনুযায়ী নাম্বার
           const bookName = book.name.trim();  // বইয়ের নাম
           const bookAuthor = book.author.trim();  // লেখক
 
