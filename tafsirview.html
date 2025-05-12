@@ -172,7 +172,6 @@ body {
   font-size: 16px;
   color: #000;
   margin: 5px 0 10px;
-  white-space: pre-line;
 }
 
 .abbas {
@@ -188,26 +187,8 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 4px;
-  white-space: pre-line;
 }
 
-
-.majhari {
-  color: white;
-  background-color: #0288D1;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-.majhari-text {
-  background-color: #E1F5FE;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  white-space: pre-line;
-}
-    
 .kasir {
   color: white;
   background-color: #D84315;
@@ -221,7 +202,6 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 4px;
-  white-space: pre-line;
 }
 
 .nurul {
@@ -237,7 +217,6 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 4px;
-  white-space: pre-line;
 }
 
 .baizabi {
@@ -253,7 +232,6 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 4px;
-  white-space: pre-line;
 }
 
 .tabari {
@@ -269,7 +247,6 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 4px;
-  white-space: pre-line;
 }
 
 .kurtubi {
@@ -285,7 +262,6 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 4px;
-  white-space: pre-line;
 }
 
 .rejviya {
@@ -301,7 +277,6 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 4px;
-  white-space: pre-line;
 }
 
 
@@ -314,7 +289,7 @@ transform: rotate(180deg);
 <body>    <div class="toolbar">
   <div style="display: flex; align-items: center; gap: 10px;">
     <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-    <div class="toolbar-title" id="surahTitle">তাফসির সমগ্র</div>
+    <div class="toolbar-title" id="surahTitle">সূরা</div>
   </div>
   <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
     <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
@@ -581,20 +556,12 @@ ${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
   <div class="khazinul">তাফসিরে খাযাইনুল ইরফান</div>  
   <div class="khazinul-text">${ayah.khazainulirfan}</div>  
 ` : ''}
-${ayah.nurul && ayah.nurul !== 'not' ? `
-  <div class="nurul">তাফসিরে নুরুল ইরফান</div>
-  <div class="nurul-text">${ayah.nurul}</div>
-` : ''}
-${ayah.ibnabbas && ayah.ibnabbas !== 'not' ? `
-  <div class="abbas">তাফসিরে ইবনে আব্বাস</div>
-  <div class="abbas-text">${ayah.ibnabbas}</div>
-` : ''}
+
 <div class="irfan">ইরফানুল কুরআন</div>  
 <div class="irfan-text">${ayah.author || ''}</div>
-
-${ayah.majhari && ayah.majhari !== 'not' ? `
-  <div class="majhari">তাফসিরে মাযহারী</div>
-  <div class="majhari-text">${ayah.majhari}</div>
+${ayah.abbas && ayah.abbas !== 'not' ? `
+  <div class="abbas">তাফসিরে ইবনে আব্বাস</div>
+  <div class="abbas-text">${ayah.abbas}</div>
 ` : ''}
 
 ${ayah.kasir && ayah.kasir !== 'not' ? `
@@ -602,7 +569,10 @@ ${ayah.kasir && ayah.kasir !== 'not' ? `
   <div class="kasir-text">${ayah.kasir}</div>
 ` : ''}
 
-
+${ayah.nurul && ayah.nurul !== 'not' ? `
+  <div class="nurul">তাফসিরে নুরুল ইরফান</div>
+  <div class="nurul-text">${ayah.nurul}</div>
+` : ''}
 
 ${ayah.baizabi && ayah.baizabi !== 'not' ? `
   <div class="baizabi">তাফসিরে বায়যাবী</div>
