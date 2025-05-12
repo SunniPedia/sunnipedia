@@ -26,6 +26,7 @@
       position: sticky;
       top: 0;
       z-index: 999;
+      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls {
@@ -39,6 +40,9 @@
     }
 
     .controls button {
+      display: flex;
+      align-items: center;
+      gap: 6px;
       padding: 10px 15px;
       font-size: 14px;
       border: none;
@@ -46,6 +50,12 @@
       background-color: #009688;
       color: white;
       cursor: pointer;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .controls img {
+      width: 16px;
+      height: 16px;
     }
 
     .content {
@@ -57,6 +67,7 @@
       line-height: 1.6;
       font-size: 18px;
       color: #333;
+      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .footer {
@@ -64,6 +75,7 @@
       margin: 20px 0;
       font-size: 14px;
       color: #999;
+      font-family: 'SolaimanLipi', sans-serif;
     }
   </style>
 </head>
@@ -74,8 +86,12 @@
   <div class="controls">
     <button onclick="increaseFont()">আকার+</button>
     <button onclick="decreaseFont()">আকার−</button>
-    <button onclick="copyContent()">কপি</button>
-    <button onclick="shareContent()">শেয়ার</button>
+    <button onclick="copyContent()">
+      <img src="copy.png" alt="Copy"> কপি
+    </button>
+    <button onclick="shareContent()">
+      <img src="share.png" alt="Share"> শেয়ার
+    </button>
   </div>
 
   <div class="content" id="content">লোড হচ্ছে...</div>
