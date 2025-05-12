@@ -16,34 +16,35 @@
     }
 
     .toolbar {
-      background-color: #01837A;
-      color: white;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      min-height: 56px;
-    }
+  background-color: #01837A;
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-height: 50px; /* এখন 50dp */
+}
 
-    .toolbar img {
-      width: 28px;
-      height: 28px;
-      cursor: pointer;
-    }
+.toolbar img {
+  width: 32px; /* বড় করে দিলাম */
+  height: 32px;
+  cursor: pointer;
+}
 
-    .toolbar h1 {
-      flex: 1;
-      margin: 0;
-      font-size: 20px;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+.toolbar h1 {
+  flex: 1;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 50px; /* টেক্সট vertically centered দেখাতে */
+}
 
     #searchBox {
       display: none;
