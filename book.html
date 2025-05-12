@@ -5,109 +5,7 @@
   <title>ইসলামী বই সমাহার</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    @font-face {
-      font-family: 'SolaimanLipi';
-      src: url('fonts/SolaimanLipi.ttf') format('truetype');
-    }
-
-    body {
-      margin: 0;
-      font-family: 'SolaimanLipi', sans-serif;
-      background-color: #f0f0f0;
-    }
-
-    /* Toolbar styling */
-    .toolbar {
-      background-color: #01837A;
-      color: white;
-      padding: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;  /* Keep toolbar above content */
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .toolbar-title {
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .icon-img {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-    }
-
-    .search-box {
-      padding: 10px;
-      display: none;
-      background-color: #ffffff;
-    }
-
-    .search-box input {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      font-family: 'SolaimanLipi', sans-serif;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-
-    .book-list {
-      padding: 10px;
-      margin-top: 5px; /* For space below toolbar */
-      overflow-y: auto;
-    }
-
-    .book-item {
-      background-color: white;
-      margin-bottom: 10px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .book-item:hover {
-      transform: scale(1.01);
-    }
-
-    .book-number {
-      width: 46px;
-      height: 46px;
-      margin-right: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f1f1f1;
-      border-radius: 50%;
-      font-size: 14px;
-      font-weight: bold;
-      color: #5A0202;
-      text-align: center;
-    }
-
-    .book-info {
-      flex-grow: 1;
-    }
-
-    .book-title {
-      font-size: 16px;
-      font-weight: bold;
-      color: #222;
-    }
-
-    .book-author {
-      font-size: 14px;
-      color: #666;
-    }
+    /* Your existing CSS */
   </style>
 </head>
 <body>
@@ -125,16 +23,15 @@
 
   <!-- Search Box -->
   <div class="search-box" id="searchBox">
-    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন..." onkeyup="searchBooks()">
+    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন..." onkeyup="debouncedSearch()">
   </div>
 
   <!-- Book List -->
-  <div class="book-list" id="bookList">
-    <!-- বইয়ের ডেটা এখানে লোড হবে -->
-  </div>
+  <div class="book-list" id="bookList"></div>
 
   <script>
     let allBooks = [];  // Store all books globally
+    let timeout;  // Timeout for debounce
 
     function goBack() {
       window.location.href = 'main.html';
@@ -142,12 +39,8 @@
 
     function toggleSearchBox() {
       const searchBox = document.getElementById('searchBox');
-      if (searchBox.style.display === 'none' || searchBox.style.display === '') {
-        searchBox.style.display = 'block';
-        document.getElementById('searchInput').focus();
-      } else {
-        searchBox.style.display = 'none';
-      }
+      searchBox.style.display = searchBox.style.display === 'none' ? 'block' : 'none';
+      document.getElementById('searchInput').focus();
     }
 
     function convertToBanglaNumber(number) {
@@ -156,6 +49,14 @@
         '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯'
       };
       return number.toString().split('').map(char => engToBan[char] || char).join('');
+    }
+
+    // Debounced search function
+    function debouncedSearch() {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        searchBooks();
+      }, 300);  // 300ms delay after last keystroke
     }
 
     function searchBooks() {
@@ -174,9 +75,9 @@
         const bookItem = document.createElement('div');
         bookItem.className = 'book-item';
 
-        const bookId = convertToBanglaNumber(index + 1);  // বইয়ের পজিশন অনুযায়ী নাম্বার
-        const bookName = book.name.trim();  // বইয়ের নাম
-        const bookAuthor = book.author.trim();  // লেখক
+        const bookId = convertToBanglaNumber(index + 1);
+        const bookName = book.name.trim();
+        const bookAuthor = book.author.trim();
 
         bookItem.onclick = function () {
           const encodedBookId = encodeURIComponent(book.bookid);
@@ -199,7 +100,7 @@
     fetch('https://islamibook-beryl.vercel.app/file.json')
       .then(response => response.json())
       .then(data => {
-        allBooks = data;  // Store all books in the global variable
+        allBooks = data;
         displayBooks(allBooks);  // Initially display all books
       })
       .catch(error => {
