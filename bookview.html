@@ -91,6 +91,12 @@
     const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
     document.getElementById('bookTitle').innerText = bookName;
 
+    // Function to convert English numbers to Bangla
+    function convertToBanglaNumber(number) {
+      const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+      return number.toString().split('').map(digit => banglaDigits[parseInt(digit)]).join('');
+    }
+
     function loadContent() {
       fetch(`https://islamibook-beryl.vercel.app/book/${bookid}.json`)
         .then(res => res.json())
@@ -104,7 +110,7 @@
             const div = document.createElement('div');
             div.className = 'content-item';
             div.innerHTML = `
-              <h2>অধ্যায় ${index + 1}</h2>
+              <h2>${convertToBanglaNumber(index + 1)}</h2> <!-- Convert index number to Bangla -->
               <p onclick="openView(${index})" style="cursor: pointer; color: #01837A;">${item["1"]}</p>
             `;
             contentDiv.appendChild(div);
