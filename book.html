@@ -125,7 +125,7 @@
 
   <!-- Search Box -->
   <div class="search-box" id="searchBox">
-    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন...">
+    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন..." onkeyup="searchBooks()">
   </div>
 
   <!-- Book List -->
@@ -134,6 +134,8 @@
   </div>
 
   <script>
+    let allBooks = [];  // Store all books globally
+
     function goBack() {
       window.location.href = 'main.html';
     }
@@ -156,35 +158,49 @@
       return number.toString().split('').map(char => engToBan[char] || char).join('');
     }
 
+    function searchBooks() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      const filteredBooks = allBooks.filter(book => {
+        return book.name.toLowerCase().includes(searchTerm) || book.author.toLowerCase().includes(searchTerm);
+      });
+      displayBooks(filteredBooks);
+    }
+
+    function displayBooks(books) {
+      const bookList = document.getElementById('bookList');
+      bookList.innerHTML = ''; // Clear existing list
+
+      books.forEach((book, index) => {
+        const bookItem = document.createElement('div');
+        bookItem.className = 'book-item';
+
+        const bookId = convertToBanglaNumber(index + 1);  // বইয়ের পজিশন অনুযায়ী নাম্বার
+        const bookName = book.name.trim();  // বইয়ের নাম
+        const bookAuthor = book.author.trim();  // লেখক
+
+        bookItem.onclick = function () {
+          const encodedBookId = encodeURIComponent(book.bookid);
+          const encodedBookName = encodeURIComponent(bookName);
+          window.location.href = `bookview.html?bookid=${encodedBookId}&name=${encodedBookName}`;
+        };
+
+        bookItem.innerHTML = `
+          <div class="book-number">${bookId}</div>
+          <div class="book-info">
+            <div class="book-title">${bookName}</div>
+            <div class="book-author"><strong>লেখকঃ</strong> ${bookAuthor}</div>
+          </div>
+        `;
+
+        bookList.appendChild(bookItem);
+      });
+    }
+
     fetch('https://islamibook-beryl.vercel.app/file.json')
       .then(response => response.json())
       .then(data => {
-        const bookList = document.getElementById('bookList');
-
-        data.forEach((book, index) => {
-          const bookItem = document.createElement('div');
-          bookItem.className = 'book-item';
-
-          const bookId = convertToBanglaNumber(index + 1);  // বইয়ের পজিশন অনুযায়ী নাম্বার
-          const bookName = book.name.trim();  // বইয়ের নাম
-          const bookAuthor = book.author.trim();  // লেখক
-
-          bookItem.onclick = function () {
-            const encodedBookId = encodeURIComponent(book.bookid);
-            const encodedBookName = encodeURIComponent(bookName);
-            window.location.href = `bookview.html?bookid=${encodedBookId}&name=${encodedBookName}`;
-          };
-
-          bookItem.innerHTML = `
-            <div class="book-number">${bookId}</div>
-            <div class="book-info">
-              <div class="book-title">${bookName}</div>
-              <div class="book-author"><strong>লেখকঃ</strong> ${bookAuthor}</div>
-            </div>
-          `;
-
-          bookList.appendChild(bookItem);
-        });
+        allBooks = data;  // Store all books in the global variable
+        displayBooks(allBooks);  // Initially display all books
       })
       .catch(error => {
         console.error('বই লোড করতে সমস্যা হয়েছে:', error);
