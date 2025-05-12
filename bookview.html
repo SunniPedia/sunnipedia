@@ -16,33 +16,31 @@
     }
 
     .toolbar {
-      background-color: #01837A;
-      color: white;
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+  background-color: #01837A;
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-    .toolbar img {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-    }
+.toolbar h1 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  margin: 0;
+}
 
-    .toolbar h1 {
-      flex: 1;
-      text-align: center;
-      font-size: 18px;
-      margin: 0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+    .icon-img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
 
     #searchBox {
       display: none;
@@ -82,7 +80,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('books.png');
+      background-image: url('ic_1_4.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -115,10 +113,14 @@
 <body>
 
   <div class="toolbar">
-    <img src="back.png" alt="Back" onclick="history.back()">
-    <h1 id="bookTitle">বই</h1>
-    <img src="search.png" alt="Search" onclick="toggleSearch()">
+  <div class="back-button" onclick="history.back()">
+    <img src="back.png" alt="Back" class="icon-img">
   </div>
+  <h1 id="bookTitle">বই</h1>
+  <div class="search-icon" onclick="toggleSearch()">
+    <img src="search.png" alt="Search" class="icon-img">
+  </div>
+</div>
 
   <div id="searchBox">
     <input type="text" id="searchInput" placeholder="খুঁজুন..." oninput="filterContent()">
