@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ভিউ দেখুন</title>
+  <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'SolaimanLipi', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .content {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .content h2 {
+      font-size: 20px;
+    }
+
+    .content p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>অধ্যায়</h1>
+  <div id="content" class="content"></div>
+
+  <script>
+    const selectedIndex = sessionStorage.getItem('selectedIndex');
+    const bookData = JSON.parse(sessionStorage.getItem('bookData'));
+
+    if (selectedIndex !== null && bookData) {
+      const item = bookData[selectedIndex];
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = `
+        <h2>অধ্যায় ${Number(selectedIndex) + 1}</h2>
+        <p><strong>পাঠ্য:</strong> ${item["1"]}</p>
+        <p><strong>গোপন:</strong> ${item["2"]}</p>
+      `;
+    } else {
+      document.getElementById('content').innerHTML = '<p>কোনো তথ্য পাওয়া যায়নি।</p>';
+    }
+  </script>
+
+</body>
+</html>
