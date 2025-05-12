@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Main - ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    /* Toolbar */
+    .toolbar {
+      background-color: #01837A;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+
+    .toolbar-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Drawer */
+    .drawer {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #ffffff;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: left 0.3s ease;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .drawer.open {
+      left: 0;
+    }
+
+    .drawer h3 {
+      background-color: #01837A;
+      color: white;
+      padding: 16px;
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .drawer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .drawer ul li {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    /* Card View */
+    .card {
+      background-color: #e0f2f1;
+      margin: 16px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+    }
+
+    /* Grid View */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 16px;
+  height: calc(100vh - 220px); /* Adjust this based on how tall your toolbar + card section is */
+  overflow-y: auto;
+    }
+.grid-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;           /* Crop করে */
+  object-position: center;     /* মাঝখানে রাখে */
+  padding: 5px;
+  border-radius: 8px;          /* চাইলে নরম কোণা */
+}
+    .grid-item {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      display: none;
+      z-index: 999;
+    }
+
+    .overlay.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
+    <div class="toolbar-title">ইসলামী বিশ্বকোষ ও আল হাদিস S2</div>
+  </div>
+
+  <!-- Drawer -->
+  <div class="drawer" id="drawer">
+    <h3>মেনু</h3>
+    <ul>
+      <li>ডেভেলপার: আব্দুল মুস্তফা রাহিম রমজান</li>
+      <li onclick="shareApp()">শেয়ার করুন</li>
+      <li onclick="rateApp()">রেটিং দিন</li>
+    </ul>
+  </div>
+
+  <div class="overlay" id="overlay" onclick="toggleDrawer()"></div>
+
+  <!-- Card View -->
+  <div class="card">
+    <img src="icon.png" alt="App Icon">
+    <p style="margin-top:10px; font-weight:bold;">ইসলামী বিশ্বকোষ ও আল হাদিস</p>
+  </div>
+
+<!-- Grid View -->
+<div class="grid">
+  <div class="grid-item" onclick="location.href='quran.html'">
+    <img src="alquran.png" alt="Quran" class="grid-icon">
+    <div>আল কুরআন</div>
+  </div>
+  <div class="grid-item"
+onclick="location.href='tafsir.html'">
+    <img src="tafsir.png" alt="Tafsir" class="grid-icon">
+    <div>তাফসির সমগ্র</div>
+  </div>
+  <div class="grid-item">
+    <img src="hadis.png" alt="Hadith" class="grid-icon">
+    <div>হাদিস সমগ্র</div>
+  </div>
+  <div class="grid-item">
+    <img src="blog.png" alt="Encyclopedia" class="grid-icon">
+    <div>ইসলামী বিশ্বকোষ</div>
+  </div>
+  <div class="grid-item">
+    <img src="book.png" alt="Books" class="grid-icon">
+    <div>ইসলামী বই</div>
+  </div>
+  <div class="grid-item">
+  <img src="writer.png" alt="Writer Books" class="grid-icon">
+  <div>লেখকভিত্তিক বই</div>
+</div>
+
+<div class="grid-item">
+  <img src="subject.png" alt="Subject Books" class="grid-icon">
+  <div>বিষয়ভিত্তিক বই</div>
+</div>
+
+<div class="grid-item">
+  <img src="book.png" alt="Online Books 1" class="grid-icon">
+  <div>অনলাইন বই ১</div>
+</div>
+
+<div class="grid-item">
+  <img src="text.png" alt="Online Books 2" class="grid-icon">
+  <div>অনলাইন বই ২</div>
+</div>
+
+<div class="grid-item">
+  <img src="names99.png" alt="Asmaul Husna" class="grid-icon">
+  <div>আসমাউল হুসনা</div>
+</div>
+
+<div class="grid-item">
+  <img src="nabi.png" alt="Asmaul Nabi" class="grid-icon">
+  <div>আসমাউল নবী</div>
+</div>
+
+<div class="grid-item">
+  <img src="naat.png" alt="Naat" class="grid-icon">
+  <div>নাতে মুস্তফা (ﷺ)</div>
+</div>
+
+<div class="grid-item">
+  <img src="prayer-time.png" alt="Prayer Time" class="grid-icon">
+  <div>নামাজের সময়</div>
+</div>
+
+<div class="grid-item">
+  <img src="sehri.png" alt="Sehri Iftar" class="grid-icon">
+  <div>সেহরি ও ইফতার</div>
+</div>
+
+<div class="grid-item">
+  <img src="dua.png" alt="Dua" class="grid-icon">
+  <div>মাসনুন দু’আ</div>
+</div>
+
+<div class="grid-item">
+  <img src="tasbih.png" alt="Tasbih" class="grid-icon">
+  <div>তাসবিহ</div>
+</div>
+
+<div class="grid-item">
+  <img src="article.png" alt="Offline Articles" class="grid-icon">
+  <div>প্রবন্ধ</div>
+</div>
+
+<div class="grid-item">
+  <img src="blog.png" alt="Online Articles" class="grid-icon">
+  <div>অনলাইন প্রবন্ধ</div>
+</div>
+
+<div class="grid-item">
+  <img src="lecture.png" alt="Bayaan" class="grid-icon">
+  <div>বয়ান</div>
+</div>
+
+<div class="grid-item">
+  <img src="namaz.png" alt="Namaz" class="grid-icon">
+  <div>নামায</div>
+</div>
+
+<div class="grid-item">
+  <img src="roja.png" alt="Roza" class="grid-icon">
+  <div>রোযা</div>
+</div>
+
+<div class="grid-item">
+  <img src="zakat.png" alt="Zakat" class="grid-icon">
+  <div>যাকাত</div>
+</div>
+
+<div class="grid-item">
+  <img src="hajj.png" alt="Hajj" class="grid-icon">
+  <div>হজ্জ ও উমরা</div>
+</div>
+
+<div class="grid-item">
+  <img src="sunnah.png" alt="Sunnah" class="grid-icon">
+  <div>সুন্নাহ</div>
+</div>
+
+<div class="grid-item">
+  <img src="post.png" alt="Selected Posts" class="grid-icon">
+  <div>নির্বাচিত পোষ্ট</div>
+</div>
+
+<div class="grid-item">
+  <img src="masayel.png" alt="Masayel" class="grid-icon">
+  <div>মাসায়েল</div>
+</div>
+
+<div class="grid-item">
+  <img src="name.png" alt="Islamic Names" class="grid-icon">
+  <div>ইসলামীক নাম</div>
+</div>
+
+<div class="grid-item">
+  <img src="live.png" alt="Live" class="grid-icon">
+  <div>লাইভ</div>
+</div>
+
+<div class="grid-item">
+  <img src="mosque.png" alt="Find Mosque" class="grid-icon">
+  <div>মসজিদ খুঁজুন</div>
+</div>
+
+<div class="grid-item">
+  <img src="qibla.png" alt="Qibla Compass" class="grid-icon">
+  <div>ক্বিবলা কম্পাস</div>
+</div>
+
+<div class="grid-item">
+  <img src="feedback.png" alt="Feedback" class="grid-icon">
+  <div>পরামর্শ লিখুন</div>
+</div>
+
+<div class="grid-item">
+  <img src="feedback.png" alt="Rate App" class="grid-icon">
+  <div>রেটিং অ্যাপ</div>
+</div>
+
+<div class="grid-item">
+  <img src="feedback.png" alt="Complain" class="grid-icon">
+  <div>অভিযোগ</div>
+</div>
+</div>
+
+  <script>
+    function toggleDrawer() {
+      const drawer = document.getElementById('drawer');
+      const overlay = document.getElementById('overlay');
+      drawer.classList.toggle('open');
+      overlay.classList.toggle('show');
+    }
+
+    function shareApp() {
+      alert("শেয়ার লিংক: https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500");
+    }
+
+    function rateApp() {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500";
+    }
+  </script>
+
+</body>
+</html>

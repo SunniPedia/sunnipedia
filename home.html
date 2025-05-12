@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @font-face {
+            font-family: 'SolaimanLipi';
+            src: url('fonts/SolaimanLipi.ttf') format('truetype');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: #01837A;
+            font-family: 'SolaimanLipi', sans-serif;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .app-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+        }
+
+        .bottom-section {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+
+        .darood {
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding: 0 10px;
+        }
+
+        .app-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            min-height: 24px;
+        }
+
+        .developer {
+            font-size: 14px;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 400px) {
+            .app-icon {
+                width: 110px;
+                height: 110px;
+            }
+
+            .app-name {
+                font-size: 16px;
+            }
+
+            .darood, .developer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center-content">
+        <img src="icon.png" alt="App Icon" class="app-icon">
+    </div>
+
+    <div class="bottom-section">
+        <div class="darood">❝আল্লাহুম্মা ছাল্লি আলা সাইয়্যিদিনা মুহাম্মাদিনিন নাবিয়্যিল উম্মিই ওয়া আলা আলিহি ওয়া সাল্লিম।❞</div>
+        <div class="app-name" id="appName"></div>
+        <div class="developer">ডেভেলপার : আব্দুল মুস্তফা রাহিম রমজান</div>
+    </div>
+
+    <script>
+        const appNameText = "ইসলামী বিশ্বকোষ ও আল হাদিস S2";
+        const appNameElement = document.getElementById('appName');
+        let index = 0;
+
+        function typeText() {
+            if (index < appNameText.length) {
+                appNameElement.textContent += appNameText.charAt(index);
+                index++;
+                setTimeout(typeText, 100);
+            } else {
+                setTimeout(() => {
+                    window.location.href = "main.html";
+                }, 1000);
+            }
+        }
+
+        typeText();
+    </script>
+
+</body>
+</html>

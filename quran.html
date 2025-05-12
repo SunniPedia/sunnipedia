@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আল কুরআন</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Amiri';
+      src: url('fonts/Amiri-Regular.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .toolbar {
+      background-color: #01837A;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .icon-img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .toolbar-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .search-box {
+      padding: 10px;
+      display: none;
+      background-color: #ffffff;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      font-family: 'SolaimanLipi', sans-serif;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .surah-list {
+      padding: 10px;
+height: calc(100vh - 120px); /* Adjust this based on how tall your toolbar + card section is */
+  overflow-y: auto;
+    }
+
+    .surah-item {
+      background-color: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .surah-item:hover {
+      transform: scale(1.01);
+    }
+
+    .surah-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .surah-number {
+      font-weight: bold;
+      color: #01837A;
+      font-size: 16px;
+    }
+
+    .surah-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .surah-details {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .surah-arabic {
+      margin-top: 5px;
+      font-size: 20px;
+      color: #000;
+      text-align: right;
+      font-family: 'Amiri', serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="back-button" onclick="goBack()">
+      <img src="back.png" alt="পেছনে যান" class="icon-img">
+    </div>
+    <div class="toolbar-title">আল কুরআন</div>
+    <div class="search-icon" onclick="toggleSearchBox()">
+      <img src="search.png" alt="অনুসন্ধান" class="icon-img">
+    </div>
+  </div>
+
+  <!-- Search Box -->
+  <div class="search-box" id="searchBox">
+    <input type="text" id="searchInput" placeholder="সূরা খুঁজুন...">
+  </div>
+
+  <!-- Surah List -->
+  <div class="surah-list" id="surahList">
+    <!-- সূরা ডেটা এখানে লোড হবে -->
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = 'main.html';
+    }
+
+    function toggleSearchBox() {
+      const searchBox = document.getElementById('searchBox');
+      if (searchBox.style.display === 'none' || searchBox.style.display === '') {
+        searchBox.style.display = 'block';
+        document.getElementById('searchInput').focus();
+      } else {
+        searchBox.style.display = 'none';
+      }
+    }
+
+    function getBanglaType(type) {
+      if (type === "مکی") return "মক্কায় অবতীর্ণ";
+      if (type === "مدنی") return "মাদিনায় অবতীর্ণ";
+      return "অজানা স্থান";
+    }
+
+    function convertToBanglaNumber(number) {
+      const engToBan = {
+        '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪',
+        '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯'
+      };
+      return number.toString().split('').map(char => engToBan[char] || char).join('');
+    }
+
+    fetch('https://islamiencyclopedia0-github-com.vercel.app/sura.json')
+      .then(response => response.json())
+      .then(data => {
+        const surahList = document.getElementById('surahList');
+
+        data.forEach(surah => {
+          const surahItem = document.createElement('div');
+          surahItem.className = 'surah-item';
+
+          const banglaBookId = convertToBanglaNumber(surah.bookid);
+          const banglaVerses = convertToBanglaNumber(surah.verses);
+          const surahUrlName = encodeURIComponent(surah.author.trim());
+
+          surahItem.onclick = function () {
+            window.location.href = `quranview.html?surah=${surahUrlName}`;
+          };
+
+          surahItem.innerHTML = `
+            <div class="surah-header">
+              <div class="surah-number">সূরা ${banglaBookId}</div>
+              <div class="surah-name">${surah.name.trim()}</div>
+            </div>
+            <div class="surah-details">
+              আয়াত সংখ্যা: ${banglaVerses} | অবতীর্ণ স্থান: ${getBanglaType(surah.type)}
+            </div>
+            <div class="surah-arabic">${surah.names}</div>
+          `;
+
+          surahList.appendChild(surahItem);
+        });
+
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function () {
+          const keyword = this.value.toLowerCase();
+          const items = document.querySelectorAll('.surah-item');
+
+          items.forEach(item => {
+            const name = item.querySelector('.surah-name').textContent.toLowerCase();
+            const number = item.querySelector('.surah-number').textContent.toLowerCase();
+            const arabic = item.querySelector('.surah-arabic').textContent.toLowerCase();
+
+            if (name.includes(keyword) || number.includes(keyword) || arabic.includes(keyword)) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+
+      })
+      .catch(error => {
+        console.error('সূরা লোড করতে সমস্যা হয়েছে:', error);
+      });
+  </script>
+
+</body>
+</html>
