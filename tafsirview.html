@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>তাফসির বিস্তারিত</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="tafsir.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'NooreHuda';
+      src: url('fonts/noorehuda.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #ffffff;
+    }
+
+    .toolbar {
+      background-color: #01837A;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .toolbar-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .icon-img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    #loading {
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .ayah-card {
+      margin: 10px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+
+    .top-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .number-box {
+      width: 50px;
+      height: 50px;
+      background-image: url('ic_1_4.png');
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .number-text {
+      font-size: 11px;
+      font-weight: bold;
+      color: #607D8B;
+    }
+
+    .tafsir-text {
+      font-size: 16px;
+      color: #000;
+      margin: 10px 0;
+    }
+
+    button {
+      background-color: #01837A;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
-  <div id="app">
-    <h1 id="suraTitle">তাফসির বিস্তারিত</h1>
-    <div id="tafsirContent"></div>
-    <button onclick="history.back()">পেছনে যান</button>
+  <div class="toolbar">
+    <img src="back.png" alt="Back" class="icon-img" onclick="history.back()">
+    <div class="toolbar-title" id="suraTitle">তাফসির</div>
+    <div style="width: 24px;"></div>
   </div>
+  <div id="loading">লোড হচ্ছে...</div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;"></div>
+
+  <script src="tafsir.js"></script>
 </body>
 </html>
