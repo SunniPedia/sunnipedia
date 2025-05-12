@@ -449,9 +449,11 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
 ${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
   <div class="khazinul">তাফসিরে খাযাইনুল ইরফান</div>  
   <div class="khazinul-text">${ayah.khazainulirfan}</div>  
-  <div class="irfan">ইরফানুল কুরআন</div>  
-  <div class="irfan-text">${ayah.author || ''}</div>
 ` : ''}
+
+<div class="irfan">ইরফানুল কুরআন</div>  
+<div class="irfan-text">${ayah.author || ''}</div>
+
             `;  
   
             ayahList.appendChild(card);  
