@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>বই দেখুন</title>
+  <title>বই পড়ুন</title>
   <style>
     @font-face {
       font-family: 'SolaimanLipi';
@@ -136,28 +136,26 @@
     }
 
     function searchContent() {
-  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-  const filtered = fullData
-    .map((item, idx) => ({ ...item, originalIndex: idx }))
-    .filter(item => item["1"] && item["1"].toLowerCase().includes(searchTerm));
-  displayContent(filtered);
-}
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = fullData.filter(item => item["1"] && item["1"].toLowerCase().includes(searchTerm));
+      displayContent(filtered);
+    }
 
-function displayContent(dataArray) {
-  const contentDiv = document.getElementById('content');
-  contentDiv.innerHTML = '';
+    function displayContent(dataArray) {
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = '';
 
-  dataArray.forEach((item, index) => {
-    if (!item["1"]) return;
-    const div = document.createElement('div');
-    div.className = 'content-item';
-    div.innerHTML = `
-      <h2>${convertToBanglaNumber(index + 1)}</h2>
-      <p onclick="openView(${item.originalIndex})" style="color: #01837A;">${item["1"]}</p>
-    `;
-    contentDiv.appendChild(div);
-  });
-}
+      dataArray.forEach((item, index) => {
+        if (!item["1"]) return;
+        const div = document.createElement('div');
+        div.className = 'content-item';
+        div.innerHTML = `
+          <h2>${convertToBanglaNumber(index + 1)}</h2>
+          <p onclick="openView(${item.originalIndex})" style="color: #01837A;">${item["1"]}</p>
+        `;
+        contentDiv.appendChild(div);
+      });
+    }
 
     function openView(index) {
       sessionStorage.setItem('selectedIndex', index);
@@ -171,8 +169,9 @@ function displayContent(dataArray) {
       fetch(`https://islamibook-beryl.vercel.app/book/${bookid}.json`)
         .then(res => res.json())
         .then(data => {
-          fullData = data;
-          sessionStorage.setItem('bookData', JSON.stringify(data));
+          // প্রতিটি item-এ originalIndex যোগ করো
+          fullData = data.map((item, idx) => ({ ...item, originalIndex: idx }));
+          sessionStorage.setItem('bookData', JSON.stringify(fullData));
           displayContent(fullData);
           loadingDiv.style.display = 'none';
         })
