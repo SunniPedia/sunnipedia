@@ -99,7 +99,7 @@ body {
   margin: 10px 0;  
 }  
 
-.kanzul, .irfan {  
+.kanzul, .irfan, khazainulirfan. {  
   font-size: 14px;  
   padding: 8px;  
   margin: 10px 0 5px;  
@@ -116,7 +116,12 @@ body {
   color: #1E88E5;  
 }  
 
-.kanzul-text, .irfan-text {  
+.khazainulirfan {  
+  background-color: #01837A;  
+  color: #1E88E5;  
+}  
+
+.kanzul-text, .irfan-text, .khazainulirfan  {  
   font-size: 16px;  
   color: #000;  
   margin: 5px 0 10px;  
@@ -236,13 +241,17 @@ function jumpToAyah() {
       return number.toString().split('').map(char => engToBan[char] || char).join('');  
     }  
   
-    function formatAyahText(ayahNum, arabic, kanzul, irfan) {  
+    function formatAyahText(ayahNum, arabic, kanzul, irfan, khazainulirfan) {  
       return `আয়াত নং : ${ayahNum}  
 ${arabic}  
   
 কানযুল ঈমান  
   
 ${ayahNum}. ${kanzul}  
+
+তাফসিরে খাযাইনুল ইরফান  
+  
+${khazainulirfan}
   
 ইরফানুল কুরআন  
   
@@ -256,8 +265,9 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       const ayahNum = el.dataset.num;  
       const arabic = el.dataset.arabic;  
       const kanzul = el.dataset.kanzul;  
-      const irfan = el.dataset.irfan;  
-      const text = formatAyahText(ayahNum, arabic, kanzul, irfan);  
+      const irfan = el.dataset.irfan;
+      const khazainulirfan = el.dataset.khazainulirfan;  
+      const text = formatAyahText(ayahNum, arabic, kanzul, irfan, khazainulirfan);  
       navigator.clipboard.writeText(text).then(() => {  
         alert("আয়াত কপি হয়েছে!");  
       });  
@@ -267,8 +277,9 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       const ayahNum = el.dataset.num;  
       const arabic = el.dataset.arabic;  
       const kanzul = el.dataset.kanzul;  
-      const irfan = el.dataset.irfan;  
-      const text = formatAyahText(ayahNum, arabic, kanzul, irfan);  
+      const irfan = el.dataset.irfan;
+      const khazainulirfan = el.dataset.khazainulirfan;  
+      const text = formatAyahText(ayahNum, arabic, kanzul, irfan, khazainulirfan);  
       if (navigator.share) {  
         navigator.share({ text: text }).catch(() => alert("শেয়ার ব্যর্থ হয়েছে"));  
       } else {  
@@ -433,8 +444,8 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
               <div class="kanzul">কানযুল ঈমান</div>  
               <div class="kanzul-text">${ayahNum}. ${ayah.name || ''}</div>
 ${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
-        <div class="irfan">তাফসিরে খাযাইনুল ইরফান</div>  
-        <div class="irfan-text">${ayah.khazainulirfan}</div>  
+        <div class="khazainulirfan">তাফসিরে খাযাইনুল ইরফান</div>  
+        <div class="khazainulirfan-text">${ayah.khazainulirfan}</div>  
               <div class="irfan">ইরফানুল কুরআন</div>  
               <div class="irfan-text">${ayah.author || ''}</div>` : ''}
             `;  
