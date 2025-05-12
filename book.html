@@ -16,6 +16,41 @@
       background-color: #f0f0f0;
     }
 
+    .toolbar {
+      background-color: #01837A;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .icon-img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .toolbar-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .search-box {
+      padding: 10px;
+      display: none;
+      background-color: #ffffff;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      font-family: 'SolaimanLipi', sans-serif;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
     .book-list {
       padding: 10px;
       overflow-y: auto;
@@ -69,11 +104,42 @@
 </head>
 <body>
 
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="back-button" onclick="goBack()">
+      <img src="back.png" alt="পেছনে যান" class="icon-img">
+    </div>
+    <div class="toolbar-title">ইসলামী বই সমাহার</div>
+    <div class="search-icon" onclick="toggleSearchBox()">
+      <img src="search.png" alt="অনুসন্ধান" class="icon-img">
+    </div>
+  </div>
+
+  <!-- Search Box -->
+  <div class="search-box" id="searchBox">
+    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন...">
+  </div>
+
+  <!-- Book List -->
   <div class="book-list" id="bookList">
     <!-- বইয়ের ডেটা এখানে লোড হবে -->
   </div>
 
   <script>
+    function goBack() {
+      window.location.href = 'main.html';
+    }
+
+    function toggleSearchBox() {
+      const searchBox = document.getElementById('searchBox');
+      if (searchBox.style.display === 'none' || searchBox.style.display === '') {
+        searchBox.style.display = 'block';
+        document.getElementById('searchInput').focus();
+      } else {
+        searchBox.style.display = 'none';
+      }
+    }
+
     fetch('https://islamibook-beryl.vercel.app/file.json')
       .then(response => response.json())
       .then(data => {
