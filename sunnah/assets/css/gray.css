@@ -1,0 +1,87 @@
+.toolbar_color_gray {
+    color: #D5D0CA;
+}
+
+.toolbar_color_transparent_gray {
+    color: #c8D5D0CA
+}
+
+.status_bar_color_gray {
+    color: #C5C0BB
+}
+
+.status_bar_color_transparent_gray {
+    color: #c8C5C0BB
+}
+
+.navigation_color_gray {
+    color: #B6B2AE
+}
+
+.navigation_color_transparent_gray {
+    color: #c8181818
+}
+
+.accent_color_gray {
+    color: #D6CDBF
+}
+
+.menu_separator_color_gray {
+    color: #DAD5D0
+}
+
+.background_color_gray {
+    background-color: #E5E0D8;
+}
+
+.background_color_transparent_gray {
+    background-color: #F8F8F8;
+}
+
+.background_color_selected_gray {
+    background-color: #D3CFC8;
+}
+
+.home_menu_color_gray {
+    color: #322517;
+}
+
+.home_menu_color_bold_gray {
+    color: #1C150D
+}
+
+.background_colorful_title_color_gray {
+    color: #39332B;
+}
+
+.background_colorful_title_color_bold_gray {
+    color: #2C2620;
+}
+
+.background_highlighted_title_color_gray {
+    color: #07C600;
+}
+
+.background_title_color_gray {
+    color: #333333;
+}
+
+.background_title_color_bold_gray {
+    color: #000000;
+}
+
+.background_title_color_light_gray {
+    color: #606060;
+}
+
+.toolbar_title_color_gray {
+    color: #000000;
+}
+
+.toolbar_title_color_selector_gray {
+    color: #5C3846;
+}
+
+.toolbar_subtitle_color_gray {
+    color: #222222;
+}

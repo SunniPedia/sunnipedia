@@ -1,0 +1,108 @@
+.toolbar_color_dark {
+    color: #2C2C2C;
+}
+
+.toolbar_color_transparent_dark {
+    color: #c82C2C2C
+}
+
+.status_bar_color_test_dark {
+    color: #cccccc
+}
+
+.status_bar_color_dark {
+    color: #222222
+}
+
+.status_bar_color_transparent_dark {
+    color: #c8222222
+}
+
+.navigation_color_dark {
+    color: #181818
+}
+
+.navigation_color_transparent_dark {
+    color: #c8181818
+}
+
+.accent_color_dark {
+    color: #444444
+}
+
+.menu_separator_color_dark {
+    color: #303030
+}
+
+.background_color_dark {
+    background-color: #373737;
+}
+
+.background_color_transparent_dark {
+    background-color: #403F3F;
+}
+
+.background_color_selected_dark {
+    background-color: #717171;
+}
+.home_menu_color_dark {
+    color: #ECECEC;
+}
+
+.home_menu_color_bold_dark {
+    color: #B6B6B6
+}
+
+.background_colorful_title_color_dark {
+    color: #ffffff;
+}
+
+.background_colorful_title_color_bold_dark {
+    color: #ffffff;
+}
+
+.background_highlighted_title_color_dark {
+    color: #3DC0F4;
+}
+
+.background_title_color_dark {
+    color: #EEEEEE;
+}
+
+.background_title_color_bold_dark {
+    color: #ffffff;
+}
+
+.background_title_color_light_dark {
+    color: #c9c9c9;
+}
+
+.toolbar_title_color_dark {
+    color: #ffffff;
+}
+
+.toolbar_title_color_selector_dark {
+    color: #5C3846;
+}
+
+.toolbar_subtitle_color_dark {
+    color: #DDDDDD;
+}
+
+.dropdown_dark .ng-dropdown-panel{
+    color: #DDDDDD;
+    background-color: #373737;
+}
+.dropdown_dark ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected{
+    color: #DDDDDD;
+    background-color: #373737;
+}
+
+.dropdown_dark {
+    color: #c9c9c9;
+}
+
+.dropdown_dark .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected {
+    color: #fff;
+    background-color: #717171;
+}
