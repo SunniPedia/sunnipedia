@@ -59,8 +59,8 @@ function loadTafsirView() {
         const div = document.createElement("div");
         div.className = "ayah";
         div.innerHTML = `
-          <h3>আয়াত ${ayah.verses} - ${ayah.names}</h3>
-          <p><strong>তাফসির:</strong> ${ayah.irfanul}</p>
+          <h3>${ayah.verses} - ${ayah.names}</h3>
+          <p><strong></strong> ${ayah.irfanul}</p>
         `;
         container.appendChild(div);
       });
