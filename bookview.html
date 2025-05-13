@@ -58,22 +58,24 @@
     }
 
     #searchBox {
-      padding: 10px;
-      background-color: #fff;
-      display: none;
-position: sticky;
-    }
+  padding: 10px;
+  background-color: #fff;
+  display: none;
+  position: sticky;
+  top: 56px; /* টুলবারের উচ্চতা অনুসারে ঠিক করুন */
+  z-index: 999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 
-    #searchInput {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-family: 'SolaimanLipi', sans-serif;
-      box-sizing: border-box;
-    }
-
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'SolaimanLipi', sans-serif;
+  box-sizing: border-box;
+}
     #loadingText {
       text-align: center;
       padding: 20px;
