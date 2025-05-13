@@ -2,36 +2,117 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>JSON ডেটা</title>
+  <title>বই তালিকা</title>
+  <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'SolaimanLipi', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+    }
+    .toolbar img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    .toolbar-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #searchBox {
+      display: none;
+      padding: 10px;
+      background-color: #eeeeee;
+    }
+    #searchInput {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      font-family: 'SolaimanLipi';
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: white;
+      margin: 5px 10px;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-  <h1>বই তালিকা</h1>
-  <ul id="bookList"></ul>
 
-  <script>
-    function getBanglaNumber(num) {
-      const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
-      return num.toString().split('').map(d => banglaDigits[+d] || d).join('');
-    }
+<div class="toolbar">
+  <img src="back.png" onclick="history.back()" alt="Back">
+  <div class="toolbar-title" id="toolbarTitle">বই তালিকা</div>
+  <img src="search.png" onclick="toggleSearch()" alt="Search">
+</div>
 
-    const params = new URLSearchParams(window.location.search);
-    const jsonURL = params.get('url');
+<div id="searchBox">
+  <input type="text" id="searchInput" placeholder="অনুসন্ধান করুন..." oninput="filterList()">
+</div>
 
-    if (jsonURL) {
-      fetch(jsonURL)
-        .then(res => res.json())
-        .then(data => {
-          const list = document.getElementById('bookList');
-          data.forEach((item, index) => {
-            const li = document.createElement('li');
-            li.textContent = `${getBanglaNumber(index + 1)}. ${item.name}`;
-            list.appendChild(li);
-          });
-        })
-        .catch(err => {
-          document.getElementById('bookList').textContent = 'ডেটা লোড করতে ব্যর্থ!';
+<ul id="bookList"></ul>
+
+<script>
+  function getBanglaNumber(num) {
+    const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+    return num.toString().split('').map(d => banglaDigits[+d] || d).join('');
+  }
+
+  function toggleSearch() {
+    const searchBox = document.getElementById('searchBox');
+    searchBox.style.display = searchBox.style.display === 'block' ? 'none' : 'block';
+    document.getElementById('searchInput').focus();
+  }
+
+  function filterList() {
+    const filter = document.getElementById('searchInput').value.toLowerCase();
+    const listItems = document.querySelectorAll('#bookList li');
+    listItems.forEach(item => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(filter) ? '' : 'none';
+    });
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const jsonURL = params.get('url');
+
+  // টুলবার টাইটেল সেট করা
+  if (jsonURL) {
+    const title = jsonURL.includes('author.json') ? 'লেখকভিত্তিক বই' :
+                  jsonURL.includes('subject.json') ? 'বিষয়ভিত্তিক বই' : 'বই তালিকা';
+    document.getElementById('toolbarTitle').textContent = title;
+  }
+
+  if (jsonURL) {
+    fetch(jsonURL)
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById('bookList');
+        data.forEach((item, index) => {
+          const li = document.createElement('li');
+          li.textContent = `${getBanglaNumber(index + 1)}. ${item.get}`;
+          list.appendChild(li);
         });
-    }
-  </script>
+      })
+      .catch(() => {
+        document.getElementById('bookList').textContent = 'ডেটা লোড করতে ব্যর্থ!';
+      });
+  }
+</script>
+
 </body>
 </html>
