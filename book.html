@@ -43,21 +43,24 @@
     }
 
     .search-box {
-      padding: 10px;
-      display: none;
-      background-color: #ffffff;
-position: sticky;
-    }
+  padding: 10px;
+  display: none;
+  background-color: #ffffff;
+  position: sticky;
+  top: 56px; /* টুলবারের উচ্চতা অনুযায়ী */
+  z-index: 999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 
-    .search-box input {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      font-family: 'SolaimanLipi', sans-serif;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: 'SolaimanLipi', sans-serif;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
     .book-list {
       padding: 10px;
