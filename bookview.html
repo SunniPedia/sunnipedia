@@ -27,7 +27,7 @@
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      min-height: 50px;
+      min-height: 30px;
     }
 
     .toolbar img {
@@ -37,15 +37,25 @@
     }
 
     .toolbar h1 {
-      flex: 1;
-      margin: 0;
-      font-size: 14px;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 50px;
-    }
+  flex: 1;
+  margin: 0;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  text-align: left;
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 8s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
 
     #searchBox {
       padding: 10px;
@@ -118,7 +128,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const bookid = urlParams.get('bookid');
     const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
-    document.getElementById('bookTitle').innerText = bookName;
+document.getElementById('bookTitle').innerHTML = `<span class="marquee">${bookName}</span>`;
 
     let fullData = [];
 
