@@ -118,9 +118,28 @@
 
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const bookid = urlParams.get('bookid');
-    const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
-    document.getElementById('bookTitle').innerHTML = `<span class="marquee">${bookName}</span>`;
+const bookid = urlParams.get('bookid');
+const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
+
+const bookTitle = document.getElementById('bookTitle');
+
+// create temp span to measure actual width
+const tempSpan = document.createElement('span');
+tempSpan.style.visibility = 'hidden';
+tempSpan.style.position = 'absolute';
+tempSpan.style.whiteSpace = 'nowrap';
+tempSpan.style.fontSize = '14px';
+tempSpan.style.fontFamily = 'SolaimanLipi, sans-serif';
+tempSpan.innerText = bookName;
+document.body.appendChild(tempSpan);
+
+if (tempSpan.offsetWidth > bookTitle.offsetWidth) {
+  bookTitle.innerHTML = `<span class="marquee">${bookName}</span>`;
+} else {
+  bookTitle.innerText = bookName;
+}
+
+document.body.removeChild(tempSpan);
 
     let fullData = [];
 
