@@ -15,7 +15,6 @@
       margin: 0;
     }
 
-    /* Toolbar Style */
     .toolbar {
       background-color: #01837A;
       color: white;
@@ -36,10 +35,9 @@
       text-align: center;
       font-size: 20px;
       font-weight: bold;
-      margin-left: -24px; /* Center-align despite icons */
+      margin-left: -24px;
     }
 
-    /* Blog Post Styles */
     .container {
       padding: 16px;
       max-width: 800px;
@@ -53,20 +51,13 @@
       padding: 15px;
       margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      cursor: pointer;
     }
 
     .post h2 {
       margin: 0 0 10px;
       font-size: 22px;
-    }
-
-    .post h2 a {
       color: #0077cc;
-      text-decoration: none;
-    }
-
-    .post h2 a:hover {
-      text-decoration: underline;
     }
 
     .date {
@@ -89,20 +80,18 @@
 </head>
 <body>
 
-  <!-- Toolbar -->
   <div class="toolbar">
     <img src="back.png" alt="Back" onclick="history.back();">
     <div class="toolbar-title">অনলাইন প্রবন্ধ</div>
     <img src="search.png" alt="Search" onclick="alert('সার্চ বাটন টগল হয়েছে');">
   </div>
 
-  <!-- Blog Posts -->
   <div class="container" id="posts"></div>
   <div class="loading" id="loading">লোড হচ্ছে...</div>
 
   <script>
-    const blogId = '1026841798692566128'; // ব্লগ আইডি
-    const apiKey = 'AIzaSyATFI9QFBl1zlFKDw6GsGNWFavRaWSe4Fs'; // Blogger API Key
+    const blogId = '1026841798692566128';
+    const apiKey = 'AIzaSyATFI9QFBl1zlFKDw6GsGNWFavRaWSe4Fs';
     let nextPageToken = '';
     let loading = false;
 
@@ -112,9 +101,7 @@
       document.getElementById('loading').style.display = 'block';
 
       let url = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}&maxResults=5`;
-      if (nextPageToken) {
-        url += `&pageToken=${nextPageToken}`;
-      }
+      if (nextPageToken) url += `&pageToken=${nextPageToken}`;
 
       fetch(url)
         .then(response => response.json())
@@ -129,10 +116,19 @@
             const plainText = tempDiv.textContent || tempDiv.innerText || '';
 
             postDiv.innerHTML = `
-              <h2><a href="${post.url}" target="_blank">${post.title}</a></h2>
+              <h2>${post.title}</h2>
               <div class="date">তারিখ: ${new Date(post.published).toLocaleDateString('bn-BD')}</div>
               <div class="excerpt">${plainText.substring(0, 200)}...</div>
             `;
+
+            postDiv.onclick = () => {
+              sessionStorage.setItem('blogPost', JSON.stringify({
+                title: post.title,
+                content: post.content
+              }));
+              location.href = 'blogview.html';
+            };
+
             postsDiv.appendChild(postDiv);
           });
 
@@ -150,10 +146,8 @@
         });
     }
 
-    // Initial Load
     loadPosts();
 
-    // Lazy Load on Scroll
     window.addEventListener('scroll', () => {
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && nextPageToken) {
         loadPosts();
