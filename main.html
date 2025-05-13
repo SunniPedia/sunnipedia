@@ -24,7 +24,29 @@
       display: flex;
       align-items: center;
     }
-
+    .dialog {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border: 1px solid #aaa;
+      box-shadow: 0 0 10px #999;
+      z-index: 9999;
+      display: none;
+    }
+    .dialog button {
+      margin: 5px;
+    }
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9998;
+      display: none;
+    }
     .menu-icon {
       font-size: 24px;
       cursor: pointer;
@@ -138,7 +160,12 @@
     <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
     <div class="toolbar-title">ইসলামী বিশ্বকোষ ও আল হাদিস S2</div>
   </div>
-
+<div class="overlay" id="overlay"></div>
+<div class="dialog" id="dialog">
+  <p>নির্বাচন করুন: ব্লগ বা ওয়েবসাইট</p>
+  <button onclick="goToOption('blog')">ব্লগ</button>
+  <button onclick="goToOption('website')">ওয়েবসাইট</button>
+</div>
   <!-- Drawer -->
   <div class="drawer" id="drawer">
     <h3>মেনু</h3>
@@ -183,18 +210,16 @@ onclick="location.href='https://www.sunni-encyclopedia.com/?m=1'">
     <img src="book.png" alt="Books" class="grid-icon">
     <div>ইসলামী বই</div>
   </div>
-  <div class="grid-item"
-onclick="location.href='https://www.sunni-encyclopedia.com/p/pdf-founded-by-masum-billah-sunny-click.html?m=1&_gl=1*uhs6fk*_ga*ODA2NzYzNzgxLjE3NDY5OTAxNDc.*_ga_1PRTC57BE2*czE3NDcwNjQ5MTckbzQkZzAkdDE3NDcwNjQ5MTckajYwJGwwJGgw'">
-  <img src="writer.png" alt="Writer Books" class="grid-icon">
+
+<div class="grid-item" onclick="showDialog('https://www.sunni-encyclopedia.com/p/pdf-founded-by-masum-billah-sunny-click.html?m=1', 'https://sunnipedia0.vercel.app/author.json')">
+  <img src="writer.png" alt="Writer Books">
   <div>লেখকভিত্তিক বই</div>
 </div>
 
-<div class="grid-item"
-onclick="location.href='https://www.sunni-encyclopedia.com/p/blog-page_70.html?m=1&_gl=1*1bbt02h*_ga*ODA2NzYzNzgxLjE3NDY5OTAxNDc.*_ga_1PRTC57BE2*czE3NDcwNjQ5MTckbzQkZzEkdDE3NDcwNjQ5MjQkajUzJGwwJGgw'">
-  <img src="subject.png" alt="Subject Books" class="grid-icon">
+<div class="grid-item" onclick="showDialog('https://www.sunni-encyclopedia.com/p/subject-books.html?m=1', 'https://sunnipedia0.vercel.app/subject.json')">
+  <img src="subject.png" alt="Subject Books">
   <div>বিষয়ভিত্তিক বই</div>
 </div>
-
 <div class="grid-item">
   <img src="book.png" alt="Online Books 1" class="grid-icon">
   <div>অনলাইন বই ১</div>
@@ -347,6 +372,29 @@ onclick="location.href='islamic-name/index.html'">
     function rateApp() {
       window.location.href = "https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500";
     }
+let blogURL = "";
+  let jsonURL = "";
+
+  function showDialog(blog, json) {
+    blogURL = blog;
+    jsonURL = json;
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("dialog").style.display = "block";
+  }
+
+  function hideDialog() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("dialog").style.display = "none";
+  }
+
+  function goToOption(option) {
+    hideDialog();
+    if (option === 'blog') {
+      window.location.href = blogURL;
+    } else if (option === 'website') {
+      window.location.href = 'get.html?url=' + encodeURIComponent(jsonURL);
+    }
+  }
   </script>
 
 </body>
