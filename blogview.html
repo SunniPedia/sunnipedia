@@ -131,7 +131,7 @@ function decreaseFont() {
 
     function copyContent() {
       const tempInput = document.createElement('textarea');
-      tempInput.value = titleEl.innerText + '\n\n' + contentEl.innerText;
+      tempInput.value = titleEl.innerText + '\n\n' + contentEl.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
       document.body.appendChild(tempInput);
       tempInput.select();
       document.execCommand('copy');
@@ -140,7 +140,7 @@ function decreaseFont() {
     }
 
     function shareContent() {
-      const textToShare = titleEl.innerText + '\n\n' + contentEl.innerText;
+      const textToShare = titleEl.innerText + '\n\n' + contentEl.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
       if (navigator.share) {
         navigator.share({ title: 'প্রবন্ধ', text: textToShare }).catch(console.error);
       } else {
