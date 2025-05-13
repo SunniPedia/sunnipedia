@@ -398,28 +398,28 @@ onclick="location.href='islamic-name/index.html'">
       window.location.href = "https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500";
     }
 let blogURL = "";
-let jsonURL = "";
+  let jsonURL = "";
 
-function showDialog(blog, json) {
-  blogURL = blog;
-  jsonURL = json;
-  document.getElementById("overlay0").style.display = "block";
-  document.getElementById("dialog").style.display = "block";
-}
-
-function hideDialog() {
-  document.getElementById("overlay0").style.display = "none";
-  document.getElementById("dialog").style.display = "none";
-}
-
-function goToOption(option) {
-  hideDialog();
-  if (option === 'blog') {
-    window.location.href = blogURL;
-  } else if (option === 'website') {
-    window.location.href = "booklist.html?json=" + encodeURIComponent(jsonURL);
+  function showDialog(blog, json) {
+    blogURL = blog;
+    jsonURL = json;
+    document.getElementById("overlay0").style.display = "block";
+    document.getElementById("dialog").style.display = "block";
   }
-}
+
+  function hideDialog() {
+    document.getElementById("overlay0").style.display = "none";
+    document.getElementById("dialog").style.display = "none";
+  }
+
+  function goToOption(option) {
+    hideDialog();
+    if (option === 'blog') {
+      window.location.href = blogURL;
+    } else if (option === 'website') {
+      window.location.href = 'get.html?url=' + encodeURIComponent(jsonURL);
+    }
+  }
   </script>
 
 </body>
