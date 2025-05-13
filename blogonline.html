@@ -85,6 +85,24 @@
       color: #555;
       padding: 10px;
     }
+
+    .search-box {
+      display: none;
+      padding: 10px;
+      background-color: #ddd;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    #loading {
+      display: none;
+    }
+
   </style>
 </head>
 <body>
@@ -93,7 +111,12 @@
   <div class="toolbar">
     <img src="back.png" alt="Back" onclick="history.back();">
     <div class="toolbar-title">অনলাইন প্রবন্ধ</div>
-    <img src="search.png" alt="Search" onclick="alert('সার্চ বাটন টগল হয়েছে');">
+    <img src="search.png" alt="Search" onclick="toggleSearch()" />
+  </div>
+
+  <!-- Search Box -->
+  <div class="search-box" id="searchBox">
+    <input type="text" id="searchInput" placeholder="অনুসন্ধান করুন..." onkeydown="if(event.key==='Enter') searchPosts()" />
   </div>
 
   <!-- Blog Posts -->
@@ -106,6 +129,56 @@
     let nextPageToken = '';
     let loading = false;
 
+    // Toggle the search box visibility
+    function toggleSearch() {
+      const searchBox = document.getElementById('searchBox');
+      searchBox.style.display = searchBox.style.display === 'none' ? 'block' : 'none';
+      if (searchBox.style.display === 'block') {
+        document.getElementById('searchInput').focus();
+      }
+    }
+
+    // Search posts
+    function searchPosts() {
+      const query = document.getElementById('searchInput').value.trim();
+      if (!query) return;
+
+      document.getElementById('loading').style.display = 'block';
+      fetch(`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts/search?q=${encodeURIComponent(query)}&key=${apiKey}`)
+        .then(res => res.json())
+        .then(data => {
+          const postsDiv = document.getElementById('posts');
+          postsDiv.innerHTML = ''; // Clear previous results
+          if (data.items) {
+            data.items.forEach(post => {
+              const postDiv = document.createElement('div');
+              postDiv.className = 'post';
+
+              const tempDiv = document.createElement('div');
+              tempDiv.innerHTML = post.content;
+              const plainText = tempDiv.textContent || tempDiv.innerText || '';
+              const shortText = plainText.substring(0, 200) + '...';
+
+              postDiv.innerHTML = `
+                <h2><a href="#" onclick='viewPost(${JSON.stringify(post).replace(/"/g, '&quot;')})'>${post.title}</a></h2>
+                <div class="date">তারিখ: ${new Date(post.published).toLocaleDateString('bn-BD')}</div>
+                <div class="excerpt">${shortText}</div>
+              `;
+              postsDiv.appendChild(postDiv);
+            });
+          } else {
+            postsDiv.innerHTML = '<p>কোনো ফলাফল পাওয়া যায়নি।</p>';
+          }
+          document.getElementById('loading').style.display = 'none';
+        })
+        .catch(err => {
+          console.error('Error:', err);
+          document.getElementById('loading').style.display = 'none';
+          alert('ডেটা লোড করতে সমস্যা হয়েছে।');
+        });
+    }
+
+    // Load posts
     function loadPosts() {
       if (loading) return;
       loading = true;
@@ -129,7 +202,7 @@
             const plainText = tempDiv.textContent || tempDiv.innerText || '';
 
             postDiv.innerHTML = `
-              <h2><a href="${post.url}" target="_blank">${post.title}</a></h2>
+              <h2><a href="#" onclick='viewPost(${JSON.stringify(post).replace(/"/g, '&quot;')})'>${post.title}</a></h2>
               <div class="date">তারিখ: ${new Date(post.published).toLocaleDateString('bn-BD')}</div>
               <div class="excerpt">${plainText.substring(0, 200)}...</div>
             `;
@@ -150,15 +223,26 @@
         });
     }
 
-    // Initial Load
-    loadPosts();
+    // View post on click
+    function viewPost(post) {
+      const data = [{
+        "1": post.title,
+        "2": (post.content || "").replace(/<[^>]+>/g, "") // HTML tag remove
+      }];
+      sessionStorage.setItem("bookData", JSON.stringify(data));
+      sessionStorage.setItem("selectedIndex", 0);
+      window.location.href = 'view.html'; // Redirect to view page
+    }
 
-    // Lazy Load on Scroll
+    // Infinite scroll logic
     window.addEventListener('scroll', () => {
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && nextPageToken) {
         loadPosts();
       }
     });
+
+    // Initial load
+    loadPosts();
   </script>
 
 </body>
