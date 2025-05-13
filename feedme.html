@@ -80,18 +80,21 @@
 </div>
 
 <script>
-  function hideDialog() {
+  function hideDialog(goBack = false) {
     document.getElementById('dialog').style.display = 'none';
+    if (goBack) {
+      window.history.back(); // আগের পেজে ফিরে যাও
+    }
   }
 
   function sendTelegram() {
     const message = document.getElementById('suggestionInput').value;
     if (message.trim() !== '') {
       const encoded = encodeURIComponent(message);
-      const url = `https://api.telegram.org/bot7842011534:AAHWKGmvev6_tjiYexQhSD2y2-8eri4Ugk0/sendMessage?chat_id=6268512666&text=${encoded}`;
+      const url = `https://api.telegram.org/bot<your_bot_token>/sendMessage?chat_id=<chat_id>&text=${encoded}`;
       fetch(url).then(() => {
         alert("মেসেজ টেলিগ্রামে পাঠানো হয়েছে");
-        hideDialog();
+        hideDialog(true);
       });
     } else {
       alert("দয়া করে কিছু লিখুন");
@@ -103,14 +106,14 @@
     const subject = encodeURIComponent("App Issue or Suggestion");
     const body = encodeURIComponent(message || "বইয়ের নাম বা অ্যাপের সমস্যা লিখুন...");
     window.location.href = `mailto:rajibhossain0684@gmail.com?subject=${subject}&body=${body}`;
-    hideDialog();
+    hideDialog(true);
   }
 
   function sendWhatsApp() {
     const message = document.getElementById('suggestionInput').value;
     const encoded = encodeURIComponent(message || "বইয়ের নাম বা অ্যাপের সমস্যা লিখুন...");
     window.open(`https://wa.me/8801814968616?text=${encoded}`, '_blank');
-    hideDialog();
+    hideDialog(true);
   }
 </script>
 
