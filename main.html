@@ -175,6 +175,55 @@
     .overlay.show {
       display: block;
     }
+ /* Dialog Styles */
+    .dialog-overlay0 {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      display: none; /* শুরুতেই visible */
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .dialog-box0 {
+      background: white;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .dialog-box0 textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .dialog-box0 button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background: #01837A;
+      color: white;
+      border-radius: 6px;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .close-btn {
+      background: #ccc;
+      color: black;
+    }
   </style>
 </head>
 <body>
@@ -191,6 +240,17 @@
   <button onclick="goToOption('blog')">ব্লগ</button>
   <button onclick="goToOption('website')">ওয়েবসাইট</button>
 </div>
+
+<div class="dialog-overlay0" id="dialog">
+  <div class="dialog-box0">
+    <textarea id="suggestionInput" placeholder="আপনার পরামর্শ লিখুন..."></textarea>
+    <button onclick="sendTelegram()">টেলিগ্রামে পাঠান</button>
+    <button onclick="sendEmail()">ইমেইলে পাঠান</button>
+    <button onclick="sendWhatsApp()">হোয়াটসঅ্যাপে পাঠান</button>
+    <button class="close-btn" onclick="hideDialog()">বন্ধ করুন</button>
+  </div>
+</div>
+
   <!-- Drawer -->
   <div class="drawer" id="drawer">
     <h3>মেনু</h3>
@@ -366,7 +426,7 @@ onclick="location.href='islamic-name/index.html'">
   <div>ক্বিবলা কম্পাস</div>
 </div>
 
-<div class="grid-item" onclick="location.href='feedme.html'">
+<div class="grid-item" onclick="showDialog()">
   <img src="feedback.png" alt="Feedback" class="grid-icon">
   <div>পরামর্শ লিখুন</div>
 </div>
@@ -419,6 +479,41 @@ let blogURL = "";
     } else if (option === 'website') {
       window.location.href = 'get.html?url=' + encodeURIComponent(jsonURL);
     }
+  }
+function showDialog() {
+    document.getElementById('dialog').style.display = 'flex';
+  }
+  function hideDialog() {
+    document.getElementById('dialog').style.display = 'none';
+  }
+
+  function sendTelegram() {
+    const message = document.getElementById('suggestionInput').value;
+    if (message.trim() !== '') {
+      const encoded = encodeURIComponent(message);
+      const url = `https://api.telegram.org/bot7842011534:AAHWKGmvev6_tjiYexQhSD2y2-8eri4Ugk0/sendMessage?chat_id=6268512666&text=${encoded}`;
+      fetch(url).then(() => {
+        alert("মেসেজ টেলিগ্রামে পাঠানো হয়েছে");
+        hideDialog();
+      });
+    } else {
+      alert("দয়া করে কিছু লিখুন");
+    }
+  }
+
+  function sendEmail() {
+    const message = document.getElementById('suggestionInput').value;
+    const subject = encodeURIComponent("App Issue or Suggestion");
+    const body = encodeURIComponent(message || "বইয়ের নাম বা অ্যাপের সমস্যা লিখুন...");
+    window.location.href = `mailto:rajibhossain0684@gmail.com?subject=${subject}&body=${body}`;
+    hideDialog();
+  }
+
+  function sendWhatsApp() {
+    const message = document.getElementById('suggestionInput').value;
+    const encoded = encodeURIComponent(message || "বইয়ের নাম বা অ্যাপের সমস্যা লিখুন...");
+    window.open(`https://wa.me/8801814968616?text=${encoded}`, '_blank');
+    hideDialog();
   }
   </script>
 
