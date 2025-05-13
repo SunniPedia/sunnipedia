@@ -19,7 +19,7 @@
     .toolbar {
       background-color: #01837A;
       color: white;
-      padding: 12px 16px;
+      padding: 8px 12px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -27,7 +27,7 @@
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      min-height: 30px;
+      min-height: 40px;
     }
 
     .toolbar img {
@@ -37,25 +37,25 @@
     }
 
     .toolbar h1 {
-  flex: 1;
-  margin: 0;
-  font-size: 14px;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  text-align: left;
-}
+      flex: 1;
+      margin: 0;
+      font-size: 14px;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      text-align: left;
+    }
 
-.marquee {
-  display: inline-block;
-  animation: marquee 8s linear infinite;
-  padding-left: 100%;
-}
+    .marquee {
+      display: inline-block;
+      animation: marquee 8s linear infinite;
+      padding-left: 100%;
+    }
 
-@keyframes marquee {
-  0%   { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
-}
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
 
     #searchBox {
       padding: 10px;
@@ -88,23 +88,15 @@
     .content-item {
       margin-bottom: 20px;
       padding: 15px;
-      background-color: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-    }
-
-    .content-item h2 {
-      margin: 0;
-      font-size: 18px;
-      color: #222;
-    }
-
-    .content-item p {
-      margin-top: 5px;
-      font-size: 16px;
-      color: #555;
-      line-height: 1.6;
       cursor: pointer;
+    }
+
+    .content-item h2, .content-item p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -128,7 +120,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const bookid = urlParams.get('bookid');
     const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
-document.getElementById('bookTitle').innerHTML = `<span class="marquee">${bookName}</span>`;
+    document.getElementById('bookTitle').innerHTML = `<span class="marquee">${bookName}</span>`;
 
     let fullData = [];
 
@@ -151,29 +143,33 @@ document.getElementById('bookTitle').innerHTML = `<span class="marquee">${bookNa
       displayContent(filtered);
     }
 
-    function displayContent(dataArray) {  
-  const contentDiv = document.getElementById('content');  
-  contentDiv.innerHTML = '';  
+    function displayContent(dataArray) {
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = '';
 
-  dataArray.forEach((item, index) => {  
-    if (!item["1"]) return;  
+      dataArray.forEach((item, index) => {
+        if (!item["1"]) return;
 
-    const isEmpty2 = !item["2"] || item["2"].trim() === '';  
-    const bgColor = isEmpty2 ? '#01837A' : '#fff';  
-    const textColor = isEmpty2 ? '#fff' : '#01837A';  
-    const textAlign = isEmpty2 ? 'center' : 'left';  
+        const isEmpty2 = !item["2"] || item["2"].trim() === '';
+        const bgColor = isEmpty2 ? '#01837A' : '#fff';
+        const textColor = isEmpty2 ? '#fff' : '#01837A';
+        const textAlign = isEmpty2 ? 'center' : 'left';
 
-    const div = document.createElement('div');  
-    div.className = 'content-item';  
-    div.style.backgroundColor = bgColor;  
-    div.onclick = () => openView(item.originalIndex);  
-    div.innerHTML = `  
-      <h2 style="color: ${textColor}; text-align: ${textAlign}">${convertToBanglaNumber(index + 1)}</h2>  
-      <p style="color: ${textColor}; text-align: ${textAlign}">${item["1"]}</p>  
-    `;  
-    contentDiv.appendChild(div);  
-  });  
-}
+        const div = document.createElement('div');
+        div.className = 'content-item';
+        div.style.backgroundColor = bgColor;
+        div.onclick = () => openView(item.originalIndex);
+        div.innerHTML = `
+          <h2 style="color: ${textColor}; text-align: ${textAlign}">
+            ${convertToBanglaNumber(index + 1)}
+          </h2>
+          <p style="color: ${textColor}; text-align: ${textAlign}">
+            ${item["1"]}
+          </p>
+        `;
+        contentDiv.appendChild(div);
+      });
+    }
 
     function openView(index) {
       sessionStorage.setItem('selectedIndex', index);
