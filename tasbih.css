@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'SolaimanLipi', sans-serif;
+    background: url('green_2.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    padding: 16px;
+    text-align: center;
+}
+
+.title-bar {
+    background-color: #01837A;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.button-row {
+    display: flex;
+    margin: 20px 0;
+}
+
+.button {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #ccc;
+    cursor: pointer;
+}
+
+.counter {
+    font-size: 30px;
+    margin: 10px;
+    background: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tasbih-button {
+    margin-top: 10px;
+}
+
+.tasbih-button img {
+    width: 100px;
+    height: 100px;
+}
+
+.viewpager {
+    height: 350px;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 15px;
+    overflow-y: auto;
+    padding: 10px;
+    box-shadow: 0 2px 5px #ccc;
+}
