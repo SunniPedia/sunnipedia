@@ -90,11 +90,26 @@
       color: #01837A;
       display: none;
     }
+
+    .back-button {
+      background-color: #01837A;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #016F5B;
+    }
   </style>
 </head>
 <body>
 
   <div class="toolbar">
+    <a href="javascript:history.back()" class="back-button">Back</a>
     <h1>অনলাইন প্রবন্ধ</h1>
     <img src="search.png" alt="Search" onclick="toggleSearch()" />
   </div>
@@ -105,6 +120,7 @@
 
   <div id="posts"></div>
   <div class="loading" id="loadingText">লোড হচ্ছে...</div>
+  <div id="errorMessage" style="display: none; text-align: center; color: red;">ডেটা লোড করতে সমস্যা হয়েছে।</div>
 
   <script>
     const blogId = '1026841798692566128'; // আপনার ব্লগ আইডি
@@ -112,6 +128,7 @@
 
     const postsDiv = document.getElementById('posts');
     const loadingText = document.getElementById('loadingText');
+    const errorMessage = document.getElementById('errorMessage');
 
     let nextPageToken = null;
 
@@ -153,16 +170,22 @@
 
     function loadPosts(pageToken = '') {
       loadingText.style.display = 'block';
+      errorMessage.style.display = 'none';
       const url = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}&maxResults=5&pageToken=${pageToken}`;
       fetch(url)
         .then(res => res.json())
         .then(data => {
-          displayPosts(data.items);
-          nextPageToken = data.nextPageToken;
+          if (data.items) {
+            displayPosts(data.items);
+            nextPageToken = data.nextPageToken;
+          } else {
+            errorMessage.style.display = 'block';
+          }
           loadingText.style.display = 'none';
         })
         .catch(err => {
-          postsDiv.innerHTML = '<p>ডেটা লোড করতে সমস্যা হয়েছে।</p>';
+          postsDiv.innerHTML = '';
+          errorMessage.style.display = 'block';
           loadingText.style.display = 'none';
           console.error(err);
         });
