@@ -47,6 +47,6 @@ const viewpager = document.getElementById("viewpager");
 duas.forEach(dua => {
     const div = document.createElement("div");
     div.style.padding = "10px";
-    div.innerHTML = `<pre style="text-align: left; font-size:16px; white-space: pre-wrap;">${dua}</pre>`;
+    div.innerHTML = `<pre style="text-align: left; font-family:SolaimanLipi; font-size:16px; white-space: pre-wrap;">${dua}</pre>`;
     viewpager.appendChild(div);
 });
