@@ -13,6 +13,7 @@
       font-family: 'SolaimanLipi', sans-serif;
       background-color: #f2f2f2;
       margin: 0;
+      padding-top: 60px; /* Toolbar height compensation */
     }
 
     .toolbar {
@@ -22,6 +23,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
     }
 
     .toolbar img {
@@ -36,6 +42,24 @@
       font-size: 20px;
       font-weight: bold;
       margin-left: -24px;
+    }
+
+    .search-box {
+      display: none;
+      padding: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 60px;
+      z-index: 999;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
     }
 
     .container {
@@ -83,7 +107,11 @@
   <div class="toolbar">
     <img src="back.png" alt="Back" onclick="history.back();">
     <div class="toolbar-title">অনলাইন প্রবন্ধ</div>
-    <img src="search.png" alt="Search" onclick="alert('সার্চ বাটন টগল হয়েছে');">
+    <img src="search.png" alt="Search" onclick="toggleSearchBox();">
+  </div>
+
+  <div class="search-box" id="searchBox">
+    <input type="text" id="searchInput" placeholder="প্রবন্ধ খুঁজুন..." oninput="handleSearchInput(this.value)">
   </div>
 
   <div class="container" id="posts"></div>
@@ -94,9 +122,28 @@
     const apiKey = 'AIzaSyATFI9QFBl1zlFKDw6GsGNWFavRaWSe4Fs';
     let nextPageToken = '';
     let loading = false;
+    let searchMode = false;
+
+    function toggleSearchBox() {
+      const searchBox = document.getElementById('searchBox');
+      searchBox.style.display = searchBox.style.display === 'block' ? 'none' : 'block';
+      document.getElementById('searchInput').value = '';
+      if (searchBox.style.display === 'none') {
+        searchMode = false;
+        document.getElementById('posts').innerHTML = '';
+        nextPageToken = '';
+        loadPosts();
+      }
+    }
+
+    function handleSearchInput(query) {
+      if (query.length < 2) return;
+      searchMode = true;
+      searchPosts(query);
+    }
 
     function loadPosts() {
-      if (loading) return;
+      if (loading || searchMode) return;
       loading = true;
       document.getElementById('loading').style.display = 'block';
 
@@ -106,38 +153,12 @@
       fetch(url)
         .then(response => response.json())
         .then(data => {
-          const postsDiv = document.getElementById('posts');
-          data.items.forEach(post => {
-            const postDiv = document.createElement('div');
-            postDiv.className = 'post';
-
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = post.content;
-            const plainText = tempDiv.textContent || tempDiv.innerText || '';
-
-            postDiv.innerHTML = `
-              <h2>${post.title}</h2>
-              <div class="date">তারিখ: ${new Date(post.published).toLocaleDateString('bn-BD')}</div>
-              <div class="excerpt">${plainText.substring(0, 200)}...</div>
-            `;
-
-            postDiv.onclick = () => {
-              sessionStorage.setItem('blogPost', JSON.stringify({
-                title: post.title,
-                content: post.content
-              }));
-              location.href = 'blogview.html';
-            };
-
-            postsDiv.appendChild(postDiv);
-          });
-
+          renderPosts(data.items);
           nextPageToken = data.nextPageToken || '';
           loading = false;
+          document.getElementById('loading').style.display = nextPageToken ? 'none' : 'block';
           if (!nextPageToken) {
             document.getElementById('loading').innerText = 'সব পোস্ট লোড হয়েছে';
-          } else {
-            document.getElementById('loading').style.display = 'none';
           }
         })
         .catch(error => {
@@ -146,10 +167,61 @@
         });
     }
 
+    function searchPosts(query) {
+      document.getElementById('loading').style.display = 'block';
+      document.getElementById('posts').innerHTML = '';
+
+      let url = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts/search?q=${encodeURIComponent(query)}&key=${apiKey}`;
+
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          if (data.items) {
+            renderPosts(data.items);
+            document.getElementById('loading').style.display = 'none';
+          } else {
+            document.getElementById('loading').innerText = 'কোনো ফলাফল পাওয়া যায়নি।';
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          document.getElementById('loading').innerText = 'অনুসন্ধান ব্যর্থ হয়েছে।';
+        });
+    }
+
+    function renderPosts(posts) {
+      const postsDiv = document.getElementById('posts');
+      posts.forEach(post => {
+        const postDiv = document.createElement('div');
+        postDiv.className = 'post';
+
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = post.content;
+        const plainText = tempDiv.textContent || tempDiv.innerText || '';
+
+        postDiv.innerHTML = `
+          <h2>${post.title}</h2>
+          <div class="date">তারিখ: ${new Date(post.published).toLocaleDateString('bn-BD')}</div>
+          <div class="excerpt">${plainText.substring(0, 200)}...</div>
+        `;
+
+        postDiv.onclick = () => {
+          sessionStorage.setItem('blogPost', JSON.stringify({
+            title: post.title,
+            content: post.content
+          }));
+          location.href = 'blogview.html';
+        };
+
+        postsDiv.appendChild(postDiv);
+      });
+    }
+
+    // Initial load
     loadPosts();
 
     window.addEventListener('scroll', () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && nextPageToken) {
+      if (!searchMode && window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && nextPageToken) {
         loadPosts();
       }
     });
