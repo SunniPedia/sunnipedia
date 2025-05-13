@@ -14,14 +14,6 @@ body {
     text-align: center;
 }
 
-.title-bar {
-    background-color: #01837A;
-    color: white;
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 15px;
-}
-
 .button-row {
     display: flex;
     margin: 20px 0;
