@@ -115,16 +115,19 @@
     }
 
     function increaseFont() {
-      fontSize += 1;
-      contentEl.style.fontSize = fontSize + 'px';
-    }
+  fontSize += 1;
+  contentEl.style.fontSize = fontSize + 'px';
+  contentEl.style.lineHeight = (1.6 + fontSize / 100) + '';  // 1.6 এর সাথে ফন্ট সাইজ যোগ করে লাইন স্পেসিং বাড়ানো হবে
+}
 
-    function decreaseFont() {
-      if (fontSize > 10) {
-        fontSize -= 1;
-        contentEl.style.fontSize = fontSize + 'px';
-      }
-    }
+function decreaseFont() {
+  if (fontSize > 10) {
+    fontSize -= 1;
+    contentEl.style.fontSize = fontSize + 'px';
+    contentEl.style.lineHeight = (1.6 + fontSize / 100) + '';  // 1.6 এর সাথে ফন্ট সাইজ যোগ করে লাইন স্পেসিং কমানো হবে
+  }
+}
+
 
     function copyContent() {
       const tempInput = document.createElement('textarea');
