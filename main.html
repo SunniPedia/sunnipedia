@@ -25,28 +25,52 @@
       align-items: center;
     }
     .dialog {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      padding: 20px;
-      border: 1px solid #aaa;
-      box-shadow: 0 0 10px #999;
-      z-index: 9999;
-      display: none;
-    }
-    .dialog button {
-      margin: 5px;
-    }
-    .overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 9998;
-      display: none;
-    }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10001;
+  display: none;
+  text-align: center;
+  max-width: 300px;
+  width: 80%;
+  font-family: 'SolaimanLipi', sans-serif;
+}
+
+.dialog p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.dialog button {
+  background-color: #01837A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'SolaimanLipi', sans-serif;
+}
+
+.dialog button:hover {
+  background-color: #016c65;
+}
+
+.overlay0 {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  display: none;
+}
     .menu-icon {
       font-size: 24px;
       cursor: pointer;
@@ -160,9 +184,10 @@
     <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
     <div class="toolbar-title">ইসলামী বিশ্বকোষ ও আল হাদিস S2</div>
   </div>
-<div class="overlay0" id="overlay0"></div>
+<div class="overlay0" id="overlay0" onclick="hideDialog()"></div>
+
 <div class="dialog" id="dialog">
-  <p>নির্বাচন করুন: ব্লগ বা ওয়েবসাইট</p>
+  <p>আপনি কোনটি দেখতে চান?</p>
   <button onclick="goToOption('blog')">ব্লগ</button>
   <button onclick="goToOption('website')">ওয়েবসাইট</button>
 </div>
@@ -373,28 +398,28 @@ onclick="location.href='islamic-name/index.html'">
       window.location.href = "https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500";
     }
 let blogURL = "";
-  let jsonURL = "";
+let jsonURL = "";
 
-  function showDialog(blog, json) {
-    blogURL = blog;
-    jsonURL = json;
-    document.getElementById("overlay0").style.display = "block";
-    document.getElementById("dialog").style.display = "block";
-  }
+function showDialog(blog, json) {
+  blogURL = blog;
+  jsonURL = json;
+  document.getElementById("overlay0").style.display = "block";
+  document.getElementById("dialog").style.display = "block";
+}
 
-  function hideDialog() {
-    document.getElementById("overlay0").style.display = "none";
-    document.getElementById("dialog").style.display = "none";
-  }
+function hideDialog() {
+  document.getElementById("overlay0").style.display = "none";
+  document.getElementById("dialog").style.display = "none";
+}
 
-  function goToOption(option) {
-    hideDialog();
-    if (option === 'blog') {
-      window.location.href = blogURL;
-    } else if (option === 'website') {
-      window.location.href = 'get.html?url=' + encodeURIComponent(jsonURL);
-    }
+function goToOption(option) {
+  hideDialog();
+  if (option === 'blog') {
+    window.location.href = blogURL;
+  } else if (option === 'website') {
+    window.location.href = "booklist.html?json=" + encodeURIComponent(jsonURL);
   }
+}
   </script>
 
 </body>
