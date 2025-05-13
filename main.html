@@ -160,7 +160,7 @@
     <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
     <div class="toolbar-title">ইসলামী বিশ্বকোষ ও আল হাদিস S2</div>
   </div>
-<div class="overlay" id="overlay"></div>
+<div class="overlay0" id="overlay0"></div>
 <div class="dialog" id="dialog">
   <p>নির্বাচন করুন: ব্লগ বা ওয়েবসাইট</p>
   <button onclick="goToOption('blog')">ব্লগ</button>
@@ -378,12 +378,12 @@ let blogURL = "";
   function showDialog(blog, json) {
     blogURL = blog;
     jsonURL = json;
-    document.getElementById("overlay").style.display = "block";
+    document.getElementById("overlay0").style.display = "block";
     document.getElementById("dialog").style.display = "block";
   }
 
   function hideDialog() {
-    document.getElementById("overlay").style.display = "none";
+    document.getElementById("overlay0").style.display = "none";
     document.getElementById("dialog").style.display = "none";
   }
 
