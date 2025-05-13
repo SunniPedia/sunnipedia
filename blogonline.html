@@ -2,19 +2,50 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>আমার ব্লগ</title>
+  <title>অনলাইন প্রবন্ধ</title>
   <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      padding: 20px;
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+
+    /* Toolbar Style */
+    .toolbar {
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .toolbar img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .toolbar-title {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: -24px; /* Center-align despite icons */
+    }
+
+    /* Blog Post Styles */
+    .container {
+      padding: 16px;
       max-width: 800px;
       margin: auto;
     }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
+
     .post {
       background-color: #ffffff;
       border: 1px solid #ddd;
@@ -23,63 +54,111 @@
       margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
+
     .post h2 {
       margin: 0 0 10px;
       font-size: 22px;
     }
+
     .post h2 a {
       color: #0077cc;
       text-decoration: none;
     }
+
     .post h2 a:hover {
       text-decoration: underline;
     }
+
     .date {
       font-size: 13px;
       color: #888;
       margin-bottom: 10px;
     }
+
     .excerpt {
       font-size: 15px;
       color: #444;
+    }
+
+    .loading {
+      text-align: center;
+      color: #555;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
 
-  <h1>আমার ব্লগের পোস্ট</h1>
-  <div id="posts"></div>
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <img src="back.png" alt="Back" onclick="history.back();">
+    <div class="toolbar-title">অনলাইন প্রবন্ধ</div>
+    <img src="search.png" alt="Search" onclick="alert('সার্চ বাটন টগল হয়েছে');">
+  </div>
+
+  <!-- Blog Posts -->
+  <div class="container" id="posts"></div>
+  <div class="loading" id="loading">লোড হচ্ছে...</div>
 
   <script>
-    const blogId = '1026841798692566128'; // আপনার ব্লগ আইডি
-    const apiKey = 'AIzaSyATFI9QFBl1zlFKDw6GsGNWFavRaWSe4Fs'; // আপনার Blogger API Key
-    const apiUrl = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}`;
+    const blogId = '1026841798692566128';
+    const apiKey = 'AIzaSyATFI9QFBl1zlFKDw6GsGNWFavRaWSe4Fs';
+    let nextPageToken = '';
+    let loading = false;
 
-    fetch(apiUrl)
-      .then(response => response.json())
-      .then(data => {
-        const postsDiv = document.getElementById('posts');
-        data.items.forEach(post => {
-          const postDiv = document.createElement('div');
-          postDiv.className = 'post';
+    function loadPosts() {
+      if (loading) return;
+      loading = true;
+      document.getElementById('loading').style.display = 'block';
 
-          // কনটেন্ট থেকে HTML ট্যাগ সরিয়ে কিছু অংশ দেখানো
-          const tempDiv = document.createElement('div');
-          tempDiv.innerHTML = post.content;
-          const plainText = tempDiv.textContent || tempDiv.innerText || '';
+      let url = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}&maxResults=5`;
+      if (nextPageToken) {
+        url += `&pageToken=${nextPageToken}`;
+      }
 
-          postDiv.innerHTML = `
-            <h2><a href="${post.url}" target="_blank">${post.title}</a></h2>
-            <div class="date">তারিখ: ${new Date(post.published).toLocaleDateString('bn-BD')}</div>
-            <div class="excerpt">${plainText.substring(0, 200)}...</div>
-          `;
-          postsDiv.appendChild(postDiv);
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          const postsDiv = document.getElementById('posts');
+          data.items.forEach(post => {
+            const postDiv = document.createElement('div');
+            postDiv.className = 'post';
+
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = post.content;
+            const plainText = tempDiv.textContent || tempDiv.innerText || '';
+
+            postDiv.innerHTML = `
+              <h2><a href="${post.url}" target="_blank">${post.title}</a></h2>
+              <div class="date">তারিখ: ${new Date(post.published).toLocaleDateString('bn-BD')}</div>
+              <div class="excerpt">${plainText.substring(0, 200)}...</div>
+            `;
+            postsDiv.appendChild(postDiv);
+          });
+
+          nextPageToken = data.nextPageToken || '';
+          loading = false;
+          if (!nextPageToken) {
+            document.getElementById('loading').innerText = 'সব পোস্ট লোড হয়েছে';
+          } else {
+            document.getElementById('loading').style.display = 'none';
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          document.getElementById('loading').innerText = 'পোস্ট লোড করা যায়নি।';
         });
-      })
-      .catch(error => {
-        document.getElementById('posts').innerHTML = '<p>পোস্ট লোড করা যাচ্ছে না।</p>';
-        console.error('Error:', error);
-      });
+    }
+
+    // Initial Load
+    loadPosts();
+
+    // Lazy Load on Scroll
+    window.addEventListener('scroll', () => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && nextPageToken) {
+        loadPosts();
+      }
+    });
   </script>
 
 </body>
