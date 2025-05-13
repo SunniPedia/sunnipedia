@@ -37,16 +37,23 @@
       cursor: pointer;
     }
     #searchBox {
-      display: none;
-      padding: 10px;
-      background-color: #eeeeee;
-    }
-    #searchInput {
-      width: 100%;
-      padding: 8px;
-      font-size: 16px;
-      font-family: 'SolaimanLipi';
-    }
+  display: none;
+  padding: 10px;
+  background-color: #eeeeee;
+  position: sticky;
+  top: 56px; /* toolbar height */
+  z-index: 999;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'SolaimanLipi';
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
     ul {
       list-style: none;
       padding: 0;
