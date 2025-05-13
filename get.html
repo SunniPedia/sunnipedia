@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>বই তালিকা</title>
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h2>বই তালিকা</h2>
+<ul id="bookList"></ul>
+
+<script>
+  // URL থেকে json ফাইলের নাম বের করা
+  const urlParams = new URLSearchParams(window.location.search);
+  const jsonFile = urlParams.get('json');
+
+  // JSON লোড করে লিস্ট বানানো
+  if (jsonFile) {
+    fetch(jsonFile)
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById('bookList');
+        data.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item.get;
+          list.appendChild(li);
+        });
+      })
+      .catch(err => {
+        document.getElementById('bookList').innerHTML = '<li>ডেটা লোড করা যায়নি</li>';
+      });
+  }
+</script>
+
+</body>
+</html>
