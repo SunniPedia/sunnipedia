@@ -27,7 +27,7 @@
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      min-height: 40px;
+      min-height: 50px;
     }
 
     .toolbar img {
@@ -47,10 +47,10 @@
     }
 
     .marquee {
-      display: inline-block;
-      animation: marquee 8s linear infinite;
-      padding-left: 100%;
-    }
+  display: inline-block;
+  animation: marquee 8s linear infinite;
+  transform: translateX(100%);
+}
 
     @keyframes marquee {
       0% { transform: translateX(0%); }
@@ -129,6 +129,7 @@ tempSpan.style.visibility = 'hidden';
 tempSpan.style.position = 'absolute';
 tempSpan.style.whiteSpace = 'nowrap';
 tempSpan.style.fontSize = '14px';
+tempSpan.style.pointerEvents = 'none';
 tempSpan.style.fontFamily = 'SolaimanLipi, sans-serif';
 tempSpan.innerText = bookName;
 document.body.appendChild(tempSpan);
