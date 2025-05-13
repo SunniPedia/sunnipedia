@@ -241,7 +241,9 @@
   <button onclick="goToOption('website')">ওয়েবসাইট</button>
 </div>
 
-<div class="dialog-overlay1" id="dialog">
+
+<!-- Suggestion Dialog -->
+<div class="dialog-overlay1" id="suggestionDialog">
   <div class="dialog-box1">
     <textarea id="suggestionInput" placeholder="আপনার পরামর্শ লিখুন..."></textarea>
     <button onclick="sendTelegram()">টেলিগ্রামে পাঠান</button>
@@ -426,7 +428,7 @@ onclick="location.href='islamic-name/index.html'">
   <div>ক্বিবলা কম্পাস</div>
 </div>
 
-<div class="grid-item" onclick="showDialog1()">
+<div class="grid-item" onclick="showSuggestionDialog()">
   <img src="feedback.png" alt="Feedback" class="grid-icon">
   <div>পরামর্শ লিখুন</div>
 </div>
@@ -480,12 +482,13 @@ let blogURL = "";
       window.location.href = 'get.html?url=' + encodeURIComponent(jsonURL);
     }
   }
-function showDialog1() {
-    document.getElementById('dialog').style.display = 'flex';
-  }
-  function hideDialog1() {
-    document.getElementById('dialog').style.display = 'none';
-  }
+function showSuggestionDialog() {
+  document.getElementById("suggestionDialog").style.display = "flex";
+}
+
+function hideDialog1() {
+  document.getElementById("suggestionDialog").style.display = "none";
+}
 
   function sendTelegram() {
     const message = document.getElementById('suggestionInput').value;
