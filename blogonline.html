@@ -227,7 +227,7 @@
     function viewPost(post) {
       const data = [{
         "1": post.title,
-        "2": (post.content || "").replace(/<[^>]+>/g, "") // HTML tag remove
+        "2": post.content || "" // HTML tag রিমুভ ছাড়া
       }];
       sessionStorage.setItem("bookData", JSON.stringify(data));
       sessionStorage.setItem("selectedIndex", 0);
