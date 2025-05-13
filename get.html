@@ -2,45 +2,36 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>বই তালিকা</title>
-  <style>
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-    }
-  </style>
+  <title>JSON ডেটা</title>
 </head>
 <body>
+  <h1>বই তালিকা</h1>
+  <ul id="bookList"></ul>
 
-<h2>বই তালিকা</h2>
-<ul id="bookList"></ul>
+  <script>
+    function getBanglaNumber(num) {
+      const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+      return num.toString().split('').map(d => banglaDigits[+d] || d).join('');
+    }
 
-<script>
-  // URL থেকে json ফাইলের নাম বের করা
-  const urlParams = new URLSearchParams(window.location.search);
-  const jsonFile = urlParams.get('json');
+    const params = new URLSearchParams(window.location.search);
+    const jsonURL = params.get('url');
 
-  // JSON লোড করে লিস্ট বানানো
-  if (jsonFile) {
-    fetch(jsonFile)
-      .then(res => res.json())
-      .then(data => {
-        const list = document.getElementById('bookList');
-        data.forEach(item => {
-          const li = document.createElement('li');
-          li.textContent = item.get;
-          list.appendChild(li);
+    if (jsonURL) {
+      fetch(jsonURL)
+        .then(res => res.json())
+        .then(data => {
+          const list = document.getElementById('bookList');
+          data.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.textContent = `${getBanglaNumber(index + 1)}. ${item.name}`;
+            list.appendChild(li);
+          });
+        })
+        .catch(err => {
+          document.getElementById('bookList').textContent = 'ডেটা লোড করতে ব্যর্থ!';
         });
-      })
-      .catch(err => {
-        document.getElementById('bookList').innerHTML = '<li>ডেটা লোড করা যায়নি</li>';
-      });
-  }
-</script>
-
+    }
+  </script>
 </body>
 </html>
