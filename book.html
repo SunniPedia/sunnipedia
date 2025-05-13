@@ -65,64 +65,34 @@
     }
 
     .book-item {
-      background-color: white;
-      margin-bottom: 10px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .book-item {
   background-color: white;
   margin-bottom: 10px;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   cursor: pointer;
-  min-height: 80px; /* সব আইটেমের সমান উচ্চতা রাখতে */
 }
 
-    .book-number {
-  width: 70px;
-  height: 70px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('ic_1_4.png');
-  background-size: cover; /* পরিবর্তন করা হয়েছে */
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  font-size: 10px;
+.book-number {
+  font-size: 14px;
   font-weight: bold;
-  color: #5A0202;
-  text-align: center;
-}
-    .book-info {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 50px; /* একরকম উচ্চতা নিশ্চিত করতে */
+  color: #005555;
+  margin-bottom: 5px;
 }
 
 .book-title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: #222;
   line-height: 1.4;
+  margin-bottom: 3px;
 }
 
 .book-author {
-  font-size: 12px;
-  color: #666;
+  font-size: 14px;
+  color: #444;
   line-height: 1.3;
 }
   </style>
@@ -189,34 +159,32 @@
 }
 
     function displayBooks(books) {
-      const bookList = document.getElementById('bookList');
-      bookList.innerHTML = ''; // Clear existing list
+  const bookList = document.getElementById('bookList');
+  bookList.innerHTML = ''; // Clear existing list
 
-      books.forEach((book, index) => {
-        const bookItem = document.createElement('div');
-        bookItem.className = 'book-item';
+  books.forEach((book, index) => {
+    const bookItem = document.createElement('div');
+    bookItem.className = 'book-item';
 
-        const bookId = convertToBanglaNumber(index + 1);  // বইয়ের পজিশন অনুযায়ী নাম্বার
-        const bookName = book.name.trim();  // বইয়ের নাম
-        const bookAuthor = book.author.trim();  // লেখক
+    const bookId = convertToBanglaNumber(index + 1);  // বইয়ের পজিশন অনুযায়ী নাম্বার
+    const bookName = book.name.trim();  // বইয়ের নাম
+    const bookAuthor = book.author.trim();  // লেখক
 
-        bookItem.onclick = function () {
-          const encodedBookId = encodeURIComponent(book.bookid);
-          const encodedBookName = encodeURIComponent(bookName);
-          window.location.href = `bookview.html?bookid=${encodedBookId}&name=${encodedBookName}`;
-        };
+    bookItem.onclick = function () {
+      const encodedBookId = encodeURIComponent(book.bookid);
+      const encodedBookName = encodeURIComponent(bookName);
+      window.location.href = `bookview.html?bookid=${encodedBookId}&name=${encodedBookName}`;
+    };
 
-        bookItem.innerHTML = `
-          <div class="book-number">${bookId}</div>
-          <div class="book-info">
-            <div class="book-title">${bookName}</div>
-            <div class="book-author"><strong></strong> ${bookAuthor}</div>
-          </div>
-        `;
+    bookItem.innerHTML = `
+      <div class="book-number">বই (${bookId})</div>
+      <div class="book-title">${bookName}</div>
+      <div class="book-author">${bookAuthor}</div>
+    `;
 
-        bookList.appendChild(bookItem);
-      });
-    }
+    bookList.appendChild(bookItem);
+  });
+}
 
     fetch('https://islamibook-beryl.vercel.app/file.json')
   .then(response => response.json())
