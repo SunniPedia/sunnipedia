@@ -13,7 +13,7 @@
       font-family: 'SolaimanLipi', sans-serif;
       background-color: #f2f2f2;
       margin: 0;
-      padding-top: 60px; /* Toolbar height compensation */
+      padding-top: 60px;
     }
 
     .toolbar {
@@ -37,11 +37,10 @@
     }
 
     .toolbar-title {
-      flex-grow: 1;
+      flex: 1;
       text-align: center;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
-      margin-left: -24px;
     }
 
     .search-box {
@@ -125,6 +124,7 @@
     let nextPageToken = '';
     let loading = false;
     let searchMode = false;
+    let firstLoad = true;
 
     function toggleSearchBox() {
       const searchBox = document.getElementById('searchBox');
@@ -134,6 +134,7 @@
         searchMode = false;
         document.getElementById('posts').innerHTML = '';
         nextPageToken = '';
+        firstLoad = true;
         loadPosts();
       }
     }
@@ -149,23 +150,31 @@
       loading = true;
       document.getElementById('loading').style.display = 'block';
 
-      let url = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}&maxResults=5`;
+      const maxResults = firstLoad ? 20 : 10;
+      let url = `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}&maxResults=${maxResults}`;
       if (nextPageToken) url += `&pageToken=${nextPageToken}`;
 
       fetch(url)
         .then(response => response.json())
         .then(data => {
-          renderPosts(data.items);
-          nextPageToken = data.nextPageToken || '';
-          loading = false;
-          document.getElementById('loading').style.display = nextPageToken ? 'none' : 'block';
-          if (!nextPageToken) {
-            document.getElementById('loading').innerText = 'সব পোস্ট লোড হয়েছে';
+          if (data.items) {
+            renderPosts(data.items);
+            nextPageToken = data.nextPageToken || '';
+            firstLoad = false;
+            loading = false;
+            document.getElementById('loading').style.display = nextPageToken ? 'none' : 'block';
+            if (!nextPageToken) {
+              document.getElementById('loading').innerText = 'সব পোস্ট লোড হয়েছে';
+            }
+          } else {
+            document.getElementById('loading').innerText = 'পোস্ট পাওয়া যায়নি।';
+            loading = false;
           }
         })
         .catch(error => {
           console.error('Error:', error);
           document.getElementById('loading').innerText = 'পোস্ট লোড করা যায়নি।';
+          loading = false;
         });
     }
 
@@ -197,15 +206,9 @@
         const postDiv = document.createElement('div');
         postDiv.className = 'post';
 
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = post.content;
-        const plainText = tempDiv.textContent || tempDiv.innerText || '';
-
         postDiv.innerHTML = `
           <div class="date">তারিখ: ${new Date(post.published).toLocaleDateString('bn-BD')}</div>
           <h2>${post.title}</h2>
-          
-          
         `;
 
         postDiv.onclick = () => {
@@ -223,6 +226,7 @@
     // Initial load
     loadPosts();
 
+    // Scroll listener for lazy loading
     window.addEventListener('scroll', () => {
       if (!searchMode && window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && nextPageToken) {
         loadPosts();
