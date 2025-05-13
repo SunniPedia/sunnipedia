@@ -2,6 +2,7 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>অনলাইন প্রবন্ধ</title>
   <style>
     @font-face {
@@ -17,36 +18,31 @@
     }
 
     .toolbar {
-      background-color: #01837A;
-      color: white;
-      padding: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+  background-color: #01837A;
+  color: white;
+  padding: 12px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-    .toolbar-title {
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-    }
+.toolbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
 
-    .toolbar img {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-    }
-
-    .toolbar-title {
-      flex: 1;
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
-    }
+.toolbar img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
 
     .search-box {
       display: none;
