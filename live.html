@@ -78,7 +78,7 @@
   books.forEach((book, index) => {
     const item = document.createElement('div');
     item.className = 'book-item';
-    item.innerHTML = `<div><strong>${index + 1}.</strong> ${book.name}</div>`;
+    item.innerHTML = `<div>${book.name}</div>`;
     item.onclick = () => goToPlayer(book.name, book.videoid);
     bookListContainer.appendChild(item);
   });
