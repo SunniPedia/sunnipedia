@@ -116,7 +116,7 @@
 
   <!-- Search Box -->
   <div class="search-box" id="searchBox">
-    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন..." onkeyup="searchBooks()">
+    <input type="text" id="searchInput" placeholder="বয়ান খুঁজুন..." onkeyup="searchBooks()">
   </div>
 <!-- Loading Text -->
 <div id="loadingText" style="text-align:center; padding: 20px; font-size: 16px;">
@@ -177,11 +177,11 @@
     bookItem.onclick = function () {
       const encodedBookId = encodeURIComponent(book.bookid);
       const encodedBookName = encodeURIComponent(bookName);
-      window.location.href = `onlinebookview.html?bookid=${encodedBookId}&name=${encodedBookName}`;
+      window.location.href = `boyanview.html?bookid=${encodedBookId}&name=${encodedBookName}`;
     };
 
     bookItem.innerHTML = `
-      <div class="book-number">বই (${bookId})</div>
+      <div class="book-number">বয়ান (${bookId})</div>
       <div class="book-title">${bookName}</div>
       <div class="book-author">${bookAuthor}</div>
     `;
