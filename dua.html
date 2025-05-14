@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>অজিফা ও দোআ</title>
+  <link href="https://fonts.googleapis.com/css2?family=SolaimanLipi&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #ffffff;
+    }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background-color: #01837A;
+      padding: 10px;
+    }
+    .toolbar img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    .toolbar-title {
+      flex: 1;
+      color: white;
+      font-size: 20px;
+    }
+    .searchbar {
+      display: none;
+      background: #fff;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .searchbar input {
+      flex: 1;
+      font-family: 'SolaimanLipi', sans-serif;
+      border: none;
+      font-size: 14px;
+      outline: none;
+    }
+    .tabbar {
+      display: flex;
+      background-color: #ffffff;
+      margin-top: 10px;
+    }
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      font-size: 16px;
+    }
+    .tab.active {
+      background-color: #01837A;
+      color: #fff;
+      border-bottom: 2px solid #01837A;
+    }
+    .dua-list {
+      padding: 10px;
+    }
+    .dua-item {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border: 2px solid #01837A;
+      border-radius: 14px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      cursor: pointer;
+    }
+    .dua-item .index {
+      background: url('ic_1_4.png') no-repeat center center;
+      background-size: contain;
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: bold;
+      color: #000;
+    }
+    .dua-item .title {
+      margin-left: 10px;
+      color: #009688;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <img src="back.png" alt="Back" onclick="history.back()">
+    <div class="toolbar-title">অজিফা ও দোআ</div>
+    <img src="search.png" alt="Search" onclick="toggleSearch()">
+  </div>
+
+  <div class="searchbar" id="searchbar">
+    <img src="ic_keyboard_arrow_left_black.png" alt="Back" onclick="toggleSearch()">
+    <input type="text" id="searchInput" placeholder="সার্চ করুন" oninput="renderList()">
+    <img src="cancel.png" alt="Clear" onclick="clearSearch()">
+  </div>
+
+  <div class="tabbar">
+    <div class="tab active" onclick="setMode('all')">সকল</div>
+    <div class="tab" onclick="setMode('category')">বিষয়ভিত্তিক</div>
+  </div>
+
+  <div class="dua-list" id="duaList">লোড হচ্ছে...</div>
+
+  <script>
+    const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+    const replaceNumber = n => String(n).replace(/\d/g, d => banglaDigits[d]);
+
+    let duaData = [];
+    let categoryData = [];
+    let mode = 'all';
+
+    async function fetchData() {
+      try {
+        const duaRes = await fetch('https://sunnipedia0.vercel.app/dua/dua.json');
+        const catRes = await fetch('https://sunnipedia0.vercel.app/dua/catgory.json');
+        duaData = await duaRes.json();
+        categoryData = await catRes.json();
+        renderList();
+      } catch (e) {
+        document.getElementById('duaList').innerHTML = '<p style="color:red">ডাটা লোড হয়নি!</p>';
+        console.error(e);
+      }
+    }
+
+    function toggleSearch() {
+      const bar = document.getElementById('searchbar');
+      bar.style.display = bar.style.display === 'flex' ? 'none' : 'flex';
+      document.getElementById('searchInput').value = '';
+      renderList();
+    }
+
+    function clearSearch() {
+      document.getElementById('searchInput').value = '';
+      renderList();
+    }
+
+    function setMode(m) {
+      mode = m;
+      document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab')[m === 'all' ? 0 : 1].classList.add('active');
+      renderList();
+    }
+
+    function renderList() {
+      const list = document.getElementById('duaList');
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      list.innerHTML = '';
+      let data = (mode === 'all') ? duaData : categoryData;
+
+      if (!data || data.length === 0) {
+        list.innerHTML = '<p>কোনো ডেটা পাওয়া যায়নি</p>';
+        return;
+      }
+
+      let filtered = data.filter(item => item.title?.toLowerCase().includes(q));
+      filtered.forEach((item, i) => {
+        list.innerHTML += `
+          <div class="dua-item" onclick="alert('ID: ${item.id}\\nTitle: ${item.title}')">
+            <div class="index">${replaceNumber(i + 1)}</div>
+            <div class="title">${item.title}</div>
+          </div>
+        `;
+      });
+    }
+
+    fetchData();
+  </script>
+
+</body>
+</html>
