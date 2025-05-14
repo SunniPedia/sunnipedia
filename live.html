@@ -75,12 +75,12 @@
   const bookListContainer = document.getElementById('bookList');
 
   books.forEach((book, index) => {
-    const item = document.createElement('div');
-    item.className = 'book-item';
-    item.innerHTML = `<div>${book.name}</div>`;
-    item.onclick = () => goToPlayer(book.name, book.videoid);
-    bookListContainer.appendChild(item);
-  });
+  const item = document.createElement('div');
+  item.className = 'book-item';
+  item.innerHTML = `<div>${book.name}</div>`;
+  item.onclick = () => goToPlayer(book.name, book.link); // এখানে পরিবর্তন
+  bookListContainer.appendChild(item);
+});
 
   function goToPlayer(name, videoId) {
     window.location.href = `player.html?name=${encodeURIComponent(name)}&videoid=${encodeURIComponent(videoId)}`;
