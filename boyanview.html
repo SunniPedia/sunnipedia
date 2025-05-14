@@ -196,9 +196,11 @@
     }
 
     function openView(index) {
-      sessionStorage.setItem('selectedIndex', index);
-      window.location.href = 'view.html';
-    }
+  const item = fullData[index];
+  const name = encodeURIComponent(item.name || 'ভিডিও');
+  const link = encodeURIComponent(item.link || '');
+  window.location.href = `player.html?name=${name}&link=${link}`;
+}
 
     function loadContent() {
       const loadingDiv = document.getElementById('loadingText');
