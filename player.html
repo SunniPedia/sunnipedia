@@ -61,7 +61,7 @@
 <script>
   const params = new URLSearchParams(window.location.search);
   const name = params.get("name") || "ভিডিও";
-  const videoid = params.get("videoid") || "";
+  const videoid = params.get("link") || "";
 
   document.getElementById("videoTitle").innerText = name;
   if (videoid) {
