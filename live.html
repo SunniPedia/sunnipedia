@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>লাইভ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+    }
+    .toolbar {
+      background-color: #01837A;
+      color: white;
+      padding: 16px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .book-list {
+      padding: 16px;
+    }
+    .book-item {
+      background-color: white;
+      border: 1px solid #01837A;
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="toolbar">
+  লাইভ বই
+</div>
+
+<div class="book-list" id="bookList">
+  <!-- বই তালিকা এখানে দেখাবে -->
+  <div class="book-item" onclick="goToPlayer('ভিডিও শিরোনাম', 'videoid123')">
+    <div><strong>১.</strong> ভিডিও শিরোনাম</div>
+  </div>
+</div>
+
+<script>
+  function goToPlayer(name, videoId) {
+    // সাধারণভাবে redirect করা যেতো যেমন:
+    window.location.href = `player.html?name=${encodeURIComponent(name)}&videoid=${encodeURIComponent(videoId)}`;
+  }
+</script>
+
+</body>
+</html>
