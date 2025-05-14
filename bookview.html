@@ -203,7 +203,7 @@ document.body.removeChild(tempSpan);
       const loadingDiv = document.getElementById('loadingText');
       loadingDiv.style.display = 'block';
 
-      fetch(`https://islamibook-beryl.vercel.app/book/${bookid}.json`)
+      fetch(`https://sunnipedia0.vercel.app/book/${bookid}.json`)
         .then(res => res.json())
         .then(data => {
           fullData = data.map((item, idx) => ({ ...item, originalIndex: idx }));
