@@ -3,17 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>ভিডিও প্লেয়ার</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
-      font-family: sans-serif;
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #f9f9f9;
     }
     .toolbar {
       background-color: #01837A;
       color: white;
-      padding: 16px;
+      padding: 12px 16px;
       font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .back-button {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    .toolbar-title {
+      flex: 1;
       text-align: center;
+      margin-right: 36px;
     }
     .video-box {
       padding: 16px;
@@ -28,8 +49,9 @@
 </head>
 <body>
 
-<div class="toolbar" id="videoTitle">
-  ভিডিও নাম
+<div class="toolbar">
+  <img src="back.png" alt="Back" class="back-button" onclick="history.back()">
+  <div class="toolbar-title" id="videoTitle">ভিডিও নাম</div>
 </div>
 
 <div class="video-box">
