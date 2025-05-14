@@ -3,19 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>লাইভ</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
-      font-family: sans-serif;
+      font-family: 'SolaimanLipi', sans-serif;
       background-color: #f9f9f9;
     }
     .toolbar {
       background-color: #01837A;
       color: white;
-      padding: 16px;
+      padding: 12px 16px;
       font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .back-button {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    .toolbar-title {
+      flex: 1;
       text-align: center;
+      margin-right: 36px;
     }
     .book-list {
       padding: 16px;
@@ -34,19 +53,37 @@
 <body>
 
 <div class="toolbar">
-  লাইভ বই
+  <img src="back.png" alt="Back" class="back-button" onclick="history.back()">
+  <div class="toolbar-title">লাইভ</div>
 </div>
 
 <div class="book-list" id="bookList">
-  <!-- বই তালিকা এখানে দেখাবে -->
-  <div class="book-item" onclick="goToPlayer('ভিডিও শিরোনাম', 'videoid123')">
-    <div><strong>১.</strong> ভিডিও শিরোনাম</div>
-  </div>
+  <!-- ভিডিও তালিকা এখানে দেখাবে -->
 </div>
 
 <script>
+  const books = [
+    {
+      "name": "বাইতুল্লাহ লাইভ",
+      "videoid": "2Gub8-cSH9c"
+    },
+    {
+      "name": "মসজিদে নভবী লাইভ",
+      "videoid": "yWw0DWJQVtU"
+    }
+  ];
+
+  const bookListContainer = document.getElementById('bookList');
+
+  books.forEach((book, index) => {
+    const item = document.createElement('div');
+    item.className = 'book-item';
+    item.innerHTML = `<div><strong>${index + 1}.</strong> ${book.name}</div>`;
+    item.onclick = () => goToPlayer(book.name, book.videoid);
+    bookListContainer.appendChild(item);
+  });
+
   function goToPlayer(name, videoId) {
-    // সাধারণভাবে redirect করা যেতো যেমন:
     window.location.href = `player.html?name=${encodeURIComponent(name)}&videoid=${encodeURIComponent(videoId)}`;
   }
 </script>
