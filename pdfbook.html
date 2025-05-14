@@ -14,10 +14,14 @@
       margin: 0;
       background-color: #f5f5f5;
     }
+
     .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       display: flex;
       align-items: center;
-      background-color: #00BCD4;
+      background-color: #01837A;
       color: white;
       padding: 10px;
     }
@@ -32,19 +36,37 @@
       font-size: 18px;
       margin: 0;
     }
+
     .search-bar {
+      position: sticky;
+      top: 52px;
+      z-index: 999;
       display: none;
       padding: 10px;
       background: white;
+      border-bottom: 1px solid #ccc;
     }
     .search-bar input {
       width: 100%;
       padding: 8px;
       font-family: 'SolaimanLipi';
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
+
+    #loading {
+      text-align: center;
+      padding: 20px;
+      color: #01837A;
+      font-size: 16px;
+    }
+
     .book-list {
       padding: 10px;
+      margin-top: 5px;
     }
+
     .book-item {
       display: flex;
       background: white;
@@ -52,7 +74,10 @@
       padding: 10px;
       align-items: center;
       border-radius: 6px;
+      cursor: pointer;
+      border-left: 4px solid #01837A;
     }
+
     .number-box {
       width: 50px;
       height: 50px;
@@ -60,37 +85,30 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #00BCD4;
-      font-size: 12px;
+      color: #01837A;
+      font-size: 14px;
       margin-right: 10px;
     }
+
     .book-img {
       width: 56px;
       height: 56px;
       object-fit: contain;
       margin-right: 10px;
     }
+
     .book-info {
       flex: 1;
     }
     .book-info h2 {
       font-size: 14px;
       margin: 0 0 5px 0;
+      color: #000;
     }
     .book-info p {
       font-size: 12px;
       margin: 0;
-    }
-    .book-actions {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .book-actions img {
-      width: 24px;
-      height: 24px;
-      margin-bottom: 5px;
-      cursor: pointer;
+      color: #333;
     }
   </style>
 </head>
@@ -106,6 +124,8 @@
     <input type="text" placeholder="বই সার্চ করুন..." oninput="filterBooks(this.value)">
   </div>
 
+  <div id="loading">লোডিং হচ্ছে...</div>
+
   <div class="book-list" id="bookList">
     <!-- JSON থেকে ডেটা এখানে আসবে -->
   </div>
@@ -113,14 +133,17 @@
   <script>
     let books = [];
 
+    const englishToBanglaDigits = num =>
+      num.toString().replace(/\d/g, d => '০১২৩৪৫৬৭৮৯'[d]);
+
     function toggleSearch() {
       const search = document.getElementById("searchBar");
       search.style.display = (search.style.display === "none" || !search.style.display) ? "block" : "none";
     }
 
     function filterBooks(query) {
-      const filtered = books.filter(book => 
-        book.name.includes(query) || 
+      const filtered = books.filter(book =>
+        book.name.includes(query) ||
         book.author.includes(query)
       );
       renderBooks(filtered);
@@ -132,15 +155,13 @@
       data.forEach((book, index) => {
         const item = document.createElement("div");
         item.className = "book-item";
+        item.onclick = () => downloadBook(book.pdflink);
         item.innerHTML = `
-          <div class="number-box">${index + 1}</div>
+          <div class="number-box">${englishToBanglaDigits(index + 1)}</div>
           <img class="book-img" src="${book.img}" alt="img">
           <div class="book-info">
             <h2>${book.name}</h2>
             <p>${book.author}</p>
-          </div>
-          <div class="book-actions">
-            <img src="download.png" title="ডাউনলোড করুন" onclick="downloadBook('${book.pdflink}')">
           </div>
         `;
         list.appendChild(item);
@@ -156,6 +177,11 @@
       .then(data => {
         books = data;
         renderBooks(books);
+        document.getElementById("loading").style.display = "none";
+      })
+      .catch(err => {
+        document.getElementById("loading").innerText = "ডেটা লোড করতে সমস্যা হচ্ছে!";
+        console.error(err);
       });
   </script>
 
