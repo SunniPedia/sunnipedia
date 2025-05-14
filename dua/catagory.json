@@ -1,0 +1,384 @@
+[
+  {
+    "id": "1",
+    "sequence": "1",
+    "title": "ঈমানিয়্যাত",
+    "status": "1",
+    "total_duas": "11",
+    "thumbnail": "faith.png"
+  },
+  {
+    "id": "2",
+    "sequence": "2",
+    "title": "মৃত্যুর আগে-পরে",
+    "status": "1",
+    "total_duas": "22",
+    "thumbnail": "before-and-after-death.png"
+  },
+  {
+    "id": "3",
+    "sequence": "3",
+    "title": "ঘর-বাড়ি",
+    "status": "1",
+    "total_duas": "7",
+    "thumbnail": "house.png"
+  },
+  {
+    "id": "4",
+    "sequence": "4",
+    "title": "পানাহার সংক্রান্ত",
+    "status": "1",
+    "total_duas": "14",
+    "thumbnail": "regarding-drinking.png"
+  },
+  {
+    "id": "5",
+    "sequence": "5",
+    "title": "পাক পবিত্রতা",
+    "status": "1",
+    "total_duas": "2",
+    "thumbnail": "pure-holiness.png"
+  },
+  {
+    "id": "6",
+    "sequence": "6",
+    "title": "ঘুম",
+    "status": "1",
+    "total_duas": "17",
+    "thumbnail": "sleeping.png"
+  },
+  {
+    "id": "7",
+    "sequence": "7",
+    "title": "সফর",
+    "status": "1",
+    "total_duas": "19",
+    "thumbnail": "tourism.png"
+  },
+  {
+    "id": "8",
+    "sequence": "8",
+    "title": "সামাজিকতা",
+    "status": "1",
+    "total_duas": "17",
+    "thumbnail": "sociability.png"
+  },
+  {
+    "id": "9",
+    "sequence": "9",
+    "title": "পিতামাতা, সংসার, সন্তান",
+    "status": "1",
+    "total_duas": "13",
+    "thumbnail": "family.png"
+  },
+  {
+    "id": "10",
+    "sequence": "10",
+    "title": "সাজ সজ্জা",
+    "status": "1",
+    "total_duas": "6",
+    "thumbnail": "get-up.png"
+  },
+  {
+    "id": "11",
+    "sequence": "11",
+    "title": "বিভিন্ন পরিস্থিতিতে",
+    "status": "1",
+    "total_duas": "29",
+    "thumbnail": "in-various-situations.png"
+  },
+  {
+    "id": "12",
+    "sequence": "13",
+    "title": "বিপদ বালা মুসিবত",
+    "status": "1",
+    "total_duas": "26",
+    "thumbnail": "danger-and-trouble.png"
+  },
+  {
+    "id": "13",
+    "sequence": "15",
+    "title": "ঝড়-বৃষ্টি",
+    "status": "1",
+    "total_duas": "9",
+    "thumbnail": "storm-and-rain.png"
+  },
+  {
+    "id": "14",
+    "sequence": "16",
+    "title": "দরুদ শরীফ",
+    "status": "1",
+    "total_duas": "4",
+    "thumbnail": "darud-sharif.png"
+  },
+  {
+    "id": "15",
+    "sequence": "17",
+    "title": "ইস্তিগ্‌ফার",
+    "status": "1",
+    "total_duas": "4",
+    "thumbnail": "Istighfar.png"
+  },
+  {
+    "id": "16",
+    "sequence": "18",
+    "title": "রব্বানা | কুরআনে বর্ণিত",
+    "status": "1",
+    "total_duas": "30",
+    "thumbnail": "described-in-the-quran.png"
+  },
+  {
+    "id": "17",
+    "sequence": "12",
+    "title": "সুস্থতা-অসুস্থতা",
+    "status": "1",
+    "total_duas": "7",
+    "thumbnail": "health-and-illness.png"
+  },
+  {
+    "id": "18",
+    "sequence": "20",
+    "title": "আজান - ইকামাত",
+    "status": "1",
+    "total_duas": "3",
+    "thumbnail": "azan-iqamat.png"
+  },
+  {
+    "id": "19",
+    "sequence": "21",
+    "title": "ওজু",
+    "status": "1",
+    "total_duas": "6",
+    "thumbnail": "ablution.png"
+  },
+  {
+    "id": "20",
+    "sequence": "22",
+    "title": "মসজিদ",
+    "status": "1",
+    "total_duas": "4",
+    "thumbnail": "mosque.png"
+  },
+  {
+    "id": "21",
+    "sequence": "23",
+    "title": "নামাজের মধ্যে",
+    "status": "1",
+    "total_duas": "19",
+    "thumbnail": "in-salah.png"
+  },
+  {
+    "id": "22",
+    "sequence": "26",
+    "title": "রমাযান",
+    "status": "1",
+    "total_duas": "10",
+    "thumbnail": "fasting.png"
+  },
+  {
+    "id": "23",
+    "sequence": "27",
+    "title": "হজ্জ",
+    "status": "1",
+    "total_duas": "21",
+    "thumbnail": "hajj.png"
+  },
+  {
+    "id": "24",
+    "sequence": "29",
+    "title": "ফযিলতপূর্ণ সুরা ও আয়াত",
+    "status": "1",
+    "total_duas": "23",
+    "thumbnail": "virtuous-surahs-and-verses.png"
+  },
+  {
+    "id": "25",
+    "sequence": "30",
+    "title": "নফল নামায - আমল",
+    "status": "1",
+    "total_duas": "3",
+    "thumbnail": "nafal-salah.png"
+  },
+  {
+    "id": "26",
+    "sequence": "28",
+    "title": "ঈদ",
+    "status": "1",
+    "total_duas": "5",
+    "thumbnail": "eid.png"
+  },
+  {
+    "id": "27",
+    "sequence": "24",
+    "title": "নামাজের শেষে",
+    "status": "1",
+    "total_duas": "9",
+    "thumbnail": "after-salah.png"
+  },
+  {
+    "id": "28",
+    "sequence": "25",
+    "title": "সকাল সন্ধ্যার আমল",
+    "status": "1",
+    "total_duas": "21",
+    "thumbnail": "day-and-night.png"
+  },
+  {
+    "id": "31",
+    "sequence": "14",
+    "title": "ভয়ভীতি",
+    "status": "1",
+    "total_duas": "8",
+    "thumbnail": "fear.png"
+  },
+  {
+    "id": "32",
+    "sequence": "31",
+    "title": "মুনাজাতে মাকবুল",
+    "status": "0",
+    "total_duas": "null",
+    "thumbnail": "munajate-makbul.png"
+  },
+  {
+    "id": "34",
+    "title": "বিবাহ ও দাম্পত্য জীবন সংক্রান্ত",
+    "status": "0",
+    "total_duas": "null",
+    "thumbnail": "null"
+  },
+  {
+    "id": "36",
+    "sequence": "40",
+    "title": "ঋণ সংক্রান্ত",
+    "status": "1",
+    "total_duas": "2",
+    "thumbnail": "loan-related.png"
+  },
+  {
+    "id": "38",
+    "title": "বিভিন্ন সময়কালীন দোয়া-জিকির",
+    "status": "0",
+    "total_duas": "null",
+    "thumbnail": "null"
+  },
+  {
+    "id": "47",
+    "sequence": "42",
+    "title": "মজলিস | জমায়েত",
+    "status": "1",
+    "total_duas": "2",
+    "thumbnail": "gathering.png"
+  },
+  {
+    "id": "50",
+    "sequence": "39",
+    "title": "চাঁদ",
+    "status": "1",
+    "total_duas": "4",
+    "thumbnail": "moon.png"
+  },
+  {
+    "id": "57",
+    "sequence": "43",
+    "title": "সুসংবাদ । দুঃসংবাদ",
+    "status": "1",
+    "total_duas": "3",
+    "thumbnail": "good-news-bad-news.png"
+  },
+  {
+    "id": "63",
+    "sequence": "44",
+    "title": "জামে দোয়া",
+    "status": "1",
+    "total_duas": "4",
+    "thumbnail": "jame-dua.png"
+  },
+  {
+    "id": "64",
+    "sequence": "32",
+    "title": "মুনাজাতে মাকবুল - শনিবার",
+    "status": "1",
+    "total_duas": "54",
+    "thumbnail": "munajate-makbul.png"
+  },
+  {
+    "id": "65",
+    "sequence": "33",
+    "title": "মুনাজাতে মাকবুল - রবিবার",
+    "status": "1",
+    "total_duas": "31",
+    "thumbnail": "munajate-makbul.png"
+  },
+  {
+    "id": "66",
+    "sequence": "34",
+    "title": "মুনাজাতে মাকবুল - সোমবার",
+    "status": "1",
+    "total_duas": "31",
+    "thumbnail": "munajate-makbul.png"
+  },
+  {
+    "id": "67",
+    "sequence": "35",
+    "title": "মুনাজাতে মাকবুল - মঙ্গলবার",
+    "status": "1",
+    "total_duas": "34",
+    "thumbnail": "munajate-makbul.png"
+  },
+  {
+    "id": "68",
+    "sequence": "36",
+    "title": "মুনাজাতে মাকবুল - বুধবার",
+    "status": "1",
+    "total_duas": "24",
+    "thumbnail": "munajate-makbul.png"
+  },
+  {
+    "id": "69",
+    "sequence": "37",
+    "title": "মুনাজাতে মাকবুল - বৃহস্পতিবার",
+    "status": "1",
+    "total_duas": "16",
+    "thumbnail": "munajate-makbul.png"
+  },
+  {
+    "id": "70",
+    "sequence": "38",
+    "title": "মুনাজাতে মাকবুল - শুক্রবার",
+    "status": "1",
+    "total_duas": "16",
+    "thumbnail": "munajate-makbul.png"
+  },
+  {
+    "id": "71",
+    "sequence": "30",
+    "title": "মনযিল",
+    "status": "1",
+    "total_duas": "18",
+    "thumbnail": "manzil.png"
+  },
+  {
+    "id": "73",
+    "sequence": "46",
+    "title": "কুরআনে বর্ণিত রুকইয়ার আয়াতসমূহ",
+    "status": "1",
+    "total_duas": "20",
+    "thumbnail": "rukiya-quran.png"
+  },
+  {
+    "id": "74",
+    "sequence": "47",
+    "title": "হাদীসে বর্ণিত রুকইয়ার দোয়াসমূহ",
+    "status": "1",
+    "total_duas": "32",
+    "thumbnail": "rukiya-hadith.png"
+  },
+  {
+    "id": "79",
+    "sequence": "52",
+    "title": "রোগব্যাধি, মানসিক সমস্যা ইত্যাদিতে উপকারী আয়াত সমূহ",
+    "status": "1",
+    "total_duas": "6",
+    "thumbnail": "rukiya-seek.png"
+  }
+]
