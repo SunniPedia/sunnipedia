@@ -206,7 +206,7 @@
       const loadingDiv = document.getElementById('loadingText');
       loadingDiv.style.display = 'block';
 
-      fetch(`https://rizwans2rs.github.io/Islamipedia/boyan/${bookid}.json`)
+      fetch(`https://sunnipedia-zeta.vercel.app/boyan/${bookid}.json`)
         .then(res => res.json())
         .then(data => {
           fullData = data.map((item, idx) => ({ ...item, originalIndex: idx }));
