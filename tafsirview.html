@@ -516,7 +516,7 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
     }  
   
     if (surahName) {  
-      fetch('https://islamibook.vercel.app/sura.json')  
+      fetch('https://sunnipedia-zeta.vercel.app/sura.json')  
         .then(res => res.json())  
         .then(suraList => {  
           const matched = suraList.find(item => item.author === surahName);  
