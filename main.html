@@ -11,10 +11,16 @@
       src: url('fonts/SolaimanLipi.ttf') format('truetype');
     }
 
-    body {
-      margin: 0;
-      font-family: 'SolaimanLipi', sans-serif;
-    }
+body {
+  margin: 0;
+  font-family: 'SolaimanLipi', sans-serif;
+  background-image: url('back1ground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* ব্যাকগ্রাউন্ড স্ক্রল না করে স্থির থাকবে */
+}
+
 
     /* Toolbar */
     .toolbar {
@@ -152,14 +158,19 @@
   padding: 5px;
   border-radius: 8px;          /* চাইলে নরম কোণা */
 }
-    .grid-item {
-      background-color: #f1f1f1;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      font-size: 12px;
-      cursor: pointer;
-    }
+.grid-item {
+  background-image: url('neum7.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
 
     .overlay {
       position: fixed;
