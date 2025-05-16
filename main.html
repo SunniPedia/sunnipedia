@@ -128,7 +128,8 @@ body {
 
     /* Card View */
 .card {
-  width: 100%; /* match_parent */
+  width: 100%;
+  max-width: 600px;
   height: 200px;
   padding: 8px;
   background-image: url('neum7.png');
@@ -136,13 +137,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  flex-direction: column; /* vertical orientation */
-  justify-content: center; /* center_vertical */
-  align-items: center;     /* center_horizontal */
-  margin: 16px;
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
+  margin: 20px auto; /* centrally align horizontally */
+  text-align: center;
 }
+
 
 
     .card img {
