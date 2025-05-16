@@ -127,13 +127,23 @@ body {
     }
 
     /* Card View */
-    .card {
-      background-image: url('neum7.png');
-      margin: 16px;
-      padding: 20px;
-      text-align: center;
-      border-radius: 12px;
-    }
+.card {
+  width: 100%; /* match_parent */
+  height: 200px;
+  padding: 8px;
+  background-image: url('neum7.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* vertical orientation */
+  justify-content: center; /* center_vertical */
+  align-items: center;     /* center_horizontal */
+  margin: 16px;
+  text-align: center;
+  border-radius: 12px;
+}
+
 
     .card img {
       width: 100px;
