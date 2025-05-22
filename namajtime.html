@@ -191,6 +191,13 @@ function ctrl_changed(ctrl){
 </script>
 </head><body>
 <style>
+	@font-face {
+  font-family: 'SolaimanLipi';
+  src: url('fonts/SolaimanLipi.ttf') format('truetype');
+}
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+}
 .menuicon {display: none; }
 ul.submenu li:before { content: none; }
 ul.submenu {
@@ -383,13 +390,6 @@ function togglemenu(){
 <ul class=menu>
 <li><a class='selected' href='#'>নামাজের সময়</a>
 </ul>
-<ul class=submenu><li><a href='./?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia%2FDhaka&date=05-21'>আগের দিন</a>
-<li><a href='./?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia%2FDhaka&date=05-23'>পরের দিন</a>
-<li><a href='month/?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia/Dhaka'>মে মাসের</a>
-<li><a href='fullyear/?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia/Dhaka'>সারা বছরের সূচী</a>
-<li><a href='/districts/'>৬৪ জেলা</a>
-<li><a href='/upozila/'>সকল উপজেলা</a>
-</ul></header>
 <style>
 div.page {
 	display: grid;
@@ -557,9 +557,6 @@ h3 {text-align: center; }
 	</tr>
 </table>
 <p>
-<div style="text-align:center;">
-<a href="https://maps.habibur.com/dynamic/?lng=90.5163405&lat=23.6076958&zoom=13">ম্যাপে এই অবস্থানটি দেখুন</a>
-</div>
 <script>
 var curr_lng=90.5163405;
 var curr_lat=23.6076958;
@@ -587,7 +584,6 @@ function showPosition(position) {
 <div class=left>
 </div>
 </div>
-<footer><address>&copy; 2025, Habib &lt;<a href='mailto:habib@habibur.com'>habib@habibur.com</a>&gt;</address></footer>
 <script>
 document.addEventListener('dblclick', function(e) {
     e = e || window.event;
