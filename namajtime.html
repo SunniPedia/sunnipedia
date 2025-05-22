@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<title>নামাজের সময়</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {font-size: 14pt; font-family: Verdana, Arial, Helvetica, sans-serif;
+	background:  transparent; color: black; line-height: 1.7em;
+}
+h1 {font-size: 20pt; text-align: center; padding:0; margin:0; margin-top: 3em; }
+h2 {font-size: 18pt; text-align: center; }
+h3 {font-size: 18pt; text-align: left; padding:0; margin:0; margin-top: 2em; }
+h3 a {font-size: 18pt; }
+h4 {font-size: 16pt; padding: 0; margin: 0; margin-top: 1.5em; }
+
+date {font-size: 70%; }
+date:before {content : "—"; margin-right: .2em; }
+
+div.flex {display: flex; flex-flow: row wrap; align-items: flex-end; }
+div.field {margin-right: 0.5em; }
+
+img {width:100%; height: auto; }
+p {margin-bottom: 1em; }
+a {color: #22f; text-decoration : none; font-weight: bold; overflow-wrap: break-word;}
+.center {margin: auto; text-align: center;}
+.right {text-align: right;}
+
+ul.cols4 { column-count: 4; column-gap: 2em; list-style-type: none; column-width: 10em; }
+
+div.note {border-radius: 2em; background: PapayaWhip; padding: 1em; margin: 1em; }
+div.notectrl {float:right; }
+div.notfound {text-align: center; margin-top: 3em; }
+dt {font-weight: bold; }
+
+.nomobile {display: none; }
+table {margin-bottom: 1em; border-collapse: collapse; }
+th { padding: .5em;}
+td {word-break : break-word; text-align:center; padding: 0.2em; border-bottom:1px solid gray; padding-left:.5em; padding-right:.5em; }
+tr.total {background: LightYellow; }
+
+table.data {width: auto; }
+table.data th { padding: .5em;  border-bottom: 2px solid green; background: #eee; }
+table.data tr:nth-child(odd) {background: lightyellow; }
+table.data tr.total {background: white; font-weight: bold;border-top:3px solid green; border-bottom:3px solid green;}
+table.data td {text-align: left; padding: .5em; text-overflow: ellipsis; background: transparent; }
+table.data td.total, table.data th.total, table.data td.currency, table.data th.currency, table.data td.balance, table.data th.balance, table.data td.number, table.data th.number, table.data td.int, table.data th.int {text-align: right; }
+table.data td.gb, table.data th.gb {text-align: right; }
+table.data td.arabic, table.data th.arabic, div.arabic {direction: rtl; text-align:right; }
+table.data td.source { font-family: monospace; white-space: pre; }
+table.data td.center, table.data th.center {text-align: center; }
+table.data td.right, table.data th.right {text-align: right; }
+table.data td.left, table.data th.left {text-align: left; }
+table.data td.flat, table.data th.flat,
+table.data td.code, table.data th.code {text-align: left; }
+table.data td.arabic, table.data th.arabic {direction: rtl; }
+table.data td.addnew {text-align: center; background: #080808; border: none; border-top: 2px solid black; }
+
+table.view {width: 100%; }
+table.view th {background: lightyellow; color: black; text-align: right; width: 20%; border: 1px solid gray; }
+table.view td {border-bottom:1px solid gray; text-align: left; }
+div.confirm {width: 20em; margin: auto; margin-top: 20vh; border: 1px solid red; text-align: center; padding: 1em; }
+div.confirm div.msg {margin-bottom: 2em; }
+
+
+
+
+fieldset {margin: auto; background: lightyellow; margin-top: 2em; }
+legend {background: Moccasin; border: 1px solid gray; padding-left:1em; padding-right:1em; }
+label {color: gray; }
+div.ctrl {margin-bottom: .5em;}
+select {max-width: 12.6em; min-width:4em; }
+span.addon {
+	border: 1px solid gray;
+	display: block;
+	padding-left: .5em;
+	padding-right: .5em;
+	background: #444;
+	border-radius: 0 .5em .5em 0;
+}
+select, select option, input, textarea { background: #dde; border: 1px solid black; font-size: 14pt; }
+select, select option, input { height: 2em; }
+input[type=checkbox] {vertical-align: top; }
+input[type=submit] {background: Orange; }
+textarea.para {width: 100%; height: 12em; }
+textarea.page {width: 100%; height: 80vh; }
+small {font-size: 70%; }
+
+ul.sections {list-style-type: none; }
+ul.sections a {display : block; }
+ul.sections li { margin-bottom: 3em;  }
+
+
+.print {display: none; }
+div.notfound {text-align: center; margin-top: 3em; }
+html, body {margin: 0; padding: 0; background: white; }
+address { font-size: 12pt; direction: ltr; text-align:center; color: black; background: transparent; margin-top:3em; border-top: 1px dotted green; }
+address a { font-size: 12pt; }
+address {font-style: normal; }
+code, pre {
+	background: #eee;
+	max-width: 80em;
+	border: 1px solid #999;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+	font-size: 14px;
+	padding: 1em;
+	line-height: 20px;
+	overflow-x:auto;
+}
+code {padding : 0.2em; }
+dl dd {margin-bottom: 1em; }
+html, body { width: 100%; height: 100%; }
+
+/*mobile*/
+@media only screen and (max-width: 860px) {
+}
+/*computer*/
+@media only screen and (min-width: 861px) {
+}
+@media print {
+	* { color: black; background: transparent; font-size:12pt; }
+	aside, nav, footer { display: none; }
+	div.page { margin-left: 3em; }
+	.noprint {display: none; }
+	.print {display: block; }
+
+	table.data th {background: #eee; color: black; padding: .2em; border: 1px solid black;padding-left:1em; padding-right:1em; }
+	table.data tr:nth-child(odd) {background: LightYellow; }
+	table.data tr.total {background: Moccasin; font-weight: bold;border-top:3px solid brown; border-bottom:3px solid brown;}
+	table.data td {text-align: left; padding: .2em .5em .2em .5em; }
+
+	table.data td.action, table.data th.action {display: none; }
+}
+.grow-wrap, grow-wrap > textarea { font-family: Monospace;  }
+.grow-wrap { display: grid; }
+.grow-wrap::after { content: attr(data-replicated-value) " "; white-space: pre-wrap; visibility: hidden; }
+.grow-wrap > textarea { resize: none; overflow: hidden; background: #ffb; }
+.grow-wrap > textarea, .grow-wrap::after { border: 1px solid black; padding: 0.5rem; font: inherit; grid-area: 1 / 1 / 2 / 2; }
+
+</style>
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "WebSite",
+	"name": "Salat Times",
+	"alternateName": "Sanjir Habib",
+	"url": "https://salat.habibur.com/"
+}
+</script>
+<script type='application/ld+json'>
+{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.habibur.com\/","name":"habibur.com"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/bangla.habibur.com\/","name":"\u09ac\u09be\u0982\u09b2\u09be\u09df"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/salat.habibur.com\/bangla\/?lng=90.5163405&tzoffset=360","name":"\u09a8\u09be\u09ae\u09be\u099c\u09c7\u09b0 \u09b8\u09ae\u09df"}}]}
+</script>
+<meta name="application-name" content="salat.habibur.com"/>
+<meta name="description" content="আপনার জিপিএস স্ঘথানে আজকের নামাজের সময় সূচী"/>
+<meta name="keywords" content="নামাজের সময় ইফতারির সেহরি ফজর সূর্যা্ত মাগরিব আজান সূচী সালাত সোবহে সাদিক"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="og:image" content="https://salat.habibur.com/imgs/salat-h1.jpeg">
+<meta name="og:description" content="আপনার জিপিএস স্ঘথানে আজকের নামাজের সময় সূচী">
+<meta name="og:title" content="Gabinda Mandali, Bangladesh - এর নামাজের সময়">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image:src" content="https://salat.habibur.com/imgs/salat-h1.jpeg">
+<meta name="twitter:site" content="@habibur" />
+<meta name="twitter:creator" content="@habibur" />
+<meta property="og:url" content="https://salat.habibur.com/bangla/?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia/Dhaka"/>
+
+
+<link rel='icon' href='/imgs/salat.png'>
+<script>
+function eid(name){ return document.getElementById(name); }
+function ajax_get(url,callback){
+	var xmlhttp = new XMLHttpRequest()
+	xmlhttp.overrideMimeType("text/plain;charset=UTF-8");
+	xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == XMLHttpRequest.DONE) return callback(xmlhttp.status == 200 ? 'ok' : 'error' ,xmlhttp.responseText);
+	}
+	xmlhttp.open("GET", url, true)
+	xmlhttp.send()
+}
+function ctrl_changed(ctrl){
+	ajax_get('?changed='+ctrl.name+'&'+ctrl.name+'='+ctrl.value, function(res,data){
+		if(res=='ok' && data.length && data.charAt(0)!='<'){
+			try{
+				eval(data);
+			}
+			catch(e){
+				alert(data);
+			}
+		}
+		else{
+			alert(data);
+		}
+	});
+}
+</script>
+</head><body>
+<style>
+.menuicon {display: none; }
+ul.submenu li:before { content: none; }
+ul.submenu {
+	vertical-align: bottom;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+}
+ul.submenu li {
+	display: inline-block; margin-left: 1em;
+	list-style-type: none;
+}
+ul.submenu li:first-child::before {
+	content: "‖";
+	position: absolute;
+	color: orange;
+	margin-left: -2em;
+}
+ul.submenu li a {
+	display: block;
+	border-bottom: 3px solid #888;
+}
+@media only screen and (min-width: 861px){
+	.menu {
+		vertical-align: bottom;
+		display: inline-block;
+		list-style: none;
+		overflow: hidden;
+		font: 18px Helvetica, Arial, Sans-Serif;
+		margin: 0;
+		padding: 0;
+	}
+	.menu li {
+	  float: left;
+	}
+	.menu li a {
+	  color: white;
+	  text-decoration: none;
+	  padding: 10px 0 10px 55px;
+	  background: khaki;
+	  background: hsla(37,29.4%,35%,1);
+	  position: relative;
+	  display: block;
+	  float: left;
+	}
+	.menu li a:after {
+	  content: " ";
+	  display: block;
+	  width: 0;
+	  height: 0;
+	  border-top: 50px solid transparent;
+	  border-bottom: 50px solid transparent;
+	  border-left: 30px solid hsla(37,29.4%,35%,1);
+	  position: absolute;
+	  top: 50%;
+	  margin-top: -50px;
+	  left: 100%;
+	  z-index: 2;
+	}
+	.menu li a:before {
+	  content: " ";
+	  display: block;
+	  width: 0;
+	  height: 0;
+	  border-top: 50px solid transparent;
+	  border-bottom: 50px solid transparent;
+	  border-left: 30px solid white;
+	  position: absolute;
+	  top: 50%;
+	  margin-top: -50px;
+	  margin-left: 1px;
+	  left: 100%;
+	  z-index: 1;
+	}
+	.menu li:first-child a {
+	  padding-left: 10px;
+	}
+	.menu li:nth-child(2) a       { background:        hsla(37,29.4%,45%,1); }
+	.menu li:nth-child(2) a:after { border-left-color: hsla(37,29.4%,45%,1); }
+	.menu li:nth-child(3) a       { background:        hsla(37,29.4%,55%,1); }
+	.menu li:nth-child(3) a:after { border-left-color: hsla(37,29.4%,55%,1); }
+	.menu li:nth-child(4) a       { background:        hsla(37,29.4%,65%,1); }
+	.menu li:nth-child(4) a:after { border-left-color: hsla(37,29.4%,65%,1); }
+	.menu li:nth-child(5) a       { background:        hsla(37,29.4%,75%,1); }
+	.menu li:nth-child(5) a:after { border-left-color: hsla(37,29.4%,75%,1); }
+	.menu li:last-child a {
+	  background: transparent !important;
+	  color: black;
+	  pointer-events: none;
+	  cursor: default;
+	}
+	.menu li:last-child a:after { border: 0; }
+	.menu li a:hover { background: hsla(37,29.4%,25%,1); }
+	.menu li a:hover:after { border-left-color: hsla(37,29.4%,25%,1) !important; }
+	header { background: palegoldenrod; }
+
+}
+@media only screen and (max-width: 860px) {
+	h1 {margin-top: 0; }
+	.menuicon {
+		font-size: 20pt;
+		color: black;
+		background: transparent;
+		margin-right: .5em;
+		float: right;
+		display: block;
+		z-index: 1;
+	}
+	ul.submenu {
+		display: none;
+		position: absolute;
+		top: 50px;
+		right: 0px;
+		z-index: 1;
+		background: beige;
+	}
+	ul.submenu li {
+		display: block;
+		margin-bottom: 1em;
+	}
+	ul.submenu li a {
+		margin: 0;
+		padding: 0;
+	}
+	ul.submenu li:first-child::before { content: none; }
+	header { background: palegoldenrod; }
+	ul.menu,ul.menu li { margin:0; padding: 0; }
+
+	.menu li:not(:nth-last-child(1)):not(:nth-last-child(2)) { display: none; }
+	.menu {
+		list-style: none;
+		overflow: hidden;
+		font: 18px Helvetica, Arial, Sans-Serif;
+		margin: 40px;
+		padding: 0;
+	}
+	.menu li {
+		display: inline-block;
+	}
+	.menu li a {
+		color: white;
+		text-decoration: none;
+		padding: 10px 10px 10px 30px;
+		background: khaki; /* fallback color */
+		background: hsla(37,29.4%,35%,1);
+		position: relative;
+		display: inline-block;
+		white-space: nowrap;
+	}
+	.menu li a:before {
+		content: " ";
+		display: block;
+		width: 0;
+		height: 0;
+		border-top: 50px solid palegoldenrod;           /* Go big on the size, and let overflow hide */
+		border-bottom: 50px solid palegoldenrod;
+		border-right: 30px solid hsla(37,29.4%,35%,1);
+		position: absolute;
+		top: 50%;
+		margin-top: -50px;
+		left: 0;
+		z-index: 2;
+	}
+	.menu li:last-child a {
+		background: transparent !important;
+		color: black;
+		pointer-events: none;
+		cursor: default;
+	}
+	.menu li:last-child a:before {
+		border-right-color: palegoldenrod;
+	}
+
+
+}
+
+</style>
+<script>
+function togglemenu(){
+	var els=document.getElementsByClassName('submenu');
+	for(var i in els){
+		if(!els[i].style) continue;
+		var curr=els[i].style.display;
+		els[i].style.display=curr=='block' ? 'none' : 'block';
+	}
+}
+</script>
+<span onClick='togglemenu();' class=menuicon>&#9776;</span>
+<header>
+<ul class=menu>
+<li><a class='selected' href='#'>নামাজের সময়</a>
+</ul>
+<ul class=submenu><li><a href='./?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia%2FDhaka&date=05-21'>আগের দিন</a>
+<li><a href='./?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia%2FDhaka&date=05-23'>পরের দিন</a>
+<li><a href='month/?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia/Dhaka'>মে মাসের</a>
+<li><a href='fullyear/?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia/Dhaka'>সারা বছরের সূচী</a>
+<li><a href='/districts/'>৬৪ জেলা</a>
+<li><a href='/upozila/'>সকল উপজেলা</a>
+</ul></header>
+<style>
+div.page {
+	display: grid;
+	grid-template-columns : 1fr 2fr 1fr;
+	grid-template-areas :
+		"logo title blank"
+		"left body right";
+}
+h1 { grid-area: title; }
+div.left { grid-area: left; margin-left: 1em; }
+div.body, div.body * { word-break : break-word; }
+div.body { grid-area: body; background: white; border-radius: 0 0 2em 2em; margin-bottom: 3em; padding: 0 0 1em 0; }
+div.right { grid-area: right;}
+div.page {background: white ; }
+div.logo { grid-area: logo;}
+div.flash-error {font-size: 120%; text-align: center; background: red; color: white; font-weight: bold; }
+div.flash-warning {font-size: 100%; text-align: center; background: orange; color: white; }
+div.flash-ok {font-size: 100%; text-align: center; background: green; color: white; }
+div.pagedate {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas :
+		"date1 date2"
+		"date3 date4"
+		"date5 date6"
+		"date7 date8"
+		;
+}
+.datelabel { margin-right: 0.1em; text-align: right; color: gray; }
+.datelabel:after {content: ":"; margin-left: 0.1em; vertical-align: bottom; }
+div.date1 { grid-area: date1; }
+div.date2 { grid-area: date3; }
+div.date3 { grid-area: date5; }
+div.date4 { grid-area: date7; }
+@media only screen and (max-width: 860px) {
+	div.page {
+		grid-template-columns : 1fr;
+		grid-template-areas :
+			"title"
+			"body"
+			"left";
+	}
+	div.right {display: none; }
+	div.pagedate {display: none; }
+}
+</style>
+<div class=page>
+<h1></h1>
+<div class=body>
+	<div id=body0><style>
+table.salat-time {max-width: 30em; margin: auto; }
+table.salat-time th {text-align:right; }
+table.salat-time td {text-align:right; padding:.5em; border-left:none; border-right: none; }
+table.salat-time td.name {text-align:left;}
+table.salat-time td.title-row {font-size:14pt;text-align:center;}
+table.salat-time td.rounded {font-size:150%;font-weight:bold;}
+table.salat-time td.calculated {font-size:12pt;}
+table.salat-time td.date-row {font-size:80%;text-align:center;}
+a.dayadd {text-decoration: none; color: blue; font-size: 18pt; padding: 0 .5em 0 .5em; }
+h3 {text-align: center; }
+</style><p>
+<table class='salat-time data'>
+	<tr><td class=title-row colspan=3>GPS Location - Gabinda Mandali, Bangladesh এর নামাজের সময়</td></tr>
+	<tr><td class=date-row colspan=3>
+	আবস্থান : 
+		23.6077 N, 90.5163 E<br/>
+<br>হিজরি : ২৩-জ্বিলকদ<br/>
+	<a class=dayadd href='./?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia%2FDhaka&date=05-21'>◀</a>
+	22-May-2025, Thu	<a class=dayadd href='./?lat=23.6076958&lng=90.5163405&tzoffset=360&tzname=Asia%2FDhaka&date=05-23'>▶</a>
+<tr><th>&nbsp;</th>
+<th>
+<br>22-May</th><th>হিসাবে আসে</th></tr>
+	<tr>
+		<td class=name>ফজর/সুবহে সাদিক</td>
+		<td class=rounded>3:49</td>
+		<td class=calculated>3:48:43 am</td>
+	</tr>
+	<tr>
+		<td class=name>সূর্যোদয়</td>
+		<td class=rounded>5:13</td>
+		<td class=calculated>5:13:16 am</td>
+	</tr>
+	<tr>
+		<td class=name>জোহর</td>
+		<td class=rounded>11:58</td>
+		<td class=calculated>11:54:37 am</td>
+	</tr>
+	<tr>
+		<td class=name>জোহর শেষ (শাফি)</td>
+		<td class=rounded>3:17</td>
+		<td class=calculated>3:16:02 pm</td>
+	</tr>
+	<tr>
+		<td class=name>আসর (হানাফি)</td>
+		<td class=rounded>4:34</td>
+		<td class=calculated>4:33:33 pm</td>
+	</tr>
+	<tr>
+		<td class=name>সূর্যাস্ত/মাগরিব</td>
+		<td class=rounded>6:38</td>
+		<td class=calculated>6:36:11 pm</td>
+	</tr>
+	<tr>
+		<td class=name>ইশা</td>
+		<td class=rounded>8:01</td>
+		<td class=calculated>8:00:55 pm</td>
+	</tr>
+</table>
+<div style='text-align:center'>
+<br>প্রতিটি ওয়াক্ত শেষ এর পরের ওয়াক্ত আরম্ভ হলে। কেবল ফজর শেষ সুর্যোদয়ে।
+</div>
+<p><h3>নামাজের অন্যান্য সময়</h3>
+<table class='salat-time data'>
+	<tr><th style='text-align:left;'>অন্যান্য সময়</th><th>22-May-2025</th></tr>
+	<tr>
+		<td class=name>লাল আলো শেষ</td>
+		<td class=rounded>7:30</td>
+	</tr>
+	<tr>
+		<td class=name>রাতের তৃতীয়াংশ</td>
+		<td class=rounded>9:40</td>
+	</tr>
+	<tr>
+		<td class=name>মাঝরাত</td>
+		<td class=rounded>11:12</td>
+	</tr>
+	<tr>
+		<td class=name>শেষ তৃতীয়াংশ</td>
+		<td class=rounded>12:44</td>
+	</tr>
+	<tr>
+		<td class=name>শেষরাত, ষষ্ঠাংশ</td>
+		<td class=rounded>2:16</td>
+	</tr>
+	<tr>
+		<td class=name>সেহরি শেষ</td>
+		<td class=rounded>3:48</td>
+	</tr>
+	<tr>
+		<td class=name>ইশরাক</td>
+		<td class=rounded>5:28</td>
+	</tr>
+	<tr>
+		<td class=name>আসর মাকরুহ</td>
+		<td class=rounded>6:06</td>
+	</tr>
+	<tr>
+		<td class=name>সূর্যাস্ত আরম্ভ</td>
+		<td class=rounded>6:33</td>
+	</tr>
+</table>
+</div>
+<p>
+<p><h3>এই স্থানে সূর্যের বর্তমান অবস্থান</h3>
+<p><table class='salat-time'>
+	<tr>
+		<td class=name>সময়</td>
+		<td class=rounded>5:36:31</td>
+		<td class=calculated>pm</td>
+	</tr>
+	<tr>
+		<td class=name>সূর্যের  অবস্থান</td>
+		<td class=rounded>+12.004</td>
+		<td class=calculated>ডিগ্রী</td>
+	</tr>
+</table>
+<p>
+<div style="text-align:center;">
+<a href="https://maps.habibur.com/dynamic/?lng=90.5163405&lat=23.6076958&zoom=13">ম্যাপে এই অবস্থানটি দেখুন</a>
+</div>
+<script>
+var curr_lng=90.5163405;
+var curr_lat=23.6076958;
+getLocation()
+function getLocation() {
+	if (navigator.geolocation)
+		navigator.geolocation.getCurrentPosition(showPosition);
+	else
+		eid('output').innerHTML="Geolocation is not supported by this browser."
+}
+function showPosition(position) {
+	if(Math.abs(position.coords.latitude-curr_lat)+Math.abs(position.coords.longitude-curr_lng)<0.001) return;
+	document.location=
+		'./?lat='+position.coords.latitude
+		+'&lng='+position.coords.longitude
+		+'&tzoffset='+((new Date).getTimezoneOffset()*-1)
+		+'&tzname='+(Intl.DateTimeFormat().resolvedOptions().timeZone)
+}
+</script><p></div>
+</div>
+<div class=right>
+<div class=pagedate>
+</div>
+</div>
+<div class=left>
+</div>
+</div>
+<footer><address>&copy; 2025, Habib &lt;<a href='mailto:habib@habibur.com'>habib@habibur.com</a>&gt;</address></footer>
+<script>
+document.addEventListener('dblclick', function(e) {
+    e = e || window.event;
+    var target = e.target || e.srcElement
+	if(target.tagName=='ADDRESS'){
+		window.location="/login/";
+	}
+}, false);
+</script>
+</body></html>
+<!--dynamic:_GET-->
+\
