@@ -133,7 +133,7 @@
 			document.getElementById('currentDateTime').innerText = banglaDate;
 
 			try {
-				const response = await fetch("https://www.dropbox.com/scl/fi/ub2e20u3di11w3bt9hdpk/hijridate.json?rlkey=zt91e7q01bc7c3nx03ig5u187&st=81gar36y&dl=1");
+				const response = await fetch("assets/dateofhijri.json");
 				const data = await response.json();
 
 				if (data && data.length > 0 && data[0].hijridate) {
