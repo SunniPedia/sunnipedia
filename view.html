@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="pageTitle"></title>
+  <title id="pageTitle">ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামী বই, হাদীস ও বিশ্বকোষ পড়ুন ও শেয়ার করুন।">
+  <meta property="og:image" content="icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://islamipedia.vercel.app/view.html">
+
   <style>
     @font-face {
       font-family: 'SolaimanLipi';
@@ -80,7 +88,7 @@
       background-color: #009688;
       color: white;
       cursor: pointer;
-				font-family: 'SolaimanLipi', sans-serif; 
+      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls img {
@@ -144,9 +152,10 @@
     const bookName = decodeURIComponent(urlParams.get('name') || '');
     const key = decodeURIComponent(urlParams.get('key') || '');
 
-    document.getElementById('pageTitle').innerText = key || bookName || 'বই পড়ুন';
+    const dynamicTitle = key || bookName || 'বই পড়ুন';
+    document.getElementById('pageTitle').innerText = dynamicTitle;
     const viewTitle = document.getElementById('viewTitle');
-    viewTitle.innerText = key || bookName || 'বই পড়ুন';
+    viewTitle.innerText = dynamicTitle;
 
     window.onload = function () {
       if (viewTitle.scrollWidth > viewTitle.parentElement.clientWidth) {
