@@ -36,6 +36,7 @@
       position: sticky;
       top: 50px;
       z-index: 998;
+font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls button {
@@ -105,7 +106,7 @@
     const bookid = urlParams.get('bookid');
     const bookName = decodeURIComponent(urlParams.get('name') || '');
 
-    document.getElementById('viewTitle').innerText = key ? `${bookName} - ${key}` : bookName || 'বই পড়ুন';
+    document.getElementById('viewTitle').innerText = key ? `${key}` : bookName || 'বই পড়ুন';
 
     function updateFontSize() {
       contentDiv.style.fontSize = fontSize + 'px';
