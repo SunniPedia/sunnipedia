@@ -1,33 +1,33 @@
 <!DOCTYPE html>
+
 <html lang="bn">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	<title>নামাযের সময়সূচি</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>নামাযের সময়সূচি</title>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="assets/mecca 16x16.png" type="image/gif">
+<!-- CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/mecca 16x16.png" type="image/gif">
 
-	<!-- SolaimanLipi Font -->
-	<style>
-		@font-face {
-			font-family: 'SolaimanLipi';
-			src: url('fonts/SolaimanLipi.ttf') format('truetype');
-			font-weight: normal;
-			font-style: normal;
-		}
+<!-- SolaimanLipi Font -->
+<style>
+	@font-face {
+		font-family: 'SolaimanLipi';
+		src: url('fonts/SolaimanLipi.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
 
-		body {
-			font-family: 'SolaimanLipi', sans-serif;
-		}
+	body {
+		font-family: 'SolaimanLipi', sans-serif;
+	}
 
-		#divShowPrayTimes {
-			text-align: center;
-		}
-	</style>
+	#divShowPrayTimes {
+		text-align: center;
+	}
+</style>
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -35,79 +35,89 @@
 			<div class="container">
 				<p class="m-0 text-center text-muted" id="notification_message">নোটিফিকেশন বার্তা এখানে</p>
 			</div>
-		</div>
+		</div><div class="row justify-content-center">
+		<div class="col-12 col-md-6 p-4">
 
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-6 p-4">
-				<div class="card">
-					<div class="card-header">
-						<h5 class="card-title mb-1" id="table_header_title">নামাযের সময়সূচি</h5>
-						<p id="currentDateTime">বর্তমান সময়</p>
-					</div>
-					<div class="card-body">
-						<div id="divShowPrayTimes">নামাযের সময় এখানে দেখানো হবে</div>
-					</div>
-				</div>
-				<small class="text-muted d-block text-center p-2" id="footer_note">* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে</small>
+			<!-- Language Selector -->
+			<div class="btn-group btn-group-sm btn-group-toggle mb-3" data-toggle="buttons">
+				<label class="btn btn-secondary" id="btn-en">
+					<input type="radio" name="lang" value="en" autocomplete="off"> English
+				</label>
+				<label class="btn btn-secondary active" id="btn-bn">
+					<input type="radio" name="lang" value="bn" autocomplete="off" checked> বাংলা
+				</label>
 			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<h5 class="card-title mb-1" id="table_header_title">নামাযের সময়সূচি</h5>
+					<p id="currentDateTime">বর্তমান সময়</p>
+				</div>
+				<div class="card-body">
+					<div id="divShowPrayTimes">নামাযের সময় এখানে দেখানো হবে</div>
+				</div>
+			</div>
+			<small class="text-muted d-block text-center p-2" id="footer_note">* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে</small>
 		</div>
 	</div>
+</div>
 
-	<!-- JS Scripts -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap/popper.min.js"></script>
-	<script src="js/bootstrap/bootstrap.min.js"></script>
-	<script src="js/moment-with-locales.min.js"></script>
-	<script src="js/PrayTimes.js"></script>
+<!-- JS Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/PrayTimes.js"></script>
 
-	<script>
-		// Default language
-		let currentLang = 'bn';
+<script>
+	// Default language
+	let currentLang = 'bn';
 
-		const translations = {
-			en: {
-				header: "Prayer Times",
-				currentTime: "Current Time",
-				footer: "* Highlighted row defines the current waqt",
-				notification: "Notification message here"
-			},
-			bn: {
-				header: "নামাযের সময়সূচি",
-				currentTime: "বর্তমান সময়",
-				footer: "* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে",
-				notification: "নোটিফিকেশন বার্তা এখানে"
-			}
-		};
-
-		function updateLanguage(lang) {
-			currentLang = lang;
-			const t = translations[lang];
-			document.getElementById("table_header_title").innerText = t.header;
-			document.getElementById("currentDateTime").innerText = t.currentTime;
-			document.getElementById("footer_note").innerText = t.footer;
-			document.getElementById("notification_message").innerText = t.notification;
-
-			// moment.js locale
-			moment.locale(lang === 'bn' ? 'bn' : 'en');
-			// এখান থেকে আপনি টাইম ও তারিখ ফর্ম্যাট করতে পারেন moment.js দিয়ে
+	const translations = {
+		en: {
+			header: "Prayer Times",
+			currentTime: "Current Time",
+			footer: "* Highlighted row defines the current waqt",
+			notification: "Notification message here"
+		},
+		bn: {
+			header: "নামাযের সময়সূচি",
+			currentTime: "বর্তমান সময়",
+			footer: "* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে",
+			notification: "নোটিফিকেশন বার্তা এখানে"
 		}
+	};
 
-		// Language switch handlers
-		document.getElementById("btn-en").addEventListener("click", () => {
-			updateLanguage('en');
-			document.getElementById("btn-en").classList.add("active");
-			document.getElementById("btn-bn").classList.remove("active");
-		});
+	function updateLanguage(lang) {
+		currentLang = lang;
+		const t = translations[lang];
+		document.getElementById("table_header_title").innerText = t.header;
+		document.getElementById("currentDateTime").innerText = t.currentTime;
+		document.getElementById("footer_note").innerText = t.footer;
+		document.getElementById("notification_message").innerText = t.notification;
 
-		document.getElementById("btn-bn").addEventListener("click", () => {
-			updateLanguage('bn');
-			document.getElementById("btn-bn").classList.add("active");
-			document.getElementById("btn-en").classList.remove("active");
-		});
+		// moment.js locale
+		moment.locale(lang === 'bn' ? 'bn' : 'en');
+		// এখান থেকে আপনি টাইম ও তারিখ ফর্ম্যাট করতে পারেন moment.js দিয়ে
+	}
 
-		// Initial Load
-		updateLanguage(currentLang);
-	</script>
+	// Language switch handlers
+	document.getElementById("btn-en").addEventListener("click", () => {
+		updateLanguage('en');
+		document.getElementById("btn-en").classList.add("active");
+		document.getElementById("btn-bn").classList.remove("active");
+	});
+
+	document.getElementById("btn-bn").addEventListener("click", () => {
+		updateLanguage('bn');
+		document.getElementById("btn-bn").classList.add("active");
+		document.getElementById("btn-en").classList.remove("active");
+	});
+
+	// Initial Load
+	updateLanguage(currentLang);
+</script>
+
 <script>
 	// Utility: ইংরেজি সংখ্যা → বাংলা সংখ্যা
 	function toBanglaNumber(num) {
@@ -151,8 +161,7 @@
 
 	// প্রথমবার চালানো
 	updateDateInfo();
-</script>
+</script><script src="js/app.js"></script>
 
-	<script src="js/app.js"></script>
 </body>
 </html>
