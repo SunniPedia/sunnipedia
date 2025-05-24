@@ -152,24 +152,16 @@ font-family: 'SolaimanLipi', sans-serif;
   }
 function copyShortLink() {
   const longUrl = window.location.href;
-  fetch(`https://api.shrtco.de/v2/shorten?url=${encodeURIComponent(longUrl)}`)
-    .then(res => res.json())
-    .then(data => {
-      if (data.ok) {
-        const shortLink = data.result.full_short_link;
-        const tempInput = document.createElement('textarea');
-        tempInput.value = shortLink;
-        document.body.appendChild(tempInput);
-        tempInput.select();
-        document.execCommand('copy');
-        document.body.removeChild(tempInput);
-        alert('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink);
-      } else {
-        alert('লিংক শর্ট করতে ব্যর্থ হয়েছে');
-      }
+
+  fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`)
+    .then(response => response.text())
+    .then(shortLink => {
+      navigator.clipboard.writeText(shortLink)
+        .then(() => alert('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
+        .catch(() => alert('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
     })
     .catch(error => {
-      console.error('Shorten link error:', error);
+      console.error('TinyURL error:', error);
       alert('লিংক শর্ট করতে সমস্যা হয়েছে');
     });
 }
