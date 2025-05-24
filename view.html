@@ -104,18 +104,24 @@ text-align: justify;
 
   <script>
     let fontSize = 18;
-    const contentDiv = document.getElementById('content');
+const contentDiv = document.getElementById('content');
 
-    const selectedIndex = sessionStorage.getItem('selectedIndex');
-    const bookData = JSON.parse(sessionStorage.getItem('bookData'));
+const urlParams = new URLSearchParams(window.location.search);
+const key = decodeURIComponent(urlParams.get('key') || '');
+const bookData = JSON.parse(sessionStorage.getItem('bookData'));
 
-    if (selectedIndex !== null && bookData) {
-      const item = bookData[selectedIndex];
-      document.getElementById('viewTitle').innerText = item["1"];
-      contentDiv.innerHTML = `<p>${item["2"]}</p>`;
-    } else {
-      contentDiv.innerHTML = '<p>কোনো তথ্য পাওয়া যায়নি।</p>';
-    }
+if (key && bookData) {
+  const matchedItem = bookData.find(item => item["1"] === key);
+
+  if (matchedItem) {
+    document.getElementById('viewTitle').innerText = matchedItem["1"];
+    contentDiv.innerHTML = `<p>${matchedItem["2"] || "কোনো বিষয়বস্তু পাওয়া যায়নি।"}</p>`;
+  } else {
+    contentDiv.innerHTML = '<p>উল্লেখিত অনুচ্ছেদ খুঁজে পাওয়া যায়নি।</p>';
+  }
+} else {
+  contentDiv.innerHTML = '<p>তথ্য লোড করতে সমস্যা হয়েছে।</p>';
+}
 
     function increaseFont() {
       fontSize += 1;
