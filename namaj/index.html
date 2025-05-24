@@ -131,33 +131,37 @@
 
 	// তারিখ হালনাগাদ ফাংশন
 	async function updateDateInfo() {
-		const today = new Date();
-		const day = today.getDate();
-		const month = today.getMonth();
-		const year = today.getFullYear();
+	const today = new Date();
+	const day = today.getDate();
+	const month = today.getMonth();
+	const year = today.getFullYear();
 
-		const formattedDate = `${day}-${month + 1}-${year}`;
+	const formattedDate = `${day}-${month + 1}-${year}`;
 
-		// Aladhan API Call
-		try {
-			const response = await fetch(`https://api.aladhan.com/v1/gToH?date=${formattedDate}`);
-			const data = await response.json();
+	try {
+		const response = await fetch(`https://api.aladhan.com/v1/gToH?date=${formattedDate}`);
+		const data = await response.json();
 
+		console.log("Hijri API Response:", data);  // debug line
+
+		if (data && data.data && data.data.hijri) {
 			const hijri = data.data.hijri;
 			const hijriDay = toBanglaNumber(hijri.day);
 			const hijriMonth = hijriMonthsBn[hijri.month.number - 1];
 			const hijriYear = toBanglaNumber(hijri.year);
 
-			// বাংলা গ্রেগরিয়ান তারিখ
 			const banglaDate = `${toBanglaNumber(day)} ${banglaMonths[month]} ${toBanglaNumber(year)}`;
 			const hijriDate = `${hijriDay} ${hijriMonth} ${hijriYear} হিজরি`;
 
 			document.getElementById('currentDateTime').innerText = `${banglaDate} | ${hijriDate}`;
-		} catch (error) {
-			console.error("হিজরি তারিখ আনতে সমস্যা হয়েছে:", error);
-			document.getElementById('currentDateTime').innerText = "তারিখ লোড করা যায়নি";
+		} else {
+			throw new Error("Hijri data missing");
 		}
+	} catch (error) {
+		console.error("হিজরি তারিখ আনতে সমস্যা হয়েছে:", error);
+		document.getElementById('currentDateTime').innerText = "তারিখ লোড করা যায়নি";
 	}
+}
 
 	// প্রথমবার চালানো
 	updateDateInfo();
