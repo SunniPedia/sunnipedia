@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="pageTitle"></title>
+  <title>ইসলামী বই</title>
   <style>
     @font-face {
       font-family: 'SolaimanLipi';
@@ -123,7 +123,6 @@
     const urlParams = new URLSearchParams(window.location.search);
 const bookid = urlParams.get('bookid');
 const bookName = decodeURIComponent(urlParams.get('name') || 'বই');
-const bookTitle = document.getElementById('pageTitle');
 const bookTitle = document.getElementById('bookTitle');
 
 // create temp span to measure actual width
