@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title id="pageTitle"></title>
+  <title id="pageTitle"></title>
   <style>
     @font-face {
       font-family: 'SolaimanLipi';
@@ -21,11 +21,35 @@
       background-color: #01837A;
       color: white;
       padding: 15px;
-      text-align: center;
       font-size: 20px;
       position: sticky;
       top: 0;
       z-index: 999;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .header img {
+      height: 24px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    #viewTitle {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex-grow: 1;
+    }
+
+    #viewTitle.marquee {
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
 
     .controls {
@@ -36,7 +60,7 @@
       position: sticky;
       top: 50px;
       z-index: 998;
-font-family: 'SolaimanLipi', sans-serif;
+      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls button {
@@ -50,7 +74,7 @@ font-family: 'SolaimanLipi', sans-serif;
       background-color: #009688;
       color: white;
       cursor: pointer;
-				font-family: 'SolaimanLipi', sans-serif;
+      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls img {
@@ -81,7 +105,10 @@ font-family: 'SolaimanLipi', sans-serif;
 </head>
 <body>
 
-  <div class="header" id="viewTitle">বই পড়ুন</div>
+  <div class="header">
+    <img src="back.png" alt="Back" onclick="history.back()">
+    <div id="viewTitle">বই পড়ুন</div>
+  </div>
 
   <div class="controls">
     <button onclick="increaseFont()">আকার+</button>
@@ -92,102 +119,112 @@ font-family: 'SolaimanLipi', sans-serif;
     <button onclick="shareContent()">
       <img src="share.png" alt="Share"> শেয়ার
     </button>
-<button onclick="copyShortLink()">লিংক</button>
+    <button onclick="copyShortLink()">লিংক</button>
   </div>
 
   <div class="content" id="content">লোড হচ্ছে...</div>
 
   <div class="footer">©ইসলামী বিশ্বকোষ ও আল হাদিস S2</div>
 
- <script>
-  let fontSize = 18;
-  const contentDiv = document.getElementById('content');
+  <script>
+    let fontSize = 18;
+    const contentDiv = document.getElementById('content');
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const index = parseInt(urlParams.get('index'), 10);
-  const bookid = urlParams.get('bookid');
-  const bookName = decodeURIComponent(urlParams.get('name') || '');
-  const key = decodeURIComponent(urlParams.get('key') || '');
+    const urlParams = new URLSearchParams(window.location.search);
+    const index = parseInt(urlParams.get('index'), 10);
+    const bookid = urlParams.get('bookid');
+    const bookName = decodeURIComponent(urlParams.get('name') || '');
+    const key = decodeURIComponent(urlParams.get('key') || '');
 
-document.getElementById('pageTitle').innerText = key || bookName || 'বই পড়ুন';
- document.getElementById('viewTitle').innerText = key || bookName || 'বই পড়ুন';
+    document.getElementById('pageTitle').innerText = key || bookName || 'বই পড়ুন';
+    const viewTitle = document.getElementById('viewTitle');
+    viewTitle.innerText = key || bookName || 'বই পড়ুন';
 
-  function updateFontSize() {
-    contentDiv.style.fontSize = fontSize + 'px';
-  }
+    // Check if marquee is needed
+    window.onload = function () {
+      if (viewTitle.scrollWidth > viewTitle.clientWidth) {
+        viewTitle.classList.add('marquee');
+      }
+    };
 
-  function increaseFont() {
-    fontSize += 1;
-    updateFontSize();
-  }
+    function updateFontSize() {
+      contentDiv.style.fontSize = fontSize + 'px';
+    }
 
-  function decreaseFont() {
-    if (fontSize > 10) {
-      fontSize -= 1;
+    function increaseFont() {
+      fontSize += 1;
       updateFontSize();
     }
-  }
 
-  function copyContent() {
-    const tempInput = document.createElement('textarea');
-    tempInput.value = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand('copy');
-    document.body.removeChild(tempInput);
-    alert('লেখাটি কপি করা হয়েছে');
-  }
-
-  function shareContent() {
-    const textToShare = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
-    if (navigator.share) {
-      navigator.share({
-        title: 'বই শেয়ার করুন',
-        text: textToShare
-      }).catch(console.error);
-    } else {
-      alert('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
-    }
-  }
-function copyShortLink() {
-  const longUrl = window.location.href;
-
-  fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`)
-    .then(response => response.text())
-    .then(shortLink => {
-      navigator.clipboard.writeText(shortLink)
-        .then(() => alert('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
-        .catch(() => alert('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
-    })
-    .catch(error => {
-      console.error('TinyURL error:', error);
-      alert('লিংক শর্ট করতে সমস্যা হয়েছে');
-    });
-}
-  function loadDataAndDisplay() {
-    if (!bookid || isNaN(index)) {
-      contentDiv.innerHTML = '<p>তথ্য পাওয়া যায়নি।</p>';
-      return;
+    function decreaseFont() {
+      if (fontSize > 10) {
+        fontSize -= 1;
+        updateFontSize();
+      }
     }
 
-    fetch(`https://sunnipedia-zeta.vercel.app/book/${bookid}.json`)
-      .then(res => res.json())
-      .then(data => {
-        if (index >= 0 && index < data.length) {
-          const matchedItem = data[index];
-          contentDiv.innerHTML = `<p>${matchedItem["2"] || 'বিষয়বস্তু খুঁজে পাওয়া যায়নি।'}</p>`;
-        } else {
-          contentDiv.innerHTML = '<p>অনুচ্ছেদ খুঁজে পাওয়া যায়নি।</p>';
-        }
-      })
-      .catch(error => {
-        console.error('Load error:', error);
-        contentDiv.innerHTML = '<p>ডেটা লোড করতে সমস্যা হয়েছে।</p>';
-      });
-  }
+    function copyContent() {
+      const tempInput = document.createElement('textarea');
+      tempInput.value = viewTitle.innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      alert('লেখাটি কপি করা হয়েছে');
+    }
 
-  loadDataAndDisplay();
-</script>
+    function shareContent() {
+      const textToShare = viewTitle.innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
+      if (navigator.share) {
+        navigator.share({
+          title: 'বই শেয়ার করুন',
+          text: textToShare
+        }).catch(console.error);
+      } else {
+        alert('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
+      }
+    }
+
+    function copyShortLink() {
+      const longUrl = window.location.href;
+
+      fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`)
+        .then(response => response.text())
+        .then(shortLink => {
+          navigator.clipboard.writeText(shortLink)
+            .then(() => alert('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
+            .catch(() => alert('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
+        })
+        .catch(error => {
+          console.error('TinyURL error:', error);
+          alert('লিংক শর্ট করতে সমস্যা হয়েছে');
+        });
+    }
+
+    function loadDataAndDisplay() {
+      if (!bookid || isNaN(index)) {
+        contentDiv.innerHTML = '<p>তথ্য পাওয়া যায়নি।</p>';
+        return;
+      }
+
+      fetch(`https://sunnipedia-zeta.vercel.app/book/${bookid}.json`)
+        .then(res => res.json())
+        .then(data => {
+          if (index >= 0 && index < data.length) {
+            const matchedItem = data[index];
+            contentDiv.innerHTML = `<p>${matchedItem["2"] || 'বিষয়বস্তু খুঁজে পাওয়া যায়নি।'}</p>`;
+          } else {
+            contentDiv.innerHTML = '<p>অনুচ্ছেদ খুঁজে পাওয়া যায়নি।</p>';
+          }
+        })
+        .catch(error => {
+          console.error('Load error:', error);
+          contentDiv.innerHTML = '<p>ডেটা লোড করতে সমস্যা হয়েছে।</p>';
+        });
+    }
+
+    loadDataAndDisplay();
+  </script>
 
 </body>
 </html>
