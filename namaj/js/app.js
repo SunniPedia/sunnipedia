@@ -156,7 +156,7 @@ function showPrayTimes(lat, long, prayTimes) {
 	}
 	var table_footer_title = "Next Prayer Time Remaining";
 	if($("input[name='lang']:checked").val() === 'bn'){
-		var table_footer_title = "পরবর্তী নামাজের সময় বাকী";
+		var table_footer_title = "পরবর্তী নামাযের সময় বাকী";
 	}
 
 	html += '<tfoot><tr class="text-center"><td colspan="2"><strong id="table_footer_title">'+table_footer_title+'</strong><br> '+nextPrayerTimeName+' '+nextPrayerTimeRemaining+'</td></tfoot>';
@@ -173,14 +173,14 @@ setInterval(getLocation, 0);
 function setCurrentDateTime() {
 	if($("input[name='lang']:checked").val() === 'bn'){
 		moment.locale('bn');
-		document.getElementById("table_header_title").innerHTML = "নামাজের সময়";
-		document.getElementById("footer_note").innerHTML = "* উজ্জ্বল সারি বর্তমান ওয়াক্ত প্রকাশ করে";
+		document.getElementById("table_header_title").innerHTML = "নামাযের সময়";
+		document.getElementById("footer_note").innerHTML = "* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে";
 	}else{
 		moment.locale('en');
 		document.getElementById("table_header_title").innerHTML = "Prayer Times";
 		document.getElementById("footer_note").innerHTML = "* Highlited row define the current waqt</sma";
 	}
-	document.getElementById("currentDateTime").innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+	document.getElementById("currentDateTime").innerHTML = moment().format('MMMM Do YYYY');
 }
 setInterval(setCurrentDateTime, 0);
 
