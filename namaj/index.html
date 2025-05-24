@@ -70,7 +70,6 @@
 	<script src="js/PrayTimes.js"></script>
 
 	<script>
-		// Default language
 		let currentLang = 'bn';
 
 		const translations = {
@@ -96,11 +95,9 @@
 			document.getElementById("footer_note").innerText = t.footer;
 			document.getElementById("notification_message").innerText = t.notification;
 
-			// moment.js locale
 			moment.locale(lang === 'bn' ? 'bn' : 'en');
 		}
 
-		// Language switch handlers
 		document.getElementById("btn-en").addEventListener("click", () => {
 			updateLanguage('en');
 			document.getElementById("btn-en").classList.add("active");
@@ -113,7 +110,6 @@
 			document.getElementById("btn-en").classList.remove("active");
 		});
 
-		// Initial Load
 		updateLanguage(currentLang);
 	</script>
 
@@ -124,39 +120,30 @@
 			return num.toString().split('').map(n => banglaDigits[n] || n).join('');
 		}
 
-		// বাংলা ও হিজরি মাস
+		// বাংলা মাস
 		const banglaMonths = ["জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন", "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"];
-		const hijriMonthsBn = ["মুহাররাম", "সফর", "রবিউল আউয়াল", "রবিউস সানি", "জুমাদাল উলা", "জুমাদাস সানি", "রজব", "শাবান", "রমযান", "শাওয়াল", "জিলক্বদ", "জিলহজ্জ"];
 
 		async function updateDateInfo() {
 			const today = new Date();
 			const day = today.getDate();
 			const month = today.getMonth();
 			const year = today.getFullYear();
-			const formattedDate = `${day}-${month + 1}-${year}`;
+
+			const banglaDate = `${toBanglaNumber(day)} ${banglaMonths[month]} ${toBanglaNumber(year)}`;
+			document.getElementById('currentDateTime').innerText = banglaDate;
 
 			try {
-				const response = await fetch(`https://api.aladhan.com/v1/gToH?date=${formattedDate}`);
+				const response = await fetch("https://www.dropbox.com/scl/fi/ub2e20u3di11w3bt9hdpk/hijridate.json?rlkey=zt91e7q01bc7c3nx03ig5u187&st=81gar36y&dl=1");
 				const data = await response.json();
 
-				if (data && data.data && data.data.hijri) {
-					const hijri = data.data.hijri;
-					const hijriDay = toBanglaNumber(hijri.day);
-					const hijriMonth = hijriMonthsBn[hijri.month.number - 1];
-					const hijriYear = toBanglaNumber(hijri.year);
-
-					const banglaDate = `${toBanglaNumber(day)} ${banglaMonths[month]} ${toBanglaNumber(year)}`;
-					const hijriDate = `${hijriDay} ${hijriMonth} ${hijriYear} হিজরি`;
-
-					document.getElementById('hijriDate').innerText = hijriDate;
-					document.getElementById('currentDateTime').innerText = banglaDate;
+				if (data && data.length > 0 && data[0].hijridate) {
+					document.getElementById('hijriDate').innerText = data[0].hijridate;
 				} else {
-					throw new Error("Hijri data missing");
+					throw new Error("No hijriDate found");
 				}
 			} catch (error) {
-				console.error("হিজরি তারিখ আনতে সমস্যা হয়েছে:", error);
+				console.error("হিজরি তারিখ লোড করতে সমস্যা হয়েছে:", error);
 				document.getElementById('hijriDate').innerText = "হিজরি তারিখ লোড করা যায়নি";
-				document.getElementById('currentDateTime').innerText = "তারিখ লোড করা যায়নি";
 			}
 		}
 
