@@ -27,20 +27,27 @@
       z-index: 999;
       display: flex;
       align-items: center;
-      overflow: hidden;
     }
 
     .header img {
       height: 24px;
       cursor: pointer;
       margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .title-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      flex-grow: 1;
+      position: relative;
     }
 
     #viewTitle {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      flex-grow: 1;
+      display: inline-block;
+      padding-left: 100%;
+      animation: none;
+      color: white;
     }
 
     #viewTitle.marquee {
@@ -48,7 +55,7 @@
     }
 
     @keyframes marquee {
-      0% { transform: translateX(100%); }
+      0% { transform: translateX(0%); }
       100% { transform: translateX(-100%); }
     }
 
@@ -60,7 +67,6 @@
       position: sticky;
       top: 50px;
       z-index: 998;
-      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls button {
@@ -74,7 +80,6 @@
       background-color: #009688;
       color: white;
       cursor: pointer;
-      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls img {
@@ -107,7 +112,9 @@
 
   <div class="header">
     <img src="back.png" alt="Back" onclick="history.back()">
-    <div id="viewTitle">বই পড়ুন</div>
+    <div class="title-wrapper">
+      <div id="viewTitle">বই পড়ুন</div>
+    </div>
   </div>
 
   <div class="controls">
@@ -140,9 +147,8 @@
     const viewTitle = document.getElementById('viewTitle');
     viewTitle.innerText = key || bookName || 'বই পড়ুন';
 
-    // Check if marquee is needed
     window.onload = function () {
-      if (viewTitle.scrollWidth > viewTitle.clientWidth) {
+      if (viewTitle.scrollWidth > viewTitle.parentElement.clientWidth) {
         viewTitle.classList.add('marquee');
       }
     };
