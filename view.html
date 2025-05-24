@@ -26,7 +26,6 @@
       position: sticky;
       top: 0;
       z-index: 999;
-      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls {
@@ -50,7 +49,6 @@
       background-color: #009688;
       color: white;
       cursor: pointer;
-      font-family: 'SolaimanLipi', sans-serif;
     }
 
     .controls img {
@@ -67,19 +65,15 @@
       line-height: 1.6;
       font-size: 18px;
       color: #333;
-white-space: pre-wrap; /* নতুন লাইন ও স্পেস ঠিক রাখবে */
-      font-family: 'SolaimanLipi', sans-serif;
+      white-space: pre-wrap;
+      text-align: justify;
     }
-.content, .content * {
-  font-family: 'SolaimanLipi', sans-serif !important;
-text-align: justify;
-}
+
     .footer {
       text-align: center;
       margin: 20px 0;
       font-size: 14px;
       color: #999;
-      font-family: 'SolaimanLipi', sans-serif;
     }
   </style>
 </head>
@@ -104,38 +98,38 @@ text-align: justify;
 
   <script>
     let fontSize = 18;
-const contentDiv = document.getElementById('content');
+    const contentDiv = document.getElementById('content');
 
-const urlParams = new URLSearchParams(window.location.search);
-const key = decodeURIComponent(urlParams.get('key') || '');
-const bookid = urlParams.get('bookid');
-const bookName = decodeURIComponent(urlParams.get('name') || '');
+    const urlParams = new URLSearchParams(window.location.search);
+    const key = decodeURIComponent(urlParams.get('key') || '');
+    const bookid = urlParams.get('bookid');
+    const bookName = decodeURIComponent(urlParams.get('name') || '');
 
-document.getElementById('viewTitle').innerText = bookName || 'বই পড়ুন';
+    document.getElementById('viewTitle').innerText = bookName || 'বই পড়ুন';
 
-function loadDataAndDisplay() {
-  if (!bookid || !key) {
-    contentDiv.innerHTML = '<p>তথ্য পাওয়া যায়নি।</p>';
-    return;
-  }
-
-  fetch(`https://sunnipedia-zeta.vercel.app/book/${bookid}.json`)
-    .then(res => res.json())
-    .then(data => {
-      const matchedItem = data.find(item => item["1"] === key);
-      if (matchedItem) {
-        contentDiv.innerHTML = `<p>${matchedItem["2"] || 'বিষয়বস্তু খুঁজে পাওয়া যায়নি।'}</p>`;
-      } else {
-        contentDiv.innerHTML = '<p>অনুচ্ছেদ খুঁজে পাওয়া যায়নি।</p>';
+    function loadDataAndDisplay() {
+      if (!bookid || !key) {
+        contentDiv.innerHTML = '<p>তথ্য পাওয়া যায়নি।</p>';
+        return;
       }
-    })
-    .catch(error => {
-      console.error('Load error:', error);
-      contentDiv.innerHTML = '<p>ডেটা লোড করতে সমস্যা হয়েছে।</p>';
-    });
-}
 
-loadDataAndDisplay();
+      fetch(`https://sunnipedia-zeta.vercel.app/book/${bookid}.json`)
+        .then(res => res.json())
+        .then(data => {
+          const matchedItem = data.find(item => item["1"] === key);
+          if (matchedItem) {
+            contentDiv.innerHTML = `<p>${matchedItem["2"] || 'বিষয়বস্তু খুঁজে পাওয়া যায়নি।'}</p>`;
+          } else {
+            contentDiv.innerHTML = '<p>অনুচ্ছেদ খুঁজে পাওয়া যায়নি।</p>';
+          }
+        })
+        .catch(error => {
+          console.error('Load error:', error);
+          contentDiv.innerHTML = '<p>ডেটা লোড করতে সমস্যা হয়েছে।</p>';
+        });
+    }
+
+    loadDataAndDisplay();
 
     function increaseFont() {
       fontSize += 1;
