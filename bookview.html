@@ -196,11 +196,19 @@ document.body.removeChild(tempSpan);
 
     function openView(index) {
   const keyValue = fullData[index]["1"];
-  const encodedKey = encodeURIComponent(keyValue);
   const encodedBookName = encodeURIComponent(bookName);
-  window.location.href = `view.html?bookid=${bookid}&name=${encodedBookName}&key=${encodedKey}`;
-}
 
+  // একই key এর সবগুলোর index খুঁজে বের করি
+  const matchedIndexes = fullData
+    .map((item, i) => item["1"] === keyValue ? i : -1)
+    .filter(i => i !== -1);
+
+  // index গুলো পাঠিয়ে দেই URL এ
+  const joinedIndexes = matchedIndexes.join(',');
+  const encodedKey = encodeURIComponent(keyValue);
+
+  window.location.href = `view.html?bookid=${bookid}&name=${encodedBookName}&key=${encodedKey}&indexes=${joinedIndexes}`;
+}
     function loadContent() {
       const loadingDiv = document.getElementById('loadingText');
       loadingDiv.style.display = 'block';
