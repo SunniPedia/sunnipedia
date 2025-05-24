@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>বই পড়ুন</title>
+<title id="pageTitle"></title>
   <style>
     @font-face {
       font-family: 'SolaimanLipi';
@@ -109,7 +109,8 @@ font-family: 'SolaimanLipi', sans-serif;
   const bookName = decodeURIComponent(urlParams.get('name') || '');
   const key = decodeURIComponent(urlParams.get('key') || '');
 
-  document.getElementById('viewTitle').innerText = key || bookName || 'বই পড়ুন';
+document.getElementById('pageTitle').innerText = key || bookName || 'বই পড়ুন';
+ document.getElementById('viewTitle').innerText = key || bookName || 'বই পড়ুন';
 
   function updateFontSize() {
     contentDiv.style.fontSize = fontSize + 'px';
