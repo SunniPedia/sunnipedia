@@ -198,7 +198,7 @@ document.body.removeChild(tempSpan);
   const keyValue = fullData[index]["1"];
   const encodedKey = encodeURIComponent(keyValue);
   const encodedBookName = encodeURIComponent(bookName);
-  window.location.href = `view.html?bookid=${bookid}&name=${encodedBookName}&key=${encodedKey}`;
+  window.location.href = `view.html?bookid=${bookid}&name=${encodedBookName}&key=${encodedKey}&index=${index}`;
 }
     function loadContent() {
       const loadingDiv = document.getElementById('loadingText');
