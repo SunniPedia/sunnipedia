@@ -195,9 +195,10 @@ document.body.removeChild(tempSpan);
     }
 
     function openView(index) {
-      sessionStorage.setItem('selectedIndex', index);
-      window.location.href = 'view.html';
-    }
+  const keyValue = fullData[index]["1"];
+  const encodedKeyValue = encodeURIComponent(keyValue);
+  window.location.href = `view.html?key=${encodedKeyValue}`;
+}
 
     function loadContent() {
       const loadingDiv = document.getElementById('loadingText');
