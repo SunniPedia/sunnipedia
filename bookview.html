@@ -108,6 +108,7 @@
   <div class="toolbar">
     <img src="back.png" alt="Back" onclick="history.back()">
     <h1 id="bookTitle">বই</h1>
+<img src="link.png" alt="Copy Link" onclick="copyShortLink()">
     <img src="search.png" alt="Search" onclick="toggleSearch()">
   </div>
 
@@ -199,6 +200,21 @@ document.body.removeChild(tempSpan);
   const encodedBookName = encodeURIComponent(bookName);
   window.location.href = `view.html?bookid=${bookid}&name=${encodedBookName}&key=${encodedKey}&index=${index}`;
 }
+function copyShortLink() {
+      const longUrl = window.location.href;
+
+      fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`)
+        .then(response => response.text())
+        .then(shortLink => {
+          navigator.clipboard.writeText(shortLink)
+            .then(() => alert('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
+            .catch(() => alert('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
+        })
+        .catch(error => {
+          console.error('TinyURL error:', error);
+          alert('লিংক শর্ট করতে সমস্যা হয়েছে');
+        });
+    }
     function loadContent() {
       const loadingDiv = document.getElementById('loadingText');
       loadingDiv.style.display = 'block';
