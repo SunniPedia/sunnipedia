@@ -37,25 +37,28 @@
     }
 
     .toolbar h1 {
-      flex: 1;
-      margin: 0;
-      font-size: 18px;
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-      text-align: center;
-    }
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
     .marquee {
   display: inline-block;
+  white-space: nowrap;
   animation: marquee 8s linear infinite;
-  transform: translateX(100%);
 }
 
     @keyframes marquee {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(-100%); }
-    }
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
 
     #searchBox {
   padding: 10px;
