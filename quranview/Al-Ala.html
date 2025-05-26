@@ -1,677 +1,681 @@
-<!DOCTYPE html>    
-<html lang="bn">    
-<head>    
-  <meta charset="UTF-8">    
-  <title>আল আ’লা</title>    
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-  <link rel="stylesheet" href="quranview.css">    
-</head>    
-<body>    
-  <div class="toolbar">    
-    <div style="display: flex; align-items: center; gap: 10px;">    
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
-      <div class="toolbar-title" id="surahTitle">আল আ’লা</div>    
-    </div>    
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
-    </div>    
-  </div>    
-    
-  <div id="searchBox" style="display:none;">    
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
-  </div>    
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">০</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ০    
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
-কানযুল ঈমান    
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
-ইরফানুল কুরআন    
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ০    
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
-কানযুল ঈমান    
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
-ইরফানুল কুরআন    
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5949">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১    
-سَبِّحِ اسۡمَ رَبِّکَ الۡاَعۡلَی ۙ﴿۱﴾    
-কানযুল ঈমান    
-আপন রবের নামের পবিত্রতা বর্ণনা করো, যিনি সবার ঊর্ধ্বে,    
-ইরফানুল কুরআন    
-১. আপনার প্রতিপালকের নামের পবিত্রতা ও মহিমা ঘোষণা করুন, যিনি সর্বোচ্চ মহিমাময়,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১    
-سَبِّحِ اسۡمَ رَبِّکَ الۡاَعۡلَی ۙ﴿۱﴾    
-কানযুল ঈমান    
-আপন রবের নামের পবিত্রতা বর্ণনা করো, যিনি সবার ঊর্ধ্বে,    
-ইরফানুল কুরআন    
-১. আপনার প্রতিপালকের নামের পবিত্রতা ও মহিমা ঘোষণা করুন, যিনি সর্বোচ্চ মহিমাময়,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">سَبِّحِ اسۡمَ رَبِّکَ الۡاَعۡلَی ۙ﴿۱﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১. আপন রবের নামের পবিত্রতা বর্ণনা করো, যিনি সবার ঊর্ধ্বে,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১. আপনার প্রতিপালকের নামের পবিত্রতা ও মহিমা ঘোষণা করুন, যিনি সর্বোচ্চ মহিমাময়,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">২</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5950">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ২    
-الَّذِیۡ خَلَقَ فَسَوّٰی ۪ۙ﴿۲﴾    
-কানযুল ঈমান    
-যিনি সৃষ্টি করে সুঠাম করেছেন;    
-ইরফানুল কুরআন    
-২. তিনিই (বিশ্বজগতের সকল কিছু) সৃষ্টি করেছেন, অতঃপর (সকল প্রয়োজনানুসারে) এর সঠিক আনুপাতিক ভারসাম্য সামঞ্জস্যপূর্ণ করেছেন।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ২    
-الَّذِیۡ خَلَقَ فَسَوّٰی ۪ۙ﴿۲﴾    
-কানযুল ঈমান    
-যিনি সৃষ্টি করে সুঠাম করেছেন;    
-ইরফানুল কুরআন    
-২. তিনিই (বিশ্বজগতের সকল কিছু) সৃষ্টি করেছেন, অতঃপর (সকল প্রয়োজনানুসারে) এর সঠিক আনুপাতিক ভারসাম্য সামঞ্জস্যপূর্ণ করেছেন।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">الَّذِیۡ خَلَقَ فَسَوّٰی ۪ۙ﴿۲﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">২. যিনি সৃষ্টি করে সুঠাম করেছেন;</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">২. তিনিই (বিশ্বজগতের সকল কিছু) সৃষ্টি করেছেন, অতঃপর (সকল প্রয়োজনানুসারে) এর সঠিক আনুপাতিক ভারসাম্য সামঞ্জস্যপূর্ণ করেছেন।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৩</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5951">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৩    
-وَ الَّذِیۡ  قَدَّرَ فَہَدٰی ۪ۙ﴿۳﴾    
-কানযুল ঈমান    
-এবং যিনি নির্দিষ্ট পরিমাপের উপর রেখে পথ প্রদর্শন করেছেন,    
-ইরফানুল কুরআন    
-৩. আর যিনি (প্রত্যেক সৃষ্টির জন্যে) নীতি নির্ধারণ করেছেন, তারপর (তাদেরকে নিজ নিজ বিধান অনুযায়ী থাকার এবং পরিচালিত হবার) পথ দেখিয়েছেন,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৩    
-وَ الَّذِیۡ  قَدَّرَ فَہَدٰی ۪ۙ﴿۳﴾    
-কানযুল ঈমান    
-এবং যিনি নির্দিষ্ট পরিমাপের উপর রেখে পথ প্রদর্শন করেছেন,    
-ইরফানুল কুরআন    
-৩. আর যিনি (প্রত্যেক সৃষ্টির জন্যে) নীতি নির্ধারণ করেছেন, তারপর (তাদেরকে নিজ নিজ বিধান অনুযায়ী থাকার এবং পরিচালিত হবার) পথ দেখিয়েছেন,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ الَّذِیۡ  قَدَّرَ فَہَدٰی ۪ۙ﴿۳﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৩. এবং যিনি নির্দিষ্ট পরিমাপের উপর রেখে পথ প্রদর্শন করেছেন,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৩. আর যিনি (প্রত্যেক সৃষ্টির জন্যে) নীতি নির্ধারণ করেছেন, তারপর (তাদেরকে নিজ নিজ বিধান অনুযায়ী থাকার এবং পরিচালিত হবার) পথ দেখিয়েছেন,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৪</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5952">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৪    
-وَ الَّذِیۡۤ  اَخۡرَجَ  الۡمَرۡعٰی ۪ۙ﴿۴﴾    
-কানযুল ঈমান    
-এবং যিনি চারা বের করেছেন,    
-ইরফানুল কুরআন    
-৪. আর যিনি (ভূমি থেকে) সবুজ কিশলয় উদগত করেছেন,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৪    
-وَ الَّذِیۡۤ  اَخۡرَجَ  الۡمَرۡعٰی ۪ۙ﴿۴﴾    
-কানযুল ঈমান    
-এবং যিনি চারা বের করেছেন,    
-ইরফানুল কুরআন    
-৪. আর যিনি (ভূমি থেকে) সবুজ কিশলয় উদগত করেছেন,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ الَّذِیۡۤ  اَخۡرَجَ  الۡمَرۡعٰی ۪ۙ﴿۴﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৪. এবং যিনি চারা বের করেছেন,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৪. আর যিনি (ভূমি থেকে) সবুজ কিশলয় উদগত করেছেন,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৫</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5953">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৫    
-فَجَعَلَہٗ  غُثَآءً  اَحۡوٰی ؕ﴿۵﴾    
-কানযুল ঈমান    
-তারপর সেটাকে শুষ্ক কালো করেছেন।    
-ইরফানুল কুরআন    
-৫. তারপর একে শুষ্ক কালো খড়ে পরিণত করেছেন।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৫    
-فَجَعَلَہٗ  غُثَآءً  اَحۡوٰی ؕ﴿۵﴾    
-কানযুল ঈমান    
-তারপর সেটাকে শুষ্ক কালো করেছেন।    
-ইরফানুল কুরআন    
-৫. তারপর একে শুষ্ক কালো খড়ে পরিণত করেছেন।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">فَجَعَلَہٗ  غُثَآءً  اَحۡوٰی ؕ﴿۵﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৫. তারপর সেটাকে শুষ্ক কালো করেছেন।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৫. তারপর একে শুষ্ক কালো খড়ে পরিণত করেছেন।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৬</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5954">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৬    
-سَنُقۡرِئُکَ فَلَا تَنۡسٰۤی ۙ﴿۶﴾    
-কানযুল ঈমান    
-এখন আমি আপনাকে পড়াবো; ফলে আপনি ভুলবেন না,    
-ইরফানুল কুরআন    
-৬. (হে মহিমান্বিত হাবীব!) আমরা আপনাকে (এমন পদ্ধতিতে) শিখিয়ে দেবো যা আপনি (কখনো) বিস্মৃত হবেন না,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৬    
-سَنُقۡرِئُکَ فَلَا تَنۡسٰۤی ۙ﴿۶﴾    
-কানযুল ঈমান    
-এখন আমি আপনাকে পড়াবো; ফলে আপনি ভুলবেন না,    
-ইরফানুল কুরআন    
-৬. (হে মহিমান্বিত হাবীব!) আমরা আপনাকে (এমন পদ্ধতিতে) শিখিয়ে দেবো যা আপনি (কখনো) বিস্মৃত হবেন না,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">سَنُقۡرِئُکَ فَلَا تَنۡسٰۤی ۙ﴿۶﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৬. এখন আমি আপনাকে পড়াবো; ফলে আপনি ভুলবেন না,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৬. (হে মহিমান্বিত হাবীব!) আমরা আপনাকে (এমন পদ্ধতিতে) শিখিয়ে দেবো যা আপনি (কখনো) বিস্মৃত হবেন না,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৭</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5955">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৭    
-اِلَّا  مَا شَآءَ اللّٰہُ ؕ اِنَّہٗ  یَعۡلَمُ الۡجَہۡرَ  وَ مَا یَخۡفٰی ؕ﴿۷﴾    
-কানযুল ঈমান    
-কিন্তু আল্লাহ্‌ যা চান। নিশ্চয় তিনি জানেন প্রত্যেক প্রকাশ্য ও অপ্রকাশ্যকে।    
-ইরফানুল কুরআন    
-৭. কেবল আল্লাহ্ যা চান তা ব্যতীত। নিশ্চয়ই তিনি সে সবই অবগত, যা কিছু গোপন ও প্রকাশিত (অর্থাৎ মানুষের বোধশক্তিতে যা প্রকাশিত ও অবগুন্ঠিত এবং যা শ্রুত ও অশ্রুত)।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৭    
-اِلَّا  مَا شَآءَ اللّٰہُ ؕ اِنَّہٗ  یَعۡلَمُ الۡجَہۡرَ  وَ مَا یَخۡفٰی ؕ﴿۷﴾    
-কানযুল ঈমান    
-কিন্তু আল্লাহ্‌ যা চান। নিশ্চয় তিনি জানেন প্রত্যেক প্রকাশ্য ও অপ্রকাশ্যকে।    
-ইরফানুল কুরআন    
-৭. কেবল আল্লাহ্ যা চান তা ব্যতীত। নিশ্চয়ই তিনি সে সবই অবগত, যা কিছু গোপন ও প্রকাশিত (অর্থাৎ মানুষের বোধশক্তিতে যা প্রকাশিত ও অবগুন্ঠিত এবং যা শ্রুত ও অশ্রুত)।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اِلَّا  مَا شَآءَ اللّٰہُ ؕ اِنَّہٗ  یَعۡلَمُ الۡجَہۡرَ  وَ مَا یَخۡفٰی ؕ﴿۷﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৭. কিন্তু আল্লাহ্‌ যা চান। নিশ্চয় তিনি জানেন প্রত্যেক প্রকাশ্য ও অপ্রকাশ্যকে।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৭. কেবল আল্লাহ্ যা চান তা ব্যতীত। নিশ্চয়ই তিনি সে সবই অবগত, যা কিছু গোপন ও প্রকাশিত (অর্থাৎ মানুষের বোধশক্তিতে যা প্রকাশিত ও অবগুন্ঠিত এবং যা শ্রুত ও অশ্রুত)।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৮</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5956">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৮    
-وَ نُیَسِّرُکَ لِلۡیُسۡرٰی ۚ﴿ۖ۸﴾    
-কানযুল ঈমান    
-এবং আমি আপনার জন্য সহজের সামগ্রীসমূহ যোগাড় করে দেবো।    
-ইরফানুল কুরআন    
-৮. আর আমরা আপনার জন্যে (শরীয়তের বিধি বিধানের উপর চলাও) সহজ করে দেবো।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৮    
-وَ نُیَسِّرُکَ لِلۡیُسۡرٰی ۚ﴿ۖ۸﴾    
-কানযুল ঈমান    
-এবং আমি আপনার জন্য সহজের সামগ্রীসমূহ যোগাড় করে দেবো।    
-ইরফানুল কুরআন    
-৮. আর আমরা আপনার জন্যে (শরীয়তের বিধি বিধানের উপর চলাও) সহজ করে দেবো।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ نُیَسِّرُکَ لِلۡیُسۡرٰی ۚ﴿ۖ۸﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৮. এবং আমি আপনার জন্য সহজের সামগ্রীসমূহ যোগাড় করে দেবো।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৮. আর আমরা আপনার জন্যে (শরীয়তের বিধি বিধানের উপর চলাও) সহজ করে দেবো।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৯</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5957">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৯    
-فَذَکِّرۡ  اِنۡ  نَّفَعَتِ الذِّکۡرٰی ؕ﴿۹﴾    
-কানযুল ঈমান    
-অতএব, আপনি উপদেশ দান করুন, যদি উপদেশ ফলপ্রসূ হয়;    
-ইরফানুল কুরআন    
-৯. অতঃপর আপনি উপদেশ দিতে থাকুন, যদি উপদেশ (শ্রবণকারীকে) উপকৃত করে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৯    
-فَذَکِّرۡ  اِنۡ  نَّفَعَتِ الذِّکۡرٰی ؕ﴿۹﴾    
-কানযুল ঈমান    
-অতএব, আপনি উপদেশ দান করুন, যদি উপদেশ ফলপ্রসূ হয়;    
-ইরফানুল কুরআন    
-৯. অতঃপর আপনি উপদেশ দিতে থাকুন, যদি উপদেশ (শ্রবণকারীকে) উপকৃত করে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">فَذَکِّرۡ  اِنۡ  نَّفَعَتِ الذِّکۡرٰی ؕ﴿۹﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৯. অতএব, আপনি উপদেশ দান করুন, যদি উপদেশ ফলপ্রসূ হয়;</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৯. অতঃপর আপনি উপদেশ দিতে থাকুন, যদি উপদেশ (শ্রবণকারীকে) উপকৃত করে।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১০</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5958">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১০    
-سَیَذَّکَّرُ مَنۡ یَّخۡشٰی ﴿ۙ۱۰﴾    
-কানযুল ঈমান    
-অতিসত্ত্বর উপদেশ গ্রহণ করবে যে ভয় করে।    
-ইরফানুল কুরআন    
-১০. তবে যে আল্লাহ্কে ভয় করবে সেই উপদেশ গ্রহণ করবে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১০    
-سَیَذَّکَّرُ مَنۡ یَّخۡشٰی ﴿ۙ۱۰﴾    
-কানযুল ঈমান    
-অতিসত্ত্বর উপদেশ গ্রহণ করবে যে ভয় করে।    
-ইরফানুল কুরআন    
-১০. তবে যে আল্লাহ্কে ভয় করবে সেই উপদেশ গ্রহণ করবে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">سَیَذَّکَّرُ مَنۡ یَّخۡشٰی ﴿ۙ۱۰﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১০. অতিসত্ত্বর উপদেশ গ্রহণ করবে যে ভয় করে।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১০. তবে যে আল্লাহ্কে ভয় করবে সেই উপদেশ গ্রহণ করবে।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১১</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5959">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১১    
-وَ  یَتَجَنَّبُہَا الۡاَشۡقَی  ﴿ۙ۱۱﴾    
-কানযুল ঈমান    
-এবং তা থেকে দূরে থাকবে ওই বড় হতভাগা,    
-ইরফানুল কুরআন    
-১১. আর হতভাগ্য এ (উপদেশ) এড়িয়ে চলবে,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১১    
-وَ  یَتَجَنَّبُہَا الۡاَشۡقَی  ﴿ۙ۱۱﴾    
-কানযুল ঈমান    
-এবং তা থেকে দূরে থাকবে ওই বড় হতভাগা,    
-ইরফানুল কুরআন    
-১১. আর হতভাগ্য এ (উপদেশ) এড়িয়ে চলবে,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ  یَتَجَنَّبُہَا الۡاَشۡقَی  ﴿ۙ۱۱﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১১. এবং তা থেকে দূরে থাকবে ওই বড় হতভাগা,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১১. আর হতভাগ্য এ (উপদেশ) এড়িয়ে চলবে,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১২</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5960">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১২    
-الَّذِیۡ  یَصۡلَی النَّارَ الۡکُبۡرٰی ﴿ۚ۱۲﴾    
-কানযুল ঈমান    
-যে সবচেয়ে বড় আগুনে প্রবেশ করবে;    
-ইরফানুল কুরআন    
-১২. যে (কেয়ামতের দিন) মহাঅগ্নিতে প্রবেশ করবে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১২    
-الَّذِیۡ  یَصۡلَی النَّارَ الۡکُبۡرٰی ﴿ۚ۱۲﴾    
-কানযুল ঈমান    
-যে সবচেয়ে বড় আগুনে প্রবেশ করবে;    
-ইরফানুল কুরআন    
-১২. যে (কেয়ামতের দিন) মহাঅগ্নিতে প্রবেশ করবে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">الَّذِیۡ  یَصۡلَی النَّارَ الۡکُبۡرٰی ﴿ۚ۱۲﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১২. যে সবচেয়ে বড় আগুনে প্রবেশ করবে;</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১২. যে (কেয়ামতের দিন) মহাঅগ্নিতে প্রবেশ করবে।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১৩</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5961">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৩    
-ثُمَّ  لَا یَمُوۡتُ فِیۡہَا وَ لَا یَحۡیٰی ﴿ؕ۱۳﴾    
-কানযুল ঈমান    
-অতঃপর না তাতে মৃত্যুবরণ করবে এবং না জীবিত থাকবে।    
-ইরফানুল কুরআন    
-১৩. অতঃপর সে তাতে মরবেও না, আবার বাঁচবেও না।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৩    
-ثُمَّ  لَا یَمُوۡتُ فِیۡہَا وَ لَا یَحۡیٰی ﴿ؕ۱۳﴾    
-কানযুল ঈমান    
-অতঃপর না তাতে মৃত্যুবরণ করবে এবং না জীবিত থাকবে।    
-ইরফানুল কুরআন    
-১৩. অতঃপর সে তাতে মরবেও না, আবার বাঁচবেও না।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">ثُمَّ  لَا یَمُوۡتُ فِیۡہَا وَ لَا یَحۡیٰی ﴿ؕ۱۳﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১৩. অতঃপর না তাতে মৃত্যুবরণ করবে এবং না জীবিত থাকবে।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১৩. অতঃপর সে তাতে মরবেও না, আবার বাঁচবেও না।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১৪</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5962">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৪    
-قَدۡ  اَفۡلَحَ  مَنۡ  تَزَکّٰی ﴿ۙ۱۴﴾    
-কানযুল ঈমান    
-নিশ্চয় লক্ষ্যবস্তু পর্যন্ত পৌঁছেছে, যে পবিত্র হয়েছে,    
-ইরফানুল কুরআন    
-১৪. নিশ্চয়ই সেই সফলকাম হবে, যে (দুরাত্মার তাড়না এবং গোনাহর পঙ্কিলতা থেকে) পবিত্রতা অর্জন করে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৪    
-قَدۡ  اَفۡلَحَ  مَنۡ  تَزَکّٰی ﴿ۙ۱۴﴾    
-কানযুল ঈমান    
-নিশ্চয় লক্ষ্যবস্তু পর্যন্ত পৌঁছেছে, যে পবিত্র হয়েছে,    
-ইরফানুল কুরআন    
-১৪. নিশ্চয়ই সেই সফলকাম হবে, যে (দুরাত্মার তাড়না এবং গোনাহর পঙ্কিলতা থেকে) পবিত্রতা অর্জন করে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">قَدۡ  اَفۡلَحَ  مَنۡ  تَزَکّٰی ﴿ۙ۱۴﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১৪. নিশ্চয় লক্ষ্যবস্তু পর্যন্ত পৌঁছেছে, যে পবিত্র হয়েছে,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১৪. নিশ্চয়ই সেই সফলকাম হবে, যে (দুরাত্মার তাড়না এবং গোনাহর পঙ্কিলতা থেকে) পবিত্রতা অর্জন করে।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১৫</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5963">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৫    
-وَ ذَکَرَ اسۡمَ رَبِّہٖ فَصَلّٰی ﴿ؕ۱۵﴾    
-কানযুল ঈমান    
-এবং আপন রবের নাম নিয়ে নামায পড়েছে।    
-ইরফানুল কুরআন    
-১৫. আর সে আপন প্রতিপালকের নাম স্মরণ করতে থাকে এবং (অধিক পরিমাণে ও আত্মনিবেদিত হয়ে) নামায আদায় করে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৫    
-وَ ذَکَرَ اسۡمَ رَبِّہٖ فَصَلّٰی ﴿ؕ۱۵﴾    
-কানযুল ঈমান    
-এবং আপন রবের নাম নিয়ে নামায পড়েছে।    
-ইরফানুল কুরআন    
-১৫. আর সে আপন প্রতিপালকের নাম স্মরণ করতে থাকে এবং (অধিক পরিমাণে ও আত্মনিবেদিত হয়ে) নামায আদায় করে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ ذَکَرَ اسۡمَ رَبِّہٖ فَصَلّٰی ﴿ؕ۱۵﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১৫. এবং আপন রবের নাম নিয়ে নামায পড়েছে।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১৫. আর সে আপন প্রতিপালকের নাম স্মরণ করতে থাকে এবং (অধিক পরিমাণে ও আত্মনিবেদিত হয়ে) নামায আদায় করে।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১৬</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5964">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৬    
-بَلۡ  تُؤۡثِرُوۡنَ الۡحَیٰوۃَ  الدُّنۡیَا ﴿۫ۖ۱۶﴾    
-কানযুল ঈমান    
-বরং তোমরা দুনিয়ার জীবনকে প্রাধান্য দিয়ে থাকো,    
-ইরফানুল কুরআন    
-১৬. বরং তোমরা (আল্লাহ্‌র দিকে প্রত্যাবর্তনের পরিবর্তে) পার্থিব জীবন (-এর ভোগ-বিলাস)-কে অগ্রাধিকার দাও,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৬    
-بَلۡ  تُؤۡثِرُوۡنَ الۡحَیٰوۃَ  الدُّنۡیَا ﴿۫ۖ۱۶﴾    
-কানযুল ঈমান    
-বরং তোমরা দুনিয়ার জীবনকে প্রাধান্য দিয়ে থাকো,    
-ইরফানুল কুরআন    
-১৬. বরং তোমরা (আল্লাহ্‌র দিকে প্রত্যাবর্তনের পরিবর্তে) পার্থিব জীবন (-এর ভোগ-বিলাস)-কে অগ্রাধিকার দাও,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">بَلۡ  تُؤۡثِرُوۡنَ الۡحَیٰوۃَ  الدُّنۡیَا ﴿۫ۖ۱۶﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১৬. বরং তোমরা দুনিয়ার জীবনকে প্রাধান্য দিয়ে থাকো,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১৬. বরং তোমরা (আল্লাহ্‌র দিকে প্রত্যাবর্তনের পরিবর্তে) পার্থিব জীবন (-এর ভোগ-বিলাস)-কে অগ্রাধিকার দাও,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১৭</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5965">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৭    
-وَ الۡاٰخِرَۃُ  خَیۡرٌ  وَّ اَبۡقٰی ﴿ؕ۱۷﴾    
-কানযুল ঈমান    
-এবং পরকাল উত্তম ও চিরস্থায়ী।    
-ইরফানুল কুরআন    
-১৭. অথচ পরকাল (-এর পরিতৃপ্তি ও প্রশান্তি) শ্রেয়তর এবং চিরস্থায়ী।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৭    
-وَ الۡاٰخِرَۃُ  خَیۡرٌ  وَّ اَبۡقٰی ﴿ؕ۱۷﴾    
-কানযুল ঈমান    
-এবং পরকাল উত্তম ও চিরস্থায়ী।    
-ইরফানুল কুরআন    
-১৭. অথচ পরকাল (-এর পরিতৃপ্তি ও প্রশান্তি) শ্রেয়তর এবং চিরস্থায়ী।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ الۡاٰخِرَۃُ  خَیۡرٌ  وَّ اَبۡقٰی ﴿ؕ۱۷﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১৭. এবং পরকাল উত্তম ও চিরস্থায়ী।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১৭. অথচ পরকাল (-এর পরিতৃপ্তি ও প্রশান্তি) শ্রেয়তর এবং চিরস্থায়ী।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১৮</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5966">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৮    
-اِنَّ ہٰذَا  لَفِی الصُّحُفِ الۡاُوۡلٰی ﴿ۙ۱۸﴾    
-কানযুল ঈমান    
-নিশ্চয় এটা পূর্ববর্তী সহীফাগুলোতে রয়েছে;    
-ইরফানুল কুরআন    
-১৮. নিশ্চয়ই এই (দীপ্তিময় জ্ঞান) পূর্ববর্তী সহীফাসমূহে (উল্লিখিত) রয়েছে,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৮    
-اِنَّ ہٰذَا  لَفِی الصُّحُفِ الۡاُوۡلٰی ﴿ۙ۱۸﴾    
-কানযুল ঈমান    
-নিশ্চয় এটা পূর্ববর্তী সহীফাগুলোতে রয়েছে;    
-ইরফানুল কুরআন    
-১৮. নিশ্চয়ই এই (দীপ্তিময় জ্ঞান) পূর্ববর্তী সহীফাসমূহে (উল্লিখিত) রয়েছে,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اِنَّ ہٰذَا  لَفِی الصُّحُفِ الۡاُوۡلٰی ﴿ۙ۱۸﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১৮. নিশ্চয় এটা পূর্ববর্তী সহীফাগুলোতে রয়েছে;</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১৮. নিশ্চয়ই এই (দীপ্তিময় জ্ঞান) পূর্ববর্তী সহীফাসমূহে (উল্লিখিত) রয়েছে,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১৯</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5967">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৯    
-صُحُفِ اِبۡرٰہِیۡمَ وَ مُوۡسٰی ﴿۱۹﴾    
-কানযুল ঈমান    
-ইব্রাহীম ও মূসার সহীফাগুলোতে।    
-ইরফানুল কুরআন    
-১৯. (যা) ইবরাহীম ও মুসা (আলাইহিমুস সালাম)-এঁর সহীফাদ্বয়।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৯    
-صُحُفِ اِبۡرٰہِیۡمَ وَ مُوۡسٰی ﴿۱۹﴾    
-কানযুল ঈমান    
-ইব্রাহীম ও মূসার সহীফাগুলোতে।    
-ইরফানুল কুরআন    
-১৯. (যা) ইবরাহীম ও মুসা (আলাইহিমুস সালাম)-এঁর সহীফাদ্বয়।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">صُحُفِ اِبۡرٰہِیۡمَ وَ مُوۡسٰی ﴿۱۹﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১৯. ইব্রাহীম ও মূসার সহীফাগুলোতে।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১৯. (যা) ইবরাহীম ও মুসা (আলাইহিমুস সালাম)-এঁর সহীফাদ্বয়।</div>    
-    </div>    
-    
-  </div>    
-    
-  <div class="audio-controller" id="audioController" style="display:none;">    
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
-    <img src="next.png" onclick="playNext()" alt="Next">    
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
-  </div>    
-    
-  <script src="quranview.js"></script>    
-</body>    
-</html>    
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আল আ’লা - ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="আল আ’লা - সূরাটি কানযুল ঈমান ও ইরফানুল কুরআনের অনুবাদসহ উপস্থাপন করা হয়েছে। প্রতিটি আয়াতের অডিও, কপি ও শেয়ার অপশনসহ দেখুন।">
+  <meta property="og:title" content="আল আ’লা - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="আল আ’লা - সূরাটি কানযুল ঈমান ও ইরফানুল কুরআনের অনুবাদসহ উপস্থাপন করা হয়েছে। প্রতিটি আয়াতের অডিও, কপি ও শেয়ার অপশনসহ দেখুন।">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আল আ’লা</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5949">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১
+سَبِّحِ اسۡمَ رَبِّکَ الۡاَعۡلَی ۙ﴿۱﴾
+কানযুল ঈমান
+১. আপন রবের নামের পবিত্রতা বর্ণনা করো, যিনি সবার ঊর্ধ্বে,
+ইরফানুল কুরআন
+১. আপনার প্রতিপালকের নামের পবিত্রতা ও মহিমা ঘোষণা করুন, যিনি সর্বোচ্চ মহিমাময়,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১
+سَبِّحِ اسۡمَ رَبِّکَ الۡاَعۡلَی ۙ﴿۱﴾
+কানযুল ঈমান
+১. আপন রবের নামের পবিত্রতা বর্ণনা করো, যিনি সবার ঊর্ধ্বে,
+ইরফানুল কুরআন
+১. আপনার প্রতিপালকের নামের পবিত্রতা ও মহিমা ঘোষণা করুন, যিনি সর্বোচ্চ মহিমাময়,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">سَبِّحِ اسۡمَ رَبِّکَ الۡاَعۡلَی ۙ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১. আপন রবের নামের পবিত্রতা বর্ণনা করো, যিনি সবার ঊর্ধ্বে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. আপনার প্রতিপালকের নামের পবিত্রতা ও মহিমা ঘোষণা করুন, যিনি সর্বোচ্চ মহিমাময়,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5950">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ২
+الَّذِیۡ خَلَقَ فَسَوّٰی ۪ۙ﴿۲﴾
+কানযুল ঈমান
+২. যিনি সৃষ্টি করে সুঠাম করেছেন;
+ইরফানুল কুরআন
+২. তিনিই (বিশ্বজগতের সকল কিছু) সৃষ্টি করেছেন, অতঃপর (সকল প্রয়োজনানুসারে) এর সঠিক আনুপাতিক ভারসাম্য সামঞ্জস্যপূর্ণ করেছেন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ২
+الَّذِیۡ خَلَقَ فَسَوّٰی ۪ۙ﴿۲﴾
+কানযুল ঈমান
+২. যিনি সৃষ্টি করে সুঠাম করেছেন;
+ইরফানুল কুরআন
+২. তিনিই (বিশ্বজগতের সকল কিছু) সৃষ্টি করেছেন, অতঃপর (সকল প্রয়োজনানুসারে) এর সঠিক আনুপাতিক ভারসাম্য সামঞ্জস্যপূর্ণ করেছেন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">الَّذِیۡ خَلَقَ فَسَوّٰی ۪ۙ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">২. যিনি সৃষ্টি করে সুঠাম করেছেন;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. তিনিই (বিশ্বজগতের সকল কিছু) সৃষ্টি করেছেন, অতঃপর (সকল প্রয়োজনানুসারে) এর সঠিক আনুপাতিক ভারসাম্য সামঞ্জস্যপূর্ণ করেছেন।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5951">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৩
+وَ الَّذِیۡ  قَدَّرَ فَہَدٰی ۪ۙ﴿۳﴾
+কানযুল ঈমান
+৩. এবং যিনি নির্দিষ্ট পরিমাপের উপর রেখে পথ প্রদর্শন করেছেন,
+ইরফানুল কুরআন
+৩. আর যিনি (প্রত্যেক সৃষ্টির জন্যে) নীতি নির্ধারণ করেছেন, তারপর (তাদেরকে নিজ নিজ বিধান অনুযায়ী থাকার এবং পরিচালিত হবার) পথ দেখিয়েছেন,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৩
+وَ الَّذِیۡ  قَدَّرَ فَہَدٰی ۪ۙ﴿۳﴾
+কানযুল ঈমান
+৩. এবং যিনি নির্দিষ্ট পরিমাপের উপর রেখে পথ প্রদর্শন করেছেন,
+ইরফানুল কুরআন
+৩. আর যিনি (প্রত্যেক সৃষ্টির জন্যে) নীতি নির্ধারণ করেছেন, তারপর (তাদেরকে নিজ নিজ বিধান অনুযায়ী থাকার এবং পরিচালিত হবার) পথ দেখিয়েছেন,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ الَّذِیۡ  قَدَّرَ فَہَدٰی ۪ۙ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৩. এবং যিনি নির্দিষ্ট পরিমাপের উপর রেখে পথ প্রদর্শন করেছেন,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. আর যিনি (প্রত্যেক সৃষ্টির জন্যে) নীতি নির্ধারণ করেছেন, তারপর (তাদেরকে নিজ নিজ বিধান অনুযায়ী থাকার এবং পরিচালিত হবার) পথ দেখিয়েছেন,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5952">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৪
+وَ الَّذِیۡۤ  اَخۡرَجَ  الۡمَرۡعٰی ۪ۙ﴿۴﴾
+কানযুল ঈমান
+৪. এবং যিনি চারা বের করেছেন,
+ইরফানুল কুরআন
+৪. আর যিনি (ভূমি থেকে) সবুজ কিশলয় উদগত করেছেন,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৪
+وَ الَّذِیۡۤ  اَخۡرَجَ  الۡمَرۡعٰی ۪ۙ﴿۴﴾
+কানযুল ঈমান
+৪. এবং যিনি চারা বের করেছেন,
+ইরফানুল কুরআন
+৪. আর যিনি (ভূমি থেকে) সবুজ কিশলয় উদগত করেছেন,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ الَّذِیۡۤ  اَخۡرَجَ  الۡمَرۡعٰی ۪ۙ﴿۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৪. এবং যিনি চারা বের করেছেন,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. আর যিনি (ভূমি থেকে) সবুজ কিশলয় উদগত করেছেন,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5953">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৫
+فَجَعَلَہٗ  غُثَآءً  اَحۡوٰی ؕ﴿۵﴾
+কানযুল ঈমান
+৫. তারপর সেটাকে শুষ্ক কালো করেছেন।
+ইরফানুল কুরআন
+৫. তারপর একে শুষ্ক কালো খড়ে পরিণত করেছেন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৫
+فَجَعَلَہٗ  غُثَآءً  اَحۡوٰی ؕ﴿۵﴾
+কানযুল ঈমান
+৫. তারপর সেটাকে শুষ্ক কালো করেছেন।
+ইরফানুল কুরআন
+৫. তারপর একে শুষ্ক কালো খড়ে পরিণত করেছেন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَجَعَلَہٗ  غُثَآءً  اَحۡوٰی ؕ﴿۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৫. তারপর সেটাকে শুষ্ক কালো করেছেন।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. তারপর একে শুষ্ক কালো খড়ে পরিণত করেছেন।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5954">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৬
+سَنُقۡرِئُکَ فَلَا تَنۡسٰۤی ۙ﴿۶﴾
+কানযুল ঈমান
+৬. এখন আমি আপনাকে পড়াবো; ফলে আপনি ভুলবেন না,
+ইরফানুল কুরআন
+৬. (হে মহিমান্বিত হাবীব!) আমরা আপনাকে (এমন পদ্ধতিতে) শিখিয়ে দেবো যা আপনি (কখনো) বিস্মৃত হবেন না,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৬
+سَنُقۡرِئُکَ فَلَا تَنۡسٰۤی ۙ﴿۶﴾
+কানযুল ঈমান
+৬. এখন আমি আপনাকে পড়াবো; ফলে আপনি ভুলবেন না,
+ইরফানুল কুরআন
+৬. (হে মহিমান্বিত হাবীব!) আমরা আপনাকে (এমন পদ্ধতিতে) শিখিয়ে দেবো যা আপনি (কখনো) বিস্মৃত হবেন না,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">سَنُقۡرِئُکَ فَلَا تَنۡسٰۤی ۙ﴿۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৬. এখন আমি আপনাকে পড়াবো; ফলে আপনি ভুলবেন না,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬. (হে মহিমান্বিত হাবীব!) আমরা আপনাকে (এমন পদ্ধতিতে) শিখিয়ে দেবো যা আপনি (কখনো) বিস্মৃত হবেন না,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5955">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৭
+اِلَّا  مَا شَآءَ اللّٰہُ ؕ اِنَّہٗ  یَعۡلَمُ الۡجَہۡرَ  وَ مَا یَخۡفٰی ؕ﴿۷﴾
+কানযুল ঈমান
+৭. কিন্তু আল্লাহ্‌ যা চান। নিশ্চয় তিনি জানেন প্রত্যেক প্রকাশ্য ও অপ্রকাশ্যকে।
+ইরফানুল কুরআন
+৭. কেবল আল্লাহ্ যা চান তা ব্যতীত। নিশ্চয়ই তিনি সে সবই অবগত, যা কিছু গোপন ও প্রকাশিত (অর্থাৎ মানুষের বোধশক্তিতে যা প্রকাশিত ও অবগুন্ঠিত এবং যা শ্রুত ও অশ্রুত)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৭
+اِلَّا  مَا شَآءَ اللّٰہُ ؕ اِنَّہٗ  یَعۡلَمُ الۡجَہۡرَ  وَ مَا یَخۡفٰی ؕ﴿۷﴾
+কানযুল ঈমান
+৭. কিন্তু আল্লাহ্‌ যা চান। নিশ্চয় তিনি জানেন প্রত্যেক প্রকাশ্য ও অপ্রকাশ্যকে।
+ইরফানুল কুরআন
+৭. কেবল আল্লাহ্ যা চান তা ব্যতীত। নিশ্চয়ই তিনি সে সবই অবগত, যা কিছু গোপন ও প্রকাশিত (অর্থাৎ মানুষের বোধশক্তিতে যা প্রকাশিত ও অবগুন্ঠিত এবং যা শ্রুত ও অশ্রুত)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِلَّا  مَا شَآءَ اللّٰہُ ؕ اِنَّہٗ  یَعۡلَمُ الۡجَہۡرَ  وَ مَا یَخۡفٰی ؕ﴿۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৭. কিন্তু আল্লাহ্‌ যা চান। নিশ্চয় তিনি জানেন প্রত্যেক প্রকাশ্য ও অপ্রকাশ্যকে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭. কেবল আল্লাহ্ যা চান তা ব্যতীত। নিশ্চয়ই তিনি সে সবই অবগত, যা কিছু গোপন ও প্রকাশিত (অর্থাৎ মানুষের বোধশক্তিতে যা প্রকাশিত ও অবগুন্ঠিত এবং যা শ্রুত ও অশ্রুত)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5956">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৮
+وَ نُیَسِّرُکَ لِلۡیُسۡرٰی ۚ﴿ۖ۸﴾
+কানযুল ঈমান
+৮. এবং আমি আপনার জন্য সহজের সামগ্রীসমূহ যোগাড় করে দেবো।
+ইরফানুল কুরআন
+৮. আর আমরা আপনার জন্যে (শরীয়তের বিধি বিধানের উপর চলাও) সহজ করে দেবো।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৮
+وَ نُیَسِّرُکَ لِلۡیُسۡرٰی ۚ﴿ۖ۸﴾
+কানযুল ঈমান
+৮. এবং আমি আপনার জন্য সহজের সামগ্রীসমূহ যোগাড় করে দেবো।
+ইরফানুল কুরআন
+৮. আর আমরা আপনার জন্যে (শরীয়তের বিধি বিধানের উপর চলাও) সহজ করে দেবো।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ نُیَسِّرُکَ لِلۡیُسۡرٰی ۚ﴿ۖ۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৮. এবং আমি আপনার জন্য সহজের সামগ্রীসমূহ যোগাড় করে দেবো।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৮. আর আমরা আপনার জন্যে (শরীয়তের বিধি বিধানের উপর চলাও) সহজ করে দেবো।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5957">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ৯
+فَذَکِّرۡ  اِنۡ  نَّفَعَتِ الذِّکۡرٰی ؕ﴿۹﴾
+কানযুল ঈমান
+৯. অতএব, আপনি উপদেশ দান করুন, যদি উপদেশ ফলপ্রসূ হয়;
+ইরফানুল কুরআন
+৯. অতঃপর আপনি উপদেশ দিতে থাকুন, যদি উপদেশ (শ্রবণকারীকে) উপকৃত করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ৯
+فَذَکِّرۡ  اِنۡ  نَّفَعَتِ الذِّکۡرٰی ؕ﴿۹﴾
+কানযুল ঈমান
+৯. অতএব, আপনি উপদেশ দান করুন, যদি উপদেশ ফলপ্রসূ হয়;
+ইরফানুল কুরআন
+৯. অতঃপর আপনি উপদেশ দিতে থাকুন, যদি উপদেশ (শ্রবণকারীকে) উপকৃত করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَذَکِّرۡ  اِنۡ  نَّفَعَتِ الذِّکۡرٰی ؕ﴿۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৯. অতএব, আপনি উপদেশ দান করুন, যদি উপদেশ ফলপ্রসূ হয়;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৯. অতঃপর আপনি উপদেশ দিতে থাকুন, যদি উপদেশ (শ্রবণকারীকে) উপকৃত করে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5958">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১০
+سَیَذَّکَّرُ مَنۡ یَّخۡشٰی ﴿ۙ۱۰﴾
+কানযুল ঈমান
+১০. অতিসত্ত্বর উপদেশ গ্রহণ করবে যে ভয় করে।
+ইরফানুল কুরআন
+১০. তবে যে আল্লাহ্কে ভয় করবে সেই উপদেশ গ্রহণ করবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১০
+سَیَذَّکَّرُ مَنۡ یَّخۡشٰی ﴿ۙ۱۰﴾
+কানযুল ঈমান
+১০. অতিসত্ত্বর উপদেশ গ্রহণ করবে যে ভয় করে।
+ইরফানুল কুরআন
+১০. তবে যে আল্লাহ্কে ভয় করবে সেই উপদেশ গ্রহণ করবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">سَیَذَّکَّرُ مَنۡ یَّخۡشٰی ﴿ۙ۱۰﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১০. অতিসত্ত্বর উপদেশ গ্রহণ করবে যে ভয় করে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১০. তবে যে আল্লাহ্কে ভয় করবে সেই উপদেশ গ্রহণ করবে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5959">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১১
+وَ  یَتَجَنَّبُہَا الۡاَشۡقَی  ﴿ۙ۱۱﴾
+কানযুল ঈমান
+১১. এবং তা থেকে দূরে থাকবে ওই বড় হতভাগা,
+ইরফানুল কুরআন
+১১. আর হতভাগ্য এ (উপদেশ) এড়িয়ে চলবে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১১
+وَ  یَتَجَنَّبُہَا الۡاَشۡقَی  ﴿ۙ۱۱﴾
+কানযুল ঈমান
+১১. এবং তা থেকে দূরে থাকবে ওই বড় হতভাগা,
+ইরফানুল কুরআন
+১১. আর হতভাগ্য এ (উপদেশ) এড়িয়ে চলবে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ  یَتَجَنَّبُہَا الۡاَشۡقَی  ﴿ۙ۱۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১১. এবং তা থেকে দূরে থাকবে ওই বড় হতভাগা,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১১. আর হতভাগ্য এ (উপদেশ) এড়িয়ে চলবে,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5960">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১২
+الَّذِیۡ  یَصۡلَی النَّارَ الۡکُبۡرٰی ﴿ۚ۱۲﴾
+কানযুল ঈমান
+১২. যে সবচেয়ে বড় আগুনে প্রবেশ করবে;
+ইরফানুল কুরআন
+১২. যে (কেয়ামতের দিন) মহাঅগ্নিতে প্রবেশ করবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১২
+الَّذِیۡ  یَصۡلَی النَّارَ الۡکُبۡرٰی ﴿ۚ۱۲﴾
+কানযুল ঈমান
+১২. যে সবচেয়ে বড় আগুনে প্রবেশ করবে;
+ইরফানুল কুরআন
+১২. যে (কেয়ামতের দিন) মহাঅগ্নিতে প্রবেশ করবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">الَّذِیۡ  یَصۡلَی النَّارَ الۡکُبۡرٰی ﴿ۚ۱۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১২. যে সবচেয়ে বড় আগুনে প্রবেশ করবে;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১২. যে (কেয়ামতের দিন) মহাঅগ্নিতে প্রবেশ করবে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5961">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৩
+ثُمَّ  لَا یَمُوۡتُ فِیۡہَا وَ لَا یَحۡیٰی ﴿ؕ۱۳﴾
+কানযুল ঈমান
+১৩. অতঃপর না তাতে মৃত্যুবরণ করবে এবং না জীবিত থাকবে।
+ইরফানুল কুরআন
+১৩. অতঃপর সে তাতে মরবেও না, আবার বাঁচবেও না।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৩
+ثُمَّ  لَا یَمُوۡتُ فِیۡہَا وَ لَا یَحۡیٰی ﴿ؕ۱۳﴾
+কানযুল ঈমান
+১৩. অতঃপর না তাতে মৃত্যুবরণ করবে এবং না জীবিত থাকবে।
+ইরফানুল কুরআন
+১৩. অতঃপর সে তাতে মরবেও না, আবার বাঁচবেও না।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">ثُمَّ  لَا یَمُوۡتُ فِیۡہَا وَ لَا یَحۡیٰی ﴿ؕ۱۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১৩. অতঃপর না তাতে মৃত্যুবরণ করবে এবং না জীবিত থাকবে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৩. অতঃপর সে তাতে মরবেও না, আবার বাঁচবেও না।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5962">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৪
+قَدۡ  اَفۡلَحَ  مَنۡ  تَزَکّٰی ﴿ۙ۱۴﴾
+কানযুল ঈমান
+১৪. নিশ্চয় লক্ষ্যবস্তু পর্যন্ত পৌঁছেছে, যে পবিত্র হয়েছে,
+ইরফানুল কুরআন
+১৪. নিশ্চয়ই সেই সফলকাম হবে, যে (দুরাত্মার তাড়না এবং গোনাহর পঙ্কিলতা থেকে) পবিত্রতা অর্জন করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৪
+قَدۡ  اَفۡلَحَ  مَنۡ  تَزَکّٰی ﴿ۙ۱۴﴾
+কানযুল ঈমান
+১৪. নিশ্চয় লক্ষ্যবস্তু পর্যন্ত পৌঁছেছে, যে পবিত্র হয়েছে,
+ইরফানুল কুরআন
+১৪. নিশ্চয়ই সেই সফলকাম হবে, যে (দুরাত্মার তাড়না এবং গোনাহর পঙ্কিলতা থেকে) পবিত্রতা অর্জন করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">قَدۡ  اَفۡلَحَ  مَنۡ  تَزَکّٰی ﴿ۙ۱۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১৪. নিশ্চয় লক্ষ্যবস্তু পর্যন্ত পৌঁছেছে, যে পবিত্র হয়েছে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৪. নিশ্চয়ই সেই সফলকাম হবে, যে (দুরাত্মার তাড়না এবং গোনাহর পঙ্কিলতা থেকে) পবিত্রতা অর্জন করে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5963">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৫
+وَ ذَکَرَ اسۡمَ رَبِّہٖ فَصَلّٰی ﴿ؕ۱۵﴾
+কানযুল ঈমান
+১৫. এবং আপন রবের নাম নিয়ে নামায পড়েছে।
+ইরফানুল কুরআন
+১৫. আর সে আপন প্রতিপালকের নাম স্মরণ করতে থাকে এবং (অধিক পরিমাণে ও আত্মনিবেদিত হয়ে) নামায আদায় করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৫
+وَ ذَکَرَ اسۡمَ رَبِّہٖ فَصَلّٰی ﴿ؕ۱۵﴾
+কানযুল ঈমান
+১৫. এবং আপন রবের নাম নিয়ে নামায পড়েছে।
+ইরফানুল কুরআন
+১৫. আর সে আপন প্রতিপালকের নাম স্মরণ করতে থাকে এবং (অধিক পরিমাণে ও আত্মনিবেদিত হয়ে) নামায আদায় করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ ذَکَرَ اسۡمَ رَبِّہٖ فَصَلّٰی ﴿ؕ۱۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১৫. এবং আপন রবের নাম নিয়ে নামায পড়েছে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৫. আর সে আপন প্রতিপালকের নাম স্মরণ করতে থাকে এবং (অধিক পরিমাণে ও আত্মনিবেদিত হয়ে) নামায আদায় করে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5964">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৬
+بَلۡ  تُؤۡثِرُوۡنَ الۡحَیٰوۃَ  الدُّنۡیَا ﴿۫ۖ۱۶﴾
+কানযুল ঈমান
+১৬. বরং তোমরা দুনিয়ার জীবনকে প্রাধান্য দিয়ে থাকো,
+ইরফানুল কুরআন
+১৬. বরং তোমরা (আল্লাহ্‌র দিকে প্রত্যাবর্তনের পরিবর্তে) পার্থিব জীবন (-এর ভোগ-বিলাস)-কে অগ্রাধিকার দাও,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৬
+بَلۡ  تُؤۡثِرُوۡنَ الۡحَیٰوۃَ  الدُّنۡیَا ﴿۫ۖ۱۶﴾
+কানযুল ঈমান
+১৬. বরং তোমরা দুনিয়ার জীবনকে প্রাধান্য দিয়ে থাকো,
+ইরফানুল কুরআন
+১৬. বরং তোমরা (আল্লাহ্‌র দিকে প্রত্যাবর্তনের পরিবর্তে) পার্থিব জীবন (-এর ভোগ-বিলাস)-কে অগ্রাধিকার দাও,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بَلۡ  تُؤۡثِرُوۡنَ الۡحَیٰوۃَ  الدُّنۡیَا ﴿۫ۖ۱۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১৬. বরং তোমরা দুনিয়ার জীবনকে প্রাধান্য দিয়ে থাকো,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৬. বরং তোমরা (আল্লাহ্‌র দিকে প্রত্যাবর্তনের পরিবর্তে) পার্থিব জীবন (-এর ভোগ-বিলাস)-কে অগ্রাধিকার দাও,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5965">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৭
+وَ الۡاٰخِرَۃُ  خَیۡرٌ  وَّ اَبۡقٰی ﴿ؕ۱۷﴾
+কানযুল ঈমান
+১৭. এবং পরকাল উত্তম ও চিরস্থায়ী।
+ইরফানুল কুরআন
+১৭. অথচ পরকাল (-এর পরিতৃপ্তি ও প্রশান্তি) শ্রেয়তর এবং চিরস্থায়ী।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৭
+وَ الۡاٰخِرَۃُ  خَیۡرٌ  وَّ اَبۡقٰی ﴿ؕ۱۷﴾
+কানযুল ঈমান
+১৭. এবং পরকাল উত্তম ও চিরস্থায়ী।
+ইরফানুল কুরআন
+১৭. অথচ পরকাল (-এর পরিতৃপ্তি ও প্রশান্তি) শ্রেয়তর এবং চিরস্থায়ী।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ الۡاٰخِرَۃُ  خَیۡرٌ  وَّ اَبۡقٰی ﴿ؕ۱۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১৭. এবং পরকাল উত্তম ও চিরস্থায়ী।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৭. অথচ পরকাল (-এর পরিতৃপ্তি ও প্রশান্তি) শ্রেয়তর এবং চিরস্থায়ী।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5966">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৮
+اِنَّ ہٰذَا  لَفِی الصُّحُفِ الۡاُوۡلٰی ﴿ۙ۱۸﴾
+কানযুল ঈমান
+১৮. নিশ্চয় এটা পূর্ববর্তী সহীফাগুলোতে রয়েছে;
+ইরফানুল কুরআন
+১৮. নিশ্চয়ই এই (দীপ্তিময় জ্ঞান) পূর্ববর্তী সহীফাসমূহে (উল্লিখিত) রয়েছে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৮
+اِنَّ ہٰذَا  لَفِی الصُّحُفِ الۡاُوۡلٰی ﴿ۙ۱۸﴾
+কানযুল ঈমান
+১৮. নিশ্চয় এটা পূর্ববর্তী সহীফাগুলোতে রয়েছে;
+ইরফানুল কুরআন
+১৮. নিশ্চয়ই এই (দীপ্তিময় জ্ঞান) পূর্ববর্তী সহীফাসমূহে (উল্লিখিত) রয়েছে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِنَّ ہٰذَا  لَفِی الصُّحُفِ الۡاُوۡلٰی ﴿ۙ۱۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১৮. নিশ্চয় এটা পূর্ববর্তী সহীফাগুলোতে রয়েছে;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৮. নিশ্চয়ই এই (দীপ্তিময় জ্ঞান) পূর্ববর্তী সহীফাসমূহে (উল্লিখিত) রয়েছে,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5967">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আ’লা আয়াত নং : ১৯
+صُحُفِ اِبۡرٰہِیۡمَ وَ مُوۡسٰی ﴿۱۹﴾
+কানযুল ঈমান
+১৯. ইব্রাহীম ও মূসার সহীফাগুলোতে।
+ইরফানুল কুরআন
+১৯. (যা) ইবরাহীম ও মুসা (আলাইহিমুস সালাম)-এঁর সহীফাদ্বয়।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আ’লা আয়াত নং : ১৯
+صُحُفِ اِبۡرٰہِیۡمَ وَ مُوۡسٰی ﴿۱۹﴾
+কানযুল ঈমান
+১৯. ইব্রাহীম ও মূসার সহীফাগুলোতে।
+ইরফানুল কুরআন
+১৯. (যা) ইবরাহীম ও মুসা (আলাইহিমুস সালাম)-এঁর সহীফাদ্বয়।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">صُحُفِ اِبۡرٰہِیۡمَ وَ مُوۡسٰی ﴿۱۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১৯. ইব্রাহীম ও মূসার সহীফাগুলোতে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৯. (যা) ইবরাহীম ও মুসা (আলাইহিমুস সালাম)-এঁর সহীফাদ্বয়।</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>
