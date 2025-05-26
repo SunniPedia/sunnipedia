@@ -1,8 +1,3 @@
-
-  .highlighted {
-    background-color: #d1fae5; /* light green */
-    border-left: 4px solid #10b981; /* teal */
-  }
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
