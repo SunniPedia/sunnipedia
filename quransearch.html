@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Quran Search</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background: #01837A;
+      padding: 10px;
+    }
+    .toolbar img { width: 24px; height: 24px; margin: 0 10px; cursor: pointer; }
+    .toolbar span { flex-grow: 1; font-size: 18px; }
+    #ayahList { padding: 10px; }
+    .ayah-card { border-bottom: 1px solid #ccc; padding: 10px 0; }
+    .verse-arabic { font-size: 20px; }
+    .kanzul-text, .irfan-text { margin: 5px 0; }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <img src="back.png" onclick="history.back()">
+    <span id="searchTerm"></span>
+    <img src="search.png" onclick="toggleSearch()">
+  </div>
+
+  <div id="loading">লোড হচ্ছে...</div>
+  <div id="ayahList"></div>
+
+  <script>
+    const query = new URLSearchParams(window.location.search).get('query') || '';
+    document.getElementById('searchTerm').textContent = query;
+
+    function convertToBanglaNumber(str) {
+      return String(str).replace(/[0-9]/g, d => '০১২৩৪৫৬৭৮৯'[d]);
+    }
+
+    function toggleSearch() {
+      const newQuery = prompt("নতুন কীওয়ার্ড লিখুন:", query);
+      if (newQuery) {
+        window.location.href = `quransearch.html?query=${encodeURIComponent(newQuery)}`;
+      }
+    }
+
+    const ayahList = document.getElementById('ayahList');
+    const loadingElement = document.getElementById('loading');
+
+    fetch('https://sunnipedia-zeta.vercel.app/sura.json')
+      .then(res => res.json())
+      .then(suraList => {
+        let loaded = 0;
+        let total = suraList.length;
+        suraList.forEach(sura => {
+          fetch(`surah/${sura.author}.json`)
+            .then(res => res.json())
+            .then(data => {
+              data.forEach(ayah => {
+                if (
+                  ayah.name?.includes(query) ||
+                  ayah.author?.includes(query) ||
+                  ayah.names?.includes(query)
+                ) {
+                  const card = document.createElement('div');
+                  card.className = 'ayah-card';
+                  card.innerHTML = `
+                    <div class="verse-arabic">${ayah.names || ''}</div>
+                    <div class="kanzul-text">${ayah.name || ''}</div>
+                    <div class="irfan-text">${ayah.author || ''}</div>
+                  `;
+                  ayahList.appendChild(card);
+                }
+              });
+              loaded++;
+              if (loaded === total) loadingElement.style.display = 'none';
+            });
+        });
+      });
+  </script>
+</body>
+</html>
