@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আল ফাতিহা </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আল ফাতিহা </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" 
+               data-num="১" data-arabic="%D8%A8%D9%90%D8%B3%DB%A1%D9%85%D9%90%20%D8%A7%D9%84%D9%84%D9%91%D9%B0%DB%81%D9%90%20%D8%A7%D9%84%D8%B1%D9%91%D9%8E%D8%AD%DB%A1%D9%85%D9%B0%D9%86%D9%90%20%D8%A7%D9%84%D8%B1%D9%91%D9%8E%D8%AD%D9%90%DB%8C%DB%A1%D9%85%D9%90%20%EF%B4%BF%DB%B1%EF%B4%BE"
+               data-kanzul="%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A7%8D%E2%80%8C%E0%A6%B0%20%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A7%87%20%E0%A6%86%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AD%2C%20%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%A6%E0%A7%9F%E0%A6%BE%E0%A6%B2%E0%A7%81%2C%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A7%9F%20%28%E0%A7%A7%29" data-irfan="%E0%A7%A7.%20%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A6%B0%20%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A7%87%20%E0%A6%B6%E0%A7%81%E0%A6%B0%E0%A7%81%2C%20%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A6%AF%E0%A6%BC%2C%20%E0%A6%B8%E0%A6%A4%E0%A6%A4%20%E0%A6%85%E0%A6%B8%E0%A7%80%E0%A6%AE%20%E0%A6%A6%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B2%E0%A7%81%E0%A5%A4">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" 
+               onclick="copyAyah(this)" data-num="১" data-arabic="%D8%A8%D9%90%D8%B3%DB%A1%D9%85%D9%90%20%D8%A7%D9%84%D9%84%D9%91%D9%B0%DB%81%D9%90%20%D8%A7%D9%84%D8%B1%D9%91%D9%8E%D8%AD%DB%A1%D9%85%D9%B0%D9%86%D9%90%20%D8%A7%D9%84%D8%B1%D9%91%D9%8E%D8%AD%D9%90%DB%8C%DB%A1%D9%85%D9%90%20%EF%B4%BF%DB%B1%EF%B4%BE"
+               data-kanzul="%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A7%8D%E2%80%8C%E0%A6%B0%20%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A7%87%20%E0%A6%86%E0%A6%B0%E0%A6%AE%E0%A7%8D%E0%A6%AD%2C%20%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%A6%E0%A7%9F%E0%A6%BE%E0%A6%B2%E0%A7%81%2C%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A7%9F%20%28%E0%A7%A7%29" data-irfan="%E0%A7%A7.%20%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A6%B0%20%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A7%87%20%E0%A6%B6%E0%A7%81%E0%A6%B0%E0%A7%81%2C%20%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A6%AF%E0%A6%BC%2C%20%E0%A6%B8%E0%A6%A4%E0%A6%A4%20%E0%A6%85%E0%A6%B8%E0%A7%80%E0%A6%AE%20%E0%A6%A6%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B2%E0%A7%81%E0%A5%A4">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="2">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" 
+               data-num="২" data-arabic="%D8%A7%D9%8E%D9%84%DB%A1%D8%AD%D9%8E%D9%85%DB%A1%D8%AF%D9%8F%20%D9%84%D9%90%D9%84%D9%91%D9%B0%DB%81%D9%90%20%D8%B1%D9%8E%D8%A8%D9%91%D9%90%20%D8%A7%D9%84%DB%A1%D8%B9%D9%B0%D9%84%D9%8E%D9%85%D9%90%DB%8C%DB%A1%D9%86%D9%8E%20%DB%99%EF%B4%BF%DB%B2%EF%B4%BE%20"
+               data-kanzul="%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%A4%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B6%E0%A6%82%E0%A6%B8%E0%A6%BE%20%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A6%B0%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%2C%20%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%20%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%A4%20%E0%A6%9C%E0%A6%97%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%B0%3B%20%28%E0%A7%A8%29" data-irfan="%E0%A7%A8.%20%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%A4%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B6%E0%A6%82%E0%A6%B8%E0%A6%BE%20%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A7%8D%E2%80%8C%E0%A6%B0%E0%A6%87%20%E0%A6%A4%E0%A6%B0%E0%A7%87%2C%20%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%A4%20%E0%A6%9C%E0%A6%97%E0%A6%A4%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AA%E0%A6%BE%E0%A6%B2%E0%A6%A8%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%2C">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" 
+               onclick="copyAyah(this)" data-num="২" data-arabic="%D8%A7%D9%8E%D9%84%DB%A1%D8%AD%D9%8E%D9%85%DB%A1%D8%AF%D9%8F%20%D9%84%D9%90%D9%84%D9%91%D9%B0%DB%81%D9%90%20%D8%B1%D9%8E%D8%A8%D9%91%D9%90%20%D8%A7%D9%84%DB%A1%D8%B9%D9%B0%D9%84%D9%8E%D9%85%D9%90%DB%8C%DB%A1%D9%86%D9%8E%20%DB%99%EF%B4%BF%DB%B2%EF%B4%BE%20"
+               data-kanzul="%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%A4%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B6%E0%A6%82%E0%A6%B8%E0%A6%BE%20%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A6%B0%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%2C%20%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%20%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%A4%20%E0%A6%9C%E0%A6%97%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%B0%3B%20%28%E0%A7%A8%29" data-irfan="%E0%A7%A8.%20%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%A4%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B6%E0%A6%82%E0%A6%B8%E0%A6%BE%20%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A7%8D%E2%80%8C%E0%A6%B0%E0%A6%87%20%E0%A6%A4%E0%A6%B0%E0%A7%87%2C%20%E0%A6%AF%E0%A6%BF%E0%A6%A8%E0%A6%BF%20%E0%A6%B8%E0%A6%AE%E0%A6%B8%E0%A7%8D%E0%A6%A4%20%E0%A6%9C%E0%A6%97%E0%A6%A4%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AA%E0%A6%BE%E0%A6%B2%E0%A6%A8%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80%2C">
+        </div>
+      </div>
+      <div class="verse-arabic">اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۲﴾ </div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">২. সমস্ত প্রশংসা আল্লাহর প্রতি, যিনি মালিক সমস্ত জগদ্বাসীর; (২)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. সমস্ত প্রশংসা আল্লাহ্‌রই তরে, যিনি সমস্ত জগতের প্রতিপালনকারী,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="3">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" 
+               data-num="৩" data-arabic="%D8%A7%D9%84%D8%B1%D9%91%D9%8E%D8%AD%DB%A1%D9%85%D9%B0%D9%86%D9%90%20%D8%A7%D9%84%D8%B1%D9%91%D9%8E%D8%AD%D9%90%DB%8C%DB%A1%D9%85%D9%90%20%DB%99%EF%B4%BF%DB%B3%EF%B4%BE"
+               data-kanzul="%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%A6%E0%A7%9F%E0%A6%BE%E0%A6%B2%E0%A7%81%2C%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A7%9F%3B" data-irfan="%E0%A7%A9.%20%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A7%9F%2C%20%E0%A6%85%E0%A6%B8%E0%A7%80%E0%A6%AE%20%E0%A6%A6%E0%A7%9F%E0%A6%BE%E0%A6%B2%E0%A7%81%2C">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" 
+               onclick="copyAyah(this)" data-num="৩" data-arabic="%D8%A7%D9%84%D8%B1%D9%91%D9%8E%D8%AD%DB%A1%D9%85%D9%B0%D9%86%D9%90%20%D8%A7%D9%84%D8%B1%D9%91%D9%8E%D8%AD%D9%90%DB%8C%DB%A1%D9%85%D9%90%20%DB%99%EF%B4%BF%DB%B3%EF%B4%BE"
+               data-kanzul="%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%A6%E0%A7%9F%E0%A6%BE%E0%A6%B2%E0%A7%81%2C%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A7%9F%3B" data-irfan="%E0%A7%A9.%20%E0%A6%AA%E0%A6%B0%E0%A6%AE%20%E0%A6%95%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A6%BE%E0%A6%AE%E0%A7%9F%2C%20%E0%A6%85%E0%A6%B8%E0%A7%80%E0%A6%AE%20%E0%A6%A6%E0%A7%9F%E0%A6%BE%E0%A6%B2%E0%A7%81%2C">
+        </div>
+      </div>
+      <div class="verse-arabic">الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৩. পরম দয়ালু, করুণাময়;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. পরম করুণাময়, অসীম দয়ালু,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" 
+               data-num="৪" data-arabic="%D9%85%D9%B0%D9%84%D9%90%DA%A9%D9%90%20%DB%8C%D9%8E%D9%88%DB%A1%D9%85%D9%90%20%D8%A7%D9%84%D8%AF%D9%91%D9%90%DB%8C%DB%A1%D9%86%D9%90%20%D8%95%EF%B4%BF%DB%B4%EF%B4%BE"
+               data-kanzul="%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%A6%E0%A6%BE%E0%A6%A8%20%E0%A6%A6%E0%A6%BF%E0%A6%AC%E0%A6%B8%E0%A7%87%E0%A6%B0%20%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A5%A4" data-irfan="%E0%A7%AA.%20%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%AA%E0%A6%A4%E0%A6%BF%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%A6%E0%A6%BE%E0%A6%A8%20%E0%A6%A6%E0%A6%BF%E0%A6%AC%E0%A6%B8%E0%A7%87%E0%A6%B0%E0%A5%A4">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" 
+               onclick="copyAyah(this)" data-num="৪" data-arabic="%D9%85%D9%B0%D9%84%D9%90%DA%A9%D9%90%20%DB%8C%D9%8E%D9%88%DB%A1%D9%85%D9%90%20%D8%A7%D9%84%D8%AF%D9%91%D9%90%DB%8C%DB%A1%D9%86%D9%90%20%D8%95%EF%B4%BF%DB%B4%EF%B4%BE"
+               data-kanzul="%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%A6%E0%A6%BE%E0%A6%A8%20%E0%A6%A6%E0%A6%BF%E0%A6%AC%E0%A6%B8%E0%A7%87%E0%A6%B0%20%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A5%A4" data-irfan="%E0%A7%AA.%20%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%AA%E0%A6%A4%E0%A6%BF%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%A6%E0%A6%BE%E0%A6%A8%20%E0%A6%A6%E0%A6%BF%E0%A6%AC%E0%A6%B8%E0%A7%87%E0%A6%B0%E0%A5%A4">
+        </div>
+      </div>
+      <div class="verse-arabic">مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৪. প্রতিদান দিবসের মালিক।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. অধিপতি প্রতিদান দিবসের।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" 
+               data-num="৫" data-arabic="%D8%A7%D9%90%DB%8C%D9%91%D9%8E%D8%A7%DA%A9%D9%8E%20%D9%86%D9%8E%D8%B9%DB%A1%D8%A8%D9%8F%D8%AF%D9%8F%20%D9%88%D9%8E%20%D8%A7%D9%90%DB%8C%D9%91%D9%8E%D8%A7%DA%A9%D9%8E%20%D9%86%D9%8E%D8%B3%DB%A1%D8%AA%D9%8E%D8%B9%D9%90%DB%8C%DB%A1%D9%86%D9%8F%20%D8%95%EF%B4%BF%DB%B5%EF%B4%BE"
+               data-kanzul="%E0%A6%86%E0%A6%AE%E0%A6%B0%E0%A6%BE%20%28%E0%A6%AF%E0%A7%87%E0%A6%A8%29%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%20%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%A4%20%E0%A6%95%E0%A6%B0%E0%A6%BF%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%20%E0%A6%A8%E0%A6%BF%E0%A6%95%E0%A6%9F%20%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%AF%E0%A7%8D%E0%A6%AF%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%A8%E0%A6%BE%20%E0%A6%95%E0%A6%B0%E0%A6%BF%21%20%28%E0%A7%A9%29" data-irfan="%E0%A7%AB.%20%28%E0%A6%B9%E0%A7%87%20%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A7%8D%21%29%20%E0%A6%86%E0%A6%AE%E0%A6%B0%E0%A6%BE%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%20%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%A4%20%E0%A6%95%E0%A6%B0%E0%A6%BF%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%20%E0%A6%A8%E0%A6%BF%E0%A6%95%E0%A6%9F%20%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%AF%E0%A7%8D%E0%A6%AF%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%A8%E0%A6%BE%20%E0%A6%95%E0%A6%B0%E0%A6%BF%E0%A5%A4">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" 
+               onclick="copyAyah(this)" data-num="৫" data-arabic="%D8%A7%D9%90%DB%8C%D9%91%D9%8E%D8%A7%DA%A9%D9%8E%20%D9%86%D9%8E%D8%B9%DB%A1%D8%A8%D9%8F%D8%AF%D9%8F%20%D9%88%D9%8E%20%D8%A7%D9%90%DB%8C%D9%91%D9%8E%D8%A7%DA%A9%D9%8E%20%D9%86%D9%8E%D8%B3%DB%A1%D8%AA%D9%8E%D8%B9%D9%90%DB%8C%DB%A1%D9%86%D9%8F%20%D8%95%EF%B4%BF%DB%B5%EF%B4%BE"
+               data-kanzul="%E0%A6%86%E0%A6%AE%E0%A6%B0%E0%A6%BE%20%28%E0%A6%AF%E0%A7%87%E0%A6%A8%29%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%20%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%A4%20%E0%A6%95%E0%A6%B0%E0%A6%BF%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%20%E0%A6%A8%E0%A6%BF%E0%A6%95%E0%A6%9F%20%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%AF%E0%A7%8D%E0%A6%AF%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%A8%E0%A6%BE%20%E0%A6%95%E0%A6%B0%E0%A6%BF%21%20%28%E0%A7%A9%29" data-irfan="%E0%A7%AB.%20%28%E0%A6%B9%E0%A7%87%20%E0%A6%86%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A7%8D%21%29%20%E0%A6%86%E0%A6%AE%E0%A6%B0%E0%A6%BE%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%20%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%A4%20%E0%A6%95%E0%A6%B0%E0%A6%BF%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%87%20%E0%A6%A8%E0%A6%BF%E0%A6%95%E0%A6%9F%20%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%AF%E0%A7%8D%E0%A6%AF%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%A8%E0%A6%BE%20%E0%A6%95%E0%A6%B0%E0%A6%BF%E0%A5%A4">
+        </div>
+      </div>
+      <div class="verse-arabic">اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৫. আমরা (যেন) তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি! (৩)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. (হে আল্লাহ্!) আমরা তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" 
+               data-num="৬" data-arabic="%D8%A7%D9%90%DB%81%DB%A1%D8%AF%D9%90%20%D9%86%D9%8E%D8%A7%20%D8%A7%D9%84%D8%B5%D9%91%D9%90%D8%B1%D9%8E%D8%A7%D8%B7%D9%8E%20%D8%A7%D9%84%DB%A1%D9%85%D9%8F%D8%B3%DB%A1%D8%AA%D9%8E%D9%82%D9%90%DB%8C%DB%A1%D9%85%D9%8E%20%DB%99%EF%B4%BF%DB%B6%EF%B4%BE"
+               data-kanzul="%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%E0%A6%95%E0%A7%87%20%E0%A6%B8%E0%A7%8B%E0%A6%9C%E0%A6%BE%20%E0%A6%AA%E0%A6%A5%E0%A7%87%20%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%A4%20%E0%A6%95%E0%A6%B0%E0%A7%8B%21%20%28%E0%A7%AA%29" data-irfan="%E0%A7%AC.%20%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%E0%A6%95%E0%A7%87%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A6%E0%A6%B0%E0%A7%8D%E0%A6%B6%E0%A6%A8%20%E0%A6%95%E0%A6%B0%E0%A7%8B%20%E0%A6%B8%E0%A6%B0%E0%A6%B2%20%E0%A6%AA%E0%A6%A5%2C">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" 
+               onclick="copyAyah(this)" data-num="৬" data-arabic="%D8%A7%D9%90%DB%81%DB%A1%D8%AF%D9%90%20%D9%86%D9%8E%D8%A7%20%D8%A7%D9%84%D8%B5%D9%91%D9%90%D8%B1%D9%8E%D8%A7%D8%B7%D9%8E%20%D8%A7%D9%84%DB%A1%D9%85%D9%8F%D8%B3%DB%A1%D8%AA%D9%8E%D9%82%D9%90%DB%8C%DB%A1%D9%85%D9%8E%20%DB%99%EF%B4%BF%DB%B6%EF%B4%BE"
+               data-kanzul="%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%E0%A6%95%E0%A7%87%20%E0%A6%B8%E0%A7%8B%E0%A6%9C%E0%A6%BE%20%E0%A6%AA%E0%A6%A5%E0%A7%87%20%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%A4%20%E0%A6%95%E0%A6%B0%E0%A7%8B%21%20%28%E0%A7%AA%29" data-irfan="%E0%A7%AC.%20%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%E0%A6%95%E0%A7%87%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A6%E0%A6%B0%E0%A7%8D%E0%A6%B6%E0%A6%A8%20%E0%A6%95%E0%A6%B0%E0%A7%8B%20%E0%A6%B8%E0%A6%B0%E0%A6%B2%20%E0%A6%AA%E0%A6%A5%2C">
+        </div>
+      </div>
+      <div class="verse-arabic">اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৬. আমাদেরকে সোজা পথে পরিচালিত করো! (৪)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬. আমাদেরকে প্রদর্শন করো সরল পথ,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="7">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" 
+               data-num="৭" data-arabic="%D8%B5%D9%90%D8%B1%D9%8E%D8%A7%D8%B7%D9%8E%20%D8%A7%D9%84%D9%91%D9%8E%D8%B0%D9%90%DB%8C%DB%A1%D9%86%D9%8E%20%D8%A7%D9%8E%D9%86%DB%A1%D8%B9%D9%8E%D9%85%DB%A1%D8%AA%D9%8E%20%D8%B9%D9%8E%D9%84%D9%8E%DB%8C%DB%A1%DB%81%D9%90%D9%85%DB%A1%20%DB%AC%DB%99%20%D8%BA%D9%8E%DB%8C%DB%A1%D8%B1%D9%90%20%D8%A7%D9%84%DB%A1%D9%85%D9%8E%D8%BA%DB%A1%D8%B6%D9%8F%D9%88%DB%A1%D8%A8%D9%90%20%D8%B9%D9%8E%D9%84%D9%8E%DB%8C%DB%A1%DB%81%D9%90%D9%85%DB%A1%20%D9%88%D9%8E%20%D9%84%D9%8E%D8%A7%20%D8%A7%D9%84%D8%B6%D9%91%D9%8E%D8%A7%D9%93%D9%84%D9%91%D9%90%DB%8C%DB%A1%D9%86%D9%8E%20%EF%B4%BF%DB%B7%EF%B4%BE"
+               data-kanzul="%E0%A6%A4%E0%A6%BE%E0%A6%81%E0%A6%A6%E0%A7%87%E0%A6%B0%E0%A6%87%20%E0%A6%AA%E0%A6%A5%E0%A7%87%2C%20%E0%A6%AF%E0%A6%BE%E0%A6%81%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%89%E0%A6%AA%E0%A6%B0%20%E0%A6%A4%E0%A7%81%E0%A6%AE%E0%A6%BF%20%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%B9%20%E0%A6%95%E0%A6%B0%E0%A7%87%E0%A6%9B%E0%A7%8B%3B%20%20%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%E0%A7%87%20%E0%A6%A8%E0%A7%9F%2C%20%E0%A6%AF%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%89%E0%A6%AA%E0%A6%B0%20%E0%A6%97%E0%A6%AF%E0%A6%AC%20%E0%A6%A8%E0%A6%BF%E0%A6%AA%E0%A6%A4%E0%A6%BF%E0%A6%A4%20%E0%A6%B9%E0%A7%9F%E0%A7%87%E0%A6%9B%E0%A7%87%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20%E0%A6%AA%E0%A6%A5%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%E0%A7%87%E0%A6%93%20%E0%A6%A8%E0%A7%9F%E0%A5%A4%20%28%E0%A7%AB%29" data-irfan="%E0%A7%AD.%20%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%2C%20%E0%A6%AF%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%20%E0%A6%A4%E0%A7%81%E0%A6%AE%E0%A6%BF%20%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%B9%20%E0%A6%95%E0%A6%B0%E0%A7%87%E0%A6%9B%E0%A7%8B%2C%20%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%20%E0%A6%A8%E0%A7%9F%2C%20%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BE%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%A7%E0%A7%87%E0%A6%B0%20%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0%20%E0%A6%B9%E0%A7%9F%E0%A7%87%E0%A6%9B%E0%A7%87%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%E0%A6%93%20%E0%A6%A8%E0%A7%9F%20%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BE%20%E0%A6%97%E0%A7%8B%E0%A6%AE%E0%A6%B0%E0%A6%BE%E0%A6%B9%E0%A7%8D%20%E0%A6%AC%E0%A6%BE%20%E0%A6%AA%E0%A6%A5%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A5%A4">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" 
+               onclick="copyAyah(this)" data-num="৭" data-arabic="%D8%B5%D9%90%D8%B1%D9%8E%D8%A7%D8%B7%D9%8E%20%D8%A7%D9%84%D9%91%D9%8E%D8%B0%D9%90%DB%8C%DB%A1%D9%86%D9%8E%20%D8%A7%D9%8E%D9%86%DB%A1%D8%B9%D9%8E%D9%85%DB%A1%D8%AA%D9%8E%20%D8%B9%D9%8E%D9%84%D9%8E%DB%8C%DB%A1%DB%81%D9%90%D9%85%DB%A1%20%DB%AC%DB%99%20%D8%BA%D9%8E%DB%8C%DB%A1%D8%B1%D9%90%20%D8%A7%D9%84%DB%A1%D9%85%D9%8E%D8%BA%DB%A1%D8%B6%D9%8F%D9%88%DB%A1%D8%A8%D9%90%20%D8%B9%D9%8E%D9%84%D9%8E%DB%8C%DB%A1%DB%81%D9%90%D9%85%DB%A1%20%D9%88%D9%8E%20%D9%84%D9%8E%D8%A7%20%D8%A7%D9%84%D8%B6%D9%91%D9%8E%D8%A7%D9%93%D9%84%D9%91%D9%90%DB%8C%DB%A1%D9%86%D9%8E%20%EF%B4%BF%DB%B7%EF%B4%BE"
+               data-kanzul="%E0%A6%A4%E0%A6%BE%E0%A6%81%E0%A6%A6%E0%A7%87%E0%A6%B0%E0%A6%87%20%E0%A6%AA%E0%A6%A5%E0%A7%87%2C%20%E0%A6%AF%E0%A6%BE%E0%A6%81%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%89%E0%A6%AA%E0%A6%B0%20%E0%A6%A4%E0%A7%81%E0%A6%AE%E0%A6%BF%20%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%B9%20%E0%A6%95%E0%A6%B0%E0%A7%87%E0%A6%9B%E0%A7%8B%3B%20%20%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%E0%A7%87%20%E0%A6%A8%E0%A7%9F%2C%20%E0%A6%AF%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%89%E0%A6%AA%E0%A6%B0%20%E0%A6%97%E0%A6%AF%E0%A6%AC%20%E0%A6%A8%E0%A6%BF%E0%A6%AA%E0%A6%A4%E0%A6%BF%E0%A6%A4%20%E0%A6%B9%E0%A7%9F%E0%A7%87%E0%A6%9B%E0%A7%87%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20%E0%A6%AA%E0%A6%A5%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%E0%A7%87%E0%A6%93%20%E0%A6%A8%E0%A7%9F%E0%A5%A4%20%28%E0%A7%AB%29" data-irfan="%E0%A7%AD.%20%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%2C%20%E0%A6%AF%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%20%E0%A6%A4%E0%A7%81%E0%A6%AE%E0%A6%BF%20%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%B9%20%E0%A6%95%E0%A6%B0%E0%A7%87%E0%A6%9B%E0%A7%8B%2C%20%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%20%E0%A6%A8%E0%A7%9F%2C%20%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BE%20%E0%A6%A4%E0%A7%8B%E0%A6%AE%E0%A6%BE%E0%A6%B0%20%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%A7%E0%A7%87%E0%A6%B0%20%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0%20%E0%A6%B9%E0%A7%9F%E0%A7%87%E0%A6%9B%E0%A7%87%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20%E0%A6%A4%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0%20%E0%A6%AA%E0%A6%A5%E0%A6%93%20%E0%A6%A8%E0%A7%9F%20%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BE%20%E0%A6%97%E0%A7%8B%E0%A6%AE%E0%A6%B0%E0%A6%BE%E0%A6%B9%E0%A7%8D%20%E0%A6%AC%E0%A6%BE%20%E0%A6%AA%E0%A6%A5%E0%A6%AD%E0%A7%8D%E0%A6%B0%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A5%A4">
+        </div>
+      </div>
+      <div class="verse-arabic">صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ ۬ۙ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৭. তাঁদেরই পথে, যাঁদের উপর তুমি অনুগ্রহ করেছো;  তাদের পথে নয়, যাদের উপর গযব নিপতিত হয়েছে এবং পথভ্রষ্টদের পথেও নয়। (৫)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭. তাদের পথ, যাদের প্রতি তুমি অনুগ্রহ করেছো, তাদের পথ নয়, যারা তোমার ক্রোধের শিকার হয়েছে এবং তাদের পথও নয় যারা গোমরাহ্ বা পথভ্রষ্ট।</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>
