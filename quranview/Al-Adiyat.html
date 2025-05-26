@@ -1,421 +1,421 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>আল আদিয়াত</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quranview.css">
-</head>
-<body>
-  <div class="toolbar">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-      <div class="toolbar-title" id="surahTitle">আল আদিয়াত</div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-    </div>
-  </div>
-
-  <div id="searchBox" style="display:none;">
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
-  </div>
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6147">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১
-وَ الۡعٰدِیٰتِ ضَبۡحًا ۙ﴿۱﴾
-কানযুল ঈমান
-শপথ ওইগুলোর, যেগুলো দৌঁড়ে এমতাবস্থায় যে, সেগুলোর বুক থেকে আওয়াজ বের হয়,
-ইরফানুল কুরআন
-১. শপথ (যুদ্ধে) ঊর্ধ্বশ্বাসে ছুটে চলা অশ্বরাজির,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১
-وَ الۡعٰدِیٰتِ ضَبۡحًا ۙ﴿۱﴾
-কানযুল ঈমান
-শপথ ওইগুলোর, যেগুলো দৌঁড়ে এমতাবস্থায় যে, সেগুলোর বুক থেকে আওয়াজ বের হয়,
-ইরফানুল কুরআন
-১. শপথ (যুদ্ধে) ঊর্ধ্বশ্বাসে ছুটে চলা অশ্বরাজির,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ الۡعٰدِیٰتِ ضَبۡحًا ۙ﴿۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">শপথ ওইগুলোর, যেগুলো দৌঁড়ে এমতাবস্থায় যে, সেগুলোর বুক থেকে আওয়াজ বের হয়,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১. শপথ (যুদ্ধে) ঊর্ধ্বশ্বাসে ছুটে চলা অশ্বরাজির,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6148">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ২
-فَالۡمُوۡرِیٰتِ قَدۡحًا ۙ﴿۲﴾
-কানযুল ঈমান
-অতঃপর পাথরসমূহ থেকে আগুন বের করে খুর মেরে,
-ইরফানুল কুরআন
-২. অতঃপর ক্ষুরাঘাতে পাথরের উপর অগ্নিস্ফুলিঙ্গ বিচ্ছুরিত করে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ২
-فَالۡمُوۡرِیٰتِ قَدۡحًا ۙ﴿۲﴾
-কানযুল ঈমান
-অতঃপর পাথরসমূহ থেকে আগুন বের করে খুর মেরে,
-ইরফানুল কুরআন
-২. অতঃপর ক্ষুরাঘাতে পাথরের উপর অগ্নিস্ফুলিঙ্গ বিচ্ছুরিত করে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَالۡمُوۡرِیٰتِ قَدۡحًا ۙ﴿۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর পাথরসমূহ থেকে আগুন বের করে খুর মেরে,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২. অতঃপর ক্ষুরাঘাতে পাথরের উপর অগ্নিস্ফুলিঙ্গ বিচ্ছুরিত করে,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6149">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৩
-فَالۡمُغِیۡرٰتِ صُبۡحًا ۙ﴿۳﴾
-কানযুল ঈমান
-অতঃপর প্রভাত হতেই বিধ্বস্ত করে,
-ইরফানুল কুরআন
-৩. অতঃপর প্রভাতলগ্নেই (দুশমনের উপর) অকস্মাৎ আক্রমণ করে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৩
-فَالۡمُغِیۡرٰتِ صُبۡحًا ۙ﴿۳﴾
-কানযুল ঈমান
-অতঃপর প্রভাত হতেই বিধ্বস্ত করে,
-ইরফানুল কুরআন
-৩. অতঃপর প্রভাতলগ্নেই (দুশমনের উপর) অকস্মাৎ আক্রমণ করে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَالۡمُغِیۡرٰتِ صُبۡحًا ۙ﴿۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর প্রভাত হতেই বিধ্বস্ত করে,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩. অতঃপর প্রভাতলগ্নেই (দুশমনের উপর) অকস্মাৎ আক্রমণ করে,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6150">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৪
-فَاَثَرۡنَ بِہٖ نَقۡعًا ۙ﴿۴﴾
-কানযুল ঈমান
-অতঃপর ওই সময় ধূলি উড়ায়;
-ইরফানুল কুরআন
-৪. তারপর সে (আক্রমণের) স্থান থেকে মেঘময় ধুলি উৎক্ষিপ্ত করে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৪
-فَاَثَرۡنَ بِہٖ نَقۡعًا ۙ﴿۴﴾
-কানযুল ঈমান
-অতঃপর ওই সময় ধূলি উড়ায়;
-ইরফানুল কুরআন
-৪. তারপর সে (আক্রমণের) স্থান থেকে মেঘময় ধুলি উৎক্ষিপ্ত করে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَاَثَرۡنَ بِہٖ نَقۡعًا ۙ﴿۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর ওই সময় ধূলি উড়ায়;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪. তারপর সে (আক্রমণের) স্থান থেকে মেঘময় ধুলি উৎক্ষিপ্ত করে,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6151">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৫
-فَوَسَطۡنَ بِہٖ جَمۡعًا ۙ﴿۵﴾
-কানযুল ঈমান
-অতঃপর শত্রুর সৈন্যদলের মধ্যে প্রবেশ করে-
-ইরফানুল কুরআন
-৫. তারপর সেসময়েই শত্রুদলের অভ্যন্তরে ঢুকে পড়ে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৫
-فَوَسَطۡنَ بِہٖ جَمۡعًا ۙ﴿۵﴾
-কানযুল ঈমান
-অতঃপর শত্রুর সৈন্যদলের মধ্যে প্রবেশ করে-
-ইরফানুল কুরআন
-৫. তারপর সেসময়েই শত্রুদলের অভ্যন্তরে ঢুকে পড়ে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَوَسَطۡنَ بِہٖ جَمۡعًا ۙ﴿۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর শত্রুর সৈন্যদলের মধ্যে প্রবেশ করে-</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৫. তারপর সেসময়েই শত্রুদলের অভ্যন্তরে ঢুকে পড়ে,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6152">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৬
-اِنَّ  الۡاِنۡسَانَ لِرَبِّہٖ  لَکَنُوۡدٌ ۚ﴿۶﴾
-কানযুল ঈমান
-নিশ্চয় মানুষ স্বীয় রবের প্রতি বড় অকৃতজ্ঞ,
-ইরফানুল কুরআন
-৬. নিশ্চয়ই মানুষ তার প্রতিপালকের প্রতি অকৃতজ্ঞ।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৬
-اِنَّ  الۡاِنۡسَانَ لِرَبِّہٖ  لَکَنُوۡدٌ ۚ﴿۶﴾
-কানযুল ঈমান
-নিশ্চয় মানুষ স্বীয় রবের প্রতি বড় অকৃতজ্ঞ,
-ইরফানুল কুরআন
-৬. নিশ্চয়ই মানুষ তার প্রতিপালকের প্রতি অকৃতজ্ঞ।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّ  الۡاِنۡسَانَ لِرَبِّہٖ  لَکَنُوۡدٌ ۚ﴿۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় মানুষ স্বীয় রবের প্রতি বড় অকৃতজ্ঞ,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৬. নিশ্চয়ই মানুষ তার প্রতিপালকের প্রতি অকৃতজ্ঞ।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6153">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৭
-وَ  اِنَّہٗ  عَلٰی ذٰلِکَ لَشَہِیۡدٌ ۚ﴿۷﴾
-কানযুল ঈমান
-এবং নিশ্চয় সে এর উপর নিজেই সাক্ষী,
-ইরফানুল কুরআন
-৭. এবং অবশ্যই সে এ (অকৃতজ্ঞতার) বিষয়ে প্রত্যক্ষদর্শী।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৭
-وَ  اِنَّہٗ  عَلٰی ذٰلِکَ لَشَہِیۡدٌ ۚ﴿۷﴾
-কানযুল ঈমান
-এবং নিশ্চয় সে এর উপর নিজেই সাক্ষী,
-ইরফানুল কুরআন
-৭. এবং অবশ্যই সে এ (অকৃতজ্ঞতার) বিষয়ে প্রত্যক্ষদর্শী।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  اِنَّہٗ  عَلٰی ذٰلِکَ لَشَہِیۡدٌ ۚ﴿۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং নিশ্চয় সে এর উপর নিজেই সাক্ষী,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৭. এবং অবশ্যই সে এ (অকৃতজ্ঞতার) বিষয়ে প্রত্যক্ষদর্শী।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৮</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6154">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৮
-وَ  اِنَّہٗ  لِحُبِّ الۡخَیۡرِ  لَشَدِیۡدٌ ؕ﴿۸﴾
-কানযুল ঈমান
-এবং নিশ্চয় সে সম্পদের মোহে অত্যন্ত প্রবল।
-ইরফানুল কুরআন
-৮. আর নিশ্চয়ই সে ধন-সম্পদের আসক্তিতে প্রবল।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৮
-وَ  اِنَّہٗ  لِحُبِّ الۡخَیۡرِ  لَشَدِیۡدٌ ؕ﴿۸﴾
-কানযুল ঈমান
-এবং নিশ্চয় সে সম্পদের মোহে অত্যন্ত প্রবল।
-ইরফানুল কুরআন
-৮. আর নিশ্চয়ই সে ধন-সম্পদের আসক্তিতে প্রবল।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  اِنَّہٗ  لِحُبِّ الۡخَیۡرِ  لَشَدِیۡدٌ ؕ﴿۸﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং নিশ্চয় সে সম্পদের মোহে অত্যন্ত প্রবল।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৮. আর নিশ্চয়ই সে ধন-সম্পদের আসক্তিতে প্রবল।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৯</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6155">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৯
-اَفَلَا یَعۡلَمُ  اِذَا بُعۡثِرَ مَا فِی الۡقُبُوۡرِ ۙ﴿۹﴾
-কানযুল ঈমান
-তুমি কি জানো না যখন উত্থিত হবে যারা কবরসমূহে রয়েছে,
-ইরফানুল কুরআন
-৯. তবে কি সে অবগত নয় যখন তা উত্থিত হবে যেসব (মৃতরা) কবরে আছে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৯
-اَفَلَا یَعۡلَمُ  اِذَا بُعۡثِرَ مَا فِی الۡقُبُوۡرِ ۙ﴿۹﴾
-কানযুল ঈমান
-তুমি কি জানো না যখন উত্থিত হবে যারা কবরসমূহে রয়েছে,
-ইরফানুল কুরআন
-৯. তবে কি সে অবগত নয় যখন তা উত্থিত হবে যেসব (মৃতরা) কবরে আছে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَفَلَا یَعۡلَمُ  اِذَا بُعۡثِرَ مَا فِی الۡقُبُوۡرِ ۙ﴿۹﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তুমি কি জানো না যখন উত্থিত হবে যারা কবরসমূহে রয়েছে,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৯. তবে কি সে অবগত নয় যখন তা উত্থিত হবে যেসব (মৃতরা) কবরে আছে,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6156">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১০
-وَ  حُصِّلَ مَا فِی الصُّدُوۡرِ ﴿ۙ۱۰﴾
-কানযুল ঈমান
-এবং প্রকাশ করে দেওয়া হবে যা অন্তরসমূহে রয়েছে?
-ইরফানুল কুরআন
-১০. আর অন্তরে যা রয়েছে সেসব (গোপন রহস্য) প্রকাশ করা হবে?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১০
-وَ  حُصِّلَ مَا فِی الصُّدُوۡرِ ﴿ۙ۱۰﴾
-কানযুল ঈমান
-এবং প্রকাশ করে দেওয়া হবে যা অন্তরসমূহে রয়েছে?
-ইরফানুল কুরআন
-১০. আর অন্তরে যা রয়েছে সেসব (গোপন রহস্য) প্রকাশ করা হবে?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  حُصِّلَ مَا فِی الصُّدُوۡرِ ﴿ۙ۱۰﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং প্রকাশ করে দেওয়া হবে যা অন্তরসমূহে রয়েছে?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১০. আর অন্তরে যা রয়েছে সেসব (গোপন রহস্য) প্রকাশ করা হবে?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6157">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১১
-اِنَّ  رَبَّہُمۡ  بِہِمۡ یَوۡمَئِذٍ لَّخَبِیۡرٌ ﴿۱۱﴾
-কানযুল ঈমান
-নিশ্চয় ওই দিন তাদের রব তাদের সব খবর সম্পর্কে অবহিত।
-ইরফানুল কুরআন
-১১. নিশ্চয়ই সেদিন তাদের প্রতিপালক তাদের (আমলগুলো) সম্পর্কে সম্যক অবগত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১১
-اِنَّ  رَبَّہُمۡ  بِہِمۡ یَوۡمَئِذٍ لَّخَبِیۡرٌ ﴿۱۱﴾
-কানযুল ঈমান
-নিশ্চয় ওই দিন তাদের রব তাদের সব খবর সম্পর্কে অবহিত।
-ইরফানুল কুরআন
-১১. নিশ্চয়ই সেদিন তাদের প্রতিপালক তাদের (আমলগুলো) সম্পর্কে সম্যক অবগত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّ  رَبَّہُمۡ  بِہِمۡ یَوۡمَئِذٍ لَّخَبِیۡرٌ ﴿۱۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় ওই দিন তাদের রব তাদের সব খবর সম্পর্কে অবহিত।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১১. নিশ্চয়ই সেদিন তাদের প্রতিপালক তাদের (আমলগুলো) সম্পর্কে সম্যক অবগত।</div>
-    </div>
-
-  </div>
-
-  <div class="audio-controller" id="audioController" style="display:none;">
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
-    <img src="next.png" onclick="playNext()" alt="Next">
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">
-  </div>
-
-  <script src="quranview.js"></script>
-</body>
-</html>
+<!DOCTYPE html>    
+<html lang="bn">    
+<head>    
+  <meta charset="UTF-8">    
+  <title>আল আদিয়াত</title>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="quranview.css">    
+</head>    
+<body>    
+  <div class="toolbar">    
+    <div style="display: flex; align-items: center; gap: 10px;">    
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
+      <div class="toolbar-title" id="surahTitle">আল আদিয়াত</div>    
+    </div>    
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
+    </div>    
+  </div>    
+    
+  <div id="searchBox" style="display:none;">    
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
+  </div>    
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6147">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১    
+وَ الۡعٰدِیٰتِ ضَبۡحًا ۙ﴿۱﴾    
+কানযুল ঈমান    
+শপথ ওইগুলোর, যেগুলো দৌঁড়ে এমতাবস্থায় যে, সেগুলোর বুক থেকে আওয়াজ বের হয়,    
+ইরফানুল কুরআন    
+১. শপথ (যুদ্ধে) ঊর্ধ্বশ্বাসে ছুটে চলা অশ্বরাজির,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১    
+وَ الۡعٰدِیٰتِ ضَبۡحًا ۙ﴿۱﴾    
+কানযুল ঈমান    
+শপথ ওইগুলোর, যেগুলো দৌঁড়ে এমতাবস্থায় যে, সেগুলোর বুক থেকে আওয়াজ বের হয়,    
+ইরফানুল কুরআন    
+১. শপথ (যুদ্ধে) ঊর্ধ্বশ্বাসে ছুটে চলা অশ্বরাজির,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ الۡعٰدِیٰتِ ضَبۡحًا ۙ﴿۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১. শপথ ওইগুলোর, যেগুলো দৌঁড়ে এমতাবস্থায় যে, সেগুলোর বুক থেকে আওয়াজ বের হয়,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১. শপথ (যুদ্ধে) ঊর্ধ্বশ্বাসে ছুটে চলা অশ্বরাজির,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6148">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ২    
+فَالۡمُوۡرِیٰتِ قَدۡحًا ۙ﴿۲﴾    
+কানযুল ঈমান    
+অতঃপর পাথরসমূহ থেকে আগুন বের করে খুর মেরে,    
+ইরফানুল কুরআন    
+২. অতঃপর ক্ষুরাঘাতে পাথরের উপর অগ্নিস্ফুলিঙ্গ বিচ্ছুরিত করে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ২    
+فَالۡمُوۡرِیٰتِ قَدۡحًا ۙ﴿۲﴾    
+কানযুল ঈমান    
+অতঃপর পাথরসমূহ থেকে আগুন বের করে খুর মেরে,    
+ইরফানুল কুরআন    
+২. অতঃপর ক্ষুরাঘাতে পাথরের উপর অগ্নিস্ফুলিঙ্গ বিচ্ছুরিত করে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَالۡمُوۡرِیٰتِ قَدۡحًا ۙ﴿۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২. অতঃপর পাথরসমূহ থেকে আগুন বের করে খুর মেরে,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২. অতঃপর ক্ষুরাঘাতে পাথরের উপর অগ্নিস্ফুলিঙ্গ বিচ্ছুরিত করে,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6149">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৩    
+فَالۡمُغِیۡرٰتِ صُبۡحًا ۙ﴿۳﴾    
+কানযুল ঈমান    
+অতঃপর প্রভাত হতেই বিধ্বস্ত করে,    
+ইরফানুল কুরআন    
+৩. অতঃপর প্রভাতলগ্নেই (দুশমনের উপর) অকস্মাৎ আক্রমণ করে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৩    
+فَالۡمُغِیۡرٰتِ صُبۡحًا ۙ﴿۳﴾    
+কানযুল ঈমান    
+অতঃপর প্রভাত হতেই বিধ্বস্ত করে,    
+ইরফানুল কুরআন    
+৩. অতঃপর প্রভাতলগ্নেই (দুশমনের উপর) অকস্মাৎ আক্রমণ করে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَالۡمُغِیۡرٰتِ صُبۡحًا ۙ﴿۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩. অতঃপর প্রভাত হতেই বিধ্বস্ত করে,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩. অতঃপর প্রভাতলগ্নেই (দুশমনের উপর) অকস্মাৎ আক্রমণ করে,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6150">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৪    
+فَاَثَرۡنَ بِہٖ نَقۡعًا ۙ﴿۴﴾    
+কানযুল ঈমান    
+অতঃপর ওই সময় ধূলি উড়ায়;    
+ইরফানুল কুরআন    
+৪. তারপর সে (আক্রমণের) স্থান থেকে মেঘময় ধুলি উৎক্ষিপ্ত করে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৪    
+فَاَثَرۡنَ بِہٖ نَقۡعًا ۙ﴿۴﴾    
+কানযুল ঈমান    
+অতঃপর ওই সময় ধূলি উড়ায়;    
+ইরফানুল কুরআন    
+৪. তারপর সে (আক্রমণের) স্থান থেকে মেঘময় ধুলি উৎক্ষিপ্ত করে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَاَثَرۡنَ بِہٖ نَقۡعًا ۙ﴿۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪. অতঃপর ওই সময় ধূলি উড়ায়;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪. তারপর সে (আক্রমণের) স্থান থেকে মেঘময় ধুলি উৎক্ষিপ্ত করে,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6151">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৫    
+فَوَسَطۡنَ بِہٖ جَمۡعًا ۙ﴿۵﴾    
+কানযুল ঈমান    
+অতঃপর শত্রুর সৈন্যদলের মধ্যে প্রবেশ করে-    
+ইরফানুল কুরআন    
+৫. তারপর সেসময়েই শত্রুদলের অভ্যন্তরে ঢুকে পড়ে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৫    
+فَوَسَطۡنَ بِہٖ جَمۡعًا ۙ﴿۵﴾    
+কানযুল ঈমান    
+অতঃপর শত্রুর সৈন্যদলের মধ্যে প্রবেশ করে-    
+ইরফানুল কুরআন    
+৫. তারপর সেসময়েই শত্রুদলের অভ্যন্তরে ঢুকে পড়ে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَوَسَطۡنَ بِہٖ جَمۡعًا ۙ﴿۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৫. অতঃপর শত্রুর সৈন্যদলের মধ্যে প্রবেশ করে-</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৫. তারপর সেসময়েই শত্রুদলের অভ্যন্তরে ঢুকে পড়ে,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6152">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৬    
+اِنَّ  الۡاِنۡسَانَ لِرَبِّہٖ  لَکَنُوۡدٌ ۚ﴿۶﴾    
+কানযুল ঈমান    
+নিশ্চয় মানুষ স্বীয় রবের প্রতি বড় অকৃতজ্ঞ,    
+ইরফানুল কুরআন    
+৬. নিশ্চয়ই মানুষ তার প্রতিপালকের প্রতি অকৃতজ্ঞ।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৬    
+اِنَّ  الۡاِنۡسَانَ لِرَبِّہٖ  لَکَنُوۡدٌ ۚ﴿۶﴾    
+কানযুল ঈমান    
+নিশ্চয় মানুষ স্বীয় রবের প্রতি বড় অকৃতজ্ঞ,    
+ইরফানুল কুরআন    
+৬. নিশ্চয়ই মানুষ তার প্রতিপালকের প্রতি অকৃতজ্ঞ।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّ  الۡاِنۡسَانَ لِرَبِّہٖ  لَکَنُوۡدٌ ۚ﴿۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৬. নিশ্চয় মানুষ স্বীয় রবের প্রতি বড় অকৃতজ্ঞ,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৬. নিশ্চয়ই মানুষ তার প্রতিপালকের প্রতি অকৃতজ্ঞ।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6153">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৭    
+وَ  اِنَّہٗ  عَلٰی ذٰلِکَ لَشَہِیۡدٌ ۚ﴿۷﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় সে এর উপর নিজেই সাক্ষী,    
+ইরফানুল কুরআন    
+৭. এবং অবশ্যই সে এ (অকৃতজ্ঞতার) বিষয়ে প্রত্যক্ষদর্শী।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৭    
+وَ  اِنَّہٗ  عَلٰی ذٰلِکَ لَشَہِیۡدٌ ۚ﴿۷﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় সে এর উপর নিজেই সাক্ষী,    
+ইরফানুল কুরআন    
+৭. এবং অবশ্যই সে এ (অকৃতজ্ঞতার) বিষয়ে প্রত্যক্ষদর্শী।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  اِنَّہٗ  عَلٰی ذٰلِکَ لَشَہِیۡدٌ ۚ﴿۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৭. এবং নিশ্চয় সে এর উপর নিজেই সাক্ষী,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৭. এবং অবশ্যই সে এ (অকৃতজ্ঞতার) বিষয়ে প্রত্যক্ষদর্শী।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৮</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6154">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৮    
+وَ  اِنَّہٗ  لِحُبِّ الۡخَیۡرِ  لَشَدِیۡدٌ ؕ﴿۸﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় সে সম্পদের মোহে অত্যন্ত প্রবল।    
+ইরফানুল কুরআন    
+৮. আর নিশ্চয়ই সে ধন-সম্পদের আসক্তিতে প্রবল।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৮    
+وَ  اِنَّہٗ  لِحُبِّ الۡخَیۡرِ  لَشَدِیۡدٌ ؕ﴿۸﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় সে সম্পদের মোহে অত্যন্ত প্রবল।    
+ইরফানুল কুরআন    
+৮. আর নিশ্চয়ই সে ধন-সম্পদের আসক্তিতে প্রবল।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  اِنَّہٗ  لِحُبِّ الۡخَیۡرِ  لَشَدِیۡدٌ ؕ﴿۸﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৮. এবং নিশ্চয় সে সম্পদের মোহে অত্যন্ত প্রবল।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৮. আর নিশ্চয়ই সে ধন-সম্পদের আসক্তিতে প্রবল।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৯</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6155">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৯    
+اَفَلَا یَعۡلَمُ  اِذَا بُعۡثِرَ مَا فِی الۡقُبُوۡرِ ۙ﴿۹﴾    
+কানযুল ঈমান    
+তুমি কি জানো না যখন উত্থিত হবে যারা কবরসমূহে রয়েছে,    
+ইরফানুল কুরআন    
+৯. তবে কি সে অবগত নয় যখন তা উত্থিত হবে যেসব (মৃতরা) কবরে আছে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ৯    
+اَفَلَا یَعۡلَمُ  اِذَا بُعۡثِرَ مَا فِی الۡقُبُوۡرِ ۙ﴿۹﴾    
+কানযুল ঈমান    
+তুমি কি জানো না যখন উত্থিত হবে যারা কবরসমূহে রয়েছে,    
+ইরফানুল কুরআন    
+৯. তবে কি সে অবগত নয় যখন তা উত্থিত হবে যেসব (মৃতরা) কবরে আছে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَفَلَا یَعۡلَمُ  اِذَا بُعۡثِرَ مَا فِی الۡقُبُوۡرِ ۙ﴿۹﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৯. তুমি কি জানো না যখন উত্থিত হবে যারা কবরসমূহে রয়েছে,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৯. তবে কি সে অবগত নয় যখন তা উত্থিত হবে যেসব (মৃতরা) কবরে আছে,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6156">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১০    
+وَ  حُصِّلَ مَا فِی الصُّدُوۡرِ ﴿ۙ۱۰﴾    
+কানযুল ঈমান    
+এবং প্রকাশ করে দেওয়া হবে যা অন্তরসমূহে রয়েছে?    
+ইরফানুল কুরআন    
+১০. আর অন্তরে যা রয়েছে সেসব (গোপন রহস্য) প্রকাশ করা হবে?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১০    
+وَ  حُصِّلَ مَا فِی الصُّدُوۡرِ ﴿ۙ۱۰﴾    
+কানযুল ঈমান    
+এবং প্রকাশ করে দেওয়া হবে যা অন্তরসমূহে রয়েছে?    
+ইরফানুল কুরআন    
+১০. আর অন্তরে যা রয়েছে সেসব (গোপন রহস্য) প্রকাশ করা হবে?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  حُصِّلَ مَا فِی الصُّدُوۡرِ ﴿ۙ۱۰﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১০. এবং প্রকাশ করে দেওয়া হবে যা অন্তরসমূহে রয়েছে?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১০. আর অন্তরে যা রয়েছে সেসব (গোপন রহস্য) প্রকাশ করা হবে?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6157">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১১    
+اِنَّ  رَبَّہُمۡ  بِہِمۡ یَوۡمَئِذٍ لَّخَبِیۡرٌ ﴿۱۱﴾    
+কানযুল ঈমান    
+নিশ্চয় ওই দিন তাদের রব তাদের সব খবর সম্পর্কে অবহিত।    
+ইরফানুল কুরআন    
+১১. নিশ্চয়ই সেদিন তাদের প্রতিপালক তাদের (আমলগুলো) সম্পর্কে সম্যক অবগত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আদিয়াত আয়াত নং : ১১    
+اِنَّ  رَبَّہُمۡ  بِہِمۡ یَوۡمَئِذٍ لَّخَبِیۡرٌ ﴿۱۱﴾    
+কানযুল ঈমান    
+নিশ্চয় ওই দিন তাদের রব তাদের সব খবর সম্পর্কে অবহিত।    
+ইরফানুল কুরআন    
+১১. নিশ্চয়ই সেদিন তাদের প্রতিপালক তাদের (আমলগুলো) সম্পর্কে সম্যক অবগত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّ  رَبَّہُمۡ  بِہِمۡ یَوۡمَئِذٍ لَّخَبِیۡرٌ ﴿۱۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১১. নিশ্চয় ওই দিন তাদের রব তাদের সব খবর সম্পর্কে অবহিত।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১১. নিশ্চয়ই সেদিন তাদের প্রতিপালক তাদের (আমলগুলো) সম্পর্কে সম্যক অবগত।</div>    
+    </div>    
+    
+  </div>    
+    
+  <div class="audio-controller" id="audioController" style="display:none;">    
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
+    <img src="next.png" onclick="playNext()" alt="Next">    
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
+  </div>    
+    
+  <script src="quranview.js"></script>    
+</body>    
+</html>    

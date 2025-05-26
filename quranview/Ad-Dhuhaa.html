@@ -1,481 +1,481 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>আদ দুহা</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quranview.css">
-</head>
-<body>
-  <div class="toolbar">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-      <div class="toolbar-title" id="surahTitle">আদ দুহা</div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-    </div>
-  </div>
-
-  <div id="searchBox" style="display:none;">
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
-  </div>
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6080">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ১
-وَ الضُّحٰی ۙ﴿۱﴾
-কানযুল ঈমান
-চাশ্‌ত (পূর্বাহ্ন) এর শপথ,
-ইরফানুল কুরআন
+<!DOCTYPE html>    
+<html lang="bn">    
+<head>    
+  <meta charset="UTF-8">    
+  <title>আদ দুহা</title>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="quranview.css">    
+</head>    
+<body>    
+  <div class="toolbar">    
+    <div style="display: flex; align-items: center; gap: 10px;">    
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
+      <div class="toolbar-title" id="surahTitle">আদ দুহা</div>    
+    </div>    
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
+    </div>    
+  </div>    
+    
+  <div id="searchBox" style="display:none;">    
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
+  </div>    
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6080">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ১    
+وَ الضُّحٰی ۙ﴿۱﴾    
+কানযুল ঈমান    
+চাশ্‌ত (পূর্বাহ্ন) এর শপথ,    
+ইরফানুল কুরআন    
 ১. শপথ উদীয়মান প্রভাতের (যখন সূর্য উপরে উঠে স্বীয় আলো ছড়ায়),
 অথবা: 
 (হে সম্মানিত হাবীব!) শপথ উদীয়মান প্রভাতের (ন্যায় আপনার সর্বাধিক আলোকোজ্জ্বল চেহারার, যার দ্যুতি অন্ধকার রূহসমূহকে আলোকিত করেছে), 
 অথবা: 
-শপথ উদীয়মান প্রভাতের (ন্যায় আপনার রেসালাতের সূর্য্য উপরে উঠার, যার নূর গোমরাহীর অন্ধকারকে আলোয় পরিবর্তন করে দিয়েছে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ১
-وَ الضُّحٰی ۙ﴿۱﴾
-কানযুল ঈমান
-চাশ্‌ত (পূর্বাহ্ন) এর শপথ,
-ইরফানুল কুরআন
+শপথ উদীয়মান প্রভাতের (ন্যায় আপনার রেসালাতের সূর্য্য উপরে উঠার, যার নূর গোমরাহীর অন্ধকারকে আলোয় পরিবর্তন করে দিয়েছে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ১    
+وَ الضُّحٰی ۙ﴿۱﴾    
+কানযুল ঈমান    
+চাশ্‌ত (পূর্বাহ্ন) এর শপথ,    
+ইরফানুল কুরআন    
 ১. শপথ উদীয়মান প্রভাতের (যখন সূর্য উপরে উঠে স্বীয় আলো ছড়ায়),
 অথবা: 
 (হে সম্মানিত হাবীব!) শপথ উদীয়মান প্রভাতের (ন্যায় আপনার সর্বাধিক আলোকোজ্জ্বল চেহারার, যার দ্যুতি অন্ধকার রূহসমূহকে আলোকিত করেছে), 
 অথবা: 
-শপথ উদীয়মান প্রভাতের (ন্যায় আপনার রেসালাতের সূর্য্য উপরে উঠার, যার নূর গোমরাহীর অন্ধকারকে আলোয় পরিবর্তন করে দিয়েছে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ الضُّحٰی ۙ﴿۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">চাশ্‌ত (পূর্বাহ্ন) এর শপথ,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
+শপথ উদীয়মান প্রভাতের (ন্যায় আপনার রেসালাতের সূর্য্য উপরে উঠার, যার নূর গোমরাহীর অন্ধকারকে আলোয় পরিবর্তন করে দিয়েছে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ الضُّحٰی ۙ﴿۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১. চাশ্‌ত (পূর্বাহ্ন) এর শপথ,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
       <div class="irfan-text">১. শপথ উদীয়মান প্রভাতের (যখন সূর্য উপরে উঠে স্বীয় আলো ছড়ায়),
 অথবা: 
 (হে সম্মানিত হাবীব!) শপথ উদীয়মান প্রভাতের (ন্যায় আপনার সর্বাধিক আলোকোজ্জ্বল চেহারার, যার দ্যুতি অন্ধকার রূহসমূহকে আলোকিত করেছে), 
 অথবা: 
-শপথ উদীয়মান প্রভাতের (ন্যায় আপনার রেসালাতের সূর্য্য উপরে উঠার, যার নূর গোমরাহীর অন্ধকারকে আলোয় পরিবর্তন করে দিয়েছে,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6081">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ২
-وَ الَّیۡلِ  اِذَا سَجٰی ۙ﴿۲﴾
-কানযুল ঈমান
-এবং রাতের, যখন পর্দা-আবৃত করে,
-ইরফানুল কুরআন
+শপথ উদীয়মান প্রভাতের (ন্যায় আপনার রেসালাতের সূর্য্য উপরে উঠার, যার নূর গোমরাহীর অন্ধকারকে আলোয় পরিবর্তন করে দিয়েছে,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6081">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ২    
+وَ الَّیۡلِ  اِذَا سَجٰی ۙ﴿۲﴾    
+কানযুল ঈমান    
+এবং রাতের, যখন পর্দা-আবৃত করে,    
+ইরফানুল কুরআন    
 ২. আর শপথ রাতের যখন তা ছেয়ে যায়, অথবা: (হে সম্মানিত হাবীব!) শপথ অন্ধকার রাতের (ন্যায় আপনার স্বর্ণালী কেশগুচ্ছের), যখন তা (আপনার কমনীয় চেহারায় অথবা কাঁধের উপর) ছেয়ে যায়, অথবা: শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,
 অথবা: 
 (হে সম্মানিত হাবীব!) শপথ অন্ধকার রাতের (ন্যায় আপনার স্বর্ণালী কেশগুচ্ছের), যখন তা (আপনার কমনীয় চেহারায় অথবা কাঁধের উপর) ছেয়ে যায়, 
 অথবা: 
-শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ২
-وَ الَّیۡلِ  اِذَا سَجٰی ۙ﴿۲﴾
-কানযুল ঈমান
-এবং রাতের, যখন পর্দা-আবৃত করে,
-ইরফানুল কুরআন
+শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ২    
+وَ الَّیۡلِ  اِذَا سَجٰی ۙ﴿۲﴾    
+কানযুল ঈমান    
+এবং রাতের, যখন পর্দা-আবৃত করে,    
+ইরফানুল কুরআন    
 ২. আর শপথ রাতের যখন তা ছেয়ে যায়, অথবা: (হে সম্মানিত হাবীব!) শপথ অন্ধকার রাতের (ন্যায় আপনার স্বর্ণালী কেশগুচ্ছের), যখন তা (আপনার কমনীয় চেহারায় অথবা কাঁধের উপর) ছেয়ে যায়, অথবা: শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,
 অথবা: 
 (হে সম্মানিত হাবীব!) শপথ অন্ধকার রাতের (ন্যায় আপনার স্বর্ণালী কেশগুচ্ছের), যখন তা (আপনার কমনীয় চেহারায় অথবা কাঁধের উপর) ছেয়ে যায়, 
 অথবা: 
-শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ الَّیۡلِ  اِذَا سَجٰی ۙ﴿۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং রাতের, যখন পর্দা-আবৃত করে,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
+শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ الَّیۡلِ  اِذَا سَجٰی ۙ﴿۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২. এবং রাতের, যখন পর্দা-আবৃত করে,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
       <div class="irfan-text">২. আর শপথ রাতের যখন তা ছেয়ে যায়, অথবা: (হে সম্মানিত হাবীব!) শপথ অন্ধকার রাতের (ন্যায় আপনার স্বর্ণালী কেশগুচ্ছের), যখন তা (আপনার কমনীয় চেহারায় অথবা কাঁধের উপর) ছেয়ে যায়, অথবা: শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,
 অথবা: 
 (হে সম্মানিত হাবীব!) শপথ অন্ধকার রাতের (ন্যায় আপনার স্বর্ণালী কেশগুচ্ছের), যখন তা (আপনার কমনীয় চেহারায় অথবা কাঁধের উপর) ছেয়ে যায়, 
 অথবা: 
-শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6082">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৩
-مَا وَدَّعَکَ رَبُّکَ وَ مَا قَلٰی ؕ﴿۳﴾
-কানযুল ঈমান
-আপনার রব আপনাকে পরিত্যাগ করেন নি এবং না অপছন্দ করেছেন।
-ইরফানুল কুরআন
-৩. আপনার প্রতিপালক (যখন থেকে আপনাকে নির্বাচিত করেছেন) আপনাকে পরিত্যাগ করেননি এবং (যখন থেকে আপনাকে প্রিয়তম বানিয়েছেন) আপনার প্রতি অসন্তুষ্টও হননি।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৩
-مَا وَدَّعَکَ رَبُّکَ وَ مَا قَلٰی ؕ﴿۳﴾
-কানযুল ঈমান
-আপনার রব আপনাকে পরিত্যাগ করেন নি এবং না অপছন্দ করেছেন।
-ইরফানুল কুরআন
-৩. আপনার প্রতিপালক (যখন থেকে আপনাকে নির্বাচিত করেছেন) আপনাকে পরিত্যাগ করেননি এবং (যখন থেকে আপনাকে প্রিয়তম বানিয়েছেন) আপনার প্রতি অসন্তুষ্টও হননি।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">مَا وَدَّعَکَ رَبُّکَ وَ مَا قَلٰی ؕ﴿۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আপনার রব আপনাকে পরিত্যাগ করেন নি এবং না অপছন্দ করেছেন।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩. আপনার প্রতিপালক (যখন থেকে আপনাকে নির্বাচিত করেছেন) আপনাকে পরিত্যাগ করেননি এবং (যখন থেকে আপনাকে প্রিয়তম বানিয়েছেন) আপনার প্রতি অসন্তুষ্টও হননি।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6083">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৪
-وَ  لَلۡاٰخِرَۃُ  خَیۡرٌ لَّکَ مِنَ الۡاُوۡلٰی ؕ﴿۴﴾
-কানযুল ঈমান
-এবং নিশ্চয় পরবর্তী জীবন আপনার জন্য পূর্ববর্তী জীবন অপেক্ষা উত্তম।
-ইরফানুল কুরআন
-৪. আর আপনার জন্যে তো (প্রতিটি) পরবর্তী মুহূর্ত পূর্ববর্তীর চেয়ে উত্তম (অর্থাৎ শ্রেষ্ঠত্ব এবং উচ্চ মর্যাদার কারণ)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৪
-وَ  لَلۡاٰخِرَۃُ  خَیۡرٌ لَّکَ مِنَ الۡاُوۡلٰی ؕ﴿۴﴾
-কানযুল ঈমান
-এবং নিশ্চয় পরবর্তী জীবন আপনার জন্য পূর্ববর্তী জীবন অপেক্ষা উত্তম।
-ইরফানুল কুরআন
-৪. আর আপনার জন্যে তো (প্রতিটি) পরবর্তী মুহূর্ত পূর্ববর্তীর চেয়ে উত্তম (অর্থাৎ শ্রেষ্ঠত্ব এবং উচ্চ মর্যাদার কারণ)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  لَلۡاٰخِرَۃُ  خَیۡرٌ لَّکَ مِنَ الۡاُوۡلٰی ؕ﴿۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং নিশ্চয় পরবর্তী জীবন আপনার জন্য পূর্ববর্তী জীবন অপেক্ষা উত্তম।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪. আর আপনার জন্যে তো (প্রতিটি) পরবর্তী মুহূর্ত পূর্ববর্তীর চেয়ে উত্তম (অর্থাৎ শ্রেষ্ঠত্ব এবং উচ্চ মর্যাদার কারণ)।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6084">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৫
-وَ  لَسَوۡفَ یُعۡطِیۡکَ رَبُّکَ فَتَرۡضٰی ؕ﴿۵﴾
-কানযুল ঈমান
-এবং নিশ্চয় অচিরে আপনার রব আপনাকে এ পরিমাণ দেবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।
-ইরফানুল কুরআন
-৫. আর আপনার প্রতিপালক শীঘ্রই আপনাকে (এতো বেশি) প্রদান করবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৫
-وَ  لَسَوۡفَ یُعۡطِیۡکَ رَبُّکَ فَتَرۡضٰی ؕ﴿۵﴾
-কানযুল ঈমান
-এবং নিশ্চয় অচিরে আপনার রব আপনাকে এ পরিমাণ দেবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।
-ইরফানুল কুরআন
-৫. আর আপনার প্রতিপালক শীঘ্রই আপনাকে (এতো বেশি) প্রদান করবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  لَسَوۡفَ یُعۡطِیۡکَ رَبُّکَ فَتَرۡضٰی ؕ﴿۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং নিশ্চয় অচিরে আপনার রব আপনাকে এ পরিমাণ দেবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৫. আর আপনার প্রতিপালক শীঘ্রই আপনাকে (এতো বেশি) প্রদান করবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6085">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৬
-اَلَمۡ  یَجِدۡکَ یَتِیۡمًا فَاٰوٰی ۪﴿۶﴾
-কানযুল ঈমান
-তিনি কি আপনাকে এতিম পাননি? অতঃপর আশ্রয় দিয়েছেন!
-ইরফানুল কুরআন
+শপথ রাতের (ন্যায় আপনার সত্তার আচ্ছাদনীর), যখন তা (আপনার নূরের প্রকৃতিকে একাধিক পর্দায়) আচ্ছাদিত করে রাখে,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6082">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৩    
+مَا وَدَّعَکَ رَبُّکَ وَ مَا قَلٰی ؕ﴿۳﴾    
+কানযুল ঈমান    
+আপনার রব আপনাকে পরিত্যাগ করেন নি এবং না অপছন্দ করেছেন।    
+ইরফানুল কুরআন    
+৩. আপনার প্রতিপালক (যখন থেকে আপনাকে নির্বাচিত করেছেন) আপনাকে পরিত্যাগ করেননি এবং (যখন থেকে আপনাকে প্রিয়তম বানিয়েছেন) আপনার প্রতি অসন্তুষ্টও হননি।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৩    
+مَا وَدَّعَکَ رَبُّکَ وَ مَا قَلٰی ؕ﴿۳﴾    
+কানযুল ঈমান    
+আপনার রব আপনাকে পরিত্যাগ করেন নি এবং না অপছন্দ করেছেন।    
+ইরফানুল কুরআন    
+৩. আপনার প্রতিপালক (যখন থেকে আপনাকে নির্বাচিত করেছেন) আপনাকে পরিত্যাগ করেননি এবং (যখন থেকে আপনাকে প্রিয়তম বানিয়েছেন) আপনার প্রতি অসন্তুষ্টও হননি।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">مَا وَدَّعَکَ رَبُّکَ وَ مَا قَلٰی ؕ﴿۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩. আপনার রব আপনাকে পরিত্যাগ করেন নি এবং না অপছন্দ করেছেন।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩. আপনার প্রতিপালক (যখন থেকে আপনাকে নির্বাচিত করেছেন) আপনাকে পরিত্যাগ করেননি এবং (যখন থেকে আপনাকে প্রিয়তম বানিয়েছেন) আপনার প্রতি অসন্তুষ্টও হননি।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6083">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৪    
+وَ  لَلۡاٰخِرَۃُ  خَیۡرٌ لَّکَ مِنَ الۡاُوۡلٰی ؕ﴿۴﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় পরবর্তী জীবন আপনার জন্য পূর্ববর্তী জীবন অপেক্ষা উত্তম।    
+ইরফানুল কুরআন    
+৪. আর আপনার জন্যে তো (প্রতিটি) পরবর্তী মুহূর্ত পূর্ববর্তীর চেয়ে উত্তম (অর্থাৎ শ্রেষ্ঠত্ব এবং উচ্চ মর্যাদার কারণ)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৪    
+وَ  لَلۡاٰخِرَۃُ  خَیۡرٌ لَّکَ مِنَ الۡاُوۡلٰی ؕ﴿۴﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় পরবর্তী জীবন আপনার জন্য পূর্ববর্তী জীবন অপেক্ষা উত্তম।    
+ইরফানুল কুরআন    
+৪. আর আপনার জন্যে তো (প্রতিটি) পরবর্তী মুহূর্ত পূর্ববর্তীর চেয়ে উত্তম (অর্থাৎ শ্রেষ্ঠত্ব এবং উচ্চ মর্যাদার কারণ)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  لَلۡاٰخِرَۃُ  خَیۡرٌ لَّکَ مِنَ الۡاُوۡلٰی ؕ﴿۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪. এবং নিশ্চয় পরবর্তী জীবন আপনার জন্য পূর্ববর্তী জীবন অপেক্ষা উত্তম।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪. আর আপনার জন্যে তো (প্রতিটি) পরবর্তী মুহূর্ত পূর্ববর্তীর চেয়ে উত্তম (অর্থাৎ শ্রেষ্ঠত্ব এবং উচ্চ মর্যাদার কারণ)।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6084">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৫    
+وَ  لَسَوۡفَ یُعۡطِیۡکَ رَبُّکَ فَتَرۡضٰی ؕ﴿۵﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় অচিরে আপনার রব আপনাকে এ পরিমাণ দেবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।    
+ইরফানুল কুরআন    
+৫. আর আপনার প্রতিপালক শীঘ্রই আপনাকে (এতো বেশি) প্রদান করবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৫    
+وَ  لَسَوۡفَ یُعۡطِیۡکَ رَبُّکَ فَتَرۡضٰی ؕ﴿۵﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় অচিরে আপনার রব আপনাকে এ পরিমাণ দেবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।    
+ইরফানুল কুরআন    
+৫. আর আপনার প্রতিপালক শীঘ্রই আপনাকে (এতো বেশি) প্রদান করবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  لَسَوۡفَ یُعۡطِیۡکَ رَبُّکَ فَتَرۡضٰی ؕ﴿۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৫. এবং নিশ্চয় অচিরে আপনার রব আপনাকে এ পরিমাণ দেবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৫. আর আপনার প্রতিপালক শীঘ্রই আপনাকে (এতো বেশি) প্রদান করবেন যে, আপনি সন্তুষ্ট হয়ে যাবেন।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6085">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৬    
+اَلَمۡ  یَجِدۡکَ یَتِیۡمًا فَاٰوٰی ۪﴿۶﴾    
+কানযুল ঈমান    
+তিনি কি আপনাকে এতিম পাননি? অতঃপর আশ্রয় দিয়েছেন!    
+ইরফানুল কুরআন    
 ৬. (হে প্রিয়তম!) তিনি কি আপনাকে এতিমরূপে পাননি, অতঃপর (আপনাকে মর্যাদাসম্পন্ন ও মাধুর্যমন্ডিত) আশ্রয় দেননি?
 অথবা: 
 তিনি কি আপনাকে (দয়ালু) পাননি, অতঃপর তিনি (আপনার মাধ্যমে) এতিমদের আশ্রয় দেননি?*
 
-* এ অনুবাদে ‘এতিম’ শব্দটি ‘ফাআওয়া’ শব্দের মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৬
-اَلَمۡ  یَجِدۡکَ یَتِیۡمًا فَاٰوٰی ۪﴿۶﴾
-কানযুল ঈমান
-তিনি কি আপনাকে এতিম পাননি? অতঃপর আশ্রয় দিয়েছেন!
-ইরফানুল কুরআন
+* এ অনুবাদে ‘এতিম’ শব্দটি ‘ফাআওয়া’ শব্দের মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৬    
+اَلَمۡ  یَجِدۡکَ یَتِیۡمًا فَاٰوٰی ۪﴿۶﴾    
+কানযুল ঈমান    
+তিনি কি আপনাকে এতিম পাননি? অতঃপর আশ্রয় দিয়েছেন!    
+ইরফানুল কুরআন    
 ৬. (হে প্রিয়তম!) তিনি কি আপনাকে এতিমরূপে পাননি, অতঃপর (আপনাকে মর্যাদাসম্পন্ন ও মাধুর্যমন্ডিত) আশ্রয় দেননি?
 অথবা: 
 তিনি কি আপনাকে (দয়ালু) পাননি, অতঃপর তিনি (আপনার মাধ্যমে) এতিমদের আশ্রয় দেননি?*
 
-* এ অনুবাদে ‘এতিম’ শব্দটি ‘ফাআওয়া’ শব্দের মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَلَمۡ  یَجِدۡکَ یَتِیۡمًا فَاٰوٰی ۪﴿۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তিনি কি আপনাকে এতিম পাননি? অতঃপর আশ্রয় দিয়েছেন!</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
+* এ অনুবাদে ‘এতিম’ শব্দটি ‘ফাআওয়া’ শব্দের মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَلَمۡ  یَجِدۡکَ یَتِیۡمًا فَاٰوٰی ۪﴿۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৬. তিনি কি আপনাকে এতিম পাননি? অতঃপর আশ্রয় দিয়েছেন!</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
       <div class="irfan-text">৬. (হে প্রিয়তম!) তিনি কি আপনাকে এতিমরূপে পাননি, অতঃপর (আপনাকে মর্যাদাসম্পন্ন ও মাধুর্যমন্ডিত) আশ্রয় দেননি?
 অথবা: 
 তিনি কি আপনাকে (দয়ালু) পাননি, অতঃপর তিনি (আপনার মাধ্যমে) এতিমদের আশ্রয় দেননি?*
 
-* এ অনুবাদে ‘এতিম’ শব্দটি ‘ফাআওয়া’ শব্দের মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6086">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৭
-وَ  وَجَدَکَ ضَآلًّا فَہَدٰی ۪﴿۷﴾
-কানযুল ঈমান
-এবং আপনাকে স্বীয় প্রেমে আত্নহারা পেয়েছেন, তখন নিজের দিকে পথ দেখিয়েছেন।
-ইরফানুল কুরআন
+* এ অনুবাদে ‘এতিম’ শব্দটি ‘ফাআওয়া’ শব্দের মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6086">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৭    
+وَ  وَجَدَکَ ضَآلًّا فَہَدٰی ۪﴿۷﴾    
+কানযুল ঈমান    
+এবং আপনাকে স্বীয় প্রেমে আত্নহারা পেয়েছেন, তখন নিজের দিকে পথ দেখিয়েছেন।    
+ইরফানুল কুরআন    
 ৭. আর তিনি আপনাকে পেয়েছেন তাঁর ভালোবাসায় নিমগ্ন ও আত্মহারা, অতঃপর তিনি আপনাকে অভীষ্ট লক্ষ্য অর্জন করিয়েছেন।
 অথবা: 
 তিনি আপনাকে বিপথগামী সম্প্রদায়ের মধ্যে (পথপ্রদর্শনকারী) পেয়েছেন, অতঃপর তিনি (তাদেরকে আপনার মাধ্যমে) হেদায়াত দিয়েছেন।*
 
-* এ অনুবাদে ‘দ্বাল্লান’ শব্দটিকে ‘ফাহাদা’ এর মাফউল মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন, তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৭
-وَ  وَجَدَکَ ضَآلًّا فَہَدٰی ۪﴿۷﴾
-কানযুল ঈমান
-এবং আপনাকে স্বীয় প্রেমে আত্নহারা পেয়েছেন, তখন নিজের দিকে পথ দেখিয়েছেন।
-ইরফানুল কুরআন
+* এ অনুবাদে ‘দ্বাল্লান’ শব্দটিকে ‘ফাহাদা’ এর মাফউল মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন, তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৭    
+وَ  وَجَدَکَ ضَآلًّا فَہَدٰی ۪﴿۷﴾    
+কানযুল ঈমান    
+এবং আপনাকে স্বীয় প্রেমে আত্নহারা পেয়েছেন, তখন নিজের দিকে পথ দেখিয়েছেন।    
+ইরফানুল কুরআন    
 ৭. আর তিনি আপনাকে পেয়েছেন তাঁর ভালোবাসায় নিমগ্ন ও আত্মহারা, অতঃপর তিনি আপনাকে অভীষ্ট লক্ষ্য অর্জন করিয়েছেন।
 অথবা: 
 তিনি আপনাকে বিপথগামী সম্প্রদায়ের মধ্যে (পথপ্রদর্শনকারী) পেয়েছেন, অতঃপর তিনি (তাদেরকে আপনার মাধ্যমে) হেদায়াত দিয়েছেন।*
 
-* এ অনুবাদে ‘দ্বাল্লান’ শব্দটিকে ‘ফাহাদা’ এর মাফউল মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন, তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  وَجَدَکَ ضَآلًّا فَہَدٰی ۪﴿۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং আপনাকে স্বীয় প্রেমে আত্নহারা পেয়েছেন, তখন নিজের দিকে পথ দেখিয়েছেন।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
+* এ অনুবাদে ‘দ্বাল্লান’ শব্দটিকে ‘ফাহাদা’ এর মাফউল মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন, তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  وَجَدَکَ ضَآلًّا فَہَدٰی ۪﴿۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৭. এবং আপনাকে স্বীয় প্রেমে আত্নহারা পেয়েছেন, তখন নিজের দিকে পথ দেখিয়েছেন।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
       <div class="irfan-text">৭. আর তিনি আপনাকে পেয়েছেন তাঁর ভালোবাসায় নিমগ্ন ও আত্মহারা, অতঃপর তিনি আপনাকে অভীষ্ট লক্ষ্য অর্জন করিয়েছেন।
 অথবা: 
 তিনি আপনাকে বিপথগামী সম্প্রদায়ের মধ্যে (পথপ্রদর্শনকারী) পেয়েছেন, অতঃপর তিনি (তাদেরকে আপনার মাধ্যমে) হেদায়াত দিয়েছেন।*
 
-* এ অনুবাদে ‘দ্বাল্লান’ শব্দটিকে ‘ফাহাদা’ এর মাফউল মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন, তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৮</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6087">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৮
-وَ وَجَدَکَ عَآئِلًا فَاَغۡنٰی ؕ﴿۸﴾
-কানযুল ঈমান
-এবং আপনাকে অভাবগ্রস্ত পেয়েছেন, অতঃপর ধনী করে দিয়েছেন;
-ইরফানুল কুরআন
+* এ অনুবাদে ‘দ্বাল্লান’ শব্দটিকে ‘ফাহাদা’ এর মাফউল মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন, তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা এবং শরহে খুফাজী।)</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৮</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6087">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৮    
+وَ وَجَدَکَ عَآئِلًا فَاَغۡنٰی ؕ﴿۸﴾    
+কানযুল ঈমান    
+এবং আপনাকে অভাবগ্রস্ত পেয়েছেন, অতঃপর ধনী করে দিয়েছেন;    
+ইরফানুল কুরআন    
 ৮. আর তিনি আপনাকে পেয়েছেন (হক্বে বারি তা’আলার সাথে মিলিত হবার) মুখাপেক্ষী, অতঃপর তিনি (স্বীয় দর্শনের সুখানুভবে অনুগ্রহ করে চিরদিনের সকল চাহিদা থেকে) অমুখাপেক্ষী করেছেন।
 অথবা: 
 তিনি আপনাকে পেয়েছেন (অতিশয় দানশীল ও কল্যাণময়), অতঃপর তিনি (আপনার মাধ্যমে) মুখাপেক্ষীদের অমুখাপেক্ষী করেছেন।*
 
-* এ তিনটি অনুবাদে ‘ইয়াতিমান’কে ‘ফাআওয়া’র, ‘দ্বাল্লান’কে ‘ফাহাদা’র এবং ‘আয়িলান’কে ‘ফাআগনা’-এর মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন: তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা ও শরহে খুফাজী।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৮
-وَ وَجَدَکَ عَآئِلًا فَاَغۡنٰی ؕ﴿۸﴾
-কানযুল ঈমান
-এবং আপনাকে অভাবগ্রস্ত পেয়েছেন, অতঃপর ধনী করে দিয়েছেন;
-ইরফানুল কুরআন
+* এ তিনটি অনুবাদে ‘ইয়াতিমান’কে ‘ফাআওয়া’র, ‘দ্বাল্লান’কে ‘ফাহাদা’র এবং ‘আয়িলান’কে ‘ফাআগনা’-এর মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন: তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা ও শরহে খুফাজী।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৮    
+وَ وَجَدَکَ عَآئِلًا فَاَغۡنٰی ؕ﴿۸﴾    
+কানযুল ঈমান    
+এবং আপনাকে অভাবগ্রস্ত পেয়েছেন, অতঃপর ধনী করে দিয়েছেন;    
+ইরফানুল কুরআন    
 ৮. আর তিনি আপনাকে পেয়েছেন (হক্বে বারি তা’আলার সাথে মিলিত হবার) মুখাপেক্ষী, অতঃপর তিনি (স্বীয় দর্শনের সুখানুভবে অনুগ্রহ করে চিরদিনের সকল চাহিদা থেকে) অমুখাপেক্ষী করেছেন।
 অথবা: 
 তিনি আপনাকে পেয়েছেন (অতিশয় দানশীল ও কল্যাণময়), অতঃপর তিনি (আপনার মাধ্যমে) মুখাপেক্ষীদের অমুখাপেক্ষী করেছেন।*
 
-* এ তিনটি অনুবাদে ‘ইয়াতিমান’কে ‘ফাআওয়া’র, ‘দ্বাল্লান’কে ‘ফাহাদা’র এবং ‘আয়িলান’কে ‘ফাআগনা’-এর মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন: তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা ও শরহে খুফাজী।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ وَجَدَکَ عَآئِلًا فَاَغۡنٰی ؕ﴿۸﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং আপনাকে অভাবগ্রস্ত পেয়েছেন, অতঃপর ধনী করে দিয়েছেন;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
+* এ তিনটি অনুবাদে ‘ইয়াতিমান’কে ‘ফাআওয়া’র, ‘দ্বাল্লান’কে ‘ফাহাদা’র এবং ‘আয়িলান’কে ‘ফাআগনা’-এর মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন: তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা ও শরহে খুফাজী।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ وَجَدَکَ عَآئِلًا فَاَغۡنٰی ؕ﴿۸﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৮. এবং আপনাকে অভাবগ্রস্ত পেয়েছেন, অতঃপর ধনী করে দিয়েছেন;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
       <div class="irfan-text">৮. আর তিনি আপনাকে পেয়েছেন (হক্বে বারি তা’আলার সাথে মিলিত হবার) মুখাপেক্ষী, অতঃপর তিনি (স্বীয় দর্শনের সুখানুভবে অনুগ্রহ করে চিরদিনের সকল চাহিদা থেকে) অমুখাপেক্ষী করেছেন।
 অথবা: 
 তিনি আপনাকে পেয়েছেন (অতিশয় দানশীল ও কল্যাণময়), অতঃপর তিনি (আপনার মাধ্যমে) মুখাপেক্ষীদের অমুখাপেক্ষী করেছেন।*
 
-* এ তিনটি অনুবাদে ‘ইয়াতিমান’কে ‘ফাআওয়া’র, ‘দ্বাল্লান’কে ‘ফাহাদা’র এবং ‘আয়িলান’কে ‘ফাআগনা’-এর মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন: তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা ও শরহে খুফাজী।)</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৯</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6088">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৯
-فَاَمَّا  الۡیَتِیۡمَ  فَلَا تَقۡہَرۡ ؕ﴿۹﴾
-কানযুল ঈমান
-সুতরাং এতিমের উপর চাপ সৃষ্টি করবেন না;
-ইরফানুল কুরআন
-৯. সুতরাং আপনিও কোনো এতিমের প্রতি কঠোরতা অবলম্বন করবেন না,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৯
-فَاَمَّا  الۡیَتِیۡمَ  فَلَا تَقۡہَرۡ ؕ﴿۹﴾
-কানযুল ঈমান
-সুতরাং এতিমের উপর চাপ সৃষ্টি করবেন না;
-ইরফানুল কুরআন
-৯. সুতরাং আপনিও কোনো এতিমের প্রতি কঠোরতা অবলম্বন করবেন না,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَاَمَّا  الۡیَتِیۡمَ  فَلَا تَقۡہَرۡ ؕ﴿۹﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">সুতরাং এতিমের উপর চাপ সৃষ্টি করবেন না;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৯. সুতরাং আপনিও কোনো এতিমের প্রতি কঠোরতা অবলম্বন করবেন না,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6089">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ১০
-وَ اَمَّا السَّآئِلَ  فَلَا تَنۡہَرۡ ﴿ؕ۱۰﴾
-কানযুল ঈমান
-এবং ভিক্ষুককে ধমকাবেন না।
-ইরফানুল কুরআন
-১০. আর (আপনার কাছে সাহায্যপ্রার্থী) কোনো ভিক্ষুককে ভর্ত্সনা করবেন না,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ১০
-وَ اَمَّا السَّآئِلَ  فَلَا تَنۡہَرۡ ﴿ؕ۱۰﴾
-কানযুল ঈমান
-এবং ভিক্ষুককে ধমকাবেন না।
-ইরফানুল কুরআন
-১০. আর (আপনার কাছে সাহায্যপ্রার্থী) কোনো ভিক্ষুককে ভর্ত্সনা করবেন না,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ اَمَّا السَّآئِلَ  فَلَا تَنۡہَرۡ ﴿ؕ۱۰﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং ভিক্ষুককে ধমকাবেন না।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১০. আর (আপনার কাছে সাহায্যপ্রার্থী) কোনো ভিক্ষুককে ভর্ত্সনা করবেন না,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6090">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ১১
-وَ اَمَّا بِنِعۡمَۃِ  رَبِّکَ  فَحَدِّثۡ ﴿۱۱﴾
-কানযুল ঈমান
-এবং আপন রবের নি’মাতের খুব চর্চা করুন।
-ইরফানুল কুরআন
-১১. আর আপনার প্রতিপালকের অনুগ্রহের আলোচনা করুন (উত্তমরূপে)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ১১
-وَ اَمَّا بِنِعۡمَۃِ  رَبِّکَ  فَحَدِّثۡ ﴿۱۱﴾
-কানযুল ঈমান
-এবং আপন রবের নি’মাতের খুব চর্চা করুন।
-ইরফানুল কুরআন
-১১. আর আপনার প্রতিপালকের অনুগ্রহের আলোচনা করুন (উত্তমরূপে)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ اَمَّا بِنِعۡمَۃِ  رَبِّکَ  فَحَدِّثۡ ﴿۱۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং আপন রবের নি’মাতের খুব চর্চা করুন।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১১. আর আপনার প্রতিপালকের অনুগ্রহের আলোচনা করুন (উত্তমরূপে)।</div>
-    </div>
-
-  </div>
-
-  <div class="audio-controller" id="audioController" style="display:none;">
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
-    <img src="next.png" onclick="playNext()" alt="Next">
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">
-  </div>
-
-  <script src="quranview.js"></script>
-</body>
-</html>
+* এ তিনটি অনুবাদে ‘ইয়াতিমান’কে ‘ফাআওয়া’র, ‘দ্বাল্লান’কে ‘ফাহাদা’র এবং ‘আয়িলান’কে ‘ফাআগনা’-এর মাফউলে মুকাদ্দাম (অর্থাৎ ক্রিয়ার পূর্বে কর্মের উল্লেখ) নির্ধারণ করা হয়েছে। (দেখুন: তাফসীরে কাবীর, কুরতুবী, বাহরে মুহীত, রূহুল বায়ান, শিফা ও শরহে খুফাজী।)</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৯</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6088">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ৯    
+فَاَمَّا  الۡیَتِیۡمَ  فَلَا تَقۡہَرۡ ؕ﴿۹﴾    
+কানযুল ঈমান    
+সুতরাং এতিমের উপর চাপ সৃষ্টি করবেন না;    
+ইরফানুল কুরআন    
+৯. সুতরাং আপনিও কোনো এতিমের প্রতি কঠোরতা অবলম্বন করবেন না,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ৯    
+فَاَمَّا  الۡیَتِیۡمَ  فَلَا تَقۡہَرۡ ؕ﴿۹﴾    
+কানযুল ঈমান    
+সুতরাং এতিমের উপর চাপ সৃষ্টি করবেন না;    
+ইরফানুল কুরআন    
+৯. সুতরাং আপনিও কোনো এতিমের প্রতি কঠোরতা অবলম্বন করবেন না,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَاَمَّا  الۡیَتِیۡمَ  فَلَا تَقۡہَرۡ ؕ﴿۹﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৯. সুতরাং এতিমের উপর চাপ সৃষ্টি করবেন না;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৯. সুতরাং আপনিও কোনো এতিমের প্রতি কঠোরতা অবলম্বন করবেন না,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6089">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ১০    
+وَ اَمَّا السَّآئِلَ  فَلَا تَنۡہَرۡ ﴿ؕ۱۰﴾    
+কানযুল ঈমান    
+এবং ভিক্ষুককে ধমকাবেন না।    
+ইরফানুল কুরআন    
+১০. আর (আপনার কাছে সাহায্যপ্রার্থী) কোনো ভিক্ষুককে ভর্ত্সনা করবেন না,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ১০    
+وَ اَمَّا السَّآئِلَ  فَلَا تَنۡہَرۡ ﴿ؕ۱۰﴾    
+কানযুল ঈমান    
+এবং ভিক্ষুককে ধমকাবেন না।    
+ইরফানুল কুরআন    
+১০. আর (আপনার কাছে সাহায্যপ্রার্থী) কোনো ভিক্ষুককে ভর্ত্সনা করবেন না,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ اَمَّا السَّآئِلَ  فَلَا تَنۡہَرۡ ﴿ؕ۱۰﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১০. এবং ভিক্ষুককে ধমকাবেন না।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১০. আর (আপনার কাছে সাহায্যপ্রার্থী) কোনো ভিক্ষুককে ভর্ত্সনা করবেন না,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6090">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আদ দুহা আয়াত নং : ১১    
+وَ اَمَّا بِنِعۡمَۃِ  رَبِّکَ  فَحَدِّثۡ ﴿۱۱﴾    
+কানযুল ঈমান    
+এবং আপন রবের নি’মাতের খুব চর্চা করুন।    
+ইরফানুল কুরআন    
+১১. আর আপনার প্রতিপালকের অনুগ্রহের আলোচনা করুন (উত্তমরূপে)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আদ দুহা আয়াত নং : ১১    
+وَ اَمَّا بِنِعۡمَۃِ  رَبِّکَ  فَحَدِّثۡ ﴿۱۱﴾    
+কানযুল ঈমান    
+এবং আপন রবের নি’মাতের খুব চর্চা করুন।    
+ইরফানুল কুরআন    
+১১. আর আপনার প্রতিপালকের অনুগ্রহের আলোচনা করুন (উত্তমরূপে)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ اَمَّا بِنِعۡمَۃِ  رَبِّکَ  فَحَدِّثۡ ﴿۱۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১১. এবং আপন রবের নি’মাতের খুব চর্চা করুন।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১১. আর আপনার প্রতিপালকের অনুগ্রহের আলোচনা করুন (উত্তমরূপে)।</div>    
+    </div>    
+    
+  </div>    
+    
+  <div class="audio-controller" id="audioController" style="display:none;">    
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
+    <img src="next.png" onclick="playNext()" alt="Next">    
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
+  </div>    
+    
+  <script src="quranview.js"></script>    
+</body>    
+</html>    
