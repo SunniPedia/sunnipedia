@@ -1,3 +1,8 @@
+
+  .highlighted {
+    background-color: #d1fae5; /* light green */
+    border-left: 4px solid #10b981; /* teal */
+  }
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
@@ -15,8 +20,6 @@ function jumpToAyah() {
 
   const cards = document.querySelectorAll('.ayah-card');
   const surah = document.getElementById('surahTitle')?.innerText?.trim();
-
-  // এখানে সূরার নাম বাংলা, তাই নিচের তালিকায় বাংলা নাম দিন
   const isExactSurah = ['আল ফাতিহা', 'আত তালাক', 'আত তওবা'].includes(surah);
   const jumpIndex = isExactSurah ? target - 1 : target;
 
@@ -26,8 +29,9 @@ function jumpToAyah() {
     alert("এই সূরায় এতগুলো আয়াত নেই");
   }
 }
+
 function goBack() {
-  window.location.href = 'quran.html';
+  history.back();
 }
 
 function toggleSearch() {
@@ -94,18 +98,29 @@ function hideController() {
   controller.style.display = 'none';
 }
 
+function removeAllHighlights() {
+  document.querySelectorAll('.ayah-card.highlighted').forEach(card => {
+    card.classList.remove('highlighted');
+  });
+}
+
 function toggleAudio(el) {
   const id = el.dataset.id;
   const index = audioElements.indexOf(el);
+  if (!id) {
+    alert("অডিও আইডি পাওয়া যায়নি");
+    return;
+  }
 
+  // pause current audio if same is clicked
   if (currentAudio && !currentAudio.paused && index === currentIndex) {
     currentAudio.pause();
     el.src = 'play.png';
     mainPlayPause.src = 'play.png';
-    controller.style.position = currentIndex === audioElements.length - 1 ? 'static' : 'fixed';
     return;
   }
 
+  // stop previous
   if (currentAudio) {
     currentAudio.pause();
     audioElements[currentIndex].src = 'play.png';
@@ -118,9 +133,19 @@ function toggleAudio(el) {
   mainPlayPause.src = 'pause.png';
   showController();
 
-  currentAudio.play().catch(err => {
-    alert("অডিও চালাতে সমস্যা হচ্ছে");
-    console.error(err);
+  currentAudio.play().then(() => {
+    const card = el.closest('.ayah-card');
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      removeAllHighlights();
+      card.classList.add('highlighted');
+    }
+  }).catch(err => {
+    alert("অডিও চালাতে সমস্যা হচ্ছে। হয়তো ব্যবহারকারী ক্লিক করেনি বা নেটওয়ার্ক সমস্যা।");
+    console.error("অডিও চালানোর ত্রুটি:", err);
+    el.src = 'play.png';
+    mainPlayPause.src = 'play.png';
+    hideController();
   });
 
   currentAudio.onended = () => {
@@ -128,19 +153,18 @@ function toggleAudio(el) {
     mainPlayPause.src = 'play.png';
     playNext();
   };
-
-  const card = el.closest('.ayah-card');
-  if (card) {
-    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
 }
 
 function toggleMainPlayPause() {
   if (currentAudio) {
     if (currentAudio.paused) {
-      currentAudio.play();
-      mainPlayPause.src = 'pause.png';
-      audioElements[currentIndex].src = 'pause.png';
+      currentAudio.play().then(() => {
+        mainPlayPause.src = 'pause.png';
+        audioElements[currentIndex].src = 'pause.png';
+      }).catch(err => {
+        alert("পুনরায় চালাতে সমস্যা হচ্ছে");
+        console.error(err);
+      });
     } else {
       currentAudio.pause();
       mainPlayPause.src = 'play.png';
@@ -155,6 +179,7 @@ function stopAudio() {
     currentAudio.currentTime = 0;
     audioElements[currentIndex].src = 'play.png';
     mainPlayPause.src = 'play.png';
+    removeAllHighlights();
   }
   hideController();
 }
@@ -175,7 +200,6 @@ function playPrevious() {
   }
 }
 
-// অডিও বাটনগুলো লোড হওয়ার পর সংগ্রহ করা
 document.addEventListener("DOMContentLoaded", () => {
   audioElements = Array.from(document.querySelectorAll('img[alt="Play"]'));
 });
