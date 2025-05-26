@@ -7,10 +7,15 @@
   src: url('fonts/noorehuda.ttf') format('truetype');
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100vh; /* পুরো ভিউপোর্ট উচ্চতা */
   font-family: 'SolaimanLipi', sans-serif;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .toolbar {
@@ -20,6 +25,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
+  height: 60px; /* আনুমানিক উচ্চতা */
 }
 
 .toolbar-title {
@@ -38,6 +45,15 @@ body {
   padding: 20px;
   font-size: 18px;
   color: #555;
+}
+
+#ayahList {
+  flex-grow: 1; /* অবশিষ্ট স্পেস নেবে */
+  overflow-y: auto; /* স্ক্রল করবে */
+  padding: 10px;
+  padding-bottom: 70px; /* নিচে audio-controller জায়গা রাখবে */
+  max-height: calc(100vh - 130px); /* toolbar + audio-controller উচ্চতা বাদ */
+  box-sizing: border-box;
 }
 
 .ayah-card {
@@ -132,25 +148,27 @@ body {
 
 .audio-controller {
   position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 0; /* নিচ থেকে পুরোপুরি লাগবে */
+  left: 0;
+  right: 0;
   background: #01837A;
   color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 10px 0;
+  border-radius: 0;
   display: flex;
   align-items: center;
-  gap: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  z-index: 999;
-  display: none;
+  justify-content: center;
+  gap: 25px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: none; /* তোমার জাভাস্ক্রিপ্ট থেকে টগল করবে */
 }
 
 .audio-controller img {
   width: 28px;
   height: 28px;
   cursor: pointer;
+  filter: invert(1); /* হালকা আইকনের জন্য কালার ইনভার্ট */
 }
 
 .next-icon {
