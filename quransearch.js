@@ -1,8 +1,11 @@
-// back button function goBack() { window.location.href = 'quran.html'; }
+// back button 
+function goBack() { window.location.href = 'quran.html'; }
 
-// বাংলা সংখ্যায় রূপান্তর function convertToBanglaNumber(number) { const engToBan = { '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯' }; return number.toString().split('').map(ch => engToBan[ch] || ch).join(''); }
+// বাংলা সংখ্যায় রূপান্তর 
+function convertToBanglaNumber(number) { const engToBan = { '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯' }; return number.toString().split('').map(ch => engToBan[ch] || ch).join(''); }
 
-// আয়াতের টেক্সট কপি ও শেয়ার ফরম্যাটিং function formatAyahText(num, arabic, kanzul, irfan) { return `আয়াত নং : ${num} ${arabic}
+// আয়াতের টেক্সট কপি ও শেয়ার ফরম্যাটিং 
+function formatAyahText(num, arabic, kanzul, irfan) { return `আয়াত নং : ${num} ${arabic}
 
 কানযুল ঈমান
 
@@ -15,9 +18,11 @@ ${irfan}
 আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
 https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`; }
 
-// কপি ফাংশন function copyAyah(el) { const num = el.dataset.num; const arabic = el.dataset.arabic; const kanzul = el.dataset.kanzul; const irfan = el.dataset.irfan; const text = formatAyahText(num, arabic, kanzul, irfan); navigator.clipboard.writeText(text).then(() => alert("আয়াত কপি হয়েছে!")); }
+// কপি ফাংশন 
+function copyAyah(el) { const num = el.dataset.num; const arabic = el.dataset.arabic; const kanzul = el.dataset.kanzul; const irfan = el.dataset.irfan; const text = formatAyahText(num, arabic, kanzul, irfan); navigator.clipboard.writeText(text).then(() => alert("আয়াত কপি হয়েছে!")); }
 
-// শেয়ার ফাংশন function shareAyah(el) { const num = el.dataset.num; const arabic = el.dataset.arabic; const kanzul = el.dataset.kanzul; const irfan = el.dataset.irfan; const text = formatAyahText(num, arabic, kanzul, irfan); if (navigator.share) { navigator.share({ text }).catch(() => alert("শেয়ার ব্যর্থ হয়েছে")); } else { alert("এই ব্রাউজারে শেয়ার সাপোর্ট করে না। কপি করে নিতে পারেন।"); } }
+// শেয়ার ফাংশন 
+function shareAyah(el) { const num = el.dataset.num; const arabic = el.dataset.arabic; const kanzul = el.dataset.kanzul; const irfan = el.dataset.irfan; const text = formatAyahText(num, arabic, kanzul, irfan); if (navigator.share) { navigator.share({ text }).catch(() => alert("শেয়ার ব্যর্থ হয়েছে")); } else { alert("এই ব্রাউজারে শেয়ার সাপোর্ট করে না। কপি করে নিতে পারেন।"); } }
 
 let audioElements = []; let currentAudio = null; let currentIndex = -1; const controller = document.getElementById('audioController'); const mainPlayPause = document.getElementById('mainPlayPause');
 
