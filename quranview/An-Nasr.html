@@ -1,165 +1,165 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>আন নসর</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quranview.css">
-</head>
-<body>
-  <div class="toolbar">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-      <div class="toolbar-title" id="surahTitle">আন নসর</div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-    </div>
-  </div>
-
-  <div id="searchBox" style="display:none;">
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
-  </div>
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আন নসর আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আন নসর আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6214">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আন নসর আয়াত নং : ১
-اِذَا  جَآءَ  نَصۡرُ اللّٰہِ  وَ  الۡفَتۡحُ ۙ﴿۱﴾
-কানযুল ঈমান
-যখন আল্লাহ্‌র সাহায্য ও বিজয় আসবে,
-ইরফানুল কুরআন
-১. যখন এসে পৌঁছুবে আল্লাহ্‌র সাহায্য এবং বিজয়,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আন নসর আয়াত নং : ১
-اِذَا  جَآءَ  نَصۡرُ اللّٰہِ  وَ  الۡفَتۡحُ ۙ﴿۱﴾
-কানযুল ঈমান
-যখন আল্লাহ্‌র সাহায্য ও বিজয় আসবে,
-ইরফানুল কুরআন
-১. যখন এসে পৌঁছুবে আল্লাহ্‌র সাহায্য এবং বিজয়,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِذَا  جَآءَ  نَصۡرُ اللّٰہِ  وَ  الۡفَتۡحُ ۙ﴿۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যখন আল্লাহ্‌র সাহায্য ও বিজয় আসবে,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১. যখন এসে পৌঁছুবে আল্লাহ্‌র সাহায্য এবং বিজয়,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6215">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আন নসর আয়াত নং : ২
-وَ  رَاَیۡتَ النَّاسَ یَدۡخُلُوۡنَ فِیۡ  دِیۡنِ اللّٰہِ  اَفۡوَاجًا ۙ﴿۲﴾
-কানযুল ঈমান
-এবং আপনি লোকদেরকে দেখবেন যে, আল্লাহ্‌র দ্বীনে দলে দলে প্রবেশ করছে;
-ইরফানুল কুরআন
-২. এবং আপনি লোকজনকে দলে দলে আল্লাহ্‌র দ্বীনে প্রবেশ করতে দেখবেন,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আন নসর আয়াত নং : ২
-وَ  رَاَیۡتَ النَّاسَ یَدۡخُلُوۡنَ فِیۡ  دِیۡنِ اللّٰہِ  اَفۡوَاجًا ۙ﴿۲﴾
-কানযুল ঈমান
-এবং আপনি লোকদেরকে দেখবেন যে, আল্লাহ্‌র দ্বীনে দলে দলে প্রবেশ করছে;
-ইরফানুল কুরআন
-২. এবং আপনি লোকজনকে দলে দলে আল্লাহ্‌র দ্বীনে প্রবেশ করতে দেখবেন,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  رَاَیۡتَ النَّاسَ یَدۡخُلُوۡنَ فِیۡ  دِیۡنِ اللّٰہِ  اَفۡوَاجًا ۙ﴿۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং আপনি লোকদেরকে দেখবেন যে, আল্লাহ্‌র দ্বীনে দলে দলে প্রবেশ করছে;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২. এবং আপনি লোকজনকে দলে দলে আল্লাহ্‌র দ্বীনে প্রবেশ করতে দেখবেন,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6216">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আন নসর আয়াত নং : ৩
-فَسَبِّحۡ  بِحَمۡدِ رَبِّکَ وَ اسۡتَغۡفِرۡہُ  ؕؔ اِنَّہٗ کَانَ  تَوَّابًا ﴿۳﴾
-কানযুল ঈমান
-তখন আপন রবের প্রশংসাকারী অবস্থায় তার পবিত্রতা বর্ণনা করুন এবং তার থেকে ক্ষমা চান। নিশ্চয় তিনি অত্যন্ত তাওবা কবূলকারী।
-ইরফানুল কুরআন
-৩. তখন আপনি (কৃতজ্ঞতা প্রকাশে) প্রশংসার মাধ্যমে আপন প্রতিপালকের পবিত্রতা ও মহিমা ঘোষণা করুন এবং (বিনয়ের সাথে উম্মতের জন্যে) তাঁর কাছে ক্ষমা প্রার্থনা করুন। নিশ্চয়ই তিনি তওবা কবুলকারী (এবং আরও অধিক করুণায় প্রত্যাবর্তনে সতত অবলম্বন দানকারী)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আন নসর আয়াত নং : ৩
-فَسَبِّحۡ  بِحَمۡدِ رَبِّکَ وَ اسۡتَغۡفِرۡہُ  ؕؔ اِنَّہٗ کَانَ  تَوَّابًا ﴿۳﴾
-কানযুল ঈমান
-তখন আপন রবের প্রশংসাকারী অবস্থায় তার পবিত্রতা বর্ণনা করুন এবং তার থেকে ক্ষমা চান। নিশ্চয় তিনি অত্যন্ত তাওবা কবূলকারী।
-ইরফানুল কুরআন
-৩. তখন আপনি (কৃতজ্ঞতা প্রকাশে) প্রশংসার মাধ্যমে আপন প্রতিপালকের পবিত্রতা ও মহিমা ঘোষণা করুন এবং (বিনয়ের সাথে উম্মতের জন্যে) তাঁর কাছে ক্ষমা প্রার্থনা করুন। নিশ্চয়ই তিনি তওবা কবুলকারী (এবং আরও অধিক করুণায় প্রত্যাবর্তনে সতত অবলম্বন দানকারী)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَسَبِّحۡ  بِحَمۡدِ رَبِّکَ وَ اسۡتَغۡفِرۡہُ  ؕؔ اِنَّہٗ کَانَ  تَوَّابًا ﴿۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তখন আপন রবের প্রশংসাকারী অবস্থায় তার পবিত্রতা বর্ণনা করুন এবং তার থেকে ক্ষমা চান। নিশ্চয় তিনি অত্যন্ত তাওবা কবূলকারী।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩. তখন আপনি (কৃতজ্ঞতা প্রকাশে) প্রশংসার মাধ্যমে আপন প্রতিপালকের পবিত্রতা ও মহিমা ঘোষণা করুন এবং (বিনয়ের সাথে উম্মতের জন্যে) তাঁর কাছে ক্ষমা প্রার্থনা করুন। নিশ্চয়ই তিনি তওবা কবুলকারী (এবং আরও অধিক করুণায় প্রত্যাবর্তনে সতত অবলম্বন দানকারী)।</div>
-    </div>
-
-  </div>
-
-  <div class="audio-controller" id="audioController" style="display:none;">
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
-    <img src="next.png" onclick="playNext()" alt="Next">
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">
-  </div>
-
-  <script src="quranview.js"></script>
-</body>
-</html>
+<!DOCTYPE html>    
+<html lang="bn">    
+<head>    
+  <meta charset="UTF-8">    
+  <title>আন নসর</title>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="quranview.css">    
+</head>    
+<body>    
+  <div class="toolbar">    
+    <div style="display: flex; align-items: center; gap: 10px;">    
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
+      <div class="toolbar-title" id="surahTitle">আন নসর</div>    
+    </div>    
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
+    </div>    
+  </div>    
+    
+  <div id="searchBox" style="display:none;">    
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
+  </div>    
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আন নসর আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আন নসর আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6214">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আন নসর আয়াত নং : ১    
+اِذَا  جَآءَ  نَصۡرُ اللّٰہِ  وَ  الۡفَتۡحُ ۙ﴿۱﴾    
+কানযুল ঈমান    
+যখন আল্লাহ্‌র সাহায্য ও বিজয় আসবে,    
+ইরফানুল কুরআন    
+১. যখন এসে পৌঁছুবে আল্লাহ্‌র সাহায্য এবং বিজয়,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আন নসর আয়াত নং : ১    
+اِذَا  جَآءَ  نَصۡرُ اللّٰہِ  وَ  الۡفَتۡحُ ۙ﴿۱﴾    
+কানযুল ঈমান    
+যখন আল্লাহ্‌র সাহায্য ও বিজয় আসবে,    
+ইরফানুল কুরআন    
+১. যখন এসে পৌঁছুবে আল্লাহ্‌র সাহায্য এবং বিজয়,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِذَا  جَآءَ  نَصۡرُ اللّٰہِ  وَ  الۡفَتۡحُ ۙ﴿۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১. যখন আল্লাহ্‌র সাহায্য ও বিজয় আসবে,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১. যখন এসে পৌঁছুবে আল্লাহ্‌র সাহায্য এবং বিজয়,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6215">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আন নসর আয়াত নং : ২    
+وَ  رَاَیۡتَ النَّاسَ یَدۡخُلُوۡنَ فِیۡ  دِیۡنِ اللّٰہِ  اَفۡوَاجًا ۙ﴿۲﴾    
+কানযুল ঈমান    
+এবং আপনি লোকদেরকে দেখবেন যে, আল্লাহ্‌র দ্বীনে দলে দলে প্রবেশ করছে;    
+ইরফানুল কুরআন    
+২. এবং আপনি লোকজনকে দলে দলে আল্লাহ্‌র দ্বীনে প্রবেশ করতে দেখবেন,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আন নসর আয়াত নং : ২    
+وَ  رَاَیۡتَ النَّاسَ یَدۡخُلُوۡنَ فِیۡ  دِیۡنِ اللّٰہِ  اَفۡوَاجًا ۙ﴿۲﴾    
+কানযুল ঈমান    
+এবং আপনি লোকদেরকে দেখবেন যে, আল্লাহ্‌র দ্বীনে দলে দলে প্রবেশ করছে;    
+ইরফানুল কুরআন    
+২. এবং আপনি লোকজনকে দলে দলে আল্লাহ্‌র দ্বীনে প্রবেশ করতে দেখবেন,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  رَاَیۡتَ النَّاسَ یَدۡخُلُوۡنَ فِیۡ  دِیۡنِ اللّٰہِ  اَفۡوَاجًا ۙ﴿۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২. এবং আপনি লোকদেরকে দেখবেন যে, আল্লাহ্‌র দ্বীনে দলে দলে প্রবেশ করছে;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২. এবং আপনি লোকজনকে দলে দলে আল্লাহ্‌র দ্বীনে প্রবেশ করতে দেখবেন,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6216">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আন নসর আয়াত নং : ৩    
+فَسَبِّحۡ  بِحَمۡدِ رَبِّکَ وَ اسۡتَغۡفِرۡہُ  ؕؔ اِنَّہٗ کَانَ  تَوَّابًا ﴿۳﴾    
+কানযুল ঈমান    
+তখন আপন রবের প্রশংসাকারী অবস্থায় তার পবিত্রতা বর্ণনা করুন এবং তার থেকে ক্ষমা চান। নিশ্চয় তিনি অত্যন্ত তাওবা কবূলকারী।    
+ইরফানুল কুরআন    
+৩. তখন আপনি (কৃতজ্ঞতা প্রকাশে) প্রশংসার মাধ্যমে আপন প্রতিপালকের পবিত্রতা ও মহিমা ঘোষণা করুন এবং (বিনয়ের সাথে উম্মতের জন্যে) তাঁর কাছে ক্ষমা প্রার্থনা করুন। নিশ্চয়ই তিনি তওবা কবুলকারী (এবং আরও অধিক করুণায় প্রত্যাবর্তনে সতত অবলম্বন দানকারী)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আন নসর আয়াত নং : ৩    
+فَسَبِّحۡ  بِحَمۡدِ رَبِّکَ وَ اسۡتَغۡفِرۡہُ  ؕؔ اِنَّہٗ کَانَ  تَوَّابًا ﴿۳﴾    
+কানযুল ঈমান    
+তখন আপন রবের প্রশংসাকারী অবস্থায় তার পবিত্রতা বর্ণনা করুন এবং তার থেকে ক্ষমা চান। নিশ্চয় তিনি অত্যন্ত তাওবা কবূলকারী।    
+ইরফানুল কুরআন    
+৩. তখন আপনি (কৃতজ্ঞতা প্রকাশে) প্রশংসার মাধ্যমে আপন প্রতিপালকের পবিত্রতা ও মহিমা ঘোষণা করুন এবং (বিনয়ের সাথে উম্মতের জন্যে) তাঁর কাছে ক্ষমা প্রার্থনা করুন। নিশ্চয়ই তিনি তওবা কবুলকারী (এবং আরও অধিক করুণায় প্রত্যাবর্তনে সতত অবলম্বন দানকারী)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَسَبِّحۡ  بِحَمۡدِ رَبِّکَ وَ اسۡتَغۡفِرۡہُ  ؕؔ اِنَّہٗ کَانَ  تَوَّابًا ﴿۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩. তখন আপন রবের প্রশংসাকারী অবস্থায় তার পবিত্রতা বর্ণনা করুন এবং তার থেকে ক্ষমা চান। নিশ্চয় তিনি অত্যন্ত তাওবা কবূলকারী।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩. তখন আপনি (কৃতজ্ঞতা প্রকাশে) প্রশংসার মাধ্যমে আপন প্রতিপালকের পবিত্রতা ও মহিমা ঘোষণা করুন এবং (বিনয়ের সাথে উম্মতের জন্যে) তাঁর কাছে ক্ষমা প্রার্থনা করুন। নিশ্চয়ই তিনি তওবা কবুলকারী (এবং আরও অধিক করুণায় প্রত্যাবর্তনে সতত অবলম্বন দানকারী)।</div>    
+    </div>    
+    
+  </div>    
+    
+  <div class="audio-controller" id="audioController" style="display:none;">    
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
+    <img src="next.png" onclick="playNext()" alt="Next">    
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
+  </div>    
+    
+  <script src="quranview.js"></script>    
+</body>    
+</html>    

@@ -1,171 +1,171 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>আল কাউসার</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quranview.css">
-</head>
-<body>
-  <div class="toolbar">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-      <div class="toolbar-title" id="surahTitle">আল কাউসার</div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-    </div>
-  </div>
-
-  <div id="searchBox" style="display:none;">
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
-  </div>
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কাউসার আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কাউসার আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6205">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কাউসার আয়াত নং : ১
-اِنَّاۤ  اَعۡطَیۡنٰکَ  الۡکَوۡثَرَ ؕ﴿۱﴾
-কানযুল ঈমান
-হে মাহবূব! নিশ্চয় আমি আপনাকে অসংখ্য গুণাবলী দান করেছি;
-ইরফানুল কুরআন
+<!DOCTYPE html>    
+<html lang="bn">    
+<head>    
+  <meta charset="UTF-8">    
+  <title>আল কাউসার</title>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="quranview.css">    
+</head>    
+<body>    
+  <div class="toolbar">    
+    <div style="display: flex; align-items: center; gap: 10px;">    
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
+      <div class="toolbar-title" id="surahTitle">আল কাউসার</div>    
+    </div>    
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
+    </div>    
+  </div>    
+    
+  <div id="searchBox" style="display:none;">    
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
+  </div>    
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কাউসার আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কাউসার আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6205">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কাউসার আয়াত নং : ১    
+اِنَّاۤ  اَعۡطَیۡنٰکَ  الۡکَوۡثَرَ ؕ﴿۱﴾    
+কানযুল ঈমান    
+হে মাহবূব! নিশ্চয় আমি আপনাকে অসংখ্য গুণাবলী দান করেছি;    
+ইরফানুল কুরআন    
 ১. নিশ্চয়ই আমরা আপনাকে সীমাহীন পর্যাপ্ততায় দান করেছি (সকল শ্রেষ্ঠত্ব, রহমত ও বরকত)।*
 
-* কাউসার দ্বারা উদ্দেশ্য হাওযে কাউসার অথবা জান্নাতের ঝরনাধারা এবং কুরআন, নবুয়্যত ও প্রজ্ঞাও। অধিক পরিমাণে ফযিলত ও মুজিযা অথবা সাহাবী, অনুসারী ও উম্মতের আধিক্যকেও উদ্দেশ্য নেয়া হয়েছে। তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) যিকির বা আলোচনাকে সমুন্নত করে দেওয়া, তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) সর্বোৎকৃষ্ট চারিত্রিক বৈশিষ্ট্যের অধিকারী হওয়া এবং দুনিয়া আখেরাতের নিয়ামতরাজিও। আল্লাহ্‌ তা’আলার সাহায্য এবং অধিক সংখ্যক বিজয়ও উদ্দেশ্য। আর কিয়ামত দিবসে মাকামে মাহমুদ এবং ‘শাফায়াতে উযমা’ বা সর্বশ্রেষ্ঠ শাফায়াতও উদ্দেশ্য।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কাউসার আয়াত নং : ১
-اِنَّاۤ  اَعۡطَیۡنٰکَ  الۡکَوۡثَرَ ؕ﴿۱﴾
-কানযুল ঈমান
-হে মাহবূব! নিশ্চয় আমি আপনাকে অসংখ্য গুণাবলী দান করেছি;
-ইরফানুল কুরআন
+* কাউসার দ্বারা উদ্দেশ্য হাওযে কাউসার অথবা জান্নাতের ঝরনাধারা এবং কুরআন, নবুয়্যত ও প্রজ্ঞাও। অধিক পরিমাণে ফযিলত ও মুজিযা অথবা সাহাবী, অনুসারী ও উম্মতের আধিক্যকেও উদ্দেশ্য নেয়া হয়েছে। তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) যিকির বা আলোচনাকে সমুন্নত করে দেওয়া, তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) সর্বোৎকৃষ্ট চারিত্রিক বৈশিষ্ট্যের অধিকারী হওয়া এবং দুনিয়া আখেরাতের নিয়ামতরাজিও। আল্লাহ্‌ তা’আলার সাহায্য এবং অধিক সংখ্যক বিজয়ও উদ্দেশ্য। আর কিয়ামত দিবসে মাকামে মাহমুদ এবং ‘শাফায়াতে উযমা’ বা সর্বশ্রেষ্ঠ শাফায়াতও উদ্দেশ্য।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কাউসার আয়াত নং : ১    
+اِنَّاۤ  اَعۡطَیۡنٰکَ  الۡکَوۡثَرَ ؕ﴿۱﴾    
+কানযুল ঈমান    
+হে মাহবূব! নিশ্চয় আমি আপনাকে অসংখ্য গুণাবলী দান করেছি;    
+ইরফানুল কুরআন    
 ১. নিশ্চয়ই আমরা আপনাকে সীমাহীন পর্যাপ্ততায় দান করেছি (সকল শ্রেষ্ঠত্ব, রহমত ও বরকত)।*
 
-* কাউসার দ্বারা উদ্দেশ্য হাওযে কাউসার অথবা জান্নাতের ঝরনাধারা এবং কুরআন, নবুয়্যত ও প্রজ্ঞাও। অধিক পরিমাণে ফযিলত ও মুজিযা অথবা সাহাবী, অনুসারী ও উম্মতের আধিক্যকেও উদ্দেশ্য নেয়া হয়েছে। তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) যিকির বা আলোচনাকে সমুন্নত করে দেওয়া, তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) সর্বোৎকৃষ্ট চারিত্রিক বৈশিষ্ট্যের অধিকারী হওয়া এবং দুনিয়া আখেরাতের নিয়ামতরাজিও। আল্লাহ্‌ তা’আলার সাহায্য এবং অধিক সংখ্যক বিজয়ও উদ্দেশ্য। আর কিয়ামত দিবসে মাকামে মাহমুদ এবং ‘শাফায়াতে উযমা’ বা সর্বশ্রেষ্ঠ শাফায়াতও উদ্দেশ্য।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّاۤ  اَعۡطَیۡنٰکَ  الۡکَوۡثَرَ ؕ﴿۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">হে মাহবূব! নিশ্চয় আমি আপনাকে অসংখ্য গুণাবলী দান করেছি;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
+* কাউসার দ্বারা উদ্দেশ্য হাওযে কাউসার অথবা জান্নাতের ঝরনাধারা এবং কুরআন, নবুয়্যত ও প্রজ্ঞাও। অধিক পরিমাণে ফযিলত ও মুজিযা অথবা সাহাবী, অনুসারী ও উম্মতের আধিক্যকেও উদ্দেশ্য নেয়া হয়েছে। তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) যিকির বা আলোচনাকে সমুন্নত করে দেওয়া, তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) সর্বোৎকৃষ্ট চারিত্রিক বৈশিষ্ট্যের অধিকারী হওয়া এবং দুনিয়া আখেরাতের নিয়ামতরাজিও। আল্লাহ্‌ তা’আলার সাহায্য এবং অধিক সংখ্যক বিজয়ও উদ্দেশ্য। আর কিয়ামত দিবসে মাকামে মাহমুদ এবং ‘শাফায়াতে উযমা’ বা সর্বশ্রেষ্ঠ শাফায়াতও উদ্দেশ্য।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّاۤ  اَعۡطَیۡنٰکَ  الۡکَوۡثَرَ ؕ﴿۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১. হে মাহবূব! নিশ্চয় আমি আপনাকে অসংখ্য গুণাবলী দান করেছি;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
       <div class="irfan-text">১. নিশ্চয়ই আমরা আপনাকে সীমাহীন পর্যাপ্ততায় দান করেছি (সকল শ্রেষ্ঠত্ব, রহমত ও বরকত)।*
 
-* কাউসার দ্বারা উদ্দেশ্য হাওযে কাউসার অথবা জান্নাতের ঝরনাধারা এবং কুরআন, নবুয়্যত ও প্রজ্ঞাও। অধিক পরিমাণে ফযিলত ও মুজিযা অথবা সাহাবী, অনুসারী ও উম্মতের আধিক্যকেও উদ্দেশ্য নেয়া হয়েছে। তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) যিকির বা আলোচনাকে সমুন্নত করে দেওয়া, তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) সর্বোৎকৃষ্ট চারিত্রিক বৈশিষ্ট্যের অধিকারী হওয়া এবং দুনিয়া আখেরাতের নিয়ামতরাজিও। আল্লাহ্‌ তা’আলার সাহায্য এবং অধিক সংখ্যক বিজয়ও উদ্দেশ্য। আর কিয়ামত দিবসে মাকামে মাহমুদ এবং ‘শাফায়াতে উযমা’ বা সর্বশ্রেষ্ঠ শাফায়াতও উদ্দেশ্য।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6206">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কাউসার আয়াত নং : ২
-فَصَلِّ  لِرَبِّکَ وَ انۡحَرۡ ؕ﴿۲﴾
-কানযুল ঈমান
-সুতরাং আপনি আপনার রবের জন্য নামায পড়ুন এবং ক্বোরবানী করুন ।
-ইরফানুল কুরআন
-২. অতঃপর আপনি আপনার প্রতিপালকের উদ্দেশ্যে নামায পড়ুন এবং কুরবানী করুন (এটি ‘হাদইয়ায়ে তাশাক্কুর’ বা কৃতজ্ঞতা আদায়ের নিমিত্তে কুরবানী)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কাউসার আয়াত নং : ২
-فَصَلِّ  لِرَبِّکَ وَ انۡحَرۡ ؕ﴿۲﴾
-কানযুল ঈমান
-সুতরাং আপনি আপনার রবের জন্য নামায পড়ুন এবং ক্বোরবানী করুন ।
-ইরফানুল কুরআন
-২. অতঃপর আপনি আপনার প্রতিপালকের উদ্দেশ্যে নামায পড়ুন এবং কুরবানী করুন (এটি ‘হাদইয়ায়ে তাশাক্কুর’ বা কৃতজ্ঞতা আদায়ের নিমিত্তে কুরবানী)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَصَلِّ  لِرَبِّکَ وَ انۡحَرۡ ؕ﴿۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">সুতরাং আপনি আপনার রবের জন্য নামায পড়ুন এবং ক্বোরবানী করুন ।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২. অতঃপর আপনি আপনার প্রতিপালকের উদ্দেশ্যে নামায পড়ুন এবং কুরবানী করুন (এটি ‘হাদইয়ায়ে তাশাক্কুর’ বা কৃতজ্ঞতা আদায়ের নিমিত্তে কুরবানী)।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6207">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কাউসার আয়াত নং : ৩
-اِنَّ شَانِئَکَ ہُوَ الۡاَبۡتَرُ ﴿۳﴾
-কানযুল ঈমান
-নিশ্চয় যে আপনার শত্রু, সে-ই সকল কল্যাণ থেকে বঞ্চিত।
-ইরফানুল কুরআন
-৩. অবশ্যই আপনার শত্রুই হবে নির্বংশ এবং নাম পরিচয়হীন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কাউসার আয়াত নং : ৩
-اِنَّ شَانِئَکَ ہُوَ الۡاَبۡتَرُ ﴿۳﴾
-কানযুল ঈমান
-নিশ্চয় যে আপনার শত্রু, সে-ই সকল কল্যাণ থেকে বঞ্চিত।
-ইরফানুল কুরআন
-৩. অবশ্যই আপনার শত্রুই হবে নির্বংশ এবং নাম পরিচয়হীন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّ شَانِئَکَ ہُوَ الۡاَبۡتَرُ ﴿۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় যে আপনার শত্রু, সে-ই সকল কল্যাণ থেকে বঞ্চিত।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩. অবশ্যই আপনার শত্রুই হবে নির্বংশ এবং নাম পরিচয়হীন।</div>
-    </div>
-
-  </div>
-
-  <div class="audio-controller" id="audioController" style="display:none;">
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
-    <img src="next.png" onclick="playNext()" alt="Next">
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">
-  </div>
-
-  <script src="quranview.js"></script>
-</body>
-</html>
+* কাউসার দ্বারা উদ্দেশ্য হাওযে কাউসার অথবা জান্নাতের ঝরনাধারা এবং কুরআন, নবুয়্যত ও প্রজ্ঞাও। অধিক পরিমাণে ফযিলত ও মুজিযা অথবা সাহাবী, অনুসারী ও উম্মতের আধিক্যকেও উদ্দেশ্য নেয়া হয়েছে। তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) যিকির বা আলোচনাকে সমুন্নত করে দেওয়া, তাঁর (সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লাম) সর্বোৎকৃষ্ট চারিত্রিক বৈশিষ্ট্যের অধিকারী হওয়া এবং দুনিয়া আখেরাতের নিয়ামতরাজিও। আল্লাহ্‌ তা’আলার সাহায্য এবং অধিক সংখ্যক বিজয়ও উদ্দেশ্য। আর কিয়ামত দিবসে মাকামে মাহমুদ এবং ‘শাফায়াতে উযমা’ বা সর্বশ্রেষ্ঠ শাফায়াতও উদ্দেশ্য।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6206">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কাউসার আয়াত নং : ২    
+فَصَلِّ  لِرَبِّکَ وَ انۡحَرۡ ؕ﴿۲﴾    
+কানযুল ঈমান    
+সুতরাং আপনি আপনার রবের জন্য নামায পড়ুন এবং ক্বোরবানী করুন ।    
+ইরফানুল কুরআন    
+২. অতঃপর আপনি আপনার প্রতিপালকের উদ্দেশ্যে নামায পড়ুন এবং কুরবানী করুন (এটি ‘হাদইয়ায়ে তাশাক্কুর’ বা কৃতজ্ঞতা আদায়ের নিমিত্তে কুরবানী)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কাউসার আয়াত নং : ২    
+فَصَلِّ  لِرَبِّکَ وَ انۡحَرۡ ؕ﴿۲﴾    
+কানযুল ঈমান    
+সুতরাং আপনি আপনার রবের জন্য নামায পড়ুন এবং ক্বোরবানী করুন ।    
+ইরফানুল কুরআন    
+২. অতঃপর আপনি আপনার প্রতিপালকের উদ্দেশ্যে নামায পড়ুন এবং কুরবানী করুন (এটি ‘হাদইয়ায়ে তাশাক্কুর’ বা কৃতজ্ঞতা আদায়ের নিমিত্তে কুরবানী)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَصَلِّ  لِرَبِّکَ وَ انۡحَرۡ ؕ﴿۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২. সুতরাং আপনি আপনার রবের জন্য নামায পড়ুন এবং ক্বোরবানী করুন ।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২. অতঃপর আপনি আপনার প্রতিপালকের উদ্দেশ্যে নামায পড়ুন এবং কুরবানী করুন (এটি ‘হাদইয়ায়ে তাশাক্কুর’ বা কৃতজ্ঞতা আদায়ের নিমিত্তে কুরবানী)।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6207">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কাউসার আয়াত নং : ৩    
+اِنَّ شَانِئَکَ ہُوَ الۡاَبۡتَرُ ﴿۳﴾    
+কানযুল ঈমান    
+নিশ্চয় যে আপনার শত্রু, সে-ই সকল কল্যাণ থেকে বঞ্চিত।    
+ইরফানুল কুরআন    
+৩. অবশ্যই আপনার শত্রুই হবে নির্বংশ এবং নাম পরিচয়হীন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কাউসার আয়াত নং : ৩    
+اِنَّ شَانِئَکَ ہُوَ الۡاَبۡتَرُ ﴿۳﴾    
+কানযুল ঈমান    
+নিশ্চয় যে আপনার শত্রু, সে-ই সকল কল্যাণ থেকে বঞ্চিত।    
+ইরফানুল কুরআন    
+৩. অবশ্যই আপনার শত্রুই হবে নির্বংশ এবং নাম পরিচয়হীন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّ شَانِئَکَ ہُوَ الۡاَبۡتَرُ ﴿۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩. নিশ্চয় যে আপনার শত্রু, সে-ই সকল কল্যাণ থেকে বঞ্চিত।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩. অবশ্যই আপনার শত্রুই হবে নির্বংশ এবং নাম পরিচয়হীন।</div>    
+    </div>    
+    
+  </div>    
+    
+  <div class="audio-controller" id="audioController" style="display:none;">    
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
+    <img src="next.png" onclick="playNext()" alt="Next">    
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
+  </div>    
+    
+  <script src="quranview.js"></script>    
+</body>    
+</html>    

@@ -1,229 +1,229 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>আল ফীল</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quranview.css">
-</head>
-<body>
-  <div class="toolbar">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-      <div class="toolbar-title" id="surahTitle">আল ফীল</div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-    </div>
-  </div>
-
-  <div id="searchBox" style="display:none;">
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
-  </div>
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6189">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ১
-اَلَمۡ  تَرَ کَیۡفَ فَعَلَ رَبُّکَ  بِاَصۡحٰبِ الۡفِیۡلِ ؕ﴿۱﴾
-কানযুল ঈমান
-হে মাহবূব! আপনি কি দেখেন নি আপনার রব ওই হস্তী আরোহী বাহিনীর কি অবস্থা করেছেন?
-ইরফানুল কুরআন
-১. আপনি কি দেখেননি, আপনার প্রতিপালক হস্তিবাহিনীর সাথে কেমন আচরণ করেছিলেন?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ১
-اَلَمۡ  تَرَ کَیۡفَ فَعَلَ رَبُّکَ  بِاَصۡحٰبِ الۡفِیۡلِ ؕ﴿۱﴾
-কানযুল ঈমান
-হে মাহবূব! আপনি কি দেখেন নি আপনার রব ওই হস্তী আরোহী বাহিনীর কি অবস্থা করেছেন?
-ইরফানুল কুরআন
-১. আপনি কি দেখেননি, আপনার প্রতিপালক হস্তিবাহিনীর সাথে কেমন আচরণ করেছিলেন?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَلَمۡ  تَرَ کَیۡفَ فَعَلَ رَبُّکَ  بِاَصۡحٰبِ الۡفِیۡلِ ؕ﴿۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">হে মাহবূব! আপনি কি দেখেন নি আপনার রব ওই হস্তী আরোহী বাহিনীর কি অবস্থা করেছেন?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১. আপনি কি দেখেননি, আপনার প্রতিপালক হস্তিবাহিনীর সাথে কেমন আচরণ করেছিলেন?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6190">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ২
-اَلَمۡ  یَجۡعَلۡ  کَیۡدَہُمۡ فِیۡ  تَضۡلِیۡلٍ ۙ﴿۲﴾
-কানযুল ঈমান
-তাদের চক্রান্তগুলোকে কি ধ্বংসের মধ্যে নিক্ষেপ করেন নি?
-ইরফানুল কুরআন
-২. তিনি কি তাদের ছলনা এবং কুট-কৌশলকে বিফল ও নিষ্ক্রিয় করে দেননি?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ২
-اَلَمۡ  یَجۡعَلۡ  کَیۡدَہُمۡ فِیۡ  تَضۡلِیۡلٍ ۙ﴿۲﴾
-কানযুল ঈমান
-তাদের চক্রান্তগুলোকে কি ধ্বংসের মধ্যে নিক্ষেপ করেন নি?
-ইরফানুল কুরআন
-২. তিনি কি তাদের ছলনা এবং কুট-কৌশলকে বিফল ও নিষ্ক্রিয় করে দেননি?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَلَمۡ  یَجۡعَلۡ  کَیۡدَہُمۡ فِیۡ  تَضۡلِیۡلٍ ۙ﴿۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তাদের চক্রান্তগুলোকে কি ধ্বংসের মধ্যে নিক্ষেপ করেন নি?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২. তিনি কি তাদের ছলনা এবং কুট-কৌশলকে বিফল ও নিষ্ক্রিয় করে দেননি?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6191">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ৩
-وَّ  اَرۡسَلَ عَلَیۡہِمۡ  طَیۡرًا  اَبَابِیۡلَ ۙ﴿۳﴾
-কানযুল ঈমান
-এবং তাদের উপর পাখির ঝাঁকসমূহ প্রেরণ করেছেন;
-ইরফানুল কুরআন
-৩. আর তিনি তাদের বিরুদ্ধে (চতুর্দিক থেকে) ঝাঁকে ঝাঁকে পক্ষী প্রেরণ করেছিলেন,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ৩
-وَّ  اَرۡسَلَ عَلَیۡہِمۡ  طَیۡرًا  اَبَابِیۡلَ ۙ﴿۳﴾
-কানযুল ঈমান
-এবং তাদের উপর পাখির ঝাঁকসমূহ প্রেরণ করেছেন;
-ইরফানুল কুরআন
-৩. আর তিনি তাদের বিরুদ্ধে (চতুর্দিক থেকে) ঝাঁকে ঝাঁকে পক্ষী প্রেরণ করেছিলেন,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَّ  اَرۡسَلَ عَلَیۡہِمۡ  طَیۡرًا  اَبَابِیۡلَ ۙ﴿۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং তাদের উপর পাখির ঝাঁকসমূহ প্রেরণ করেছেন;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩. আর তিনি তাদের বিরুদ্ধে (চতুর্দিক থেকে) ঝাঁকে ঝাঁকে পক্ষী প্রেরণ করেছিলেন,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6192">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ৪
-تَرۡمِیۡہِمۡ  بِحِجَارَۃٍ  مِّنۡ سِجِّیۡلٍ ۪ۙ﴿۴﴾
-কানযুল ঈমান
-যেগুলো তাদেরকে কঙ্কর-পাথর দিয়ে মারছিলো।
-ইরফানুল কুরআন
-৪. যেগুলো তাদের উপর প্রস্তর-কংকর নিক্ষেপ করছিল।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ৪
-تَرۡمِیۡہِمۡ  بِحِجَارَۃٍ  مِّنۡ سِجِّیۡلٍ ۪ۙ﴿۴﴾
-কানযুল ঈমান
-যেগুলো তাদেরকে কঙ্কর-পাথর দিয়ে মারছিলো।
-ইরফানুল কুরআন
-৪. যেগুলো তাদের উপর প্রস্তর-কংকর নিক্ষেপ করছিল।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">تَرۡمِیۡہِمۡ  بِحِجَارَۃٍ  مِّنۡ سِجِّیۡلٍ ۪ۙ﴿۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যেগুলো তাদেরকে কঙ্কর-পাথর দিয়ে মারছিলো।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪. যেগুলো তাদের উপর প্রস্তর-কংকর নিক্ষেপ করছিল।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6193">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ৫
-فَجَعَلَہُمۡ کَعَصۡفٍ مَّاۡکُوۡلٍ ﴿۵﴾
-কানযুল ঈমান
-অতঃপর তাদেরকে চর্বিত ক্ষেতের পল্লবের মতো করেছেন।
-ইরফানুল কুরআন
-৫. অতঃপর (আল্লাহ্) তাদেরকে ভক্ষিত ভূষির ন্যায় (ধ্বংস) করে দিলেন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ৫
-فَجَعَلَہُمۡ کَعَصۡفٍ مَّاۡکُوۡلٍ ﴿۵﴾
-কানযুল ঈমান
-অতঃপর তাদেরকে চর্বিত ক্ষেতের পল্লবের মতো করেছেন।
-ইরফানুল কুরআন
-৫. অতঃপর (আল্লাহ্) তাদেরকে ভক্ষিত ভূষির ন্যায় (ধ্বংস) করে দিলেন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَجَعَلَہُمۡ کَعَصۡفٍ مَّاۡکُوۡلٍ ﴿۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর তাদেরকে চর্বিত ক্ষেতের পল্লবের মতো করেছেন।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৫. অতঃপর (আল্লাহ্) তাদেরকে ভক্ষিত ভূষির ন্যায় (ধ্বংস) করে দিলেন।</div>
-    </div>
-
-  </div>
-
-  <div class="audio-controller" id="audioController" style="display:none;">
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
-    <img src="next.png" onclick="playNext()" alt="Next">
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">
-  </div>
-
-  <script src="quranview.js"></script>
-</body>
-</html>
+<!DOCTYPE html>    
+<html lang="bn">    
+<head>    
+  <meta charset="UTF-8">    
+  <title>আল ফীল</title>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="quranview.css">    
+</head>    
+<body>    
+  <div class="toolbar">    
+    <div style="display: flex; align-items: center; gap: 10px;">    
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
+      <div class="toolbar-title" id="surahTitle">আল ফীল</div>    
+    </div>    
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
+    </div>    
+  </div>    
+    
+  <div id="searchBox" style="display:none;">    
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
+  </div>    
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6189">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ১    
+اَلَمۡ  تَرَ کَیۡفَ فَعَلَ رَبُّکَ  بِاَصۡحٰبِ الۡفِیۡلِ ؕ﴿۱﴾    
+কানযুল ঈমান    
+হে মাহবূব! আপনি কি দেখেন নি আপনার রব ওই হস্তী আরোহী বাহিনীর কি অবস্থা করেছেন?    
+ইরফানুল কুরআন    
+১. আপনি কি দেখেননি, আপনার প্রতিপালক হস্তিবাহিনীর সাথে কেমন আচরণ করেছিলেন?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ১    
+اَلَمۡ  تَرَ کَیۡفَ فَعَلَ رَبُّکَ  بِاَصۡحٰبِ الۡفِیۡلِ ؕ﴿۱﴾    
+কানযুল ঈমান    
+হে মাহবূব! আপনি কি দেখেন নি আপনার রব ওই হস্তী আরোহী বাহিনীর কি অবস্থা করেছেন?    
+ইরফানুল কুরআন    
+১. আপনি কি দেখেননি, আপনার প্রতিপালক হস্তিবাহিনীর সাথে কেমন আচরণ করেছিলেন?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَلَمۡ  تَرَ کَیۡفَ فَعَلَ رَبُّکَ  بِاَصۡحٰبِ الۡفِیۡلِ ؕ﴿۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১. হে মাহবূব! আপনি কি দেখেন নি আপনার রব ওই হস্তী আরোহী বাহিনীর কি অবস্থা করেছেন?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১. আপনি কি দেখেননি, আপনার প্রতিপালক হস্তিবাহিনীর সাথে কেমন আচরণ করেছিলেন?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6190">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ২    
+اَلَمۡ  یَجۡعَلۡ  کَیۡدَہُمۡ فِیۡ  تَضۡلِیۡلٍ ۙ﴿۲﴾    
+কানযুল ঈমান    
+তাদের চক্রান্তগুলোকে কি ধ্বংসের মধ্যে নিক্ষেপ করেন নি?    
+ইরফানুল কুরআন    
+২. তিনি কি তাদের ছলনা এবং কুট-কৌশলকে বিফল ও নিষ্ক্রিয় করে দেননি?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ২    
+اَلَمۡ  یَجۡعَلۡ  کَیۡدَہُمۡ فِیۡ  تَضۡلِیۡلٍ ۙ﴿۲﴾    
+কানযুল ঈমান    
+তাদের চক্রান্তগুলোকে কি ধ্বংসের মধ্যে নিক্ষেপ করেন নি?    
+ইরফানুল কুরআন    
+২. তিনি কি তাদের ছলনা এবং কুট-কৌশলকে বিফল ও নিষ্ক্রিয় করে দেননি?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَلَمۡ  یَجۡعَلۡ  کَیۡدَہُمۡ فِیۡ  تَضۡلِیۡلٍ ۙ﴿۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২. তাদের চক্রান্তগুলোকে কি ধ্বংসের মধ্যে নিক্ষেপ করেন নি?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২. তিনি কি তাদের ছলনা এবং কুট-কৌশলকে বিফল ও নিষ্ক্রিয় করে দেননি?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6191">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ৩    
+وَّ  اَرۡسَلَ عَلَیۡہِمۡ  طَیۡرًا  اَبَابِیۡلَ ۙ﴿۳﴾    
+কানযুল ঈমান    
+এবং তাদের উপর পাখির ঝাঁকসমূহ প্রেরণ করেছেন;    
+ইরফানুল কুরআন    
+৩. আর তিনি তাদের বিরুদ্ধে (চতুর্দিক থেকে) ঝাঁকে ঝাঁকে পক্ষী প্রেরণ করেছিলেন,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ৩    
+وَّ  اَرۡسَلَ عَلَیۡہِمۡ  طَیۡرًا  اَبَابِیۡلَ ۙ﴿۳﴾    
+কানযুল ঈমান    
+এবং তাদের উপর পাখির ঝাঁকসমূহ প্রেরণ করেছেন;    
+ইরফানুল কুরআন    
+৩. আর তিনি তাদের বিরুদ্ধে (চতুর্দিক থেকে) ঝাঁকে ঝাঁকে পক্ষী প্রেরণ করেছিলেন,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَّ  اَرۡسَلَ عَلَیۡہِمۡ  طَیۡرًا  اَبَابِیۡلَ ۙ﴿۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩. এবং তাদের উপর পাখির ঝাঁকসমূহ প্রেরণ করেছেন;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩. আর তিনি তাদের বিরুদ্ধে (চতুর্দিক থেকে) ঝাঁকে ঝাঁকে পক্ষী প্রেরণ করেছিলেন,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6192">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ৪    
+تَرۡمِیۡہِمۡ  بِحِجَارَۃٍ  مِّنۡ سِجِّیۡلٍ ۪ۙ﴿۴﴾    
+কানযুল ঈমান    
+যেগুলো তাদেরকে কঙ্কর-পাথর দিয়ে মারছিলো।    
+ইরফানুল কুরআন    
+৪. যেগুলো তাদের উপর প্রস্তর-কংকর নিক্ষেপ করছিল।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ৪    
+تَرۡمِیۡہِمۡ  بِحِجَارَۃٍ  مِّنۡ سِجِّیۡلٍ ۪ۙ﴿۴﴾    
+কানযুল ঈমান    
+যেগুলো তাদেরকে কঙ্কর-পাথর দিয়ে মারছিলো।    
+ইরফানুল কুরআন    
+৪. যেগুলো তাদের উপর প্রস্তর-কংকর নিক্ষেপ করছিল।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">تَرۡمِیۡہِمۡ  بِحِجَارَۃٍ  مِّنۡ سِجِّیۡلٍ ۪ۙ﴿۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪. যেগুলো তাদেরকে কঙ্কর-পাথর দিয়ে মারছিলো।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪. যেগুলো তাদের উপর প্রস্তর-কংকর নিক্ষেপ করছিল।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6193">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফীল আয়াত নং : ৫    
+فَجَعَلَہُمۡ کَعَصۡفٍ مَّاۡکُوۡلٍ ﴿۵﴾    
+কানযুল ঈমান    
+অতঃপর তাদেরকে চর্বিত ক্ষেতের পল্লবের মতো করেছেন।    
+ইরফানুল কুরআন    
+৫. অতঃপর (আল্লাহ্) তাদেরকে ভক্ষিত ভূষির ন্যায় (ধ্বংস) করে দিলেন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফীল আয়াত নং : ৫    
+فَجَعَلَہُمۡ کَعَصۡفٍ مَّاۡکُوۡلٍ ﴿۵﴾    
+কানযুল ঈমান    
+অতঃপর তাদেরকে চর্বিত ক্ষেতের পল্লবের মতো করেছেন।    
+ইরফানুল কুরআন    
+৫. অতঃপর (আল্লাহ্) তাদেরকে ভক্ষিত ভূষির ন্যায় (ধ্বংস) করে দিলেন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَجَعَلَہُمۡ کَعَصۡفٍ مَّاۡکُوۡلٍ ﴿۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৫. অতঃপর তাদেরকে চর্বিত ক্ষেতের পল্লবের মতো করেছেন।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৫. অতঃপর (আল্লাহ্) তাদেরকে ভক্ষিত ভূষির ন্যায় (ধ্বংস) করে দিলেন।</div>    
+    </div>    
+    
+  </div>    
+    
+  <div class="audio-controller" id="audioController" style="display:none;">    
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
+    <img src="next.png" onclick="playNext()" alt="Next">    
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
+  </div>    
+    
+  <script src="quranview.js"></script>    
+</body>    
+</html>    

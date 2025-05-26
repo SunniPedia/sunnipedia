@@ -1,197 +1,197 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>আল ইখলাস</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quranview.css">
-</head>
-<body>
-  <div class="toolbar">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-      <div class="toolbar-title" id="surahTitle">আল ইখলাস</div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-    </div>
-  </div>
-
-  <div id="searchBox" style="display:none;">
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
-  </div>
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6222">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ১
-قُلۡ ہُوَ  اللّٰہُ  اَحَدٌ  ۚ﴿۱﴾
-কানযুল ঈমান
-আপনি বলুন, ‘তিনি আল্লাহ্‌ তিনি এক, (২)
-ইরফানুল কুরআন
-১. (হে মহাসম্মানিত রাসূল!) বলে দিন, ‘তিনি আল্লাহ্, যিনি এক-অদ্বিতীয়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ১
-قُلۡ ہُوَ  اللّٰہُ  اَحَدٌ  ۚ﴿۱﴾
-কানযুল ঈমান
-আপনি বলুন, ‘তিনি আল্লাহ্‌ তিনি এক, (২)
-ইরফানুল কুরআন
-১. (হে মহাসম্মানিত রাসূল!) বলে দিন, ‘তিনি আল্লাহ্, যিনি এক-অদ্বিতীয়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">قُلۡ ہُوَ  اللّٰہُ  اَحَدٌ  ۚ﴿۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আপনি বলুন, ‘তিনি আল্লাহ্‌ তিনি এক, (২)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১. (হে মহাসম্মানিত রাসূল!) বলে দিন, ‘তিনি আল্লাহ্, যিনি এক-অদ্বিতীয়।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6223">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ২
-اَللّٰہُ  الصَّمَدُ ۚ﴿۲﴾
-কানযুল ঈমান
-আল্লাহ্‌ পরমুখাপেক্ষী নন; (৩)
-ইরফানুল কুরআন
-২. আল্লাহ্ কারো মুখাপেক্ষী নন, সকলেরই আশ্রয়স্থল এবং সর্বশ্রেষ্ঠ।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ২
-اَللّٰہُ  الصَّمَدُ ۚ﴿۲﴾
-কানযুল ঈমান
-আল্লাহ্‌ পরমুখাপেক্ষী নন; (৩)
-ইরফানুল কুরআন
-২. আল্লাহ্ কারো মুখাপেক্ষী নন, সকলেরই আশ্রয়স্থল এবং সর্বশ্রেষ্ঠ।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَللّٰہُ  الصَّمَدُ ۚ﴿۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌ পরমুখাপেক্ষী নন; (৩)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২. আল্লাহ্ কারো মুখাপেক্ষী নন, সকলেরই আশ্রয়স্থল এবং সর্বশ্রেষ্ঠ।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6224">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ৩
-لَمۡ  یَلِدۡ ۬ۙ  وَ  لَمۡ  یُوۡلَدۡ ۙ﴿۳﴾
-কানযুল ঈমান
-না তাঁর কোন সন্তান আছে (৪) এবং না তিনি কারো থেকে জন্মগ্রহণ করেছেন, (৫)
-ইরফানুল কুরআন
-৩. কেউ তাঁর থেকে জন্ম নেয়নি, আর তাঁকেও জন্ম দেয়া হয়নি।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ৩
-لَمۡ  یَلِدۡ ۬ۙ  وَ  لَمۡ  یُوۡلَدۡ ۙ﴿۳﴾
-কানযুল ঈমান
-না তাঁর কোন সন্তান আছে (৪) এবং না তিনি কারো থেকে জন্মগ্রহণ করেছেন, (৫)
-ইরফানুল কুরআন
-৩. কেউ তাঁর থেকে জন্ম নেয়নি, আর তাঁকেও জন্ম দেয়া হয়নি।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">لَمۡ  یَلِدۡ ۬ۙ  وَ  لَمۡ  یُوۡلَدۡ ۙ﴿۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">না তাঁর কোন সন্তান আছে (৪) এবং না তিনি কারো থেকে জন্মগ্রহণ করেছেন, (৫)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩. কেউ তাঁর থেকে জন্ম নেয়নি, আর তাঁকেও জন্ম দেয়া হয়নি।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6225">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ৪
-وَ  لَمۡ  یَکُنۡ  لَّہٗ   کُفُوًا  اَحَدٌ ﴿۴﴾
-কানযুল ঈমান
-এবং না আছে কেউ তাঁর সমকক্ষ হবার’। (৬)
-ইরফানুল কুরআন
-৪. আর তাঁর সমকক্ষও কেউ নেই।’
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ৪
-وَ  لَمۡ  یَکُنۡ  لَّہٗ   کُفُوًا  اَحَدٌ ﴿۴﴾
-কানযুল ঈমান
-এবং না আছে কেউ তাঁর সমকক্ষ হবার’। (৬)
-ইরফানুল কুরআন
-৪. আর তাঁর সমকক্ষও কেউ নেই।’
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  لَمۡ  یَکُنۡ  لَّہٗ   کُفُوًا  اَحَدٌ ﴿۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং না আছে কেউ তাঁর সমকক্ষ হবার’। (৬)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪. আর তাঁর সমকক্ষও কেউ নেই।’</div>
-    </div>
-
-  </div>
-
-  <div class="audio-controller" id="audioController" style="display:none;">
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
-    <img src="next.png" onclick="playNext()" alt="Next">
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">
-  </div>
-
-  <script src="quranview.js"></script>
-</body>
-</html>
+<!DOCTYPE html>    
+<html lang="bn">    
+<head>    
+  <meta charset="UTF-8">    
+  <title>আল ইখলাস</title>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="quranview.css">    
+</head>    
+<body>    
+  <div class="toolbar">    
+    <div style="display: flex; align-items: center; gap: 10px;">    
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
+      <div class="toolbar-title" id="surahTitle">আল ইখলাস</div>    
+    </div>    
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
+    </div>    
+  </div>    
+    
+  <div id="searchBox" style="display:none;">    
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
+  </div>    
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6222">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ১    
+قُلۡ ہُوَ  اللّٰہُ  اَحَدٌ  ۚ﴿۱﴾    
+কানযুল ঈমান    
+আপনি বলুন, ‘তিনি আল্লাহ্‌ তিনি এক, (২)    
+ইরফানুল কুরআন    
+১. (হে মহাসম্মানিত রাসূল!) বলে দিন, ‘তিনি আল্লাহ্, যিনি এক-অদ্বিতীয়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ১    
+قُلۡ ہُوَ  اللّٰہُ  اَحَدٌ  ۚ﴿۱﴾    
+কানযুল ঈমান    
+আপনি বলুন, ‘তিনি আল্লাহ্‌ তিনি এক, (২)    
+ইরফানুল কুরআন    
+১. (হে মহাসম্মানিত রাসূল!) বলে দিন, ‘তিনি আল্লাহ্, যিনি এক-অদ্বিতীয়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">قُلۡ ہُوَ  اللّٰہُ  اَحَدٌ  ۚ﴿۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১. আপনি বলুন, ‘তিনি আল্লাহ্‌ তিনি এক, (২)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১. (হে মহাসম্মানিত রাসূল!) বলে দিন, ‘তিনি আল্লাহ্, যিনি এক-অদ্বিতীয়।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6223">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ২    
+اَللّٰہُ  الصَّمَدُ ۚ﴿۲﴾    
+কানযুল ঈমান    
+আল্লাহ্‌ পরমুখাপেক্ষী নন; (৩)    
+ইরফানুল কুরআন    
+২. আল্লাহ্ কারো মুখাপেক্ষী নন, সকলেরই আশ্রয়স্থল এবং সর্বশ্রেষ্ঠ।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ২    
+اَللّٰہُ  الصَّمَدُ ۚ﴿۲﴾    
+কানযুল ঈমান    
+আল্লাহ্‌ পরমুখাপেক্ষী নন; (৩)    
+ইরফানুল কুরআন    
+২. আল্লাহ্ কারো মুখাপেক্ষী নন, সকলেরই আশ্রয়স্থল এবং সর্বশ্রেষ্ঠ।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَللّٰہُ  الصَّمَدُ ۚ﴿۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২. আল্লাহ্‌ পরমুখাপেক্ষী নন; (৩)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২. আল্লাহ্ কারো মুখাপেক্ষী নন, সকলেরই আশ্রয়স্থল এবং সর্বশ্রেষ্ঠ।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6224">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ৩    
+لَمۡ  یَلِدۡ ۬ۙ  وَ  لَمۡ  یُوۡلَدۡ ۙ﴿۳﴾    
+কানযুল ঈমান    
+না তাঁর কোন সন্তান আছে (৪) এবং না তিনি কারো থেকে জন্মগ্রহণ করেছেন, (৫)    
+ইরফানুল কুরআন    
+৩. কেউ তাঁর থেকে জন্ম নেয়নি, আর তাঁকেও জন্ম দেয়া হয়নি।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ৩    
+لَمۡ  یَلِدۡ ۬ۙ  وَ  لَمۡ  یُوۡلَدۡ ۙ﴿۳﴾    
+কানযুল ঈমান    
+না তাঁর কোন সন্তান আছে (৪) এবং না তিনি কারো থেকে জন্মগ্রহণ করেছেন, (৫)    
+ইরফানুল কুরআন    
+৩. কেউ তাঁর থেকে জন্ম নেয়নি, আর তাঁকেও জন্ম দেয়া হয়নি।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">لَمۡ  یَلِدۡ ۬ۙ  وَ  لَمۡ  یُوۡلَدۡ ۙ﴿۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩. না তাঁর কোন সন্তান আছে (৪) এবং না তিনি কারো থেকে জন্মগ্রহণ করেছেন, (৫)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩. কেউ তাঁর থেকে জন্ম নেয়নি, আর তাঁকেও জন্ম দেয়া হয়নি।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6225">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ইখলাস আয়াত নং : ৪    
+وَ  لَمۡ  یَکُنۡ  لَّہٗ   کُفُوًا  اَحَدٌ ﴿۴﴾    
+কানযুল ঈমান    
+এবং না আছে কেউ তাঁর সমকক্ষ হবার’। (৬)    
+ইরফানুল কুরআন    
+৪. আর তাঁর সমকক্ষও কেউ নেই।’    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ইখলাস আয়াত নং : ৪    
+وَ  لَمۡ  یَکُنۡ  لَّہٗ   کُفُوًا  اَحَدٌ ﴿۴﴾    
+কানযুল ঈমান    
+এবং না আছে কেউ তাঁর সমকক্ষ হবার’। (৬)    
+ইরফানুল কুরআন    
+৪. আর তাঁর সমকক্ষও কেউ নেই।’    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  لَمۡ  یَکُنۡ  لَّہٗ   کُفُوًا  اَحَدٌ ﴿۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪. এবং না আছে কেউ তাঁর সমকক্ষ হবার’। (৬)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪. আর তাঁর সমকক্ষও কেউ নেই।’</div>    
+    </div>    
+    
+  </div>    
+    
+  <div class="audio-controller" id="audioController" style="display:none;">    
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
+    <img src="next.png" onclick="playNext()" alt="Next">    
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
+  </div>    
+    
+  <script src="quranview.js"></script>    
+</body>    
+</html>    

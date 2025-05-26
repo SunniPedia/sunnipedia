@@ -1,1739 +1,1739 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>আল কলম</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quranview.css">
-</head>
-<body>
-  <div class="toolbar">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-      <div class="toolbar-title" id="surahTitle">আল কলম</div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-    </div>
-  </div>
-
-  <div id="searchBox" style="display:none;">
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
-  </div>
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5272">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১
-نٓ  وَ الۡقَلَمِ وَ مَا یَسۡطُرُوۡنَ ۙ﴿۱﴾
-কানযুল ঈমান
-নূ-ন্‌। কলম ও তাদের লিখার শপথ।
-ইরফানুল কুরআন
-১. নূন (প্রকৃত অর্থ আল্লাহ তা'আলা এবং রাসূল সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামই সম্যক অবগত)। শপথ কলমের এবং শপথ সেসব (আলোচ্য) বিষয়ের যা (ফেরেশতারা) লিপিবদ্ধ করে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১
-نٓ  وَ الۡقَلَمِ وَ مَا یَسۡطُرُوۡنَ ۙ﴿۱﴾
-কানযুল ঈমান
-নূ-ন্‌। কলম ও তাদের লিখার শপথ।
-ইরফানুল কুরআন
-১. নূন (প্রকৃত অর্থ আল্লাহ তা'আলা এবং রাসূল সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামই সম্যক অবগত)। শপথ কলমের এবং শপথ সেসব (আলোচ্য) বিষয়ের যা (ফেরেশতারা) লিপিবদ্ধ করে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">نٓ  وَ الۡقَلَمِ وَ مَا یَسۡطُرُوۡنَ ۙ﴿۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নূ-ন্‌। কলম ও তাদের লিখার শপথ।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১. নূন (প্রকৃত অর্থ আল্লাহ তা'আলা এবং রাসূল সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামই সম্যক অবগত)। শপথ কলমের এবং শপথ সেসব (আলোচ্য) বিষয়ের যা (ফেরেশতারা) লিপিবদ্ধ করে।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5273">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২
-مَاۤ  اَنۡتَ بِنِعۡمَۃِ رَبِّکَ بِمَجۡنُوۡنٍ ۚ﴿۲﴾
-কানযুল ঈমান
-আপনি আপনার রবের অনুগ্রহে উন্মাদ নন;
-ইরফানুল কুরআন
-২. (হে সম্মানিত হাবীব!) আপনি আপনার প্রতিপালকের অনুগ্রহে (কখনোই) উন্মাদ নন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২
-مَاۤ  اَنۡتَ بِنِعۡمَۃِ رَبِّکَ بِمَجۡنُوۡنٍ ۚ﴿۲﴾
-কানযুল ঈমান
-আপনি আপনার রবের অনুগ্রহে উন্মাদ নন;
-ইরফানুল কুরআন
-২. (হে সম্মানিত হাবীব!) আপনি আপনার প্রতিপালকের অনুগ্রহে (কখনোই) উন্মাদ নন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">مَاۤ  اَنۡتَ بِنِعۡمَۃِ رَبِّکَ بِمَجۡنُوۡنٍ ۚ﴿۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আপনি আপনার রবের অনুগ্রহে উন্মাদ নন;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২. (হে সম্মানিত হাবীব!) আপনি আপনার প্রতিপালকের অনুগ্রহে (কখনোই) উন্মাদ নন।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5274">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩
-وَ  اِنَّ  لَکَ لَاَجۡرًا غَیۡرَ  مَمۡنُوۡنٍ ۚ﴿۳﴾
-কানযুল ঈমান
-এবং অবশ্যই আপনার জন্য অশেষ পুরষ্কার রয়েছে;
-ইরফানুল কুরআন
-৩. আর অবশ্যই আপনার জন্যে রয়েছে প্রতিদান যা কখনোই নিঃশেষ হবার নয়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩
-وَ  اِنَّ  لَکَ لَاَجۡرًا غَیۡرَ  مَمۡنُوۡنٍ ۚ﴿۳﴾
-কানযুল ঈমান
-এবং অবশ্যই আপনার জন্য অশেষ পুরষ্কার রয়েছে;
-ইরফানুল কুরআন
-৩. আর অবশ্যই আপনার জন্যে রয়েছে প্রতিদান যা কখনোই নিঃশেষ হবার নয়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  اِنَّ  لَکَ لَاَجۡرًا غَیۡرَ  مَمۡنُوۡنٍ ۚ﴿۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং অবশ্যই আপনার জন্য অশেষ পুরষ্কার রয়েছে;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩. আর অবশ্যই আপনার জন্যে রয়েছে প্রতিদান যা কখনোই নিঃশেষ হবার নয়।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5275">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪
-وَ  اِنَّکَ لَعَلٰی خُلُقٍ عَظِیۡمٍ ﴿۴﴾
-কানযুল ঈমান
-এবং নিশ্চয় আপনার চরিত্র তো মহা মর্যাদারই;
-ইরফানুল কুরআন
-৪. আর অবশ্যই আপনি সর্বাধিক মহিমান্বিত ও অতি উচ্চমর্যাদা সম্পন্ন চরিত্রে অধিষ্ঠিত (অর্থাৎ কুরআনী শিষ্টাচারে সুসজ্জিত এবং আল্লাহ্ তা’আলার বৈশিষ্ট্যে গুণান্বিত)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪
-وَ  اِنَّکَ لَعَلٰی خُلُقٍ عَظِیۡمٍ ﴿۴﴾
-কানযুল ঈমান
-এবং নিশ্চয় আপনার চরিত্র তো মহা মর্যাদারই;
-ইরফানুল কুরআন
-৪. আর অবশ্যই আপনি সর্বাধিক মহিমান্বিত ও অতি উচ্চমর্যাদা সম্পন্ন চরিত্রে অধিষ্ঠিত (অর্থাৎ কুরআনী শিষ্টাচারে সুসজ্জিত এবং আল্লাহ্ তা’আলার বৈশিষ্ট্যে গুণান্বিত)।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ  اِنَّکَ لَعَلٰی خُلُقٍ عَظِیۡمٍ ﴿۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং নিশ্চয় আপনার চরিত্র তো মহা মর্যাদারই;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪. আর অবশ্যই আপনি সর্বাধিক মহিমান্বিত ও অতি উচ্চমর্যাদা সম্পন্ন চরিত্রে অধিষ্ঠিত (অর্থাৎ কুরআনী শিষ্টাচারে সুসজ্জিত এবং আল্লাহ্ তা’আলার বৈশিষ্ট্যে গুণান্বিত)।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5276">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৫
-فَسَتُبۡصِرُ وَ یُبۡصِرُوۡنَ ۙ﴿۵﴾
-কানযুল ঈমান
-সুতরাং অবিলম্বে আপনিও দেখে নেবেন এবং তারাও দেখে নেবে।
-ইরফানুল কুরআন
-৫. অতঃপর অচিরেই আপনি দেখবেন এবং তারাও দেখবে
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৫
-فَسَتُبۡصِرُ وَ یُبۡصِرُوۡنَ ۙ﴿۵﴾
-কানযুল ঈমান
-সুতরাং অবিলম্বে আপনিও দেখে নেবেন এবং তারাও দেখে নেবে।
-ইরফানুল কুরআন
-৫. অতঃপর অচিরেই আপনি দেখবেন এবং তারাও দেখবে
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَسَتُبۡصِرُ وَ یُبۡصِرُوۡنَ ۙ﴿۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">সুতরাং অবিলম্বে আপনিও দেখে নেবেন এবং তারাও দেখে নেবে।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৫. অতঃপর অচিরেই আপনি দেখবেন এবং তারাও দেখবে</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5277">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৬
-بِاَىیِّکُمُ  الۡمَفۡتُوۡنُ ﴿۶﴾
-কানযুল ঈমান
-যে, তোমাদের মধ্যে কে উন্মাদ ছিলো।
-ইরফানুল কুরআন
-৬. যে, তোমাদের মধ্যে কে বিকারগ্রস্ত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৬
-بِاَىیِّکُمُ  الۡمَفۡتُوۡنُ ﴿۶﴾
-কানযুল ঈমান
-যে, তোমাদের মধ্যে কে উন্মাদ ছিলো।
-ইরফানুল কুরআন
-৬. যে, তোমাদের মধ্যে কে বিকারগ্রস্ত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِاَىیِّکُمُ  الۡمَفۡتُوۡنُ ﴿۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যে, তোমাদের মধ্যে কে উন্মাদ ছিলো।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৬. যে, তোমাদের মধ্যে কে বিকারগ্রস্ত।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5278">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৭
-اِنَّ  رَبَّکَ ہُوَ اَعۡلَمُ بِمَنۡ ضَلَّ عَنۡ سَبِیۡلِہٖ ۪ وَ ہُوَ اَعۡلَمُ  بِالۡمُہۡتَدِیۡنَ ﴿۷﴾
-কানযুল ঈমান
-নিশ্চয় আপনার রব ভালোভাবে জানেন কে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি ভালোভাবে জানেন তাদেরকে, যারা সত্য পথে রয়েছে।
-ইরফানুল কুরআন
-৭. নিশ্চয়ই আপনার প্রতিপালক তার সম্পর্কেও সম্যক অবগত, যে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি তাদের ব্যাপারেও সম্যক অবগত যারা হেদায়াতপ্রাপ্ত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৭
-اِنَّ  رَبَّکَ ہُوَ اَعۡلَمُ بِمَنۡ ضَلَّ عَنۡ سَبِیۡلِہٖ ۪ وَ ہُوَ اَعۡلَمُ  بِالۡمُہۡتَدِیۡنَ ﴿۷﴾
-কানযুল ঈমান
-নিশ্চয় আপনার রব ভালোভাবে জানেন কে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি ভালোভাবে জানেন তাদেরকে, যারা সত্য পথে রয়েছে।
-ইরফানুল কুরআন
-৭. নিশ্চয়ই আপনার প্রতিপালক তার সম্পর্কেও সম্যক অবগত, যে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি তাদের ব্যাপারেও সম্যক অবগত যারা হেদায়াতপ্রাপ্ত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّ  رَبَّکَ ہُوَ اَعۡلَمُ بِمَنۡ ضَلَّ عَنۡ سَبِیۡلِہٖ ۪ وَ ہُوَ اَعۡلَمُ  بِالۡمُہۡتَدِیۡنَ ﴿۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় আপনার রব ভালোভাবে জানেন কে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি ভালোভাবে জানেন তাদেরকে, যারা সত্য পথে রয়েছে।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৭. নিশ্চয়ই আপনার প্রতিপালক তার সম্পর্কেও সম্যক অবগত, যে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি তাদের ব্যাপারেও সম্যক অবগত যারা হেদায়াতপ্রাপ্ত।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৮</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5279">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৮
-فَلَا تُطِعِ  الۡمُکَذِّبِیۡنَ ﴿۸﴾
-কানযুল ঈমান
-সুতরাং আপনি অস্বীকার কারীদের কথা শুনবেন না।
-ইরফানুল কুরআন
-৮. সুতরাং আপনি মিথ্যাবাদীদের কথায় সম্মত হবেন না।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৮
-فَلَا تُطِعِ  الۡمُکَذِّبِیۡنَ ﴿۸﴾
-কানযুল ঈমান
-সুতরাং আপনি অস্বীকার কারীদের কথা শুনবেন না।
-ইরফানুল কুরআন
-৮. সুতরাং আপনি মিথ্যাবাদীদের কথায় সম্মত হবেন না।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَلَا تُطِعِ  الۡمُکَذِّبِیۡنَ ﴿۸﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">সুতরাং আপনি অস্বীকার কারীদের কথা শুনবেন না।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৮. সুতরাং আপনি মিথ্যাবাদীদের কথায় সম্মত হবেন না।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৯</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5280">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৯
-وَدُّوۡا  لَوۡ  تُدۡہِنُ  فَیُدۡہِنُوۡنَ ﴿۹﴾
-কানযুল ঈমান
-তারা তো এ কামনায় রয়েছে যে, কোন মতে আপনি নমনীয় হোন, অতঃপর তারাও নমনীয় হয়ে যাবে।
-ইরফানুল কুরআন
-৯. তারা চায় যে, আপনি (দ্বীনের ব্যাপারে অযাচিত) নমনীয়তা অবলম্বন করুন, তাহলে তারাও নমনীয় হবে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৯
-وَدُّوۡا  لَوۡ  تُدۡہِنُ  فَیُدۡہِنُوۡنَ ﴿۹﴾
-কানযুল ঈমান
-তারা তো এ কামনায় রয়েছে যে, কোন মতে আপনি নমনীয় হোন, অতঃপর তারাও নমনীয় হয়ে যাবে।
-ইরফানুল কুরআন
-৯. তারা চায় যে, আপনি (দ্বীনের ব্যাপারে অযাচিত) নমনীয়তা অবলম্বন করুন, তাহলে তারাও নমনীয় হবে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَدُّوۡا  لَوۡ  تُدۡہِنُ  فَیُدۡہِنُوۡنَ ﴿۹﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তারা তো এ কামনায় রয়েছে যে, কোন মতে আপনি নমনীয় হোন, অতঃপর তারাও নমনীয় হয়ে যাবে।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৯. তারা চায় যে, আপনি (দ্বীনের ব্যাপারে অযাচিত) নমনীয়তা অবলম্বন করুন, তাহলে তারাও নমনীয় হবে।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5281">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১০
-وَ لَا  تُطِعۡ  کُلَّ حَلَّافٍ مَّہِیۡنٍ ﴿ۙ۱۰﴾
-কানযুল ঈমান
-এবং এমন কারো কথা শুনবেন না, যে বড় বড় শপথকারী, লাঞ্ছিত।
-ইরফানুল কুরআন
-১০. আর আপনি এমন কারো অনুসরণ করবেন না, যে কথায় কথায় শপথ করে, যে লাঞ্ছিত,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১০
-وَ لَا  تُطِعۡ  کُلَّ حَلَّافٍ مَّہِیۡنٍ ﴿ۙ۱۰﴾
-কানযুল ঈমান
-এবং এমন কারো কথা শুনবেন না, যে বড় বড় শপথকারী, লাঞ্ছিত।
-ইরফানুল কুরআন
-১০. আর আপনি এমন কারো অনুসরণ করবেন না, যে কথায় কথায় শপথ করে, যে লাঞ্ছিত,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ لَا  تُطِعۡ  کُلَّ حَلَّافٍ مَّہِیۡنٍ ﴿ۙ۱۰﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং এমন কারো কথা শুনবেন না, যে বড় বড় শপথকারী, লাঞ্ছিত।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১০. আর আপনি এমন কারো অনুসরণ করবেন না, যে কথায় কথায় শপথ করে, যে লাঞ্ছিত,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5282">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১১
-ہَمَّازٍ مَّشَّآءٍۭ  بِنَمِیۡمٍ ﴿ۙ۱۱﴾
-কানযুল ঈমান
-খুব নিন্দুক, এদিকের কথা ওদিকে লাগিয়ে খুব বিচরণকারী;
-ইরফানুল কুরআন
-১১. (যে) পশ্চাতে নিন্দাকারী, ত্রুটি অন্বেষণকারী (এবং) মানুষের মাঝে ফিতনার উদ্দেশ্যে যে একের কথা অন্যের কাছে লাগিয়ে বেড়ায়,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১১
-ہَمَّازٍ مَّشَّآءٍۭ  بِنَمِیۡمٍ ﴿ۙ۱۱﴾
-কানযুল ঈমান
-খুব নিন্দুক, এদিকের কথা ওদিকে লাগিয়ে খুব বিচরণকারী;
-ইরফানুল কুরআন
-১১. (যে) পশ্চাতে নিন্দাকারী, ত্রুটি অন্বেষণকারী (এবং) মানুষের মাঝে ফিতনার উদ্দেশ্যে যে একের কথা অন্যের কাছে লাগিয়ে বেড়ায়,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">ہَمَّازٍ مَّشَّآءٍۭ  بِنَمِیۡمٍ ﴿ۙ۱۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">খুব নিন্দুক, এদিকের কথা ওদিকে লাগিয়ে খুব বিচরণকারী;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১১. (যে) পশ্চাতে নিন্দাকারী, ত্রুটি অন্বেষণকারী (এবং) মানুষের মাঝে ফিতনার উদ্দেশ্যে যে একের কথা অন্যের কাছে লাগিয়ে বেড়ায়,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5283">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১২
-مَّنَّاعٍ  لِّلۡخَیۡرِ مُعۡتَدٍ اَثِیۡمٍ ﴿ۙ۱۲﴾
-কানযুল ঈমান
-সৎ কাজে বড় বাধা প্রদানকারী; সীমা লঙ্ঘনকারী, পাপিষ্ঠ,
-ইরফানুল কুরআন
-১২. (যে) উত্তম কাজে প্রবলভাবে বাধাদানকারী ও কৃপণ, অবাধ্য ও সীমালঙ্ঘনকারী (এবং) ঘোরতর পাপিষ্ঠ,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১২
-مَّنَّاعٍ  لِّلۡخَیۡرِ مُعۡتَدٍ اَثِیۡمٍ ﴿ۙ۱۲﴾
-কানযুল ঈমান
-সৎ কাজে বড় বাধা প্রদানকারী; সীমা লঙ্ঘনকারী, পাপিষ্ঠ,
-ইরফানুল কুরআন
-১২. (যে) উত্তম কাজে প্রবলভাবে বাধাদানকারী ও কৃপণ, অবাধ্য ও সীমালঙ্ঘনকারী (এবং) ঘোরতর পাপিষ্ঠ,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">مَّنَّاعٍ  لِّلۡخَیۡرِ مُعۡتَدٍ اَثِیۡمٍ ﴿ۙ۱۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">সৎ কাজে বড় বাধা প্রদানকারী; সীমা লঙ্ঘনকারী, পাপিষ্ঠ,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১২. (যে) উত্তম কাজে প্রবলভাবে বাধাদানকারী ও কৃপণ, অবাধ্য ও সীমালঙ্ঘনকারী (এবং) ঘোরতর পাপিষ্ঠ,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5284">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৩
-عُتُلٍّۭ  بَعۡدَ ذٰلِکَ  زَنِیۡمٍ ﴿ۙ۱۳﴾
-কানযুল ঈমান
-বদমেজাজ, এ সব কিছুর উপর অতিরিক্ত এ যে, তাঁর মূলে ত্রুটি;
-ইরফানুল কুরআন
+<!DOCTYPE html>    
+<html lang="bn">    
+<head>    
+  <meta charset="UTF-8">    
+  <title>আল কলম</title>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="quranview.css">    
+</head>    
+<body>    
+  <div class="toolbar">    
+    <div style="display: flex; align-items: center; gap: 10px;">    
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
+      <div class="toolbar-title" id="surahTitle">আল কলম</div>    
+    </div>    
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
+    </div>    
+  </div>    
+    
+  <div id="searchBox" style="display:none;">    
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
+  </div>    
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5272">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১    
+نٓ  وَ الۡقَلَمِ وَ مَا یَسۡطُرُوۡنَ ۙ﴿۱﴾    
+কানযুল ঈমান    
+নূ-ন্‌। কলম ও তাদের লিখার শপথ।    
+ইরফানুল কুরআন    
+১. নূন (প্রকৃত অর্থ আল্লাহ তা'আলা এবং রাসূল সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামই সম্যক অবগত)। শপথ কলমের এবং শপথ সেসব (আলোচ্য) বিষয়ের যা (ফেরেশতারা) লিপিবদ্ধ করে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১    
+نٓ  وَ الۡقَلَمِ وَ مَا یَسۡطُرُوۡنَ ۙ﴿۱﴾    
+কানযুল ঈমান    
+নূ-ন্‌। কলম ও তাদের লিখার শপথ।    
+ইরফানুল কুরআন    
+১. নূন (প্রকৃত অর্থ আল্লাহ তা'আলা এবং রাসূল সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামই সম্যক অবগত)। শপথ কলমের এবং শপথ সেসব (আলোচ্য) বিষয়ের যা (ফেরেশতারা) লিপিবদ্ধ করে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">نٓ  وَ الۡقَلَمِ وَ مَا یَسۡطُرُوۡنَ ۙ﴿۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১. নূ-ন্‌। কলম ও তাদের লিখার শপথ।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১. নূন (প্রকৃত অর্থ আল্লাহ তা'আলা এবং রাসূল সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামই সম্যক অবগত)। শপথ কলমের এবং শপথ সেসব (আলোচ্য) বিষয়ের যা (ফেরেশতারা) লিপিবদ্ধ করে।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5273">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২    
+مَاۤ  اَنۡتَ بِنِعۡمَۃِ رَبِّکَ بِمَجۡنُوۡنٍ ۚ﴿۲﴾    
+কানযুল ঈমান    
+আপনি আপনার রবের অনুগ্রহে উন্মাদ নন;    
+ইরফানুল কুরআন    
+২. (হে সম্মানিত হাবীব!) আপনি আপনার প্রতিপালকের অনুগ্রহে (কখনোই) উন্মাদ নন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২    
+مَاۤ  اَنۡتَ بِنِعۡمَۃِ رَبِّکَ بِمَجۡنُوۡنٍ ۚ﴿۲﴾    
+কানযুল ঈমান    
+আপনি আপনার রবের অনুগ্রহে উন্মাদ নন;    
+ইরফানুল কুরআন    
+২. (হে সম্মানিত হাবীব!) আপনি আপনার প্রতিপালকের অনুগ্রহে (কখনোই) উন্মাদ নন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">مَاۤ  اَنۡتَ بِنِعۡمَۃِ رَبِّکَ بِمَجۡنُوۡنٍ ۚ﴿۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২. আপনি আপনার রবের অনুগ্রহে উন্মাদ নন;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২. (হে সম্মানিত হাবীব!) আপনি আপনার প্রতিপালকের অনুগ্রহে (কখনোই) উন্মাদ নন।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5274">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩    
+وَ  اِنَّ  لَکَ لَاَجۡرًا غَیۡرَ  مَمۡنُوۡنٍ ۚ﴿۳﴾    
+কানযুল ঈমান    
+এবং অবশ্যই আপনার জন্য অশেষ পুরষ্কার রয়েছে;    
+ইরফানুল কুরআন    
+৩. আর অবশ্যই আপনার জন্যে রয়েছে প্রতিদান যা কখনোই নিঃশেষ হবার নয়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩    
+وَ  اِنَّ  لَکَ لَاَجۡرًا غَیۡرَ  مَمۡنُوۡنٍ ۚ﴿۳﴾    
+কানযুল ঈমান    
+এবং অবশ্যই আপনার জন্য অশেষ পুরষ্কার রয়েছে;    
+ইরফানুল কুরআন    
+৩. আর অবশ্যই আপনার জন্যে রয়েছে প্রতিদান যা কখনোই নিঃশেষ হবার নয়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  اِنَّ  لَکَ لَاَجۡرًا غَیۡرَ  مَمۡنُوۡنٍ ۚ﴿۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩. এবং অবশ্যই আপনার জন্য অশেষ পুরষ্কার রয়েছে;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩. আর অবশ্যই আপনার জন্যে রয়েছে প্রতিদান যা কখনোই নিঃশেষ হবার নয়।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5275">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪    
+وَ  اِنَّکَ لَعَلٰی خُلُقٍ عَظِیۡمٍ ﴿۴﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় আপনার চরিত্র তো মহা মর্যাদারই;    
+ইরফানুল কুরআন    
+৪. আর অবশ্যই আপনি সর্বাধিক মহিমান্বিত ও অতি উচ্চমর্যাদা সম্পন্ন চরিত্রে অধিষ্ঠিত (অর্থাৎ কুরআনী শিষ্টাচারে সুসজ্জিত এবং আল্লাহ্ তা’আলার বৈশিষ্ট্যে গুণান্বিত)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪    
+وَ  اِنَّکَ لَعَلٰی خُلُقٍ عَظِیۡمٍ ﴿۴﴾    
+কানযুল ঈমান    
+এবং নিশ্চয় আপনার চরিত্র তো মহা মর্যাদারই;    
+ইরফানুল কুরআন    
+৪. আর অবশ্যই আপনি সর্বাধিক মহিমান্বিত ও অতি উচ্চমর্যাদা সম্পন্ন চরিত্রে অধিষ্ঠিত (অর্থাৎ কুরআনী শিষ্টাচারে সুসজ্জিত এবং আল্লাহ্ তা’আলার বৈশিষ্ট্যে গুণান্বিত)।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ  اِنَّکَ لَعَلٰی خُلُقٍ عَظِیۡمٍ ﴿۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪. এবং নিশ্চয় আপনার চরিত্র তো মহা মর্যাদারই;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪. আর অবশ্যই আপনি সর্বাধিক মহিমান্বিত ও অতি উচ্চমর্যাদা সম্পন্ন চরিত্রে অধিষ্ঠিত (অর্থাৎ কুরআনী শিষ্টাচারে সুসজ্জিত এবং আল্লাহ্ তা’আলার বৈশিষ্ট্যে গুণান্বিত)।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5276">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৫    
+فَسَتُبۡصِرُ وَ یُبۡصِرُوۡنَ ۙ﴿۵﴾    
+কানযুল ঈমান    
+সুতরাং অবিলম্বে আপনিও দেখে নেবেন এবং তারাও দেখে নেবে।    
+ইরফানুল কুরআন    
+৫. অতঃপর অচিরেই আপনি দেখবেন এবং তারাও দেখবে    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৫    
+فَسَتُبۡصِرُ وَ یُبۡصِرُوۡنَ ۙ﴿۵﴾    
+কানযুল ঈমান    
+সুতরাং অবিলম্বে আপনিও দেখে নেবেন এবং তারাও দেখে নেবে।    
+ইরফানুল কুরআন    
+৫. অতঃপর অচিরেই আপনি দেখবেন এবং তারাও দেখবে    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَسَتُبۡصِرُ وَ یُبۡصِرُوۡنَ ۙ﴿۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৫. সুতরাং অবিলম্বে আপনিও দেখে নেবেন এবং তারাও দেখে নেবে।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৫. অতঃপর অচিরেই আপনি দেখবেন এবং তারাও দেখবে</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5277">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৬    
+بِاَىیِّکُمُ  الۡمَفۡتُوۡنُ ﴿۶﴾    
+কানযুল ঈমান    
+যে, তোমাদের মধ্যে কে উন্মাদ ছিলো।    
+ইরফানুল কুরআন    
+৬. যে, তোমাদের মধ্যে কে বিকারগ্রস্ত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৬    
+بِاَىیِّکُمُ  الۡمَفۡتُوۡنُ ﴿۶﴾    
+কানযুল ঈমান    
+যে, তোমাদের মধ্যে কে উন্মাদ ছিলো।    
+ইরফানুল কুরআন    
+৬. যে, তোমাদের মধ্যে কে বিকারগ্রস্ত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِاَىیِّکُمُ  الۡمَفۡتُوۡنُ ﴿۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৬. যে, তোমাদের মধ্যে কে উন্মাদ ছিলো।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৬. যে, তোমাদের মধ্যে কে বিকারগ্রস্ত।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5278">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৭    
+اِنَّ  رَبَّکَ ہُوَ اَعۡلَمُ بِمَنۡ ضَلَّ عَنۡ سَبِیۡلِہٖ ۪ وَ ہُوَ اَعۡلَمُ  بِالۡمُہۡتَدِیۡنَ ﴿۷﴾    
+কানযুল ঈমান    
+নিশ্চয় আপনার রব ভালোভাবে জানেন কে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি ভালোভাবে জানেন তাদেরকে, যারা সত্য পথে রয়েছে।    
+ইরফানুল কুরআন    
+৭. নিশ্চয়ই আপনার প্রতিপালক তার সম্পর্কেও সম্যক অবগত, যে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি তাদের ব্যাপারেও সম্যক অবগত যারা হেদায়াতপ্রাপ্ত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৭    
+اِنَّ  رَبَّکَ ہُوَ اَعۡلَمُ بِمَنۡ ضَلَّ عَنۡ سَبِیۡلِہٖ ۪ وَ ہُوَ اَعۡلَمُ  بِالۡمُہۡتَدِیۡنَ ﴿۷﴾    
+কানযুল ঈমান    
+নিশ্চয় আপনার রব ভালোভাবে জানেন কে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি ভালোভাবে জানেন তাদেরকে, যারা সত্য পথে রয়েছে।    
+ইরফানুল কুরআন    
+৭. নিশ্চয়ই আপনার প্রতিপালক তার সম্পর্কেও সম্যক অবগত, যে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি তাদের ব্যাপারেও সম্যক অবগত যারা হেদায়াতপ্রাপ্ত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّ  رَبَّکَ ہُوَ اَعۡلَمُ بِمَنۡ ضَلَّ عَنۡ سَبِیۡلِہٖ ۪ وَ ہُوَ اَعۡلَمُ  بِالۡمُہۡتَدِیۡنَ ﴿۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৭. নিশ্চয় আপনার রব ভালোভাবে জানেন কে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি ভালোভাবে জানেন তাদেরকে, যারা সত্য পথে রয়েছে।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৭. নিশ্চয়ই আপনার প্রতিপালক তার সম্পর্কেও সম্যক অবগত, যে তাঁর পথ থেকে বিচ্যুত হয়েছে এবং তিনি তাদের ব্যাপারেও সম্যক অবগত যারা হেদায়াতপ্রাপ্ত।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৮</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5279">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৮    
+فَلَا تُطِعِ  الۡمُکَذِّبِیۡنَ ﴿۸﴾    
+কানযুল ঈমান    
+সুতরাং আপনি অস্বীকার কারীদের কথা শুনবেন না।    
+ইরফানুল কুরআন    
+৮. সুতরাং আপনি মিথ্যাবাদীদের কথায় সম্মত হবেন না।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৮    
+فَلَا تُطِعِ  الۡمُکَذِّبِیۡنَ ﴿۸﴾    
+কানযুল ঈমান    
+সুতরাং আপনি অস্বীকার কারীদের কথা শুনবেন না।    
+ইরফানুল কুরআন    
+৮. সুতরাং আপনি মিথ্যাবাদীদের কথায় সম্মত হবেন না।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَلَا تُطِعِ  الۡمُکَذِّبِیۡنَ ﴿۸﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৮. সুতরাং আপনি অস্বীকার কারীদের কথা শুনবেন না।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৮. সুতরাং আপনি মিথ্যাবাদীদের কথায় সম্মত হবেন না।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৯</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5280">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৯    
+وَدُّوۡا  لَوۡ  تُدۡہِنُ  فَیُدۡہِنُوۡنَ ﴿۹﴾    
+কানযুল ঈমান    
+তারা তো এ কামনায় রয়েছে যে, কোন মতে আপনি নমনীয় হোন, অতঃপর তারাও নমনীয় হয়ে যাবে।    
+ইরফানুল কুরআন    
+৯. তারা চায় যে, আপনি (দ্বীনের ব্যাপারে অযাচিত) নমনীয়তা অবলম্বন করুন, তাহলে তারাও নমনীয় হবে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৯    
+وَدُّوۡا  لَوۡ  تُدۡہِنُ  فَیُدۡہِنُوۡنَ ﴿۹﴾    
+কানযুল ঈমান    
+তারা তো এ কামনায় রয়েছে যে, কোন মতে আপনি নমনীয় হোন, অতঃপর তারাও নমনীয় হয়ে যাবে।    
+ইরফানুল কুরআন    
+৯. তারা চায় যে, আপনি (দ্বীনের ব্যাপারে অযাচিত) নমনীয়তা অবলম্বন করুন, তাহলে তারাও নমনীয় হবে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَدُّوۡا  لَوۡ  تُدۡہِنُ  فَیُدۡہِنُوۡنَ ﴿۹﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৯. তারা তো এ কামনায় রয়েছে যে, কোন মতে আপনি নমনীয় হোন, অতঃপর তারাও নমনীয় হয়ে যাবে।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৯. তারা চায় যে, আপনি (দ্বীনের ব্যাপারে অযাচিত) নমনীয়তা অবলম্বন করুন, তাহলে তারাও নমনীয় হবে।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5281">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১০    
+وَ لَا  تُطِعۡ  کُلَّ حَلَّافٍ مَّہِیۡنٍ ﴿ۙ۱۰﴾    
+কানযুল ঈমান    
+এবং এমন কারো কথা শুনবেন না, যে বড় বড় শপথকারী, লাঞ্ছিত।    
+ইরফানুল কুরআন    
+১০. আর আপনি এমন কারো অনুসরণ করবেন না, যে কথায় কথায় শপথ করে, যে লাঞ্ছিত,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১০    
+وَ لَا  تُطِعۡ  کُلَّ حَلَّافٍ مَّہِیۡنٍ ﴿ۙ۱۰﴾    
+কানযুল ঈমান    
+এবং এমন কারো কথা শুনবেন না, যে বড় বড় শপথকারী, লাঞ্ছিত।    
+ইরফানুল কুরআন    
+১০. আর আপনি এমন কারো অনুসরণ করবেন না, যে কথায় কথায় শপথ করে, যে লাঞ্ছিত,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ لَا  تُطِعۡ  کُلَّ حَلَّافٍ مَّہِیۡنٍ ﴿ۙ۱۰﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১০. এবং এমন কারো কথা শুনবেন না, যে বড় বড় শপথকারী, লাঞ্ছিত।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১০. আর আপনি এমন কারো অনুসরণ করবেন না, যে কথায় কথায় শপথ করে, যে লাঞ্ছিত,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5282">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১১    
+ہَمَّازٍ مَّشَّآءٍۭ  بِنَمِیۡمٍ ﴿ۙ۱۱﴾    
+কানযুল ঈমান    
+খুব নিন্দুক, এদিকের কথা ওদিকে লাগিয়ে খুব বিচরণকারী;    
+ইরফানুল কুরআন    
+১১. (যে) পশ্চাতে নিন্দাকারী, ত্রুটি অন্বেষণকারী (এবং) মানুষের মাঝে ফিতনার উদ্দেশ্যে যে একের কথা অন্যের কাছে লাগিয়ে বেড়ায়,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১১    
+ہَمَّازٍ مَّشَّآءٍۭ  بِنَمِیۡمٍ ﴿ۙ۱۱﴾    
+কানযুল ঈমান    
+খুব নিন্দুক, এদিকের কথা ওদিকে লাগিয়ে খুব বিচরণকারী;    
+ইরফানুল কুরআন    
+১১. (যে) পশ্চাতে নিন্দাকারী, ত্রুটি অন্বেষণকারী (এবং) মানুষের মাঝে ফিতনার উদ্দেশ্যে যে একের কথা অন্যের কাছে লাগিয়ে বেড়ায়,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">ہَمَّازٍ مَّشَّآءٍۭ  بِنَمِیۡمٍ ﴿ۙ۱۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১১. খুব নিন্দুক, এদিকের কথা ওদিকে লাগিয়ে খুব বিচরণকারী;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১১. (যে) পশ্চাতে নিন্দাকারী, ত্রুটি অন্বেষণকারী (এবং) মানুষের মাঝে ফিতনার উদ্দেশ্যে যে একের কথা অন্যের কাছে লাগিয়ে বেড়ায়,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5283">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১২    
+مَّنَّاعٍ  لِّلۡخَیۡرِ مُعۡتَدٍ اَثِیۡمٍ ﴿ۙ۱۲﴾    
+কানযুল ঈমান    
+সৎ কাজে বড় বাধা প্রদানকারী; সীমা লঙ্ঘনকারী, পাপিষ্ঠ,    
+ইরফানুল কুরআন    
+১২. (যে) উত্তম কাজে প্রবলভাবে বাধাদানকারী ও কৃপণ, অবাধ্য ও সীমালঙ্ঘনকারী (এবং) ঘোরতর পাপিষ্ঠ,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১২    
+مَّنَّاعٍ  لِّلۡخَیۡرِ مُعۡتَدٍ اَثِیۡمٍ ﴿ۙ۱۲﴾    
+কানযুল ঈমান    
+সৎ কাজে বড় বাধা প্রদানকারী; সীমা লঙ্ঘনকারী, পাপিষ্ঠ,    
+ইরফানুল কুরআন    
+১২. (যে) উত্তম কাজে প্রবলভাবে বাধাদানকারী ও কৃপণ, অবাধ্য ও সীমালঙ্ঘনকারী (এবং) ঘোরতর পাপিষ্ঠ,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">مَّنَّاعٍ  لِّلۡخَیۡرِ مُعۡتَدٍ اَثِیۡمٍ ﴿ۙ۱۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১২. সৎ কাজে বড় বাধা প্রদানকারী; সীমা লঙ্ঘনকারী, পাপিষ্ঠ,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১২. (যে) উত্তম কাজে প্রবলভাবে বাধাদানকারী ও কৃপণ, অবাধ্য ও সীমালঙ্ঘনকারী (এবং) ঘোরতর পাপিষ্ঠ,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5284">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৩    
+عُتُلٍّۭ  بَعۡدَ ذٰلِکَ  زَنِیۡمٍ ﴿ۙ۱۳﴾    
+কানযুল ঈমান    
+বদমেজাজ, এ সব কিছুর উপর অতিরিক্ত এ যে, তাঁর মূলে ত্রুটি;    
+ইরফানুল কুরআন    
 ১৩. (যে) বদমেজাজী, রূঢ় স্বভাবের; তদুপরি তার মূলে রয়েছে ত্রুটি।*
 
-* এ আয়াত কয়টি ওলিদ বিন মুগিরাহর ব্যাপারে অবতীর্ণ হয়। হযরত আব্দুল্লাহ্ ইবনে আব্বাস রাদ্বিয়াল্লাহু আনহু বলেন, যতগুলো অপমানজনক উপাধি বারী তা’আলা এ দুর্ভাগাকে দিয়েছেন, আজ পর্যন্ত আল্লাহ্‌র কালামে তা আর কারো জন্যে ব্যবহৃত হয়নি। কারণ, সে হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের পবিত্রতম শানে বেআদবী করেছিল; ফলে আল্লাহ্ প্রচন্ড ক্রোধান্বিত হয়েছিলেন। ওলিদ হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের শানে বেআদবীপূর্ণ একটি বাক্য বলেছিল, জবাবে আল্লাহ্ তা’আলা তার দশটি নীচু বৈশিষ্ট্য বর্ণনা করেছেন। আর পরিশেষে ‘অবৈধ জন্মের’ বিষয়টি প্রকাশ করে দিয়েছেন এবং তার মা পরবর্তীতে এ ঘটনার সত্যায়নও করেছিল। (তাফসীরে কুরতুবী, রাযী, নাসাফী ও অন্যান্য।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৩
-عُتُلٍّۭ  بَعۡدَ ذٰلِکَ  زَنِیۡمٍ ﴿ۙ۱۳﴾
-কানযুল ঈমান
-বদমেজাজ, এ সব কিছুর উপর অতিরিক্ত এ যে, তাঁর মূলে ত্রুটি;
-ইরফানুল কুরআন
+* এ আয়াত কয়টি ওলিদ বিন মুগিরাহর ব্যাপারে অবতীর্ণ হয়। হযরত আব্দুল্লাহ্ ইবনে আব্বাস রাদ্বিয়াল্লাহু আনহু বলেন, যতগুলো অপমানজনক উপাধি বারী তা’আলা এ দুর্ভাগাকে দিয়েছেন, আজ পর্যন্ত আল্লাহ্‌র কালামে তা আর কারো জন্যে ব্যবহৃত হয়নি। কারণ, সে হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের পবিত্রতম শানে বেআদবী করেছিল; ফলে আল্লাহ্ প্রচন্ড ক্রোধান্বিত হয়েছিলেন। ওলিদ হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের শানে বেআদবীপূর্ণ একটি বাক্য বলেছিল, জবাবে আল্লাহ্ তা’আলা তার দশটি নীচু বৈশিষ্ট্য বর্ণনা করেছেন। আর পরিশেষে ‘অবৈধ জন্মের’ বিষয়টি প্রকাশ করে দিয়েছেন এবং তার মা পরবর্তীতে এ ঘটনার সত্যায়নও করেছিল। (তাফসীরে কুরতুবী, রাযী, নাসাফী ও অন্যান্য।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৩    
+عُتُلٍّۭ  بَعۡدَ ذٰلِکَ  زَنِیۡمٍ ﴿ۙ۱۳﴾    
+কানযুল ঈমান    
+বদমেজাজ, এ সব কিছুর উপর অতিরিক্ত এ যে, তাঁর মূলে ত্রুটি;    
+ইরফানুল কুরআন    
 ১৩. (যে) বদমেজাজী, রূঢ় স্বভাবের; তদুপরি তার মূলে রয়েছে ত্রুটি।*
 
-* এ আয়াত কয়টি ওলিদ বিন মুগিরাহর ব্যাপারে অবতীর্ণ হয়। হযরত আব্দুল্লাহ্ ইবনে আব্বাস রাদ্বিয়াল্লাহু আনহু বলেন, যতগুলো অপমানজনক উপাধি বারী তা’আলা এ দুর্ভাগাকে দিয়েছেন, আজ পর্যন্ত আল্লাহ্‌র কালামে তা আর কারো জন্যে ব্যবহৃত হয়নি। কারণ, সে হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের পবিত্রতম শানে বেআদবী করেছিল; ফলে আল্লাহ্ প্রচন্ড ক্রোধান্বিত হয়েছিলেন। ওলিদ হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের শানে বেআদবীপূর্ণ একটি বাক্য বলেছিল, জবাবে আল্লাহ্ তা’আলা তার দশটি নীচু বৈশিষ্ট্য বর্ণনা করেছেন। আর পরিশেষে ‘অবৈধ জন্মের’ বিষয়টি প্রকাশ করে দিয়েছেন এবং তার মা পরবর্তীতে এ ঘটনার সত্যায়নও করেছিল। (তাফসীরে কুরতুবী, রাযী, নাসাফী ও অন্যান্য।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">عُتُلٍّۭ  بَعۡدَ ذٰلِکَ  زَنِیۡمٍ ﴿ۙ۱۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">বদমেজাজ, এ সব কিছুর উপর অতিরিক্ত এ যে, তাঁর মূলে ত্রুটি;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
+* এ আয়াত কয়টি ওলিদ বিন মুগিরাহর ব্যাপারে অবতীর্ণ হয়। হযরত আব্দুল্লাহ্ ইবনে আব্বাস রাদ্বিয়াল্লাহু আনহু বলেন, যতগুলো অপমানজনক উপাধি বারী তা’আলা এ দুর্ভাগাকে দিয়েছেন, আজ পর্যন্ত আল্লাহ্‌র কালামে তা আর কারো জন্যে ব্যবহৃত হয়নি। কারণ, সে হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের পবিত্রতম শানে বেআদবী করেছিল; ফলে আল্লাহ্ প্রচন্ড ক্রোধান্বিত হয়েছিলেন। ওলিদ হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের শানে বেআদবীপূর্ণ একটি বাক্য বলেছিল, জবাবে আল্লাহ্ তা’আলা তার দশটি নীচু বৈশিষ্ট্য বর্ণনা করেছেন। আর পরিশেষে ‘অবৈধ জন্মের’ বিষয়টি প্রকাশ করে দিয়েছেন এবং তার মা পরবর্তীতে এ ঘটনার সত্যায়নও করেছিল। (তাফসীরে কুরতুবী, রাযী, নাসাফী ও অন্যান্য।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">عُتُلٍّۭ  بَعۡدَ ذٰلِکَ  زَنِیۡمٍ ﴿ۙ۱۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৩. বদমেজাজ, এ সব কিছুর উপর অতিরিক্ত এ যে, তাঁর মূলে ত্রুটি;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
       <div class="irfan-text">১৩. (যে) বদমেজাজী, রূঢ় স্বভাবের; তদুপরি তার মূলে রয়েছে ত্রুটি।*
 
-* এ আয়াত কয়টি ওলিদ বিন মুগিরাহর ব্যাপারে অবতীর্ণ হয়। হযরত আব্দুল্লাহ্ ইবনে আব্বাস রাদ্বিয়াল্লাহু আনহু বলেন, যতগুলো অপমানজনক উপাধি বারী তা’আলা এ দুর্ভাগাকে দিয়েছেন, আজ পর্যন্ত আল্লাহ্‌র কালামে তা আর কারো জন্যে ব্যবহৃত হয়নি। কারণ, সে হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের পবিত্রতম শানে বেআদবী করেছিল; ফলে আল্লাহ্ প্রচন্ড ক্রোধান্বিত হয়েছিলেন। ওলিদ হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের শানে বেআদবীপূর্ণ একটি বাক্য বলেছিল, জবাবে আল্লাহ্ তা’আলা তার দশটি নীচু বৈশিষ্ট্য বর্ণনা করেছেন। আর পরিশেষে ‘অবৈধ জন্মের’ বিষয়টি প্রকাশ করে দিয়েছেন এবং তার মা পরবর্তীতে এ ঘটনার সত্যায়নও করেছিল। (তাফসীরে কুরতুবী, রাযী, নাসাফী ও অন্যান্য।)</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5285">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৪
-اَنۡ  کَانَ  ذَا مَالٍ وَّ  بَنِیۡنَ ﴿ؕ۱۴﴾
-কানযুল ঈমান
-তদুপরি, কিছু সম্পদ ও সন্তানের অধিকারী।
-ইরফানুল কুরআন
-১৪. তদুপরি (তার কথায় গুরুত্ব দেবেন না) কারণ, সে কিছু সম্পদ ও সন্তানের অধিকারী।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৪
-اَنۡ  کَانَ  ذَا مَالٍ وَّ  بَنِیۡنَ ﴿ؕ۱۴﴾
-কানযুল ঈমান
-তদুপরি, কিছু সম্পদ ও সন্তানের অধিকারী।
-ইরফানুল কুরআন
-১৪. তদুপরি (তার কথায় গুরুত্ব দেবেন না) কারণ, সে কিছু সম্পদ ও সন্তানের অধিকারী।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَنۡ  کَانَ  ذَا مَالٍ وَّ  بَنِیۡنَ ﴿ؕ۱۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তদুপরি, কিছু সম্পদ ও সন্তানের অধিকারী।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৪. তদুপরি (তার কথায় গুরুত্ব দেবেন না) কারণ, সে কিছু সম্পদ ও সন্তানের অধিকারী।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5286">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৫
-اِذَا  تُتۡلٰی عَلَیۡہِ  اٰیٰتُنَا  قَالَ  اَسَاطِیۡرُ الۡاَوَّلِیۡنَ ﴿۱۵﴾
-কানযুল ঈমান
-যখন তাঁর নিকট আমার আয়াতগুলো পাঠ করা হয়, তখন বলে, ‘এ’তো পূর্ববর্তীদের কাহিনী।
-ইরফানুল কুরআন
-১৫. যখন তার নিকট আমার আয়াতসমূহ তেলাওয়াত করা হয়, (তখন সে) বলে, ‘এ তো পূর্ববর্তীদের উপকথা মাত্র’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৫
-اِذَا  تُتۡلٰی عَلَیۡہِ  اٰیٰتُنَا  قَالَ  اَسَاطِیۡرُ الۡاَوَّلِیۡنَ ﴿۱۵﴾
-কানযুল ঈমান
-যখন তাঁর নিকট আমার আয়াতগুলো পাঠ করা হয়, তখন বলে, ‘এ’তো পূর্ববর্তীদের কাহিনী।
-ইরফানুল কুরআন
-১৫. যখন তার নিকট আমার আয়াতসমূহ তেলাওয়াত করা হয়, (তখন সে) বলে, ‘এ তো পূর্ববর্তীদের উপকথা মাত্র’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِذَا  تُتۡلٰی عَلَیۡہِ  اٰیٰتُنَا  قَالَ  اَسَاطِیۡرُ الۡاَوَّلِیۡنَ ﴿۱۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যখন তাঁর নিকট আমার আয়াতগুলো পাঠ করা হয়, তখন বলে, ‘এ’তো পূর্ববর্তীদের কাহিনী।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৫. যখন তার নিকট আমার আয়াতসমূহ তেলাওয়াত করা হয়, (তখন সে) বলে, ‘এ তো পূর্ববর্তীদের উপকথা মাত্র’।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5287">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৬
-سَنَسِمُہٗ  عَلَی  الۡخُرۡطُوۡمِ ﴿۱۶﴾
-কানযুল ঈমান
-অতি সত্বর আমি তার শূকরের মতো নাকের উপর দাগ দেবো।
-ইরফানুল কুরআন
-১৬. এখন আমরা শুঁড়ের ন্যায় তার নাকে দাগ লাগিয়ে দেবো।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৬
-سَنَسِمُہٗ  عَلَی  الۡخُرۡطُوۡمِ ﴿۱۶﴾
-কানযুল ঈমান
-অতি সত্বর আমি তার শূকরের মতো নাকের উপর দাগ দেবো।
-ইরফানুল কুরআন
-১৬. এখন আমরা শুঁড়ের ন্যায় তার নাকে দাগ লাগিয়ে দেবো।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">سَنَسِمُہٗ  عَلَی  الۡخُرۡطُوۡمِ ﴿۱۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতি সত্বর আমি তার শূকরের মতো নাকের উপর দাগ দেবো।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৬. এখন আমরা শুঁড়ের ন্যায় তার নাকে দাগ লাগিয়ে দেবো।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5288">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৭
-اِنَّا  بَلَوۡنٰہُمۡ کَمَا بَلَوۡنَاۤ  اَصۡحٰبَ الۡجَنَّۃِ ۚ اِذۡ  اَقۡسَمُوۡا لَیَصۡرِمُنَّہَا مُصۡبِحِیۡنَ ﴿ۙ۱۷﴾
-কানযুল ঈমান
-নিশ্চয় আমি তাদেরকে পরীক্ষা করেছি যেমন পরীক্ষা করেছিলাম এ উদ্যান পতিদেরকে, যখন তারা শপথ করেছিলো যে, অবশ্যই ভোর হতেই সেটার ফসল কেটে আনবে;
-ইরফানুল কুরআন
-১৭. নিশ্চয়ই আমরা এদেরকে (এ মক্কাবাসীদেরকে) পরীক্ষা করবো, যেমন পরীক্ষা করেছিলাম (ইয়ামানের) সে উদ্যানপতিদেরকে, যখন তারা শপথ করেছিল যে প্রত্যুষেই তারা আহরণ করবে এর ফল।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৭
-اِنَّا  بَلَوۡنٰہُمۡ کَمَا بَلَوۡنَاۤ  اَصۡحٰبَ الۡجَنَّۃِ ۚ اِذۡ  اَقۡسَمُوۡا لَیَصۡرِمُنَّہَا مُصۡبِحِیۡنَ ﴿ۙ۱۷﴾
-কানযুল ঈমান
-নিশ্চয় আমি তাদেরকে পরীক্ষা করেছি যেমন পরীক্ষা করেছিলাম এ উদ্যান পতিদেরকে, যখন তারা শপথ করেছিলো যে, অবশ্যই ভোর হতেই সেটার ফসল কেটে আনবে;
-ইরফানুল কুরআন
-১৭. নিশ্চয়ই আমরা এদেরকে (এ মক্কাবাসীদেরকে) পরীক্ষা করবো, যেমন পরীক্ষা করেছিলাম (ইয়ামানের) সে উদ্যানপতিদেরকে, যখন তারা শপথ করেছিল যে প্রত্যুষেই তারা আহরণ করবে এর ফল।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّا  بَلَوۡنٰہُمۡ کَمَا بَلَوۡنَاۤ  اَصۡحٰبَ الۡجَنَّۃِ ۚ اِذۡ  اَقۡسَمُوۡا لَیَصۡرِمُنَّہَا مُصۡبِحِیۡنَ ﴿ۙ۱۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় আমি তাদেরকে পরীক্ষা করেছি যেমন পরীক্ষা করেছিলাম এ উদ্যান পতিদেরকে, যখন তারা শপথ করেছিলো যে, অবশ্যই ভোর হতেই সেটার ফসল কেটে আনবে;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৭. নিশ্চয়ই আমরা এদেরকে (এ মক্কাবাসীদেরকে) পরীক্ষা করবো, যেমন পরীক্ষা করেছিলাম (ইয়ামানের) সে উদ্যানপতিদেরকে, যখন তারা শপথ করেছিল যে প্রত্যুষেই তারা আহরণ করবে এর ফল।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৮</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5289">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৮
-وَ لَا  یَسۡتَثۡنُوۡنَ ﴿۱۸﴾
-কানযুল ঈমান
-এবং ‘ইনশাআল্লাহ্‌’ বলে নি।
-ইরফানুল কুরআন
-১৮. আর তারা (ইন-শা-আল্লাহ্ বলেনি অথবা গরীবের অংশ) পৃথক করেনি।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৮
-وَ لَا  یَسۡتَثۡنُوۡنَ ﴿۱۸﴾
-কানযুল ঈমান
-এবং ‘ইনশাআল্লাহ্‌’ বলে নি।
-ইরফানুল কুরআন
-১৮. আর তারা (ইন-শা-আল্লাহ্ বলেনি অথবা গরীবের অংশ) পৃথক করেনি।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ لَا  یَسۡتَثۡنُوۡنَ ﴿۱۸﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং ‘ইনশাআল্লাহ্‌’ বলে নি।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৮. আর তারা (ইন-শা-আল্লাহ্ বলেনি অথবা গরীবের অংশ) পৃথক করেনি।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৯</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5290">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৯
-فَطَافَ عَلَیۡہَا طَآئِفٌ مِّنۡ رَّبِّکَ وَ ہُمۡ نَآئِمُوۡنَ ﴿۱۹﴾
-কানযুল ঈমান
-অতঃপর সেটার উপর তোমার রবের নিকট থেকে এক প্রদক্ষিণকারী প্রদক্ষিণ করে গেছে আর তারা (তখন) ঘুমাচ্ছিলো।
-ইরফানুল কুরআন
-১৯. অতঃপর আপনার প্রতিপালকের পক্ষ থেকে (শাস্তির) এক প্রদক্ষিণকারী (রাত্রিকালে) এর উপর প্রদক্ষিণ করে গেলো, যখন তারা ছিল নিদ্রিত,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৯
-فَطَافَ عَلَیۡہَا طَآئِفٌ مِّنۡ رَّبِّکَ وَ ہُمۡ نَآئِمُوۡنَ ﴿۱۹﴾
-কানযুল ঈমান
-অতঃপর সেটার উপর তোমার রবের নিকট থেকে এক প্রদক্ষিণকারী প্রদক্ষিণ করে গেছে আর তারা (তখন) ঘুমাচ্ছিলো।
-ইরফানুল কুরআন
-১৯. অতঃপর আপনার প্রতিপালকের পক্ষ থেকে (শাস্তির) এক প্রদক্ষিণকারী (রাত্রিকালে) এর উপর প্রদক্ষিণ করে গেলো, যখন তারা ছিল নিদ্রিত,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَطَافَ عَلَیۡہَا طَآئِفٌ مِّنۡ رَّبِّکَ وَ ہُمۡ نَآئِمُوۡنَ ﴿۱۹﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর সেটার উপর তোমার রবের নিকট থেকে এক প্রদক্ষিণকারী প্রদক্ষিণ করে গেছে আর তারা (তখন) ঘুমাচ্ছিলো।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৯. অতঃপর আপনার প্রতিপালকের পক্ষ থেকে (শাস্তির) এক প্রদক্ষিণকারী (রাত্রিকালে) এর উপর প্রদক্ষিণ করে গেলো, যখন তারা ছিল নিদ্রিত,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5291">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২০
-فَاَصۡبَحَتۡ  کَالصَّرِیۡمِ ﴿ۙ۲۰﴾
-কানযুল ঈমান
-অতঃপর ভোরে (এমনি) রয়ে গেলো যেন ফল ছিড়ে নেওয়া হয়েছে;
-ইরফানুল কুরআন
-২০. সুতরাং এ (ফলে ভরা উদ্যান) প্রত্যুষে হয়ে গেল ফসল কেটে নেয়া মাঠের সম।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২০
-فَاَصۡبَحَتۡ  کَالصَّرِیۡمِ ﴿ۙ۲۰﴾
-কানযুল ঈমান
-অতঃপর ভোরে (এমনি) রয়ে গেলো যেন ফল ছিড়ে নেওয়া হয়েছে;
-ইরফানুল কুরআন
-২০. সুতরাং এ (ফলে ভরা উদ্যান) প্রত্যুষে হয়ে গেল ফসল কেটে নেয়া মাঠের সম।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَاَصۡبَحَتۡ  کَالصَّرِیۡمِ ﴿ۙ۲۰﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর ভোরে (এমনি) রয়ে গেলো যেন ফল ছিড়ে নেওয়া হয়েছে;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২০. সুতরাং এ (ফলে ভরা উদ্যান) প্রত্যুষে হয়ে গেল ফসল কেটে নেয়া মাঠের সম।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5292">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২১
-فَتَنَادَوۡا  مُصۡبِحِیۡنَ ﴿ۙ۲۱﴾
-কানযুল ঈমান
-অতঃপর তারা ভোর হতেই একে অপরকে ডেকে বললো,
-ইরফানুল কুরআন
-২১. অতঃপর সকাল হতেই তারা একে অপরকে ডেকে বললো,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২১
-فَتَنَادَوۡا  مُصۡبِحِیۡنَ ﴿ۙ۲۱﴾
-কানযুল ঈমান
-অতঃপর তারা ভোর হতেই একে অপরকে ডেকে বললো,
-ইরফানুল কুরআন
-২১. অতঃপর সকাল হতেই তারা একে অপরকে ডেকে বললো,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَتَنَادَوۡا  مُصۡبِحِیۡنَ ﴿ۙ۲۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর তারা ভোর হতেই একে অপরকে ডেকে বললো,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২১. অতঃপর সকাল হতেই তারা একে অপরকে ডেকে বললো,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5293">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২২
-اَنِ  اغۡدُوۡا عَلٰی حَرۡثِکُمۡ  اِنۡ کُنۡتُمۡ صٰرِمِیۡنَ ﴿۲۲﴾
-কানযুল ঈমান
-‘সকাল সকাল আপন ক্ষেতের দিকে চলো যদি তোমরা ফসল কাটতে চাও’।
-ইরফানুল কুরআন
-২২. ‘সকাল সকাল তোমাদের বাগানে চলো, যদি তোমরা ফল আহরণ করতে চাও’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২২
-اَنِ  اغۡدُوۡا عَلٰی حَرۡثِکُمۡ  اِنۡ کُنۡتُمۡ صٰرِمِیۡنَ ﴿۲۲﴾
-কানযুল ঈমান
-‘সকাল সকাল আপন ক্ষেতের দিকে চলো যদি তোমরা ফসল কাটতে চাও’।
-ইরফানুল কুরআন
-২২. ‘সকাল সকাল তোমাদের বাগানে চলো, যদি তোমরা ফল আহরণ করতে চাও’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَنِ  اغۡدُوۡا عَلٰی حَرۡثِکُمۡ  اِنۡ کُنۡتُمۡ صٰرِمِیۡنَ ﴿۲۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">‘সকাল সকাল আপন ক্ষেতের দিকে চলো যদি তোমরা ফসল কাটতে চাও’।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২২. ‘সকাল সকাল তোমাদের বাগানে চলো, যদি তোমরা ফল আহরণ করতে চাও’।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5294">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৩
-فَانۡطَلَقُوۡا وَ  ہُمۡ  یَتَخَافَتُوۡنَ ﴿ۙ۲۳﴾
-কানযুল ঈমান
-অতঃপর তারা চললো এবং একে অপরকে নিচুস্বরে বলতে বলতে যাচ্ছিল,
-ইরফানুল কুরআন
-২৩. অতঃপর তারা পরস্পরে নিচুস্বরে কথা বলতে বলতে চললো,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৩
-فَانۡطَلَقُوۡا وَ  ہُمۡ  یَتَخَافَتُوۡنَ ﴿ۙ۲۳﴾
-কানযুল ঈমান
-অতঃপর তারা চললো এবং একে অপরকে নিচুস্বরে বলতে বলতে যাচ্ছিল,
-ইরফানুল কুরআন
-২৩. অতঃপর তারা পরস্পরে নিচুস্বরে কথা বলতে বলতে চললো,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَانۡطَلَقُوۡا وَ  ہُمۡ  یَتَخَافَتُوۡنَ ﴿ۙ۲۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর তারা চললো এবং একে অপরকে নিচুস্বরে বলতে বলতে যাচ্ছিল,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২৩. অতঃপর তারা পরস্পরে নিচুস্বরে কথা বলতে বলতে চললো,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5295">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৪
-اَنۡ  لَّا یَدۡخُلَنَّہَا  الۡیَوۡمَ عَلَیۡکُمۡ مِّسۡکِیۡنٌ ﴿ۙ۲۴﴾
-কানযুল ঈমান
-‘অবশ্যই আজ যেন কোন মিসকীন তোমাদের বাগানে আসতে না পারে’।
-ইরফানুল কুরআন
-২৪. ‘আজ যেন বাগানে তোমাদের কাছে কোনো অভাবগ্রস্ত ভিড়তে না পারে।’
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৪
-اَنۡ  لَّا یَدۡخُلَنَّہَا  الۡیَوۡمَ عَلَیۡکُمۡ مِّسۡکِیۡنٌ ﴿ۙ۲۴﴾
-কানযুল ঈমান
-‘অবশ্যই আজ যেন কোন মিসকীন তোমাদের বাগানে আসতে না পারে’।
-ইরফানুল কুরআন
-২৪. ‘আজ যেন বাগানে তোমাদের কাছে কোনো অভাবগ্রস্ত ভিড়তে না পারে।’
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَنۡ  لَّا یَدۡخُلَنَّہَا  الۡیَوۡمَ عَلَیۡکُمۡ مِّسۡکِیۡنٌ ﴿ۙ۲۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">‘অবশ্যই আজ যেন কোন মিসকীন তোমাদের বাগানে আসতে না পারে’।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২৪. ‘আজ যেন বাগানে তোমাদের কাছে কোনো অভাবগ্রস্ত ভিড়তে না পারে।’</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5296">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৫
-وَّ  غَدَوۡا عَلٰی حَرۡدٍ   قٰدِرِیۡنَ ﴿۲۵﴾
-কানযুল ঈমান
-এবং প্রত্যুষে যাত্রা করলো নিজেদের এ ইচ্ছার উপর শক্তিমান মনে করে।
-ইরফানুল কুরআন
-২৫. আর তারা প্রত্যুষে (ফল আহরণের উদ্দেশ্যে এবং গরীবদেরকে তাদের অংশ থেকে বঞ্চিত করার) অভিপ্রায়ে সন্তুষ্ট হয়ে চললো।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৫
-وَّ  غَدَوۡا عَلٰی حَرۡدٍ   قٰدِرِیۡنَ ﴿۲۵﴾
-কানযুল ঈমান
-এবং প্রত্যুষে যাত্রা করলো নিজেদের এ ইচ্ছার উপর শক্তিমান মনে করে।
-ইরফানুল কুরআন
-২৫. আর তারা প্রত্যুষে (ফল আহরণের উদ্দেশ্যে এবং গরীবদেরকে তাদের অংশ থেকে বঞ্চিত করার) অভিপ্রায়ে সন্তুষ্ট হয়ে চললো।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَّ  غَدَوۡا عَلٰی حَرۡدٍ   قٰدِرِیۡنَ ﴿۲۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং প্রত্যুষে যাত্রা করলো নিজেদের এ ইচ্ছার উপর শক্তিমান মনে করে।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২৫. আর তারা প্রত্যুষে (ফল আহরণের উদ্দেশ্যে এবং গরীবদেরকে তাদের অংশ থেকে বঞ্চিত করার) অভিপ্রায়ে সন্তুষ্ট হয়ে চললো।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5297">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৬
-فَلَمَّا رَاَوۡہَا  قَالُوۡۤا اِنَّا لَضَآلُّوۡنَ ﴿ۙ۲۶﴾
-কানযুল ঈমান
-অতঃপর যখন সেটা দেখলো তখন বললো, ‘নিশ্চয় আমরা রাস্তা ভুলে গেছি’।
-ইরফানুল কুরআন
-২৬. অতঃপর যখন তারা এ (বিরান) বাগান দেখলো, তখন বলতে লাগলো, ‘আমরা তো পথ ভুলে গিয়েছি (এ আমাদের বাগান নয়)’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৬
-فَلَمَّا رَاَوۡہَا  قَالُوۡۤا اِنَّا لَضَآلُّوۡنَ ﴿ۙ۲۶﴾
-কানযুল ঈমান
-অতঃপর যখন সেটা দেখলো তখন বললো, ‘নিশ্চয় আমরা রাস্তা ভুলে গেছি’।
-ইরফানুল কুরআন
-২৬. অতঃপর যখন তারা এ (বিরান) বাগান দেখলো, তখন বলতে লাগলো, ‘আমরা তো পথ ভুলে গিয়েছি (এ আমাদের বাগান নয়)’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَلَمَّا رَاَوۡہَا  قَالُوۡۤا اِنَّا لَضَآلُّوۡنَ ﴿ۙ۲۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর যখন সেটা দেখলো তখন বললো, ‘নিশ্চয় আমরা রাস্তা ভুলে গেছি’।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২৬. অতঃপর যখন তারা এ (বিরান) বাগান দেখলো, তখন বলতে লাগলো, ‘আমরা তো পথ ভুলে গিয়েছি (এ আমাদের বাগান নয়)’।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5298">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৭
-بَلۡ  نَحۡنُ  مَحۡرُوۡمُوۡنَ ﴿۲۷﴾
-কানযুল ঈমান
-‘বরং আমরা বঞ্চিত হয়েছি’।
-ইরফানুল কুরআন
-২৭. (কিন্তু ভালোভাবে লক্ষ্য করে চিৎকার করে উঠলো, ‘না না!) আমরা বরং বঞ্চিত’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৭
-بَلۡ  نَحۡنُ  مَحۡرُوۡمُوۡنَ ﴿۲۷﴾
-কানযুল ঈমান
-‘বরং আমরা বঞ্চিত হয়েছি’।
-ইরফানুল কুরআন
-২৭. (কিন্তু ভালোভাবে লক্ষ্য করে চিৎকার করে উঠলো, ‘না না!) আমরা বরং বঞ্চিত’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بَلۡ  نَحۡنُ  مَحۡرُوۡمُوۡنَ ﴿۲۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">‘বরং আমরা বঞ্চিত হয়েছি’।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২৭. (কিন্তু ভালোভাবে লক্ষ্য করে চিৎকার করে উঠলো, ‘না না!) আমরা বরং বঞ্চিত’।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২৮</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5299">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৮
-قَالَ  اَوۡسَطُہُمۡ  اَلَمۡ  اَقُلۡ  لَّکُمۡ  لَوۡ لَا تُسَبِّحُوۡنَ ﴿۲۸﴾
-কানযুল ঈমান
-তাদের মধ্যে যে সর্বাপেক্ষা উত্তম লোক ছিলো সে বললো, ‘আমি কি তোমাদেরকে বলছিলাম না যে, তোমরা কেন তাঁর পবিত্রতা ঘোষণা করছো না?’
-ইরফানুল কুরআন
-২৮. তাদের একজন ন্যায়পরায়ণ, বিচক্ষণ ব্যক্তি বললো, ‘আমি কি তোমাদেরকে বলিনি? তোমরা কেন (আল্লাহ্‌র) যিকির ও তাসবীহ পাঠ করছো না?’
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৮
-قَالَ  اَوۡسَطُہُمۡ  اَلَمۡ  اَقُلۡ  لَّکُمۡ  لَوۡ لَا تُسَبِّحُوۡنَ ﴿۲۸﴾
-কানযুল ঈমান
-তাদের মধ্যে যে সর্বাপেক্ষা উত্তম লোক ছিলো সে বললো, ‘আমি কি তোমাদেরকে বলছিলাম না যে, তোমরা কেন তাঁর পবিত্রতা ঘোষণা করছো না?’
-ইরফানুল কুরআন
-২৮. তাদের একজন ন্যায়পরায়ণ, বিচক্ষণ ব্যক্তি বললো, ‘আমি কি তোমাদেরকে বলিনি? তোমরা কেন (আল্লাহ্‌র) যিকির ও তাসবীহ পাঠ করছো না?’
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">قَالَ  اَوۡسَطُہُمۡ  اَلَمۡ  اَقُلۡ  لَّکُمۡ  لَوۡ لَا تُسَبِّحُوۡنَ ﴿۲۸﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তাদের মধ্যে যে সর্বাপেক্ষা উত্তম লোক ছিলো সে বললো, ‘আমি কি তোমাদেরকে বলছিলাম না যে, তোমরা কেন তাঁর পবিত্রতা ঘোষণা করছো না?’</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২৮. তাদের একজন ন্যায়পরায়ণ, বিচক্ষণ ব্যক্তি বললো, ‘আমি কি তোমাদেরকে বলিনি? তোমরা কেন (আল্লাহ্‌র) যিকির ও তাসবীহ পাঠ করছো না?’</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২৯</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5300">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৯
-قَالُوۡا سُبۡحٰنَ رَبِّنَاۤ  اِنَّا کُنَّا ظٰلِمِیۡنَ ﴿۲۹﴾
-কানযুল ঈমান
-তারা বললো, ‘পবিত্রতা আমাদের রবের, নিশ্চয় আমরা যালিম ছিলাম।’
-ইরফানুল কুরআন
-২৯. (তখন) তারা বলতে লাগলো, ‘আমাদের প্রতিপালক পূতঃপবিত্র, নিশ্চয়ই আমরা তো ছিলাম সীমালঙ্ঘনকারী’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৯
-قَالُوۡا سُبۡحٰنَ رَبِّنَاۤ  اِنَّا کُنَّا ظٰلِمِیۡنَ ﴿۲۹﴾
-কানযুল ঈমান
-তারা বললো, ‘পবিত্রতা আমাদের রবের, নিশ্চয় আমরা যালিম ছিলাম।’
-ইরফানুল কুরআন
-২৯. (তখন) তারা বলতে লাগলো, ‘আমাদের প্রতিপালক পূতঃপবিত্র, নিশ্চয়ই আমরা তো ছিলাম সীমালঙ্ঘনকারী’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">قَالُوۡا سُبۡحٰنَ رَبِّنَاۤ  اِنَّا کُنَّا ظٰلِمِیۡنَ ﴿۲۹﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তারা বললো, ‘পবিত্রতা আমাদের রবের, নিশ্চয় আমরা যালিম ছিলাম।’</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২৯. (তখন) তারা বলতে লাগলো, ‘আমাদের প্রতিপালক পূতঃপবিত্র, নিশ্চয়ই আমরা তো ছিলাম সীমালঙ্ঘনকারী’।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5301">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩০
-فَاَقۡبَلَ بَعۡضُہُمۡ عَلٰی بَعۡضٍ یَّتَلَاوَمُوۡنَ ﴿۳۰﴾
-কানযুল ঈমান
-এখন একে অপরের দিকে দোষারোপ করতে করতে মনোযোগ ফেরালো।
-ইরফানুল কুরআন
-৩০. সুতরাং তারা একে অপরকে তিরস্কার করতে লাগলো।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩০
-فَاَقۡبَلَ بَعۡضُہُمۡ عَلٰی بَعۡضٍ یَّتَلَاوَمُوۡنَ ﴿۳۰﴾
-কানযুল ঈমান
-এখন একে অপরের দিকে দোষারোপ করতে করতে মনোযোগ ফেরালো।
-ইরফানুল কুরআন
-৩০. সুতরাং তারা একে অপরকে তিরস্কার করতে লাগলো।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَاَقۡبَلَ بَعۡضُہُمۡ عَلٰی بَعۡضٍ یَّتَلَاوَمُوۡنَ ﴿۳۰﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এখন একে অপরের দিকে দোষারোপ করতে করতে মনোযোগ ফেরালো।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩০. সুতরাং তারা একে অপরকে তিরস্কার করতে লাগলো।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5302">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩১
-قَالُوۡا یٰوَیۡلَنَاۤ  اِنَّا کُنَّا طٰغِیۡنَ ﴿۳۱﴾
-কানযুল ঈমান
-তারা বললো, ‘হায়রে ধ্বংস আমাদের! আমরা অবাধ্য ছিলাম।
-ইরফানুল কুরআন
-৩১. বলতে লাগলো, ‘হায় আমাদের দুর্ভাগ্য! নিশ্চয়ই আমরাই অবাধ্য ও বিদ্রোহী।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩১
-قَالُوۡا یٰوَیۡلَنَاۤ  اِنَّا کُنَّا طٰغِیۡنَ ﴿۳۱﴾
-কানযুল ঈমান
-তারা বললো, ‘হায়রে ধ্বংস আমাদের! আমরা অবাধ্য ছিলাম।
-ইরফানুল কুরআন
-৩১. বলতে লাগলো, ‘হায় আমাদের দুর্ভাগ্য! নিশ্চয়ই আমরাই অবাধ্য ও বিদ্রোহী।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">قَالُوۡا یٰوَیۡلَنَاۤ  اِنَّا کُنَّا طٰغِیۡنَ ﴿۳۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তারা বললো, ‘হায়রে ধ্বংস আমাদের! আমরা অবাধ্য ছিলাম।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩১. বলতে লাগলো, ‘হায় আমাদের দুর্ভাগ্য! নিশ্চয়ই আমরাই অবাধ্য ও বিদ্রোহী।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5303">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩২
-عَسٰی رَبُّنَاۤ  اَنۡ یُّبۡدِلَنَا خَیۡرًا  مِّنۡہَاۤ  اِنَّاۤ اِلٰی  رَبِّنَا  رٰغِبُوۡنَ ﴿۳۲﴾
-কানযুল ঈমান
-আশাকরি, আমাদেরকে আমাদের রব তদপেক্ষা উত্তম বিনিময় দান করবেন; আমরা আমাদের রবের প্রতি আকৃষ্ট হচ্ছি’।
-ইরফানুল কুরআন
-৩২. সম্ভবতঃ আমাদের প্রতিপালক আমাদেরকে এর পরিবর্তে এ থেকে উৎকৃষ্টতর কিছু দান করবেন। নিশ্চয়ই আমরা আমাদের প্রতিপালকের দিকে প্রত্যাবর্তন করছি।’
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩২
-عَسٰی رَبُّنَاۤ  اَنۡ یُّبۡدِلَنَا خَیۡرًا  مِّنۡہَاۤ  اِنَّاۤ اِلٰی  رَبِّنَا  رٰغِبُوۡنَ ﴿۳۲﴾
-কানযুল ঈমান
-আশাকরি, আমাদেরকে আমাদের রব তদপেক্ষা উত্তম বিনিময় দান করবেন; আমরা আমাদের রবের প্রতি আকৃষ্ট হচ্ছি’।
-ইরফানুল কুরআন
-৩২. সম্ভবতঃ আমাদের প্রতিপালক আমাদেরকে এর পরিবর্তে এ থেকে উৎকৃষ্টতর কিছু দান করবেন। নিশ্চয়ই আমরা আমাদের প্রতিপালকের দিকে প্রত্যাবর্তন করছি।’
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">عَسٰی رَبُّنَاۤ  اَنۡ یُّبۡدِلَنَا خَیۡرًا  مِّنۡہَاۤ  اِنَّاۤ اِلٰی  رَبِّنَا  رٰغِبُوۡنَ ﴿۳۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আশাকরি, আমাদেরকে আমাদের রব তদপেক্ষা উত্তম বিনিময় দান করবেন; আমরা আমাদের রবের প্রতি আকৃষ্ট হচ্ছি’।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩২. সম্ভবতঃ আমাদের প্রতিপালক আমাদেরকে এর পরিবর্তে এ থেকে উৎকৃষ্টতর কিছু দান করবেন। নিশ্চয়ই আমরা আমাদের প্রতিপালকের দিকে প্রত্যাবর্তন করছি।’</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5304">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৩
-کَذٰلِکَ الۡعَذَابُ ؕ وَ لَعَذَابُ الۡاٰخِرَۃِ اَکۡبَرُ ۘ لَوۡ  کَانُوۡا  یَعۡلَمُوۡنَ ﴿۳۳﴾
-কানযুল ঈমান
-শাস্তি এমনই হয়; নিশ্চয় পরকালের শাস্তি সর্বাপেক্ষা কঠিন; কতোই উত্তম ছিলো যদি তারা জানতো!
-ইরফানুল কুরআন
-৩৩. শাস্তি এরূপই হয়, আর বাস্তবিকই পরকালের শাস্তি (এর চেয়ে) কঠিনতর। হায়! যদি তারা জানতো!
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৩
-کَذٰلِکَ الۡعَذَابُ ؕ وَ لَعَذَابُ الۡاٰخِرَۃِ اَکۡبَرُ ۘ لَوۡ  کَانُوۡا  یَعۡلَمُوۡنَ ﴿۳۳﴾
-কানযুল ঈমান
-শাস্তি এমনই হয়; নিশ্চয় পরকালের শাস্তি সর্বাপেক্ষা কঠিন; কতোই উত্তম ছিলো যদি তারা জানতো!
-ইরফানুল কুরআন
-৩৩. শাস্তি এরূপই হয়, আর বাস্তবিকই পরকালের শাস্তি (এর চেয়ে) কঠিনতর। হায়! যদি তারা জানতো!
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">کَذٰلِکَ الۡعَذَابُ ؕ وَ لَعَذَابُ الۡاٰخِرَۃِ اَکۡبَرُ ۘ لَوۡ  کَانُوۡا  یَعۡلَمُوۡنَ ﴿۳۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">শাস্তি এমনই হয়; নিশ্চয় পরকালের শাস্তি সর্বাপেক্ষা কঠিন; কতোই উত্তম ছিলো যদি তারা জানতো!</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩৩. শাস্তি এরূপই হয়, আর বাস্তবিকই পরকালের শাস্তি (এর চেয়ে) কঠিনতর। হায়! যদি তারা জানতো!</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5305">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৪
-اِنَّ  لِلۡمُتَّقِیۡنَ عِنۡدَ رَبِّہِمۡ جَنّٰتِ النَّعِیۡمِ ﴿۳۴﴾
-কানযুল ঈমান
-নিশ্চয় ভীতিসম্পন্নদের জন্য তাদের রবের নিকট শান্তির বাগানসমূহ রয়েছে।
-ইরফানুল কুরআন
-৩৪. নিশ্চয়ই পরহেযগারদের জন্যে তাদের প্রতিপালকের নিকট রয়েছে নিয়ামতপূর্ণ উদ্যান।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৪
-اِنَّ  لِلۡمُتَّقِیۡنَ عِنۡدَ رَبِّہِمۡ جَنّٰتِ النَّعِیۡمِ ﴿۳۴﴾
-কানযুল ঈমান
-নিশ্চয় ভীতিসম্পন্নদের জন্য তাদের রবের নিকট শান্তির বাগানসমূহ রয়েছে।
-ইরফানুল কুরআন
-৩৪. নিশ্চয়ই পরহেযগারদের জন্যে তাদের প্রতিপালকের নিকট রয়েছে নিয়ামতপূর্ণ উদ্যান।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّ  لِلۡمُتَّقِیۡنَ عِنۡدَ رَبِّہِمۡ جَنّٰتِ النَّعِیۡمِ ﴿۳۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় ভীতিসম্পন্নদের জন্য তাদের রবের নিকট শান্তির বাগানসমূহ রয়েছে।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩৪. নিশ্চয়ই পরহেযগারদের জন্যে তাদের প্রতিপালকের নিকট রয়েছে নিয়ামতপূর্ণ উদ্যান।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5306">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৫
-اَفَنَجۡعَلُ الۡمُسۡلِمِیۡنَ کَالۡمُجۡرِمِیۡنَ ﴿ؕ۳۵﴾
-কানযুল ঈমান
-আমি কি মুসলমানদেরকে অপরাধীদের মতো করে দেবো?
-ইরফানুল কুরআন
-৩৫. আমরা কি আনুগত্যশীলদেরকে অবাধ্যদের ন্যায় (বঞ্চিত) করবো?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৫
-اَفَنَجۡعَلُ الۡمُسۡلِمِیۡنَ کَالۡمُجۡرِمِیۡنَ ﴿ؕ۳۵﴾
-কানযুল ঈমান
-আমি কি মুসলমানদেরকে অপরাধীদের মতো করে দেবো?
-ইরফানুল কুরআন
-৩৫. আমরা কি আনুগত্যশীলদেরকে অবাধ্যদের ন্যায় (বঞ্চিত) করবো?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَفَنَجۡعَلُ الۡمُسۡلِمِیۡنَ کَالۡمُجۡرِمِیۡنَ ﴿ؕ۳۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আমি কি মুসলমানদেরকে অপরাধীদের মতো করে দেবো?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩৫. আমরা কি আনুগত্যশীলদেরকে অবাধ্যদের ন্যায় (বঞ্চিত) করবো?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5307">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৬
-مَا  لَکُمۡ ٝ  کَیۡفَ تَحۡکُمُوۡنَ ﴿ۚ۳۶﴾
-কানযুল ঈমান
-তোমাদের কি হয়েছে, কেমন মন্তব্য করছো?
-ইরফানুল কুরআন
-৩৬. তোমাদের কী হলো, তোমরা কেমন ফায়সালা করছো?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৬
-مَا  لَکُمۡ ٝ  کَیۡفَ تَحۡکُمُوۡنَ ﴿ۚ۳۶﴾
-কানযুল ঈমান
-তোমাদের কি হয়েছে, কেমন মন্তব্য করছো?
-ইরফানুল কুরআন
-৩৬. তোমাদের কী হলো, তোমরা কেমন ফায়সালা করছো?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">مَا  لَکُمۡ ٝ  کَیۡفَ تَحۡکُمُوۡنَ ﴿ۚ۳۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তোমাদের কি হয়েছে, কেমন মন্তব্য করছো?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩৬. তোমাদের কী হলো, তোমরা কেমন ফায়সালা করছো?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5308">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৭
-اَمۡ  لَکُمۡ  کِتٰبٌ فِیۡہِ  تَدۡرُسُوۡنَ ﴿ۙ۳۷﴾
-কানযুল ঈমান
-তোমাদের কি কোন কিতাব আছে, তাতে অধ্যয়ণ করছো
-ইরফানুল কুরআন
-৩৭. তোমাদের নিকট কি কোনো কিতাব আছে, যাতে তোমরা (এই) অধ্যয়ন করছো
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৭
-اَمۡ  لَکُمۡ  کِتٰبٌ فِیۡہِ  تَدۡرُسُوۡنَ ﴿ۙ۳۷﴾
-কানযুল ঈমান
-তোমাদের কি কোন কিতাব আছে, তাতে অধ্যয়ণ করছো
-ইরফানুল কুরআন
-৩৭. তোমাদের নিকট কি কোনো কিতাব আছে, যাতে তোমরা (এই) অধ্যয়ন করছো
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَمۡ  لَکُمۡ  کِتٰبٌ فِیۡہِ  تَدۡرُسُوۡنَ ﴿ۙ۳۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তোমাদের কি কোন কিতাব আছে, তাতে অধ্যয়ণ করছো</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩৭. তোমাদের নিকট কি কোনো কিতাব আছে, যাতে তোমরা (এই) অধ্যয়ন করছো</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩৮</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5309">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৮
-اِنَّ  لَکُمۡ  فِیۡہِ  لَمَا تَخَیَّرُوۡنَ ﴿ۚ۳۸﴾
-কানযুল ঈমান
-যে, তোমাদের জন্য তাতে রয়েছে যা তোমরা পছন্দ করো?
-ইরফানুল কুরআন
-৩৮. যে, তোমাদের জন্যে তাতে তা-ই রয়েছে, যা তোমরা পছন্দ করো?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৮
-اِنَّ  لَکُمۡ  فِیۡہِ  لَمَا تَخَیَّرُوۡنَ ﴿ۚ۳۸﴾
-কানযুল ঈমান
-যে, তোমাদের জন্য তাতে রয়েছে যা তোমরা পছন্দ করো?
-ইরফানুল কুরআন
-৩৮. যে, তোমাদের জন্যে তাতে তা-ই রয়েছে, যা তোমরা পছন্দ করো?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّ  لَکُمۡ  فِیۡہِ  لَمَا تَخَیَّرُوۡنَ ﴿ۚ۳۸﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যে, তোমাদের জন্য তাতে রয়েছে যা তোমরা পছন্দ করো?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩৮. যে, তোমাদের জন্যে তাতে তা-ই রয়েছে, যা তোমরা পছন্দ করো?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩৯</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5310">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৯
-اَمۡ لَکُمۡ  اَیۡمَانٌ عَلَیۡنَا بَالِغَۃٌ  اِلٰی یَوۡمِ الۡقِیٰمَۃِ ۙ اِنَّ  لَکُمۡ لَمَا تَحۡکُمُوۡنَ ﴿ۚ۳۹﴾
-কানযুল ঈমান
-না, তোমাদের জন্য আমার উপর কোন শপথ রয়েছে, যা ক্বিয়ামত পর্যন্ত পৌঁছে যে, তোমরা লাভ করবে যা কিছু তোমরা দাবী করছো?
-ইরফানুল কুরআন
-৩৯. নাকি তোমাদের জন্যে আমাদের পক্ষ থেকে (এমন) কোনো দৃঢ় অঙ্গীকার রয়েছে, যা কিয়ামত পর্যন্ত বলবৎ থাকবে (যার মাধ্যমে আমরা বাধ্য) যে, তোমরা নিজেদের জন্যে যা সিদ্ধান্ত নেবে তাই পাবে?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৯
-اَمۡ لَکُمۡ  اَیۡمَانٌ عَلَیۡنَا بَالِغَۃٌ  اِلٰی یَوۡمِ الۡقِیٰمَۃِ ۙ اِنَّ  لَکُمۡ لَمَا تَحۡکُمُوۡنَ ﴿ۚ۳۹﴾
-কানযুল ঈমান
-না, তোমাদের জন্য আমার উপর কোন শপথ রয়েছে, যা ক্বিয়ামত পর্যন্ত পৌঁছে যে, তোমরা লাভ করবে যা কিছু তোমরা দাবী করছো?
-ইরফানুল কুরআন
-৩৯. নাকি তোমাদের জন্যে আমাদের পক্ষ থেকে (এমন) কোনো দৃঢ় অঙ্গীকার রয়েছে, যা কিয়ামত পর্যন্ত বলবৎ থাকবে (যার মাধ্যমে আমরা বাধ্য) যে, তোমরা নিজেদের জন্যে যা সিদ্ধান্ত নেবে তাই পাবে?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَمۡ لَکُمۡ  اَیۡمَانٌ عَلَیۡنَا بَالِغَۃٌ  اِلٰی یَوۡمِ الۡقِیٰمَۃِ ۙ اِنَّ  لَکُمۡ لَمَا تَحۡکُمُوۡنَ ﴿ۚ۳۹﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">না, তোমাদের জন্য আমার উপর কোন শপথ রয়েছে, যা ক্বিয়ামত পর্যন্ত পৌঁছে যে, তোমরা লাভ করবে যা কিছু তোমরা দাবী করছো?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৩৯. নাকি তোমাদের জন্যে আমাদের পক্ষ থেকে (এমন) কোনো দৃঢ় অঙ্গীকার রয়েছে, যা কিয়ামত পর্যন্ত বলবৎ থাকবে (যার মাধ্যমে আমরা বাধ্য) যে, তোমরা নিজেদের জন্যে যা সিদ্ধান্ত নেবে তাই পাবে?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5311">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪০
-سَلۡہُمۡ  اَیُّہُمۡ  بِذٰلِکَ  زَعِیۡمٌ ﴿ۚۛ۴۰﴾
-কানযুল ঈমান
-আপনি তাদেরকে জিজ্ঞাসা করুন তাদের মধ্যে কে সেটার জামিনদার?
-ইরফানুল কুরআন
-৪০. তাদেরকে জিজ্ঞেস করুন যে, তাদের কে এ (শপথের বিষয়ে) দায়িত্বশীল!
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪০
-سَلۡہُمۡ  اَیُّہُمۡ  بِذٰلِکَ  زَعِیۡمٌ ﴿ۚۛ۴۰﴾
-কানযুল ঈমান
-আপনি তাদেরকে জিজ্ঞাসা করুন তাদের মধ্যে কে সেটার জামিনদার?
-ইরফানুল কুরআন
-৪০. তাদেরকে জিজ্ঞেস করুন যে, তাদের কে এ (শপথের বিষয়ে) দায়িত্বশীল!
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">سَلۡہُمۡ  اَیُّہُمۡ  بِذٰلِکَ  زَعِیۡمٌ ﴿ۚۛ۴۰﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আপনি তাদেরকে জিজ্ঞাসা করুন তাদের মধ্যে কে সেটার জামিনদার?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪০. তাদেরকে জিজ্ঞেস করুন যে, তাদের কে এ (শপথের বিষয়ে) দায়িত্বশীল!</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5312">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪১
-اَمۡ  لَہُمۡ  شُرَکَآءُ ۚۛ فَلۡیَاۡتُوۡا بِشُرَکَآئِہِمۡ اِنۡ  کَانُوۡا صٰدِقِیۡنَ ﴿۴۱﴾
-কানযুল ঈমান
-না, তাদের নিকট কোন শরীক আছে? (যদি থাকে) তাহলে যেন নিজেদের শরীকদেরকে নিয়ে আসে, যদি তারা সত্যবাদী হয়।
-ইরফানুল কুরআন
-৪১. নাকি তাদের আরো কিছু অংশীদার(ও) রয়েছে? থাকলে তারা তাদের অংশীদারদেরকে উপস্থিত করুক, যদি তারা সত্যবাদী হয়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪১
-اَمۡ  لَہُمۡ  شُرَکَآءُ ۚۛ فَلۡیَاۡتُوۡا بِشُرَکَآئِہِمۡ اِنۡ  کَانُوۡا صٰدِقِیۡنَ ﴿۴۱﴾
-কানযুল ঈমান
-না, তাদের নিকট কোন শরীক আছে? (যদি থাকে) তাহলে যেন নিজেদের শরীকদেরকে নিয়ে আসে, যদি তারা সত্যবাদী হয়।
-ইরফানুল কুরআন
-৪১. নাকি তাদের আরো কিছু অংশীদার(ও) রয়েছে? থাকলে তারা তাদের অংশীদারদেরকে উপস্থিত করুক, যদি তারা সত্যবাদী হয়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَمۡ  لَہُمۡ  شُرَکَآءُ ۚۛ فَلۡیَاۡتُوۡا بِشُرَکَآئِہِمۡ اِنۡ  کَانُوۡا صٰدِقِیۡنَ ﴿۴۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">না, তাদের নিকট কোন শরীক আছে? (যদি থাকে) তাহলে যেন নিজেদের শরীকদেরকে নিয়ে আসে, যদি তারা সত্যবাদী হয়।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪১. নাকি তাদের আরো কিছু অংশীদার(ও) রয়েছে? থাকলে তারা তাদের অংশীদারদেরকে উপস্থিত করুক, যদি তারা সত্যবাদী হয়।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5313">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪২
-یَوۡمَ  یُکۡشَفُ عَنۡ سَاقٍ وَّ  یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  فَلَا یَسۡتَطِیۡعُوۡنَ ﴿ۙ۴۲﴾
-কানযুল ঈমান
-যে দিন এক ‘সাক্ব’ উন্মুক্ত করা হবে (যার প্রকৃত অর্থ আল্লাহ্‌ই জানেন) এবং সাজদার প্রতি আহ্বান করা হবে, অতঃপর তা করতে পারবে না;
-ইরফানুল কুরআন
-৪২. যেদিন পায়ের গোছা (অর্থাৎ কিয়ামতের ভয়াবহ প্রচন্ডতা) থেকে পর্দা উন্মোচিত হয়ে পড়বে এবং এসব (নাফরমান) লোকদেরকে সেজদা করতে আহ্বান করা হবে, তখন তারা সক্ষম হবে না।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪২
-یَوۡمَ  یُکۡشَفُ عَنۡ سَاقٍ وَّ  یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  فَلَا یَسۡتَطِیۡعُوۡنَ ﴿ۙ۴۲﴾
-কানযুল ঈমান
-যে দিন এক ‘সাক্ব’ উন্মুক্ত করা হবে (যার প্রকৃত অর্থ আল্লাহ্‌ই জানেন) এবং সাজদার প্রতি আহ্বান করা হবে, অতঃপর তা করতে পারবে না;
-ইরফানুল কুরআন
-৪২. যেদিন পায়ের গোছা (অর্থাৎ কিয়ামতের ভয়াবহ প্রচন্ডতা) থেকে পর্দা উন্মোচিত হয়ে পড়বে এবং এসব (নাফরমান) লোকদেরকে সেজদা করতে আহ্বান করা হবে, তখন তারা সক্ষম হবে না।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">یَوۡمَ  یُکۡشَفُ عَنۡ سَاقٍ وَّ  یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  فَلَا یَسۡتَطِیۡعُوۡنَ ﴿ۙ۴۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যে দিন এক ‘সাক্ব’ উন্মুক্ত করা হবে (যার প্রকৃত অর্থ আল্লাহ্‌ই জানেন) এবং সাজদার প্রতি আহ্বান করা হবে, অতঃপর তা করতে পারবে না;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪২. যেদিন পায়ের গোছা (অর্থাৎ কিয়ামতের ভয়াবহ প্রচন্ডতা) থেকে পর্দা উন্মোচিত হয়ে পড়বে এবং এসব (নাফরমান) লোকদেরকে সেজদা করতে আহ্বান করা হবে, তখন তারা সক্ষম হবে না।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5314">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৩
-خَاشِعَۃً  اَبۡصَارُہُمۡ تَرۡہَقُہُمۡ ذِلَّۃٌ ؕ وَ قَدۡ کَانُوۡا یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  وَ ہُمۡ سٰلِمُوۡنَ ﴿۴۳﴾
-কানযুল ঈমান
-নজর নিচু করে, তাদের উপর লাঞ্ছনা আরোহণ করে থাকবে এবং নিশ্চয় তাদেরকে দুনিয়ায় সাজদার প্রতি আহ্বান করা হতো যখন তারা সুস্থ ছিলো।
-ইরফানুল কুরআন
-৪৩. (ভয়ে ও লজ্জায়) তাদের দৃষ্টি অবনত থাকবে, (এবং) তাদেরকে লাঞ্ছনা আচ্ছন্ন করবে। অথচ তাদেরকে (পৃথিবীতেও) সেজদার জন্যে আহ্বান করা হতো, যখন তারা সুস্থ ও স্বাভাবিক ছিল। (কিন্তু তারা সেজদা করতে অস্বীকৃতি জানাতো।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৩
-خَاشِعَۃً  اَبۡصَارُہُمۡ تَرۡہَقُہُمۡ ذِلَّۃٌ ؕ وَ قَدۡ کَانُوۡا یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  وَ ہُمۡ سٰلِمُوۡنَ ﴿۴۳﴾
-কানযুল ঈমান
-নজর নিচু করে, তাদের উপর লাঞ্ছনা আরোহণ করে থাকবে এবং নিশ্চয় তাদেরকে দুনিয়ায় সাজদার প্রতি আহ্বান করা হতো যখন তারা সুস্থ ছিলো।
-ইরফানুল কুরআন
-৪৩. (ভয়ে ও লজ্জায়) তাদের দৃষ্টি অবনত থাকবে, (এবং) তাদেরকে লাঞ্ছনা আচ্ছন্ন করবে। অথচ তাদেরকে (পৃথিবীতেও) সেজদার জন্যে আহ্বান করা হতো, যখন তারা সুস্থ ও স্বাভাবিক ছিল। (কিন্তু তারা সেজদা করতে অস্বীকৃতি জানাতো।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">خَاشِعَۃً  اَبۡصَارُہُمۡ تَرۡہَقُہُمۡ ذِلَّۃٌ ؕ وَ قَدۡ کَانُوۡا یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  وَ ہُمۡ سٰلِمُوۡنَ ﴿۴۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নজর নিচু করে, তাদের উপর লাঞ্ছনা আরোহণ করে থাকবে এবং নিশ্চয় তাদেরকে দুনিয়ায় সাজদার প্রতি আহ্বান করা হতো যখন তারা সুস্থ ছিলো।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪৩. (ভয়ে ও লজ্জায়) তাদের দৃষ্টি অবনত থাকবে, (এবং) তাদেরকে লাঞ্ছনা আচ্ছন্ন করবে। অথচ তাদেরকে (পৃথিবীতেও) সেজদার জন্যে আহ্বান করা হতো, যখন তারা সুস্থ ও স্বাভাবিক ছিল। (কিন্তু তারা সেজদা করতে অস্বীকৃতি জানাতো।)</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5315">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৪
-فَذَرۡنِیۡ  وَ مَنۡ یُّکَذِّبُ بِہٰذَا  الۡحَدِیۡثِ ؕ سَنَسۡتَدۡرِجُہُمۡ مِّنۡ حَیۡثُ لَا یَعۡلَمُوۡنَ ﴿ۙ۴۴﴾
-কানযুল ঈমান
-সুতরাং যে কেউ এ বাণীকে অস্বীকার করে, তাকে আমার উপর ছেড়ে দাও; অনতিবিলম্বে আমি তাদেরকে ধীরে ধীরে নিয়ে যাবো সে স্থান থেকে তাদের খবরও থাকবে না;
-ইরফানুল কুরআন
-৪৪. অতঃপর (হে সম্মানিত হাবীব! প্রতিশোধের জন্যে) আমাকে এবং ওই ব্যক্তিকে ছেড়ে দিন, যে এ বাণীকে মিথ্যাপ্রতিপন্ন করে। এখন আমি তাদেরকে ধীরে ধীরে এমনভাবে (ধ্বংসের দিকে) নিয়ে যাবো যে, তারা বুঝতেও পারবে না।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৪
-فَذَرۡنِیۡ  وَ مَنۡ یُّکَذِّبُ بِہٰذَا  الۡحَدِیۡثِ ؕ سَنَسۡتَدۡرِجُہُمۡ مِّنۡ حَیۡثُ لَا یَعۡلَمُوۡنَ ﴿ۙ۴۴﴾
-কানযুল ঈমান
-সুতরাং যে কেউ এ বাণীকে অস্বীকার করে, তাকে আমার উপর ছেড়ে দাও; অনতিবিলম্বে আমি তাদেরকে ধীরে ধীরে নিয়ে যাবো সে স্থান থেকে তাদের খবরও থাকবে না;
-ইরফানুল কুরআন
-৪৪. অতঃপর (হে সম্মানিত হাবীব! প্রতিশোধের জন্যে) আমাকে এবং ওই ব্যক্তিকে ছেড়ে দিন, যে এ বাণীকে মিথ্যাপ্রতিপন্ন করে। এখন আমি তাদেরকে ধীরে ধীরে এমনভাবে (ধ্বংসের দিকে) নিয়ে যাবো যে, তারা বুঝতেও পারবে না।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَذَرۡنِیۡ  وَ مَنۡ یُّکَذِّبُ بِہٰذَا  الۡحَدِیۡثِ ؕ سَنَسۡتَدۡرِجُہُمۡ مِّنۡ حَیۡثُ لَا یَعۡلَمُوۡنَ ﴿ۙ۴۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">সুতরাং যে কেউ এ বাণীকে অস্বীকার করে, তাকে আমার উপর ছেড়ে দাও; অনতিবিলম্বে আমি তাদেরকে ধীরে ধীরে নিয়ে যাবো সে স্থান থেকে তাদের খবরও থাকবে না;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪৪. অতঃপর (হে সম্মানিত হাবীব! প্রতিশোধের জন্যে) আমাকে এবং ওই ব্যক্তিকে ছেড়ে দিন, যে এ বাণীকে মিথ্যাপ্রতিপন্ন করে। এখন আমি তাদেরকে ধীরে ধীরে এমনভাবে (ধ্বংসের দিকে) নিয়ে যাবো যে, তারা বুঝতেও পারবে না।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5316">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৫
-وَ اُمۡلِیۡ لَہُمۡ ؕ اِنَّ  کَیۡدِیۡ  مَتِیۡنٌ ﴿۴۵﴾
-কানযুল ঈমান
-এবং আমি তাদেরকে অবকাশ দেবো; নিঃসন্দেহে আমার গোপন ব্যবস্থাপনা বড়ই পাকাপোক্ত।
-ইরফানুল কুরআন
-৪৫. আর আমি তাদেরকে অবকাশ দিচ্ছি, নিশ্চয়ই আমার কৌশল অত্যন্ত বলিষ্ঠ।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৫
-وَ اُمۡلِیۡ لَہُمۡ ؕ اِنَّ  کَیۡدِیۡ  مَتِیۡنٌ ﴿۴۵﴾
-কানযুল ঈমান
-এবং আমি তাদেরকে অবকাশ দেবো; নিঃসন্দেহে আমার গোপন ব্যবস্থাপনা বড়ই পাকাপোক্ত।
-ইরফানুল কুরআন
-৪৫. আর আমি তাদেরকে অবকাশ দিচ্ছি, নিশ্চয়ই আমার কৌশল অত্যন্ত বলিষ্ঠ।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ اُمۡلِیۡ لَہُمۡ ؕ اِنَّ  کَیۡدِیۡ  مَتِیۡنٌ ﴿۴۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং আমি তাদেরকে অবকাশ দেবো; নিঃসন্দেহে আমার গোপন ব্যবস্থাপনা বড়ই পাকাপোক্ত।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪৫. আর আমি তাদেরকে অবকাশ দিচ্ছি, নিশ্চয়ই আমার কৌশল অত্যন্ত বলিষ্ঠ।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5317">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৬
-اَمۡ تَسۡـَٔلُہُمۡ  اَجۡرًا  فَہُمۡ  مِّنۡ مَّغۡرَمٍ مُّثۡقَلُوۡنَ ﴿ۚ۴۶﴾
-কানযুল ঈমান
-আপনি কি তাদের নিকট পারিশ্রমিক চাচ্ছেন যে, তারা জরিমানার বোঝা দ্বারা চাপা পড়ে আছে?
-ইরফানুল কুরআন
-৪৬. আপনি কি (রিসালাত পৌঁছে দেবার বিনিময়ে) তাদের কাছে কোনো পারিশ্রমিক চাচ্ছেন যে, তারা ঋণের (বোঝায়) ভারাক্রান্ত হয়ে পড়ছে?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৬
-اَمۡ تَسۡـَٔلُہُمۡ  اَجۡرًا  فَہُمۡ  مِّنۡ مَّغۡرَمٍ مُّثۡقَلُوۡنَ ﴿ۚ۴۶﴾
-কানযুল ঈমান
-আপনি কি তাদের নিকট পারিশ্রমিক চাচ্ছেন যে, তারা জরিমানার বোঝা দ্বারা চাপা পড়ে আছে?
-ইরফানুল কুরআন
-৪৬. আপনি কি (রিসালাত পৌঁছে দেবার বিনিময়ে) তাদের কাছে কোনো পারিশ্রমিক চাচ্ছেন যে, তারা ঋণের (বোঝায়) ভারাক্রান্ত হয়ে পড়ছে?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَمۡ تَسۡـَٔلُہُمۡ  اَجۡرًا  فَہُمۡ  مِّنۡ مَّغۡرَمٍ مُّثۡقَلُوۡنَ ﴿ۚ۴۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আপনি কি তাদের নিকট পারিশ্রমিক চাচ্ছেন যে, তারা জরিমানার বোঝা দ্বারা চাপা পড়ে আছে?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪৬. আপনি কি (রিসালাত পৌঁছে দেবার বিনিময়ে) তাদের কাছে কোনো পারিশ্রমিক চাচ্ছেন যে, তারা ঋণের (বোঝায়) ভারাক্রান্ত হয়ে পড়ছে?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5318">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৭
-اَمۡ عِنۡدَہُمُ  الۡغَیۡبُ فَہُمۡ یَکۡتُبُوۡنَ ﴿۴۷﴾
-কানযুল ঈমান
-কিংবা তাদের নিকট অদৃশ্যের জ্ঞান রয়েছে যে, তারা লিপিবদ্ধ করছে?
-ইরফানুল কুরআন
-৪৭. তাদের নিকট কি অদৃশ্যের জ্ঞান আছে যে, তারা (এর উপর ভিত্তি করে নিজেদের ফায়সালা) লিখে রাখে?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৭
-اَمۡ عِنۡدَہُمُ  الۡغَیۡبُ فَہُمۡ یَکۡتُبُوۡنَ ﴿۴۷﴾
-কানযুল ঈমান
-কিংবা তাদের নিকট অদৃশ্যের জ্ঞান রয়েছে যে, তারা লিপিবদ্ধ করছে?
-ইরফানুল কুরআন
-৪৭. তাদের নিকট কি অদৃশ্যের জ্ঞান আছে যে, তারা (এর উপর ভিত্তি করে নিজেদের ফায়সালা) লিখে রাখে?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اَمۡ عِنۡدَہُمُ  الۡغَیۡبُ فَہُمۡ یَکۡتُبُوۡنَ ﴿۴۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">কিংবা তাদের নিকট অদৃশ্যের জ্ঞান রয়েছে যে, তারা লিপিবদ্ধ করছে?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪৭. তাদের নিকট কি অদৃশ্যের জ্ঞান আছে যে, তারা (এর উপর ভিত্তি করে নিজেদের ফায়সালা) লিখে রাখে?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪৮</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5319">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৮
-فَاصۡبِرۡ  لِحُکۡمِ رَبِّکَ وَ لَا تَکُنۡ کَصَاحِبِ الۡحُوۡتِ ۘ اِذۡ  نَادٰی وَ ہُوَ مَکۡظُوۡمٌ ﴿ؕ۴۸﴾
-কানযুল ঈমান
-অতএব আপনি আপন রবের নির্দেশের অপেক্ষা করুন! এবং ওই মৎস্যের পেটে অবস্থানকারীর মতো হবেন না; যখন এমতাস্থায় আহ্বান করেছিলো যে, তার অন্তর সংকুচিত হচ্ছিলো।
-ইরফানুল কুরআন
-৪৮. অতঃপর আপনি আপনার প্রতিপালকের নির্দেশের অপেক্ষায় ধৈর্য ধারণ করুন এবং মৎস-সহচর (পয়গম্বর ইউনুস আলাইহিস সালাম)-এঁর মতো (চিন্তিত) হবেন না। যখন তিনি (আল্লাহ্কে) ডাকলেন (তাঁর সম্প্রদায়ের বিরুদ্ধে) ক্রোধ ও মর্মযন্ত্রণায় আড়ষ্ট অবস্থায়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৮
-فَاصۡبِرۡ  لِحُکۡمِ رَبِّکَ وَ لَا تَکُنۡ کَصَاحِبِ الۡحُوۡتِ ۘ اِذۡ  نَادٰی وَ ہُوَ مَکۡظُوۡمٌ ﴿ؕ۴۸﴾
-কানযুল ঈমান
-অতএব আপনি আপন রবের নির্দেশের অপেক্ষা করুন! এবং ওই মৎস্যের পেটে অবস্থানকারীর মতো হবেন না; যখন এমতাস্থায় আহ্বান করেছিলো যে, তার অন্তর সংকুচিত হচ্ছিলো।
-ইরফানুল কুরআন
-৪৮. অতঃপর আপনি আপনার প্রতিপালকের নির্দেশের অপেক্ষায় ধৈর্য ধারণ করুন এবং মৎস-সহচর (পয়গম্বর ইউনুস আলাইহিস সালাম)-এঁর মতো (চিন্তিত) হবেন না। যখন তিনি (আল্লাহ্কে) ডাকলেন (তাঁর সম্প্রদায়ের বিরুদ্ধে) ক্রোধ ও মর্মযন্ত্রণায় আড়ষ্ট অবস্থায়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَاصۡبِرۡ  لِحُکۡمِ رَبِّکَ وَ لَا تَکُنۡ کَصَاحِبِ الۡحُوۡتِ ۘ اِذۡ  نَادٰی وَ ہُوَ مَکۡظُوۡمٌ ﴿ؕ۴۸﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতএব আপনি আপন রবের নির্দেশের অপেক্ষা করুন! এবং ওই মৎস্যের পেটে অবস্থানকারীর মতো হবেন না; যখন এমতাস্থায় আহ্বান করেছিলো যে, তার অন্তর সংকুচিত হচ্ছিলো।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪৮. অতঃপর আপনি আপনার প্রতিপালকের নির্দেশের অপেক্ষায় ধৈর্য ধারণ করুন এবং মৎস-সহচর (পয়গম্বর ইউনুস আলাইহিস সালাম)-এঁর মতো (চিন্তিত) হবেন না। যখন তিনি (আল্লাহ্কে) ডাকলেন (তাঁর সম্প্রদায়ের বিরুদ্ধে) ক্রোধ ও মর্মযন্ত্রণায় আড়ষ্ট অবস্থায়।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪৯</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5320">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৯
-لَوۡ لَاۤ  اَنۡ  تَدٰرَکَہٗ  نِعۡمَۃٌ  مِّنۡ رَّبِّہٖ لَنُبِذَ بِالۡعَرَآءِ  وَ  ہُوَ  مَذۡمُوۡمٌ ﴿۴۹﴾
-কানযুল ঈমান
-যদি না তার রবের অনুগ্রহ তার সহায়ক হতো, তবে অবশ্যই ময়দানে নিক্ষিপ্ত হতো অপবাদের শিকার হয়ে।
-ইরফানুল কুরআন
-৪৯. যদি তাঁর প্রতিপালকের অনুগ্রহ ও নিয়ামত তাঁর নিকট না পৌঁছতো, তবে অবশ্যই তিনি নিক্ষিপ্ত হতেন জনশুন্য ময়দানে এবং হতেন নিন্দিত। (কিন্তু আল্লাহ্ তাঁকে তা থেকে নিরাপদ রেখেছেন।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৯
-لَوۡ لَاۤ  اَنۡ  تَدٰرَکَہٗ  نِعۡمَۃٌ  مِّنۡ رَّبِّہٖ لَنُبِذَ بِالۡعَرَآءِ  وَ  ہُوَ  مَذۡمُوۡمٌ ﴿۴۹﴾
-কানযুল ঈমান
-যদি না তার রবের অনুগ্রহ তার সহায়ক হতো, তবে অবশ্যই ময়দানে নিক্ষিপ্ত হতো অপবাদের শিকার হয়ে।
-ইরফানুল কুরআন
-৪৯. যদি তাঁর প্রতিপালকের অনুগ্রহ ও নিয়ামত তাঁর নিকট না পৌঁছতো, তবে অবশ্যই তিনি নিক্ষিপ্ত হতেন জনশুন্য ময়দানে এবং হতেন নিন্দিত। (কিন্তু আল্লাহ্ তাঁকে তা থেকে নিরাপদ রেখেছেন।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">لَوۡ لَاۤ  اَنۡ  تَدٰرَکَہٗ  نِعۡمَۃٌ  مِّنۡ رَّبِّہٖ لَنُبِذَ بِالۡعَرَآءِ  وَ  ہُوَ  مَذۡمُوۡمٌ ﴿۴۹﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যদি না তার রবের অনুগ্রহ তার সহায়ক হতো, তবে অবশ্যই ময়দানে নিক্ষিপ্ত হতো অপবাদের শিকার হয়ে।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪৯. যদি তাঁর প্রতিপালকের অনুগ্রহ ও নিয়ামত তাঁর নিকট না পৌঁছতো, তবে অবশ্যই তিনি নিক্ষিপ্ত হতেন জনশুন্য ময়দানে এবং হতেন নিন্দিত। (কিন্তু আল্লাহ্ তাঁকে তা থেকে নিরাপদ রেখেছেন।)</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৫০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5321">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৫০
-فَاجۡتَبٰہُ  رَبُّہٗ  فَجَعَلَہٗ  مِنَ الصّٰلِحِیۡنَ ﴿۵۰﴾
-কানযুল ঈমান
-অতঃপর তাকে তার রব মনোনীত করে নিলেন, এবং আপন খাস নৈকট্যের উপযোগীদের অন্তর্ভুক্ত করে নিলেন।
-ইরফানুল কুরআন
-৫০. অতঃপর তাঁর প্রতিপালক তাঁকে মহিমান্বিত করলেন এবং (তাঁর বিশেষ নৈকট্যের অনুগ্রহে) তাঁকে সৎকর্মপরায়ণদের অন্তর্ভুক্ত করলেন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৫০
-فَاجۡتَبٰہُ  رَبُّہٗ  فَجَعَلَہٗ  مِنَ الصّٰلِحِیۡنَ ﴿۵۰﴾
-কানযুল ঈমান
-অতঃপর তাকে তার রব মনোনীত করে নিলেন, এবং আপন খাস নৈকট্যের উপযোগীদের অন্তর্ভুক্ত করে নিলেন।
-ইরফানুল কুরআন
-৫০. অতঃপর তাঁর প্রতিপালক তাঁকে মহিমান্বিত করলেন এবং (তাঁর বিশেষ নৈকট্যের অনুগ্রহে) তাঁকে সৎকর্মপরায়ণদের অন্তর্ভুক্ত করলেন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَاجۡتَبٰہُ  رَبُّہٗ  فَجَعَلَہٗ  مِنَ الصّٰلِحِیۡنَ ﴿۵۰﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">অতঃপর তাকে তার রব মনোনীত করে নিলেন, এবং আপন খাস নৈকট্যের উপযোগীদের অন্তর্ভুক্ত করে নিলেন।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৫০. অতঃপর তাঁর প্রতিপালক তাঁকে মহিমান্বিত করলেন এবং (তাঁর বিশেষ নৈকট্যের অনুগ্রহে) তাঁকে সৎকর্মপরায়ণদের অন্তর্ভুক্ত করলেন।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৫১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5322">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৫১
-وَ اِنۡ یَّکَادُ  الَّذِیۡنَ کَفَرُوۡا لَیُزۡلِقُوۡنَکَ بِاَبۡصَارِہِمۡ  لَمَّا سَمِعُوا الذِّکۡرَ وَ یَقُوۡلُوۡنَ  اِنَّہٗ  لَمَجۡنُوۡنٌ ﴿ۘ۵۱﴾
-কানযুল ঈমান
-এবং অবশ্য কাফিরদেরকে তো এমনই মনে হচ্ছে যেন তাদের কু-দৃষ্টি নিক্ষেপ করে আপনার পতন ঘটাবে যখন তারা ক্বোরআন শ্রবণ করে; এবং বলে, ‘এটা অবশ্য বোধশক্তি থেকে অনেক দূরে’।
-ইরফানুল কুরআন
-৫১. আর নিশ্চয়ই কাফেরেরা যখন কুরআন শ্রবণ করে, মনে হয় তারা তাদের (হিংসাত্মক) দৃষ্টি দ্বারা আপনাকে ক্ষতিগ্রস্ত করবে এবং তারা বলে, ‘এ তো উন্মাদ’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৫১
-وَ اِنۡ یَّکَادُ  الَّذِیۡنَ کَفَرُوۡا لَیُزۡلِقُوۡنَکَ بِاَبۡصَارِہِمۡ  لَمَّا سَمِعُوا الذِّکۡرَ وَ یَقُوۡلُوۡنَ  اِنَّہٗ  لَمَجۡنُوۡنٌ ﴿ۘ۵۱﴾
-কানযুল ঈমান
-এবং অবশ্য কাফিরদেরকে তো এমনই মনে হচ্ছে যেন তাদের কু-দৃষ্টি নিক্ষেপ করে আপনার পতন ঘটাবে যখন তারা ক্বোরআন শ্রবণ করে; এবং বলে, ‘এটা অবশ্য বোধশক্তি থেকে অনেক দূরে’।
-ইরফানুল কুরআন
-৫১. আর নিশ্চয়ই কাফেরেরা যখন কুরআন শ্রবণ করে, মনে হয় তারা তাদের (হিংসাত্মক) দৃষ্টি দ্বারা আপনাকে ক্ষতিগ্রস্ত করবে এবং তারা বলে, ‘এ তো উন্মাদ’।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ اِنۡ یَّکَادُ  الَّذِیۡنَ کَفَرُوۡا لَیُزۡلِقُوۡنَکَ بِاَبۡصَارِہِمۡ  لَمَّا سَمِعُوا الذِّکۡرَ وَ یَقُوۡلُوۡنَ  اِنَّہٗ  لَمَجۡنُوۡنٌ ﴿ۘ۵۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং অবশ্য কাফিরদেরকে তো এমনই মনে হচ্ছে যেন তাদের কু-দৃষ্টি নিক্ষেপ করে আপনার পতন ঘটাবে যখন তারা ক্বোরআন শ্রবণ করে; এবং বলে, ‘এটা অবশ্য বোধশক্তি থেকে অনেক দূরে’।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৫১. আর নিশ্চয়ই কাফেরেরা যখন কুরআন শ্রবণ করে, মনে হয় তারা তাদের (হিংসাত্মক) দৃষ্টি দ্বারা আপনাকে ক্ষতিগ্রস্ত করবে এবং তারা বলে, ‘এ তো উন্মাদ’।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৫২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5323">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৫২
-وَ مَا ہُوَ  اِلَّا ذِکۡرٌ  لِّلۡعٰلَمِیۡنَ ﴿۵۲﴾
-কানযুল ঈমান
-আর তা তো সমগ্র জাহানের জন্য উপদেশই।
-ইরফানুল কুরআন
-৫২.আর এ (কুরআন) তো সারা জাহানের জন্যে উপদেশ ও হেদায়াত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৫২
-وَ مَا ہُوَ  اِلَّا ذِکۡرٌ  لِّلۡعٰلَمِیۡنَ ﴿۵۲﴾
-কানযুল ঈমান
-আর তা তো সমগ্র জাহানের জন্য উপদেশই।
-ইরফানুল কুরআন
-৫২.আর এ (কুরআন) তো সারা জাহানের জন্যে উপদেশ ও হেদায়াত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ مَا ہُوَ  اِلَّا ذِکۡرٌ  لِّلۡعٰلَمِیۡنَ ﴿۵۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আর তা তো সমগ্র জাহানের জন্য উপদেশই।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৫২.আর এ (কুরআন) তো সারা জাহানের জন্যে উপদেশ ও হেদায়াত।</div>
-    </div>
-
-  </div>
-
-  <div class="audio-controller" id="audioController" style="display:none;">
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
-    <img src="next.png" onclick="playNext()" alt="Next">
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">
-  </div>
-
-  <script src="quranview.js"></script>
-</body>
-</html>
+* এ আয়াত কয়টি ওলিদ বিন মুগিরাহর ব্যাপারে অবতীর্ণ হয়। হযরত আব্দুল্লাহ্ ইবনে আব্বাস রাদ্বিয়াল্লাহু আনহু বলেন, যতগুলো অপমানজনক উপাধি বারী তা’আলা এ দুর্ভাগাকে দিয়েছেন, আজ পর্যন্ত আল্লাহ্‌র কালামে তা আর কারো জন্যে ব্যবহৃত হয়নি। কারণ, সে হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের পবিত্রতম শানে বেআদবী করেছিল; ফলে আল্লাহ্ প্রচন্ড ক্রোধান্বিত হয়েছিলেন। ওলিদ হুযুর নবী আকরাম সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামের শানে বেআদবীপূর্ণ একটি বাক্য বলেছিল, জবাবে আল্লাহ্ তা’আলা তার দশটি নীচু বৈশিষ্ট্য বর্ণনা করেছেন। আর পরিশেষে ‘অবৈধ জন্মের’ বিষয়টি প্রকাশ করে দিয়েছেন এবং তার মা পরবর্তীতে এ ঘটনার সত্যায়নও করেছিল। (তাফসীরে কুরতুবী, রাযী, নাসাফী ও অন্যান্য।)</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5285">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৪    
+اَنۡ  کَانَ  ذَا مَالٍ وَّ  بَنِیۡنَ ﴿ؕ۱۴﴾    
+কানযুল ঈমান    
+তদুপরি, কিছু সম্পদ ও সন্তানের অধিকারী।    
+ইরফানুল কুরআন    
+১৪. তদুপরি (তার কথায় গুরুত্ব দেবেন না) কারণ, সে কিছু সম্পদ ও সন্তানের অধিকারী।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৪    
+اَنۡ  کَانَ  ذَا مَالٍ وَّ  بَنِیۡنَ ﴿ؕ۱۴﴾    
+কানযুল ঈমান    
+তদুপরি, কিছু সম্পদ ও সন্তানের অধিকারী।    
+ইরফানুল কুরআন    
+১৪. তদুপরি (তার কথায় গুরুত্ব দেবেন না) কারণ, সে কিছু সম্পদ ও সন্তানের অধিকারী।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَنۡ  کَانَ  ذَا مَالٍ وَّ  بَنِیۡنَ ﴿ؕ۱۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৪. তদুপরি, কিছু সম্পদ ও সন্তানের অধিকারী।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৪. তদুপরি (তার কথায় গুরুত্ব দেবেন না) কারণ, সে কিছু সম্পদ ও সন্তানের অধিকারী।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5286">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৫    
+اِذَا  تُتۡلٰی عَلَیۡہِ  اٰیٰتُنَا  قَالَ  اَسَاطِیۡرُ الۡاَوَّلِیۡنَ ﴿۱۵﴾    
+কানযুল ঈমান    
+যখন তাঁর নিকট আমার আয়াতগুলো পাঠ করা হয়, তখন বলে, ‘এ’তো পূর্ববর্তীদের কাহিনী।    
+ইরফানুল কুরআন    
+১৫. যখন তার নিকট আমার আয়াতসমূহ তেলাওয়াত করা হয়, (তখন সে) বলে, ‘এ তো পূর্ববর্তীদের উপকথা মাত্র’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৫    
+اِذَا  تُتۡلٰی عَلَیۡہِ  اٰیٰتُنَا  قَالَ  اَسَاطِیۡرُ الۡاَوَّلِیۡنَ ﴿۱۵﴾    
+কানযুল ঈমান    
+যখন তাঁর নিকট আমার আয়াতগুলো পাঠ করা হয়, তখন বলে, ‘এ’তো পূর্ববর্তীদের কাহিনী।    
+ইরফানুল কুরআন    
+১৫. যখন তার নিকট আমার আয়াতসমূহ তেলাওয়াত করা হয়, (তখন সে) বলে, ‘এ তো পূর্ববর্তীদের উপকথা মাত্র’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِذَا  تُتۡلٰی عَلَیۡہِ  اٰیٰتُنَا  قَالَ  اَسَاطِیۡرُ الۡاَوَّلِیۡنَ ﴿۱۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৫. যখন তাঁর নিকট আমার আয়াতগুলো পাঠ করা হয়, তখন বলে, ‘এ’তো পূর্ববর্তীদের কাহিনী।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৫. যখন তার নিকট আমার আয়াতসমূহ তেলাওয়াত করা হয়, (তখন সে) বলে, ‘এ তো পূর্ববর্তীদের উপকথা মাত্র’।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5287">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৬    
+سَنَسِمُہٗ  عَلَی  الۡخُرۡطُوۡمِ ﴿۱۶﴾    
+কানযুল ঈমান    
+অতি সত্বর আমি তার শূকরের মতো নাকের উপর দাগ দেবো।    
+ইরফানুল কুরআন    
+১৬. এখন আমরা শুঁড়ের ন্যায় তার নাকে দাগ লাগিয়ে দেবো।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৬    
+سَنَسِمُہٗ  عَلَی  الۡخُرۡطُوۡمِ ﴿۱۶﴾    
+কানযুল ঈমান    
+অতি সত্বর আমি তার শূকরের মতো নাকের উপর দাগ দেবো।    
+ইরফানুল কুরআন    
+১৬. এখন আমরা শুঁড়ের ন্যায় তার নাকে দাগ লাগিয়ে দেবো।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">سَنَسِمُہٗ  عَلَی  الۡخُرۡطُوۡمِ ﴿۱۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৬. অতি সত্বর আমি তার শূকরের মতো নাকের উপর দাগ দেবো।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৬. এখন আমরা শুঁড়ের ন্যায় তার নাকে দাগ লাগিয়ে দেবো।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5288">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৭    
+اِنَّا  بَلَوۡنٰہُمۡ کَمَا بَلَوۡنَاۤ  اَصۡحٰبَ الۡجَنَّۃِ ۚ اِذۡ  اَقۡسَمُوۡا لَیَصۡرِمُنَّہَا مُصۡبِحِیۡنَ ﴿ۙ۱۷﴾    
+কানযুল ঈমান    
+নিশ্চয় আমি তাদেরকে পরীক্ষা করেছি যেমন পরীক্ষা করেছিলাম এ উদ্যান পতিদেরকে, যখন তারা শপথ করেছিলো যে, অবশ্যই ভোর হতেই সেটার ফসল কেটে আনবে;    
+ইরফানুল কুরআন    
+১৭. নিশ্চয়ই আমরা এদেরকে (এ মক্কাবাসীদেরকে) পরীক্ষা করবো, যেমন পরীক্ষা করেছিলাম (ইয়ামানের) সে উদ্যানপতিদেরকে, যখন তারা শপথ করেছিল যে প্রত্যুষেই তারা আহরণ করবে এর ফল।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৭    
+اِنَّا  بَلَوۡنٰہُمۡ کَمَا بَلَوۡنَاۤ  اَصۡحٰبَ الۡجَنَّۃِ ۚ اِذۡ  اَقۡسَمُوۡا لَیَصۡرِمُنَّہَا مُصۡبِحِیۡنَ ﴿ۙ۱۷﴾    
+কানযুল ঈমান    
+নিশ্চয় আমি তাদেরকে পরীক্ষা করেছি যেমন পরীক্ষা করেছিলাম এ উদ্যান পতিদেরকে, যখন তারা শপথ করেছিলো যে, অবশ্যই ভোর হতেই সেটার ফসল কেটে আনবে;    
+ইরফানুল কুরআন    
+১৭. নিশ্চয়ই আমরা এদেরকে (এ মক্কাবাসীদেরকে) পরীক্ষা করবো, যেমন পরীক্ষা করেছিলাম (ইয়ামানের) সে উদ্যানপতিদেরকে, যখন তারা শপথ করেছিল যে প্রত্যুষেই তারা আহরণ করবে এর ফল।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّا  بَلَوۡنٰہُمۡ کَمَا بَلَوۡنَاۤ  اَصۡحٰبَ الۡجَنَّۃِ ۚ اِذۡ  اَقۡسَمُوۡا لَیَصۡرِمُنَّہَا مُصۡبِحِیۡنَ ﴿ۙ۱۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৭. নিশ্চয় আমি তাদেরকে পরীক্ষা করেছি যেমন পরীক্ষা করেছিলাম এ উদ্যান পতিদেরকে, যখন তারা শপথ করেছিলো যে, অবশ্যই ভোর হতেই সেটার ফসল কেটে আনবে;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৭. নিশ্চয়ই আমরা এদেরকে (এ মক্কাবাসীদেরকে) পরীক্ষা করবো, যেমন পরীক্ষা করেছিলাম (ইয়ামানের) সে উদ্যানপতিদেরকে, যখন তারা শপথ করেছিল যে প্রত্যুষেই তারা আহরণ করবে এর ফল।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৮</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5289">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৮    
+وَ لَا  یَسۡتَثۡنُوۡنَ ﴿۱۸﴾    
+কানযুল ঈমান    
+এবং ‘ইনশাআল্লাহ্‌’ বলে নি।    
+ইরফানুল কুরআন    
+১৮. আর তারা (ইন-শা-আল্লাহ্ বলেনি অথবা গরীবের অংশ) পৃথক করেনি।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৮    
+وَ لَا  یَسۡتَثۡنُوۡنَ ﴿۱۸﴾    
+কানযুল ঈমান    
+এবং ‘ইনশাআল্লাহ্‌’ বলে নি।    
+ইরফানুল কুরআন    
+১৮. আর তারা (ইন-শা-আল্লাহ্ বলেনি অথবা গরীবের অংশ) পৃথক করেনি।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ لَا  یَسۡتَثۡنُوۡنَ ﴿۱۸﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৮. এবং ‘ইনশাআল্লাহ্‌’ বলে নি।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৮. আর তারা (ইন-শা-আল্লাহ্ বলেনি অথবা গরীবের অংশ) পৃথক করেনি।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৯</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5290">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ১৯    
+فَطَافَ عَلَیۡہَا طَآئِفٌ مِّنۡ رَّبِّکَ وَ ہُمۡ نَآئِمُوۡنَ ﴿۱۹﴾    
+কানযুল ঈমান    
+অতঃপর সেটার উপর তোমার রবের নিকট থেকে এক প্রদক্ষিণকারী প্রদক্ষিণ করে গেছে আর তারা (তখন) ঘুমাচ্ছিলো।    
+ইরফানুল কুরআন    
+১৯. অতঃপর আপনার প্রতিপালকের পক্ষ থেকে (শাস্তির) এক প্রদক্ষিণকারী (রাত্রিকালে) এর উপর প্রদক্ষিণ করে গেলো, যখন তারা ছিল নিদ্রিত,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ১৯    
+فَطَافَ عَلَیۡہَا طَآئِفٌ مِّنۡ رَّبِّکَ وَ ہُمۡ نَآئِمُوۡنَ ﴿۱۹﴾    
+কানযুল ঈমান    
+অতঃপর সেটার উপর তোমার রবের নিকট থেকে এক প্রদক্ষিণকারী প্রদক্ষিণ করে গেছে আর তারা (তখন) ঘুমাচ্ছিলো।    
+ইরফানুল কুরআন    
+১৯. অতঃপর আপনার প্রতিপালকের পক্ষ থেকে (শাস্তির) এক প্রদক্ষিণকারী (রাত্রিকালে) এর উপর প্রদক্ষিণ করে গেলো, যখন তারা ছিল নিদ্রিত,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَطَافَ عَلَیۡہَا طَآئِفٌ مِّنۡ رَّبِّکَ وَ ہُمۡ نَآئِمُوۡنَ ﴿۱۹﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৯. অতঃপর সেটার উপর তোমার রবের নিকট থেকে এক প্রদক্ষিণকারী প্রদক্ষিণ করে গেছে আর তারা (তখন) ঘুমাচ্ছিলো।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৯. অতঃপর আপনার প্রতিপালকের পক্ষ থেকে (শাস্তির) এক প্রদক্ষিণকারী (রাত্রিকালে) এর উপর প্রদক্ষিণ করে গেলো, যখন তারা ছিল নিদ্রিত,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5291">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২০    
+فَاَصۡبَحَتۡ  کَالصَّرِیۡمِ ﴿ۙ۲۰﴾    
+কানযুল ঈমান    
+অতঃপর ভোরে (এমনি) রয়ে গেলো যেন ফল ছিড়ে নেওয়া হয়েছে;    
+ইরফানুল কুরআন    
+২০. সুতরাং এ (ফলে ভরা উদ্যান) প্রত্যুষে হয়ে গেল ফসল কেটে নেয়া মাঠের সম।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২০    
+فَاَصۡبَحَتۡ  کَالصَّرِیۡمِ ﴿ۙ۲۰﴾    
+কানযুল ঈমান    
+অতঃপর ভোরে (এমনি) রয়ে গেলো যেন ফল ছিড়ে নেওয়া হয়েছে;    
+ইরফানুল কুরআন    
+২০. সুতরাং এ (ফলে ভরা উদ্যান) প্রত্যুষে হয়ে গেল ফসল কেটে নেয়া মাঠের সম।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَاَصۡبَحَتۡ  کَالصَّرِیۡمِ ﴿ۙ۲۰﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২০. অতঃপর ভোরে (এমনি) রয়ে গেলো যেন ফল ছিড়ে নেওয়া হয়েছে;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২০. সুতরাং এ (ফলে ভরা উদ্যান) প্রত্যুষে হয়ে গেল ফসল কেটে নেয়া মাঠের সম।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5292">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২১    
+فَتَنَادَوۡا  مُصۡبِحِیۡنَ ﴿ۙ۲۱﴾    
+কানযুল ঈমান    
+অতঃপর তারা ভোর হতেই একে অপরকে ডেকে বললো,    
+ইরফানুল কুরআন    
+২১. অতঃপর সকাল হতেই তারা একে অপরকে ডেকে বললো,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২১    
+فَتَنَادَوۡا  مُصۡبِحِیۡنَ ﴿ۙ۲۱﴾    
+কানযুল ঈমান    
+অতঃপর তারা ভোর হতেই একে অপরকে ডেকে বললো,    
+ইরফানুল কুরআন    
+২১. অতঃপর সকাল হতেই তারা একে অপরকে ডেকে বললো,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَتَنَادَوۡا  مُصۡبِحِیۡنَ ﴿ۙ۲۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২১. অতঃপর তারা ভোর হতেই একে অপরকে ডেকে বললো,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২১. অতঃপর সকাল হতেই তারা একে অপরকে ডেকে বললো,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5293">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২২    
+اَنِ  اغۡدُوۡا عَلٰی حَرۡثِکُمۡ  اِنۡ کُنۡتُمۡ صٰرِمِیۡنَ ﴿۲۲﴾    
+কানযুল ঈমান    
+‘সকাল সকাল আপন ক্ষেতের দিকে চলো যদি তোমরা ফসল কাটতে চাও’।    
+ইরফানুল কুরআন    
+২২. ‘সকাল সকাল তোমাদের বাগানে চলো, যদি তোমরা ফল আহরণ করতে চাও’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২২    
+اَنِ  اغۡدُوۡا عَلٰی حَرۡثِکُمۡ  اِنۡ کُنۡتُمۡ صٰرِمِیۡنَ ﴿۲۲﴾    
+কানযুল ঈমান    
+‘সকাল সকাল আপন ক্ষেতের দিকে চলো যদি তোমরা ফসল কাটতে চাও’।    
+ইরফানুল কুরআন    
+২২. ‘সকাল সকাল তোমাদের বাগানে চলো, যদি তোমরা ফল আহরণ করতে চাও’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَنِ  اغۡدُوۡا عَلٰی حَرۡثِکُمۡ  اِنۡ کُنۡتُمۡ صٰرِمِیۡنَ ﴿۲۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২২. ‘সকাল সকাল আপন ক্ষেতের দিকে চলো যদি তোমরা ফসল কাটতে চাও’।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২২. ‘সকাল সকাল তোমাদের বাগানে চলো, যদি তোমরা ফল আহরণ করতে চাও’।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5294">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৩    
+فَانۡطَلَقُوۡا وَ  ہُمۡ  یَتَخَافَتُوۡنَ ﴿ۙ۲۳﴾    
+কানযুল ঈমান    
+অতঃপর তারা চললো এবং একে অপরকে নিচুস্বরে বলতে বলতে যাচ্ছিল,    
+ইরফানুল কুরআন    
+২৩. অতঃপর তারা পরস্পরে নিচুস্বরে কথা বলতে বলতে চললো,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৩    
+فَانۡطَلَقُوۡا وَ  ہُمۡ  یَتَخَافَتُوۡنَ ﴿ۙ۲۳﴾    
+কানযুল ঈমান    
+অতঃপর তারা চললো এবং একে অপরকে নিচুস্বরে বলতে বলতে যাচ্ছিল,    
+ইরফানুল কুরআন    
+২৩. অতঃপর তারা পরস্পরে নিচুস্বরে কথা বলতে বলতে চললো,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَانۡطَلَقُوۡا وَ  ہُمۡ  یَتَخَافَتُوۡنَ ﴿ۙ۲۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২৩. অতঃপর তারা চললো এবং একে অপরকে নিচুস্বরে বলতে বলতে যাচ্ছিল,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২৩. অতঃপর তারা পরস্পরে নিচুস্বরে কথা বলতে বলতে চললো,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5295">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৪    
+اَنۡ  لَّا یَدۡخُلَنَّہَا  الۡیَوۡمَ عَلَیۡکُمۡ مِّسۡکِیۡنٌ ﴿ۙ۲۴﴾    
+কানযুল ঈমান    
+‘অবশ্যই আজ যেন কোন মিসকীন তোমাদের বাগানে আসতে না পারে’।    
+ইরফানুল কুরআন    
+২৪. ‘আজ যেন বাগানে তোমাদের কাছে কোনো অভাবগ্রস্ত ভিড়তে না পারে।’    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৪    
+اَنۡ  لَّا یَدۡخُلَنَّہَا  الۡیَوۡمَ عَلَیۡکُمۡ مِّسۡکِیۡنٌ ﴿ۙ۲۴﴾    
+কানযুল ঈমান    
+‘অবশ্যই আজ যেন কোন মিসকীন তোমাদের বাগানে আসতে না পারে’।    
+ইরফানুল কুরআন    
+২৪. ‘আজ যেন বাগানে তোমাদের কাছে কোনো অভাবগ্রস্ত ভিড়তে না পারে।’    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَنۡ  لَّا یَدۡخُلَنَّہَا  الۡیَوۡمَ عَلَیۡکُمۡ مِّسۡکِیۡنٌ ﴿ۙ۲۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২৪. ‘অবশ্যই আজ যেন কোন মিসকীন তোমাদের বাগানে আসতে না পারে’।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২৪. ‘আজ যেন বাগানে তোমাদের কাছে কোনো অভাবগ্রস্ত ভিড়তে না পারে।’</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5296">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৫    
+وَّ  غَدَوۡا عَلٰی حَرۡدٍ   قٰدِرِیۡنَ ﴿۲۵﴾    
+কানযুল ঈমান    
+এবং প্রত্যুষে যাত্রা করলো নিজেদের এ ইচ্ছার উপর শক্তিমান মনে করে।    
+ইরফানুল কুরআন    
+২৫. আর তারা প্রত্যুষে (ফল আহরণের উদ্দেশ্যে এবং গরীবদেরকে তাদের অংশ থেকে বঞ্চিত করার) অভিপ্রায়ে সন্তুষ্ট হয়ে চললো।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৫    
+وَّ  غَدَوۡا عَلٰی حَرۡدٍ   قٰدِرِیۡنَ ﴿۲۵﴾    
+কানযুল ঈমান    
+এবং প্রত্যুষে যাত্রা করলো নিজেদের এ ইচ্ছার উপর শক্তিমান মনে করে।    
+ইরফানুল কুরআন    
+২৫. আর তারা প্রত্যুষে (ফল আহরণের উদ্দেশ্যে এবং গরীবদেরকে তাদের অংশ থেকে বঞ্চিত করার) অভিপ্রায়ে সন্তুষ্ট হয়ে চললো।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَّ  غَدَوۡا عَلٰی حَرۡدٍ   قٰدِرِیۡنَ ﴿۲۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২৫. এবং প্রত্যুষে যাত্রা করলো নিজেদের এ ইচ্ছার উপর শক্তিমান মনে করে।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২৫. আর তারা প্রত্যুষে (ফল আহরণের উদ্দেশ্যে এবং গরীবদেরকে তাদের অংশ থেকে বঞ্চিত করার) অভিপ্রায়ে সন্তুষ্ট হয়ে চললো।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5297">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৬    
+فَلَمَّا رَاَوۡہَا  قَالُوۡۤا اِنَّا لَضَآلُّوۡنَ ﴿ۙ۲۶﴾    
+কানযুল ঈমান    
+অতঃপর যখন সেটা দেখলো তখন বললো, ‘নিশ্চয় আমরা রাস্তা ভুলে গেছি’।    
+ইরফানুল কুরআন    
+২৬. অতঃপর যখন তারা এ (বিরান) বাগান দেখলো, তখন বলতে লাগলো, ‘আমরা তো পথ ভুলে গিয়েছি (এ আমাদের বাগান নয়)’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৬    
+فَلَمَّا رَاَوۡہَا  قَالُوۡۤا اِنَّا لَضَآلُّوۡنَ ﴿ۙ۲۶﴾    
+কানযুল ঈমান    
+অতঃপর যখন সেটা দেখলো তখন বললো, ‘নিশ্চয় আমরা রাস্তা ভুলে গেছি’।    
+ইরফানুল কুরআন    
+২৬. অতঃপর যখন তারা এ (বিরান) বাগান দেখলো, তখন বলতে লাগলো, ‘আমরা তো পথ ভুলে গিয়েছি (এ আমাদের বাগান নয়)’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَلَمَّا رَاَوۡہَا  قَالُوۡۤا اِنَّا لَضَآلُّوۡنَ ﴿ۙ۲۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২৬. অতঃপর যখন সেটা দেখলো তখন বললো, ‘নিশ্চয় আমরা রাস্তা ভুলে গেছি’।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২৬. অতঃপর যখন তারা এ (বিরান) বাগান দেখলো, তখন বলতে লাগলো, ‘আমরা তো পথ ভুলে গিয়েছি (এ আমাদের বাগান নয়)’।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5298">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৭    
+بَلۡ  نَحۡنُ  مَحۡرُوۡمُوۡنَ ﴿۲۷﴾    
+কানযুল ঈমান    
+‘বরং আমরা বঞ্চিত হয়েছি’।    
+ইরফানুল কুরআন    
+২৭. (কিন্তু ভালোভাবে লক্ষ্য করে চিৎকার করে উঠলো, ‘না না!) আমরা বরং বঞ্চিত’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৭    
+بَلۡ  نَحۡنُ  مَحۡرُوۡمُوۡنَ ﴿۲۷﴾    
+কানযুল ঈমান    
+‘বরং আমরা বঞ্চিত হয়েছি’।    
+ইরফানুল কুরআন    
+২৭. (কিন্তু ভালোভাবে লক্ষ্য করে চিৎকার করে উঠলো, ‘না না!) আমরা বরং বঞ্চিত’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بَلۡ  نَحۡنُ  مَحۡرُوۡمُوۡنَ ﴿۲۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২৭. ‘বরং আমরা বঞ্চিত হয়েছি’।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২৭. (কিন্তু ভালোভাবে লক্ষ্য করে চিৎকার করে উঠলো, ‘না না!) আমরা বরং বঞ্চিত’।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২৮</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5299">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৮    
+قَالَ  اَوۡسَطُہُمۡ  اَلَمۡ  اَقُلۡ  لَّکُمۡ  لَوۡ لَا تُسَبِّحُوۡنَ ﴿۲۸﴾    
+কানযুল ঈমান    
+তাদের মধ্যে যে সর্বাপেক্ষা উত্তম লোক ছিলো সে বললো, ‘আমি কি তোমাদেরকে বলছিলাম না যে, তোমরা কেন তাঁর পবিত্রতা ঘোষণা করছো না?’    
+ইরফানুল কুরআন    
+২৮. তাদের একজন ন্যায়পরায়ণ, বিচক্ষণ ব্যক্তি বললো, ‘আমি কি তোমাদেরকে বলিনি? তোমরা কেন (আল্লাহ্‌র) যিকির ও তাসবীহ পাঠ করছো না?’    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৮    
+قَالَ  اَوۡسَطُہُمۡ  اَلَمۡ  اَقُلۡ  لَّکُمۡ  لَوۡ لَا تُسَبِّحُوۡنَ ﴿۲۸﴾    
+কানযুল ঈমান    
+তাদের মধ্যে যে সর্বাপেক্ষা উত্তম লোক ছিলো সে বললো, ‘আমি কি তোমাদেরকে বলছিলাম না যে, তোমরা কেন তাঁর পবিত্রতা ঘোষণা করছো না?’    
+ইরফানুল কুরআন    
+২৮. তাদের একজন ন্যায়পরায়ণ, বিচক্ষণ ব্যক্তি বললো, ‘আমি কি তোমাদেরকে বলিনি? তোমরা কেন (আল্লাহ্‌র) যিকির ও তাসবীহ পাঠ করছো না?’    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">قَالَ  اَوۡسَطُہُمۡ  اَلَمۡ  اَقُلۡ  لَّکُمۡ  لَوۡ لَا تُسَبِّحُوۡنَ ﴿۲۸﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২৮. তাদের মধ্যে যে সর্বাপেক্ষা উত্তম লোক ছিলো সে বললো, ‘আমি কি তোমাদেরকে বলছিলাম না যে, তোমরা কেন তাঁর পবিত্রতা ঘোষণা করছো না?’</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২৮. তাদের একজন ন্যায়পরায়ণ, বিচক্ষণ ব্যক্তি বললো, ‘আমি কি তোমাদেরকে বলিনি? তোমরা কেন (আল্লাহ্‌র) যিকির ও তাসবীহ পাঠ করছো না?’</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২৯</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5300">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ২৯    
+قَالُوۡا سُبۡحٰنَ رَبِّنَاۤ  اِنَّا کُنَّا ظٰلِمِیۡنَ ﴿۲۹﴾    
+কানযুল ঈমান    
+তারা বললো, ‘পবিত্রতা আমাদের রবের, নিশ্চয় আমরা যালিম ছিলাম।’    
+ইরফানুল কুরআন    
+২৯. (তখন) তারা বলতে লাগলো, ‘আমাদের প্রতিপালক পূতঃপবিত্র, নিশ্চয়ই আমরা তো ছিলাম সীমালঙ্ঘনকারী’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ২৯    
+قَالُوۡا سُبۡحٰنَ رَبِّنَاۤ  اِنَّا کُنَّا ظٰلِمِیۡنَ ﴿۲۹﴾    
+কানযুল ঈমান    
+তারা বললো, ‘পবিত্রতা আমাদের রবের, নিশ্চয় আমরা যালিম ছিলাম।’    
+ইরফানুল কুরআন    
+২৯. (তখন) তারা বলতে লাগলো, ‘আমাদের প্রতিপালক পূতঃপবিত্র, নিশ্চয়ই আমরা তো ছিলাম সীমালঙ্ঘনকারী’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">قَالُوۡا سُبۡحٰنَ رَبِّنَاۤ  اِنَّا کُنَّا ظٰلِمِیۡنَ ﴿۲۹﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২৯. তারা বললো, ‘পবিত্রতা আমাদের রবের, নিশ্চয় আমরা যালিম ছিলাম।’</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২৯. (তখন) তারা বলতে লাগলো, ‘আমাদের প্রতিপালক পূতঃপবিত্র, নিশ্চয়ই আমরা তো ছিলাম সীমালঙ্ঘনকারী’।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5301">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩০    
+فَاَقۡبَلَ بَعۡضُہُمۡ عَلٰی بَعۡضٍ یَّتَلَاوَمُوۡنَ ﴿۳۰﴾    
+কানযুল ঈমান    
+এখন একে অপরের দিকে দোষারোপ করতে করতে মনোযোগ ফেরালো।    
+ইরফানুল কুরআন    
+৩০. সুতরাং তারা একে অপরকে তিরস্কার করতে লাগলো।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩০    
+فَاَقۡبَلَ بَعۡضُہُمۡ عَلٰی بَعۡضٍ یَّتَلَاوَمُوۡنَ ﴿۳۰﴾    
+কানযুল ঈমান    
+এখন একে অপরের দিকে দোষারোপ করতে করতে মনোযোগ ফেরালো।    
+ইরফানুল কুরআন    
+৩০. সুতরাং তারা একে অপরকে তিরস্কার করতে লাগলো।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَاَقۡبَلَ بَعۡضُہُمۡ عَلٰی بَعۡضٍ یَّتَلَاوَمُوۡنَ ﴿۳۰﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩০. এখন একে অপরের দিকে দোষারোপ করতে করতে মনোযোগ ফেরালো।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩০. সুতরাং তারা একে অপরকে তিরস্কার করতে লাগলো।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5302">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩১    
+قَالُوۡا یٰوَیۡلَنَاۤ  اِنَّا کُنَّا طٰغِیۡنَ ﴿۳۱﴾    
+কানযুল ঈমান    
+তারা বললো, ‘হায়রে ধ্বংস আমাদের! আমরা অবাধ্য ছিলাম।    
+ইরফানুল কুরআন    
+৩১. বলতে লাগলো, ‘হায় আমাদের দুর্ভাগ্য! নিশ্চয়ই আমরাই অবাধ্য ও বিদ্রোহী।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩১    
+قَالُوۡا یٰوَیۡلَنَاۤ  اِنَّا کُنَّا طٰغِیۡنَ ﴿۳۱﴾    
+কানযুল ঈমান    
+তারা বললো, ‘হায়রে ধ্বংস আমাদের! আমরা অবাধ্য ছিলাম।    
+ইরফানুল কুরআন    
+৩১. বলতে লাগলো, ‘হায় আমাদের দুর্ভাগ্য! নিশ্চয়ই আমরাই অবাধ্য ও বিদ্রোহী।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">قَالُوۡا یٰوَیۡلَنَاۤ  اِنَّا کُنَّا طٰغِیۡنَ ﴿۳۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩১. তারা বললো, ‘হায়রে ধ্বংস আমাদের! আমরা অবাধ্য ছিলাম।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩১. বলতে লাগলো, ‘হায় আমাদের দুর্ভাগ্য! নিশ্চয়ই আমরাই অবাধ্য ও বিদ্রোহী।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5303">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩২    
+عَسٰی رَبُّنَاۤ  اَنۡ یُّبۡدِلَنَا خَیۡرًا  مِّنۡہَاۤ  اِنَّاۤ اِلٰی  رَبِّنَا  رٰغِبُوۡنَ ﴿۳۲﴾    
+কানযুল ঈমান    
+আশাকরি, আমাদেরকে আমাদের রব তদপেক্ষা উত্তম বিনিময় দান করবেন; আমরা আমাদের রবের প্রতি আকৃষ্ট হচ্ছি’।    
+ইরফানুল কুরআন    
+৩২. সম্ভবতঃ আমাদের প্রতিপালক আমাদেরকে এর পরিবর্তে এ থেকে উৎকৃষ্টতর কিছু দান করবেন। নিশ্চয়ই আমরা আমাদের প্রতিপালকের দিকে প্রত্যাবর্তন করছি।’    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩২    
+عَسٰی رَبُّنَاۤ  اَنۡ یُّبۡدِلَنَا خَیۡرًا  مِّنۡہَاۤ  اِنَّاۤ اِلٰی  رَبِّنَا  رٰغِبُوۡنَ ﴿۳۲﴾    
+কানযুল ঈমান    
+আশাকরি, আমাদেরকে আমাদের রব তদপেক্ষা উত্তম বিনিময় দান করবেন; আমরা আমাদের রবের প্রতি আকৃষ্ট হচ্ছি’।    
+ইরফানুল কুরআন    
+৩২. সম্ভবতঃ আমাদের প্রতিপালক আমাদেরকে এর পরিবর্তে এ থেকে উৎকৃষ্টতর কিছু দান করবেন। নিশ্চয়ই আমরা আমাদের প্রতিপালকের দিকে প্রত্যাবর্তন করছি।’    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">عَسٰی رَبُّنَاۤ  اَنۡ یُّبۡدِلَنَا خَیۡرًا  مِّنۡہَاۤ  اِنَّاۤ اِلٰی  رَبِّنَا  رٰغِبُوۡنَ ﴿۳۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩২. আশাকরি, আমাদেরকে আমাদের রব তদপেক্ষা উত্তম বিনিময় দান করবেন; আমরা আমাদের রবের প্রতি আকৃষ্ট হচ্ছি’।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩২. সম্ভবতঃ আমাদের প্রতিপালক আমাদেরকে এর পরিবর্তে এ থেকে উৎকৃষ্টতর কিছু দান করবেন। নিশ্চয়ই আমরা আমাদের প্রতিপালকের দিকে প্রত্যাবর্তন করছি।’</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5304">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৩    
+کَذٰلِکَ الۡعَذَابُ ؕ وَ لَعَذَابُ الۡاٰخِرَۃِ اَکۡبَرُ ۘ لَوۡ  کَانُوۡا  یَعۡلَمُوۡنَ ﴿۳۳﴾    
+কানযুল ঈমান    
+শাস্তি এমনই হয়; নিশ্চয় পরকালের শাস্তি সর্বাপেক্ষা কঠিন; কতোই উত্তম ছিলো যদি তারা জানতো!    
+ইরফানুল কুরআন    
+৩৩. শাস্তি এরূপই হয়, আর বাস্তবিকই পরকালের শাস্তি (এর চেয়ে) কঠিনতর। হায়! যদি তারা জানতো!    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৩    
+کَذٰلِکَ الۡعَذَابُ ؕ وَ لَعَذَابُ الۡاٰخِرَۃِ اَکۡبَرُ ۘ لَوۡ  کَانُوۡا  یَعۡلَمُوۡنَ ﴿۳۳﴾    
+কানযুল ঈমান    
+শাস্তি এমনই হয়; নিশ্চয় পরকালের শাস্তি সর্বাপেক্ষা কঠিন; কতোই উত্তম ছিলো যদি তারা জানতো!    
+ইরফানুল কুরআন    
+৩৩. শাস্তি এরূপই হয়, আর বাস্তবিকই পরকালের শাস্তি (এর চেয়ে) কঠিনতর। হায়! যদি তারা জানতো!    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">کَذٰلِکَ الۡعَذَابُ ؕ وَ لَعَذَابُ الۡاٰخِرَۃِ اَکۡبَرُ ۘ لَوۡ  کَانُوۡا  یَعۡلَمُوۡنَ ﴿۳۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩৩. শাস্তি এমনই হয়; নিশ্চয় পরকালের শাস্তি সর্বাপেক্ষা কঠিন; কতোই উত্তম ছিলো যদি তারা জানতো!</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩৩. শাস্তি এরূপই হয়, আর বাস্তবিকই পরকালের শাস্তি (এর চেয়ে) কঠিনতর। হায়! যদি তারা জানতো!</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5305">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৪    
+اِنَّ  لِلۡمُتَّقِیۡنَ عِنۡدَ رَبِّہِمۡ جَنّٰتِ النَّعِیۡمِ ﴿۳۴﴾    
+কানযুল ঈমান    
+নিশ্চয় ভীতিসম্পন্নদের জন্য তাদের রবের নিকট শান্তির বাগানসমূহ রয়েছে।    
+ইরফানুল কুরআন    
+৩৪. নিশ্চয়ই পরহেযগারদের জন্যে তাদের প্রতিপালকের নিকট রয়েছে নিয়ামতপূর্ণ উদ্যান।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৪    
+اِنَّ  لِلۡمُتَّقِیۡنَ عِنۡدَ رَبِّہِمۡ جَنّٰتِ النَّعِیۡمِ ﴿۳۴﴾    
+কানযুল ঈমান    
+নিশ্চয় ভীতিসম্পন্নদের জন্য তাদের রবের নিকট শান্তির বাগানসমূহ রয়েছে।    
+ইরফানুল কুরআন    
+৩৪. নিশ্চয়ই পরহেযগারদের জন্যে তাদের প্রতিপালকের নিকট রয়েছে নিয়ামতপূর্ণ উদ্যান।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّ  لِلۡمُتَّقِیۡنَ عِنۡدَ رَبِّہِمۡ جَنّٰتِ النَّعِیۡمِ ﴿۳۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩৪. নিশ্চয় ভীতিসম্পন্নদের জন্য তাদের রবের নিকট শান্তির বাগানসমূহ রয়েছে।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩৪. নিশ্চয়ই পরহেযগারদের জন্যে তাদের প্রতিপালকের নিকট রয়েছে নিয়ামতপূর্ণ উদ্যান।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5306">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৫    
+اَفَنَجۡعَلُ الۡمُسۡلِمِیۡنَ کَالۡمُجۡرِمِیۡنَ ﴿ؕ۳۵﴾    
+কানযুল ঈমান    
+আমি কি মুসলমানদেরকে অপরাধীদের মতো করে দেবো?    
+ইরফানুল কুরআন    
+৩৫. আমরা কি আনুগত্যশীলদেরকে অবাধ্যদের ন্যায় (বঞ্চিত) করবো?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৫    
+اَفَنَجۡعَلُ الۡمُسۡلِمِیۡنَ کَالۡمُجۡرِمِیۡنَ ﴿ؕ۳۵﴾    
+কানযুল ঈমান    
+আমি কি মুসলমানদেরকে অপরাধীদের মতো করে দেবো?    
+ইরফানুল কুরআন    
+৩৫. আমরা কি আনুগত্যশীলদেরকে অবাধ্যদের ন্যায় (বঞ্চিত) করবো?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَفَنَجۡعَلُ الۡمُسۡلِمِیۡنَ کَالۡمُجۡرِمِیۡنَ ﴿ؕ۳۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩৫. আমি কি মুসলমানদেরকে অপরাধীদের মতো করে দেবো?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩৫. আমরা কি আনুগত্যশীলদেরকে অবাধ্যদের ন্যায় (বঞ্চিত) করবো?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5307">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৬    
+مَا  لَکُمۡ ٝ  کَیۡفَ تَحۡکُمُوۡنَ ﴿ۚ۳۶﴾    
+কানযুল ঈমান    
+তোমাদের কি হয়েছে, কেমন মন্তব্য করছো?    
+ইরফানুল কুরআন    
+৩৬. তোমাদের কী হলো, তোমরা কেমন ফায়সালা করছো?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৬    
+مَا  لَکُمۡ ٝ  کَیۡفَ تَحۡکُمُوۡنَ ﴿ۚ۳۶﴾    
+কানযুল ঈমান    
+তোমাদের কি হয়েছে, কেমন মন্তব্য করছো?    
+ইরফানুল কুরআন    
+৩৬. তোমাদের কী হলো, তোমরা কেমন ফায়সালা করছো?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">مَا  لَکُمۡ ٝ  کَیۡفَ تَحۡکُمُوۡنَ ﴿ۚ۳۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩৬. তোমাদের কি হয়েছে, কেমন মন্তব্য করছো?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩৬. তোমাদের কী হলো, তোমরা কেমন ফায়সালা করছো?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5308">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৭    
+اَمۡ  لَکُمۡ  کِتٰبٌ فِیۡہِ  تَدۡرُسُوۡنَ ﴿ۙ۳۷﴾    
+কানযুল ঈমান    
+তোমাদের কি কোন কিতাব আছে, তাতে অধ্যয়ণ করছো    
+ইরফানুল কুরআন    
+৩৭. তোমাদের নিকট কি কোনো কিতাব আছে, যাতে তোমরা (এই) অধ্যয়ন করছো    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৭    
+اَمۡ  لَکُمۡ  کِتٰبٌ فِیۡہِ  تَدۡرُسُوۡنَ ﴿ۙ۳۷﴾    
+কানযুল ঈমান    
+তোমাদের কি কোন কিতাব আছে, তাতে অধ্যয়ণ করছো    
+ইরফানুল কুরআন    
+৩৭. তোমাদের নিকট কি কোনো কিতাব আছে, যাতে তোমরা (এই) অধ্যয়ন করছো    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَمۡ  لَکُمۡ  کِتٰبٌ فِیۡہِ  تَدۡرُسُوۡنَ ﴿ۙ۳۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩৭. তোমাদের কি কোন কিতাব আছে, তাতে অধ্যয়ণ করছো</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩৭. তোমাদের নিকট কি কোনো কিতাব আছে, যাতে তোমরা (এই) অধ্যয়ন করছো</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩৮</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5309">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৮    
+اِنَّ  لَکُمۡ  فِیۡہِ  لَمَا تَخَیَّرُوۡنَ ﴿ۚ۳۸﴾    
+কানযুল ঈমান    
+যে, তোমাদের জন্য তাতে রয়েছে যা তোমরা পছন্দ করো?    
+ইরফানুল কুরআন    
+৩৮. যে, তোমাদের জন্যে তাতে তা-ই রয়েছে, যা তোমরা পছন্দ করো?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৮    
+اِنَّ  لَکُمۡ  فِیۡہِ  لَمَا تَخَیَّرُوۡنَ ﴿ۚ۳۸﴾    
+কানযুল ঈমান    
+যে, তোমাদের জন্য তাতে রয়েছে যা তোমরা পছন্দ করো?    
+ইরফানুল কুরআন    
+৩৮. যে, তোমাদের জন্যে তাতে তা-ই রয়েছে, যা তোমরা পছন্দ করো?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّ  لَکُمۡ  فِیۡہِ  لَمَا تَخَیَّرُوۡنَ ﴿ۚ۳۸﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩৮. যে, তোমাদের জন্য তাতে রয়েছে যা তোমরা পছন্দ করো?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩৮. যে, তোমাদের জন্যে তাতে তা-ই রয়েছে, যা তোমরা পছন্দ করো?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩৯</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5310">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৩৯    
+اَمۡ لَکُمۡ  اَیۡمَانٌ عَلَیۡنَا بَالِغَۃٌ  اِلٰی یَوۡمِ الۡقِیٰمَۃِ ۙ اِنَّ  لَکُمۡ لَمَا تَحۡکُمُوۡنَ ﴿ۚ۳۹﴾    
+কানযুল ঈমান    
+না, তোমাদের জন্য আমার উপর কোন শপথ রয়েছে, যা ক্বিয়ামত পর্যন্ত পৌঁছে যে, তোমরা লাভ করবে যা কিছু তোমরা দাবী করছো?    
+ইরফানুল কুরআন    
+৩৯. নাকি তোমাদের জন্যে আমাদের পক্ষ থেকে (এমন) কোনো দৃঢ় অঙ্গীকার রয়েছে, যা কিয়ামত পর্যন্ত বলবৎ থাকবে (যার মাধ্যমে আমরা বাধ্য) যে, তোমরা নিজেদের জন্যে যা সিদ্ধান্ত নেবে তাই পাবে?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৩৯    
+اَمۡ لَکُمۡ  اَیۡمَانٌ عَلَیۡنَا بَالِغَۃٌ  اِلٰی یَوۡمِ الۡقِیٰمَۃِ ۙ اِنَّ  لَکُمۡ لَمَا تَحۡکُمُوۡنَ ﴿ۚ۳۹﴾    
+কানযুল ঈমান    
+না, তোমাদের জন্য আমার উপর কোন শপথ রয়েছে, যা ক্বিয়ামত পর্যন্ত পৌঁছে যে, তোমরা লাভ করবে যা কিছু তোমরা দাবী করছো?    
+ইরফানুল কুরআন    
+৩৯. নাকি তোমাদের জন্যে আমাদের পক্ষ থেকে (এমন) কোনো দৃঢ় অঙ্গীকার রয়েছে, যা কিয়ামত পর্যন্ত বলবৎ থাকবে (যার মাধ্যমে আমরা বাধ্য) যে, তোমরা নিজেদের জন্যে যা সিদ্ধান্ত নেবে তাই পাবে?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَمۡ لَکُمۡ  اَیۡمَانٌ عَلَیۡنَا بَالِغَۃٌ  اِلٰی یَوۡمِ الۡقِیٰمَۃِ ۙ اِنَّ  لَکُمۡ لَمَا تَحۡکُمُوۡنَ ﴿ۚ۳۹﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩৯. না, তোমাদের জন্য আমার উপর কোন শপথ রয়েছে, যা ক্বিয়ামত পর্যন্ত পৌঁছে যে, তোমরা লাভ করবে যা কিছু তোমরা দাবী করছো?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৩৯. নাকি তোমাদের জন্যে আমাদের পক্ষ থেকে (এমন) কোনো দৃঢ় অঙ্গীকার রয়েছে, যা কিয়ামত পর্যন্ত বলবৎ থাকবে (যার মাধ্যমে আমরা বাধ্য) যে, তোমরা নিজেদের জন্যে যা সিদ্ধান্ত নেবে তাই পাবে?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5311">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪০    
+سَلۡہُمۡ  اَیُّہُمۡ  بِذٰلِکَ  زَعِیۡمٌ ﴿ۚۛ۴۰﴾    
+কানযুল ঈমান    
+আপনি তাদেরকে জিজ্ঞাসা করুন তাদের মধ্যে কে সেটার জামিনদার?    
+ইরফানুল কুরআন    
+৪০. তাদেরকে জিজ্ঞেস করুন যে, তাদের কে এ (শপথের বিষয়ে) দায়িত্বশীল!    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪০    
+سَلۡہُمۡ  اَیُّہُمۡ  بِذٰلِکَ  زَعِیۡمٌ ﴿ۚۛ۴۰﴾    
+কানযুল ঈমান    
+আপনি তাদেরকে জিজ্ঞাসা করুন তাদের মধ্যে কে সেটার জামিনদার?    
+ইরফানুল কুরআন    
+৪০. তাদেরকে জিজ্ঞেস করুন যে, তাদের কে এ (শপথের বিষয়ে) দায়িত্বশীল!    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">سَلۡہُمۡ  اَیُّہُمۡ  بِذٰلِکَ  زَعِیۡمٌ ﴿ۚۛ۴۰﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪০. আপনি তাদেরকে জিজ্ঞাসা করুন তাদের মধ্যে কে সেটার জামিনদার?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪০. তাদেরকে জিজ্ঞেস করুন যে, তাদের কে এ (শপথের বিষয়ে) দায়িত্বশীল!</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5312">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪১    
+اَمۡ  لَہُمۡ  شُرَکَآءُ ۚۛ فَلۡیَاۡتُوۡا بِشُرَکَآئِہِمۡ اِنۡ  کَانُوۡا صٰدِقِیۡنَ ﴿۴۱﴾    
+কানযুল ঈমান    
+না, তাদের নিকট কোন শরীক আছে? (যদি থাকে) তাহলে যেন নিজেদের শরীকদেরকে নিয়ে আসে, যদি তারা সত্যবাদী হয়।    
+ইরফানুল কুরআন    
+৪১. নাকি তাদের আরো কিছু অংশীদার(ও) রয়েছে? থাকলে তারা তাদের অংশীদারদেরকে উপস্থিত করুক, যদি তারা সত্যবাদী হয়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪১    
+اَمۡ  لَہُمۡ  شُرَکَآءُ ۚۛ فَلۡیَاۡتُوۡا بِشُرَکَآئِہِمۡ اِنۡ  کَانُوۡا صٰدِقِیۡنَ ﴿۴۱﴾    
+কানযুল ঈমান    
+না, তাদের নিকট কোন শরীক আছে? (যদি থাকে) তাহলে যেন নিজেদের শরীকদেরকে নিয়ে আসে, যদি তারা সত্যবাদী হয়।    
+ইরফানুল কুরআন    
+৪১. নাকি তাদের আরো কিছু অংশীদার(ও) রয়েছে? থাকলে তারা তাদের অংশীদারদেরকে উপস্থিত করুক, যদি তারা সত্যবাদী হয়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَمۡ  لَہُمۡ  شُرَکَآءُ ۚۛ فَلۡیَاۡتُوۡا بِشُرَکَآئِہِمۡ اِنۡ  کَانُوۡا صٰدِقِیۡنَ ﴿۴۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪১. না, তাদের নিকট কোন শরীক আছে? (যদি থাকে) তাহলে যেন নিজেদের শরীকদেরকে নিয়ে আসে, যদি তারা সত্যবাদী হয়।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪১. নাকি তাদের আরো কিছু অংশীদার(ও) রয়েছে? থাকলে তারা তাদের অংশীদারদেরকে উপস্থিত করুক, যদি তারা সত্যবাদী হয়।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5313">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪২    
+یَوۡمَ  یُکۡشَفُ عَنۡ سَاقٍ وَّ  یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  فَلَا یَسۡتَطِیۡعُوۡنَ ﴿ۙ۴۲﴾    
+কানযুল ঈমান    
+যে দিন এক ‘সাক্ব’ উন্মুক্ত করা হবে (যার প্রকৃত অর্থ আল্লাহ্‌ই জানেন) এবং সাজদার প্রতি আহ্বান করা হবে, অতঃপর তা করতে পারবে না;    
+ইরফানুল কুরআন    
+৪২. যেদিন পায়ের গোছা (অর্থাৎ কিয়ামতের ভয়াবহ প্রচন্ডতা) থেকে পর্দা উন্মোচিত হয়ে পড়বে এবং এসব (নাফরমান) লোকদেরকে সেজদা করতে আহ্বান করা হবে, তখন তারা সক্ষম হবে না।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪২    
+یَوۡمَ  یُکۡشَفُ عَنۡ سَاقٍ وَّ  یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  فَلَا یَسۡتَطِیۡعُوۡنَ ﴿ۙ۴۲﴾    
+কানযুল ঈমান    
+যে দিন এক ‘সাক্ব’ উন্মুক্ত করা হবে (যার প্রকৃত অর্থ আল্লাহ্‌ই জানেন) এবং সাজদার প্রতি আহ্বান করা হবে, অতঃপর তা করতে পারবে না;    
+ইরফানুল কুরআন    
+৪২. যেদিন পায়ের গোছা (অর্থাৎ কিয়ামতের ভয়াবহ প্রচন্ডতা) থেকে পর্দা উন্মোচিত হয়ে পড়বে এবং এসব (নাফরমান) লোকদেরকে সেজদা করতে আহ্বান করা হবে, তখন তারা সক্ষম হবে না।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">یَوۡمَ  یُکۡشَفُ عَنۡ سَاقٍ وَّ  یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  فَلَا یَسۡتَطِیۡعُوۡنَ ﴿ۙ۴۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪২. যে দিন এক ‘সাক্ব’ উন্মুক্ত করা হবে (যার প্রকৃত অর্থ আল্লাহ্‌ই জানেন) এবং সাজদার প্রতি আহ্বান করা হবে, অতঃপর তা করতে পারবে না;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪২. যেদিন পায়ের গোছা (অর্থাৎ কিয়ামতের ভয়াবহ প্রচন্ডতা) থেকে পর্দা উন্মোচিত হয়ে পড়বে এবং এসব (নাফরমান) লোকদেরকে সেজদা করতে আহ্বান করা হবে, তখন তারা সক্ষম হবে না।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5314">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৩    
+خَاشِعَۃً  اَبۡصَارُہُمۡ تَرۡہَقُہُمۡ ذِلَّۃٌ ؕ وَ قَدۡ کَانُوۡا یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  وَ ہُمۡ سٰلِمُوۡنَ ﴿۴۳﴾    
+কানযুল ঈমান    
+নজর নিচু করে, তাদের উপর লাঞ্ছনা আরোহণ করে থাকবে এবং নিশ্চয় তাদেরকে দুনিয়ায় সাজদার প্রতি আহ্বান করা হতো যখন তারা সুস্থ ছিলো।    
+ইরফানুল কুরআন    
+৪৩. (ভয়ে ও লজ্জায়) তাদের দৃষ্টি অবনত থাকবে, (এবং) তাদেরকে লাঞ্ছনা আচ্ছন্ন করবে। অথচ তাদেরকে (পৃথিবীতেও) সেজদার জন্যে আহ্বান করা হতো, যখন তারা সুস্থ ও স্বাভাবিক ছিল। (কিন্তু তারা সেজদা করতে অস্বীকৃতি জানাতো।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৩    
+خَاشِعَۃً  اَبۡصَارُہُمۡ تَرۡہَقُہُمۡ ذِلَّۃٌ ؕ وَ قَدۡ کَانُوۡا یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  وَ ہُمۡ سٰلِمُوۡنَ ﴿۴۳﴾    
+কানযুল ঈমান    
+নজর নিচু করে, তাদের উপর লাঞ্ছনা আরোহণ করে থাকবে এবং নিশ্চয় তাদেরকে দুনিয়ায় সাজদার প্রতি আহ্বান করা হতো যখন তারা সুস্থ ছিলো।    
+ইরফানুল কুরআন    
+৪৩. (ভয়ে ও লজ্জায়) তাদের দৃষ্টি অবনত থাকবে, (এবং) তাদেরকে লাঞ্ছনা আচ্ছন্ন করবে। অথচ তাদেরকে (পৃথিবীতেও) সেজদার জন্যে আহ্বান করা হতো, যখন তারা সুস্থ ও স্বাভাবিক ছিল। (কিন্তু তারা সেজদা করতে অস্বীকৃতি জানাতো।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">خَاشِعَۃً  اَبۡصَارُہُمۡ تَرۡہَقُہُمۡ ذِلَّۃٌ ؕ وَ قَدۡ کَانُوۡا یُدۡعَوۡنَ  اِلَی السُّجُوۡدِ  وَ ہُمۡ سٰلِمُوۡنَ ﴿۴۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪৩. নজর নিচু করে, তাদের উপর লাঞ্ছনা আরোহণ করে থাকবে এবং নিশ্চয় তাদেরকে দুনিয়ায় সাজদার প্রতি আহ্বান করা হতো যখন তারা সুস্থ ছিলো।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪৩. (ভয়ে ও লজ্জায়) তাদের দৃষ্টি অবনত থাকবে, (এবং) তাদেরকে লাঞ্ছনা আচ্ছন্ন করবে। অথচ তাদেরকে (পৃথিবীতেও) সেজদার জন্যে আহ্বান করা হতো, যখন তারা সুস্থ ও স্বাভাবিক ছিল। (কিন্তু তারা সেজদা করতে অস্বীকৃতি জানাতো।)</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5315">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৪    
+فَذَرۡنِیۡ  وَ مَنۡ یُّکَذِّبُ بِہٰذَا  الۡحَدِیۡثِ ؕ سَنَسۡتَدۡرِجُہُمۡ مِّنۡ حَیۡثُ لَا یَعۡلَمُوۡنَ ﴿ۙ۴۴﴾    
+কানযুল ঈমান    
+সুতরাং যে কেউ এ বাণীকে অস্বীকার করে, তাকে আমার উপর ছেড়ে দাও; অনতিবিলম্বে আমি তাদেরকে ধীরে ধীরে নিয়ে যাবো সে স্থান থেকে তাদের খবরও থাকবে না;    
+ইরফানুল কুরআন    
+৪৪. অতঃপর (হে সম্মানিত হাবীব! প্রতিশোধের জন্যে) আমাকে এবং ওই ব্যক্তিকে ছেড়ে দিন, যে এ বাণীকে মিথ্যাপ্রতিপন্ন করে। এখন আমি তাদেরকে ধীরে ধীরে এমনভাবে (ধ্বংসের দিকে) নিয়ে যাবো যে, তারা বুঝতেও পারবে না।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৪    
+فَذَرۡنِیۡ  وَ مَنۡ یُّکَذِّبُ بِہٰذَا  الۡحَدِیۡثِ ؕ سَنَسۡتَدۡرِجُہُمۡ مِّنۡ حَیۡثُ لَا یَعۡلَمُوۡنَ ﴿ۙ۴۴﴾    
+কানযুল ঈমান    
+সুতরাং যে কেউ এ বাণীকে অস্বীকার করে, তাকে আমার উপর ছেড়ে দাও; অনতিবিলম্বে আমি তাদেরকে ধীরে ধীরে নিয়ে যাবো সে স্থান থেকে তাদের খবরও থাকবে না;    
+ইরফানুল কুরআন    
+৪৪. অতঃপর (হে সম্মানিত হাবীব! প্রতিশোধের জন্যে) আমাকে এবং ওই ব্যক্তিকে ছেড়ে দিন, যে এ বাণীকে মিথ্যাপ্রতিপন্ন করে। এখন আমি তাদেরকে ধীরে ধীরে এমনভাবে (ধ্বংসের দিকে) নিয়ে যাবো যে, তারা বুঝতেও পারবে না।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَذَرۡنِیۡ  وَ مَنۡ یُّکَذِّبُ بِہٰذَا  الۡحَدِیۡثِ ؕ سَنَسۡتَدۡرِجُہُمۡ مِّنۡ حَیۡثُ لَا یَعۡلَمُوۡنَ ﴿ۙ۴۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪৪. সুতরাং যে কেউ এ বাণীকে অস্বীকার করে, তাকে আমার উপর ছেড়ে দাও; অনতিবিলম্বে আমি তাদেরকে ধীরে ধীরে নিয়ে যাবো সে স্থান থেকে তাদের খবরও থাকবে না;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪৪. অতঃপর (হে সম্মানিত হাবীব! প্রতিশোধের জন্যে) আমাকে এবং ওই ব্যক্তিকে ছেড়ে দিন, যে এ বাণীকে মিথ্যাপ্রতিপন্ন করে। এখন আমি তাদেরকে ধীরে ধীরে এমনভাবে (ধ্বংসের দিকে) নিয়ে যাবো যে, তারা বুঝতেও পারবে না।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5316">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৫    
+وَ اُمۡلِیۡ لَہُمۡ ؕ اِنَّ  کَیۡدِیۡ  مَتِیۡنٌ ﴿۴۵﴾    
+কানযুল ঈমান    
+এবং আমি তাদেরকে অবকাশ দেবো; নিঃসন্দেহে আমার গোপন ব্যবস্থাপনা বড়ই পাকাপোক্ত।    
+ইরফানুল কুরআন    
+৪৫. আর আমি তাদেরকে অবকাশ দিচ্ছি, নিশ্চয়ই আমার কৌশল অত্যন্ত বলিষ্ঠ।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৫    
+وَ اُمۡلِیۡ لَہُمۡ ؕ اِنَّ  کَیۡدِیۡ  مَتِیۡنٌ ﴿۴۵﴾    
+কানযুল ঈমান    
+এবং আমি তাদেরকে অবকাশ দেবো; নিঃসন্দেহে আমার গোপন ব্যবস্থাপনা বড়ই পাকাপোক্ত।    
+ইরফানুল কুরআন    
+৪৫. আর আমি তাদেরকে অবকাশ দিচ্ছি, নিশ্চয়ই আমার কৌশল অত্যন্ত বলিষ্ঠ।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ اُمۡلِیۡ لَہُمۡ ؕ اِنَّ  کَیۡدِیۡ  مَتِیۡنٌ ﴿۴۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪৫. এবং আমি তাদেরকে অবকাশ দেবো; নিঃসন্দেহে আমার গোপন ব্যবস্থাপনা বড়ই পাকাপোক্ত।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪৫. আর আমি তাদেরকে অবকাশ দিচ্ছি, নিশ্চয়ই আমার কৌশল অত্যন্ত বলিষ্ঠ।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5317">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৬    
+اَمۡ تَسۡـَٔلُہُمۡ  اَجۡرًا  فَہُمۡ  مِّنۡ مَّغۡرَمٍ مُّثۡقَلُوۡنَ ﴿ۚ۴۶﴾    
+কানযুল ঈমান    
+আপনি কি তাদের নিকট পারিশ্রমিক চাচ্ছেন যে, তারা জরিমানার বোঝা দ্বারা চাপা পড়ে আছে?    
+ইরফানুল কুরআন    
+৪৬. আপনি কি (রিসালাত পৌঁছে দেবার বিনিময়ে) তাদের কাছে কোনো পারিশ্রমিক চাচ্ছেন যে, তারা ঋণের (বোঝায়) ভারাক্রান্ত হয়ে পড়ছে?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৬    
+اَمۡ تَسۡـَٔلُہُمۡ  اَجۡرًا  فَہُمۡ  مِّنۡ مَّغۡرَمٍ مُّثۡقَلُوۡنَ ﴿ۚ۴۶﴾    
+কানযুল ঈমান    
+আপনি কি তাদের নিকট পারিশ্রমিক চাচ্ছেন যে, তারা জরিমানার বোঝা দ্বারা চাপা পড়ে আছে?    
+ইরফানুল কুরআন    
+৪৬. আপনি কি (রিসালাত পৌঁছে দেবার বিনিময়ে) তাদের কাছে কোনো পারিশ্রমিক চাচ্ছেন যে, তারা ঋণের (বোঝায়) ভারাক্রান্ত হয়ে পড়ছে?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَمۡ تَسۡـَٔلُہُمۡ  اَجۡرًا  فَہُمۡ  مِّنۡ مَّغۡرَمٍ مُّثۡقَلُوۡنَ ﴿ۚ۴۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪৬. আপনি কি তাদের নিকট পারিশ্রমিক চাচ্ছেন যে, তারা জরিমানার বোঝা দ্বারা চাপা পড়ে আছে?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪৬. আপনি কি (রিসালাত পৌঁছে দেবার বিনিময়ে) তাদের কাছে কোনো পারিশ্রমিক চাচ্ছেন যে, তারা ঋণের (বোঝায়) ভারাক্রান্ত হয়ে পড়ছে?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5318">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৭    
+اَمۡ عِنۡدَہُمُ  الۡغَیۡبُ فَہُمۡ یَکۡتُبُوۡنَ ﴿۴۷﴾    
+কানযুল ঈমান    
+কিংবা তাদের নিকট অদৃশ্যের জ্ঞান রয়েছে যে, তারা লিপিবদ্ধ করছে?    
+ইরফানুল কুরআন    
+৪৭. তাদের নিকট কি অদৃশ্যের জ্ঞান আছে যে, তারা (এর উপর ভিত্তি করে নিজেদের ফায়সালা) লিখে রাখে?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৭    
+اَمۡ عِنۡدَہُمُ  الۡغَیۡبُ فَہُمۡ یَکۡتُبُوۡنَ ﴿۴۷﴾    
+কানযুল ঈমান    
+কিংবা তাদের নিকট অদৃশ্যের জ্ঞান রয়েছে যে, তারা লিপিবদ্ধ করছে?    
+ইরফানুল কুরআন    
+৪৭. তাদের নিকট কি অদৃশ্যের জ্ঞান আছে যে, তারা (এর উপর ভিত্তি করে নিজেদের ফায়সালা) লিখে রাখে?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اَمۡ عِنۡدَہُمُ  الۡغَیۡبُ فَہُمۡ یَکۡتُبُوۡنَ ﴿۴۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪৭. কিংবা তাদের নিকট অদৃশ্যের জ্ঞান রয়েছে যে, তারা লিপিবদ্ধ করছে?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪৭. তাদের নিকট কি অদৃশ্যের জ্ঞান আছে যে, তারা (এর উপর ভিত্তি করে নিজেদের ফায়সালা) লিখে রাখে?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪৮</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5319">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৮    
+فَاصۡبِرۡ  لِحُکۡمِ رَبِّکَ وَ لَا تَکُنۡ کَصَاحِبِ الۡحُوۡتِ ۘ اِذۡ  نَادٰی وَ ہُوَ مَکۡظُوۡمٌ ﴿ؕ۴۸﴾    
+কানযুল ঈমান    
+অতএব আপনি আপন রবের নির্দেশের অপেক্ষা করুন! এবং ওই মৎস্যের পেটে অবস্থানকারীর মতো হবেন না; যখন এমতাস্থায় আহ্বান করেছিলো যে, তার অন্তর সংকুচিত হচ্ছিলো।    
+ইরফানুল কুরআন    
+৪৮. অতঃপর আপনি আপনার প্রতিপালকের নির্দেশের অপেক্ষায় ধৈর্য ধারণ করুন এবং মৎস-সহচর (পয়গম্বর ইউনুস আলাইহিস সালাম)-এঁর মতো (চিন্তিত) হবেন না। যখন তিনি (আল্লাহ্কে) ডাকলেন (তাঁর সম্প্রদায়ের বিরুদ্ধে) ক্রোধ ও মর্মযন্ত্রণায় আড়ষ্ট অবস্থায়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৮    
+فَاصۡبِرۡ  لِحُکۡمِ رَبِّکَ وَ لَا تَکُنۡ کَصَاحِبِ الۡحُوۡتِ ۘ اِذۡ  نَادٰی وَ ہُوَ مَکۡظُوۡمٌ ﴿ؕ۴۸﴾    
+কানযুল ঈমান    
+অতএব আপনি আপন রবের নির্দেশের অপেক্ষা করুন! এবং ওই মৎস্যের পেটে অবস্থানকারীর মতো হবেন না; যখন এমতাস্থায় আহ্বান করেছিলো যে, তার অন্তর সংকুচিত হচ্ছিলো।    
+ইরফানুল কুরআন    
+৪৮. অতঃপর আপনি আপনার প্রতিপালকের নির্দেশের অপেক্ষায় ধৈর্য ধারণ করুন এবং মৎস-সহচর (পয়গম্বর ইউনুস আলাইহিস সালাম)-এঁর মতো (চিন্তিত) হবেন না। যখন তিনি (আল্লাহ্কে) ডাকলেন (তাঁর সম্প্রদায়ের বিরুদ্ধে) ক্রোধ ও মর্মযন্ত্রণায় আড়ষ্ট অবস্থায়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَاصۡبِرۡ  لِحُکۡمِ رَبِّکَ وَ لَا تَکُنۡ کَصَاحِبِ الۡحُوۡتِ ۘ اِذۡ  نَادٰی وَ ہُوَ مَکۡظُوۡمٌ ﴿ؕ۴۸﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪৮. অতএব আপনি আপন রবের নির্দেশের অপেক্ষা করুন! এবং ওই মৎস্যের পেটে অবস্থানকারীর মতো হবেন না; যখন এমতাস্থায় আহ্বান করেছিলো যে, তার অন্তর সংকুচিত হচ্ছিলো।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪৮. অতঃপর আপনি আপনার প্রতিপালকের নির্দেশের অপেক্ষায় ধৈর্য ধারণ করুন এবং মৎস-সহচর (পয়গম্বর ইউনুস আলাইহিস সালাম)-এঁর মতো (চিন্তিত) হবেন না। যখন তিনি (আল্লাহ্কে) ডাকলেন (তাঁর সম্প্রদায়ের বিরুদ্ধে) ক্রোধ ও মর্মযন্ত্রণায় আড়ষ্ট অবস্থায়।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪৯</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5320">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৪৯    
+لَوۡ لَاۤ  اَنۡ  تَدٰرَکَہٗ  نِعۡمَۃٌ  مِّنۡ رَّبِّہٖ لَنُبِذَ بِالۡعَرَآءِ  وَ  ہُوَ  مَذۡمُوۡمٌ ﴿۴۹﴾    
+কানযুল ঈমান    
+যদি না তার রবের অনুগ্রহ তার সহায়ক হতো, তবে অবশ্যই ময়দানে নিক্ষিপ্ত হতো অপবাদের শিকার হয়ে।    
+ইরফানুল কুরআন    
+৪৯. যদি তাঁর প্রতিপালকের অনুগ্রহ ও নিয়ামত তাঁর নিকট না পৌঁছতো, তবে অবশ্যই তিনি নিক্ষিপ্ত হতেন জনশুন্য ময়দানে এবং হতেন নিন্দিত। (কিন্তু আল্লাহ্ তাঁকে তা থেকে নিরাপদ রেখেছেন।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৪৯    
+لَوۡ لَاۤ  اَنۡ  تَدٰرَکَہٗ  نِعۡمَۃٌ  مِّنۡ رَّبِّہٖ لَنُبِذَ بِالۡعَرَآءِ  وَ  ہُوَ  مَذۡمُوۡمٌ ﴿۴۹﴾    
+কানযুল ঈমান    
+যদি না তার রবের অনুগ্রহ তার সহায়ক হতো, তবে অবশ্যই ময়দানে নিক্ষিপ্ত হতো অপবাদের শিকার হয়ে।    
+ইরফানুল কুরআন    
+৪৯. যদি তাঁর প্রতিপালকের অনুগ্রহ ও নিয়ামত তাঁর নিকট না পৌঁছতো, তবে অবশ্যই তিনি নিক্ষিপ্ত হতেন জনশুন্য ময়দানে এবং হতেন নিন্দিত। (কিন্তু আল্লাহ্ তাঁকে তা থেকে নিরাপদ রেখেছেন।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">لَوۡ لَاۤ  اَنۡ  تَدٰرَکَہٗ  نِعۡمَۃٌ  مِّنۡ رَّبِّہٖ لَنُبِذَ بِالۡعَرَآءِ  وَ  ہُوَ  مَذۡمُوۡمٌ ﴿۴۹﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪৯. যদি না তার রবের অনুগ্রহ তার সহায়ক হতো, তবে অবশ্যই ময়দানে নিক্ষিপ্ত হতো অপবাদের শিকার হয়ে।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪৯. যদি তাঁর প্রতিপালকের অনুগ্রহ ও নিয়ামত তাঁর নিকট না পৌঁছতো, তবে অবশ্যই তিনি নিক্ষিপ্ত হতেন জনশুন্য ময়দানে এবং হতেন নিন্দিত। (কিন্তু আল্লাহ্ তাঁকে তা থেকে নিরাপদ রেখেছেন।)</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৫০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5321">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৫০    
+فَاجۡتَبٰہُ  رَبُّہٗ  فَجَعَلَہٗ  مِنَ الصّٰلِحِیۡنَ ﴿۵۰﴾    
+কানযুল ঈমান    
+অতঃপর তাকে তার রব মনোনীত করে নিলেন, এবং আপন খাস নৈকট্যের উপযোগীদের অন্তর্ভুক্ত করে নিলেন।    
+ইরফানুল কুরআন    
+৫০. অতঃপর তাঁর প্রতিপালক তাঁকে মহিমান্বিত করলেন এবং (তাঁর বিশেষ নৈকট্যের অনুগ্রহে) তাঁকে সৎকর্মপরায়ণদের অন্তর্ভুক্ত করলেন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৫০    
+فَاجۡتَبٰہُ  رَبُّہٗ  فَجَعَلَہٗ  مِنَ الصّٰلِحِیۡنَ ﴿۵۰﴾    
+কানযুল ঈমান    
+অতঃপর তাকে তার রব মনোনীত করে নিলেন, এবং আপন খাস নৈকট্যের উপযোগীদের অন্তর্ভুক্ত করে নিলেন।    
+ইরফানুল কুরআন    
+৫০. অতঃপর তাঁর প্রতিপালক তাঁকে মহিমান্বিত করলেন এবং (তাঁর বিশেষ নৈকট্যের অনুগ্রহে) তাঁকে সৎকর্মপরায়ণদের অন্তর্ভুক্ত করলেন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَاجۡتَبٰہُ  رَبُّہٗ  فَجَعَلَہٗ  مِنَ الصّٰلِحِیۡنَ ﴿۵۰﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৫০. অতঃপর তাকে তার রব মনোনীত করে নিলেন, এবং আপন খাস নৈকট্যের উপযোগীদের অন্তর্ভুক্ত করে নিলেন।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৫০. অতঃপর তাঁর প্রতিপালক তাঁকে মহিমান্বিত করলেন এবং (তাঁর বিশেষ নৈকট্যের অনুগ্রহে) তাঁকে সৎকর্মপরায়ণদের অন্তর্ভুক্ত করলেন।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৫১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5322">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৫১    
+وَ اِنۡ یَّکَادُ  الَّذِیۡنَ کَفَرُوۡا لَیُزۡلِقُوۡنَکَ بِاَبۡصَارِہِمۡ  لَمَّا سَمِعُوا الذِّکۡرَ وَ یَقُوۡلُوۡنَ  اِنَّہٗ  لَمَجۡنُوۡنٌ ﴿ۘ۵۱﴾    
+কানযুল ঈমান    
+এবং অবশ্য কাফিরদেরকে তো এমনই মনে হচ্ছে যেন তাদের কু-দৃষ্টি নিক্ষেপ করে আপনার পতন ঘটাবে যখন তারা ক্বোরআন শ্রবণ করে; এবং বলে, ‘এটা অবশ্য বোধশক্তি থেকে অনেক দূরে’।    
+ইরফানুল কুরআন    
+৫১. আর নিশ্চয়ই কাফেরেরা যখন কুরআন শ্রবণ করে, মনে হয় তারা তাদের (হিংসাত্মক) দৃষ্টি দ্বারা আপনাকে ক্ষতিগ্রস্ত করবে এবং তারা বলে, ‘এ তো উন্মাদ’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৫১    
+وَ اِنۡ یَّکَادُ  الَّذِیۡنَ کَفَرُوۡا لَیُزۡلِقُوۡنَکَ بِاَبۡصَارِہِمۡ  لَمَّا سَمِعُوا الذِّکۡرَ وَ یَقُوۡلُوۡنَ  اِنَّہٗ  لَمَجۡنُوۡنٌ ﴿ۘ۵۱﴾    
+কানযুল ঈমান    
+এবং অবশ্য কাফিরদেরকে তো এমনই মনে হচ্ছে যেন তাদের কু-দৃষ্টি নিক্ষেপ করে আপনার পতন ঘটাবে যখন তারা ক্বোরআন শ্রবণ করে; এবং বলে, ‘এটা অবশ্য বোধশক্তি থেকে অনেক দূরে’।    
+ইরফানুল কুরআন    
+৫১. আর নিশ্চয়ই কাফেরেরা যখন কুরআন শ্রবণ করে, মনে হয় তারা তাদের (হিংসাত্মক) দৃষ্টি দ্বারা আপনাকে ক্ষতিগ্রস্ত করবে এবং তারা বলে, ‘এ তো উন্মাদ’।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ اِنۡ یَّکَادُ  الَّذِیۡنَ کَفَرُوۡا لَیُزۡلِقُوۡنَکَ بِاَبۡصَارِہِمۡ  لَمَّا سَمِعُوا الذِّکۡرَ وَ یَقُوۡلُوۡنَ  اِنَّہٗ  لَمَجۡنُوۡنٌ ﴿ۘ۵۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৫১. এবং অবশ্য কাফিরদেরকে তো এমনই মনে হচ্ছে যেন তাদের কু-দৃষ্টি নিক্ষেপ করে আপনার পতন ঘটাবে যখন তারা ক্বোরআন শ্রবণ করে; এবং বলে, ‘এটা অবশ্য বোধশক্তি থেকে অনেক দূরে’।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৫১. আর নিশ্চয়ই কাফেরেরা যখন কুরআন শ্রবণ করে, মনে হয় তারা তাদের (হিংসাত্মক) দৃষ্টি দ্বারা আপনাকে ক্ষতিগ্রস্ত করবে এবং তারা বলে, ‘এ তো উন্মাদ’।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৫২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5323">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল কলম আয়াত নং : ৫২    
+وَ مَا ہُوَ  اِلَّا ذِکۡرٌ  لِّلۡعٰلَمِیۡنَ ﴿۵۲﴾    
+কানযুল ঈমান    
+আর তা তো সমগ্র জাহানের জন্য উপদেশই।    
+ইরফানুল কুরআন    
+৫২.আর এ (কুরআন) তো সারা জাহানের জন্যে উপদেশ ও হেদায়াত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল কলম আয়াত নং : ৫২    
+وَ مَا ہُوَ  اِلَّا ذِکۡرٌ  لِّلۡعٰلَمِیۡنَ ﴿۵۲﴾    
+কানযুল ঈমান    
+আর তা তো সমগ্র জাহানের জন্য উপদেশই।    
+ইরফানুল কুরআন    
+৫২.আর এ (কুরআন) তো সারা জাহানের জন্যে উপদেশ ও হেদায়াত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ مَا ہُوَ  اِلَّا ذِکۡرٌ  لِّلۡعٰلَمِیۡنَ ﴿۵۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৫২. আর তা তো সমগ্র জাহানের জন্য উপদেশই।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৫২.আর এ (কুরআন) তো সারা জাহানের জন্যে উপদেশ ও হেদায়াত।</div>    
+    </div>    
+    
+  </div>    
+    
+  <div class="audio-controller" id="audioController" style="display:none;">    
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
+    <img src="next.png" onclick="playNext()" alt="Next">    
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
+  </div>    
+    
+  <script src="quranview.js"></script>    
+</body>    
+</html>    

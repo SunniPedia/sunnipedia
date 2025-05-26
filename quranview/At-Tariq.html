@@ -1,619 +1,619 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="UTF-8">
-  <title>আত তারিক</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quranview.css">
-</head>
-<body>
-  <div class="toolbar">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
-      <div class="toolbar-title" id="surahTitle">আত তারিক</div>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-    </div>
-  </div>
-
-  <div id="searchBox" style="display:none;">
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
-  </div>
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ০
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
-কানযুল ঈমান
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
-ইরফানুল কুরআন
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5932">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১
-وَ السَّمَآءِ  وَ الطَّارِقِ ۙ﴿۱﴾
-কানযুল ঈমান
-আস্‌মানের শপথ, এবং রাতে আগমনকারীর;
-ইরফানুল কুরআন
-১. শপথ আকাশের (অসীম ব্যপ্তি ও অনন্তশূন্যের) এবং শপথ রাতে (দৃশ্যমান) আগন্তুকের।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১
-وَ السَّمَآءِ  وَ الطَّارِقِ ۙ﴿۱﴾
-কানযুল ঈমান
-আস্‌মানের শপথ, এবং রাতে আগমনকারীর;
-ইরফানুল কুরআন
-১. শপথ আকাশের (অসীম ব্যপ্তি ও অনন্তশূন্যের) এবং শপথ রাতে (দৃশ্যমান) আগন্তুকের।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ السَّمَآءِ  وَ الطَّارِقِ ۙ﴿۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আস্‌মানের শপথ, এবং রাতে আগমনকারীর;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১. শপথ আকাশের (অসীম ব্যপ্তি ও অনন্তশূন্যের) এবং শপথ রাতে (দৃশ্যমান) আগন্তুকের।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5933">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ২
-وَ مَاۤ  اَدۡرٰىکَ مَا الطَّارِقُ ۙ﴿۲﴾
-কানযুল ঈমান
-এবং আপনি কি কিছু জেনেছেন, সে-ই রাতে আগমনকারী কি?
-ইরফানুল কুরআন
-২. আর আপনি কি জানেন, রাতে (দৃশ্যমান) আগন্তুক কী?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ২
-وَ مَاۤ  اَدۡرٰىکَ مَا الطَّارِقُ ۙ﴿۲﴾
-কানযুল ঈমান
-এবং আপনি কি কিছু জেনেছেন, সে-ই রাতে আগমনকারী কি?
-ইরফানুল কুরআন
-২. আর আপনি কি জানেন, রাতে (দৃশ্যমান) আগন্তুক কী?
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ مَاۤ  اَدۡرٰىکَ مَا الطَّارِقُ ۙ﴿۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং আপনি কি কিছু জেনেছেন, সে-ই রাতে আগমনকারী কি?</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">২. আর আপনি কি জানেন, রাতে (দৃশ্যমান) আগন্তুক কী?</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5934">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৩
-النَّجۡمُ الثَّاقِبُ ۙ﴿۳﴾
-কানযুল ঈমান
-(তা হচ্ছে) অত্যন্ত উজ্জ্বল তারকা।
-ইরফানুল কুরআন
+<!DOCTYPE html>    
+<html lang="bn">    
+<head>    
+  <meta charset="UTF-8">    
+  <title>আত তারিক</title>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="quranview.css">    
+</head>    
+<body>    
+  <div class="toolbar">    
+    <div style="display: flex; align-items: center; gap: 10px;">    
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
+      <div class="toolbar-title" id="surahTitle">আত তারিক</div>    
+    </div>    
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
+    </div>    
+  </div>    
+    
+  <div id="searchBox" style="display:none;">    
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
+  </div>    
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ০    
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
+কানযুল ঈমান    
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
+ইরফানুল কুরআন    
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5932">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১    
+وَ السَّمَآءِ  وَ الطَّارِقِ ۙ﴿۱﴾    
+কানযুল ঈমান    
+আস্‌মানের শপথ, এবং রাতে আগমনকারীর;    
+ইরফানুল কুরআন    
+১. শপথ আকাশের (অসীম ব্যপ্তি ও অনন্তশূন্যের) এবং শপথ রাতে (দৃশ্যমান) আগন্তুকের।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১    
+وَ السَّمَآءِ  وَ الطَّارِقِ ۙ﴿۱﴾    
+কানযুল ঈমান    
+আস্‌মানের শপথ, এবং রাতে আগমনকারীর;    
+ইরফানুল কুরআন    
+১. শপথ আকাশের (অসীম ব্যপ্তি ও অনন্তশূন্যের) এবং শপথ রাতে (দৃশ্যমান) আগন্তুকের।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ السَّمَآءِ  وَ الطَّارِقِ ۙ﴿۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১. আস্‌মানের শপথ, এবং রাতে আগমনকারীর;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১. শপথ আকাশের (অসীম ব্যপ্তি ও অনন্তশূন্যের) এবং শপথ রাতে (দৃশ্যমান) আগন্তুকের।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5933">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ২    
+وَ مَاۤ  اَدۡرٰىکَ مَا الطَّارِقُ ۙ﴿۲﴾    
+কানযুল ঈমান    
+এবং আপনি কি কিছু জেনেছেন, সে-ই রাতে আগমনকারী কি?    
+ইরফানুল কুরআন    
+২. আর আপনি কি জানেন, রাতে (দৃশ্যমান) আগন্তুক কী?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ২    
+وَ مَاۤ  اَدۡرٰىکَ مَا الطَّارِقُ ۙ﴿۲﴾    
+কানযুল ঈমান    
+এবং আপনি কি কিছু জেনেছেন, সে-ই রাতে আগমনকারী কি?    
+ইরফানুল কুরআন    
+২. আর আপনি কি জানেন, রাতে (দৃশ্যমান) আগন্তুক কী?    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ مَاۤ  اَدۡرٰىکَ مَا الطَّارِقُ ۙ﴿۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">২. এবং আপনি কি কিছু জেনেছেন, সে-ই রাতে আগমনকারী কি?</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">২. আর আপনি কি জানেন, রাতে (দৃশ্যমান) আগন্তুক কী?</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5934">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৩    
+النَّجۡمُ الثَّاقِبُ ۙ﴿۳﴾    
+কানযুল ঈমান    
+(তা হচ্ছে) অত্যন্ত উজ্জ্বল তারকা।    
+ইরফানুল কুরআন    
 ৩. (এর দ্বারা উদ্যেশ্য) মহাশূন্যের প্রতিটি বলয় (হতে পারে তা একটি তারকা অথবা একটি গ্রহ অথবা মহাশূন্যের বস্তুনিচয়ের কোনো একটি বলয়) যা জ্বলজ্বল করে (শূণ্যমন্ডল) উদ্ভাসিত করে।*
 
-* “নাজমুস সাকীব” অথবা “প্রজ্বলিত নক্ষত্র” দ্বারা মুহাম্মাদ মুস্তাফা সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লামের পবিত্র সত্তাকেও বোঝানো হয়েছে, যিনি “সিরাজাম মুনীরা” অর্থাৎ “আলোকোজ্জ্বল সূর্য” মহিমায় রিসালাতের আকাশে উদ্ভাসিত হয়ে জুলুম ও অন্ধকারাচ্ছন্নতায় রোগাক্রান্ত বিশ্বজাহানকে ঈমানের নূর দ্বারা আলোকিত করেছেন। (আশ শিফা, কাযী আয়াদ্ব রহমতুল্লাহি আলাইহি।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৩
-النَّجۡمُ الثَّاقِبُ ۙ﴿۳﴾
-কানযুল ঈমান
-(তা হচ্ছে) অত্যন্ত উজ্জ্বল তারকা।
-ইরফানুল কুরআন
+* “নাজমুস সাকীব” অথবা “প্রজ্বলিত নক্ষত্র” দ্বারা মুহাম্মাদ মুস্তাফা সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লামের পবিত্র সত্তাকেও বোঝানো হয়েছে, যিনি “সিরাজাম মুনীরা” অর্থাৎ “আলোকোজ্জ্বল সূর্য” মহিমায় রিসালাতের আকাশে উদ্ভাসিত হয়ে জুলুম ও অন্ধকারাচ্ছন্নতায় রোগাক্রান্ত বিশ্বজাহানকে ঈমানের নূর দ্বারা আলোকিত করেছেন। (আশ শিফা, কাযী আয়াদ্ব রহমতুল্লাহি আলাইহি।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৩    
+النَّجۡمُ الثَّاقِبُ ۙ﴿۳﴾    
+কানযুল ঈমান    
+(তা হচ্ছে) অত্যন্ত উজ্জ্বল তারকা।    
+ইরফানুল কুরআন    
 ৩. (এর দ্বারা উদ্যেশ্য) মহাশূন্যের প্রতিটি বলয় (হতে পারে তা একটি তারকা অথবা একটি গ্রহ অথবা মহাশূন্যের বস্তুনিচয়ের কোনো একটি বলয়) যা জ্বলজ্বল করে (শূণ্যমন্ডল) উদ্ভাসিত করে।*
 
-* “নাজমুস সাকীব” অথবা “প্রজ্বলিত নক্ষত্র” দ্বারা মুহাম্মাদ মুস্তাফা সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লামের পবিত্র সত্তাকেও বোঝানো হয়েছে, যিনি “সিরাজাম মুনীরা” অর্থাৎ “আলোকোজ্জ্বল সূর্য” মহিমায় রিসালাতের আকাশে উদ্ভাসিত হয়ে জুলুম ও অন্ধকারাচ্ছন্নতায় রোগাক্রান্ত বিশ্বজাহানকে ঈমানের নূর দ্বারা আলোকিত করেছেন। (আশ শিফা, কাযী আয়াদ্ব রহমতুল্লাহি আলাইহি।)
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">النَّجۡمُ الثَّاقِبُ ۙ﴿۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">(তা হচ্ছে) অত্যন্ত উজ্জ্বল তারকা।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
+* “নাজমুস সাকীব” অথবা “প্রজ্বলিত নক্ষত্র” দ্বারা মুহাম্মাদ মুস্তাফা সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লামের পবিত্র সত্তাকেও বোঝানো হয়েছে, যিনি “সিরাজাম মুনীরা” অর্থাৎ “আলোকোজ্জ্বল সূর্য” মহিমায় রিসালাতের আকাশে উদ্ভাসিত হয়ে জুলুম ও অন্ধকারাচ্ছন্নতায় রোগাক্রান্ত বিশ্বজাহানকে ঈমানের নূর দ্বারা আলোকিত করেছেন। (আশ শিফা, কাযী আয়াদ্ব রহমতুল্লাহি আলাইহি।)    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">النَّجۡمُ الثَّاقِبُ ۙ﴿۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৩. (তা হচ্ছে) অত্যন্ত উজ্জ্বল তারকা।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
       <div class="irfan-text">৩. (এর দ্বারা উদ্যেশ্য) মহাশূন্যের প্রতিটি বলয় (হতে পারে তা একটি তারকা অথবা একটি গ্রহ অথবা মহাশূন্যের বস্তুনিচয়ের কোনো একটি বলয়) যা জ্বলজ্বল করে (শূণ্যমন্ডল) উদ্ভাসিত করে।*
 
-* “নাজমুস সাকীব” অথবা “প্রজ্বলিত নক্ষত্র” দ্বারা মুহাম্মাদ মুস্তাফা সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লামের পবিত্র সত্তাকেও বোঝানো হয়েছে, যিনি “সিরাজাম মুনীরা” অর্থাৎ “আলোকোজ্জ্বল সূর্য” মহিমায় রিসালাতের আকাশে উদ্ভাসিত হয়ে জুলুম ও অন্ধকারাচ্ছন্নতায় রোগাক্রান্ত বিশ্বজাহানকে ঈমানের নূর দ্বারা আলোকিত করেছেন। (আশ শিফা, কাযী আয়াদ্ব রহমতুল্লাহি আলাইহি।)</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5935">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৪
-اِنۡ کُلُّ نَفۡسٍ لَّمَّا عَلَیۡہَا حَافِظٌ ؕ﴿۴﴾
-কানযুল ঈমান
-এমন কোন আত্না নেই, যার উপর হিফাযতকারী নেই।
-ইরফানুল কুরআন
-৪. প্রত্যেক মানবাত্মার উপরই একজন প্রহরী (নিয়োজিত) রয়েছে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৪
-اِنۡ کُلُّ نَفۡسٍ لَّمَّا عَلَیۡہَا حَافِظٌ ؕ﴿۴﴾
-কানযুল ঈমান
-এমন কোন আত্না নেই, যার উপর হিফাযতকারী নেই।
-ইরফানুল কুরআন
-৪. প্রত্যেক মানবাত্মার উপরই একজন প্রহরী (নিয়োজিত) রয়েছে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنۡ کُلُّ نَفۡسٍ لَّمَّا عَلَیۡہَا حَافِظٌ ؕ﴿۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এমন কোন আত্না নেই, যার উপর হিফাযতকারী নেই।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৪. প্রত্যেক মানবাত্মার উপরই একজন প্রহরী (নিয়োজিত) রয়েছে।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5936">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৫
-فَلۡیَنۡظُرِ الۡاِنۡسَانُ مِمَّ خُلِقَ ؕ﴿۵﴾
-কানযুল ঈমান
-সুতরাং উচিত যেন মানুষ গভীর চিন্তা করে যে, কোন্‌ জিনিস দ্বারা (তাকে) সৃষ্টি করা হয়েছে!
-ইরফানুল কুরআন
-৫. অতএব মানুষের চিন্তা (এবং অনুসন্ধান) করা উচিত যে, কোন্ বস্তু থেকে তাকে সৃষ্টি করা হয়েছে!
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৫
-فَلۡیَنۡظُرِ الۡاِنۡسَانُ مِمَّ خُلِقَ ؕ﴿۵﴾
-কানযুল ঈমান
-সুতরাং উচিত যেন মানুষ গভীর চিন্তা করে যে, কোন্‌ জিনিস দ্বারা (তাকে) সৃষ্টি করা হয়েছে!
-ইরফানুল কুরআন
-৫. অতএব মানুষের চিন্তা (এবং অনুসন্ধান) করা উচিত যে, কোন্ বস্তু থেকে তাকে সৃষ্টি করা হয়েছে!
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَلۡیَنۡظُرِ الۡاِنۡسَانُ مِمَّ خُلِقَ ؕ﴿۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">সুতরাং উচিত যেন মানুষ গভীর চিন্তা করে যে, কোন্‌ জিনিস দ্বারা (তাকে) সৃষ্টি করা হয়েছে!</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৫. অতএব মানুষের চিন্তা (এবং অনুসন্ধান) করা উচিত যে, কোন্ বস্তু থেকে তাকে সৃষ্টি করা হয়েছে!</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5937">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৬
-خُلِقَ مِنۡ مَّآءٍ  دَافِقٍ ۙ﴿۶﴾
-কানযুল ঈমান
-লাফিয়ে পড়া পানি দ্বারা,
-ইরফানুল কুরআন
-৬. তাকে সৃষ্টি করা হয়েছে সবেগে স্খলিত পানি (অর্থাৎ শক্তিশালী এবং গতিশীল সৃষ্টি উপাদান শুক্র) থেকে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৬
-خُلِقَ مِنۡ مَّآءٍ  دَافِقٍ ۙ﴿۶﴾
-কানযুল ঈমান
-লাফিয়ে পড়া পানি দ্বারা,
-ইরফানুল কুরআন
-৬. তাকে সৃষ্টি করা হয়েছে সবেগে স্খলিত পানি (অর্থাৎ শক্তিশালী এবং গতিশীল সৃষ্টি উপাদান শুক্র) থেকে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">خُلِقَ مِنۡ مَّآءٍ  دَافِقٍ ۙ﴿۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">লাফিয়ে পড়া পানি দ্বারা,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৬. তাকে সৃষ্টি করা হয়েছে সবেগে স্খলিত পানি (অর্থাৎ শক্তিশালী এবং গতিশীল সৃষ্টি উপাদান শুক্র) থেকে।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5938">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৭
-یَّخۡرُجُ مِنۡۢ بَیۡنِ الصُّلۡبِ وَ التَّرَآئِبِ ؕ﴿۷﴾
-কানযুল ঈমান
-যা নির্গত হয় পিঠ ও বুকের মধ্যবর্তী স্থান থেকে।
-ইরফানুল কুরআন
-৭. যা পৃষ্ঠদেশ এবং কটিদেশের অস্থির মধ্যবর্তী অংশ (শ্রোণীচক্র বা মেরুদন্ডের নিচের অংশ ও নিতম্বের মধ্যকার অস্থিকাঠামো) থেকে অগ্রসর হয়ে নিক্ষিপ্ত হয়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৭
-یَّخۡرُجُ مِنۡۢ بَیۡنِ الصُّلۡبِ وَ التَّرَآئِبِ ؕ﴿۷﴾
-কানযুল ঈমান
-যা নির্গত হয় পিঠ ও বুকের মধ্যবর্তী স্থান থেকে।
-ইরফানুল কুরআন
-৭. যা পৃষ্ঠদেশ এবং কটিদেশের অস্থির মধ্যবর্তী অংশ (শ্রোণীচক্র বা মেরুদন্ডের নিচের অংশ ও নিতম্বের মধ্যকার অস্থিকাঠামো) থেকে অগ্রসর হয়ে নিক্ষিপ্ত হয়।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">یَّخۡرُجُ مِنۡۢ بَیۡنِ الصُّلۡبِ وَ التَّرَآئِبِ ؕ﴿۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যা নির্গত হয় পিঠ ও বুকের মধ্যবর্তী স্থান থেকে।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৭. যা পৃষ্ঠদেশ এবং কটিদেশের অস্থির মধ্যবর্তী অংশ (শ্রোণীচক্র বা মেরুদন্ডের নিচের অংশ ও নিতম্বের মধ্যকার অস্থিকাঠামো) থেকে অগ্রসর হয়ে নিক্ষিপ্ত হয়।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৮</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5939">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৮
-اِنَّہٗ  عَلٰی رَجۡعِہٖ لَقَادِرٌ ؕ﴿۸﴾
-কানযুল ঈমান
-নিশ্চয় আল্লাহ্‌ তাকে ফিরিয়ে দেওয়ার উপর ক্ষমতাবান।
-ইরফানুল কুরআন
-৮. নিশ্চয়ই তিনি একে (এ জীবনকে) পুনরায় ফিরিয়ে আনতেও সক্ষম,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৮
-اِنَّہٗ  عَلٰی رَجۡعِہٖ لَقَادِرٌ ؕ﴿۸﴾
-কানযুল ঈমান
-নিশ্চয় আল্লাহ্‌ তাকে ফিরিয়ে দেওয়ার উপর ক্ষমতাবান।
-ইরফানুল কুরআন
-৮. নিশ্চয়ই তিনি একে (এ জীবনকে) পুনরায় ফিরিয়ে আনতেও সক্ষম,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّہٗ  عَلٰی رَجۡعِہٖ لَقَادِرٌ ؕ﴿۸﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় আল্লাহ্‌ তাকে ফিরিয়ে দেওয়ার উপর ক্ষমতাবান।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৮. নিশ্চয়ই তিনি একে (এ জীবনকে) পুনরায় ফিরিয়ে আনতেও সক্ষম,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">৯</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5940">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৯
-یَوۡمَ تُبۡلَی السَّرَآئِرُ ۙ﴿۹﴾
-কানযুল ঈমান
-যেদিন গোপন কথাগুলোর যাচাই হবে।
-ইরফানুল কুরআন
-৯. যেদিন গোপন রহস্যগুলো প্রকাশ করা হবে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৯
-یَوۡمَ تُبۡلَی السَّرَآئِرُ ۙ﴿۹﴾
-কানযুল ঈমান
-যেদিন গোপন কথাগুলোর যাচাই হবে।
-ইরফানুল কুরআন
-৯. যেদিন গোপন রহস্যগুলো প্রকাশ করা হবে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">یَوۡمَ تُبۡلَی السَّرَآئِرُ ۙ﴿۹﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">যেদিন গোপন কথাগুলোর যাচাই হবে।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">৯. যেদিন গোপন রহস্যগুলো প্রকাশ করা হবে।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১০</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5941">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১০
-فَمَا لَہٗ  مِنۡ قُوَّۃٍ  وَّ لَا  نَاصِرٍ ﴿ؕ۱۰﴾
-কানযুল ঈমান
-তখন মানুষের নিকট না কোন ক্ষমতা থাকবে, না কোন সাহায্যকারী।
-ইরফানুল কুরআন
-১০. তারপর মানুষের নিকট না (নিজস্ব) কোনো ক্ষমতা থাকবে আর না কেউ (তার) সাহায্যকারী হবে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১০
-فَمَا لَہٗ  مِنۡ قُوَّۃٍ  وَّ لَا  نَاصِرٍ ﴿ؕ۱۰﴾
-কানযুল ঈমান
-তখন মানুষের নিকট না কোন ক্ষমতা থাকবে, না কোন সাহায্যকারী।
-ইরফানুল কুরআন
-১০. তারপর মানুষের নিকট না (নিজস্ব) কোনো ক্ষমতা থাকবে আর না কেউ (তার) সাহায্যকারী হবে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَمَا لَہٗ  مِنۡ قُوَّۃٍ  وَّ لَا  نَاصِرٍ ﴿ؕ۱۰﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">তখন মানুষের নিকট না কোন ক্ষমতা থাকবে, না কোন সাহায্যকারী।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১০. তারপর মানুষের নিকট না (নিজস্ব) কোনো ক্ষমতা থাকবে আর না কেউ (তার) সাহায্যকারী হবে।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১১</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5942">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১১
-وَ السَّمَآءِ  ذَاتِ الرَّجۡعِ ﴿ۙ۱۱﴾
-কানযুল ঈমান
-আস্‌মানের শপথ, যা থেকে বৃষ্টি নামে,
-ইরফানুল কুরআন
-১১. শপথ সে ঊর্ধ্ব জগতের যা পুনরায় তার প্রারম্ভিক অবস্থায় ফিরে যাবে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১১
-وَ السَّمَآءِ  ذَاتِ الرَّجۡعِ ﴿ۙ۱۱﴾
-কানযুল ঈমান
-আস্‌মানের শপথ, যা থেকে বৃষ্টি নামে,
-ইরফানুল কুরআন
-১১. শপথ সে ঊর্ধ্ব জগতের যা পুনরায় তার প্রারম্ভিক অবস্থায় ফিরে যাবে,
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ السَّمَآءِ  ذَاتِ الرَّجۡعِ ﴿ۙ۱۱﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">আস্‌মানের শপথ, যা থেকে বৃষ্টি নামে,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১১. শপথ সে ঊর্ধ্ব জগতের যা পুনরায় তার প্রারম্ভিক অবস্থায় ফিরে যাবে,</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১২</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5943">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১২
-وَ الۡاَرۡضِ ذَاتِ الصَّدۡعِ ﴿ۙ۱۲﴾
-কানযুল ঈমান
-এবং যমীনের শপথ, যা বিদীর্ণ হয়,
-ইরফানুল কুরআন
-১২. এবং শপথ সে পৃথিবীর যা বিদীর্ণ হবে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১২
-وَ الۡاَرۡضِ ذَاتِ الصَّدۡعِ ﴿ۙ۱۲﴾
-কানযুল ঈমান
-এবং যমীনের শপথ, যা বিদীর্ণ হয়,
-ইরফানুল কুরআন
-১২. এবং শপথ সে পৃথিবীর যা বিদীর্ণ হবে।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَ الۡاَرۡضِ ذَاتِ الصَّدۡعِ ﴿ۙ۱۲﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং যমীনের শপথ, যা বিদীর্ণ হয়,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১২. এবং শপথ সে পৃথিবীর যা বিদীর্ণ হবে।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৩</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5944">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৩
-اِنَّہٗ  لَقَوۡلٌ  فَصۡلٌ ﴿ۙ۱۳﴾
-কানযুল ঈমান
-নিশ্চয় ক্বোরআন একটা মীমাংসাকারী বাণী;
-ইরফানুল কুরআন
-১৩. নিশ্চয়ই এটি মীমাংসাকারী (অকাট্য) বাণী।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৩
-اِنَّہٗ  لَقَوۡلٌ  فَصۡلٌ ﴿ۙ۱۳﴾
-কানযুল ঈমান
-নিশ্চয় ক্বোরআন একটা মীমাংসাকারী বাণী;
-ইরফানুল কুরআন
-১৩. নিশ্চয়ই এটি মীমাংসাকারী (অকাট্য) বাণী।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّہٗ  لَقَوۡلٌ  فَصۡلٌ ﴿ۙ۱۳﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় ক্বোরআন একটা মীমাংসাকারী বাণী;</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৩. নিশ্চয়ই এটি মীমাংসাকারী (অকাট্য) বাণী।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৪</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5945">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৪
-وَّ مَا ہُوَ  بِالۡہَزۡلِ ﴿ؕ۱۴﴾
-কানযুল ঈমান
-এবং কোন হাসি-ঠাট্টার কথা নয়।
-ইরফানুল কুরআন
-১৪. আর এটি উপহাসের বিষয় নয়!
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৪
-وَّ مَا ہُوَ  بِالۡہَزۡلِ ﴿ؕ۱۴﴾
-কানযুল ঈমান
-এবং কোন হাসি-ঠাট্টার কথা নয়।
-ইরফানুল কুরআন
-১৪. আর এটি উপহাসের বিষয় নয়!
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَّ مَا ہُوَ  بِالۡہَزۡلِ ﴿ؕ۱۴﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং কোন হাসি-ঠাট্টার কথা নয়।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৪. আর এটি উপহাসের বিষয় নয়!</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৫</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5946">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৫
-اِنَّہُمۡ یَکِیۡدُوۡنَ  کَیۡدًا ﴿ۙ۱۵﴾
-কানযুল ঈমান
-নিশ্চয় কাফিরগণ নিজেদের সাধ্যমত ষড়যন্ত্র চালিয়ে থাকে,
-ইরফানুল কুরআন
-১৫. নিঃসন্দেহে এ সকল (কাফের) প্রতারণাপূর্ণ ষড়যন্ত্রে লিপ্ত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৫
-اِنَّہُمۡ یَکِیۡدُوۡنَ  کَیۡدًا ﴿ۙ۱۵﴾
-কানযুল ঈমান
-নিশ্চয় কাফিরগণ নিজেদের সাধ্যমত ষড়যন্ত্র চালিয়ে থাকে,
-ইরফানুল কুরআন
-১৫. নিঃসন্দেহে এ সকল (কাফের) প্রতারণাপূর্ণ ষড়যন্ত্রে লিপ্ত।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">اِنَّہُمۡ یَکِیۡدُوۡنَ  کَیۡدًا ﴿ۙ۱۵﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">নিশ্চয় কাফিরগণ নিজেদের সাধ্যমত ষড়যন্ত্র চালিয়ে থাকে,</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৫. নিঃসন্দেহে এ সকল (কাফের) প্রতারণাপূর্ণ ষড়যন্ত্রে লিপ্ত।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৬</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5947">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৬
-وَّ اَکِیۡدُ  کَیۡدًا ﴿ۚۖ۱۶﴾
-কানযুল ঈমান
-এবং আমি স্বীয় গোপন তদবীর করি।
-ইরফানুল কুরআন
-১৬. আর আমি আমার পরিকল্পনা বর্ণনা করছি।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৬
-وَّ اَکِیۡدُ  کَیۡدًا ﴿ۚۖ۱۶﴾
-কানযুল ঈমান
-এবং আমি স্বীয় গোপন তদবীর করি।
-ইরফানুল কুরআন
-১৬. আর আমি আমার পরিকল্পনা বর্ণনা করছি।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">وَّ اَکِیۡدُ  کَیۡدًا ﴿ۚۖ۱۶﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">এবং আমি স্বীয় গোপন তদবীর করি।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৬. আর আমি আমার পরিকল্পনা বর্ণনা করছি।</div>
-    </div>
-
-    <div class="ayah-card">
-      <div class="top-row">
-        <div class="number-box"><div class="number-text">১৭</div></div>
-        <div class="actions">
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5948">
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৭
-فَمَہِّلِ الۡکٰفِرِیۡنَ  اَمۡہِلۡہُمۡ رُوَیۡدًا ﴿۱۷﴾
-কানযুল ঈমান
-সুতরাং তোমরা কাফিরদেরকে অবকাশ দাও, তাদেরকে সামান্য সুযোগ দাও।
-ইরফানুল কুরআন
-১৭. অতঃপর আপনি কাফেরদেরকে (ক্ষণিকের) অবকাশ দিন, (কিন্তু খুব বেশি নয়,) তাদেরকে (আরো) কিছুটা ছাড় দিন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৭
-فَمَہِّلِ الۡکٰفِرِیۡنَ  اَمۡہِلۡہُمۡ رُوَیۡدًا ﴿۱۷﴾
-কানযুল ঈমান
-সুতরাং তোমরা কাফিরদেরকে অবকাশ দাও, তাদেরকে সামান্য সুযোগ দাও।
-ইরফানুল কুরআন
-১৭. অতঃপর আপনি কাফেরদেরকে (ক্ষণিকের) অবকাশ দিন, (কিন্তু খুব বেশি নয়,) তাদেরকে (আরো) কিছুটা ছাড় দিন।
-
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
-        </div>
-      </div>
-      <div class="verse-arabic">فَمَہِّلِ الۡکٰفِرِیۡنَ  اَمۡہِلۡہُمۡ رُوَیۡدًا ﴿۱۷﴾</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">সুতরাং তোমরা কাফিরদেরকে অবকাশ দাও, তাদেরকে সামান্য সুযোগ দাও।</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">১৭. অতঃপর আপনি কাফেরদেরকে (ক্ষণিকের) অবকাশ দিন, (কিন্তু খুব বেশি নয়,) তাদেরকে (আরো) কিছুটা ছাড় দিন।</div>
-    </div>
-
-  </div>
-
-  <div class="audio-controller" id="audioController" style="display:none;">
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
-    <img src="next.png" onclick="playNext()" alt="Next">
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">
-  </div>
-
-  <script src="quranview.js"></script>
-</body>
-</html>
+* “নাজমুস সাকীব” অথবা “প্রজ্বলিত নক্ষত্র” দ্বারা মুহাম্মাদ মুস্তাফা সাল্লাল্লাহু আলাইহি ওয়া আলিহি ওয়া সাল্লামের পবিত্র সত্তাকেও বোঝানো হয়েছে, যিনি “সিরাজাম মুনীরা” অর্থাৎ “আলোকোজ্জ্বল সূর্য” মহিমায় রিসালাতের আকাশে উদ্ভাসিত হয়ে জুলুম ও অন্ধকারাচ্ছন্নতায় রোগাক্রান্ত বিশ্বজাহানকে ঈমানের নূর দ্বারা আলোকিত করেছেন। (আশ শিফা, কাযী আয়াদ্ব রহমতুল্লাহি আলাইহি।)</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5935">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৪    
+اِنۡ کُلُّ نَفۡسٍ لَّمَّا عَلَیۡہَا حَافِظٌ ؕ﴿۴﴾    
+কানযুল ঈমান    
+এমন কোন আত্না নেই, যার উপর হিফাযতকারী নেই।    
+ইরফানুল কুরআন    
+৪. প্রত্যেক মানবাত্মার উপরই একজন প্রহরী (নিয়োজিত) রয়েছে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৪    
+اِنۡ کُلُّ نَفۡسٍ لَّمَّا عَلَیۡہَا حَافِظٌ ؕ﴿۴﴾    
+কানযুল ঈমান    
+এমন কোন আত্না নেই, যার উপর হিফাযতকারী নেই।    
+ইরফানুল কুরআন    
+৪. প্রত্যেক মানবাত্মার উপরই একজন প্রহরী (নিয়োজিত) রয়েছে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنۡ کُلُّ نَفۡسٍ لَّمَّا عَلَیۡہَا حَافِظٌ ؕ﴿۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৪. এমন কোন আত্না নেই, যার উপর হিফাযতকারী নেই।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৪. প্রত্যেক মানবাত্মার উপরই একজন প্রহরী (নিয়োজিত) রয়েছে।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5936">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৫    
+فَلۡیَنۡظُرِ الۡاِنۡسَانُ مِمَّ خُلِقَ ؕ﴿۵﴾    
+কানযুল ঈমান    
+সুতরাং উচিত যেন মানুষ গভীর চিন্তা করে যে, কোন্‌ জিনিস দ্বারা (তাকে) সৃষ্টি করা হয়েছে!    
+ইরফানুল কুরআন    
+৫. অতএব মানুষের চিন্তা (এবং অনুসন্ধান) করা উচিত যে, কোন্ বস্তু থেকে তাকে সৃষ্টি করা হয়েছে!    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৫    
+فَلۡیَنۡظُرِ الۡاِنۡسَانُ مِمَّ خُلِقَ ؕ﴿۵﴾    
+কানযুল ঈমান    
+সুতরাং উচিত যেন মানুষ গভীর চিন্তা করে যে, কোন্‌ জিনিস দ্বারা (তাকে) সৃষ্টি করা হয়েছে!    
+ইরফানুল কুরআন    
+৫. অতএব মানুষের চিন্তা (এবং অনুসন্ধান) করা উচিত যে, কোন্ বস্তু থেকে তাকে সৃষ্টি করা হয়েছে!    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَلۡیَنۡظُرِ الۡاِنۡسَانُ مِمَّ خُلِقَ ؕ﴿۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৫. সুতরাং উচিত যেন মানুষ গভীর চিন্তা করে যে, কোন্‌ জিনিস দ্বারা (তাকে) সৃষ্টি করা হয়েছে!</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৫. অতএব মানুষের চিন্তা (এবং অনুসন্ধান) করা উচিত যে, কোন্ বস্তু থেকে তাকে সৃষ্টি করা হয়েছে!</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5937">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৬    
+خُلِقَ مِنۡ مَّآءٍ  دَافِقٍ ۙ﴿۶﴾    
+কানযুল ঈমান    
+লাফিয়ে পড়া পানি দ্বারা,    
+ইরফানুল কুরআন    
+৬. তাকে সৃষ্টি করা হয়েছে সবেগে স্খলিত পানি (অর্থাৎ শক্তিশালী এবং গতিশীল সৃষ্টি উপাদান শুক্র) থেকে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৬    
+خُلِقَ مِنۡ مَّآءٍ  دَافِقٍ ۙ﴿۶﴾    
+কানযুল ঈমান    
+লাফিয়ে পড়া পানি দ্বারা,    
+ইরফানুল কুরআন    
+৬. তাকে সৃষ্টি করা হয়েছে সবেগে স্খলিত পানি (অর্থাৎ শক্তিশালী এবং গতিশীল সৃষ্টি উপাদান শুক্র) থেকে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">خُلِقَ مِنۡ مَّآءٍ  دَافِقٍ ۙ﴿۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৬. লাফিয়ে পড়া পানি দ্বারা,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৬. তাকে সৃষ্টি করা হয়েছে সবেগে স্খলিত পানি (অর্থাৎ শক্তিশালী এবং গতিশীল সৃষ্টি উপাদান শুক্র) থেকে।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5938">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৭    
+یَّخۡرُجُ مِنۡۢ بَیۡنِ الصُّلۡبِ وَ التَّرَآئِبِ ؕ﴿۷﴾    
+কানযুল ঈমান    
+যা নির্গত হয় পিঠ ও বুকের মধ্যবর্তী স্থান থেকে।    
+ইরফানুল কুরআন    
+৭. যা পৃষ্ঠদেশ এবং কটিদেশের অস্থির মধ্যবর্তী অংশ (শ্রোণীচক্র বা মেরুদন্ডের নিচের অংশ ও নিতম্বের মধ্যকার অস্থিকাঠামো) থেকে অগ্রসর হয়ে নিক্ষিপ্ত হয়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৭    
+یَّخۡرُجُ مِنۡۢ بَیۡنِ الصُّلۡبِ وَ التَّرَآئِبِ ؕ﴿۷﴾    
+কানযুল ঈমান    
+যা নির্গত হয় পিঠ ও বুকের মধ্যবর্তী স্থান থেকে।    
+ইরফানুল কুরআন    
+৭. যা পৃষ্ঠদেশ এবং কটিদেশের অস্থির মধ্যবর্তী অংশ (শ্রোণীচক্র বা মেরুদন্ডের নিচের অংশ ও নিতম্বের মধ্যকার অস্থিকাঠামো) থেকে অগ্রসর হয়ে নিক্ষিপ্ত হয়।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">یَّخۡرُجُ مِنۡۢ بَیۡنِ الصُّلۡبِ وَ التَّرَآئِبِ ؕ﴿۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৭. যা নির্গত হয় পিঠ ও বুকের মধ্যবর্তী স্থান থেকে।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৭. যা পৃষ্ঠদেশ এবং কটিদেশের অস্থির মধ্যবর্তী অংশ (শ্রোণীচক্র বা মেরুদন্ডের নিচের অংশ ও নিতম্বের মধ্যকার অস্থিকাঠামো) থেকে অগ্রসর হয়ে নিক্ষিপ্ত হয়।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৮</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5939">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৮    
+اِنَّہٗ  عَلٰی رَجۡعِہٖ لَقَادِرٌ ؕ﴿۸﴾    
+কানযুল ঈমান    
+নিশ্চয় আল্লাহ্‌ তাকে ফিরিয়ে দেওয়ার উপর ক্ষমতাবান।    
+ইরফানুল কুরআন    
+৮. নিশ্চয়ই তিনি একে (এ জীবনকে) পুনরায় ফিরিয়ে আনতেও সক্ষম,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৮    
+اِنَّہٗ  عَلٰی رَجۡعِہٖ لَقَادِرٌ ؕ﴿۸﴾    
+কানযুল ঈমান    
+নিশ্চয় আল্লাহ্‌ তাকে ফিরিয়ে দেওয়ার উপর ক্ষমতাবান।    
+ইরফানুল কুরআন    
+৮. নিশ্চয়ই তিনি একে (এ জীবনকে) পুনরায় ফিরিয়ে আনতেও সক্ষম,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّہٗ  عَلٰی رَجۡعِہٖ لَقَادِرٌ ؕ﴿۸﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৮. নিশ্চয় আল্লাহ্‌ তাকে ফিরিয়ে দেওয়ার উপর ক্ষমতাবান।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৮. নিশ্চয়ই তিনি একে (এ জীবনকে) পুনরায় ফিরিয়ে আনতেও সক্ষম,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">৯</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5940">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ৯    
+یَوۡمَ تُبۡلَی السَّرَآئِرُ ۙ﴿۹﴾    
+কানযুল ঈমান    
+যেদিন গোপন কথাগুলোর যাচাই হবে।    
+ইরফানুল কুরআন    
+৯. যেদিন গোপন রহস্যগুলো প্রকাশ করা হবে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ৯    
+یَوۡمَ تُبۡلَی السَّرَآئِرُ ۙ﴿۹﴾    
+কানযুল ঈমান    
+যেদিন গোপন কথাগুলোর যাচাই হবে।    
+ইরফানুল কুরআন    
+৯. যেদিন গোপন রহস্যগুলো প্রকাশ করা হবে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">یَوۡمَ تُبۡلَی السَّرَآئِرُ ۙ﴿۹﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">৯. যেদিন গোপন কথাগুলোর যাচাই হবে।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">৯. যেদিন গোপন রহস্যগুলো প্রকাশ করা হবে।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১০</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5941">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১০    
+فَمَا لَہٗ  مِنۡ قُوَّۃٍ  وَّ لَا  نَاصِرٍ ﴿ؕ۱۰﴾    
+কানযুল ঈমান    
+তখন মানুষের নিকট না কোন ক্ষমতা থাকবে, না কোন সাহায্যকারী।    
+ইরফানুল কুরআন    
+১০. তারপর মানুষের নিকট না (নিজস্ব) কোনো ক্ষমতা থাকবে আর না কেউ (তার) সাহায্যকারী হবে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১০    
+فَمَا لَہٗ  مِنۡ قُوَّۃٍ  وَّ لَا  نَاصِرٍ ﴿ؕ۱۰﴾    
+কানযুল ঈমান    
+তখন মানুষের নিকট না কোন ক্ষমতা থাকবে, না কোন সাহায্যকারী।    
+ইরফানুল কুরআন    
+১০. তারপর মানুষের নিকট না (নিজস্ব) কোনো ক্ষমতা থাকবে আর না কেউ (তার) সাহায্যকারী হবে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَمَا لَہٗ  مِنۡ قُوَّۃٍ  وَّ لَا  نَاصِرٍ ﴿ؕ۱۰﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১০. তখন মানুষের নিকট না কোন ক্ষমতা থাকবে, না কোন সাহায্যকারী।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১০. তারপর মানুষের নিকট না (নিজস্ব) কোনো ক্ষমতা থাকবে আর না কেউ (তার) সাহায্যকারী হবে।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১১</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5942">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১১    
+وَ السَّمَآءِ  ذَاتِ الرَّجۡعِ ﴿ۙ۱۱﴾    
+কানযুল ঈমান    
+আস্‌মানের শপথ, যা থেকে বৃষ্টি নামে,    
+ইরফানুল কুরআন    
+১১. শপথ সে ঊর্ধ্ব জগতের যা পুনরায় তার প্রারম্ভিক অবস্থায় ফিরে যাবে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১১    
+وَ السَّمَآءِ  ذَاتِ الرَّجۡعِ ﴿ۙ۱۱﴾    
+কানযুল ঈমান    
+আস্‌মানের শপথ, যা থেকে বৃষ্টি নামে,    
+ইরফানুল কুরআন    
+১১. শপথ সে ঊর্ধ্ব জগতের যা পুনরায় তার প্রারম্ভিক অবস্থায় ফিরে যাবে,    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ السَّمَآءِ  ذَاتِ الرَّجۡعِ ﴿ۙ۱۱﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১১. আস্‌মানের শপথ, যা থেকে বৃষ্টি নামে,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১১. শপথ সে ঊর্ধ্ব জগতের যা পুনরায় তার প্রারম্ভিক অবস্থায় ফিরে যাবে,</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১২</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5943">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১২    
+وَ الۡاَرۡضِ ذَاتِ الصَّدۡعِ ﴿ۙ۱۲﴾    
+কানযুল ঈমান    
+এবং যমীনের শপথ, যা বিদীর্ণ হয়,    
+ইরফানুল কুরআন    
+১২. এবং শপথ সে পৃথিবীর যা বিদীর্ণ হবে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১২    
+وَ الۡاَرۡضِ ذَاتِ الصَّدۡعِ ﴿ۙ۱۲﴾    
+কানযুল ঈমান    
+এবং যমীনের শপথ, যা বিদীর্ণ হয়,    
+ইরফানুল কুরআন    
+১২. এবং শপথ সে পৃথিবীর যা বিদীর্ণ হবে।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَ الۡاَرۡضِ ذَاتِ الصَّدۡعِ ﴿ۙ۱۲﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১২. এবং যমীনের শপথ, যা বিদীর্ণ হয়,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১২. এবং শপথ সে পৃথিবীর যা বিদীর্ণ হবে।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৩</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5944">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৩    
+اِنَّہٗ  لَقَوۡلٌ  فَصۡلٌ ﴿ۙ۱۳﴾    
+কানযুল ঈমান    
+নিশ্চয় ক্বোরআন একটা মীমাংসাকারী বাণী;    
+ইরফানুল কুরআন    
+১৩. নিশ্চয়ই এটি মীমাংসাকারী (অকাট্য) বাণী।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৩    
+اِنَّہٗ  لَقَوۡلٌ  فَصۡلٌ ﴿ۙ۱۳﴾    
+কানযুল ঈমান    
+নিশ্চয় ক্বোরআন একটা মীমাংসাকারী বাণী;    
+ইরফানুল কুরআন    
+১৩. নিশ্চয়ই এটি মীমাংসাকারী (অকাট্য) বাণী।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّہٗ  لَقَوۡلٌ  فَصۡلٌ ﴿ۙ۱۳﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৩. নিশ্চয় ক্বোরআন একটা মীমাংসাকারী বাণী;</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৩. নিশ্চয়ই এটি মীমাংসাকারী (অকাট্য) বাণী।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৪</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5945">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৪    
+وَّ مَا ہُوَ  بِالۡہَزۡلِ ﴿ؕ۱۴﴾    
+কানযুল ঈমান    
+এবং কোন হাসি-ঠাট্টার কথা নয়।    
+ইরফানুল কুরআন    
+১৪. আর এটি উপহাসের বিষয় নয়!    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৪    
+وَّ مَا ہُوَ  بِالۡہَزۡلِ ﴿ؕ۱۴﴾    
+কানযুল ঈমান    
+এবং কোন হাসি-ঠাট্টার কথা নয়।    
+ইরফানুল কুরআন    
+১৪. আর এটি উপহাসের বিষয় নয়!    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَّ مَا ہُوَ  بِالۡہَزۡلِ ﴿ؕ۱۴﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৪. এবং কোন হাসি-ঠাট্টার কথা নয়।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৪. আর এটি উপহাসের বিষয় নয়!</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৫</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5946">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৫    
+اِنَّہُمۡ یَکِیۡدُوۡنَ  کَیۡدًا ﴿ۙ۱۵﴾    
+কানযুল ঈমান    
+নিশ্চয় কাফিরগণ নিজেদের সাধ্যমত ষড়যন্ত্র চালিয়ে থাকে,    
+ইরফানুল কুরআন    
+১৫. নিঃসন্দেহে এ সকল (কাফের) প্রতারণাপূর্ণ ষড়যন্ত্রে লিপ্ত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৫    
+اِنَّہُمۡ یَکِیۡدُوۡنَ  کَیۡدًا ﴿ۙ۱۵﴾    
+কানযুল ঈমান    
+নিশ্চয় কাফিরগণ নিজেদের সাধ্যমত ষড়যন্ত্র চালিয়ে থাকে,    
+ইরফানুল কুরআন    
+১৫. নিঃসন্দেহে এ সকল (কাফের) প্রতারণাপূর্ণ ষড়যন্ত্রে লিপ্ত।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">اِنَّہُمۡ یَکِیۡدُوۡنَ  کَیۡدًا ﴿ۙ۱۵﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৫. নিশ্চয় কাফিরগণ নিজেদের সাধ্যমত ষড়যন্ত্র চালিয়ে থাকে,</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৫. নিঃসন্দেহে এ সকল (কাফের) প্রতারণাপূর্ণ ষড়যন্ত্রে লিপ্ত।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৬</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5947">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৬    
+وَّ اَکِیۡدُ  کَیۡدًا ﴿ۚۖ۱۶﴾    
+কানযুল ঈমান    
+এবং আমি স্বীয় গোপন তদবীর করি।    
+ইরফানুল কুরআন    
+১৬. আর আমি আমার পরিকল্পনা বর্ণনা করছি।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৬    
+وَّ اَکِیۡدُ  کَیۡدًا ﴿ۚۖ۱۶﴾    
+কানযুল ঈমান    
+এবং আমি স্বীয় গোপন তদবীর করি।    
+ইরফানুল কুরআন    
+১৬. আর আমি আমার পরিকল্পনা বর্ণনা করছি।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">وَّ اَکِیۡدُ  کَیۡدًا ﴿ۚۖ۱۶﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৬. এবং আমি স্বীয় গোপন তদবীর করি।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৬. আর আমি আমার পরিকল্পনা বর্ণনা করছি।</div>    
+    </div>    
+    
+    <div class="ayah-card">    
+      <div class="top-row">    
+        <div class="number-box"><div class="number-text">১৭</div></div>    
+        <div class="actions">    
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5948">    
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তারিক আয়াত নং : ১৭    
+فَمَہِّلِ الۡکٰفِرِیۡنَ  اَمۡہِلۡہُمۡ رُوَیۡدًا ﴿۱۷﴾    
+কানযুল ঈমান    
+সুতরাং তোমরা কাফিরদেরকে অবকাশ দাও, তাদেরকে সামান্য সুযোগ দাও।    
+ইরফানুল কুরআন    
+১৭. অতঃপর আপনি কাফেরদেরকে (ক্ষণিকের) অবকাশ দিন, (কিন্তু খুব বেশি নয়,) তাদেরকে (আরো) কিছুটা ছাড় দিন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তারিক আয়াত নং : ১৭    
+فَمَہِّلِ الۡکٰفِرِیۡنَ  اَمۡہِلۡہُمۡ رُوَیۡدًا ﴿۱۷﴾    
+কানযুল ঈমান    
+সুতরাং তোমরা কাফিরদেরকে অবকাশ দাও, তাদেরকে সামান্য সুযোগ দাও।    
+ইরফানুল কুরআন    
+১৭. অতঃপর আপনি কাফেরদেরকে (ক্ষণিকের) অবকাশ দিন, (কিন্তু খুব বেশি নয়,) তাদেরকে (আরো) কিছুটা ছাড় দিন।    
+    
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
+        </div>    
+      </div>    
+      <div class="verse-arabic">فَمَہِّلِ الۡکٰفِرِیۡنَ  اَمۡہِلۡہُمۡ رُوَیۡدًا ﴿۱۷﴾</div>    
+      <div class="kanzul">কানযুল ঈমান</div>    
+      <div class="kanzul-text">১৭. সুতরাং তোমরা কাফিরদেরকে অবকাশ দাও, তাদেরকে সামান্য সুযোগ দাও।</div>    
+      <div class="irfan">ইরফানুল কুরআন</div>    
+      <div class="irfan-text">১৭. অতঃপর আপনি কাফেরদেরকে (ক্ষণিকের) অবকাশ দিন, (কিন্তু খুব বেশি নয়,) তাদেরকে (আরো) কিছুটা ছাড় দিন।</div>    
+    </div>    
+    
+  </div>    
+    
+  <div class="audio-controller" id="audioController" style="display:none;">    
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
+    <img src="next.png" onclick="playNext()" alt="Next">    
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
+  </div>    
+    
+  <script src="quranview.js"></script>    
+</body>    
+</html>    
