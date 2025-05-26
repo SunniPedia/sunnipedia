@@ -6,162 +6,179 @@
   <title>আল কুরআন</title>  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <style>  
-    @font-face {  
-      font-family: 'SolaimanLipi';  
-      src: url('fonts/SolaimanLipi.ttf') format('truetype');  
-    }  @font-face {  
-  font-family: 'NooreHuda';  
-  src: url('fonts/noorehuda.ttf') format('truetype');  
-}  
+    @font-face {
+  font-family: 'SolaimanLipi';
+  src: url('fonts/SolaimanLipi.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NooreHuda';
+  src: url('fonts/noorehuda.ttf') format('truetype');
+}
 
-body {  
-  margin: 0;  
-  font-family: 'SolaimanLipi', sans-serif;  
-  background-color: #ffffff;  
-}  
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* পুরো ভিউপোর্ট উচ্চতা */
+  font-family: 'SolaimanLipi', sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 
-.toolbar {  
-  background-color: #01837A;  
-  color: white;  
-  padding: 15px;  
-  display: flex;  
-  align-items: center;  
+.toolbar {
+  background-color: #01837A;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-}  
+}
 
-.toolbar-title {  
-  font-size: 18px;  
-  font-weight: bold;  
-}  
+.toolbar-title {
+  font-size: 18px;
+  font-weight: bold;
+}
 
-.icon-img {  
-  width: 24px;  
-  height: 24px;  
-  cursor: pointer;  
-}  
+.icon-img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
 
-#loading {  
-  text-align: center;  
-  padding: 20px;  
-  font-size: 18px;  
-  color: #555;  
-}  
+#loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #555;
+}
 
-.ayah-card {  
-  margin: 10px;  
-  background-color: #ffffff;  
-  border-radius: 8px;  
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+#ayahList {
+  flex-grow: 1; /* অবশিষ্ট স্পেস নেবে */
+  overflow-y: auto; /* স্ক্রল করবে */
   padding: 10px;
-}  
+  padding-bottom: 70px; /* নিচে audio-controller জায়গা রাখবে */
+  max-height: calc(100vh - 130px); /* toolbar + audio-controller উচ্চতা বাদ */
+  box-sizing: border-box;
+}
 
-.top-row {  
-  display: flex;  
-  align-items: center;  
-  margin-bottom: 10px;  
-}  
+.ayah-card {
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px;
+}
 
-.number-box {  
-  width: 50px;  
-  height: 50px;  
-  background-image: url('ic_1_4.png');  
-  background-size: cover;  
-  display: flex;  
-  align-items: center;  
-  justify-content: center;  
-}  
+.top-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-.number-text {  
-  font-size: 11px;  
-  font-weight: bold;  
-  color: #607D8B;  
-}  
+.number-box {
+  width: 50px;
+  height: 50px;
+  background-image: url('ic_1_4.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.actions {  
-  margin-left: auto;  
-  display: flex;  
-  gap: 10px;  
-}  
+.number-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #607D8B;
+}
 
-.actions img {  
-  width: 24px;  
-  height: 24px;  
-  cursor: pointer;  
-}  
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
 
-.verse-arabic {  
-  font-family: 'NooreHuda', serif;  
-  font-size: 28px;  
-  text-align: right;  
-  direction: rtl;  
-  unicode-bidi: plaintext;  
-  color: #000;  
-  margin: 10px 0;  
-}  
+.actions img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
 
-.kanzul, .irfan {  
-  font-size: 14px;  
-  padding: 8px;  
-  margin: 10px 0 5px;  
-  font-weight: bold;  
-}  
+.verse-arabic {
+  font-family: 'NooreHuda', serif;
+  font-size: 28px;
+  text-align: right;
+  direction: rtl;
+  unicode-bidi: plaintext;
+  color: #000;
+  margin: 10px 0;
+}
 
-.kanzul {  
-  background-color: #E0F2F1;  
-  color: #009688;  
-}  
+.kanzul, .irfan {
+  font-size: 14px;
+  padding: 8px;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
 
-.irfan {  
-  background-color: #E3F2FD;  
-  color: #1E88E5;  
-}  
+.kanzul {
+  background-color: #E0F2F1;
+  color: #009688;
+}
 
-.kanzul-text, .irfan-text {  
-  font-size: 16px;  
-  color: #000;  
-  margin: 5px 0 10px;  
-}  
+.irfan {
+  background-color: #E3F2FD;
+  color: #1E88E5;
+}
 
-#searchBox {  
-  display: none;  
-  padding: 10px;  
-}  
+.kanzul-text, .irfan-text {
+  font-size: 16px;
+  color: #000;
+  margin: 5px 0 10px;
+}
 
-#searchInput {  
-  width: 100%;  
-  padding: 10px;  
-  font-size: 16px;  
-  border-radius: 8px;  
-  font-family: 'SolaimanLipi', sans-serif;  
-  border: 1px solid #ccc;  
-  box-sizing: border-box;  
-}  
+#searchBox {
+  display: none;
+  padding: 10px;
+}
 
-.audio-controller {  
-  position: fixed;  
-  bottom: 20px;  
-  left: 50%;  
-  transform: translateX(-50%);  
-  background: #01837A;  
-  color: white;  
-  padding: 10px 20px;  
-  border-radius: 30px;  
-  display: flex;  
-  align-items: center;  
-  gap: 15px;  
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);  
-  z-index: 999;  
-  display: none;  
-}  
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: 'SolaimanLipi', sans-serif;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
-.audio-controller img {  
-  width: 28px;  
-  height: 28px;  
-  cursor: pointer;  
+.audio-controller {
+  position: fixed;
+  bottom: 0; /* নিচ থেকে পুরোপুরি লাগবে */
+  left: 0;
+  right: 0;
+  background: #01837A;
+  color: white;
+  padding: 10px 0;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: none; /* তোমার জাভাস্ক্রিপ্ট থেকে টগল করবে */
+}
+
+.audio-controller img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  filter: invert(1); /* হালকা আইকনের জন্য কালার ইনভার্ট */
 }
 
 .next-icon {
-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 </style>
 
