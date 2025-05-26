@@ -1,3 +1,8 @@
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
 function jumpToAyah() {
   const userInput = prompt("কোন আয়াতে যেতে চান? (সংখ্যা লিখুন)", "");
   if (!userInput) return;
@@ -9,8 +14,10 @@ function jumpToAyah() {
   }
 
   const cards = document.querySelectorAll('.ayah-card');
-  const surah = getQueryParam('surah');
-  const isExactSurah = ['Al-Fatihah', 'At-Talaq', 'At-Tawbah'].includes(surah);
+  const surah = document.getElementById('surahTitle')?.innerText?.trim();
+
+  // এখানে সূরার নাম বাংলা, তাই নিচের তালিকায় বাংলা নাম দিন
+  const isExactSurah = ['আল ফাতিহা', 'আত তালাক', 'আত তওবা'].includes(surah);
   const jumpIndex = isExactSurah ? target - 1 : target;
 
   if (jumpIndex >= 0 && jumpIndex < cards.length) {
@@ -19,7 +26,6 @@ function jumpToAyah() {
     alert("এই সূরায় এতগুলো আয়াত নেই");
   }
 }
-
 function goBack() {
   window.location.href = 'quran.html';
 }
@@ -37,11 +43,6 @@ document.getElementById('searchInput').addEventListener('input', function () {
     card.style.display = text.includes(query) ? 'block' : 'none';
   });
 });
-
-function getQueryParam(name) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(name);
-}
 
 function convertToBanglaNumber(number) {
   const engToBan = { '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯' };
