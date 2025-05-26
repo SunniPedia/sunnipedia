@@ -1,177 +1,181 @@
-<!DOCTYPE html>    
-<html lang="bn">    
-<head>    
-  <meta charset="UTF-8">    
-  <title>আল আসর</title>    
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-  <link rel="stylesheet" href="quranview.css">    
-</head>    
-<body>    
-  <div class="toolbar">    
-    <div style="display: flex; align-items: center; gap: 10px;">    
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
-      <div class="toolbar-title" id="surahTitle">আল আসর</div>    
-    </div>    
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
-    </div>    
-  </div>    
-    
-  <div id="searchBox" style="display:none;">    
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
-  </div>    
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">০</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আসর আয়াত নং : ০    
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
-কানযুল ঈমান    
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
-ইরফানুল কুরআন    
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আসর আয়াত নং : ০    
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
-কানযুল ঈমান    
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
-ইরফানুল কুরআন    
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6177">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আসর আয়াত নং : ১    
-وَ الۡعَصۡرِ ۙ﴿۱﴾    
-কানযুল ঈমান    
-ওই মাহবূবের যুগের শপথ,    
-ইরফানুল কুরআন    
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আল আসর - ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="আল আসর - সূরাটি কানযুল ঈমান ও ইরফানুল কুরআনের অনুবাদসহ উপস্থাপন করা হয়েছে। প্রতিটি আয়াতের অডিও, কপি ও শেয়ার অপশনসহ দেখুন।">
+  <meta property="og:title" content="আল আসর - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="আল আসর - সূরাটি কানযুল ঈমান ও ইরফানুল কুরআনের অনুবাদসহ উপস্থাপন করা হয়েছে। প্রতিটি আয়াতের অডিও, কপি ও শেয়ার অপশনসহ দেখুন।">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আল আসর</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আসর আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আসর আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6177">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আসর আয়াত নং : ১
+وَ الۡعَصۡرِ ۙ﴿۱﴾
+কানযুল ঈমান
+১. ওই মাহবূবের যুগের শপথ,
+ইরফানুল কুরআন
 ১. মহাকালের শপথ! (যার আবর্তন মানুষের অবস্থার সাক্ষ্য বহন করে।)
 অথবা: 
 শপথ আসর নামাযের! (কারণ তা সকল নামাযের মধ্যবর্তী নামায।) 
 অথবা শপথ আসরের সময়ের! (যখন দিনভর আলোবিকীরণকারী সূর্য স্বয়ং অস্তমিত হওয়ার দৃশ্য উপস্থাপন করে।) 
-অথবা শপথ মুস্তাফা (সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়া সাল্লাম)-এঁর নবুয়্যতকালীন পবিত্র সময়ের! (যা ঐতিহাসিক, প্রাগৈতিহাসিক এবং অনাগত সকল কালের একমাত্র লক্ষ্য এবং কাঙ্ক্ষিত অর্জন।)    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আসর আয়াত নং : ১    
-وَ الۡعَصۡرِ ۙ﴿۱﴾    
-কানযুল ঈমান    
-ওই মাহবূবের যুগের শপথ,    
-ইরফানুল কুরআন    
+অথবা শপথ মুস্তাফা (সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়া সাল্লাম)-এঁর নবুয়্যতকালীন পবিত্র সময়ের! (যা ঐতিহাসিক, প্রাগৈতিহাসিক এবং অনাগত সকল কালের একমাত্র লক্ষ্য এবং কাঙ্ক্ষিত অর্জন।)
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আসর আয়াত নং : ১
+وَ الۡعَصۡرِ ۙ﴿۱﴾
+কানযুল ঈমান
+১. ওই মাহবূবের যুগের শপথ,
+ইরফানুল কুরআন
 ১. মহাকালের শপথ! (যার আবর্তন মানুষের অবস্থার সাক্ষ্য বহন করে।)
 অথবা: 
 শপথ আসর নামাযের! (কারণ তা সকল নামাযের মধ্যবর্তী নামায।) 
 অথবা শপথ আসরের সময়ের! (যখন দিনভর আলোবিকীরণকারী সূর্য স্বয়ং অস্তমিত হওয়ার দৃশ্য উপস্থাপন করে।) 
-অথবা শপথ মুস্তাফা (সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়া সাল্লাম)-এঁর নবুয়্যতকালীন পবিত্র সময়ের! (যা ঐতিহাসিক, প্রাগৈতিহাসিক এবং অনাগত সকল কালের একমাত্র লক্ষ্য এবং কাঙ্ক্ষিত অর্জন।)    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ الۡعَصۡرِ ۙ﴿۱﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১. ওই মাহবূবের যুগের শপথ,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
+অথবা শপথ মুস্তাফা (সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়া সাল্লাম)-এঁর নবুয়্যতকালীন পবিত্র সময়ের! (যা ঐতিহাসিক, প্রাগৈতিহাসিক এবং অনাগত সকল কালের একমাত্র লক্ষ্য এবং কাঙ্ক্ষিত অর্জন।)
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ الۡعَصۡرِ ۙ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১. ওই মাহবূবের যুগের শপথ,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
       <div class="irfan-text">১. মহাকালের শপথ! (যার আবর্তন মানুষের অবস্থার সাক্ষ্য বহন করে।)
 অথবা: 
 শপথ আসর নামাযের! (কারণ তা সকল নামাযের মধ্যবর্তী নামায।) 
 অথবা শপথ আসরের সময়ের! (যখন দিনভর আলোবিকীরণকারী সূর্য স্বয়ং অস্তমিত হওয়ার দৃশ্য উপস্থাপন করে।) 
-অথবা শপথ মুস্তাফা (সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়া সাল্লাম)-এঁর নবুয়্যতকালীন পবিত্র সময়ের! (যা ঐতিহাসিক, প্রাগৈতিহাসিক এবং অনাগত সকল কালের একমাত্র লক্ষ্য এবং কাঙ্ক্ষিত অর্জন।)</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">২</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6178">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আসর আয়াত নং : ২    
-اِنَّ  الۡاِنۡسَانَ لَفِیۡ خُسۡرٍ ۙ﴿۲﴾    
-কানযুল ঈমান    
-নিশ্চয় মানুষ অবশ্য ক্ষতির মধ্যে রয়েছে,    
-ইরফানুল কুরআন    
-২. মানুষ অবশ্যই ক্ষতিতে নিমজ্জিত (কারণ, সে তার মূল্যবান জীবনকাল অবহেলায় হারাচ্ছে)।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আসর আয়াত নং : ২    
-اِنَّ  الۡاِنۡسَانَ لَفِیۡ خُسۡرٍ ۙ﴿۲﴾    
-কানযুল ঈমান    
-নিশ্চয় মানুষ অবশ্য ক্ষতির মধ্যে রয়েছে,    
-ইরফানুল কুরআন    
-২. মানুষ অবশ্যই ক্ষতিতে নিমজ্জিত (কারণ, সে তার মূল্যবান জীবনকাল অবহেলায় হারাচ্ছে)।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اِنَّ  الۡاِنۡسَانَ لَفِیۡ خُسۡرٍ ۙ﴿۲﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">২. নিশ্চয় মানুষ অবশ্য ক্ষতির মধ্যে রয়েছে,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">২. মানুষ অবশ্যই ক্ষতিতে নিমজ্জিত (কারণ, সে তার মূল্যবান জীবনকাল অবহেলায় হারাচ্ছে)।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৩</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6179">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আসর আয়াত নং : ৩    
-اِلَّا  الَّذِیۡنَ  اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ وَ تَوَاصَوۡا بِالۡحَقِّ ۬ۙ  وَ تَوَاصَوۡا بِالصَّبۡرِ ﴿۳﴾    
-কানযুল ঈমান    
-কিন্তু (তারা নয়) যারা ঈমান এনেছে ও সৎকাজ করেছে এবং একে অপরকে সত্যের জন্য জোর দিয়েছে আর একে অপরকে ধৈর্যধারণের উপদেশ দিয়েছে।    
-ইরফানুল কুরআন    
-৩. কেবল তারা ব্যতীত, যারা ঈমান আনয়ন করে, সৎকর্ম করে, (সমাজে) পরস্পরে সত্যের উপদেশ দেয় এবং (সত্য দ্বীনের প্রচারে যেসব বিপদ ও কষ্টদায়ক বিষয় সামনে আসে তাতে) পরস্পরে ধৈর্য ধারণে উৎসাহ দেয়।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আসর আয়াত নং : ৩    
-اِلَّا  الَّذِیۡنَ  اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ وَ تَوَاصَوۡا بِالۡحَقِّ ۬ۙ  وَ تَوَاصَوۡا بِالصَّبۡرِ ﴿۳﴾    
-কানযুল ঈমান    
-কিন্তু (তারা নয়) যারা ঈমান এনেছে ও সৎকাজ করেছে এবং একে অপরকে সত্যের জন্য জোর দিয়েছে আর একে অপরকে ধৈর্যধারণের উপদেশ দিয়েছে।    
-ইরফানুল কুরআন    
-৩. কেবল তারা ব্যতীত, যারা ঈমান আনয়ন করে, সৎকর্ম করে, (সমাজে) পরস্পরে সত্যের উপদেশ দেয় এবং (সত্য দ্বীনের প্রচারে যেসব বিপদ ও কষ্টদায়ক বিষয় সামনে আসে তাতে) পরস্পরে ধৈর্য ধারণে উৎসাহ দেয়।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اِلَّا  الَّذِیۡنَ  اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ وَ تَوَاصَوۡا بِالۡحَقِّ ۬ۙ  وَ تَوَاصَوۡا بِالصَّبۡرِ ﴿۳﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৩. কিন্তু (তারা নয়) যারা ঈমান এনেছে ও সৎকাজ করেছে এবং একে অপরকে সত্যের জন্য জোর দিয়েছে আর একে অপরকে ধৈর্যধারণের উপদেশ দিয়েছে।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৩. কেবল তারা ব্যতীত, যারা ঈমান আনয়ন করে, সৎকর্ম করে, (সমাজে) পরস্পরে সত্যের উপদেশ দেয় এবং (সত্য দ্বীনের প্রচারে যেসব বিপদ ও কষ্টদায়ক বিষয় সামনে আসে তাতে) পরস্পরে ধৈর্য ধারণে উৎসাহ দেয়।</div>    
-    </div>    
-    
-  </div>    
-    
-  <div class="audio-controller" id="audioController" style="display:none;">    
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
-    <img src="next.png" onclick="playNext()" alt="Next">    
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
-  </div>    
-    
-  <script src="quranview.js"></script>    
-</body>    
-</html>    
+অথবা শপথ মুস্তাফা (সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়া সাল্লাম)-এঁর নবুয়্যতকালীন পবিত্র সময়ের! (যা ঐতিহাসিক, প্রাগৈতিহাসিক এবং অনাগত সকল কালের একমাত্র লক্ষ্য এবং কাঙ্ক্ষিত অর্জন।)</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6178">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আসর আয়াত নং : ২
+اِنَّ  الۡاِنۡسَانَ لَفِیۡ خُسۡرٍ ۙ﴿۲﴾
+কানযুল ঈমান
+২. নিশ্চয় মানুষ অবশ্য ক্ষতির মধ্যে রয়েছে,
+ইরফানুল কুরআন
+২. মানুষ অবশ্যই ক্ষতিতে নিমজ্জিত (কারণ, সে তার মূল্যবান জীবনকাল অবহেলায় হারাচ্ছে)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আসর আয়াত নং : ২
+اِنَّ  الۡاِنۡسَانَ لَفِیۡ خُسۡرٍ ۙ﴿۲﴾
+কানযুল ঈমান
+২. নিশ্চয় মানুষ অবশ্য ক্ষতির মধ্যে রয়েছে,
+ইরফানুল কুরআন
+২. মানুষ অবশ্যই ক্ষতিতে নিমজ্জিত (কারণ, সে তার মূল্যবান জীবনকাল অবহেলায় হারাচ্ছে)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِنَّ  الۡاِنۡسَانَ لَفِیۡ خُسۡرٍ ۙ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">২. নিশ্চয় মানুষ অবশ্য ক্ষতির মধ্যে রয়েছে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. মানুষ অবশ্যই ক্ষতিতে নিমজ্জিত (কারণ, সে তার মূল্যবান জীবনকাল অবহেলায় হারাচ্ছে)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6179">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল আসর আয়াত নং : ৩
+اِلَّا  الَّذِیۡنَ  اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ وَ تَوَاصَوۡا بِالۡحَقِّ ۬ۙ  وَ تَوَاصَوۡا بِالصَّبۡرِ ﴿۳﴾
+কানযুল ঈমান
+৩. কিন্তু (তারা নয়) যারা ঈমান এনেছে ও সৎকাজ করেছে এবং একে অপরকে সত্যের জন্য জোর দিয়েছে আর একে অপরকে ধৈর্যধারণের উপদেশ দিয়েছে।
+ইরফানুল কুরআন
+৩. কেবল তারা ব্যতীত, যারা ঈমান আনয়ন করে, সৎকর্ম করে, (সমাজে) পরস্পরে সত্যের উপদেশ দেয় এবং (সত্য দ্বীনের প্রচারে যেসব বিপদ ও কষ্টদায়ক বিষয় সামনে আসে তাতে) পরস্পরে ধৈর্য ধারণে উৎসাহ দেয়।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল আসর আয়াত নং : ৩
+اِلَّا  الَّذِیۡنَ  اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ وَ تَوَاصَوۡا بِالۡحَقِّ ۬ۙ  وَ تَوَاصَوۡا بِالصَّبۡرِ ﴿۳﴾
+কানযুল ঈমান
+৩. কিন্তু (তারা নয়) যারা ঈমান এনেছে ও সৎকাজ করেছে এবং একে অপরকে সত্যের জন্য জোর দিয়েছে আর একে অপরকে ধৈর্যধারণের উপদেশ দিয়েছে।
+ইরফানুল কুরআন
+৩. কেবল তারা ব্যতীত, যারা ঈমান আনয়ন করে, সৎকর্ম করে, (সমাজে) পরস্পরে সত্যের উপদেশ দেয় এবং (সত্য দ্বীনের প্রচারে যেসব বিপদ ও কষ্টদায়ক বিষয় সামনে আসে তাতে) পরস্পরে ধৈর্য ধারণে উৎসাহ দেয়।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِلَّا  الَّذِیۡنَ  اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ وَ تَوَاصَوۡا بِالۡحَقِّ ۬ۙ  وَ تَوَاصَوۡا بِالصَّبۡرِ ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৩. কিন্তু (তারা নয়) যারা ঈমান এনেছে ও সৎকাজ করেছে এবং একে অপরকে সত্যের জন্য জোর দিয়েছে আর একে অপরকে ধৈর্যধারণের উপদেশ দিয়েছে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. কেবল তারা ব্যতীত, যারা ঈমান আনয়ন করে, সৎকর্ম করে, (সমাজে) পরস্পরে সত্যের উপদেশ দেয় এবং (সত্য দ্বীনের প্রচারে যেসব বিপদ ও কষ্টদায়ক বিষয় সামনে আসে তাতে) পরস্পরে ধৈর্য ধারণে উৎসাহ দেয়।</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>

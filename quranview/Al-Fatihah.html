@@ -1,261 +1,265 @@
-<!DOCTYPE html>    
-<html lang="bn">    
-<head>    
-  <meta charset="UTF-8">    
-  <title>আল ফাতিহা </title>    
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-  <link rel="stylesheet" href="quranview.css">    
-</head>    
-<body>    
-  <div class="toolbar">    
-    <div style="display: flex; align-items: center; gap: 10px;">    
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
-      <div class="toolbar-title" id="surahTitle">আল ফাতিহা </div>    
-    </div>    
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
-    </div>    
-  </div>    
-    
-  <div id="searchBox" style="display:none;">    
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
-  </div>    
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ১    
-بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ ﴿۱﴾    
-কানযুল ঈমান    
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
-ইরফানুল কুরআন    
-১. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ১    
-بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ ﴿۱﴾    
-কানযুল ঈমান    
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
-ইরফানুল কুরআন    
-১. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ ﴿۱﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">২</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="2">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ২    
-اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۲﴾    
-কানযুল ঈমান    
-সমস্ত প্রশংসা আল্লাহর প্রতি, যিনি মালিক সমস্ত জগদ্বাসীর; (২)    
-ইরফানুল কুরআন    
-২. সমস্ত প্রশংসা আল্লাহ্‌রই তরে, যিনি সমস্ত জগতের প্রতিপালনকারী,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ২    
-اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۲﴾    
-কানযুল ঈমান    
-সমস্ত প্রশংসা আল্লাহর প্রতি, যিনি মালিক সমস্ত জগদ্বাসীর; (২)    
-ইরফানুল কুরআন    
-২. সমস্ত প্রশংসা আল্লাহ্‌রই তরে, যিনি সমস্ত জগতের প্রতিপালনকারী,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۲﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">২. সমস্ত প্রশংসা আল্লাহর প্রতি, যিনি মালিক সমস্ত জগদ্বাসীর; (২)</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">২. সমস্ত প্রশংসা আল্লাহ্‌রই তরে, যিনি সমস্ত জগতের প্রতিপালনকারী,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৩</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="3">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৩    
-الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۳﴾    
-কানযুল ঈমান    
-পরম দয়ালু, করুণাময়;    
-ইরফানুল কুরআন    
-৩. পরম করুণাময়, অসীম দয়ালু,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৩    
-الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۳﴾    
-কানযুল ঈমান    
-পরম দয়ালু, করুণাময়;    
-ইরফানুল কুরআন    
-৩. পরম করুণাময়, অসীম দয়ালু,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۳﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৩. পরম দয়ালু, করুণাময়;</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৩. পরম করুণাময়, অসীম দয়ালু,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৪</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৪    
-مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۴﴾    
-কানযুল ঈমান    
-প্রতিদান দিবসের মালিক।    
-ইরফানুল কুরআন    
-৪. অধিপতি প্রতিদান দিবসের।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৪    
-مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۴﴾    
-কানযুল ঈমান    
-প্রতিদান দিবসের মালিক।    
-ইরফানুল কুরআন    
-৪. অধিপতি প্রতিদান দিবসের।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۴﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৪. প্রতিদান দিবসের মালিক।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৪. অধিপতি প্রতিদান দিবসের।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৫</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৫    
-اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۵﴾    
-কানযুল ঈমান    
-আমরা (যেন) তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি! (৩)    
-ইরফানুল কুরআন    
-৫. (হে আল্লাহ্!) আমরা তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৫    
-اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۵﴾    
-কানযুল ঈমান    
-আমরা (যেন) তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি! (৩)    
-ইরফানুল কুরআন    
-৫. (হে আল্লাহ্!) আমরা তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۵﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৫. আমরা (যেন) তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি! (৩)</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৫. (হে আল্লাহ্!) আমরা তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৬</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৬    
-اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۶﴾    
-কানযুল ঈমান    
-আমাদেরকে সোজা পথে পরিচালিত করো! (৪)    
-ইরফানুল কুরআন    
-৬. আমাদেরকে প্রদর্শন করো সরল পথ,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৬    
-اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۶﴾    
-কানযুল ঈমান    
-আমাদেরকে সোজা পথে পরিচালিত করো! (৪)    
-ইরফানুল কুরআন    
-৬. আমাদেরকে প্রদর্শন করো সরল পথ,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۶﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৬. আমাদেরকে সোজা পথে পরিচালিত করো! (৪)</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৬. আমাদেরকে প্রদর্শন করো সরল পথ,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৭</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="7">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৭    
-صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ ۬ۙ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾    
-কানযুল ঈমান    
-তাঁদেরই পথে, যাঁদের উপর তুমি অনুগ্রহ করেছো;  তাদের পথে নয়, যাদের উপর গযব নিপতিত হয়েছে এবং পথভ্রষ্টদের পথেও নয়। (৫)    
-ইরফানুল কুরআন    
-৭. তাদের পথ, যাদের প্রতি তুমি অনুগ্রহ করেছো, তাদের পথ নয়, যারা তোমার ক্রোধের শিকার হয়েছে এবং তাদের পথও নয় যারা গোমরাহ্ বা পথভ্রষ্ট।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৭    
-صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ ۬ۙ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾    
-কানযুল ঈমান    
-তাঁদেরই পথে, যাঁদের উপর তুমি অনুগ্রহ করেছো;  তাদের পথে নয়, যাদের উপর গযব নিপতিত হয়েছে এবং পথভ্রষ্টদের পথেও নয়। (৫)    
-ইরফানুল কুরআন    
-৭. তাদের পথ, যাদের প্রতি তুমি অনুগ্রহ করেছো, তাদের পথ নয়, যারা তোমার ক্রোধের শিকার হয়েছে এবং তাদের পথও নয় যারা গোমরাহ্ বা পথভ্রষ্ট।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ ۬ۙ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৭. তাঁদেরই পথে, যাঁদের উপর তুমি অনুগ্রহ করেছো;  তাদের পথে নয়, যাদের উপর গযব নিপতিত হয়েছে এবং পথভ্রষ্টদের পথেও নয়। (৫)</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৭. তাদের পথ, যাদের প্রতি তুমি অনুগ্রহ করেছো, তাদের পথ নয়, যারা তোমার ক্রোধের শিকার হয়েছে এবং তাদের পথও নয় যারা গোমরাহ্ বা পথভ্রষ্ট।</div>    
-    </div>    
-    
-  </div>    
-    
-  <div class="audio-controller" id="audioController" style="display:none;">    
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
-    <img src="next.png" onclick="playNext()" alt="Next">    
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
-  </div>    
-    
-  <script src="quranview.js"></script>    
-</body>    
-</html>    
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আল ফাতিহা  - ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="আল ফাতিহা  - সূরাটি কানযুল ঈমান ও ইরফানুল কুরআনের অনুবাদসহ উপস্থাপন করা হয়েছে। প্রতিটি আয়াতের অডিও, কপি ও শেয়ার অপশনসহ দেখুন।">
+  <meta property="og:title" content="আল ফাতিহা  - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="আল ফাতিহা  - সূরাটি কানযুল ঈমান ও ইরফানুল কুরআনের অনুবাদসহ উপস্থাপন করা হয়েছে। প্রতিটি আয়াতের অডিও, কপি ও শেয়ার অপশনসহ দেখুন।">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আল ফাতিহা </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ১
+بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ ﴿۱﴾
+কানযুল ঈমান
+১. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+১. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ১
+بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ ﴿۱﴾
+কানযুল ঈমান
+১. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+১. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="2">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ২
+اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۲﴾
+কানযুল ঈমান
+২. সমস্ত প্রশংসা আল্লাহর প্রতি, যিনি মালিক সমস্ত জগদ্বাসীর; (২)
+ইরফানুল কুরআন
+২. সমস্ত প্রশংসা আল্লাহ্‌রই তরে, যিনি সমস্ত জগতের প্রতিপালনকারী,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ২
+اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۲﴾
+কানযুল ঈমান
+২. সমস্ত প্রশংসা আল্লাহর প্রতি, যিনি মালিক সমস্ত জগদ্বাসীর; (২)
+ইরফানুল কুরআন
+২. সমস্ত প্রশংসা আল্লাহ্‌রই তরে, যিনি সমস্ত জগতের প্রতিপালনকারী,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اَلۡحَمۡدُ لِلّٰہِ رَبِّ الۡعٰلَمِیۡنَ ۙ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">২. সমস্ত প্রশংসা আল্লাহর প্রতি, যিনি মালিক সমস্ত জগদ্বাসীর; (২)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. সমস্ত প্রশংসা আল্লাহ্‌রই তরে, যিনি সমস্ত জগতের প্রতিপালনকারী,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="3">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৩
+الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۳﴾
+কানযুল ঈমান
+৩. পরম দয়ালু, করুণাময়;
+ইরফানুল কুরআন
+৩. পরম করুণাময়, অসীম দয়ালু,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৩
+الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۳﴾
+কানযুল ঈমান
+৩. পরম দয়ালু, করুণাময়;
+ইরফানুল কুরআন
+৩. পরম করুণাময়, অসীম দয়ালু,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">الرَّحۡمٰنِ الرَّحِیۡمِ ۙ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৩. পরম দয়ালু, করুণাময়;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. পরম করুণাময়, অসীম দয়ালু,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৪
+مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۴﴾
+কানযুল ঈমান
+৪. প্রতিদান দিবসের মালিক।
+ইরফানুল কুরআন
+৪. অধিপতি প্রতিদান দিবসের।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৪
+مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۴﴾
+কানযুল ঈমান
+৪. প্রতিদান দিবসের মালিক।
+ইরফানুল কুরআন
+৪. অধিপতি প্রতিদান দিবসের।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">مٰلِکِ یَوۡمِ الدِّیۡنِ ؕ﴿۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৪. প্রতিদান দিবসের মালিক।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. অধিপতি প্রতিদান দিবসের।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="5">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৫
+اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۵﴾
+কানযুল ঈমান
+৫. আমরা (যেন) তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি! (৩)
+ইরফানুল কুরআন
+৫. (হে আল্লাহ্!) আমরা তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৫
+اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۵﴾
+কানযুল ঈমান
+৫. আমরা (যেন) তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি! (৩)
+ইরফানুল কুরআন
+৫. (হে আল্লাহ্!) আমরা তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِیَّاکَ نَعۡبُدُ وَ اِیَّاکَ نَسۡتَعِیۡنُ ؕ﴿۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৫. আমরা (যেন) তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি! (৩)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. (হে আল্লাহ্!) আমরা তোমারই ইবাদত করি এবং তোমারই নিকট সাহায্য প্রার্থনা করি।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৬
+اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۶﴾
+কানযুল ঈমান
+৬. আমাদেরকে সোজা পথে পরিচালিত করো! (৪)
+ইরফানুল কুরআন
+৬. আমাদেরকে প্রদর্শন করো সরল পথ,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৬
+اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۶﴾
+কানযুল ঈমান
+৬. আমাদেরকে সোজা পথে পরিচালিত করো! (৪)
+ইরফানুল কুরআন
+৬. আমাদেরকে প্রদর্শন করো সরল পথ,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِہۡدِ نَا الصِّرَاطَ الۡمُسۡتَقِیۡمَ ۙ﴿۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৬. আমাদেরকে সোজা পথে পরিচালিত করো! (৪)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬. আমাদেরকে প্রদর্শন করো সরল পথ,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="7">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৭
+صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ ۬ۙ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾
+কানযুল ঈমান
+৭. তাঁদেরই পথে, যাঁদের উপর তুমি অনুগ্রহ করেছো;  তাদের পথে নয়, যাদের উপর গযব নিপতিত হয়েছে এবং পথভ্রষ্টদের পথেও নয়। (৫)
+ইরফানুল কুরআন
+৭. তাদের পথ, যাদের প্রতি তুমি অনুগ্রহ করেছো, তাদের পথ নয়, যারা তোমার ক্রোধের শিকার হয়েছে এবং তাদের পথও নয় যারা গোমরাহ্ বা পথভ্রষ্ট।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফাতিহা  আয়াত নং : ৭
+صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ ۬ۙ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾
+কানযুল ঈমান
+৭. তাঁদেরই পথে, যাঁদের উপর তুমি অনুগ্রহ করেছো;  তাদের পথে নয়, যাদের উপর গযব নিপতিত হয়েছে এবং পথভ্রষ্টদের পথেও নয়। (৫)
+ইরফানুল কুরআন
+৭. তাদের পথ, যাদের প্রতি তুমি অনুগ্রহ করেছো, তাদের পথ নয়, যারা তোমার ক্রোধের শিকার হয়েছে এবং তাদের পথও নয় যারা গোমরাহ্ বা পথভ্রষ্ট।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">صِرَاطَ الَّذِیۡنَ اَنۡعَمۡتَ عَلَیۡہِمۡ ۬ۙ غَیۡرِ الۡمَغۡضُوۡبِ عَلَیۡہِمۡ وَ لَا الضَّآلِّیۡنَ ﴿۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৭. তাঁদেরই পথে, যাঁদের উপর তুমি অনুগ্রহ করেছো;  তাদের পথে নয়, যাদের উপর গযব নিপতিত হয়েছে এবং পথভ্রষ্টদের পথেও নয়। (৫)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭. তাদের পথ, যাদের প্রতি তুমি অনুগ্রহ করেছো, তাদের পথ নয়, যারা তোমার ক্রোধের শিকার হয়েছে এবং তাদের পথও নয় যারা গোমরাহ্ বা পথভ্রষ্ট।</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>

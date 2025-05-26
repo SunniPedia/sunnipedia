@@ -1,325 +1,329 @@
-<!DOCTYPE html>    
-<html lang="bn">    
-<head>    
-  <meta charset="UTF-8">    
-  <title>আলাম নাশরাহ</title>    
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-  <link rel="stylesheet" href="quranview.css">    
-</head>    
-<body>    
-  <div class="toolbar">    
-    <div style="display: flex; align-items: center; gap: 10px;">    
-      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">    
-      <div class="toolbar-title" id="surahTitle">আলাম নাশরাহ</div>    
-    </div>    
-    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">    
-      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">    
-      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">    
-    </div>    
-  </div>    
-    
-  <div id="searchBox" style="display:none;">    
-    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">    
-  </div>    
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">০</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ০    
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
-কানযুল ঈমান    
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
-ইরফানুল কুরআন    
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ০    
-بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ    
-কানযুল ঈমান    
-আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)    
-ইরফানুল কুরআন    
-০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">১</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6091">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ১    
-اَلَمۡ نَشۡرَحۡ  لَکَ صَدۡرَکَ ۙ﴿۱﴾    
-কানযুল ঈমান    
-আমি কি আপনার বক্ষ প্রশস্ত করি নি?    
-ইরফানুল কুরআন    
-১. আমরা কি আপনার কল্যাণে আপনার (সমুজ্জল) বক্ষ (জ্ঞান, প্রজ্ঞা এবং আধ্যাত্মিকতার জন্যে) প্রশস্ত করে দেইনি?    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ১    
-اَلَمۡ نَشۡرَحۡ  لَکَ صَدۡرَکَ ۙ﴿۱﴾    
-কানযুল ঈমান    
-আমি কি আপনার বক্ষ প্রশস্ত করি নি?    
-ইরফানুল কুরআন    
-১. আমরা কি আপনার কল্যাণে আপনার (সমুজ্জল) বক্ষ (জ্ঞান, প্রজ্ঞা এবং আধ্যাত্মিকতার জন্যে) প্রশস্ত করে দেইনি?    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اَلَمۡ نَشۡرَحۡ  لَکَ صَدۡرَکَ ۙ﴿۱﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">১. আমি কি আপনার বক্ষ প্রশস্ত করি নি?</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">১. আমরা কি আপনার কল্যাণে আপনার (সমুজ্জল) বক্ষ (জ্ঞান, প্রজ্ঞা এবং আধ্যাত্মিকতার জন্যে) প্রশস্ত করে দেইনি?</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">২</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6092">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ২    
-وَ وَضَعۡنَا عَنۡکَ وِزۡرَکَ ۙ﴿۲﴾    
-কানযুল ঈমান    
-এবং আপনার উপর থেকে আপনার ওই বোঝা নামিয়ে নিয়েছি,    
-ইরফানুল কুরআন    
-২. আর আমরা লাঘব করেছি আপনার (উম্মতের দুশ্চিন্তার) বোঝা,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ২    
-وَ وَضَعۡنَا عَنۡکَ وِزۡرَکَ ۙ﴿۲﴾    
-কানযুল ঈমান    
-এবং আপনার উপর থেকে আপনার ওই বোঝা নামিয়ে নিয়েছি,    
-ইরফানুল কুরআন    
-২. আর আমরা লাঘব করেছি আপনার (উম্মতের দুশ্চিন্তার) বোঝা,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ وَضَعۡنَا عَنۡکَ وِزۡرَکَ ۙ﴿۲﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">২. এবং আপনার উপর থেকে আপনার ওই বোঝা নামিয়ে নিয়েছি,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">২. আর আমরা লাঘব করেছি আপনার (উম্মতের দুশ্চিন্তার) বোঝা,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৩</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6093">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৩    
-الَّذِیۡۤ  اَنۡقَضَ ظَہۡرَکَ ۙ﴿۳﴾    
-কানযুল ঈমান    
-যা আপনার পৃষ্ঠ ভেঙ্গেছিলো,    
-ইরফানুল কুরআন    
-৩. যা আপনার (পবিত্র) পৃষ্ঠে ভারী ঠেকছিল।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৩    
-الَّذِیۡۤ  اَنۡقَضَ ظَہۡرَکَ ۙ﴿۳﴾    
-কানযুল ঈমান    
-যা আপনার পৃষ্ঠ ভেঙ্গেছিলো,    
-ইরফানুল কুরআন    
-৩. যা আপনার (পবিত্র) পৃষ্ঠে ভারী ঠেকছিল।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">الَّذِیۡۤ  اَنۡقَضَ ظَہۡرَکَ ۙ﴿۳﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৩. যা আপনার পৃষ্ঠ ভেঙ্গেছিলো,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৩. যা আপনার (পবিত্র) পৃষ্ঠে ভারী ঠেকছিল।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৪</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6094">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৪    
-وَ رَفَعۡنَا لَکَ ذِکۡرَکَ ؕ﴿۴﴾    
-কানযুল ঈমান    
-এবং আমি আপনার জন্য আপনার স্মরণকে সম্মুনত করেছি।    
-ইরফানুল কুরআন    
-৪. আর আমরা আপনার স্মরণকে (আমার সাথে সংযুক্ত করে দুনিয়া ও আখেরাতের সর্বত্র) সমুচ্চ করেছি।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৪    
-وَ رَفَعۡنَا لَکَ ذِکۡرَکَ ؕ﴿۴﴾    
-কানযুল ঈমান    
-এবং আমি আপনার জন্য আপনার স্মরণকে সম্মুনত করেছি।    
-ইরফানুল কুরআন    
-৪. আর আমরা আপনার স্মরণকে (আমার সাথে সংযুক্ত করে দুনিয়া ও আখেরাতের সর্বত্র) সমুচ্চ করেছি।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ رَفَعۡنَا لَکَ ذِکۡرَکَ ؕ﴿۴﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৪. এবং আমি আপনার জন্য আপনার স্মরণকে সম্মুনত করেছি।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৪. আর আমরা আপনার স্মরণকে (আমার সাথে সংযুক্ত করে দুনিয়া ও আখেরাতের সর্বত্র) সমুচ্চ করেছি।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৫</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6095">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৫    
-فَاِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ۙ﴿۵﴾    
-কানযুল ঈমান    
-সুতরাং নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে,    
-ইরফানুল কুরআন    
-৫. সুতরাং নিশ্চয়ই প্রত্যেক কষ্টের সাথে স্বস্তি (আসে)।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৫    
-فَاِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ۙ﴿۵﴾    
-কানযুল ঈমান    
-সুতরাং নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে,    
-ইরফানুল কুরআন    
-৫. সুতরাং নিশ্চয়ই প্রত্যেক কষ্টের সাথে স্বস্তি (আসে)।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">فَاِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ۙ﴿۵﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৫. সুতরাং নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৫. সুতরাং নিশ্চয়ই প্রত্যেক কষ্টের সাথে স্বস্তি (আসে)।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৬</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6096">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৬    
-اِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ؕ﴿۶﴾    
-কানযুল ঈমান    
-নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে।    
-ইরফানুল কুরআন    
-৬. অবশ্যই (এ) কষ্টের সাথেও স্বস্তি আছে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৬    
-اِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ؕ﴿۶﴾    
-কানযুল ঈমান    
-নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে।    
-ইরফানুল কুরআন    
-৬. অবশ্যই (এ) কষ্টের সাথেও স্বস্তি আছে।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">اِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ؕ﴿۶﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৬. নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৬. অবশ্যই (এ) কষ্টের সাথেও স্বস্তি আছে।</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৭</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6097">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৭    
-فَاِذَا  فَرَغۡتَ فَانۡصَبۡ ۙ﴿۷﴾    
-কানযুল ঈমান    
-অতএব, যখন আপনি নামায থেকে অবসর হবেন তখন দো’আর মধ্যে পরিশ্রম করুন,    
-ইরফানুল কুরআন    
-৭. অতঃপর যখনই (উম্মতকে শিক্ষা দেয়া, দ্বীনের প্রচার ও জিহাদে অংশগ্রহণ এবং আবশ্যকীয় বিষয়াদি থেকে) অবসর পান, (যিকির ও ইবাদতে) কঠোর প্রচেষ্টা করুন,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৭    
-فَاِذَا  فَرَغۡتَ فَانۡصَبۡ ۙ﴿۷﴾    
-কানযুল ঈমান    
-অতএব, যখন আপনি নামায থেকে অবসর হবেন তখন দো’আর মধ্যে পরিশ্রম করুন,    
-ইরফানুল কুরআন    
-৭. অতঃপর যখনই (উম্মতকে শিক্ষা দেয়া, দ্বীনের প্রচার ও জিহাদে অংশগ্রহণ এবং আবশ্যকীয় বিষয়াদি থেকে) অবসর পান, (যিকির ও ইবাদতে) কঠোর প্রচেষ্টা করুন,    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">فَاِذَا  فَرَغۡتَ فَانۡصَبۡ ۙ﴿۷﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৭. অতএব, যখন আপনি নামায থেকে অবসর হবেন তখন দো’আর মধ্যে পরিশ্রম করুন,</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৭. অতঃপর যখনই (উম্মতকে শিক্ষা দেয়া, দ্বীনের প্রচার ও জিহাদে অংশগ্রহণ এবং আবশ্যকীয় বিষয়াদি থেকে) অবসর পান, (যিকির ও ইবাদতে) কঠোর প্রচেষ্টা করুন,</div>    
-    </div>    
-    
-    <div class="ayah-card">    
-      <div class="top-row">    
-        <div class="number-box"><div class="number-text">৮</div></div>    
-        <div class="actions">    
-          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6098">    
-          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৮    
-وَ اِلٰی  رَبِّکَ فَارۡغَبۡ ﴿۸﴾    
-কানযুল ঈমান    
-এবং আপন রবের প্রতি মনোনিবেশ করুন।    
-ইরফানুল কুরআন    
-৮. এবং আকুল আকাঙ্ক্ষায় আপনার রবের প্রতি মনোনিবেশ করুন।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৮    
-وَ اِلٰی  رَبِّکَ فَارۡغَبۡ ﴿۸﴾    
-কানযুল ঈমান    
-এবং আপন রবের প্রতি মনোনিবেশ করুন।    
-ইরফানুল কুরআন    
-৮. এবং আকুল আকাঙ্ক্ষায় আপনার রবের প্রতি মনোনিবেশ করুন।    
-    
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :     
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">    
-        </div>    
-      </div>    
-      <div class="verse-arabic">وَ اِلٰی  رَبِّکَ فَارۡغَبۡ ﴿۸﴾</div>    
-      <div class="kanzul">কানযুল ঈমান</div>    
-      <div class="kanzul-text">৮. এবং আপন রবের প্রতি মনোনিবেশ করুন।</div>    
-      <div class="irfan">ইরফানুল কুরআন</div>    
-      <div class="irfan-text">৮. এবং আকুল আকাঙ্ক্ষায় আপনার রবের প্রতি মনোনিবেশ করুন।</div>    
-    </div>    
-    
-  </div>    
-    
-  <div class="audio-controller" id="audioController" style="display:none;">    
-    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">    
-    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">    
-    <img src="next.png" onclick="playNext()" alt="Next">    
-    <img src="stop.png" onclick="stopAudio()" alt="Stop">    
-  </div>    
-    
-  <script src="quranview.js"></script>    
-</body>    
-</html>    
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আলাম নাশরাহ - ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="আলাম নাশরাহ - সূরাটি কানযুল ঈমান ও ইরফানুল কুরআনের অনুবাদসহ উপস্থাপন করা হয়েছে। প্রতিটি আয়াতের অডিও, কপি ও শেয়ার অপশনসহ দেখুন।">
+  <meta property="og:title" content="আলাম নাশরাহ - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="আলাম নাশরাহ - সূরাটি কানযুল ঈমান ও ইরফানুল কুরআনের অনুবাদসহ উপস্থাপন করা হয়েছে। প্রতিটি আয়াতের অডিও, কপি ও শেয়ার অপশনসহ দেখুন।">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আলাম নাশরাহ</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">০. আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6091">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ১
+اَلَمۡ نَشۡرَحۡ  لَکَ صَدۡرَکَ ۙ﴿۱﴾
+কানযুল ঈমান
+১. আমি কি আপনার বক্ষ প্রশস্ত করি নি?
+ইরফানুল কুরআন
+১. আমরা কি আপনার কল্যাণে আপনার (সমুজ্জল) বক্ষ (জ্ঞান, প্রজ্ঞা এবং আধ্যাত্মিকতার জন্যে) প্রশস্ত করে দেইনি?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ১
+اَلَمۡ نَشۡرَحۡ  لَکَ صَدۡرَکَ ۙ﴿۱﴾
+কানযুল ঈমান
+১. আমি কি আপনার বক্ষ প্রশস্ত করি নি?
+ইরফানুল কুরআন
+১. আমরা কি আপনার কল্যাণে আপনার (সমুজ্জল) বক্ষ (জ্ঞান, প্রজ্ঞা এবং আধ্যাত্মিকতার জন্যে) প্রশস্ত করে দেইনি?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اَلَمۡ نَشۡرَحۡ  لَکَ صَدۡرَکَ ۙ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">১. আমি কি আপনার বক্ষ প্রশস্ত করি নি?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. আমরা কি আপনার কল্যাণে আপনার (সমুজ্জল) বক্ষ (জ্ঞান, প্রজ্ঞা এবং আধ্যাত্মিকতার জন্যে) প্রশস্ত করে দেইনি?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6092">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ২
+وَ وَضَعۡنَا عَنۡکَ وِزۡرَکَ ۙ﴿۲﴾
+কানযুল ঈমান
+২. এবং আপনার উপর থেকে আপনার ওই বোঝা নামিয়ে নিয়েছি,
+ইরফানুল কুরআন
+২. আর আমরা লাঘব করেছি আপনার (উম্মতের দুশ্চিন্তার) বোঝা,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ২
+وَ وَضَعۡنَا عَنۡکَ وِزۡرَکَ ۙ﴿۲﴾
+কানযুল ঈমান
+২. এবং আপনার উপর থেকে আপনার ওই বোঝা নামিয়ে নিয়েছি,
+ইরফানুল কুরআন
+২. আর আমরা লাঘব করেছি আপনার (উম্মতের দুশ্চিন্তার) বোঝা,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ وَضَعۡنَا عَنۡکَ وِزۡرَکَ ۙ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">২. এবং আপনার উপর থেকে আপনার ওই বোঝা নামিয়ে নিয়েছি,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. আর আমরা লাঘব করেছি আপনার (উম্মতের দুশ্চিন্তার) বোঝা,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6093">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৩
+الَّذِیۡۤ  اَنۡقَضَ ظَہۡرَکَ ۙ﴿۳﴾
+কানযুল ঈমান
+৩. যা আপনার পৃষ্ঠ ভেঙ্গেছিলো,
+ইরফানুল কুরআন
+৩. যা আপনার (পবিত্র) পৃষ্ঠে ভারী ঠেকছিল।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৩
+الَّذِیۡۤ  اَنۡقَضَ ظَہۡرَکَ ۙ﴿۳﴾
+কানযুল ঈমান
+৩. যা আপনার পৃষ্ঠ ভেঙ্গেছিলো,
+ইরফানুল কুরআন
+৩. যা আপনার (পবিত্র) পৃষ্ঠে ভারী ঠেকছিল।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">الَّذِیۡۤ  اَنۡقَضَ ظَہۡرَکَ ۙ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৩. যা আপনার পৃষ্ঠ ভেঙ্গেছিলো,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. যা আপনার (পবিত্র) পৃষ্ঠে ভারী ঠেকছিল।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6094">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৪
+وَ رَفَعۡنَا لَکَ ذِکۡرَکَ ؕ﴿۴﴾
+কানযুল ঈমান
+৪. এবং আমি আপনার জন্য আপনার স্মরণকে সম্মুনত করেছি।
+ইরফানুল কুরআন
+৪. আর আমরা আপনার স্মরণকে (আমার সাথে সংযুক্ত করে দুনিয়া ও আখেরাতের সর্বত্র) সমুচ্চ করেছি।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৪
+وَ رَفَعۡنَا لَکَ ذِکۡرَکَ ؕ﴿۴﴾
+কানযুল ঈমান
+৪. এবং আমি আপনার জন্য আপনার স্মরণকে সম্মুনত করেছি।
+ইরফানুল কুরআন
+৪. আর আমরা আপনার স্মরণকে (আমার সাথে সংযুক্ত করে দুনিয়া ও আখেরাতের সর্বত্র) সমুচ্চ করেছি।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ رَفَعۡنَا لَکَ ذِکۡرَکَ ؕ﴿۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৪. এবং আমি আপনার জন্য আপনার স্মরণকে সম্মুনত করেছি।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. আর আমরা আপনার স্মরণকে (আমার সাথে সংযুক্ত করে দুনিয়া ও আখেরাতের সর্বত্র) সমুচ্চ করেছি।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6095">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৫
+فَاِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ۙ﴿۵﴾
+কানযুল ঈমান
+৫. সুতরাং নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে,
+ইরফানুল কুরআন
+৫. সুতরাং নিশ্চয়ই প্রত্যেক কষ্টের সাথে স্বস্তি (আসে)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৫
+فَاِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ۙ﴿۵﴾
+কানযুল ঈমান
+৫. সুতরাং নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে,
+ইরফানুল কুরআন
+৫. সুতরাং নিশ্চয়ই প্রত্যেক কষ্টের সাথে স্বস্তি (আসে)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَاِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ۙ﴿۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৫. সুতরাং নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. সুতরাং নিশ্চয়ই প্রত্যেক কষ্টের সাথে স্বস্তি (আসে)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6096">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৬
+اِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ؕ﴿۶﴾
+কানযুল ঈমান
+৬. নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে।
+ইরফানুল কুরআন
+৬. অবশ্যই (এ) কষ্টের সাথেও স্বস্তি আছে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৬
+اِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ؕ﴿۶﴾
+কানযুল ঈমান
+৬. নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে।
+ইরফানুল কুরআন
+৬. অবশ্যই (এ) কষ্টের সাথেও স্বস্তি আছে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِنَّ مَعَ الۡعُسۡرِ  یُسۡرًا ؕ﴿۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৬. নিশ্চয় কষ্টের সাথে স্বস্তি রয়েছে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬. অবশ্যই (এ) কষ্টের সাথেও স্বস্তি আছে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6097">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৭
+فَاِذَا  فَرَغۡتَ فَانۡصَبۡ ۙ﴿۷﴾
+কানযুল ঈমান
+৭. অতএব, যখন আপনি নামায থেকে অবসর হবেন তখন দো’আর মধ্যে পরিশ্রম করুন,
+ইরফানুল কুরআন
+৭. অতঃপর যখনই (উম্মতকে শিক্ষা দেয়া, দ্বীনের প্রচার ও জিহাদে অংশগ্রহণ এবং আবশ্যকীয় বিষয়াদি থেকে) অবসর পান, (যিকির ও ইবাদতে) কঠোর প্রচেষ্টা করুন,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৭
+فَاِذَا  فَرَغۡتَ فَانۡصَبۡ ۙ﴿۷﴾
+কানযুল ঈমান
+৭. অতএব, যখন আপনি নামায থেকে অবসর হবেন তখন দো’আর মধ্যে পরিশ্রম করুন,
+ইরফানুল কুরআন
+৭. অতঃপর যখনই (উম্মতকে শিক্ষা দেয়া, দ্বীনের প্রচার ও জিহাদে অংশগ্রহণ এবং আবশ্যকীয় বিষয়াদি থেকে) অবসর পান, (যিকির ও ইবাদতে) কঠোর প্রচেষ্টা করুন,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَاِذَا  فَرَغۡتَ فَانۡصَبۡ ۙ﴿۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৭. অতএব, যখন আপনি নামায থেকে অবসর হবেন তখন দো’আর মধ্যে পরিশ্রম করুন,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭. অতঃপর যখনই (উম্মতকে শিক্ষা দেয়া, দ্বীনের প্রচার ও জিহাদে অংশগ্রহণ এবং আবশ্যকীয় বিষয়াদি থেকে) অবসর পান, (যিকির ও ইবাদতে) কঠোর প্রচেষ্টা করুন,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6098">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৮
+وَ اِلٰی  رَبِّکَ فَارۡغَبۡ ﴿۸﴾
+কানযুল ঈমান
+৮. এবং আপন রবের প্রতি মনোনিবেশ করুন।
+ইরফানুল কুরআন
+৮. এবং আকুল আকাঙ্ক্ষায় আপনার রবের প্রতি মনোনিবেশ করুন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আলাম নাশরাহ আয়াত নং : ৮
+وَ اِلٰی  رَبِّکَ فَارۡغَبۡ ﴿۸﴾
+কানযুল ঈমান
+৮. এবং আপন রবের প্রতি মনোনিবেশ করুন।
+ইরফানুল কুরআন
+৮. এবং আকুল আকাঙ্ক্ষায় আপনার রবের প্রতি মনোনিবেশ করুন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ اِلٰی  رَبِّکَ فَارۡغَبۡ ﴿۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">৮. এবং আপন রবের প্রতি মনোনিবেশ করুন।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৮. এবং আকুল আকাঙ্ক্ষায় আপনার রবের প্রতি মনোনিবেশ করুন।</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>
