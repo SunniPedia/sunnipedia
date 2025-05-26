@@ -49,8 +49,8 @@ html, body {
   flex-grow: 1; /* অবশিষ্ট স্পেস নেবে */
   overflow-y: auto; /* স্ক্রল করবে */
   padding: 10px;
-  padding-bottom: 70px; /* নিচে audio-controller জায়গা রাখবে */
-  max-height: calc(100vh - 130px); /* toolbar + audio-controller উচ্চতা বাদ */
+  //padding-bottom: 70px; /* নিচে audio-controller জায়গা রাখবে */
+  //max-height: calc(100vh - 130px); /* toolbar + audio-controller উচ্চতা বাদ */
   box-sizing: border-box;
 }
 
