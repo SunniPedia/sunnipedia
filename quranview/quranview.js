@@ -131,7 +131,7 @@ function toggleAudio(el) {
   currentAudio.play().then(() => {
     const card = el.closest('.ayah-card');
     if (card) {
-      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
       removeAllHighlights();
       card.classList.add('highlighted');
     }
