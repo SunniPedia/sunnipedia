@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আল ফালাক</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আল ফালাক</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফালাক আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফালাক আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6226">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফালাক আয়াত নং : ১
+قُلۡ اَعُوۡذُ  بِرَبِّ الۡفَلَقِ ۙ﴿۱﴾
+কানযুল ঈমান
+আপনি বলুন, ‘আমি তারঁই আশ্রয় নিচ্ছি, যিনি প্রভাতের সৃষ্টিকর্তা। (২)
+ইরফানুল কুরআন
+১. বলুন, ‘আমি আশ্রয় প্রার্থনা করছি (এক) বিস্ফোরণে প্রচন্ড দ্রুতগতিতে (বিশ্বজগতকে) অস্তিত্বে আনয়নকারী প্রতিপালকের নিকট,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফালাক আয়াত নং : ১
+قُلۡ اَعُوۡذُ  بِرَبِّ الۡفَلَقِ ۙ﴿۱﴾
+কানযুল ঈমান
+আপনি বলুন, ‘আমি তারঁই আশ্রয় নিচ্ছি, যিনি প্রভাতের সৃষ্টিকর্তা। (২)
+ইরফানুল কুরআন
+১. বলুন, ‘আমি আশ্রয় প্রার্থনা করছি (এক) বিস্ফোরণে প্রচন্ড দ্রুতগতিতে (বিশ্বজগতকে) অস্তিত্বে আনয়নকারী প্রতিপালকের নিকট,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">قُلۡ اَعُوۡذُ  بِرَبِّ الۡفَلَقِ ۙ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আপনি বলুন, ‘আমি তারঁই আশ্রয় নিচ্ছি, যিনি প্রভাতের সৃষ্টিকর্তা। (২)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. বলুন, ‘আমি আশ্রয় প্রার্থনা করছি (এক) বিস্ফোরণে প্রচন্ড দ্রুতগতিতে (বিশ্বজগতকে) অস্তিত্বে আনয়নকারী প্রতিপালকের নিকট,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6227">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফালাক আয়াত নং : ২
+مِنۡ  شَرِّ مَا خَلَقَ ۙ﴿۲﴾
+কানযুল ঈমান
+তাঁর সৃষ্টিকুলের অনিষ্ট থেকে, (৩)
+ইরফানুল কুরআন
+২. এমন প্রত্যেক বস্তুর অনিষ্ট (ও ক্ষতি) হতে, যা তিনি সৃষ্টি করেছেন,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফালাক আয়াত নং : ২
+مِنۡ  شَرِّ مَا خَلَقَ ۙ﴿۲﴾
+কানযুল ঈমান
+তাঁর সৃষ্টিকুলের অনিষ্ট থেকে, (৩)
+ইরফানুল কুরআন
+২. এমন প্রত্যেক বস্তুর অনিষ্ট (ও ক্ষতি) হতে, যা তিনি সৃষ্টি করেছেন,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">مِنۡ  شَرِّ مَا خَلَقَ ۙ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তাঁর সৃষ্টিকুলের অনিষ্ট থেকে, (৩)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. এমন প্রত্যেক বস্তুর অনিষ্ট (ও ক্ষতি) হতে, যা তিনি সৃষ্টি করেছেন,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6228">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফালাক আয়াত নং : ৩
+وَ مِنۡ  شَرِّ غَاسِقٍ  اِذَا وَقَبَ ۙ﴿۳﴾
+কানযুল ঈমান
+এবং অন্ধকারাচ্ছন্নকারীর অনিষ্ট থেকে, যখন সেটা অস্তমিত হয়, (৪)
+ইরফানুল কুরআন
+৩. আর (বিশেষ করে) অন্ধকার রাতের অনিষ্ট হতে, যখন (এর) অন্ধকার ছেয়ে যায়,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফালাক আয়াত নং : ৩
+وَ مِنۡ  شَرِّ غَاسِقٍ  اِذَا وَقَبَ ۙ﴿۳﴾
+কানযুল ঈমান
+এবং অন্ধকারাচ্ছন্নকারীর অনিষ্ট থেকে, যখন সেটা অস্তমিত হয়, (৪)
+ইরফানুল কুরআন
+৩. আর (বিশেষ করে) অন্ধকার রাতের অনিষ্ট হতে, যখন (এর) অন্ধকার ছেয়ে যায়,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ مِنۡ  شَرِّ غَاسِقٍ  اِذَا وَقَبَ ۙ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং অন্ধকারাচ্ছন্নকারীর অনিষ্ট থেকে, যখন সেটা অস্তমিত হয়, (৪)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. আর (বিশেষ করে) অন্ধকার রাতের অনিষ্ট হতে, যখন (এর) অন্ধকার ছেয়ে যায়,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6229">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফালাক আয়াত নং : ৪
+وَ مِنۡ  شَرِّ النَّفّٰثٰتِ فِی الۡعُقَدِ ۙ﴿۴﴾
+কানযুল ঈমান
+এবং ওই সব নারীর অনিষ্ট থেকে, যারা গ্রন্থিসমূহে ফুঁৎকার দেয়, (৫)
+ইরফানুল কুরআন
+৪. এবং অনিষ্ট হতে যাদু কারিনীদের (ও যাদুকরদের), যারা গ্রন্থিতে ফুৎকার দেয়,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফালাক আয়াত নং : ৪
+وَ مِنۡ  شَرِّ النَّفّٰثٰتِ فِی الۡعُقَدِ ۙ﴿۴﴾
+কানযুল ঈমান
+এবং ওই সব নারীর অনিষ্ট থেকে, যারা গ্রন্থিসমূহে ফুঁৎকার দেয়, (৫)
+ইরফানুল কুরআন
+৪. এবং অনিষ্ট হতে যাদু কারিনীদের (ও যাদুকরদের), যারা গ্রন্থিতে ফুৎকার দেয়,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ مِنۡ  شَرِّ النَّفّٰثٰتِ فِی الۡعُقَدِ ۙ﴿۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং ওই সব নারীর অনিষ্ট থেকে, যারা গ্রন্থিসমূহে ফুঁৎকার দেয়, (৫)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. এবং অনিষ্ট হতে যাদু কারিনীদের (ও যাদুকরদের), যারা গ্রন্থিতে ফুৎকার দেয়,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6230">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল ফালাক আয়াত নং : ৫
+وَ مِنۡ  شَرِّ حَاسِدٍ  اِذَا حَسَدَ ﴿۵﴾
+কানযুল ঈমান
+এবং হিংসুকের অনিষ্ট থেকে, যখন সে আমার প্রতি হিংসা করে’। (৬)
+ইরফানুল কুরআন
+৫. এবং অনিষ্ট হতে প্রত্যেক হিংসুকের, যখন সে হিংসা করে।’
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল ফালাক আয়াত নং : ৫
+وَ مِنۡ  شَرِّ حَاسِدٍ  اِذَا حَسَدَ ﴿۵﴾
+কানযুল ঈমান
+এবং হিংসুকের অনিষ্ট থেকে, যখন সে আমার প্রতি হিংসা করে’। (৬)
+ইরফানুল কুরআন
+৫. এবং অনিষ্ট হতে প্রত্যেক হিংসুকের, যখন সে হিংসা করে।’
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ مِنۡ  شَرِّ حَاسِدٍ  اِذَا حَسَدَ ﴿۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং হিংসুকের অনিষ্ট থেকে, যখন সে আমার প্রতি হিংসা করে’। (৬)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. এবং অনিষ্ট হতে প্রত্যেক হিংসুকের, যখন সে হিংসা করে।’</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>

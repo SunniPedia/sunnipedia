@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আল হুমাযা</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আল হুমাযা</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6180">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ১
+وَیۡلٌ   لِّکُلِّ ہُمَزَۃٍ   لُّمَزَۃِۣ ۙ﴿۱﴾
+কানযুল ঈমান
+ধ্বংস ওই ব্যক্তির জন্য, যে লোক-সম্মুখে বদনামী করে এবং পশ্চাতে নিন্দা করে;
+ইরফানুল কুরআন
+১. ধ্বংস এমন প্রত্যেক ব্যক্তির যে (সম্মুখে) অপবাদ দেয় এবং (পশ্চাতে) পরনিন্দা করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ১
+وَیۡلٌ   لِّکُلِّ ہُمَزَۃٍ   لُّمَزَۃِۣ ۙ﴿۱﴾
+কানযুল ঈমান
+ধ্বংস ওই ব্যক্তির জন্য, যে লোক-সম্মুখে বদনামী করে এবং পশ্চাতে নিন্দা করে;
+ইরফানুল কুরআন
+১. ধ্বংস এমন প্রত্যেক ব্যক্তির যে (সম্মুখে) অপবাদ দেয় এবং (পশ্চাতে) পরনিন্দা করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَیۡلٌ   لِّکُلِّ ہُمَزَۃٍ   لُّمَزَۃِۣ ۙ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ধ্বংস ওই ব্যক্তির জন্য, যে লোক-সম্মুখে বদনামী করে এবং পশ্চাতে নিন্দা করে;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. ধ্বংস এমন প্রত্যেক ব্যক্তির যে (সম্মুখে) অপবাদ দেয় এবং (পশ্চাতে) পরনিন্দা করে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6181">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ২
+الَّذِیۡ جَمَعَ  مَالًا  وَّ عَدَّدَہٗ ۙ﴿۲﴾
+কানযুল ঈমান
+যে ব্যক্তি সম্পদ সঞ্চয় করেছে এবং গুনে গুনে রেখেছে;
+ইরফানুল কুরআন
+২. (ধ্বংস ও সর্বনাশ সে ব্যক্তির) যে ধন-দৌলত পুঞ্জিভূত করে এবং তা বারবার গণনা করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ২
+الَّذِیۡ جَمَعَ  مَالًا  وَّ عَدَّدَہٗ ۙ﴿۲﴾
+কানযুল ঈমান
+যে ব্যক্তি সম্পদ সঞ্চয় করেছে এবং গুনে গুনে রেখেছে;
+ইরফানুল কুরআন
+২. (ধ্বংস ও সর্বনাশ সে ব্যক্তির) যে ধন-দৌলত পুঞ্জিভূত করে এবং তা বারবার গণনা করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">الَّذِیۡ جَمَعَ  مَالًا  وَّ عَدَّدَہٗ ۙ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">যে ব্যক্তি সম্পদ সঞ্চয় করেছে এবং গুনে গুনে রেখেছে;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. (ধ্বংস ও সর্বনাশ সে ব্যক্তির) যে ধন-দৌলত পুঞ্জিভূত করে এবং তা বারবার গণনা করে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6182">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ৩
+یَحۡسَبُ اَنَّ مَالَہٗۤ  اَخۡلَدَہٗ ۚ﴿۳﴾
+কানযুল ঈমান
+সে কি একথা মনে করে যে, তার সম্পদ তাকে পৃথিবীতে চিরকাল রাখবে?
+ইরফানুল কুরআন
+৩. সে মনে করে যে, তার ধন-দৌলত তাকে চিরকাল জীবিত রাখবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ৩
+یَحۡسَبُ اَنَّ مَالَہٗۤ  اَخۡلَدَہٗ ۚ﴿۳﴾
+কানযুল ঈমান
+সে কি একথা মনে করে যে, তার সম্পদ তাকে পৃথিবীতে চিরকাল রাখবে?
+ইরফানুল কুরআন
+৩. সে মনে করে যে, তার ধন-দৌলত তাকে চিরকাল জীবিত রাখবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">یَحۡسَبُ اَنَّ مَالَہٗۤ  اَخۡلَدَہٗ ۚ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সে কি একথা মনে করে যে, তার সম্পদ তাকে পৃথিবীতে চিরকাল রাখবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. সে মনে করে যে, তার ধন-দৌলত তাকে চিরকাল জীবিত রাখবে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6183">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ৪
+کَلَّا  لَیُنۡۢبَذَنَّ فِی الۡحُطَمَۃِ ۫﴿ۖ۴﴾
+কানযুল ঈমান
+কখনো না, অবশ্য সে পদদলিতকারীর মধ্যে নিক্ষিপ্ত হবে;
+ইরফানুল কুরআন
+৪. কখনোই নয়! তাকে অবশ্যই নিক্ষেপ করা হবে হুতামায় (অর্থাৎ চূর্ণ-বিচূর্ণ করে এমন অগ্নিতে)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ৪
+کَلَّا  لَیُنۡۢبَذَنَّ فِی الۡحُطَمَۃِ ۫﴿ۖ۴﴾
+কানযুল ঈমান
+কখনো না, অবশ্য সে পদদলিতকারীর মধ্যে নিক্ষিপ্ত হবে;
+ইরফানুল কুরআন
+৪. কখনোই নয়! তাকে অবশ্যই নিক্ষেপ করা হবে হুতামায় (অর্থাৎ চূর্ণ-বিচূর্ণ করে এমন অগ্নিতে)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">کَلَّا  لَیُنۡۢبَذَنَّ فِی الۡحُطَمَۃِ ۫﴿ۖ۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">কখনো না, অবশ্য সে পদদলিতকারীর মধ্যে নিক্ষিপ্ত হবে;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. কখনোই নয়! তাকে অবশ্যই নিক্ষেপ করা হবে হুতামায় (অর্থাৎ চূর্ণ-বিচূর্ণ করে এমন অগ্নিতে)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6184">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ৫
+وَ  مَاۤ  اَدۡرٰىکَ مَا  الۡحُطَمَۃُ ؕ﴿۵﴾
+কানযুল ঈমান
+তুমি কি জানো পদদলিতকারী কি?
+ইরফানুল কুরআন
+৫. আর আপনি কী মনে করেন, হুতামা (অর্থাৎ চূর্ণ-বিচূর্ণ করে দেয় এমন অগ্নি) কী?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ৫
+وَ  مَاۤ  اَدۡرٰىکَ مَا  الۡحُطَمَۃُ ؕ﴿۵﴾
+কানযুল ঈমান
+তুমি কি জানো পদদলিতকারী কি?
+ইরফানুল কুরআন
+৫. আর আপনি কী মনে করেন, হুতামা (অর্থাৎ চূর্ণ-বিচূর্ণ করে দেয় এমন অগ্নি) কী?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ  مَاۤ  اَدۡرٰىکَ مَا  الۡحُطَمَۃُ ؕ﴿۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তুমি কি জানো পদদলিতকারী কি?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. আর আপনি কী মনে করেন, হুতামা (অর্থাৎ চূর্ণ-বিচূর্ণ করে দেয় এমন অগ্নি) কী?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6185">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ৬
+نَارُ اللّٰہِ الۡمُوۡقَدَۃُ ۙ﴿۶﴾
+কানযুল ঈমান
+আল্লাহর আগুন, যা প্রজ্বলিত হচ্ছে;
+ইরফানুল কুরআন
+৬. (এটি) আল্লাহ্‌র প্রজ্বলিত অগ্নি।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ৬
+نَارُ اللّٰہِ الۡمُوۡقَدَۃُ ۙ﴿۶﴾
+কানযুল ঈমান
+আল্লাহর আগুন, যা প্রজ্বলিত হচ্ছে;
+ইরফানুল কুরআন
+৬. (এটি) আল্লাহ্‌র প্রজ্বলিত অগ্নি।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">نَارُ اللّٰہِ الۡمُوۡقَدَۃُ ۙ﴿۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আল্লাহর আগুন, যা প্রজ্বলিত হচ্ছে;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬. (এটি) আল্লাহ্‌র প্রজ্বলিত অগ্নি।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6186">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ৭
+الَّتِیۡ  تَطَّلِعُ  عَلَی الۡاَفۡـِٕدَۃِ ؕ﴿۷﴾
+কানযুল ঈমান
+ওটা, যা অন্তরসমূহের উপর সমুদিত হবে।
+ইরফানুল কুরআন
+৭. যা হৃদয়ে (নির্যাতনে) চড়াও হবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ৭
+الَّتِیۡ  تَطَّلِعُ  عَلَی الۡاَفۡـِٕدَۃِ ؕ﴿۷﴾
+কানযুল ঈমান
+ওটা, যা অন্তরসমূহের উপর সমুদিত হবে।
+ইরফানুল কুরআন
+৭. যা হৃদয়ে (নির্যাতনে) চড়াও হবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">الَّتِیۡ  تَطَّلِعُ  عَلَی الۡاَفۡـِٕدَۃِ ؕ﴿۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ওটা, যা অন্তরসমূহের উপর সমুদিত হবে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭. যা হৃদয়ে (নির্যাতনে) চড়াও হবে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6187">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ৮
+اِنَّہَا عَلَیۡہِمۡ  مُّؤۡصَدَۃٌ ۙ﴿۸﴾
+কানযুল ঈমান
+নিশ্চয় ওটা তাদের উপর বন্ধ করে দেওয়া হবে,
+ইরফানুল কুরআন
+৮. নিশ্চয়ই এ (অগ্নি) সেসব লোককে সর্বদিক থেকে রুদ্ধ করবে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ৮
+اِنَّہَا عَلَیۡہِمۡ  مُّؤۡصَدَۃٌ ۙ﴿۸﴾
+কানযুল ঈমান
+নিশ্চয় ওটা তাদের উপর বন্ধ করে দেওয়া হবে,
+ইরফানুল কুরআন
+৮. নিশ্চয়ই এ (অগ্নি) সেসব লোককে সর্বদিক থেকে রুদ্ধ করবে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِنَّہَا عَلَیۡہِمۡ  مُّؤۡصَدَۃٌ ۙ﴿۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">নিশ্চয় ওটা তাদের উপর বন্ধ করে দেওয়া হবে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৮. নিশ্চয়ই এ (অগ্নি) সেসব লোককে সর্বদিক থেকে রুদ্ধ করবে,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6188">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল হুমাযা আয়াত নং : ৯
+فِیۡ  عَمَدٍ  مُّمَدَّدَۃٍ ﴿۹﴾
+কানযুল ঈমান
+দীর্ঘ দীর্ঘ স্তম্ভসমূহে।
+ইরফানুল কুরআন
+৯. (লেলিহান শিখার) দীর্ঘায়িত স্তম্ভসমূহে (এবং তাদের পলায়নের কোনো পথ থাকবে না)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল হুমাযা আয়াত নং : ৯
+فِیۡ  عَمَدٍ  مُّمَدَّدَۃٍ ﴿۹﴾
+কানযুল ঈমান
+দীর্ঘ দীর্ঘ স্তম্ভসমূহে।
+ইরফানুল কুরআন
+৯. (লেলিহান শিখার) দীর্ঘায়িত স্তম্ভসমূহে (এবং তাদের পলায়নের কোনো পথ থাকবে না)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فِیۡ  عَمَدٍ  مُّمَدَّدَۃٍ ﴿۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">দীর্ঘ দীর্ঘ স্তম্ভসমূহে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৯. (লেলিহান শিখার) দীর্ঘায়িত স্তম্ভসমূহে (এবং তাদের পলায়নের কোনো পথ থাকবে না)।</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>

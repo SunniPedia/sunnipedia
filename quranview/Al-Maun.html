@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আল মাউন</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আল মাউন</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল মাউন আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল মাউন আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6198">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল মাউন আয়াত নং : ১
+اَرَءَیۡتَ  الَّذِیۡ یُکَذِّبُ بِالدِّیۡنِ ؕ﴿۱﴾
+কানযুল ঈমান
+আচ্ছা, দেখুন তো! যে দ্বীনকে অস্বীকার করে,
+ইরফানুল কুরআন
+১. আপনি কি তাকে দেখেছেন, যে দ্বীনকে অস্বীকার করে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল মাউন আয়াত নং : ১
+اَرَءَیۡتَ  الَّذِیۡ یُکَذِّبُ بِالدِّیۡنِ ؕ﴿۱﴾
+কানযুল ঈমান
+আচ্ছা, দেখুন তো! যে দ্বীনকে অস্বীকার করে,
+ইরফানুল কুরআন
+১. আপনি কি তাকে দেখেছেন, যে দ্বীনকে অস্বীকার করে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اَرَءَیۡتَ  الَّذِیۡ یُکَذِّبُ بِالدِّیۡنِ ؕ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আচ্ছা, দেখুন তো! যে দ্বীনকে অস্বীকার করে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. আপনি কি তাকে দেখেছেন, যে দ্বীনকে অস্বীকার করে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6199">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল মাউন আয়াত নং : ২
+فَذٰلِکَ الَّذِیۡ یَدُعُّ  الۡیَتِیۡمَ ۙ﴿۲﴾
+কানযুল ঈমান
+সুতরাং সে হচ্ছে ওই ব্যক্তি, যে এতিমকে ধাক্কা দেয়।
+ইরফানুল কুরআন
+২. অতএব এ সেই ব্যক্তি, যে এতিমকে রূঢ়ভাবে তাড়িয়ে দেয় (অর্থাৎ এতিমদের ইচ্ছা আকাঙ্ক্ষাকে রোধ করে এবং তাদেরকে প্রাপ্য অধিকার থেকে বঞ্চিত করে),
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল মাউন আয়াত নং : ২
+فَذٰلِکَ الَّذِیۡ یَدُعُّ  الۡیَتِیۡمَ ۙ﴿۲﴾
+কানযুল ঈমান
+সুতরাং সে হচ্ছে ওই ব্যক্তি, যে এতিমকে ধাক্কা দেয়।
+ইরফানুল কুরআন
+২. অতএব এ সেই ব্যক্তি, যে এতিমকে রূঢ়ভাবে তাড়িয়ে দেয় (অর্থাৎ এতিমদের ইচ্ছা আকাঙ্ক্ষাকে রোধ করে এবং তাদেরকে প্রাপ্য অধিকার থেকে বঞ্চিত করে),
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَذٰلِکَ الَّذِیۡ یَدُعُّ  الۡیَتِیۡمَ ۙ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং সে হচ্ছে ওই ব্যক্তি, যে এতিমকে ধাক্কা দেয়।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. অতএব এ সেই ব্যক্তি, যে এতিমকে রূঢ়ভাবে তাড়িয়ে দেয় (অর্থাৎ এতিমদের ইচ্ছা আকাঙ্ক্ষাকে রোধ করে এবং তাদেরকে প্রাপ্য অধিকার থেকে বঞ্চিত করে),</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6200">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল মাউন আয়াত নং : ৩
+وَ لَا یَحُضُّ عَلٰی طَعَامِ الۡمِسۡکِیۡنِ ؕ﴿۳﴾
+কানযুল ঈমান
+এবং মিসকীনকে আহার দেওয়ার প্রেরণা প্রদান করে না।
+ইরফানুল কুরআন
+৩. এবং অভাবগ্রস্তকে খাদ্যদানে উদ্বুদ্ধ করে না (অর্থাৎ সমাজে গরীব ও অভাবগ্রস্তদের প্রতি অর্থনৈতিক শোষণ অবসানের লক্ষ্যে চেষ্টা করে না)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল মাউন আয়াত নং : ৩
+وَ لَا یَحُضُّ عَلٰی طَعَامِ الۡمِسۡکِیۡنِ ؕ﴿۳﴾
+কানযুল ঈমান
+এবং মিসকীনকে আহার দেওয়ার প্রেরণা প্রদান করে না।
+ইরফানুল কুরআন
+৩. এবং অভাবগ্রস্তকে খাদ্যদানে উদ্বুদ্ধ করে না (অর্থাৎ সমাজে গরীব ও অভাবগ্রস্তদের প্রতি অর্থনৈতিক শোষণ অবসানের লক্ষ্যে চেষ্টা করে না)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ لَا یَحُضُّ عَلٰی طَعَامِ الۡمِسۡکِیۡنِ ؕ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং মিসকীনকে আহার দেওয়ার প্রেরণা প্রদান করে না।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. এবং অভাবগ্রস্তকে খাদ্যদানে উদ্বুদ্ধ করে না (অর্থাৎ সমাজে গরীব ও অভাবগ্রস্তদের প্রতি অর্থনৈতিক শোষণ অবসানের লক্ষ্যে চেষ্টা করে না)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6201">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল মাউন আয়াত নং : ৪
+فَوَیۡلٌ  لِّلۡمُصَلِّیۡنَ ۙ﴿۴﴾
+কানযুল ঈমান
+সুতরাং ওই নামাযীদের জন্য দুর্ভোগ রয়েছে;
+ইরফানুল কুরআন
+৪. সুতরাং আফসোস (ও ধ্বংস) সে নামাযীদের জন্যে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল মাউন আয়াত নং : ৪
+فَوَیۡلٌ  لِّلۡمُصَلِّیۡنَ ۙ﴿۴﴾
+কানযুল ঈমান
+সুতরাং ওই নামাযীদের জন্য দুর্ভোগ রয়েছে;
+ইরফানুল কুরআন
+৪. সুতরাং আফসোস (ও ধ্বংস) সে নামাযীদের জন্যে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَوَیۡلٌ  لِّلۡمُصَلِّیۡنَ ۙ﴿۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং ওই নামাযীদের জন্য দুর্ভোগ রয়েছে;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. সুতরাং আফসোস (ও ধ্বংস) সে নামাযীদের জন্যে,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6202">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল মাউন আয়াত নং : ৫
+الَّذِیۡنَ ہُمۡ عَنۡ صَلَاتِہِمۡ سَاہُوۡنَ ۙ﴿۵﴾
+কানযুল ঈমান
+যারা আপন নামাযকে ভুলে বসেছে,
+ইরফানুল কুরআন
+৫. যারা তাদের নামায (-এর প্রাণ) থেকে উদাসীন (অর্থাৎ তারা কেবল আল্লাহ্‌র অধিকারগুলোকে মনে রেখেছে, বান্দার অধিকারগুলোকে ভুলে বসেছে),
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল মাউন আয়াত নং : ৫
+الَّذِیۡنَ ہُمۡ عَنۡ صَلَاتِہِمۡ سَاہُوۡنَ ۙ﴿۵﴾
+কানযুল ঈমান
+যারা আপন নামাযকে ভুলে বসেছে,
+ইরফানুল কুরআন
+৫. যারা তাদের নামায (-এর প্রাণ) থেকে উদাসীন (অর্থাৎ তারা কেবল আল্লাহ্‌র অধিকারগুলোকে মনে রেখেছে, বান্দার অধিকারগুলোকে ভুলে বসেছে),
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">الَّذِیۡنَ ہُمۡ عَنۡ صَلَاتِہِمۡ سَاہُوۡنَ ۙ﴿۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">যারা আপন নামাযকে ভুলে বসেছে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. যারা তাদের নামায (-এর প্রাণ) থেকে উদাসীন (অর্থাৎ তারা কেবল আল্লাহ্‌র অধিকারগুলোকে মনে রেখেছে, বান্দার অধিকারগুলোকে ভুলে বসেছে),</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6203">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল মাউন আয়াত নং : ৬
+الَّذِیۡنَ ہُمۡ  یُرَآءُوۡنَ ۙ﴿۶﴾
+কানযুল ঈমান
+ওই সব ব্যক্তি, যারা লোক দেখানো (ইবাদত) করে,
+ইরফানুল কুরআন
+৬. এরা (ইবাদত) প্রদর্শন করে বেড়ায় (কারণ তারা কেবল স্রষ্টার আনুষ্ঠানিক ইবাদতই সম্পন্ন করে আর নিপীড়িত মানুষের প্রতি অবহেলা প্রদর্শন করে)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল মাউন আয়াত নং : ৬
+الَّذِیۡنَ ہُمۡ  یُرَآءُوۡنَ ۙ﴿۶﴾
+কানযুল ঈমান
+ওই সব ব্যক্তি, যারা লোক দেখানো (ইবাদত) করে,
+ইরফানুল কুরআন
+৬. এরা (ইবাদত) প্রদর্শন করে বেড়ায় (কারণ তারা কেবল স্রষ্টার আনুষ্ঠানিক ইবাদতই সম্পন্ন করে আর নিপীড়িত মানুষের প্রতি অবহেলা প্রদর্শন করে)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">الَّذِیۡنَ ہُمۡ  یُرَآءُوۡنَ ۙ﴿۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ওই সব ব্যক্তি, যারা লোক দেখানো (ইবাদত) করে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬. এরা (ইবাদত) প্রদর্শন করে বেড়ায় (কারণ তারা কেবল স্রষ্টার আনুষ্ঠানিক ইবাদতই সম্পন্ন করে আর নিপীড়িত মানুষের প্রতি অবহেলা প্রদর্শন করে)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6204">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আল মাউন আয়াত নং : ৭
+وَ یَمۡنَعُوۡنَ الۡمَاعُوۡنَ ﴿۷﴾
+কানযুল ঈমান
+এবং ব্যবহারের ছোটখাট সামগ্রী চাইলে দেয় না।
+ইরফানুল কুরআন
+৭. আর তারা ব্যবহার্য সামান্য জিনিসের চাহিদা পূরণ করতেও অস্বীকার করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আল মাউন আয়াত নং : ৭
+وَ یَمۡنَعُوۡنَ الۡمَاعُوۡنَ ﴿۷﴾
+কানযুল ঈমান
+এবং ব্যবহারের ছোটখাট সামগ্রী চাইলে দেয় না।
+ইরফানুল কুরআন
+৭. আর তারা ব্যবহার্য সামান্য জিনিসের চাহিদা পূরণ করতেও অস্বীকার করে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ یَمۡنَعُوۡنَ الۡمَاعُوۡنَ ﴿۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং ব্যবহারের ছোটখাট সামগ্রী চাইলে দেয় না।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭. আর তারা ব্যবহার্য সামান্য জিনিসের চাহিদা পূরণ করতেও অস্বীকার করে।</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>

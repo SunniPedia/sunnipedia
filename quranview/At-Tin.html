@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আত তীন</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আত তীন</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6099">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ১
+وَ التِّیۡنِ وَ الزَّیۡتُوۡنِ ۙ﴿۱﴾
+কানযুল ঈমান
+ডুমুরের শপথ ও যায়তূনের,
+ইরফানুল কুরআন
+১. শপথ ত্বীন-এর এবং শপথ যয়তুন-এর,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ১
+وَ التِّیۡنِ وَ الزَّیۡتُوۡنِ ۙ﴿۱﴾
+কানযুল ঈমান
+ডুমুরের শপথ ও যায়তূনের,
+ইরফানুল কুরআন
+১. শপথ ত্বীন-এর এবং শপথ যয়তুন-এর,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ التِّیۡنِ وَ الزَّیۡتُوۡنِ ۙ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ডুমুরের শপথ ও যায়তূনের,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. শপথ ত্বীন-এর এবং শপথ যয়তুন-এর,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6100">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ২
+وَ طُوۡرِ سِیۡنِیۡنَ ۙ﴿۲﴾
+কানযুল ঈমান
+এবং সিনাই পর্বতের,
+ইরফানুল কুরআন
+২. এবং শপথ সীনাই প্রান্তরস্থ তূর (পর্বত)-এর,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ২
+وَ طُوۡرِ سِیۡنِیۡنَ ۙ﴿۲﴾
+কানযুল ঈমান
+এবং সিনাই পর্বতের,
+ইরফানুল কুরআন
+২. এবং শপথ সীনাই প্রান্তরস্থ তূর (পর্বত)-এর,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ طُوۡرِ سِیۡنِیۡنَ ۙ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং সিনাই পর্বতের,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. এবং শপথ সীনাই প্রান্তরস্থ তূর (পর্বত)-এর,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6101">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ৩
+وَ ہٰذَا  الۡبَلَدِ الۡاَمِیۡنِ ۙ﴿۳﴾
+কানযুল ঈমান
+এবং এ নিরাপদ শহরের-
+ইরফানুল কুরআন
+৩. আর শপথ এ শান্তিময় (মক্কা) শহরের,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ৩
+وَ ہٰذَا  الۡبَلَدِ الۡاَمِیۡنِ ۙ﴿۳﴾
+কানযুল ঈমান
+এবং এ নিরাপদ শহরের-
+ইরফানুল কুরআন
+৩. আর শপথ এ শান্তিময় (মক্কা) শহরের,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ ہٰذَا  الۡبَلَدِ الۡاَمِیۡنِ ۙ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং এ নিরাপদ শহরের-</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. আর শপথ এ শান্তিময় (মক্কা) শহরের,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6102">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ৪
+لَقَدۡ خَلَقۡنَا الۡاِنۡسَانَ فِیۡۤ  اَحۡسَنِ تَقۡوِیۡمٍ ۫﴿۴﴾
+কানযুল ঈমান
+নিশ্চয় আমি মানুষকে উৎকৃষ্ট আকৃতিতে সৃষ্টি করেছি।
+ইরফানুল কুরআন
+৪. নিঃসন্দেহে আমরা মানুষকে সৃষ্টি করেছি (সুনিপুণ অনুপাতের ভারসাম্যে) সুন্দরতম অবয়বে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ৪
+لَقَدۡ خَلَقۡنَا الۡاِنۡسَانَ فِیۡۤ  اَحۡسَنِ تَقۡوِیۡمٍ ۫﴿۴﴾
+কানযুল ঈমান
+নিশ্চয় আমি মানুষকে উৎকৃষ্ট আকৃতিতে সৃষ্টি করেছি।
+ইরফানুল কুরআন
+৪. নিঃসন্দেহে আমরা মানুষকে সৃষ্টি করেছি (সুনিপুণ অনুপাতের ভারসাম্যে) সুন্দরতম অবয়বে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">لَقَدۡ خَلَقۡنَا الۡاِنۡسَانَ فِیۡۤ  اَحۡسَنِ تَقۡوِیۡمٍ ۫﴿۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">নিশ্চয় আমি মানুষকে উৎকৃষ্ট আকৃতিতে সৃষ্টি করেছি।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. নিঃসন্দেহে আমরা মানুষকে সৃষ্টি করেছি (সুনিপুণ অনুপাতের ভারসাম্যে) সুন্দরতম অবয়বে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6103">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ৫
+ثُمَّ  رَدَدۡنٰہُ  اَسۡفَلَ سٰفِلِیۡنَ ۙ﴿۵﴾
+কানযুল ঈমান
+তারপর তাকে নিম্ন থেকে নিম্নতর অবস্থার দিকে ফিরিয়ে দিয়েছি-
+ইরফানুল কুরআন
+৫. অতঃপর তাকে ফিরিয়ে দিয়েছি নীচ থেকে নীচতম অবস্থায়,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ৫
+ثُمَّ  رَدَدۡنٰہُ  اَسۡفَلَ سٰفِلِیۡنَ ۙ﴿۵﴾
+কানযুল ঈমান
+তারপর তাকে নিম্ন থেকে নিম্নতর অবস্থার দিকে ফিরিয়ে দিয়েছি-
+ইরফানুল কুরআন
+৫. অতঃপর তাকে ফিরিয়ে দিয়েছি নীচ থেকে নীচতম অবস্থায়,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">ثُمَّ  رَدَدۡنٰہُ  اَسۡفَلَ سٰفِلِیۡنَ ۙ﴿۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তারপর তাকে নিম্ন থেকে নিম্নতর অবস্থার দিকে ফিরিয়ে দিয়েছি-</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. অতঃপর তাকে ফিরিয়ে দিয়েছি নীচ থেকে নীচতম অবস্থায়,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6104">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ৬
+اِلَّا  الَّذِیۡنَ اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ فَلَہُمۡ  اَجۡرٌ غَیۡرُ  مَمۡنُوۡنٍ ؕ﴿۶﴾
+কানযুল ঈমান
+কিন্তু যারা ঈমান এনেছে এবং সৎকাজ করেছে, তাদের জন্য অফুরন্ত প্রতিদান রয়েছে।
+ইরফানুল কুরআন
+৬. ঐ সমস্ত লোক ব্যতীত, যারা ঈমান আনয়ন করে এবং সৎকর্ম অব্যাহত রাখে। তাদের জন্যে তো রয়েছে অফুরন্ত (চিরস্থায়ী) পুরষ্কার।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ৬
+اِلَّا  الَّذِیۡنَ اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ فَلَہُمۡ  اَجۡرٌ غَیۡرُ  مَمۡنُوۡنٍ ؕ﴿۶﴾
+কানযুল ঈমান
+কিন্তু যারা ঈমান এনেছে এবং সৎকাজ করেছে, তাদের জন্য অফুরন্ত প্রতিদান রয়েছে।
+ইরফানুল কুরআন
+৬. ঐ সমস্ত লোক ব্যতীত, যারা ঈমান আনয়ন করে এবং সৎকর্ম অব্যাহত রাখে। তাদের জন্যে তো রয়েছে অফুরন্ত (চিরস্থায়ী) পুরষ্কার।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اِلَّا  الَّذِیۡنَ اٰمَنُوۡا وَ عَمِلُوا الصّٰلِحٰتِ فَلَہُمۡ  اَجۡرٌ غَیۡرُ  مَمۡنُوۡنٍ ؕ﴿۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">কিন্তু যারা ঈমান এনেছে এবং সৎকাজ করেছে, তাদের জন্য অফুরন্ত প্রতিদান রয়েছে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬. ঐ সমস্ত লোক ব্যতীত, যারা ঈমান আনয়ন করে এবং সৎকর্ম অব্যাহত রাখে। তাদের জন্যে তো রয়েছে অফুরন্ত (চিরস্থায়ী) পুরষ্কার।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6105">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ৭
+فَمَا یُکَذِّبُکَ بَعۡدُ بِالدِّیۡنِ ؕ﴿۷﴾
+কানযুল ঈমান
+অতঃপর এখন কোন জিনিস তোমার জন্য ন্যায় বিচারকে অস্বীকার করার কারণ হয়েছে?
+ইরফানুল কুরআন
+৭. সুতরাং এরপর কে আছে, যে আপনাকে দ্বীনের (অথবা কিয়ামত, পুরস্কার ও শাস্তির) ব্যাপারে অস্বীকার করে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ৭
+فَمَا یُکَذِّبُکَ بَعۡدُ بِالدِّیۡنِ ؕ﴿۷﴾
+কানযুল ঈমান
+অতঃপর এখন কোন জিনিস তোমার জন্য ন্যায় বিচারকে অস্বীকার করার কারণ হয়েছে?
+ইরফানুল কুরআন
+৭. সুতরাং এরপর কে আছে, যে আপনাকে দ্বীনের (অথবা কিয়ামত, পুরস্কার ও শাস্তির) ব্যাপারে অস্বীকার করে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَمَا یُکَذِّبُکَ بَعۡدُ بِالدِّیۡنِ ؕ﴿۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">অতঃপর এখন কোন জিনিস তোমার জন্য ন্যায় বিচারকে অস্বীকার করার কারণ হয়েছে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭. সুতরাং এরপর কে আছে, যে আপনাকে দ্বীনের (অথবা কিয়ামত, পুরস্কার ও শাস্তির) ব্যাপারে অস্বীকার করে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="6106">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আত তীন আয়াত নং : ৮
+اَلَیۡسَ اللّٰہُ  بِاَحۡکَمِ الۡحٰکِمِیۡنَ ﴿۸﴾
+কানযুল ঈমান
+আল্লাহ্‌ কি সকল বিচারকের চেয়ে শ্রেষ্ঠ বিচারক নন?
+ইরফানুল কুরআন
+৮. তবে কি আল্লাহ্ সকল বিচারকদের শ্রেষ্ঠতম বিচারক নন?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আত তীন আয়াত নং : ৮
+اَلَیۡسَ اللّٰہُ  بِاَحۡکَمِ الۡحٰکِمِیۡنَ ﴿۸﴾
+কানযুল ঈমান
+আল্লাহ্‌ কি সকল বিচারকের চেয়ে শ্রেষ্ঠ বিচারক নন?
+ইরফানুল কুরআন
+৮. তবে কি আল্লাহ্ সকল বিচারকদের শ্রেষ্ঠতম বিচারক নন?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اَلَیۡسَ اللّٰہُ  بِاَحۡکَمِ الۡحٰکِمِیۡنَ ﴿۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আল্লাহ্‌ কি সকল বিচারকের চেয়ে শ্রেষ্ঠ বিচারক নন?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৮. তবে কি আল্লাহ্ সকল বিচারকদের শ্রেষ্ঠতম বিচারক নন?</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>

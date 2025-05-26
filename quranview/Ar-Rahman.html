@@ -1,0 +1,2571 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>আর রহমান</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quranview.css">
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">আর রহমান</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
+  </div>
+
+  <div id="searchBox" style="display:none;">
+    <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">
+  </div>
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;">
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="1">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ০
+بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+কানযুল ঈমান
+আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)
+ইরফানুল কুরআন
+০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আল্লাহ্‌র নামে আরম্ভ, যিনি পরম দয়ালু, করুণাময় (১)</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">০. আল্লাহর নামে শুরু, যিনি পরম করুণাময়, সতত অসীম দয়ালু।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4902">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১
+اَلرَّحۡمٰنُ ۙ﴿۱﴾
+কানযুল ঈমান
+পরম দয়ালু;
+ইরফানুল কুরআন
+১. (তিনি) অসীম অনুগ্রহশীল,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১
+اَلرَّحۡمٰنُ ۙ﴿۱﴾
+কানযুল ঈমান
+পরম দয়ালু;
+ইরফানুল কুরআন
+১. (তিনি) অসীম অনুগ্রহশীল,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اَلرَّحۡمٰنُ ۙ﴿۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">পরম দয়ালু;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১. (তিনি) অসীম অনুগ্রহশীল,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4903">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২
+عَلَّمَ  الۡقُرۡاٰنَ ؕ﴿۲﴾
+কানযুল ঈমান
+আপন মাহবূবকে ক্বোরআন শিক্ষা দিয়েছেন।
+ইরফানুল কুরআন
+২. যিনি (স্বয়ং রাসূলে আরাবী সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামকে) কুরআন শিক্ষা দিয়েছেন।*
+
+* মক্কার কাফের ও মুশরিকদের এমন অপবাদের জবাবে এ আয়াত অবতীর্ণ হয় যে, মুহাম্মাদ সাল্লাল্লাহু আলাইহি ওয়ালিহী ওয়াসাল্লামকে (আল্লাহ্‌র আশ্রয় প্রার্থণা করছি) কোনো ব্যক্তি গোপনে কুরআন শিখিয়েছেন। রেফারেন্সের জন্যে দেখুন: তাফসীরে বাগাভী, খাযিন, আল-কুশাইরী, আল-বাহরুল মুহীত, আল-জুমাল, ফতহুল কাদীর, আল-মাযহারী, আল-লুবাব, আস-সাভী, আস-সিরাজুল মুনীর, মারাগী, ইদ্বওয়াউল বায়ান এবং মাজমাউল বায়ান ও অন্যান্য।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২
+عَلَّمَ  الۡقُرۡاٰنَ ؕ﴿۲﴾
+কানযুল ঈমান
+আপন মাহবূবকে ক্বোরআন শিক্ষা দিয়েছেন।
+ইরফানুল কুরআন
+২. যিনি (স্বয়ং রাসূলে আরাবী সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামকে) কুরআন শিক্ষা দিয়েছেন।*
+
+* মক্কার কাফের ও মুশরিকদের এমন অপবাদের জবাবে এ আয়াত অবতীর্ণ হয় যে, মুহাম্মাদ সাল্লাল্লাহু আলাইহি ওয়ালিহী ওয়াসাল্লামকে (আল্লাহ্‌র আশ্রয় প্রার্থণা করছি) কোনো ব্যক্তি গোপনে কুরআন শিখিয়েছেন। রেফারেন্সের জন্যে দেখুন: তাফসীরে বাগাভী, খাযিন, আল-কুশাইরী, আল-বাহরুল মুহীত, আল-জুমাল, ফতহুল কাদীর, আল-মাযহারী, আল-লুবাব, আস-সাভী, আস-সিরাজুল মুনীর, মারাগী, ইদ্বওয়াউল বায়ান এবং মাজমাউল বায়ান ও অন্যান্য।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">عَلَّمَ  الۡقُرۡاٰنَ ؕ﴿۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আপন মাহবূবকে ক্বোরআন শিক্ষা দিয়েছেন।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২. যিনি (স্বয়ং রাসূলে আরাবী সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামকে) কুরআন শিক্ষা দিয়েছেন।*
+
+* মক্কার কাফের ও মুশরিকদের এমন অপবাদের জবাবে এ আয়াত অবতীর্ণ হয় যে, মুহাম্মাদ সাল্লাল্লাহু আলাইহি ওয়ালিহী ওয়াসাল্লামকে (আল্লাহ্‌র আশ্রয় প্রার্থণা করছি) কোনো ব্যক্তি গোপনে কুরআন শিখিয়েছেন। রেফারেন্সের জন্যে দেখুন: তাফসীরে বাগাভী, খাযিন, আল-কুশাইরী, আল-বাহরুল মুহীত, আল-জুমাল, ফতহুল কাদীর, আল-মাযহারী, আল-লুবাব, আস-সাভী, আস-সিরাজুল মুনীর, মারাগী, ইদ্বওয়াউল বায়ান এবং মাজমাউল বায়ান ও অন্যান্য।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4904">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩
+خَلَقَ  الۡاِنۡسَانَ ۙ﴿۳﴾
+কানযুল ঈমান
+মানবতার প্রাণ মুহাম্মদকে সৃষ্টি করেছেন;
+ইরফানুল কুরআন
+৩. তিনিই সৃষ্টি করেছেন (এ পরিপূর্ণ) মানুষ।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩
+خَلَقَ  الۡاِنۡسَانَ ۙ﴿۳﴾
+কানযুল ঈমান
+মানবতার প্রাণ মুহাম্মদকে সৃষ্টি করেছেন;
+ইরফানুল কুরআন
+৩. তিনিই সৃষ্টি করেছেন (এ পরিপূর্ণ) মানুষ।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">خَلَقَ  الۡاِنۡسَانَ ۙ﴿۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">মানবতার প্রাণ মুহাম্মদকে সৃষ্টি করেছেন;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩. তিনিই সৃষ্টি করেছেন (এ পরিপূর্ণ) মানুষ।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4905">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪
+عَلَّمَہُ  الۡبَیَانَ ﴿۴﴾
+কানযুল ঈমান
+যা সৃষ্টি হয়েছে এবং যা সৃষ্টি হবে সব কিছুর (মা কানা ওয়ামা য়াকুন ) সুস্পষ্ট বিবরণ তাকে শিক্ষা দিয়েছেন;
+ইরফানুল কুরআন
+৪. তিনিই তাঁকে (অর্থাৎ সত্য নবী সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামকে) শিখিয়েছেন যোগাযোগের কৌশল ও বিবৃতির প্রকাশ।** **মুফাস্সীরিনে কেরাম ‘বায়ান’-এর অর্থ গ্রহণ করেছেন পূর্বাপর সকল জ্ঞানের বর্ণনা। উদ্ধৃতির জন্যে দেখুন - তাফসীরে বাগাভী, খাযিন, জুমাল, আল-মাযহারী, আল-লুবাব, যাদুল-মুয়াস্সার, সাভী, আস-সীরাজুল মুনীর, এবং মাজমাউল বায়ান।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪
+عَلَّمَہُ  الۡبَیَانَ ﴿۴﴾
+কানযুল ঈমান
+যা সৃষ্টি হয়েছে এবং যা সৃষ্টি হবে সব কিছুর (মা কানা ওয়ামা য়াকুন ) সুস্পষ্ট বিবরণ তাকে শিক্ষা দিয়েছেন;
+ইরফানুল কুরআন
+৪. তিনিই তাঁকে (অর্থাৎ সত্য নবী সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামকে) শিখিয়েছেন যোগাযোগের কৌশল ও বিবৃতির প্রকাশ।** **মুফাস্সীরিনে কেরাম ‘বায়ান’-এর অর্থ গ্রহণ করেছেন পূর্বাপর সকল জ্ঞানের বর্ণনা। উদ্ধৃতির জন্যে দেখুন - তাফসীরে বাগাভী, খাযিন, জুমাল, আল-মাযহারী, আল-লুবাব, যাদুল-মুয়াস্সার, সাভী, আস-সীরাজুল মুনীর, এবং মাজমাউল বায়ান।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">عَلَّمَہُ  الۡبَیَانَ ﴿۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">যা সৃষ্টি হয়েছে এবং যা সৃষ্টি হবে সব কিছুর (মা কানা ওয়ামা য়াকুন ) সুস্পষ্ট বিবরণ তাকে শিক্ষা দিয়েছেন;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪. তিনিই তাঁকে (অর্থাৎ সত্য নবী সাল্লাল্লাহু আলাইহি ওয়া আলিহী ওয়াসাল্লামকে) শিখিয়েছেন যোগাযোগের কৌশল ও বিবৃতির প্রকাশ।** **মুফাস্সীরিনে কেরাম ‘বায়ান’-এর অর্থ গ্রহণ করেছেন পূর্বাপর সকল জ্ঞানের বর্ণনা। উদ্ধৃতির জন্যে দেখুন - তাফসীরে বাগাভী, খাযিন, জুমাল, আল-মাযহারী, আল-লুবাব, যাদুল-মুয়াস্সার, সাভী, আস-সীরাজুল মুনীর, এবং মাজমাউল বায়ান।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4906">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫
+اَلشَّمۡسُ وَ الۡقَمَرُ  بِحُسۡبَانٍ ﴿۪۵﴾
+কানযুল ঈমান
+সূর্য ও চন্দ্র নির্ধারিত হিসাব (নিয়ম) অনুসারে রয়েছে,
+ইরফানুল কুরআন
+৫. সূর্য এবং চন্দ্র আবর্তন করে (তাঁরই) নির্ধারিত হিসেবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫
+اَلشَّمۡسُ وَ الۡقَمَرُ  بِحُسۡبَانٍ ﴿۪۵﴾
+কানযুল ঈমান
+সূর্য ও চন্দ্র নির্ধারিত হিসাব (নিয়ম) অনুসারে রয়েছে,
+ইরফানুল কুরআন
+৫. সূর্য এবং চন্দ্র আবর্তন করে (তাঁরই) নির্ধারিত হিসেবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اَلشَّمۡسُ وَ الۡقَمَرُ  بِحُسۡبَانٍ ﴿۪۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সূর্য ও চন্দ্র নির্ধারিত হিসাব (নিয়ম) অনুসারে রয়েছে,</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫. সূর্য এবং চন্দ্র আবর্তন করে (তাঁরই) নির্ধারিত হিসেবে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4907">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬
+وَّ النَّجۡمُ وَ الشَّجَرُ  یَسۡجُدٰنِ ﴿۶﴾
+কানযুল ঈমান
+এবং তৃণলতা ও গাছ পালা সাজদা করে।
+ইরফানুল কুরআন
+৬. আর ভূমিতে বিস্তৃত তৃণলতা এবং সমস্ত বৃক্ষাদি (তাঁকেই) সেজদারত।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬
+وَّ النَّجۡمُ وَ الشَّجَرُ  یَسۡجُدٰنِ ﴿۶﴾
+কানযুল ঈমান
+এবং তৃণলতা ও গাছ পালা সাজদা করে।
+ইরফানুল কুরআন
+৬. আর ভূমিতে বিস্তৃত তৃণলতা এবং সমস্ত বৃক্ষাদি (তাঁকেই) সেজদারত।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَّ النَّجۡمُ وَ الشَّجَرُ  یَسۡجُدٰنِ ﴿۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং তৃণলতা ও গাছ পালা সাজদা করে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬. আর ভূমিতে বিস্তৃত তৃণলতা এবং সমস্ত বৃক্ষাদি (তাঁকেই) সেজদারত।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4908">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭
+وَ السَّمَآءَ رَفَعَہَا وَ وَضَعَ الۡمِیۡزَانَ ۙ﴿۷﴾
+কানযুল ঈমান
+আর আস্‌মানকে আল্লাহ্‌ সমুন্নত করেছেন এবং পরিমাপদণ্ড স্থাপন করেছেন;
+ইরফানুল কুরআন
+৭. আর তিনিই আকাশকে সমুন্নত করে রেখেছেন এবং (তিনিই ন্যায়বিচারের জন্যে) স্থাপন করেছেন মানদন্ড,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭
+وَ السَّمَآءَ رَفَعَہَا وَ وَضَعَ الۡمِیۡزَانَ ۙ﴿۷﴾
+কানযুল ঈমান
+আর আস্‌মানকে আল্লাহ্‌ সমুন্নত করেছেন এবং পরিমাপদণ্ড স্থাপন করেছেন;
+ইরফানুল কুরআন
+৭. আর তিনিই আকাশকে সমুন্নত করে রেখেছেন এবং (তিনিই ন্যায়বিচারের জন্যে) স্থাপন করেছেন মানদন্ড,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ السَّمَآءَ رَفَعَہَا وَ وَضَعَ الۡمِیۡزَانَ ۙ﴿۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আর আস্‌মানকে আল্লাহ্‌ সমুন্নত করেছেন এবং পরিমাপদণ্ড স্থাপন করেছেন;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭. আর তিনিই আকাশকে সমুন্নত করে রেখেছেন এবং (তিনিই ন্যায়বিচারের জন্যে) স্থাপন করেছেন মানদন্ড,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4909">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৮
+اَلَّا  تَطۡغَوۡا فِی الۡمِیۡزَانِ ﴿۸﴾
+কানযুল ঈমান
+যাতে তোমরা পরিমাপে ভারসাম্য লঙ্ঘন না করো।
+ইরফানুল কুরআন
+৮. যাতে তোমরা ওজনের ক্ষেত্রে সীমালঙ্ঘন না করো।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৮
+اَلَّا  تَطۡغَوۡا فِی الۡمِیۡزَانِ ﴿۸﴾
+কানযুল ঈমান
+যাতে তোমরা পরিমাপে ভারসাম্য লঙ্ঘন না করো।
+ইরফানুল কুরআন
+৮. যাতে তোমরা ওজনের ক্ষেত্রে সীমালঙ্ঘন না করো।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">اَلَّا  تَطۡغَوۡا فِی الۡمِیۡزَانِ ﴿۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">যাতে তোমরা পরিমাপে ভারসাম্য লঙ্ঘন না করো।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৮. যাতে তোমরা ওজনের ক্ষেত্রে সীমালঙ্ঘন না করো।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4910">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৯
+وَ اَقِیۡمُوا  الۡوَزۡنَ بِالۡقِسۡطِ وَ لَا تُخۡسِرُوا الۡمِیۡزَانَ ﴿۹﴾
+কানযুল ঈমান
+আর ন্যায়-নিষ্ঠার সাথে পরিমাপ প্রতিষ্ঠা করো এবং ওজনে কম দিও না।
+ইরফানুল কুরআন
+৯. আর ওজনের ন্যায্য মান প্রতিষ্ঠিত রাখো এবং ওজনে কম করো না।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৯
+وَ اَقِیۡمُوا  الۡوَزۡنَ بِالۡقِسۡطِ وَ لَا تُخۡسِرُوا الۡمِیۡزَانَ ﴿۹﴾
+কানযুল ঈমান
+আর ন্যায়-নিষ্ঠার সাথে পরিমাপ প্রতিষ্ঠা করো এবং ওজনে কম দিও না।
+ইরফানুল কুরআন
+৯. আর ওজনের ন্যায্য মান প্রতিষ্ঠিত রাখো এবং ওজনে কম করো না।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ اَقِیۡمُوا  الۡوَزۡنَ بِالۡقِسۡطِ وَ لَا تُخۡسِرُوا الۡمِیۡزَانَ ﴿۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">আর ন্যায়-নিষ্ঠার সাথে পরিমাপ প্রতিষ্ঠা করো এবং ওজনে কম দিও না।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৯. আর ওজনের ন্যায্য মান প্রতিষ্ঠিত রাখো এবং ওজনে কম করো না।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4911">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১০
+وَ الۡاَرۡضَ وَضَعَہَا لِلۡاَنَامِ ﴿ۙ۱۰﴾
+কানযুল ঈমান
+এবং পৃথিবী স্থাপন করেছেন সৃষ্টিকূলের জন্য;
+ইরফানুল কুরআন
+১০. তিনিই পৃথিবীকে বিস্তৃত করেছেন সৃষ্ট জীবের জন্যে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১০
+وَ الۡاَرۡضَ وَضَعَہَا لِلۡاَنَامِ ﴿ۙ۱۰﴾
+কানযুল ঈমান
+এবং পৃথিবী স্থাপন করেছেন সৃষ্টিকূলের জন্য;
+ইরফানুল কুরআন
+১০. তিনিই পৃথিবীকে বিস্তৃত করেছেন সৃষ্ট জীবের জন্যে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ الۡاَرۡضَ وَضَعَہَا لِلۡاَنَامِ ﴿ۙ۱۰﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং পৃথিবী স্থাপন করেছেন সৃষ্টিকূলের জন্য;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১০. তিনিই পৃথিবীকে বিস্তৃত করেছেন সৃষ্ট জীবের জন্যে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4912">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১১
+فِیۡہَا فَاکِہَۃٌ ۪ۙ  وَّ النَّخۡلُ  ذَاتُ الۡاَکۡمَامِ ﴿ۖ۱۱﴾
+কানযুল ঈমান
+তাতে ফলমূল ও আবরণযুক্ত খেজুরসমূহ রয়েছে
+ইরফানুল কুরআন
+১১. এতে রয়েছে ফলমূল এবং খর্জুর বৃক্ষ যার ফল আবরণযুক্ত,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১১
+فِیۡہَا فَاکِہَۃٌ ۪ۙ  وَّ النَّخۡلُ  ذَاتُ الۡاَکۡمَامِ ﴿ۖ۱۱﴾
+কানযুল ঈমান
+তাতে ফলমূল ও আবরণযুক্ত খেজুরসমূহ রয়েছে
+ইরফানুল কুরআন
+১১. এতে রয়েছে ফলমূল এবং খর্জুর বৃক্ষ যার ফল আবরণযুক্ত,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فِیۡہَا فَاکِہَۃٌ ۪ۙ  وَّ النَّخۡلُ  ذَاتُ الۡاَکۡمَامِ ﴿ۖ۱۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তাতে ফলমূল ও আবরণযুক্ত খেজুরসমূহ রয়েছে</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১১. এতে রয়েছে ফলমূল এবং খর্জুর বৃক্ষ যার ফল আবরণযুক্ত,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4913">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১২
+وَ الۡحَبُّ ذُو الۡعَصۡفِ وَ الرَّیۡحَانُ ﴿ۚ۱۲﴾
+কানযুল ঈমান
+এবং ভুসির সাথে শস্যদানা ও সুগন্ধময় ফুল।
+ইরফানুল কুরআন
+১২. আর খোসা বিশিষ্ট শস্য-দানা এবং সুগন্ধি (ফল) ফুল।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১২
+وَ الۡحَبُّ ذُو الۡعَصۡفِ وَ الرَّیۡحَانُ ﴿ۚ۱۲﴾
+কানযুল ঈমান
+এবং ভুসির সাথে শস্যদানা ও সুগন্ধময় ফুল।
+ইরফানুল কুরআন
+১২. আর খোসা বিশিষ্ট শস্য-দানা এবং সুগন্ধি (ফল) ফুল।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ الۡحَبُّ ذُو الۡعَصۡفِ وَ الرَّیۡحَانُ ﴿ۚ۱۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং ভুসির সাথে শস্যদানা ও সুগন্ধময় ফুল।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১২. আর খোসা বিশিষ্ট শস্য-দানা এবং সুগন্ধি (ফল) ফুল।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4914">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۳﴾
+কানযুল ঈমান
+সুতরাং হে জিন্‌ ও মানব! তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+১৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۳﴾
+কানযুল ঈমান
+সুতরাং হে জিন্‌ ও মানব! তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+১৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং হে জিন্‌ ও মানব! তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4915">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১৪
+خَلَقَ الۡاِنۡسَانَ مِنۡ صَلۡصَالٍ کَالۡفَخَّارِ ﴿ۙ۱۴﴾
+কানযুল ঈমান
+তিনি মানুষকে সৃষ্টি করেছেন ঠনঠনে মাটি থেকে, যেমন পোড়া মাটি।
+ইরফানুল কুরআন
+১৪. তিনিই মানুষকে সৃষ্টি করেছেন পোড়া মাটির ন্যায় ঠনঠনে শুষ্ক কাঁদামাটি থেকে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১৪
+خَلَقَ الۡاِنۡسَانَ مِنۡ صَلۡصَالٍ کَالۡفَخَّارِ ﴿ۙ۱۴﴾
+কানযুল ঈমান
+তিনি মানুষকে সৃষ্টি করেছেন ঠনঠনে মাটি থেকে, যেমন পোড়া মাটি।
+ইরফানুল কুরআন
+১৪. তিনিই মানুষকে সৃষ্টি করেছেন পোড়া মাটির ন্যায় ঠনঠনে শুষ্ক কাঁদামাটি থেকে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">خَلَقَ الۡاِنۡسَانَ مِنۡ صَلۡصَالٍ کَالۡفَخَّارِ ﴿ۙ۱۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তিনি মানুষকে সৃষ্টি করেছেন ঠনঠনে মাটি থেকে, যেমন পোড়া মাটি।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৪. তিনিই মানুষকে সৃষ্টি করেছেন পোড়া মাটির ন্যায় ঠনঠনে শুষ্ক কাঁদামাটি থেকে,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4916">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১৫
+وَ  خَلَقَ  الۡجَآنَّ مِنۡ مَّارِجٍ  مِّنۡ نَّارٍ ﴿ۚ۱۵﴾
+কানযুল ঈমান
+এবং জিন্‌ জাতিকে সৃষ্টি করেছেন অগ্নি শিখা থেকে।
+ইরফানুল কুরআন
+১৫. এবং জ্বিনকে সৃষ্টি করেছেন অগ্নিশিখা থেকে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১৫
+وَ  خَلَقَ  الۡجَآنَّ مِنۡ مَّارِجٍ  مِّنۡ نَّارٍ ﴿ۚ۱۵﴾
+কানযুল ঈমান
+এবং জিন্‌ জাতিকে সৃষ্টি করেছেন অগ্নি শিখা থেকে।
+ইরফানুল কুরআন
+১৫. এবং জ্বিনকে সৃষ্টি করেছেন অগ্নিশিখা থেকে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ  خَلَقَ  الۡجَآنَّ مِنۡ مَّارِجٍ  مِّنۡ نَّارٍ ﴿ۚ۱۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং জিন্‌ জাতিকে সৃষ্টি করেছেন অগ্নি শিখা থেকে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৫. এবং জ্বিনকে সৃষ্টি করেছেন অগ্নিশিখা থেকে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4917">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১৬
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۶﴾
+কানযুল ঈমান
+সুতরাং তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+১৬. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১৬
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۶﴾
+কানযুল ঈমান
+সুতরাং তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+১৬. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৬. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4918">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১৭
+رَبُّ الۡمَشۡرِقَیۡنِ وَ رَبُّ الۡمَغۡرِبَیۡنِ ﴿ۚ۱۷﴾
+কানযুল ঈমান
+উভয় পূর্বের রব এবং উভয় পশ্চিমের রব।
+ইরফানুল কুরআন
+১৭. (তিনিই) উভয় উদয়াচলের মনিব এবং (তিনিই) উভয় অস্তাচলের মনিব।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১৭
+رَبُّ الۡمَشۡرِقَیۡنِ وَ رَبُّ الۡمَغۡرِبَیۡنِ ﴿ۚ۱۷﴾
+কানযুল ঈমান
+উভয় পূর্বের রব এবং উভয় পশ্চিমের রব।
+ইরফানুল কুরআন
+১৭. (তিনিই) উভয় উদয়াচলের মনিব এবং (তিনিই) উভয় অস্তাচলের মনিব।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">رَبُّ الۡمَشۡرِقَیۡنِ وَ رَبُّ الۡمَغۡرِبَیۡنِ ﴿ۚ۱۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">উভয় পূর্বের রব এবং উভয় পশ্চিমের রব।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৭. (তিনিই) উভয় উদয়াচলের মনিব এবং (তিনিই) উভয় অস্তাচলের মনিব।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4919">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১৮
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۸﴾
+কানযুল ঈমান
+সুতরাং তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+১৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১৮
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۸﴾
+কানযুল ঈমান
+সুতরাং তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+১৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۱۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং তোমরা উভয় জাতি আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">১৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4920">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ১৯
+مَرَجَ  الۡبَحۡرَیۡنِ یَلۡتَقِیٰنِ ﴿ۙ۱۹﴾
+কানযুল ঈমান
+তিনি দু’টি সমুদ্র প্রবাহিত করেছেন, যে দু’টি দেখতে মনে হয় পরস্পর মিলিত;
+ইরফানুল কুরআন
+১৯. তিনিই প্রবাহিত করেন দুই সমুদ্র, যা পরস্পরে মিলিত হয়;
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ১৯
+مَرَجَ  الۡبَحۡرَیۡنِ یَلۡتَقِیٰنِ ﴿ۙ۱۹﴾
+কানযুল ঈমান
+তিনি দু’টি সমুদ্র প্রবাহিত করেছেন, যে দু’টি দেখতে মনে হয় পরস্পর মিলিত;
+ইরফানুল কুরআন
+১৯. তিনিই প্রবাহিত করেন দুই সমুদ্র, যা পরস্পরে মিলিত হয়;
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">مَرَجَ  الۡبَحۡرَیۡنِ یَلۡتَقِیٰنِ ﴿ۙ۱۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তিনি দু’টি সমুদ্র প্রবাহিত করেছেন, যে দু’টি দেখতে মনে হয় পরস্পর মিলিত;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">১৯. তিনিই প্রবাহিত করেন দুই সমুদ্র, যা পরস্পরে মিলিত হয়;</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4921">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২০
+بَیۡنَہُمَا بَرۡزَخٌ  لَّا  یَبۡغِیٰنِ ﴿ۚ۲۰﴾
+কানযুল ঈমান
+এবং রয়েছে উভয়ের মধ্যখানে অন্তরায় যে, একটা অপরটাকে অতিক্রম করতে পারে না।
+ইরফানুল কুরআন
+২০. এ দু’য়ের মাঝে রয়েছে এক অন্তরাল, যে (স্ব স্ব) সীমা তারা অতিক্রম করতে পারে না।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২০
+بَیۡنَہُمَا بَرۡزَخٌ  لَّا  یَبۡغِیٰنِ ﴿ۚ۲۰﴾
+কানযুল ঈমান
+এবং রয়েছে উভয়ের মধ্যখানে অন্তরায় যে, একটা অপরটাকে অতিক্রম করতে পারে না।
+ইরফানুল কুরআন
+২০. এ দু’য়ের মাঝে রয়েছে এক অন্তরাল, যে (স্ব স্ব) সীমা তারা অতিক্রম করতে পারে না।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">بَیۡنَہُمَا بَرۡزَخٌ  لَّا  یَبۡغِیٰنِ ﴿ۚ۲۰﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং রয়েছে উভয়ের মধ্যখানে অন্তরায় যে, একটা অপরটাকে অতিক্রম করতে পারে না।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২০. এ দু’য়ের মাঝে রয়েছে এক অন্তরাল, যে (স্ব স্ব) সীমা তারা অতিক্রম করতে পারে না।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4922">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২১
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۱﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+২১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২১
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۱﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+২১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4923">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২২
+یَخۡرُجُ مِنۡہُمَا اللُّؤۡلُؤُ  وَ الۡمَرۡجَانُ ﴿ۚ۲۲﴾
+কানযুল ঈমান
+ওই দু’টির মধ্য থেকে মুক্তা ও প্রবাল বের হয়।
+ইরফানুল কুরআন
+২২. উভয় (সমুদ্র) থেকে উৎপন্ন হয় মুক্তা (যার ঝলক সবুজ) এবং প্রবাল (যার রং লাল)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২২
+یَخۡرُجُ مِنۡہُمَا اللُّؤۡلُؤُ  وَ الۡمَرۡجَانُ ﴿ۚ۲۲﴾
+কানযুল ঈমান
+ওই দু’টির মধ্য থেকে মুক্তা ও প্রবাল বের হয়।
+ইরফানুল কুরআন
+২২. উভয় (সমুদ্র) থেকে উৎপন্ন হয় মুক্তা (যার ঝলক সবুজ) এবং প্রবাল (যার রং লাল)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">یَخۡرُجُ مِنۡہُمَا اللُّؤۡلُؤُ  وَ الۡمَرۡجَانُ ﴿ۚ۲۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ওই দু’টির মধ্য থেকে মুক্তা ও প্রবাল বের হয়।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২২. উভয় (সমুদ্র) থেকে উৎপন্ন হয় মুক্তা (যার ঝলক সবুজ) এবং প্রবাল (যার রং লাল)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4924">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۳﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+২৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۳﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+২৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4925">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২৪
+وَ لَہُ  الۡجَوَارِ الۡمُنۡشَئٰتُ فِی الۡبَحۡرِ کَالۡاَعۡلَامِ ﴿ۚ۲۴﴾
+কানযুল ঈমান
+এবং তাঁরই ওই সব চলমান নৌযান, যেগুলোর সমুদ্রের মধ্যে উত্থিত রয়েছে যেমন কতগুলো পর্বত।
+ইরফানুল কুরআন
+২৪. আর তাঁরই (নিয়ন্ত্রণে) সমুদ্রে (নোঙর করা কিংবা) বিচরণশীল পর্বতসম সুউচ্চ পাল বিশিষ্ট নৌযানও।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২৪
+وَ لَہُ  الۡجَوَارِ الۡمُنۡشَئٰتُ فِی الۡبَحۡرِ کَالۡاَعۡلَامِ ﴿ۚ۲۴﴾
+কানযুল ঈমান
+এবং তাঁরই ওই সব চলমান নৌযান, যেগুলোর সমুদ্রের মধ্যে উত্থিত রয়েছে যেমন কতগুলো পর্বত।
+ইরফানুল কুরআন
+২৪. আর তাঁরই (নিয়ন্ত্রণে) সমুদ্রে (নোঙর করা কিংবা) বিচরণশীল পর্বতসম সুউচ্চ পাল বিশিষ্ট নৌযানও।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ لَہُ  الۡجَوَارِ الۡمُنۡشَئٰتُ فِی الۡبَحۡرِ کَالۡاَعۡلَامِ ﴿ۚ۲۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং তাঁরই ওই সব চলমান নৌযান, যেগুলোর সমুদ্রের মধ্যে উত্থিত রয়েছে যেমন কতগুলো পর্বত।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২৪. আর তাঁরই (নিয়ন্ত্রণে) সমুদ্রে (নোঙর করা কিংবা) বিচরণশীল পর্বতসম সুউচ্চ পাল বিশিষ্ট নৌযানও।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4926">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۵﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+২৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۵﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+২৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4927">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২৬
+کُلُّ  مَنۡ  عَلَیۡہَا  فَانٍ ﴿ۚۖ۲۶﴾
+কানযুল ঈমান
+ভূ-পৃষ্ঠের উপর যত কিছু আছে সবকিছুই নশ্বর।
+ইরফানুল কুরআন
+২৬. যা কিছুই ভূপৃষ্ঠে রয়েছে সবই নশ্বর।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২৬
+کُلُّ  مَنۡ  عَلَیۡہَا  فَانٍ ﴿ۚۖ۲۶﴾
+কানযুল ঈমান
+ভূ-পৃষ্ঠের উপর যত কিছু আছে সবকিছুই নশ্বর।
+ইরফানুল কুরআন
+২৬. যা কিছুই ভূপৃষ্ঠে রয়েছে সবই নশ্বর।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">کُلُّ  مَنۡ  عَلَیۡہَا  فَانٍ ﴿ۚۖ۲۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ভূ-পৃষ্ঠের উপর যত কিছু আছে সবকিছুই নশ্বর।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২৬. যা কিছুই ভূপৃষ্ঠে রয়েছে সবই নশ্বর।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4928">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২৭
+وَّ یَبۡقٰی وَجۡہُ  رَبِّکَ ذُو الۡجَلٰلِ وَ الۡاِکۡرَامِ ﴿ۚ۲۷﴾
+কানযুল ঈমান
+এবং চিরস্থায়ী হচ্ছেন আপনার রবের সত্তা, যিনি মহামহিম ও উচ্চ মর্যাদাসম্পন্ন।
+ইরফানুল কুরআন
+২৭. অবিনশ্বর কেবল আপনার প্রতিপালকের সত্তাই, যিনি অধিকারী সম্মান ও মর্যাদার এবং অনুগ্রহ ও দয়ার।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২৭
+وَّ یَبۡقٰی وَجۡہُ  رَبِّکَ ذُو الۡجَلٰلِ وَ الۡاِکۡرَامِ ﴿ۚ۲۷﴾
+কানযুল ঈমান
+এবং চিরস্থায়ী হচ্ছেন আপনার রবের সত্তা, যিনি মহামহিম ও উচ্চ মর্যাদাসম্পন্ন।
+ইরফানুল কুরআন
+২৭. অবিনশ্বর কেবল আপনার প্রতিপালকের সত্তাই, যিনি অধিকারী সম্মান ও মর্যাদার এবং অনুগ্রহ ও দয়ার।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَّ یَبۡقٰی وَجۡہُ  رَبِّکَ ذُو الۡجَلٰلِ وَ الۡاِکۡرَامِ ﴿ۚ۲۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং চিরস্থায়ী হচ্ছেন আপনার রবের সত্তা, যিনি মহামহিম ও উচ্চ মর্যাদাসম্পন্ন।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২৭. অবিনশ্বর কেবল আপনার প্রতিপালকের সত্তাই, যিনি অধিকারী সম্মান ও মর্যাদার এবং অনুগ্রহ ও দয়ার।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4929">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২৮
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۸﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+২৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২৮
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۸﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+২৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۲۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">২৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4930">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ২৯
+یَسۡـَٔلُہٗ  مَنۡ  فِی السَّمٰوٰتِ وَ الۡاَرۡضِ ؕ کُلَّ  یَوۡمٍ ہُوَ  فِیۡ  شَاۡنٍ ﴿ۚ۲۹﴾
+কানযুল ঈমান
+তাঁরই নিকট প্রার্থনা করছে যতকিছু আস্‌মান সমূহ ও যমীনে রয়েছে। প্রত্যহ তার একেকটি (গুরুত্বপূর্ণ) কাজ রয়েছে।
+ইরফানুল কুরআন
+২৯. যা কিছুই আকাশমন্ডলী ও পৃথিবীতে রয়েছে সকলেই তাঁর নিকট ক্ষমা প্রার্থনা করে; তিনি প্রতি মুহূর্তে নব মর্যাদায় প্রতিভাত হন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ২৯
+یَسۡـَٔلُہٗ  مَنۡ  فِی السَّمٰوٰتِ وَ الۡاَرۡضِ ؕ کُلَّ  یَوۡمٍ ہُوَ  فِیۡ  شَاۡنٍ ﴿ۚ۲۹﴾
+কানযুল ঈমান
+তাঁরই নিকট প্রার্থনা করছে যতকিছু আস্‌মান সমূহ ও যমীনে রয়েছে। প্রত্যহ তার একেকটি (গুরুত্বপূর্ণ) কাজ রয়েছে।
+ইরফানুল কুরআন
+২৯. যা কিছুই আকাশমন্ডলী ও পৃথিবীতে রয়েছে সকলেই তাঁর নিকট ক্ষমা প্রার্থনা করে; তিনি প্রতি মুহূর্তে নব মর্যাদায় প্রতিভাত হন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">یَسۡـَٔلُہٗ  مَنۡ  فِی السَّمٰوٰتِ وَ الۡاَرۡضِ ؕ کُلَّ  یَوۡمٍ ہُوَ  فِیۡ  شَاۡنٍ ﴿ۚ۲۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তাঁরই নিকট প্রার্থনা করছে যতকিছু আস্‌মান সমূহ ও যমীনে রয়েছে। প্রত্যহ তার একেকটি (গুরুত্বপূর্ণ) কাজ রয়েছে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">২৯. যা কিছুই আকাশমন্ডলী ও পৃথিবীতে রয়েছে সকলেই তাঁর নিকট ক্ষমা প্রার্থনা করে; তিনি প্রতি মুহূর্তে নব মর্যাদায় প্রতিভাত হন।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4931">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩০
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۰﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩০. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩০
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۰﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩০. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۰﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩০. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4932">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩১
+سَنَفۡرُغُ   لَکُمۡ  اَیُّہَ  الثَّقَلٰنِ ﴿ۚ۳۱﴾
+কানযুল ঈমান
+শীঘ্রই সমস্ত কাজ সম্পন্ন করে আমি তোমাদের হিসাবের ইচ্ছা করি, হে উভয় ভারী দল!
+ইরফানুল কুরআন
+৩১. হে (মানুষ ও জ্বিনের) দুই দল! অচিরেই আমরা মনোনিবেশ করবো তোমাদের হিসাবের দিকে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩১
+سَنَفۡرُغُ   لَکُمۡ  اَیُّہَ  الثَّقَلٰنِ ﴿ۚ۳۱﴾
+কানযুল ঈমান
+শীঘ্রই সমস্ত কাজ সম্পন্ন করে আমি তোমাদের হিসাবের ইচ্ছা করি, হে উভয় ভারী দল!
+ইরফানুল কুরআন
+৩১. হে (মানুষ ও জ্বিনের) দুই দল! অচিরেই আমরা মনোনিবেশ করবো তোমাদের হিসাবের দিকে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">سَنَفۡرُغُ   لَکُمۡ  اَیُّہَ  الثَّقَلٰنِ ﴿ۚ۳۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">শীঘ্রই সমস্ত কাজ সম্পন্ন করে আমি তোমাদের হিসাবের ইচ্ছা করি, হে উভয় ভারী দল!</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩১. হে (মানুষ ও জ্বিনের) দুই দল! অচিরেই আমরা মনোনিবেশ করবো তোমাদের হিসাবের দিকে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4933">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩২
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۲﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩২. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩২
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۲﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩২. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩২. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4934">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩৩
+یٰمَعۡشَرَ الۡجِنِّ وَ الۡاِنۡسِ  اِنِ اسۡتَطَعۡتُمۡ اَنۡ  تَنۡفُذُوۡا مِنۡ  اَقۡطَارِ السَّمٰوٰتِ وَ الۡاَرۡضِ فَانۡفُذُوۡا ؕ لَا  تَنۡفُذُوۡنَ  اِلَّا بِسُلۡطٰنٍ ﴿ۚ۳۳﴾
+কানযুল ঈমান
+হে জিন্‌ ও ইন্‌সান দল! যদি তোমাদের পক্ষে এটা সম্ভবপর হয় যে, তোমরা আস্‌মানসমূহ ও যমীনের প্রান্তগুলো থেকে বের হয়ে যাবে, তা’হলে বের হয়ে যাও! বের হয়ে যেখানেই যাবে সেখানে তাঁরই রাজত্ব বিরাজমান।
+ইরফানুল কুরআন
+৩৩. হে জ্বিন ও মানবকুল! তোমরা যদি আকাশমন্ডলী ও পৃথিবীর সীমা অতিক্রম করতে (এবং সৃষ্টি জগতকে অধীনস্ত করতে) সক্ষম হও তবে অতিক্রম করো। তোমরা (আকাশমন্ডলীর) যে স্থানই অতিক্রম করবে, সেখানেও তাঁরই রাজত্ব।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩৩
+یٰمَعۡشَرَ الۡجِنِّ وَ الۡاِنۡسِ  اِنِ اسۡتَطَعۡتُمۡ اَنۡ  تَنۡفُذُوۡا مِنۡ  اَقۡطَارِ السَّمٰوٰتِ وَ الۡاَرۡضِ فَانۡفُذُوۡا ؕ لَا  تَنۡفُذُوۡنَ  اِلَّا بِسُلۡطٰنٍ ﴿ۚ۳۳﴾
+কানযুল ঈমান
+হে জিন্‌ ও ইন্‌সান দল! যদি তোমাদের পক্ষে এটা সম্ভবপর হয় যে, তোমরা আস্‌মানসমূহ ও যমীনের প্রান্তগুলো থেকে বের হয়ে যাবে, তা’হলে বের হয়ে যাও! বের হয়ে যেখানেই যাবে সেখানে তাঁরই রাজত্ব বিরাজমান।
+ইরফানুল কুরআন
+৩৩. হে জ্বিন ও মানবকুল! তোমরা যদি আকাশমন্ডলী ও পৃথিবীর সীমা অতিক্রম করতে (এবং সৃষ্টি জগতকে অধীনস্ত করতে) সক্ষম হও তবে অতিক্রম করো। তোমরা (আকাশমন্ডলীর) যে স্থানই অতিক্রম করবে, সেখানেও তাঁরই রাজত্ব।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">یٰمَعۡشَرَ الۡجِنِّ وَ الۡاِنۡسِ  اِنِ اسۡتَطَعۡتُمۡ اَنۡ  تَنۡفُذُوۡا مِنۡ  اَقۡطَارِ السَّمٰوٰتِ وَ الۡاَرۡضِ فَانۡفُذُوۡا ؕ لَا  تَنۡفُذُوۡنَ  اِلَّا بِسُلۡطٰنٍ ﴿ۚ۳۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">হে জিন্‌ ও ইন্‌সান দল! যদি তোমাদের পক্ষে এটা সম্ভবপর হয় যে, তোমরা আস্‌মানসমূহ ও যমীনের প্রান্তগুলো থেকে বের হয়ে যাবে, তা’হলে বের হয়ে যাও! বের হয়ে যেখানেই যাবে সেখানে তাঁরই রাজত্ব বিরাজমান।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩৩. হে জ্বিন ও মানবকুল! তোমরা যদি আকাশমন্ডলী ও পৃথিবীর সীমা অতিক্রম করতে (এবং সৃষ্টি জগতকে অধীনস্ত করতে) সক্ষম হও তবে অতিক্রম করো। তোমরা (আকাশমন্ডলীর) যে স্থানই অতিক্রম করবে, সেখানেও তাঁরই রাজত্ব।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4935">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩৪
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۴﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩৪. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩৪
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۴﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩৪. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩৪. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4936">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩৫
+یُرۡسَلُ عَلَیۡکُمَا شُوَاظٌ مِّنۡ نَّارٍ ۬ۙ وَّ نُحَاسٌ فَلَا  تَنۡتَصِرٰنِ ﴿ۚ۳۵﴾
+কানযুল ঈমান
+তোমাদের উভয়ের উপর ছোড়া হবে ধোয়াবিহীন অগ্নিশিখা এবং শিখাবিহীন কালো ধোয়া; তখন তোমরা প্রতিশোধ নিতে পারবে না।
+ইরফানুল কুরআন
+৩৫. তোমাদের উভয়ের প্রতি প্রেরণ করা হবে অগ্নিস্ফুলিঙ্গ এবং (শিখাবিহীন) ধুম্রকুঞ্জ, তখন তোমাদের কেউই তা থেকে বাচঁতে পারবে না।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩৫
+یُرۡسَلُ عَلَیۡکُمَا شُوَاظٌ مِّنۡ نَّارٍ ۬ۙ وَّ نُحَاسٌ فَلَا  تَنۡتَصِرٰنِ ﴿ۚ۳۵﴾
+কানযুল ঈমান
+তোমাদের উভয়ের উপর ছোড়া হবে ধোয়াবিহীন অগ্নিশিখা এবং শিখাবিহীন কালো ধোয়া; তখন তোমরা প্রতিশোধ নিতে পারবে না।
+ইরফানুল কুরআন
+৩৫. তোমাদের উভয়ের প্রতি প্রেরণ করা হবে অগ্নিস্ফুলিঙ্গ এবং (শিখাবিহীন) ধুম্রকুঞ্জ, তখন তোমাদের কেউই তা থেকে বাচঁতে পারবে না।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">یُرۡسَلُ عَلَیۡکُمَا شُوَاظٌ مِّنۡ نَّارٍ ۬ۙ وَّ نُحَاسٌ فَلَا  تَنۡتَصِرٰنِ ﴿ۚ۳۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তোমাদের উভয়ের উপর ছোড়া হবে ধোয়াবিহীন অগ্নিশিখা এবং শিখাবিহীন কালো ধোয়া; তখন তোমরা প্রতিশোধ নিতে পারবে না।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩৫. তোমাদের উভয়ের প্রতি প্রেরণ করা হবে অগ্নিস্ফুলিঙ্গ এবং (শিখাবিহীন) ধুম্রকুঞ্জ, তখন তোমাদের কেউই তা থেকে বাচঁতে পারবে না।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4937">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩৬
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۶﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩৬. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩৬
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۶﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩৬. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩৬. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4938">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩৭
+فَاِذَا  انۡشَقَّتِ السَّمَآءُ  فَکَانَتۡ وَرۡدَۃً کَالدِّہَانِ ﴿ۚ۳۷﴾
+কানযুল ঈমান
+অতঃপর যখন আস্‌মান বিদীর্ণ হবে তখন তা গোলাপ ফুলের ন্যায় হয়ে যাবে; যেমন নিরেট লাল।
+ইরফানুল কুরআন
+৩৭. অতঃপর যখন আকাশ ফেটে পড়বে তখন তা দগ্ধ-তেলের (কিংবা রক্তিম চামড়ার) ন্যায় গোলাপী হয়ে যাবে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩৭
+فَاِذَا  انۡشَقَّتِ السَّمَآءُ  فَکَانَتۡ وَرۡدَۃً کَالدِّہَانِ ﴿ۚ۳۷﴾
+কানযুল ঈমান
+অতঃপর যখন আস্‌মান বিদীর্ণ হবে তখন তা গোলাপ ফুলের ন্যায় হয়ে যাবে; যেমন নিরেট লাল।
+ইরফানুল কুরআন
+৩৭. অতঃপর যখন আকাশ ফেটে পড়বে তখন তা দগ্ধ-তেলের (কিংবা রক্তিম চামড়ার) ন্যায় গোলাপী হয়ে যাবে,
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَاِذَا  انۡشَقَّتِ السَّمَآءُ  فَکَانَتۡ وَرۡدَۃً کَالدِّہَانِ ﴿ۚ۳۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">অতঃপর যখন আস্‌মান বিদীর্ণ হবে তখন তা গোলাপ ফুলের ন্যায় হয়ে যাবে; যেমন নিরেট লাল।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩৭. অতঃপর যখন আকাশ ফেটে পড়বে তখন তা দগ্ধ-তেলের (কিংবা রক্তিম চামড়ার) ন্যায় গোলাপী হয়ে যাবে,</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4939">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩৮
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۸﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩৮
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۸﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৩৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۳۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩৮. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৩৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4940">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৩৯
+فَیَوۡمَئِذٍ لَّا یُسۡـَٔلُ عَنۡ ذَنۡۢبِہٖۤ  اِنۡسٌ وَّ لَا  جَآنٌّ ﴿ۚ۳۹﴾
+কানযুল ঈমান
+সুতরাং ওই দিন পাপীর পাপ সম্পর্কে জিজ্ঞাসা করা হবে না কোন্‌ মানুষ ও জিন্‌ থেকে।
+ইরফানুল কুরআন
+৩৯. সুতরাং সে দিন না কোনো মানুষকে তার অপরাধ সম্পর্কে জিজ্ঞেস করা হবে আর না কোনো জ্বিনকে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৩৯
+فَیَوۡمَئِذٍ لَّا یُسۡـَٔلُ عَنۡ ذَنۡۢبِہٖۤ  اِنۡسٌ وَّ لَا  جَآنٌّ ﴿ۚ۳۹﴾
+কানযুল ঈমান
+সুতরাং ওই দিন পাপীর পাপ সম্পর্কে জিজ্ঞাসা করা হবে না কোন্‌ মানুষ ও জিন্‌ থেকে।
+ইরফানুল কুরআন
+৩৯. সুতরাং সে দিন না কোনো মানুষকে তার অপরাধ সম্পর্কে জিজ্ঞেস করা হবে আর না কোনো জ্বিনকে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَیَوۡمَئِذٍ لَّا یُسۡـَٔلُ عَنۡ ذَنۡۢبِہٖۤ  اِنۡسٌ وَّ لَا  جَآنٌّ ﴿ۚ۳۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং ওই দিন পাপীর পাপ সম্পর্কে জিজ্ঞাসা করা হবে না কোন্‌ মানুষ ও জিন্‌ থেকে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৩৯. সুতরাং সে দিন না কোনো মানুষকে তার অপরাধ সম্পর্কে জিজ্ঞেস করা হবে আর না কোনো জ্বিনকে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4941">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪০
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۰﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪০. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪০
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۰﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪০. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۰﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪০. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4942">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪১
+یُعۡرَفُ الۡمُجۡرِمُوۡنَ بِسِیۡمٰہُمۡ فَیُؤۡخَذُ بِالنَّوَاصِیۡ وَ الۡاَقۡدَامِ ﴿ۚ۴۱﴾
+কানযুল ঈমান
+অপরাধীগণকে তাদের চেহারা দ্বারাই চেনা যাবে। সুতরাং মাথা ও পাগুলো ধরে জাহান্নামে নিক্ষেপ করা হবে।
+ইরফানুল কুরআন
+৪১. অপরাধীদের পরিচয় পাওয়া যাবে তাদের কালো হয়ে যাওয়া চেহারা দেখে। অতঃপর তাদেরকে পাকড়াও করে টেনে নেয়া হবে মাথার ঝুঁটি এবং পা ধরে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪১
+یُعۡرَفُ الۡمُجۡرِمُوۡنَ بِسِیۡمٰہُمۡ فَیُؤۡخَذُ بِالنَّوَاصِیۡ وَ الۡاَقۡدَامِ ﴿ۚ۴۱﴾
+কানযুল ঈমান
+অপরাধীগণকে তাদের চেহারা দ্বারাই চেনা যাবে। সুতরাং মাথা ও পাগুলো ধরে জাহান্নামে নিক্ষেপ করা হবে।
+ইরফানুল কুরআন
+৪১. অপরাধীদের পরিচয় পাওয়া যাবে তাদের কালো হয়ে যাওয়া চেহারা দেখে। অতঃপর তাদেরকে পাকড়াও করে টেনে নেয়া হবে মাথার ঝুঁটি এবং পা ধরে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">یُعۡرَفُ الۡمُجۡرِمُوۡنَ بِسِیۡمٰہُمۡ فَیُؤۡخَذُ بِالنَّوَاصِیۡ وَ الۡاَقۡدَامِ ﴿ۚ۴۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">অপরাধীগণকে তাদের চেহারা দ্বারাই চেনা যাবে। সুতরাং মাথা ও পাগুলো ধরে জাহান্নামে নিক্ষেপ করা হবে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪১. অপরাধীদের পরিচয় পাওয়া যাবে তাদের কালো হয়ে যাওয়া চেহারা দেখে। অতঃপর তাদেরকে পাকড়াও করে টেনে নেয়া হবে মাথার ঝুঁটি এবং পা ধরে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4943">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪২
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۲﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪২. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪২
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۲﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪২. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪২. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4944">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪৩
+ہٰذِہٖ جَہَنَّمُ  الَّتِیۡ یُکَذِّبُ بِہَا الۡمُجۡرِمُوۡنَ ﴿ۘ۴۳﴾
+কানযুল ঈমান
+এটা হচ্ছে ওই জাহান্নাম, যাকে অপরাধীগণ অস্বীকার করে।
+ইরফানুল কুরআন
+৪৩. (তাদেরকে বলা হবে:) ‘এই সেই জাহান্নাম যা অপরাধীরা মিথ্যাপ্রতিপন্ন করতো’।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪৩
+ہٰذِہٖ جَہَنَّمُ  الَّتِیۡ یُکَذِّبُ بِہَا الۡمُجۡرِمُوۡنَ ﴿ۘ۴۳﴾
+কানযুল ঈমান
+এটা হচ্ছে ওই জাহান্নাম, যাকে অপরাধীগণ অস্বীকার করে।
+ইরফানুল কুরআন
+৪৩. (তাদেরকে বলা হবে:) ‘এই সেই জাহান্নাম যা অপরাধীরা মিথ্যাপ্রতিপন্ন করতো’।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">ہٰذِہٖ جَہَنَّمُ  الَّتِیۡ یُکَذِّبُ بِہَا الۡمُجۡرِمُوۡنَ ﴿ۘ۴۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এটা হচ্ছে ওই জাহান্নাম, যাকে অপরাধীগণ অস্বীকার করে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪৩. (তাদেরকে বলা হবে:) ‘এই সেই জাহান্নাম যা অপরাধীরা মিথ্যাপ্রতিপন্ন করতো’।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4945">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪৪
+یَطُوۡفُوۡنَ بَیۡنَہَا وَ  بَیۡنَ حَمِیۡمٍ  اٰنٍ ﴿ۚ۴۴﴾
+কানযুল ঈমান
+তারা প্রদক্ষিণ করবে তাতে এবং চরম পর্যায়ের জ্বলন্ত-ফুটন্ত পানিতে।
+ইরফানুল কুরআন
+৪৪. তারা তাতে (অর্থাৎ দোযখে) এবং ফুটন্ত গরম পানিতে ঘুরপাক খেতে থাকবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪৪
+یَطُوۡفُوۡنَ بَیۡنَہَا وَ  بَیۡنَ حَمِیۡمٍ  اٰنٍ ﴿ۚ۴۴﴾
+কানযুল ঈমান
+তারা প্রদক্ষিণ করবে তাতে এবং চরম পর্যায়ের জ্বলন্ত-ফুটন্ত পানিতে।
+ইরফানুল কুরআন
+৪৪. তারা তাতে (অর্থাৎ দোযখে) এবং ফুটন্ত গরম পানিতে ঘুরপাক খেতে থাকবে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">یَطُوۡفُوۡنَ بَیۡنَہَا وَ  بَیۡنَ حَمِیۡمٍ  اٰنٍ ﴿ۚ۴۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তারা প্রদক্ষিণ করবে তাতে এবং চরম পর্যায়ের জ্বলন্ত-ফুটন্ত পানিতে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪৪. তারা তাতে (অর্থাৎ দোযখে) এবং ফুটন্ত গরম পানিতে ঘুরপাক খেতে থাকবে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4946">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۵﴾
+কানযুল ঈমান
+অতঃপর আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۵﴾
+কানযুল ঈমান
+অতঃপর আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">অতঃপর আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4947">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪৬
+وَ  لِمَنۡ خَافَ مَقَامَ  رَبِّہٖ  جَنَّتٰنِ ﴿ۚ۴۶﴾
+কানযুল ঈমান
+এবং যে ব্যক্তি আপন রবের সম্মুখে দণ্ডায়মান হওয়াকে ভয় করে তার জন্য দু’টি জান্নাত রয়েছে।
+ইরফানুল কুরআন
+৪৬. আর যে তাঁর প্রতিপালকের সম্মুখে (সাক্ষাতের জন্যে) উপস্থিত হওয়ার ভয় রাখে, তার জন্যে রয়েছে দু’টি উদ্যান।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪৬
+وَ  لِمَنۡ خَافَ مَقَامَ  رَبِّہٖ  جَنَّتٰنِ ﴿ۚ۴۶﴾
+কানযুল ঈমান
+এবং যে ব্যক্তি আপন রবের সম্মুখে দণ্ডায়মান হওয়াকে ভয় করে তার জন্য দু’টি জান্নাত রয়েছে।
+ইরফানুল কুরআন
+৪৬. আর যে তাঁর প্রতিপালকের সম্মুখে (সাক্ষাতের জন্যে) উপস্থিত হওয়ার ভয় রাখে, তার জন্যে রয়েছে দু’টি উদ্যান।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ  لِمَنۡ خَافَ مَقَامَ  رَبِّہٖ  جَنَّتٰنِ ﴿ۚ۴۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং যে ব্যক্তি আপন রবের সম্মুখে দণ্ডায়মান হওয়াকে ভয় করে তার জন্য দু’টি জান্নাত রয়েছে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪৬. আর যে তাঁর প্রতিপালকের সম্মুখে (সাক্ষাতের জন্যে) উপস্থিত হওয়ার ভয় রাখে, তার জন্যে রয়েছে দু’টি উদ্যান।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4948">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪৭
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۙ۴۷﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪৭
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۙ۴۷﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۙ۴۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4949">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪৮
+ذَوَاتَاۤ   اَفۡنَانٍ ﴿ۚ۴۸﴾
+কানযুল ঈমান
+(উভয়ই) বহু শাখা-প্রশাখা সম্পন্ন (বৃক্ষে পূর্ণ)।
+ইরফানুল কুরআন
+৪৮. উভয়ই (সবুজ-শ্যামল) শাখা-পল্লব বিশিষ্ট (উদ্যান)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪৮
+ذَوَاتَاۤ   اَفۡنَانٍ ﴿ۚ۴۸﴾
+কানযুল ঈমান
+(উভয়ই) বহু শাখা-প্রশাখা সম্পন্ন (বৃক্ষে পূর্ণ)।
+ইরফানুল কুরআন
+৪৮. উভয়ই (সবুজ-শ্যামল) শাখা-পল্লব বিশিষ্ট (উদ্যান)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">ذَوَاتَاۤ   اَفۡنَانٍ ﴿ۚ۴۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">(উভয়ই) বহু শাখা-প্রশাখা সম্পন্ন (বৃক্ষে পূর্ণ)।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪৮. উভয়ই (সবুজ-শ্যামল) শাখা-পল্লব বিশিষ্ট (উদ্যান)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৪৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4950">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৪৯
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۹﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৪৯
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۹﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৪৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۴۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৪৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4951">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫০
+فِیۡہِمَا عَیۡنٰنِ  تَجۡرِیٰنِ ﴿ۚ۵۰﴾
+কানযুল ঈমান
+উভয়ের মধ্যে দু’টি প্রস্রবণ প্রবহমান।
+ইরফানুল কুরআন
+৫০. এ দু’টোতে রয়েছে প্রবাহমান দুই প্রস্রবণ।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫০
+فِیۡہِمَا عَیۡنٰنِ  تَجۡرِیٰنِ ﴿ۚ۵۰﴾
+কানযুল ঈমান
+উভয়ের মধ্যে দু’টি প্রস্রবণ প্রবহমান।
+ইরফানুল কুরআন
+৫০. এ দু’টোতে রয়েছে প্রবাহমান দুই প্রস্রবণ।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فِیۡہِمَا عَیۡنٰنِ  تَجۡرِیٰنِ ﴿ۚ۵۰﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">উভয়ের মধ্যে দু’টি প্রস্রবণ প্রবহমান।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫০. এ দু’টোতে রয়েছে প্রবাহমান দুই প্রস্রবণ।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4952">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫১
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۱﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫১
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۱﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4953">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫২
+فِیۡہِمَا مِنۡ کُلِّ  فَاکِہَۃٍ  زَوۡجٰنِ ﴿ۚ۵۲﴾
+কানযুল ঈমান
+উভয়ের মধ্যে প্রত্যেক ফল দু’ দু’ প্রকারের হবে।
+ইরফানুল কুরআন
+৫২. এ দু’টোতে রয়েছে প্রত্যেক ফল দুই দুই প্রকার।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫২
+فِیۡہِمَا مِنۡ کُلِّ  فَاکِہَۃٍ  زَوۡجٰنِ ﴿ۚ۵۲﴾
+কানযুল ঈমান
+উভয়ের মধ্যে প্রত্যেক ফল দু’ দু’ প্রকারের হবে।
+ইরফানুল কুরআন
+৫২. এ দু’টোতে রয়েছে প্রত্যেক ফল দুই দুই প্রকার।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فِیۡہِمَا مِنۡ کُلِّ  فَاکِہَۃٍ  زَوۡجٰنِ ﴿ۚ۵۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">উভয়ের মধ্যে প্রত্যেক ফল দু’ দু’ প্রকারের হবে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫২. এ দু’টোতে রয়েছে প্রত্যেক ফল দুই দুই প্রকার।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4954">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۳﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۳﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4955">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫৪
+مُتَّکِـِٕیۡنَ عَلٰی فُرُشٍۭ بَطَآئِنُہَا مِنۡ اِسۡتَبۡرَقٍ ؕ وَ  جَنَا  الۡجَنَّتَیۡنِ  دَانٍ ﴿ۚ۵۴﴾
+কানযুল ঈমান
+এবং এমনসব বিছানার উপর হেলান দিয়ে বসবে, যেগুলোর আস্তরণ মোটা রেশমের, এবং উভয়ের ফলমূল এতই ঝুকে পড়বে যে, নিচে থেকে আহরণকারী আহরণ করতে পারবে।
+ইরফানুল কুরআন
+৫৪. জান্নাতের অধিবাসীরা হেলান দিয়ে বসবে উৎকৃষ্ট আস্তর ও পুরো রেশম বিশিষ্ট আসনে। আর উভয় উদ্যানের ফল ঝুঁকে থাকবে (তাদের) নিকটে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫৪
+مُتَّکِـِٕیۡنَ عَلٰی فُرُشٍۭ بَطَآئِنُہَا مِنۡ اِسۡتَبۡرَقٍ ؕ وَ  جَنَا  الۡجَنَّتَیۡنِ  دَانٍ ﴿ۚ۵۴﴾
+কানযুল ঈমান
+এবং এমনসব বিছানার উপর হেলান দিয়ে বসবে, যেগুলোর আস্তরণ মোটা রেশমের, এবং উভয়ের ফলমূল এতই ঝুকে পড়বে যে, নিচে থেকে আহরণকারী আহরণ করতে পারবে।
+ইরফানুল কুরআন
+৫৪. জান্নাতের অধিবাসীরা হেলান দিয়ে বসবে উৎকৃষ্ট আস্তর ও পুরো রেশম বিশিষ্ট আসনে। আর উভয় উদ্যানের ফল ঝুঁকে থাকবে (তাদের) নিকটে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">مُتَّکِـِٕیۡنَ عَلٰی فُرُشٍۭ بَطَآئِنُہَا مِنۡ اِسۡتَبۡرَقٍ ؕ وَ  جَنَا  الۡجَنَّتَیۡنِ  دَانٍ ﴿ۚ۵۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং এমনসব বিছানার উপর হেলান দিয়ে বসবে, যেগুলোর আস্তরণ মোটা রেশমের, এবং উভয়ের ফলমূল এতই ঝুকে পড়বে যে, নিচে থেকে আহরণকারী আহরণ করতে পারবে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫৪. জান্নাতের অধিবাসীরা হেলান দিয়ে বসবে উৎকৃষ্ট আস্তর ও পুরো রেশম বিশিষ্ট আসনে। আর উভয় উদ্যানের ফল ঝুঁকে থাকবে (তাদের) নিকটে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4956">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۵﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۵﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4957">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫৬
+فِیۡہِنَّ قٰصِرٰتُ الطَّرۡفِ ۙ لَمۡ  یَطۡمِثۡہُنَّ اِنۡسٌ قَبۡلَہُمۡ  وَ لَا  جَآنٌّ ﴿ۚ۵۶﴾
+কানযুল ঈমান
+ওই সব বিছানার উপর এমন স্ত্রীগণ থাকবে, যারা স্বামী ব্যতীত অন্য কারো প্রতি চক্ষু উচু করে দৃষ্টিপাত করে না, তাদের পূর্বে তাদেরকে স্পর্শ করে নি কোন মানুষ এবং না (কোন) জিন্‌।
+ইরফানুল কুরআন
+৫৬. আর তাতে থাকবে আনত নয়না (হুর), যাদেরকে পূর্বে না কোনো মানুষ স্পর্শ করেছে আর না কোনো জ্বিন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫৬
+فِیۡہِنَّ قٰصِرٰتُ الطَّرۡفِ ۙ لَمۡ  یَطۡمِثۡہُنَّ اِنۡسٌ قَبۡلَہُمۡ  وَ لَا  جَآنٌّ ﴿ۚ۵۶﴾
+কানযুল ঈমান
+ওই সব বিছানার উপর এমন স্ত্রীগণ থাকবে, যারা স্বামী ব্যতীত অন্য কারো প্রতি চক্ষু উচু করে দৃষ্টিপাত করে না, তাদের পূর্বে তাদেরকে স্পর্শ করে নি কোন মানুষ এবং না (কোন) জিন্‌।
+ইরফানুল কুরআন
+৫৬. আর তাতে থাকবে আনত নয়না (হুর), যাদেরকে পূর্বে না কোনো মানুষ স্পর্শ করেছে আর না কোনো জ্বিন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فِیۡہِنَّ قٰصِرٰتُ الطَّرۡفِ ۙ لَمۡ  یَطۡمِثۡہُنَّ اِنۡسٌ قَبۡلَہُمۡ  وَ لَا  جَآنٌّ ﴿ۚ۵۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ওই সব বিছানার উপর এমন স্ত্রীগণ থাকবে, যারা স্বামী ব্যতীত অন্য কারো প্রতি চক্ষু উচু করে দৃষ্টিপাত করে না, তাদের পূর্বে তাদেরকে স্পর্শ করে নি কোন মানুষ এবং না (কোন) জিন্‌।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫৬. আর তাতে থাকবে আনত নয়না (হুর), যাদেরকে পূর্বে না কোনো মানুষ স্পর্শ করেছে আর না কোনো জ্বিন।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4958">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫৭
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۵۷﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫৭
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۵۷﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۵۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4959">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫৮
+کَاَنَّہُنَّ الۡیَاقُوۡتُ  وَ الۡمَرۡجَانُ ﴿ۚ۵۸﴾
+কানযুল ঈমান
+তারা যেন পদ্মরাগ ও প্রবাল।
+ইরফানুল কুরআন
+৫৮. যেন তারা পদ্মরাগ ও প্রবাল।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫৮
+کَاَنَّہُنَّ الۡیَاقُوۡتُ  وَ الۡمَرۡجَانُ ﴿ۚ۵۸﴾
+কানযুল ঈমান
+তারা যেন পদ্মরাগ ও প্রবাল।
+ইরফানুল কুরআন
+৫৮. যেন তারা পদ্মরাগ ও প্রবাল।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">کَاَنَّہُنَّ الۡیَاقُوۡتُ  وَ الۡمَرۡجَانُ ﴿ۚ۵۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তারা যেন পদ্মরাগ ও প্রবাল।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫৮. যেন তারা পদ্মরাগ ও প্রবাল।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৫৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4960">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৫৯
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۹﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৫৯
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۹﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৫৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۵۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৫৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4961">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬০
+ہَلۡ جَزَآءُ  الۡاِحۡسَانِ  اِلَّا الۡاِحۡسَانُ ﴿ۚ۶۰﴾
+কানযুল ঈমান
+উত্তম কাজের প্রতিদান কি? কিন্তু উত্তম কাজই।
+ইরফানুল কুরআন
+৬০. পুণ্যের প্রতিদান পুণ্য ব্যতীত আর কী হতে পারে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬০
+ہَلۡ جَزَآءُ  الۡاِحۡسَانِ  اِلَّا الۡاِحۡسَانُ ﴿ۚ۶۰﴾
+কানযুল ঈমান
+উত্তম কাজের প্রতিদান কি? কিন্তু উত্তম কাজই।
+ইরফানুল কুরআন
+৬০. পুণ্যের প্রতিদান পুণ্য ব্যতীত আর কী হতে পারে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">ہَلۡ جَزَآءُ  الۡاِحۡسَانِ  اِلَّا الۡاِحۡسَانُ ﴿ۚ۶۰﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">উত্তম কাজের প্রতিদান কি? কিন্তু উত্তম কাজই।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬০. পুণ্যের প্রতিদান পুণ্য ব্যতীত আর কী হতে পারে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4962">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬১
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۶۱﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬১
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۶۱﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۶۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4963">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬২
+وَ مِنۡ دُوۡنِہِمَا جَنَّتٰنِ ﴿ۚ۶۲﴾
+কানযুল ঈমান
+এবং ওই দু’টি ব্যতীত আরো দু’টি জান্নাত আছে;
+ইরফানুল কুরআন
+৬২. আর (তাদের জন্যে) এ দু’টো ব্যতীত আরো দু’টো উদ্যানও রয়েছে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬২
+وَ مِنۡ دُوۡنِہِمَا جَنَّتٰنِ ﴿ۚ۶۲﴾
+কানযুল ঈমান
+এবং ওই দু’টি ব্যতীত আরো দু’টি জান্নাত আছে;
+ইরফানুল কুরআন
+৬২. আর (তাদের জন্যে) এ দু’টো ব্যতীত আরো দু’টো উদ্যানও রয়েছে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">وَ مِنۡ دُوۡنِہِمَا جَنَّتٰنِ ﴿ۚ۶۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">এবং ওই দু’টি ব্যতীত আরো দু’টি জান্নাত আছে;</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬২. আর (তাদের জন্যে) এ দু’টো ব্যতীত আরো দু’টো উদ্যানও রয়েছে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4964">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۙ۶۳﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۙ۶۳﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۙ۶۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4965">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬৪
+مُدۡہَآ  مَّتٰنِ  ﴿ۚ۶۴﴾
+কানযুল ঈমান
+(এ জান্নাত দু’টির মধ্যে) গাঢ় সবুজ থেকে কালো বর্ণের ঝলক বিচ্ছুরিত হচ্ছে।
+ইরফানুল কুরআন
+৬৪. এ দু’টো ঘন সবুজে কিছুটা কালচে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬৪
+مُدۡہَآ  مَّتٰنِ  ﴿ۚ۶۴﴾
+কানযুল ঈমান
+(এ জান্নাত দু’টির মধ্যে) গাঢ় সবুজ থেকে কালো বর্ণের ঝলক বিচ্ছুরিত হচ্ছে।
+ইরফানুল কুরআন
+৬৪. এ দু’টো ঘন সবুজে কিছুটা কালচে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">مُدۡہَآ  مَّتٰنِ  ﴿ۚ۶۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">(এ জান্নাত দু’টির মধ্যে) গাঢ় সবুজ থেকে কালো বর্ণের ঝলক বিচ্ছুরিত হচ্ছে।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬৪. এ দু’টো ঘন সবুজে কিছুটা কালচে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4966">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۶۵﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۶۵﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۶۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4967">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬৬
+فِیۡہِمَا عَیۡنٰنِ نَضَّاخَتٰنِ ﴿ۚ۶۶﴾
+কানযুল ঈমান
+ওই দু’টিতে দু’টি প্রস্রবন রয়েছে উচ্ছলিত।
+ইরফানুল কুরআন
+৬৬. এ দু’টোতে(ও) রয়েছে দু’টো প্রস্রবণ, যা প্রবাহিত হবে উচ্ছলিত বেগে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬৬
+فِیۡہِمَا عَیۡنٰنِ نَضَّاخَتٰنِ ﴿ۚ۶۶﴾
+কানযুল ঈমান
+ওই দু’টিতে দু’টি প্রস্রবন রয়েছে উচ্ছলিত।
+ইরফানুল কুরআন
+৬৬. এ দু’টোতে(ও) রয়েছে দু’টো প্রস্রবণ, যা প্রবাহিত হবে উচ্ছলিত বেগে।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فِیۡہِمَا عَیۡنٰنِ نَضَّاخَتٰنِ ﴿ۚ۶۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ওই দু’টিতে দু’টি প্রস্রবন রয়েছে উচ্ছলিত।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬৬. এ দু’টোতে(ও) রয়েছে দু’টো প্রস্রবণ, যা প্রবাহিত হবে উচ্ছলিত বেগে।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4968">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬৭
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۶۷﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬৭
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۶۷﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۶۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4969">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬৮
+فِیۡہِمَا فَاکِہَۃٌ  وَّ  نَخۡلٌ وَّ  رُمَّانٌ ﴿ۚ۶۸﴾
+কানযুল ঈমান
+ওই দু’টিতে রয়েছে ফলমূল, খেজুরসমূহ এবং আনার।
+ইরফানুল কুরআন
+৬৮. এ দু’টোতে(ও) রয়েছে ফল, খর্জুর এবং ডালিম।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬৮
+فِیۡہِمَا فَاکِہَۃٌ  وَّ  نَخۡلٌ وَّ  رُمَّانٌ ﴿ۚ۶۸﴾
+কানযুল ঈমান
+ওই দু’টিতে রয়েছে ফলমূল, খেজুরসমূহ এবং আনার।
+ইরফানুল কুরআন
+৬৮. এ দু’টোতে(ও) রয়েছে ফল, খর্জুর এবং ডালিম।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فِیۡہِمَا فَاکِہَۃٌ  وَّ  نَخۡلٌ وَّ  رُمَّانٌ ﴿ۚ۶۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">ওই দু’টিতে রয়েছে ফলমূল, খেজুরসমূহ এবং আনার।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬৮. এ দু’টোতে(ও) রয়েছে ফল, খর্জুর এবং ডালিম।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৬৯</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4970">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৬৯
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۶۹﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৬৯
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۶۹﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৬৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۶۹﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৬৯. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭০</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4971">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭০
+فِیۡہِنَّ خَیۡرٰتٌ حِسَانٌ ﴿ۚ۷۰﴾
+কানযুল ঈমান
+সেগুলোর মধ্যে রয়েছে স্ত্রীগণ অভ্যাসে সতী, আকৃতিতে উত্তম।
+ইরফানুল কুরআন
+৭০. এগুলোতে(ও) রয়েছে উত্তম চরিত্রের অধিকারিণী, সুন্দরী (হুরগণ)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭০
+فِیۡہِنَّ خَیۡرٰتٌ حِسَانٌ ﴿ۚ۷۰﴾
+কানযুল ঈমান
+সেগুলোর মধ্যে রয়েছে স্ত্রীগণ অভ্যাসে সতী, আকৃতিতে উত্তম।
+ইরফানুল কুরআন
+৭০. এগুলোতে(ও) রয়েছে উত্তম চরিত্রের অধিকারিণী, সুন্দরী (হুরগণ)।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فِیۡہِنَّ خَیۡرٰتٌ حِسَانٌ ﴿ۚ۷۰﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সেগুলোর মধ্যে রয়েছে স্ত্রীগণ অভ্যাসে সতী, আকৃতিতে উত্তম।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭০. এগুলোতে(ও) রয়েছে উত্তম চরিত্রের অধিকারিণী, সুন্দরী (হুরগণ)।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭১</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4972">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭১
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۱﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৭১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭১
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۱﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৭১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۱﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭১. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭২</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4973">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭২
+حُوۡرٌ  مَّقۡصُوۡرٰتٌ فِی  الۡخِیَامِ ﴿ۚ۷۲﴾
+কানযুল ঈমান
+হূরসমূহ রয়েছে তাবুসমূহের মধ্যে, পর্দানশীন।
+ইরফানুল কুরআন
+৭২. এ হুরগণ তাবুতে সুরক্ষিত।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭২
+حُوۡرٌ  مَّقۡصُوۡرٰتٌ فِی  الۡخِیَامِ ﴿ۚ۷۲﴾
+কানযুল ঈমান
+হূরসমূহ রয়েছে তাবুসমূহের মধ্যে, পর্দানশীন।
+ইরফানুল কুরআন
+৭২. এ হুরগণ তাবুতে সুরক্ষিত।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">حُوۡرٌ  مَّقۡصُوۡرٰتٌ فِی  الۡخِیَامِ ﴿ۚ۷۲﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">হূরসমূহ রয়েছে তাবুসমূহের মধ্যে, পর্দানশীন।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭২. এ হুরগণ তাবুতে সুরক্ষিত।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭৩</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4974">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۳﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৭৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭৩
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۳﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৭৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۳﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭৩. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭৪</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4975">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭৪
+لَمۡ یَطۡمِثۡہُنَّ اِنۡسٌ قَبۡلَہُمۡ وَ لَا جَآنٌّ ﴿ۚ۷۴﴾
+কানযুল ঈমান
+তাদের পূর্বে তাদের গায়ে হাত লাগায় নি কোন মানুষ এবং না কোন জিন্‌।
+ইরফানুল কুরআন
+৭৪. তাদেরকে পূর্বে না কোনো মানুষ স্পর্শ করেছে, আর না কোনো জ্বিন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭৪
+لَمۡ یَطۡمِثۡہُنَّ اِنۡسٌ قَبۡلَہُمۡ وَ لَا جَآنٌّ ﴿ۚ۷۴﴾
+কানযুল ঈমান
+তাদের পূর্বে তাদের গায়ে হাত লাগায় নি কোন মানুষ এবং না কোন জিন্‌।
+ইরফানুল কুরআন
+৭৪. তাদেরকে পূর্বে না কোনো মানুষ স্পর্শ করেছে, আর না কোনো জ্বিন।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">لَمۡ یَطۡمِثۡہُنَّ اِنۡسٌ قَبۡلَہُمۡ وَ لَا جَآنٌّ ﴿ۚ۷۴﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">তাদের পূর্বে তাদের গায়ে হাত লাগায় নি কোন মানুষ এবং না কোন জিন্‌।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭৪. তাদেরকে পূর্বে না কোনো মানুষ স্পর্শ করেছে, আর না কোনো জ্বিন।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭৫</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4976">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۵﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৭৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭৫
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۵﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৭৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿ۚ۷۵﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭৫. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭৬</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4977">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭৬
+مُتَّکِـِٕیۡنَ عَلٰی رَفۡرَفٍ خُضۡرٍ  وَّ عَبۡقَرِیٍّ حِسَانٍ ﴿ۚ۷۶﴾
+কানযুল ঈমান
+হেলান দেওয়া অবস্থায় সবুজ বিছানাসমূহ ও কারুকার্যকৃত সুন্দর চাদরসমূহের উপর।
+ইরফানুল কুরআন
+৭৬. (জান্নাতের অধিবাসীগণ) হেলান দিয়ে (বসে) থাকবে সবুজ গালিচার উপরে গদিতে ও উৎকৃষ্ট মূল্যবান বিছানায়।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭৬
+مُتَّکِـِٕیۡنَ عَلٰی رَفۡرَفٍ خُضۡرٍ  وَّ عَبۡقَرِیٍّ حِسَانٍ ﴿ۚ۷۶﴾
+কানযুল ঈমান
+হেলান দেওয়া অবস্থায় সবুজ বিছানাসমূহ ও কারুকার্যকৃত সুন্দর চাদরসমূহের উপর।
+ইরফানুল কুরআন
+৭৬. (জান্নাতের অধিবাসীগণ) হেলান দিয়ে (বসে) থাকবে সবুজ গালিচার উপরে গদিতে ও উৎকৃষ্ট মূল্যবান বিছানায়।
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">مُتَّکِـِٕیۡنَ عَلٰی رَفۡرَفٍ خُضۡرٍ  وَّ عَبۡقَرِیٍّ حِسَانٍ ﴿ۚ۷۶﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">হেলান দেওয়া অবস্থায় সবুজ বিছানাসমূহ ও কারুকার্যকৃত সুন্দর চাদরসমূহের উপর।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭৬. (জান্নাতের অধিবাসীগণ) হেলান দিয়ে (বসে) থাকবে সবুজ গালিচার উপরে গদিতে ও উৎকৃষ্ট মূল্যবান বিছানায়।</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭৭</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4978">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭৭
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۷۷﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৭৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭৭
+فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۷۷﴾
+কানযুল ঈমান
+সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?
+ইরফানুল কুরআন
+৭৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">فَبِاَیِّ  اٰلَآءِ  رَبِّکُمَا تُکَذِّبٰنِ ﴿۷۷﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">সুতরাং আপন রবের কোন্‌ অনুগ্রহকে অস্বীকার করবে?</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭৭. অতঃপর (হে জ্বিন ও মানব সমাজ!) তোমরা উভয়ে তোমাদের প্রতিপালকের কোন্ কোন্ অনুগ্রহ অস্বীকার করবে?</div>
+    </div>
+
+    <div class="ayah-card">
+      <div class="top-row">
+        <div class="number-box"><div class="number-text">৭৮</div></div>
+        <div class="actions">
+          <img src="play.png" alt="Play" onclick="toggleAudio(this)" data-id="4979">
+          <img src="share.png" alt="Share" onclick="shareAyah(this)" data-text="আর রহমান আয়াত নং : ৭৮
+تَبٰرَکَ اسۡمُ  رَبِّکَ ذِی الۡجَلٰلِ  وَ  الۡاِکۡرَامِ ﴿۷۸﴾
+কানযুল ঈমান
+মহা বরকতময় আপনার রবের নাম, যিনি মহামহিম ও সম্মানিত।
+ইরফানুল কুরআন
+৭৮. কতো বরকতময় আপনার প্রতিপালকের নাম, যিনি অধিকারী সম্মান ও মর্যাদার এবং দয়া ও অনুগ্রহের!
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+          <img src="copy.png" alt="Copy" style="transform: rotate(180deg) scaleX(-1);" onclick="copyAyah(this)" data-text="আর রহমান আয়াত নং : ৭৮
+تَبٰرَکَ اسۡمُ  رَبِّکَ ذِی الۡجَلٰلِ  وَ  الۡاِکۡرَامِ ﴿۷۸﴾
+কানযুল ঈমান
+মহা বরকতময় আপনার রবের নাম, যিনি মহামহিম ও সম্মানিত।
+ইরফানুল কুরআন
+৭৮. কতো বরকতময় আপনার প্রতিপালকের নাম, যিনি অধিকারী সম্মান ও মর্যাদার এবং দয়া ও অনুগ্রহের!
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 : 
+https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500">
+        </div>
+      </div>
+      <div class="verse-arabic">تَبٰرَکَ اسۡمُ  رَبِّکَ ذِی الۡجَلٰلِ  وَ  الۡاِکۡرَامِ ﴿۷۸﴾</div>
+      <div class="kanzul">কানযুল ঈমান</div>
+      <div class="kanzul-text">মহা বরকতময় আপনার রবের নাম, যিনি মহামহিম ও সম্মানিত।</div>
+      <div class="irfan">ইরফানুল কুরআন</div>
+      <div class="irfan-text">৭৮. কতো বরকতময় আপনার প্রতিপালকের নাম, যিনি অধিকারী সম্মান ও মর্যাদার এবং দয়া ও অনুগ্রহের!</div>
+    </div>
+
+  </div>
+
+  <div class="audio-controller" id="audioController" style="display:none;">
+    <img src="next.png" onclick="playPrevious()" alt="Previous" class="next-icon">
+    <img src="pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">
+    <img src="next.png" onclick="playNext()" alt="Next">
+    <img src="stop.png" onclick="stopAudio()" alt="Stop">
+  </div>
+
+  <script src="quranview.js"></script>
+</body>
+</html>

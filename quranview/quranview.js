@@ -64,27 +64,19 @@ ${irfan}
 https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
 }
 
-function copyAyah(el) {
-  const ayahNum = el.dataset.num;
-  const arabic = el.dataset.arabic;
-  const kanzul = el.dataset.kanzul;
-  const irfan = el.dataset.irfan;
-  const text = formatAyahText(ayahNum, arabic, kanzul, irfan);
+function copyAyah(elem) {
+  const text = elem.getAttribute("data-text");
   navigator.clipboard.writeText(text).then(() => {
-    alert("আয়াত কপি হয়েছে!");
+    alert("আয়াত কপি হয়েছে!");
   });
 }
 
-function shareAyah(el) {
-  const ayahNum = el.dataset.num;
-  const arabic = el.dataset.arabic;
-  const kanzul = el.dataset.kanzul;
-  const irfan = el.dataset.irfan;
-  const text = formatAyahText(ayahNum, arabic, kanzul, irfan);
+function shareAyah(elem) {
+  const text = elem.getAttribute("data-text");
   if (navigator.share) {
-    navigator.share({ text: text }).catch(() => alert("শেয়ার ব্যর্থ হয়েছে"));
+    navigator.share({ text });
   } else {
-    alert("এই ব্রাউজারে শেয়ার সাপোর্ট করে না। কপি করে নিতে পারেন।");
+    alert("এই ডিভাইসে শেয়ার সাপোর্ট করে না।");
   }
 }
 
