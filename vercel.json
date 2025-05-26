@@ -1,0 +1,472 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/main.html"
+    },
+    {
+      "source": "/main",
+      "destination": "/main.html"
+    },
+    {
+      "source": "/quran",
+      "destination": "/quran.html"
+    },
+    {
+      "source": "/quranview/Al-Fatihah",
+      "destination": "/quranview/Al-Fatihah.html"
+    },
+    {
+      "source": "/quranview/Al-Baqarah",
+      "destination": "/quranview/Al-Baqarah.html"
+    },
+    {
+      "source": "/quranview/Aal-E-Imran",
+      "destination": "/quranview/Aal-E-Imran.html"
+    },
+    {
+      "source": "/quranview/An-Nisa",
+      "destination": "/quranview/An-Nisa.html"
+    },
+    {
+      "source": "/quranview/Al-Maidah",
+      "destination": "/quranview/Al-Maidah.html"
+    },
+    {
+      "source": "/quranview/Al-Anam",
+      "destination": "/quranview/Al-Anam.html"
+    },
+    {
+      "source": "/quranview/Al-Araf",
+      "destination": "/quranview/Al-Araf.html"
+    },
+    {
+      "source": "/quranview/Al-Anfal",
+      "destination": "/quranview/Al-Anfal.html"
+    },
+    {
+      "source": "/quranview/At-Tawbah",
+      "destination": "/quranview/At-Tawbah.html"
+    },
+    {
+      "source": "/quranview/Yunus",
+      "destination": "/quranview/Yunus.html"
+    },
+    {
+      "source": "/quranview/Hud",
+      "destination": "/quranview/Hud.html"
+    },
+    {
+      "source": "/quranview/Yusuf",
+      "destination": "/quranview/Yusuf.html"
+    },
+    {
+      "source": "/quranview/Ar-Rad",
+      "destination": "/quranview/Ar-Rad.html"
+    },
+    {
+      "source": "/quranview/Ibrahim",
+      "destination": "/quranview/Ibrahim.html"
+    },
+    {
+      "source": "/quranview/Al-Hijr",
+      "destination": "/quranview/Al-Hijr.html"
+    },
+    {
+      "source": "/quranview/An-Nahl",
+      "destination": "/quranview/An-Nahl.html"
+    },
+    {
+      "source": "/quranview/Al-Isra",
+      "destination": "/quranview/Al-Isra.html"
+    },
+    {
+      "source": "/quranview/Al-Kahf",
+      "destination": "/quranview/Al-Kahf.html"
+    },
+    {
+      "source": "/quranview/Maryam",
+      "destination": "/quranview/Maryam.html"
+    },
+    {
+      "source": "/quranview/Ta-Ha",
+      "destination": "/quranview/Ta-Ha.html"
+    },
+    {
+      "source": "/quranview/Al-Anbiya",
+      "destination": "/quranview/Al-Anbiya.html"
+    },
+    {
+      "source": "/quranview/Al-Hajj",
+      "destination": "/quranview/Al-Hajj.html"
+    },
+    {
+      "source": "/quranview/Al-Muminun",
+      "destination": "/quranview/Al-Muminun.html"
+    },
+    {
+      "source": "/quranview/An-Nur",
+      "destination": "/quranview/An-Nur.html"
+    },
+    {
+      "source": "/quranview/Al-Furqan",
+      "destination": "/quranview/Al-Furqan.html"
+    },
+    {
+      "source": "/quranview/Ash-Shuara",
+      "destination": "/quranview/Ash-Shuara.html"
+    },
+    {
+      "source": "/quranview/An-Naml",
+      "destination": "/quranview/An-Naml.html"
+    },
+    {
+      "source": "/quranview/Al-Qasas",
+      "destination": "/quranview/Al-Qasas.html"
+    },
+    {
+      "source": "/quranview/Al-Ankabut",
+      "destination": "/quranview/Al-Ankabut.html"
+    },
+    {
+      "source": "/quranview/Ar-Rum",
+      "destination": "/quranview/Ar-Rum.html"
+    },
+    {
+      "source": "/quranview/Luqman",
+      "destination": "/quranview/Luqman.html"
+    },
+    {
+      "source": "/quranview/As-Sajdah",
+      "destination": "/quranview/As-Sajdah.html"
+    },
+    {
+      "source": "/quranview/Al-Ahzab",
+      "destination": "/quranview/Al-Ahzab.html"
+    },
+    {
+      "source": "/quranview/Saba",
+      "destination": "/quranview/Saba.html"
+    },
+    {
+      "source": "/quranview/Fatir",
+      "destination": "/quranview/Fatir.html"
+    },
+    {
+      "source": "/quranview/Ya-Seen",
+      "destination": "/quranview/Ya-Seen.html"
+    },
+    {
+      "source": "/quranview/As-Saaffat",
+      "destination": "/quranview/As-Saaffat.html"
+    },
+    {
+      "source": "/quranview/Sad",
+      "destination": "/quranview/Sad.html"
+    },
+    {
+      "source": "/quranview/Az-Zumar",
+      "destination": "/quranview/Az-Zumar.html"
+    },
+    {
+      "source": "/quranview/Ghafir",
+      "destination": "/quranview/Ghafir.html"
+    },
+    {
+      "source": "/quranview/Fussilat",
+      "destination": "/quranview/Fussilat.html"
+    },
+    {
+      "source": "/quranview/Ash-Shura",
+      "destination": "/quranview/Ash-Shura.html"
+    },
+    {
+      "source": "/quranview/Az-Zukhruf",
+      "destination": "/quranview/Az-Zukhruf.html"
+    },
+    {
+      "source": "/quranview/Ad-Dukhan",
+      "destination": "/quranview/Ad-Dukhan.html"
+    },
+    {
+      "source": "/quranview/Al-Jathiya",
+      "destination": "/quranview/Al-Jathiya.html"
+    },
+    {
+      "source": "/quranview/Al-Ahqaf",
+      "destination": "/quranview/Al-Ahqaf.html"
+    },
+    {
+      "source": "/quranview/Muhammad",
+      "destination": "/quranview/Muhammad.html"
+    },
+    {
+      "source": "/quranview/Al-Fath",
+      "destination": "/quranview/Al-Fath.html"
+    },
+    {
+      "source": "/quranview/Al-Hujurat",
+      "destination": "/quranview/Al-Hujurat.html"
+    },
+    {
+      "source": "/quranview/Qaf",
+      "destination": "/quranview/Qaf.html"
+    },
+    {
+      "source": "/quranview/Adh-Dhariyat",
+      "destination": "/quranview/Adh-Dhariyat.html"
+    },
+    {
+      "source": "/quranview/At-Tur",
+      "destination": "/quranview/At-Tur.html"
+    },
+    {
+      "source": "/quranview/An-Najm",
+      "destination": "/quranview/An-Najm.html"
+    },
+    {
+      "source": "/quranview/Al-Qamar",
+      "destination": "/quranview/Al-Qamar.html"
+    },
+    {
+      "source": "/quranview/Ar-Rahman",
+      "destination": "/quranview/Ar-Rahman.html"
+    },
+    {
+      "source": "/quranview/Al-Waqiah",
+      "destination": "/quranview/Al-Waqiah.html"
+    },
+    {
+      "source": "/quranview/Al-Hadid",
+      "destination": "/quranview/Al-Hadid.html"
+    },
+    {
+      "source": "/quranview/Al-Mujadila",
+      "destination": "/quranview/Al-Mujadila.html"
+    },
+    {
+      "source": "/quranview/Al-Hashr",
+      "destination": "/quranview/Al-Hashr.html"
+    },
+    {
+      "source": "/quranview/Al-Mumtahana",
+      "destination": "/quranview/Al-Mumtahana.html"
+    },
+    {
+      "source": "/quranview/As-Saf",
+      "destination": "/quranview/As-Saf.html"
+    },
+    {
+      "source": "/quranview/Al-Jumuah",
+      "destination": "/quranview/Al-Jumuah.html"
+    },
+    {
+      "source": "/quranview/Al-Munafiqun",
+      "destination": "/quranview/Al-Munafiqun.html"
+    },
+    {
+      "source": "/quranview/At-Taghabun",
+      "destination": "/quranview/At-Taghabun.html"
+    },
+    {
+      "source": "/quranview/At-Talaq",
+      "destination": "/quranview/At-Talaq.html"
+    },
+    {
+      "source": "/quranview/At-Tahrim",
+      "destination": "/quranview/At-Tahrim.html"
+    },
+    {
+      "source": "/quranview/Al-Mulk",
+      "destination": "/quranview/Al-Mulk.html"
+    },
+    {
+      "source": "/quranview/Al-Qalam",
+      "destination": "/quranview/Al-Qalam.html"
+    },
+    {
+      "source": "/quranview/Al-Haqqah",
+      "destination": "/quranview/Al-Haqqah.html"
+    },
+    {
+      "source": "/quranview/Al-Maarij",
+      "destination": "/quranview/Al-Maarij.html"
+    },
+    {
+      "source": "/quranview/Nuh",
+      "destination": "/quranview/Nuh.html"
+    },
+    {
+      "source": "/quranview/Al-Jinn",
+      "destination": "/quranview/Al-Jinn.html"
+    },
+    {
+      "source": "/quranview/Al-Muzzammil",
+      "destination": "/quranview/Al-Muzzammil.html"
+    },
+    {
+      "source": "/quranview/Al-Muddaththir",
+      "destination": "/quranview/Al-Muddaththir.html"
+    },
+    {
+      "source": "/quranview/Al-Qiyamah",
+      "destination": "/quranview/Al-Qiyamah.html"
+    },
+    {
+      "source": "/quranview/Al-Insan",
+      "destination": "/quranview/Al-Insan.html"
+    },
+    {
+      "source": "/quranview/Al-Mursalat",
+      "destination": "/quranview/Al-Mursalat.html"
+    },
+    {
+      "source": "/quranview/An-Naba",
+      "destination": "/quranview/An-Naba.html"
+    },
+    {
+      "source": "/quranview/An-Naziat",
+      "destination": "/quranview/An-Naziat.html"
+    },
+    {
+      "source": "/quranview/Abasa",
+      "destination": "/quranview/Abasa.html"
+    },
+    {
+      "source": "/quranview/At-Takwir",
+      "destination": "/quranview/At-Takwir.html"
+    },
+    {
+      "source": "/quranview/Al-Infitar",
+      "destination": "/quranview/Al-Infitar.html"
+    },
+    {
+      "source": "/quranview/Al-Mutaffifin",
+      "destination": "/quranview/Al-Mutaffifin.html"
+    },
+    {
+      "source": "/quranview/Al-Inshiqaq",
+      "destination": "/quranview/Al-Inshiqaq.html"
+    },
+    {
+      "source": "/quranview/Al-Buruj",
+      "destination": "/quranview/Al-Buruj.html"
+    },
+    {
+      "source": "/quranview/At-Tariq",
+      "destination": "/quranview/At-Tariq.html"
+    },
+    {
+      "source": "/quranview/Al-Ala",
+      "destination": "/quranview/Al-Ala.html"
+    },
+    {
+      "source": "/quranview/Al-Ghashiyah",
+      "destination": "/quranview/Al-Ghashiyah.html"
+    },
+    {
+      "source": "/quranview/Al-Fajr",
+      "destination": "/quranview/Al-Fajr.html"
+    },
+    {
+      "source": "/quranview/Al-Balad",
+      "destination": "/quranview/Al-Balad.html"
+    },
+    {
+      "source": "/quranview/Ash-Shams",
+      "destination": "/quranview/Ash-Shams.html"
+    },
+    {
+      "source": "/quranview/Al-Layl",
+      "destination": "/quranview/Al-Layl.html"
+    },
+    {
+      "source": "/quranview/Ad-Dhuhaa",
+      "destination": "/quranview/Ad-Dhuhaa.html"
+    },
+    {
+      "source": "/quranview/Al-Sharh",
+      "destination": "/quranview/Al-Sharh.html"
+    },
+    {
+      "source": "/quranview/At-Tin",
+      "destination": "/quranview/At-Tin.html"
+    },
+    {
+      "source": "/quranview/Al-Alaq",
+      "destination": "/quranview/Al-Alaq.html"
+    },
+    {
+      "source": "/quranview/Al-Qadr",
+      "destination": "/quranview/Al-Qadr.html"
+    },
+    {
+      "source": "/quranview/Al-Bayyinah",
+      "destination": "/quranview/Al-Bayyinah.html"
+    },
+    {
+      "source": "/quranview/Az-Zalzalah",
+      "destination": "/quranview/Az-Zalzalah.html"
+    },
+    {
+      "source": "/quranview/Al-Adiyat",
+      "destination": "/quranview/Al-Adiyat.html"
+    },
+    {
+      "source": "/quranview/Al-Qariah",
+      "destination": "/quranview/Al-Qariah.html"
+    },
+    {
+      "source": "/quranview/At-Takathur",
+      "destination": "/quranview/At-Takathur.html"
+    },
+    {
+      "source": "/quranview/Al-Asr",
+      "destination": "/quranview/Al-Asr.html"
+    },
+    {
+      "source": "/quranview/Al-Humazah",
+      "destination": "/quranview/Al-Humazah.html"
+    },
+    {
+      "source": "/quranview/Al-Fil",
+      "destination": "/quranview/Al-Fil.html"
+    },
+    {
+      "source": "/quranview/Quraysh",
+      "destination": "/quranview/Quraysh.html"
+    },
+    {
+      "source": "/quranview/Al-Maun",
+      "destination": "/quranview/Al-Maun.html"
+    },
+    {
+      "source": "/quranview/Al-Kawthar",
+      "destination": "/quranview/Al-Kawthar.html"
+    },
+    {
+      "source": "/quranview/Al-Kafirun",
+      "destination": "/quranview/Al-Kafirun.html"
+    },
+    {
+      "source": "/quranview/An-Nasr",
+      "destination": "/quranview/An-Nasr.html"
+    },
+    {
+      "source": "/quranview/Al-Lahab",
+      "destination": "/quranview/Al-Lahab.html"
+    },
+    {
+      "source": "/quranview/Al-Ikhlas",
+      "destination": "/quranview/Al-Ikhlas.html"
+    },
+    {
+      "source": "/quranview/Al-Falaq",
+      "destination": "/quranview/Al-Falaq.html"
+    },
+    {
+      "source": "/quranview/An-Nas",
+      "destination": "/quranview/An-Nas.html"
+    }
+  ]
+}
