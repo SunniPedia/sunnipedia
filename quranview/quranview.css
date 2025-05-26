@@ -172,3 +172,7 @@ html, body {
 .next-icon {
   transform: rotate(180deg);
 }
+.highlighted {
+    background-color: #d1fae5; /* light green */
+    border-left: 4px solid #10b981; /* teal */
+  }
