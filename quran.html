@@ -1154,6 +1154,40 @@ height: calc(100vh - 120px); /* Adjust this based on how tall your toolbar + car
         </div>
 <div class="surah-arabic">سُّورَة النَّاس</div>
 </div></div>
+<script>
+  function goBack() {
+    window.location.href = 'main.html';
+  }
 
+  function toggleSearchBox() {
+    const searchBox = document.getElementById('searchBox');
+    if (searchBox.style.display === 'none' || searchBox.style.display === '') {
+      searchBox.style.display = 'block';
+      document.getElementById('searchInput').focus();
+    } else {
+      searchBox.style.display = 'none';
+    }
+  }
+
+  window.onload = function () {
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function () {
+      const keyword = this.value.toLowerCase();
+      const items = document.querySelectorAll('.surah-item');
+
+      items.forEach(item => {
+        const name = item.querySelector('.surah-name').textContent.toLowerCase();
+        const number = item.querySelector('.surah-number').textContent.toLowerCase();
+        const arabic = item.querySelector('.surah-arabic').textContent.toLowerCase();
+
+        if (name.includes(keyword) || number.includes(keyword) || arabic.includes(keyword)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  };
+</script>
 </body>
 </html>
