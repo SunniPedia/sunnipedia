@@ -184,7 +184,7 @@ function playNext() {
   if (nextIndex < audioElements.length) {
     toggleAudio(audioElements[nextIndex]);
   } else {
-    controller.style.position = 'static';
+    //controller.style.position = 'static';
   }
 }
 
