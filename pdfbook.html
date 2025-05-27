@@ -13,8 +13,6 @@
     @font-face {
       font-family: 'SolaimanLipi';
       src: url('fonts/SolaimanLipi.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
     }
 
     body {
@@ -142,6 +140,14 @@
       font-family: 'SolaimanLipi';
     }
 
+    .custom-dialog img {
+      width: 140px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
     .custom-dialog button {
       margin: 8px 5px;
       padding: 8px 16px;
@@ -151,6 +157,12 @@
       border-radius: 4px;
       cursor: pointer;
       font-family: 'SolaimanLipi';
+    }
+
+    .custom-dialog p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #000;
     }
 
     .dialog-overlay {
@@ -181,10 +193,17 @@
 
   <div class="dialog-overlay" id="dialogOverlay" style="display:none;" onclick="closeDialog()"></div>
   <div class="custom-dialog" id="customDialog" style="display:none;">
-    <p>আপনি কি পিডিএফ কিতাবের লিংক শেয়ার করতে চান?</p>
-    <button onclick="copyLink()">কপি</button>
-    <button onclick="shareLink()">শেয়ার</button>
-    <button onclick="closeDialog()">বাতিল</button>
+    <img id="dialogImg" src="">
+    <div>
+      <button onclick="downloadPDF()">ডাউনলোড</button>
+      <button onclick="copyLink()">কপি</button>
+      <button onclick="shareLink()">শেয়ার</button>
+    </div>
+    <p>
+      কিতাবের নাম - <span id="dialogBookName"></span><br>
+      লেখকের নাম - <span id="dialogBookAuthor"></span><br><br>
+      @ইসলামী বিশ্বকোষ ও আল হাদিস S2
+    </p>
   </div>
 
   <script>
@@ -213,9 +232,7 @@
         const item = document.createElement("div");
         item.className = "book-item";
 
-        item.onclick = () => window.open(book.pdflink, '_blank');
-        item.oncontextmenu = (e) => {
-          e.preventDefault();
+        item.onclick = () => {
           selectedBook = book;
           showDialog();
         };
@@ -235,6 +252,10 @@
     function showDialog() {
       document.getElementById("dialogOverlay").style.display = "block";
       document.getElementById("customDialog").style.display = "block";
+
+      document.getElementById("dialogImg").src = selectedBook.img;
+      document.getElementById("dialogBookName").innerText = selectedBook.name;
+      document.getElementById("dialogBookAuthor").innerText = selectedBook.author;
     }
 
     function closeDialog() {
@@ -281,6 +302,14 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
         }
         closeDialog();
       });
+    }
+
+    function downloadPDF() {
+      const link = document.createElement('a');
+      link.href = selectedBook.pdflink;
+      link.download = selectedBook.name + '.pdf';
+      link.click();
+      closeDialog();
     }
 
     fetch("https://sunnipedia-zeta.vercel.app/pdfbook.json")
