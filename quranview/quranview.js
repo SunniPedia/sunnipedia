@@ -101,29 +101,48 @@ function removeAllHighlights() {
 
 function toggleAudio(el) {
   const id = el.dataset.id;
-  const index = audioElements.indexOf(el);
+  let index = audioElements.indexOf(el);
+
   if (!id) {
     alert("অডিও আইডি পাওয়া যায়নি");
     return;
   }
 
-  // pause current audio if same is clicked
-  if (currentAudio && !currentAudio.paused && index === currentIndex) {
-    currentAudio.pause();
-    el.src = 'play.png';
-    mainPlayPause.src = 'play.png';
+  // যদি সব শেষ হয়ে যায়, পরের ক্লিকে শুরু থেকে চালাও
+  if (currentIndex === -1) {
+    index = 0;
+    el = audioElements[0];
+  }
+
+  // যদি আগের অডিও একই এবং চলছে, তাহলে pause করো
+  if (currentAudio && index === currentIndex) {
+    if (!currentAudio.paused) {
+      currentAudio.pause();
+      el.src = 'play.png';
+      mainPlayPause.src = 'play.png';
+    } else {
+      currentAudio.play().then(() => {
+        el.src = 'pause.png';
+        mainPlayPause.src = 'pause.png';
+      }).catch(err => {
+        alert("পুনরায় চালাতে সমস্যা হচ্ছে");
+        console.error(err);
+      });
+    }
     return;
   }
 
-  // stop previous
+  // আগের অডিও থামাও
   if (currentAudio) {
     currentAudio.pause();
+    currentAudio.currentTime = 0;
     audioElements[currentIndex].src = 'play.png';
   }
 
   currentIndex = index;
   const audioUrl = `https://cdn.islamic.network/quran/audio/64/ar.alafasy/${id}.mp3`;
   currentAudio = new Audio(audioUrl);
+
   el.src = 'pause.png';
   mainPlayPause.src = 'pause.png';
   showController();
@@ -146,7 +165,14 @@ function toggleAudio(el) {
   currentAudio.onended = () => {
     el.src = 'play.png';
     mainPlayPause.src = 'play.png';
-    playNext();
+
+    const nextIndex = currentIndex + 1;
+    if (nextIndex < audioElements.length) {
+      playNext();
+    } else {
+      currentIndex = -1;
+      currentAudio = null;
+    }
   };
 }
 
@@ -183,8 +209,6 @@ function playNext() {
   const nextIndex = currentIndex + 1;
   if (nextIndex < audioElements.length) {
     toggleAudio(audioElements[nextIndex]);
-  } else {
-    //controller.style.position = 'static';
   }
 }
 
