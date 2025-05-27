@@ -58,12 +58,13 @@
     }
 
     .search-bar input {
-      width: 100%;
+      width: calc(100% - 20px);
       padding: 8px;
       font-size: 14px;
       font-family: 'SolaimanLipi';
       border: 1px solid #ccc;
       border-radius: 4px;
+      box-sizing: border-box;
     }
 
     #loading {
@@ -124,7 +125,6 @@
       color: #333;
     }
 
-    /* Dialog box */
     .custom-dialog {
       position: fixed;
       top: 50%;
@@ -139,6 +139,7 @@
       max-width: 320px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.2);
       text-align: center;
+      font-family: 'SolaimanLipi';
     }
 
     .custom-dialog button {
@@ -149,6 +150,7 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      font-family: 'SolaimanLipi';
     }
 
     .dialog-overlay {
@@ -175,10 +177,8 @@
   </div>
 
   <div id="loading">লোডিং হচ্ছে...</div>
-
   <div class="book-list" id="bookList"></div>
 
-  <!-- Dialog Elements -->
   <div class="dialog-overlay" id="dialogOverlay" style="display:none;" onclick="closeDialog()"></div>
   <div class="custom-dialog" id="customDialog" style="display:none;">
     <p>আপনি কি পিডিএফ কিতাবের লিংক শেয়ার করতে চান?</p>
@@ -213,10 +213,7 @@
         const item = document.createElement("div");
         item.className = "book-item";
 
-        // Short click = open PDF
         item.onclick = () => window.open(book.pdflink, '_blank');
-
-        // Long press (context menu/right-click) = show dialog
         item.oncontextmenu = (e) => {
           e.preventDefault();
           selectedBook = book;
@@ -245,32 +242,45 @@
       document.getElementById("customDialog").style.display = "none";
     }
 
-    function getFormattedText(book) {
-      const encodedName = encodeURIComponent(book.name);
-      return `${book.name}
-লেখক: ${book.author}
-https://islamipedia.vercel.app/pdfbook.html?search=${encodedName}
+    function getFormattedText(book, shortUrl) {
+      return `কিতাবের নাম - ${book.name}
+লেখকের নাম - ${book.author}
+কিতাবের লিংক - ${shortUrl}
 
 আসসালামু আলাইকুম
-ইসলামী বিশ্বকোষ ও আল হাদিস S2:
+আ্যপ লিংক
 https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
     }
 
+    function shortenLink(book) {
+      const longUrl = `https://islamipedia.vercel.app/pdfbook.html?search=${encodeURIComponent(book.name)}`;
+      return fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`)
+        .then(res => res.text())
+        .catch(err => {
+          console.error("TinyURL Error:", err);
+          return longUrl;
+        });
+    }
+
     function copyLink() {
-      const text = getFormattedText(selectedBook);
-      navigator.clipboard.writeText(text);
-      alert("কপি করা হয়েছে!");
-      closeDialog();
+      shortenLink(selectedBook).then(shortUrl => {
+        const text = getFormattedText(selectedBook, shortUrl);
+        navigator.clipboard.writeText(text);
+        alert("কপি করা হয়েছে!");
+        closeDialog();
+      });
     }
 
     function shareLink() {
-      const text = getFormattedText(selectedBook);
-      if (navigator.share) {
-        navigator.share({ text });
-      } else {
-        alert("শেয়ার সাপোর্ট করে না, কপি করে নিন।");
-      }
-      closeDialog();
+      shortenLink(selectedBook).then(shortUrl => {
+        const text = getFormattedText(selectedBook, shortUrl);
+        if (navigator.share) {
+          navigator.share({ text });
+        } else {
+          alert("শেয়ার সাপোর্ট করে না, কপি করে নিন।");
+        }
+        closeDialog();
+      });
     }
 
     fetch("https://sunnipedia-zeta.vercel.app/pdfbook.json")
