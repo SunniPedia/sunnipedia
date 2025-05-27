@@ -4,7 +4,7 @@ function getQueryParam(param) {
 }
 
 function jumpToAyah() {
-  const userInput = prompt("কোন আয়াতে যেতে চান? (সংখ্যা লিখুন)", "");
+  const userInput = prompt("কোন আয়াতে যেতে চান? (ইংরেজি সংখ্যায় লিখুন)", "");
   if (!userInput) return;
 
   const target = parseInt(userInput);
