@@ -12,6 +12,42 @@
       "source": "/quran",
       "destination": "/quran.html"
     },
+  {
+    "source": "/book",
+    "destination": "/book.html"
+  },
+  {
+    "source": "/tafsir",
+    "destination": "/tafsir.html"
+  },
+  {
+    "source": "/hadis",
+    "destination": "/hadis.html"
+  },
+  {
+    "source": "/pdfbook",
+    "destination": "/pdfbook.html"
+  },
+  {
+    "source": "/onlinebook",
+    "destination": "/onlinebook.html"
+  },
+  {
+    "source": "/tasbih",
+    "destination": "/tasbih.html"
+  },
+  {
+    "source": "/boyan",
+    "destination": "/boyan.html"
+  },
+  {
+    "source": "/live",
+    "destination": "/live.html"
+  },
+  {
+    "source": "/more",
+    "destination": "/more.html"
+  },
     {
       "source": "/quranview/Al-Fatihah",
       "destination": "/quranview/Al-Fatihah.html"
