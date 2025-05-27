@@ -104,7 +104,7 @@ function toggleAudio(el) {
   let index = audioElements.indexOf(el);
 
   if (!id) {
-    alert("অডিও আইডি পাওয়া যায়নি");
+    alert("অডিও পাওয়া যায়নি");
     return;
   }
 
