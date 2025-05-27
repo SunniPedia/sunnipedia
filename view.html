@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="pageTitle">ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="ইসলামী বিশ্বকোষ ও আল হাদিস S2">
-  <meta property="og:description" content="ইসলামী বই, হাদীস ও বিশ্বকোষ পড়ুন ও শেয়ার করুন।">
-  <meta property="og:image" content="icon.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://islamipedia.vercel.app/view.html">
+<meta name="description" content="৭৮০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta property="og:title" content="ইসলামী বই - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামী বই - ৭৮০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
 
   <style>
     @font-face {
@@ -154,14 +152,25 @@
 
     const dynamicTitle = key || bookName || 'বই পড়ুন';
     document.getElementById('pageTitle').innerText = dynamicTitle;
-    const viewTitle = document.getElementById('viewTitle');
-    viewTitle.innerText = dynamicTitle;
 
-    window.onload = function () {
-      if (viewTitle.scrollWidth > viewTitle.parentElement.clientWidth) {
-        viewTitle.classList.add('marquee');
-      }
-    };
+    const viewTitle = document.getElementById('viewTitle');
+
+    // Check if title overflows and add marquee if needed
+    const tempSpan = document.createElement('span');
+    tempSpan.style.visibility = 'hidden';
+    tempSpan.style.position = 'absolute';
+    tempSpan.style.whiteSpace = 'nowrap';
+    tempSpan.style.fontSize = '20px';
+    tempSpan.style.pointerEvents = 'none';
+    tempSpan.style.fontFamily = 'SolaimanLipi, sans-serif';
+    tempSpan.innerText = dynamicTitle;
+    document.body.appendChild(tempSpan);
+
+    if (tempSpan.offsetWidth > viewTitle.parentElement.offsetWidth) {
+      viewTitle.classList.add('marquee');
+    }
+    viewTitle.innerText = dynamicTitle;
+    document.body.removeChild(tempSpan);
 
     function updateFontSize() {
       contentDiv.style.fontSize = fontSize + 'px';
