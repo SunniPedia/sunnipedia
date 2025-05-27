@@ -149,28 +149,48 @@
       renderBooks(filtered);
     }
 
-    function renderBooks(data) {
-      const list = document.getElementById("bookList");
-      list.innerHTML = "";
-      data.forEach((book, index) => {
-        const item = document.createElement("div");
-        item.className = "book-item";
-        item.onclick = () => downloadBook(book.pdflink);
-        item.innerHTML = `
-          <div class="number-box">${englishToBanglaDigits(index + 1)}</div>
-          <img class="book-img" src="${book.img}" alt="img">
-          <div class="book-info">
-            <h2>${book.name}</h2>
-            <p>${book.author}</p>
-          </div>
-        `;
-        list.appendChild(item);
-      });
-    }
+ function makeLinkFromName(name) {
+    return `https://islamipedia.vercel.app/pdfbook.html?bookname=${encodeURIComponent(name)}`;
+  }
 
-    function downloadBook(url) {
-      window.open(url, '_blank');
-    }
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => alert("লিংক কপি হয়েছে!"))
+      .catch(err => alert("কপি করা সম্ভব হয়নি!"));
+  }
+
+  function renderBooks(data) {
+    const list = document.getElementById("bookList");
+    list.innerHTML = "";
+    data.forEach((book, index) => {
+      const bookUrl = makeLinkFromName(book.name);
+      const item = document.createElement("div");
+      item.className = "book-item";
+      item.onclick = () => downloadBook(bookUrl);
+
+      item.oncontextmenu = (e) => {
+        e.preventDefault();
+        const confirmCopy = confirm("আপনি কি কিতাবের লিংক কপি করতে চান?");
+        if (confirmCopy) {
+          copyToClipboard(bookUrl);
+        }
+      };
+
+      item.innerHTML = `
+        <div class="number-box">${englishToBanglaDigits(index + 1)}</div>
+        <img class="book-img" src="${book.img}" alt="img">
+        <div class="book-info">
+          <h2>${book.name}</h2>
+          <p>${book.author}</p>
+        </div>
+      `;
+      list.appendChild(item);
+    });
+  }
+
+  function downloadBook(url) {
+    window.open(url, '_blank');
+  }
 
     fetch("https://sunnipedia-zeta.vercel.app/pdfbook.json")
       .then(res => res.json())
