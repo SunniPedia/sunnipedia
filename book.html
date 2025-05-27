@@ -2,201 +2,245 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>অনলাইন বই সমাহার</title>
+  <title>ইসলামী বই সমাহার</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="১৬৭৭ টি পিডিএফ কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="৭৮০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
   <meta property="og:title" content="ইসলামী বই - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
-  <meta property="og:description" content="১৬৭৭ টি পিডিএফ কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta property="og:description" content="৭৮০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
   <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">  
   <style>
-    body { font-family: 'SolaimanLipi', sans-serif; margin: 0; background-color: #f5f5f5; }
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    /* Toolbar styling */
     .toolbar {
-      position: sticky; top: 0; z-index: 1000; display: flex;
-      align-items: center; background-color: #01837A;
-      color: white; padding: 10px;
-    }
-    .toolbar img { height: 24px; width: 24px; cursor: pointer; margin-right: 10px; }
-    .toolbar h1 { flex: 1; font-size: 18px; margin: 0; }
-
-    .search-bar {
-      position: sticky; top: 52px; z-index: 999;
-      display: none; padding: 10px; background: white;
-      border-bottom: 1px solid #ccc;
-    }
-    .search-bar input {
-      width: 100%; padding: 8px; font-family: 'SolaimanLipi';
-      font-size: 14px; border: 1px solid #ccc; border-radius: 4px;
+      background-color: #01837A;
+      color: white;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    #loading { text-align: center; padding: 20px; color: #01837A; font-size: 16px; }
-
-    .book-list { padding: 10px; margin-top: 5px; }
-
-    .book-item {
-      display: flex; background: white; margin-bottom: 10px;
-      padding: 10px; align-items: center; border-radius: 6px;
-      cursor: pointer; border-left: 4px solid #01837A;
+    .toolbar-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
     }
-    .number-box {
-      width: 50px; height: 50px; background: #e0f7fa;
-      display: flex; align-items: center; justify-content: center;
-      color: #01837A; font-size: 14px; margin-right: 10px;
-    }
-    .book-img { width: 56px; height: 56px; object-fit: contain; margin-right: 10px; }
-    .book-info { flex: 1; }
-    .book-info h2 { font-size: 14px; margin: 0 0 5px 0; color: #000; }
-    .book-info p { font-size: 12px; margin: 0; color: #333; }
 
-    /* Dialog box */
-    .custom-dialog {
-      position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-      background: white; border: 1px solid #ccc; padding: 20px;
-      z-index: 2000; border-radius: 8px; width: 90%; max-width: 400px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2); text-align: center;
-    }
-    .custom-dialog button {
-      margin: 10px 5px; padding: 8px 16px;
-      background: #01837A; color: white; border: none; border-radius: 4px;
+    .icon-img {
+      width: 24px;
+      height: 24px;
       cursor: pointer;
     }
-    .dialog-overlay {
-      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.3); z-index: 1999;
+
+    .search-box {
+  padding: 10px;
+  display: none;
+  background-color: #ffffff;
+  position: sticky;
+  top: 56px; /* টুলবারের উচ্চতা অনুযায়ী */
+  z-index: 999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: 'SolaimanLipi', sans-serif;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+    .book-list {
+      padding: 10px;
+      margin-top: 5px;
+      overflow-y: auto;
     }
+
+    .book-item {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.book-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: #005555;
+  margin-bottom: 5px;
+}
+
+.book-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.3;
+}
   </style>
 </head>
 <body>
 
+  <!-- Toolbar -->
   <div class="toolbar">
-    <img src="back.png" onclick="history.back()">
-    <h1>অনলাইন বই সমাহার</h1>
-    <img src="search.png" onclick="toggleSearch()">
+    <div class="back-button" onclick="goBack()">
+      <img src="back.png" alt="পেছনে যান" class="icon-img">
+    </div>
+    <div class="toolbar-title">ইসলামী বই সমাহার</div>
+    <div class="search-icon" onclick="toggleSearchBox()">
+      <img src="search.png" alt="অনুসন্ধান" class="icon-img">
+    </div>
   </div>
 
-  <div class="search-bar" id="searchBar">
-    <input type="text" id="searchInput" placeholder="বই সার্চ করুন..." oninput="filterBooks(this.value)">
+  <!-- Search Box -->
+  <div class="search-box" id="searchBox">
+    <input type="text" id="searchInput" placeholder="বইয়ের নাম বা লেখক খুঁজুন..." onkeyup="searchBooks()">
   </div>
-
-  <div id="loading">লোডিং হচ্ছে...</div>
-
-  <div class="book-list" id="bookList"></div>
-
-  <!-- Dialog Elements -->
-  <div class="dialog-overlay" id="dialogOverlay" style="display:none;"></div>
-  <div class="custom-dialog" id="customDialog" style="display:none;">
-    <p>আপনি কি পিডিএফ কিতাবের লিংক শেয়ার করতে চান?</p>
-    <button onclick="copyLink()">কপি</button>
-    <button onclick="shareLink()">শেয়ার</button>
-    <button onclick="closeDialog()">বাতিল</button>
+<!-- Loading Text -->
+<div id="loadingText" style="text-align:center; padding: 20px; font-size: 16px;">
+  লোডিং হচ্ছে...
+</div>
+  <!-- Book List -->
+  <div class="book-list" id="bookList">
+    <!-- বইয়ের ডেটা এখানে লোড হবে -->
   </div>
 
   <script>
-    let books = [];
-    let selectedBook = null;
+    let allBooks = [];  // Store all books globally
 
-    const englishToBanglaDigits = num =>
-      num.toString().replace(/\d/g, d => '০১২৩৪৫৬৭৮৯'[d]);
-
-    function toggleSearch() {
-      const search = document.getElementById("searchBar");
-      search.style.display = (search.style.display === "none" || !search.style.display) ? "block" : "none";
+    function goBack() {
+      window.location.href = 'main.html';
     }
 
-    function filterBooks(query) {
-      const filtered = books.filter(book =>
-        book.name.includes(query) || book.author.includes(query)
-      );
-      renderBooks(filtered);
-    }
-
-    function renderBooks(data) {
-      const list = document.getElementById("bookList");
-      list.innerHTML = "";
-      data.forEach((book, index) => {
-        const item = document.createElement("div");
-        item.className = "book-item";
-
-        // Short click = open PDF
-        item.onclick = () => window.open(book.pdflink, '_blank');
-
-        // Long press (context menu/right-click) = show dialog
-        item.oncontextmenu = (e) => {
-          e.preventDefault();
-          selectedBook = book;
-          showDialog();
-        };
-
-        item.innerHTML = `
-          <div class="number-box">${englishToBanglaDigits(index + 1)}</div>
-          <img class="book-img" src="${book.img}" alt="img">
-          <div class="book-info">
-            <h2>${book.name}</h2>
-            <p>${book.author}</p>
-          </div>
-        `;
-        list.appendChild(item);
-      });
-    }
-
-    function showDialog() {
-      document.getElementById("dialogOverlay").style.display = "block";
-      document.getElementById("customDialog").style.display = "block";
-    }
-
-    function closeDialog() {
-      document.getElementById("dialogOverlay").style.display = "none";
-      document.getElementById("customDialog").style.display = "none";
-    }
-
-    function getFormattedText(book) {
-      const encodedName = encodeURIComponent(book.name);
-      return `${book.name}
-লেখক: ${book.author}
-https://islamipedia.vercel.app/pdfbook.html?search=${encodedName}
-
-আসসালামু আলাইকুম
-ইসলামী বিশ্বকোষ ও আল হাদিস S2:
-https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
-    }
-
-    function copyLink() {
-      const text = getFormattedText(selectedBook);
-      navigator.clipboard.writeText(text);
-      alert("কপি করা হয়েছে!");
-      closeDialog();
-    }
-
-    function shareLink() {
-      const text = getFormattedText(selectedBook);
-      if (navigator.share) {
-        navigator.share({ text });
+    function toggleSearchBox() {
+      const searchBox = document.getElementById('searchBox');
+      if (searchBox.style.display === 'none' || searchBox.style.display === '') {
+        searchBox.style.display = 'block';
+        document.getElementById('searchInput').focus();
       } else {
-        alert("শেয়ার সাপোর্ট করে না, কপি করে নিন।");
+        searchBox.style.display = 'none';
       }
-      closeDialog();
     }
 
-    fetch("https://sunnipedia-zeta.vercel.app/pdfbook.json")
-      .then(res => res.json())
-      .then(data => {
-        books = data;
-        renderBooks(books);
-        document.getElementById("loading").style.display = "none";
+    function convertToBanglaNumber(number) {
+      const engToBan = {
+        '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪',
+        '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯'
+      };
+      return number.toString().split('').map(char => engToBan[char] || char).join('');
+    }
 
-        // If ?search=... in URL
-        const params = new URLSearchParams(window.location.search);
-        const query = params.get("search");
-        if (query) {
-          document.getElementById("searchBar").style.display = "block";
-          const input = document.getElementById("searchInput");
-          input.value = query;
-          filterBooks(query);
-        }
-      })
-      .catch(err => {
-        document.getElementById("loading").innerText = "ডেটা লোড করতে সমস্যা হচ্ছে!";
-        console.error(err);
-      });
+    function searchBooks() {
+  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  const filteredBooks = allBooks.filter(book => {
+    return book.name.toLowerCase().includes(searchTerm) ||
+           book.author.toLowerCase().includes(searchTerm) ||
+           (book.subject && book.subject.toLowerCase().includes(searchTerm)); // গোপন subject ফিল্ড
+  });
+  displayBooks(filteredBooks);
+}
+
+    function displayBooks(books) {
+  const bookList = document.getElementById('bookList');
+  bookList.innerHTML = ''; // Clear existing list
+
+  books.forEach((book, index) => {
+    const bookItem = document.createElement('div');
+    bookItem.className = 'book-item';
+
+    const bookId = convertToBanglaNumber(index + 1);  // বইয়ের পজিশন অনুযায়ী নাম্বার
+    const bookName = book.name.trim();  // বইয়ের নাম
+    const bookAuthor = book.author.trim();  // লেখক
+
+    bookItem.onclick = function () {
+      const encodedBookId = encodeURIComponent(book.bookid);
+      const encodedBookName = encodeURIComponent(bookName);
+      window.location.href = `bookview.html?bookid=${encodedBookId}&name=${encodedBookName}`;
+    };
+
+    bookItem.innerHTML = `
+      <div class="book-number">বই (${bookId})</div>
+      <div class="book-title">${bookName}</div>
+      <div class="book-author">${bookAuthor}</div>
+    `;
+
+    bookList.appendChild(bookItem);
+  });
+}
+
+    fetch('https://sunnipedia-zeta.vercel.app/file.json')
+  .then(response => response.json())
+  .then(data => {
+    allBooks = data;
+    displayBooks(allBooks);
+    document.getElementById('loadingText').style.display = 'none'; // লোডিং লেখা লুকাও
+  })
+  .catch(error => {
+    console.error('বই লোড করতে সমস্যা হয়েছে:', error);
+    document.getElementById('loadingText').innerText = 'বই লোড করতে সমস্যা হয়েছে!';
+  });
   </script>
+<script>
+  // fetch এর নিচে থাকলেই ভালো কাজ করবে
+  // URL থেকে সার্চ কুয়েরি পড়ে অটো সার্চ
+  window.onload = function () {
+    const params = new URLSearchParams(window.location.search);
+    const searchTerm = params.get('search');
+
+    if (searchTerm) {
+      const input = document.getElementById('searchInput');
+      const searchBox = document.getElementById('searchBox');
+      if (input) {
+        searchBox.style.display = 'block'; // সার্চ বক্স খোলা দেখাও
+        input.value = searchTerm;
+      }
+
+      // wait until books are loaded
+      const checkBooksLoaded = setInterval(() => {
+        if (allBooks.length > 0) {
+          clearInterval(checkBooksLoaded);
+          performSearch(searchTerm);
+        }
+      }, 100);
+    }
+  };
+
+  // performSearch ফাংশন ডেফাইন
+  function performSearch(term) {
+  const searchTerm = term.toLowerCase();
+  const filteredBooks = allBooks.filter(book => {
+    return book.name.toLowerCase().includes(searchTerm) ||
+           book.author.toLowerCase().includes(searchTerm) ||
+           (book.subject && book.subject.toLowerCase().includes(searchTerm)); // গোপন subject ফিল্ড
+  });
+  displayBooks(filteredBooks);
+}
+</script>
 </body>
 </html>
