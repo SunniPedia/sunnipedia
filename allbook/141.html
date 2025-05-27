@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ - ৮৭০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে" />
+  <meta property="og:title" content="ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ - ইসলামী বিশ্বকোষ ও আল হাদিস S2" />
+  <meta property="og:description" content="৮৭০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে" />
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png" />
+  <title>ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ</title>
+  <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+    body {
+      font-family: 'SolaimanLipi', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+    }
+    .toolbar {
+      background-color: #01837A;
+      color: white;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      min-height: 50px;
+    }
+    .toolbar img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    .toolbar h1 {
+      flex: 1;
+      margin: 0;
+      font-size: 16px;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 8s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    #searchBox {
+      padding: 10px;
+      background-color: #fff;
+      display: none;
+      position: sticky;
+      top: 56px;
+      z-index: 999;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    #searchInput {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'SolaimanLipi', sans-serif;
+      box-sizing: border-box;
+    }
+    #content {
+      padding: 15px;
+      background: #fff;
+      margin-top: 5px;
+    }
+    .content-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .content-item h2, .content-item p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <img src="back.png" alt="Back" onclick="history.back()" />
+    <h1 id="bookTitle">ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ</h1>
+    <img src="link0.png" alt="Copy Link" onclick="copyShortLink()" style="margin-right: 10px;" />
+    <img src="search.png" alt="Search" onclick="toggleSearch()" />
+  </div>
+  <div id="searchBox">
+    <input type="text" id="searchInput" placeholder="অনুচ্ছেদ খুঁজুন..." onkeyup="searchContent()" />
+  </div>
+  <div id="content">
+    
+        <div class="content-item" style="background-color: #fff;" onclick="openView(0)">
+          <h2 style="color: #01837A; text-align: left;">১</h2>
+          <p style="color: #01837A; text-align: left;">ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ</p>
+        </div>
+        <div class="content-item" style="background-color: #fff;" onclick="openView(1)">
+          <h2 style="color: #01837A; text-align: left;">২</h2>
+          <p style="color: #01837A; text-align: left;">কারবালার ময়দানে রাসূলে পাক (ﷺ) এর পরিবার-পরিজনের উপর এমন ভয়ানক নির্যাতন-জুলুম চলেছিল</p>
+        </div>
+  </div>
+  <script>
+    let fullData = [{"1": "ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ", "2": "ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ\n\n🖋মুহাম্মদ তুহিনুর রহমান শাহজাহান"}, {"1": "কারবালার ময়দানে রাসূলে পাক (ﷺ) এর পরিবার-পরিজনের উপর এমন ভয়ানক নির্যাতন-জুলুম চলেছিল", "2": "কারবালার ময়দানে রাসূলে পাক (ﷺ) এর পরিবার-পরিজনের উপর এমন ভয়ানক নির্যাতন-জুলুম চলেছিল, যাতে আসমান-যমীন পর্যন্ত রক্ত-অশ্রু বর্ষণ করেছিল। সৃষ্টিকুল অন্ধকারে নিমজ্জিত হয়েছিল।\n\n\n❏ হযরত বুসরাহ্ আযদিয়া (رضي الله عنه) বর্ণনা করেন, \"যখন হযরত হুসাইন (رضي الله عنه) কে শহীদ করা হল,  তখন আসমান থেকে রক্ত-বর্ষণ হল, প্রভাতে (আমরা দেখি) আমাদের মটকী আর কলসী গুলো রক্তে পরিপূর্ণ হয়ে গিয়েছে। (বায়হাকী,আবু নুআইম,সিররুশ শাহাদাতাইন ৩২, সাওয়াকে মুহরিকা ১৯২)\n\n\n❏ হযরত যুহরী (رضي الله عنه) বলেন, \" আমি জানতে পারলাম, যে দিন হযরত হুসাইন (رضي الله عنه) কে শহীদ করা হয়েছিল,  সে দিন বাইতুল মুক্বাদ্দাসের যে পাথরটিই সরানো হচ্ছিল, তার নিচেই তাজা রক্ত পাওয়া যাচ্ছিল।\" (বায়হাকী, আবু নুআইম, সিররুশ শাহাদাতাইন ৩২, তাহযীবুত তাহযীব ৩৫৪, সাওয়ায়িকে মুহরিকা ১৯২)\n\n\n❏ উম্মে হিব্বান (رضي الله عنه) বলেন, \"যে দিন হযরত হুসাইন (رضي الله عنه) কে শহীদ করা হয়েছিল,  সে দিন থেকে তিন দিন পর্যন্ত আমাদের উপর অন্ধকার ছেয়ে গিয়েছিল,  যে ব্যক্তিই মুখে জাফরান (গাজা) নিয়েছিল,  তার মুখ পুড়ে গিয়েছিল। বাইতুল মুক্বাদ্দাসের যে পাথর সরানো হয়েছিল তার নিচে তাজা রক্ত পাওয়া গিয়েছিল। (বায়হাকী, সিররুশ শাহাদাতাইন ৩২)\n\n\n❏ খালাফ বিন খলিফা স্বীয় পিতা থেকে বর্ণনা করেন,\n\n\" যখন ইমাম হুসাইন (رضي الله عنه) কে শহীদ করা হয়েছিল,  তখন আসমান কালো বর্ণ ধারন করেছিল সূর্যে গ্রহন লেগেছিল। (তাহযীবুত তাহযীব ৩৫৪/২, সাওয়াইকে মুহরিকা১৯২)\n\n\n❏ হযরত হুসাইন (رضي الله عنه)র শাহাদাতের কারনে আসমান হয়েছিল রক্তিম। আর সূর্যে লেগেছিল গ্রহণ।  এমন কি দিন দুপুরে তারকা রাজি দেখা গিয়েছিল। মানুষ ভেবেছিল কিয়ামত বুঝি সংঘটিত হয়ে যাচ্ছে। সিরিয়াতে কোন পাথর সরানো গেলেই তার নিচে তাজা রক্ত পাওয়া যাচ্ছিল। (সাওয়ায়িকে মুহরিকা ১৯২)\n\n\n❏ ইমাম ইবনে সীরীন (رضي الله عنه) বলেন,\n\n\"নিঃসন্দেহে তখন পৃথিবীতে তিনদিন পর্যন্ত অন্ধকার ছেয়ে রয়েছিল। অতঃপর আসমানে রক্তিম বর্ণ প্রকাশ পেয়েছিল। (সাওয়ায়েকে মুহরিকা ১৯২)\n\n\nহযরত ইমাম হুসাইন (رضي الله عنه) শাহাদাত একটি মারাত্মক হৃদয় বিদারক ঘটনা, যাহাকে প্রিয়নবী (ﷺ) এত আদর করতেন হাদীসে যার প্রমান পাওয়া যায়।  এজিদ বাহিনী ক্ষমতার মোহে ইমাম হুসাইন (رضي الله عنه) কে শহীদ করে। ইমাম হুসাইন রাদ্বিয়াল্লাহু আনহু ছিলেন হক, আর নাপাক এজিদ ছিল জুলুমবাজ,  উপরোক্ত ঘটনা থেকে বুঝা যায়। আল্লাহ যেন আমাদেরকে ইমাম হুসাইন (رضي الله عنه) র প্রেমে ও তাহাঁর শিক্ষার উপর চলার তৈফিক দান করেন।  \"আমিন\"\n"}];
+
+    function convertToBanglaNumber(number) {
+      const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+      return number.toString().split('').map(d => banglaDigits[+d]).join('');
+    }
+
+    function toggleSearch() {
+      const box = document.getElementById('searchBox');
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+      if (box.style.display === 'block') {
+        document.getElementById('searchInput').focus();
+      }
+    }
+
+    function searchContent() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = fullData.filter(item => item["1"] && item["1"].toLowerCase().includes(searchTerm));
+      displayContent(filtered);
+    }
+
+    function displayContent(dataArray) {
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = '';
+      dataArray.forEach((item, index) => {
+        if (!item["1"]) return;
+        const isEmpty2 = !item["2"] || item["2"].trim() === '';
+        const bgColor = isEmpty2 ? '#01837A' : '#fff';
+        const fgColor = isEmpty2 ? '#fff' : '#01837A';
+        const textAlign = isEmpty2 ? 'center' : 'left';
+        const div = document.createElement('div');
+        div.className = 'content-item';
+        div.style.backgroundColor = bgColor;
+        div.onclick = () => openView(index);
+        div.innerHTML = `
+          <h2 style="color: ${fgColor}; text-align: ${textAlign}">
+            ${convertToBanglaNumber(index + 1)}
+          </h2>
+          <p style="color: ${fgColor}; text-align: ${textAlign}">
+            ${item["1"]}
+          </p>`;
+        contentDiv.appendChild(div);
+      });
+    }
+
+    function openView(index) {
+      const keyValue = fullData[index]["1"];
+      const encodedKey = encodeURIComponent(keyValue);
+      const encodedBookName = encodeURIComponent("ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ");
+      window.location.href = `view.html?bookid=0238&name=${encodedBookName}&key=${encodedKey}&index=${index}`;
+    }
+
+    function copyShortLink() {
+      const longUrl = window.location.href;
+      fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`)
+        .then(res => res.text())
+        .then(shortLink => {
+          navigator.clipboard.writeText(shortLink)
+            .then(() => alert('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
+            .catch(() => alert('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
+        })
+        .catch(error => {
+          alert('লিংক শর্ট করতে সমস্যা হয়েছে');
+        });
+    }
+  </script>
+</body>
+</html>
