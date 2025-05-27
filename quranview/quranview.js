@@ -60,7 +60,7 @@ ${ayahNum}. ${kanzul}
 
 ${irfan}
 
-আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2 :    
+ইসলামী বিশ্বকোষ ও আল হাদিস S2 :    
 https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
 }
 
