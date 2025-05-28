@@ -229,7 +229,7 @@ document.getElementById('mainPlayPause').src = 'play.png';
   setTimeout(() => {
     const controller = document.getElementById('audioController');
     if (controller) {
-      controller.style.display = 'flex'; // প্রয়োজন হলে 'block' বা অন্য ডিসপ্লে দিন
+      controller.style.display = 'flex';
     }
   }, 100);
 });
