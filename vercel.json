@@ -44,8 +44,12 @@
       "source": "/live",
       "destination": "/live.html"
     },
+{
+      "source": "/allbook/:number(\\d+).html",
+      "destination": "/allbook/:number.html"
+    },
     {
-      "source": "/more0",
+      "source": "/more",
       "destination": "/more.html"
     },
     {
