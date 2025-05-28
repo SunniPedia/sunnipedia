@@ -224,4 +224,12 @@ function playPrevious() {
 
 document.addEventListener("DOMContentLoaded", () => {
   audioElements = Array.from(document.querySelectorAll('img[alt="Play"]'));
+
+  // ১০ সেকেন্ড পরে অডিও কন্ট্রোলার দৃশ্যমান করো
+  setTimeout(() => {
+    const controller = document.getElementById('audioController');
+    if (controller) {
+      controller.style.display = 'flex'; // প্রয়োজন হলে 'block' বা অন্য ডিসপ্লে দিন
+    }
+  }, 10000); // ১০ সেকেন্ড
 });
