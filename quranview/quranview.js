@@ -231,5 +231,5 @@ document.addEventListener("DOMContentLoaded", () => {
     if (controller) {
       controller.style.display = 'flex'; // প্রয়োজন হলে 'block' বা অন্য ডিসপ্লে দিন
     }
-  }, 10000); // ১০ সেকেন্ড
+  }, 100);
 });
