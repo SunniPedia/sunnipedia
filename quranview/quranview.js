@@ -224,7 +224,7 @@ function playPrevious() {
 
 document.addEventListener("DOMContentLoaded", () => {
   audioElements = Array.from(document.querySelectorAll('img[alt="Play"]'));
-
+document.getElementById('mainPlayPause').src = 'play.png';
   // ১০ সেকেন্ড পরে অডিও কন্ট্রোলার দৃশ্যমান করো
   setTimeout(() => {
     const controller = document.getElementById('audioController');
