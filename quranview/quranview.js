@@ -90,7 +90,7 @@ function showController() {
   controller.style.display = 'flex';
 }
 function hideController() {
-  controller.style.display = 'none';
+  //controller.style.display = 'none';
 }
 
 function removeAllHighlights() {
@@ -173,6 +173,13 @@ function toggleAudio(el) {
 }
 
 function toggleMainPlayPause() {
+  if (!currentAudio && currentIndex === -1 && audioElements.length > 0) {
+    // শেষ হওয়ার পরে আবার শুরু করতে চাইলে
+    currentIndex = 0;
+    toggleAudio(audioElements[0]);
+    return;
+  }
+
   if (currentAudio) {
     if (currentAudio.paused) {
       currentAudio.play().then(() => {
