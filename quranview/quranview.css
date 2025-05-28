@@ -159,7 +159,6 @@ html, body {
   gap: 25px;
   box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
   z-index: 9999;
-  display: block; /* তোমার জাভাস্ক্রিপ্ট থেকে টগল করবে */
 }
 
 .audio-controller img {
