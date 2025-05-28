@@ -101,20 +101,14 @@ function removeAllHighlights() {
 
 function toggleAudio(el) {
   const id = el.dataset.id;
-  let index = audioElements.indexOf(el);
+  const index = audioElements.indexOf(el);
 
   if (!id) {
     alert("অডিও পাওয়া যায়নি");
     return;
   }
 
-  // যদি সব শেষ হয়ে যায়, পরের ক্লিকে শুরু থেকে চালাও
-  if (currentIndex === -1) {
-    index = 0;
-    el = audioElements[0];
-  }
-
-  // যদি আগের অডিও একই এবং চলছে, তাহলে pause করো
+  // যদি একই আয়াতে আবার ক্লিক করা হয়, তাহলে পজ/রিজিউম করো
   if (currentAudio && index === currentIndex) {
     if (!currentAudio.paused) {
       currentAudio.pause();
@@ -132,11 +126,13 @@ function toggleAudio(el) {
     return;
   }
 
-  // আগের অডিও থামাও
+  // আগের অডিও বন্ধ করো
   if (currentAudio) {
     currentAudio.pause();
     currentAudio.currentTime = 0;
-    audioElements[currentIndex].src = 'play.png';
+    if (currentIndex >= 0 && currentIndex < audioElements.length) {
+      audioElements[currentIndex].src = 'play.png';
+    }
   }
 
   currentIndex = index;
