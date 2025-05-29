@@ -142,7 +142,7 @@ function loadAllAyahs() {
   currentIndex = -1;
   hideController();
 
-  fetch('https://sunnipedia-zeta.vercel.app/sura.json')
+  fetch('https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/sura.json')
     .then(res => res.json())
     .then(data => {
       suraList = data;
