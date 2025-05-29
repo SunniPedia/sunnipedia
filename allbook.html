@@ -110,7 +110,8 @@
 </div>
 </div>
 <div class="search-box" id="searchBox">
-<input id="searchInput" onkeyup="searchBooks()" placeholder="বইয়ের নাম বা লেখক খুঁজুন..." type="text"/>
+  <input id="searchInput" onkeyup="searchBooks()" placeholder="বইয়ের নাম বা লেখক খুঁজুন..." type="text"/>
+  <div id="searchStatus" style="color:#01837A; font-size:15px; margin-top:6px; display:none;">অনুসন্ধান করা হচ্ছে...</div>
 </div>
 <div class="book-list" id="bookList">
 <div class="book-item" onclick="window.location.href='allbook/1.html';">
@@ -5366,12 +5367,17 @@
 }
 
 function toggleSearchBox() {
-  const searchBox = document.getElementById('searchBox');
-  if (searchBox.style.display === 'none' || searchBox.style.display === '') {
-    searchBox.style.display = 'block';
-    document.getElementById('searchInput').focus();
+  var box = document.getElementById('searchBox');
+  var input = document.getElementById('searchInput');
+  var status = document.getElementById('searchStatus');
+  if(box.style.display === 'block') {
+    box.style.display = 'none';
+    input.value = '';
+    status.style.display = 'none';
+    searchBooks();
   } else {
-    searchBox.style.display = 'none';
+    box.style.display = 'block';
+    input.focus();
   }
 }
 
@@ -5393,14 +5399,30 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function searchBooks() {
-  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-  const bookItems = document.querySelectorAll('.book-item');
-  bookItems.forEach(item => {
-    const title = item.querySelector('.book-title')?.textContent.toLowerCase() || '';
-    const author = item.querySelector('.book-author')?.textContent.toLowerCase() || '';
-    const match = title.includes(searchTerm) || author.includes(searchTerm);
-    item.style.display = match ? 'flex' : 'none';
-  });
+  var input = document.getElementById('searchInput').value.toLowerCase().trim();
+  var bookItems = document.getElementsByClassName('book-item');
+  var status = document.getElementById('searchStatus');
+  
+  // ইনপুট দিলে "অনুসন্ধান করা হচ্ছে..." দেখান
+  if(input.length > 0){
+    status.style.display = 'block';
+  } else {
+    status.style.display = 'none';
+  }
+
+  setTimeout(function() { // সামান্য ডিলে, ইউজার একসাথে টাইপ করলে বারবার না দেখায়
+    var found = false;
+    for(var i=0; i<bookItems.length; i++) {
+      var itemText = bookItems[i].innerText.toLowerCase();
+      if(itemText.indexOf(input) > -1) {
+        bookItems[i].style.display = '';
+        found = true;
+      } else {
+        bookItems[i].style.display = 'none';
+      }
+    }
+    status.style.display = 'none'; // ফিল্টার শেষ হলে স্ট্যাটাস লুকান
+  }, 300); // ৩০০ মিলিসেকেন্ড ডিলে
 }
 
 window.onload = function () {
