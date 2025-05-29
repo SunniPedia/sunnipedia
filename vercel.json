@@ -29,6 +29,14 @@
       "destination": "/pdfbook.html"
     },
     {
+      "source": "/namaj/index",
+      "destination": "/namaj/index.html"
+    },
+    {
+      "source": "/blogonline",
+      "destination": "/blogonline.html"
+    },
+    {
       "source": "/onlinebook",
       "destination": "/onlinebook.html"
     },
@@ -44,7 +52,14 @@
       "source": "/live",
       "destination": "/live.html"
     },
-
+	{
+      "source": "/allbook",
+      "destination": "/allbook.html"
+    },
+    {
+      "source": "/allbook/1",
+      "destination": "/allbook/871.html"
+    },
     {
       "source": "/allbook/1",
       "destination": "/allbook/1.html"
