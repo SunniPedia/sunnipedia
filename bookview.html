@@ -222,7 +222,7 @@ function copyShortLink() {
       const loadingDiv = document.getElementById('loadingText');
       loadingDiv.style.display = 'block';
 
-      fetch(`https://sunnipedia-zeta.vercel.app/book/${bookid}.json`)
+      fetch(`https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/book/${bookid}.json`)
         .then(res => res.json())
         .then(data => {
           fullData = data.map((item, idx) => ({ ...item, originalIndex: idx }));
