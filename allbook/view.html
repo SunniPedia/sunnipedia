@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="pageTitle">ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
 
-<meta name="description" content="৭৮০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+<meta name="description" content="৮৭০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
   <meta property="og:title" content="ইসলামী বই - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
-  <meta property="og:description" content="ইসলামী বই - ৭৮০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta property="og:description" content="ইসলামী বই - ৮৭০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
   <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
 
   <style>
@@ -232,7 +232,7 @@
         return;
       }
 
-      fetch(`https://sunnipedia-zeta.vercel.app/book/${bookid}.json`)
+      fetch(`https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/book/${bookid}.json`)
         .then(res => res.json())
         .then(data => {
           if (index >= 0 && index < data.length) {
