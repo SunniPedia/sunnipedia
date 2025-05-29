@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>তাফসির সমগ্র</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:title" content="ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
   <style>
     @font-face {
       font-family: 'SolaimanLipi';
@@ -160,7 +164,7 @@ height: calc(100vh - 120px); /* Adjust this based on how tall your toolbar + car
       return number.toString().split('').map(char => engToBan[char] || char).join('');
     }
 
-    fetch('https://sunnipedia-zeta.vercel.app/sura.json')
+    fetch('https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/sura.json')
       .then(response => response.json())
       .then(data => {
         const surahList = document.getElementById('surahList');
