@@ -312,7 +312,7 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       closeDialog();
     }
 
-    fetch("https://sunnipedia-zeta.vercel.app/pdfbook.json")
+    fetch("https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/pdfbook.json")
       .then(res => res.json())
       .then(data => {
         books = data;
