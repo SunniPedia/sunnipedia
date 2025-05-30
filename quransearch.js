@@ -133,7 +133,11 @@ const searchInput = document.getElementById('searchInput');
 
 let suraList = [];
 let allAyahs = [];
-let isDataLoaded = false;  // ডেটা লোডেড কি না জানার জন্য
+let isDataLoaded = false;
+
+function showReadyMessage() {
+  ayahList.innerHTML = '<p style="text-align:center; color:#666; padding:20px; font-size:1.1em;">আয়াত অনুসন্ধান করতে শব্দ লিখে ইন্টার চাপুন</p>';
+}
 
 function loadAllAyahs() {
   loadingElement.style.display = 'block';
@@ -166,7 +170,7 @@ function loadAllAyahs() {
             if (loadedCount === suraList.length) {
               loadingElement.style.display = 'none';
               isDataLoaded = true;
-              console.log("All ayahs loaded, ready for search.");
+              showReadyMessage();
             }
           })
           .catch(err => {
@@ -175,7 +179,7 @@ function loadAllAyahs() {
             if (loadedCount === suraList.length) {
               loadingElement.style.display = 'none';
               isDataLoaded = true;
-              console.log("All ayahs loaded (with some errors), ready for search.");
+              showReadyMessage();
             }
           });
       });
@@ -186,15 +190,12 @@ function loadAllAyahs() {
     });
 }
 
-// Approximate matching function
 function isApproximateMatch(text, query) {
   if (!text || !query) return false;
   
   const textLower = text.toLowerCase();
   const queryLower = query.toLowerCase();
   
-  // Simple approximate matching - check if query is contained in text
-  // or if at least 60% of query words are present
   const queryWords = queryLower.split(/\s+/).filter(w => w.length > 0);
   const textWords = textLower.split(/\s+/).filter(w => w.length > 0);
   
@@ -211,17 +212,14 @@ function isApproximateMatch(text, query) {
 }
 
 function renderAyahs(query) {
-  // Show searching message while rendering
   ayahList.innerHTML = '<p style="text-align:center; color:#666; padding:20px;">অনুসন্ধান করা হচ্ছে...</p>';
   audioElements = [];
 
-  // Use setTimeout to allow the UI to update before heavy processing
   setTimeout(() => {
     const filteredAyahs = allAyahs.filter(ayah =>
       isApproximateMatch(ayah.names, query) ||
       isApproximateMatch(ayah.name, query) ||
-      isApproximateMatch(ayah.author, query) ||
-      isApproximateMatch(ayah.suraName, query)
+      isApproximateMatch(ayah.author, query)
     );
 
     ayahList.innerHTML = '';
@@ -277,7 +275,6 @@ function renderAyahs(query) {
   }, 10);
 }
 
-// Clear search results when input is cleared
 searchInput.addEventListener('input', () => {
   const query = searchInput.value.trim();
   if (query === '') {
@@ -286,10 +283,10 @@ searchInput.addEventListener('input', () => {
     currentAudio = null;
     currentIndex = -1;
     hideController();
+    showReadyMessage();
   }
 });
 
-// Handle search only on Enter key press
 searchInput.addEventListener('keydown', e => {
   if (e.key === 'Enter') {
     e.preventDefault();
@@ -300,6 +297,7 @@ searchInput.addEventListener('keydown', e => {
     }
     if (query === '') {
       ayahList.innerHTML = '';
+      showReadyMessage();
       return;
     }
     renderAyahs(query);
