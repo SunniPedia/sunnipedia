@@ -277,29 +277,19 @@ function renderAyahs(query) {
   }, 10);
 }
 
-// Handle search input changes
+// Clear search results when input is cleared
 searchInput.addEventListener('input', () => {
-  if (!isDataLoaded) {
-    alert('অনুগ্রহ করে অপেক্ষা করুন, ডেটা লোড হচ্ছে...');
-    return;
-  }
-  
   const query = searchInput.value.trim();
-  
   if (query === '') {
-    // Clear results when input is empty
     ayahList.innerHTML = '';
     audioElements = [];
     currentAudio = null;
     currentIndex = -1;
     hideController();
-    return;
   }
-  
-  renderAyahs(query);
 });
 
-// Also handle Enter key for search
+// Handle search only on Enter key press
 searchInput.addEventListener('keydown', e => {
   if (e.key === 'Enter') {
     e.preventDefault();
@@ -308,7 +298,10 @@ searchInput.addEventListener('keydown', e => {
       alert('অনুগ্রহ করে অপেক্ষা করুন, ডেটা লোড হচ্ছে...');
       return;
     }
-    if (query === '') return;
+    if (query === '') {
+      ayahList.innerHTML = '';
+      return;
+    }
     renderAyahs(query);
   }
 });
