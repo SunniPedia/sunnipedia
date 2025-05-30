@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ইসলামী বিশ্বকোষ</title>
+  <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background-color: #01837A;
+      color: white;
+      padding: 10px;
+    }
+
+    .toolbar img {
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .title {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100% - 48px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <img src="back.png" alt="Back" onclick="goBack()">
+    <div class="title">ইসলামী বিশ্বকোষ</div>
+  </div>
+
+  <iframe id="mainFrame" src="https://www.sunni-encyclopedia.com/?m=1"></iframe>
+
+  <script>
+    function goBack() {
+      history.back();
+    }
+  </script>
+
+</body>
+</html>
