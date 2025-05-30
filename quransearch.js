@@ -133,6 +133,7 @@ const searchInput = document.getElementById('searchInput');
 
 let suraList = [];
 let allAyahs = [];
+let isDataLoaded = false;  // ডেটা লোডেড কি না জানার জন্য
 
 function loadAllAyahs() {
   loadingElement.style.display = 'block';
@@ -164,7 +165,8 @@ function loadAllAyahs() {
             loadedCount++;
             if (loadedCount === suraList.length) {
               loadingElement.style.display = 'none';
-              renderAyahs('');
+              isDataLoaded = true;
+              console.log("All ayahs loaded, ready for search.");
             }
           })
           .catch(err => {
@@ -172,7 +174,8 @@ function loadAllAyahs() {
             loadedCount++;
             if (loadedCount === suraList.length) {
               loadingElement.style.display = 'none';
-              renderAyahs('');
+              isDataLoaded = true;
+              console.log("All ayahs loaded (with some errors), ready for search.");
             }
           });
       });
@@ -246,12 +249,18 @@ function renderAyahs(query) {
   });
 }
 
-let debounceTimer;
-searchInput.addEventListener('input', e => {
-  clearTimeout(debounceTimer);
-  debounceTimer = setTimeout(() => {
-    renderAyahs(e.target.value);
-  }, 300);
+// টাইপিং-এ সার্চ চালু করিনি, শুধুমাত্র Enter কী চাপলে সার্চ হবে
+searchInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const query = searchInput.value.trim();
+    if (!isDataLoaded) {
+      alert('অনুগ্রহ করে অপেক্ষা করুন, ডেটা লোড হচ্ছে...');
+      return;
+    }
+    renderAyahs(query);
+  }
 });
 
+// পেজ লোড হলে ডেটা ব্যাকগ্রাউন্ডে লোড হবে
 loadAllAyahs();
