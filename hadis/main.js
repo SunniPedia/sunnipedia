@@ -276,7 +276,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const booksSlug = ['bukhari', 'muslim', 'tirmiji', 'daud', 'nasai', 'majah', 'muatta-malik', 'shamail-tirmiji', 'twahabi-sharif', 'musnad-hanifa', 'muatta-muhammad', 'mufrad', 'mishkat-al-misbah', 'fiqh-us-sunnan', 'akhlakhunnabi',  'imam-ahmad', 'bukhari-urdu', 'muslim-urdu', 'tirmiji-urdu', 'abu-daud-urdu', 'nasai-urdu', 'ibn-majah-urdu', 'muatta-malik-urdu', 'shamail-tirmiji-urdu', 'imam-ahmad-urdu', 'ibn-shaibah-urdu', 'dara-kutni-urdu', 'daremi-urdu', 'baihaqi-urdu', 'kanzul-ummal-urdu', 'hammam-urdu', 'maariful-hadith-urdu', 'aat-targib', 'shahifaye-hammam', 'hadith-kudsi'];
+const booksSlug = ['bukhari', 'muslim', 'tirmiji', 'daud', 'nasai', 'majah', 'muatta-malik', 'shamail-tirmiji', 'twahabi-sharif', 'musnad-hanifa', 'muatta-muhammad', 'mufrad', 'mishkat-al-misbah', 'fiqh-us-sunnan', 'akhlakhunnabi', 'bukhari-urdu', 'muslim-urdu', 'tirmiji-urdu', 'abu-daud-urdu', 'nasai-urdu', 'ibn-majah-urdu', 'muatta-malik-urdu', 'shamail-tirmiji-urdu', 'imam-ahmad-urdu', 'ibn-shaibah-urdu', 'dara-kutni-urdu', 'daremi-urdu', 'baihaqi-urdu', 'kanzul-ummal-urdu', 'hammam-urdu', 'maariful-hadith-urdu', 'aat-targib', 'shahifaye-hammam', 'hadith-kudsi'];
 const hadithTables = booksSlug.map(book => {
   return {
     store: book + 'Hadiths',
@@ -1105,10 +1105,10 @@ let HadithCopyDialogComponent = /*#__PURE__*/(() => {
         string += '\n\n';
       }
       if (this.website) {
-        string += `হাদীসের লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
+        string += `ওয়েব সাইটের লিংক:\nhttps://islamipedia.vercel.app/`;
       }
       if (this.applink) {
-        string += `অ্যাপসের লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
+        string += `অ্যাপসের লিংক :\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       }
       try {
         textarea = document.createElement('textarea');
@@ -1204,10 +1204,10 @@ let HadithCopyDialogComponent = /*#__PURE__*/(() => {
         hadithText += '\n\n';
       }
       if (this.website) {
-        hadithText += `হাদীসের লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
+        hadithText += `ওয়েব সাইটের লিংক :\nhttps://islamipedia.vercel.app/`;
       }
       if (this.applink) {
-        hadithText += `অ্যাপসের লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
+        hadithText += `অ্যাপসের লিংক :\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       }
       this.closeDialog();
       // @ts-ignore
@@ -3377,7 +3377,7 @@ let BookMobileComponent = /*#__PURE__*/(() => {
         title: 'প্রস্থান',
         img: 'back.svg',
         slug: 'close',
-        link: ''
+        link: 'https://islamipedia.vercel.app/'
       }];
     }
     ngOnInit() {
