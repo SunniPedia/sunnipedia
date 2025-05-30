@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:title" content="লেখকভিত্তিক বই - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+  <title>ইসলামী বিশ্বকোষ</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background-color: #01837A; /* Updated color */
+      color: white;
+      padding: 10px;
+    }
+
+    .toolbar img {
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .title {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100% - 48px); /* toolbar height */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <img src="back.png" alt="Back" onclick="goBack()">
+    <div class="title">লেখকভিত্তিক বই</div>
+    <!-- link.png removed -->
+  </div>
+
+  <iframe id="mainFrame" src="https://www.sunni-encyclopedia.com/p/pdf-founded-by-masum-billah-sunny-click.html?m=1"></iframe>
+
+  <script>
+    function goBack() {
+      history.back();
+    }
+  </script>
+
+</body>
+</html>
