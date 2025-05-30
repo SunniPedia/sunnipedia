@@ -186,70 +186,120 @@ function loadAllAyahs() {
     });
 }
 
-function renderAyahs(query) {
-  ayahList.innerHTML = '';
-  audioElements = [];
-
-  const lowerQuery = query.trim().toLowerCase();
-
-  const filteredAyahs = allAyahs.filter(ayah =>
-    ayah.names?.toLowerCase().includes(lowerQuery) ||
-    ayah.name?.toLowerCase().includes(lowerQuery) ||
-    ayah.author?.toLowerCase().includes(lowerQuery) ||
-    ayah.suraName?.toLowerCase().includes(lowerQuery)
-  );
-
-  if (filteredAyahs.length === 0) {
-    ayahList.innerHTML = `<p style="text-align:center; color:#666; padding:20px;">কোন আয়াত পাওয়া যায়নি।</p>`;
-    return;
+// Approximate matching function
+function isApproximateMatch(text, query) {
+  if (!text || !query) return false;
+  
+  const textLower = text.toLowerCase();
+  const queryLower = query.toLowerCase();
+  
+  // Simple approximate matching - check if query is contained in text
+  // or if at least 60% of query words are present
+  const queryWords = queryLower.split(/\s+/).filter(w => w.length > 0);
+  const textWords = textLower.split(/\s+/).filter(w => w.length > 0);
+  
+  if (textLower.includes(queryLower)) return true;
+  
+  if (queryWords.length > 1) {
+    const matchingWords = queryWords.filter(qw => 
+      textWords.some(tw => tw.includes(qw))
+    );
+    return matchingWords.length / queryWords.length >= 0.6;
   }
-
-  filteredAyahs.forEach(ayah => {
-    const card = document.createElement('div');
-    card.className = 'ayah-card';
-
-    const banglaNum = convertToBanglaNumber(ayah.ayahNumber);
-
-    card.innerHTML = `
-      <div class="top-row">
-        <div class="number-box">
-          <div class="number-text">${banglaNum}</div>
-        </div>
-        <div class="actions">
-          <img src="play.png" class="play-icon" data-id="${ayah._id}" title="প্লে" />
-          <img src="copy.png" class="copy-icon" title="কপি" />
-          <img src="share.png" class="share-icon" title="শেয়ার" />
-        </div>
-      </div>
-      <div class="sura-name">সুরা: ${ayah.suraName}</div>
-      <div class="verse-arabic">${ayah.names || ''}</div>
-      <div class="kanzul">কানযুল ঈমান</div>
-      <div class="kanzul-text">${ayah.name || ''}</div>
-      <div class="irfan">ইরফানুল কুরআন</div>
-      <div class="irfan-text">${ayah.author || ''}</div>
-    `;
-
-    const playIcon = card.querySelector('.play-icon');
-    const copyIcon = card.querySelector('.copy-icon');
-    const shareIcon = card.querySelector('.share-icon');
-
-    [playIcon, copyIcon, shareIcon].forEach(icon => {
-      icon.dataset.arabic = ayah.names || '';
-      icon.dataset.kanzul = ayah.name || '';
-      icon.dataset.irfan = ayah.author || '';
-      icon.dataset.num = ayah._id;
-    });
-
-    playIcon.addEventListener('click', e => toggleAudio(e.currentTarget));
-    copyIcon.addEventListener('click', e => copyAyah(e.currentTarget));
-    shareIcon.addEventListener('click', e => shareAyah(e.currentTarget));
-
-    ayahList.appendChild(card);
-    audioElements.push(playIcon);
-  });
+  
+  return false;
 }
 
-// টাইপিং-এ সার্চ চালু করিনি, শুধুমাত্র Enter কী চাপলে সার্চ হবে
+function renderAyahs(query) {
+  // Show searching message while rendering
+  ayahList.innerHTML = '<p style="text-align:center; color:#666; padding:20px;">অনুসন্ধান করা হচ্ছে...</p>';
+  audioElements = [];
+
+  // Use setTimeout to allow the UI to update before heavy processing
+  setTimeout(() => {
+    const filteredAyahs = allAyahs.filter(ayah =>
+      isApproximateMatch(ayah.names, query) ||
+      isApproximateMatch(ayah.name, query) ||
+      isApproximateMatch(ayah.author, query) ||
+      isApproximateMatch(ayah.suraName, query)
+    );
+
+    ayahList.innerHTML = '';
+    
+    if (filteredAyahs.length === 0) {
+      ayahList.innerHTML = `<p style="text-align:center; color:#666; padding:20px;">কোন আয়াত পাওয়া যায়নি।</p>`;
+      return;
+    }
+
+    filteredAyahs.forEach(ayah => {
+      const card = document.createElement('div');
+      card.className = 'ayah-card';
+
+      const banglaNum = convertToBanglaNumber(ayah.ayahNumber);
+
+      card.innerHTML = `
+        <div class="top-row">
+          <div class="number-box">
+            <div class="number-text">${banglaNum}</div>
+          </div>
+          <div class="actions">
+            <img src="play.png" class="play-icon" data-id="${ayah._id}" title="প্লে" />
+            <img src="copy.png" class="copy-icon" title="কপি" />
+            <img src="share.png" class="share-icon" title="শেয়ার" />
+          </div>
+        </div>
+        <div class="sura-name">সুরা: ${ayah.suraName}</div>
+        <div class="verse-arabic">${ayah.names || ''}</div>
+        <div class="kanzul">কানযুল ঈমান</div>
+        <div class="kanzul-text">${ayah.name || ''}</div>
+        <div class="irfan">ইরফানুল কুরআন</div>
+        <div class="irfan-text">${ayah.author || ''}</div>
+      `;
+
+      const playIcon = card.querySelector('.play-icon');
+      const copyIcon = card.querySelector('.copy-icon');
+      const shareIcon = card.querySelector('.share-icon');
+
+      [playIcon, copyIcon, shareIcon].forEach(icon => {
+        icon.dataset.arabic = ayah.names || '';
+        icon.dataset.kanzul = ayah.name || '';
+        icon.dataset.irfan = ayah.author || '';
+        icon.dataset.num = ayah._id;
+      });
+
+      playIcon.addEventListener('click', e => toggleAudio(e.currentTarget));
+      copyIcon.addEventListener('click', e => copyAyah(e.currentTarget));
+      shareIcon.addEventListener('click', e => shareAyah(e.currentTarget));
+
+      ayahList.appendChild(card);
+      audioElements.push(playIcon);
+    });
+  }, 10);
+}
+
+// Handle search input changes
+searchInput.addEventListener('input', () => {
+  if (!isDataLoaded) {
+    alert('অনুগ্রহ করে অপেক্ষা করুন, ডেটা লোড হচ্ছে...');
+    return;
+  }
+  
+  const query = searchInput.value.trim();
+  
+  if (query === '') {
+    // Clear results when input is empty
+    ayahList.innerHTML = '';
+    audioElements = [];
+    currentAudio = null;
+    currentIndex = -1;
+    hideController();
+    return;
+  }
+  
+  renderAyahs(query);
+});
+
+// Also handle Enter key for search
 searchInput.addEventListener('keydown', e => {
   if (e.key === 'Enter') {
     e.preventDefault();
@@ -258,6 +308,7 @@ searchInput.addEventListener('keydown', e => {
       alert('অনুগ্রহ করে অপেক্ষা করুন, ডেটা লোড হচ্ছে...');
       return;
     }
+    if (query === '') return;
     renderAyahs(query);
   }
 });
