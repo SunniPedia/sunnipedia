@@ -3085,7 +3085,7 @@ let FooterComponent = /*#__PURE__*/(() => {
     }
     closeApp() {
       // @ts-ignore
-      AndroidNative.finish();
+      this.location.back();
     }
     goBack() {
       this.location.back();
