@@ -37,6 +37,8 @@ function resetSearch() {
       item.element.style.display = '';
     });
   }
+  const status = document.getElementById('searchStatus');
+  status.style.display = 'none';
 }
 
 // Optimized debounce function
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('searchInput');
   if (input) {
     input.addEventListener('input', () => {
-      debounceSearch(searchBooks, 200); // Reduced to 200ms for better responsiveness
+      debounceSearch(searchBooks, 200);
     });
   }
 });
@@ -64,26 +66,30 @@ function searchBooks() {
   const status = document.getElementById('searchStatus');
   const hasInput = input.length > 0;
 
-  status.style.display = hasInput ? 'block' : 'none';
-  status.innerHTML = 'অনুসন্ধান করা হচ্ছে...';
-
   if (!hasInput) {
     resetSearch();
-    status.style.display = 'none';
     return;
+  }
+
+  // Show loading status and hide all items initially
+  status.style.display = 'block';
+  status.innerHTML = 'অনুসন্ধান করা হচ্ছে...';
+  
+  if (searchData) {
+    searchData.forEach(item => {
+      item.element.style.display = 'none';
+    });
   }
 
   // Use requestAnimationFrame for smoother UI updates
   requestAnimationFrame(() => {
     let found = false;
-    const searchTerms = input.split(/\s+/); // Split into multiple search terms
+    const searchTerms = input.split(/\s+/);
     
-    // Use for loop instead of forEach for better performance
     for (let i = 0; i < searchData.length; i++) {
       const item = searchData[i];
       let match = true;
       
-      // Check all search terms
       for (let j = 0; j < searchTerms.length; j++) {
         if (item.text.indexOf(searchTerms[j]) === -1) {
           match = false;
@@ -94,14 +100,11 @@ function searchBooks() {
       if (match) {
         item.element.style.display = '';
         found = true;
-      } else {
-        item.element.style.display = 'none';
       }
     }
 
     status.innerHTML = found ? '' : 'কোনো ফলাফল পাওয়া যায়নি';
     
-    // Scroll to first visible result if found
     if (found) {
       const firstVisible = document.querySelector('.book-item[style=""]');
       if (firstVisible) {
@@ -111,7 +114,7 @@ function searchBooks() {
   });
 }
 
-// Handle URL search parameter more efficiently
+// Handle URL search parameter
 window.onload = function () {
   const params = new URLSearchParams(window.location.search);
   const searchTerm = params.get('search');
