@@ -3,74 +3,115 @@ function goBack() {
 }
 
 function toggleSearchBox() {
-  var box = document.getElementById('searchBox');
-  var input = document.getElementById('searchInput');
-  var status = document.getElementById('searchStatus');
+  const box = document.getElementById('searchBox');
+  const input = document.getElementById('searchInput');
+  const status = document.getElementById('searchStatus');
   
   if (box.style.display === 'block') {
     box.style.display = 'none';
     input.value = '';
     status.style.display = 'none';
-    searchBooks();
+    resetSearch();
   } else {
     box.style.display = 'block';
     input.focus();
   }
 }
 
-// Debounce function with improved logic
+// Cache DOM elements and pre-process data for faster search
+let searchData = null;
+
+function initializeSearch() {
+  const bookItems = document.getElementsByClassName('book-item');
+  searchData = Array.from(bookItems).map(item => ({
+    element: item,
+    text: item.innerText.toLowerCase(),
+    id: item.id || null
+  }));
+}
+
+// Reset search to show all items
+function resetSearch() {
+  if (searchData) {
+    searchData.forEach(item => {
+      item.element.style.display = '';
+    });
+  }
+}
+
+// Optimized debounce function
 let debounceTimer;
 function debounceSearch(func, delay) {
   clearTimeout(debounceTimer);
   debounceTimer = setTimeout(func, delay);
 }
 
-// Search input listener with debounce
+// Search input listener with optimized debounce
 document.addEventListener('DOMContentLoaded', () => {
+  initializeSearch();
+  
   const input = document.getElementById('searchInput');
   if (input) {
     input.addEventListener('input', () => {
-      debounceSearch(searchBooks, 300); // 300 milliseconds delay
+      debounceSearch(searchBooks, 200); // Reduced to 200ms for better responsiveness
     });
   }
 });
 
+// Optimized search function
 function searchBooks() {
-  var input = document.getElementById('searchInput').value.toLowerCase().trim();
-  var bookItems = document.getElementsByClassName('book-item');
-  var status = document.getElementById('searchStatus');
+  const input = document.getElementById('searchInput').value.toLowerCase().trim();
+  const status = document.getElementById('searchStatus');
+  const hasInput = input.length > 0;
 
-  // Show "সন্ধান হচ্ছে..." when input is typed
-  if (input.length > 0) {
-    status.style.display = 'block';  // Show status
-  } else {
-    status.style.display = 'none';  // Hide status when input is cleared
+  status.style.display = hasInput ? 'block' : 'none';
+  status.innerHTML = 'অনুসন্ধান করা হচ্ছে...';
+
+  if (!hasInput) {
+    resetSearch();
+    status.style.display = 'none';
+    return;
   }
 
-  setTimeout(function() { // Add a slight delay to avoid multiple "searching..." messages when typing
-    var found = false;
-    for (var i = 0; i < bookItems.length; i++) {
-      var itemText = bookItems[i].innerText.toLowerCase();
-      if (itemText.indexOf(input) > -1) {
-        bookItems[i].style.display = ''; // Show book item
+  // Use requestAnimationFrame for smoother UI updates
+  requestAnimationFrame(() => {
+    let found = false;
+    const searchTerms = input.split(/\s+/); // Split into multiple search terms
+    
+    // Use for loop instead of forEach for better performance
+    for (let i = 0; i < searchData.length; i++) {
+      const item = searchData[i];
+      let match = true;
+      
+      // Check all search terms
+      for (let j = 0; j < searchTerms.length; j++) {
+        if (item.text.indexOf(searchTerms[j]) === -1) {
+          match = false;
+          break;
+        }
+      }
+      
+      if (match) {
+        item.element.style.display = '';
         found = true;
       } else {
-        bookItems[i].style.display = 'none'; // Hide book item
+        item.element.style.display = 'none';
       }
     }
 
-    // If no books are found, show a "কোনো ফলাফল পাওয়া যায়নি" message
-    if (!found) {
-      status.innerHTML = 'কোনো ফলাফল পাওয়া যায়নি';
-    } else {
-      status.innerHTML = 'অনুসন্ধান করা হচ্ছে...';
+    status.innerHTML = found ? '' : 'কোনো ফলাফল পাওয়া যায়নি';
+    
+    // Scroll to first visible result if found
+    if (found) {
+      const firstVisible = document.querySelector('.book-item[style=""]');
+      if (firstVisible) {
+        firstVisible.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
     }
-
-    // No need to hide the status here, as it needs to stay until input is cleared
-  }, 300); // 300ms delay
+  });
 }
 
-// Trigger search on page load if search query exists in the URL
+// Handle URL search parameter more efficiently
 window.onload = function () {
   const params = new URLSearchParams(window.location.search);
   const searchTerm = params.get('search');
@@ -80,6 +121,6 @@ window.onload = function () {
     const searchBox = document.getElementById('searchBox');
     searchBox.style.display = 'block';
     input.value = searchTerm;
-    searchBooks();  // Trigger search when ?search= parameter is passed
+    searchBooks();
   }
 };
