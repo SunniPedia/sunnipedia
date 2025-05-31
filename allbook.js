@@ -40,7 +40,7 @@ function searchBooks() {
   var bookItems = document.getElementsByClassName('book-item');
   var status = document.getElementById('searchStatus');
 
-  // Show "Searching..." when input is typed
+  // Show "সন্ধান হচ্ছে..." when input is typed
   if (input.length > 0) {
     status.style.display = 'block';  // Show status
   } else {
@@ -59,14 +59,14 @@ function searchBooks() {
       }
     }
 
-    // If no books are found, show a "No results" message
+    // If no books are found, show a "কোনো ফলাফল পাওয়া যায়নি" message
     if (!found) {
-      status.innerHTML = 'No results found';
+      status.innerHTML = 'কোনো ফলাফল পাওয়া যায়নি';
     } else {
-      status.innerHTML = 'Searching...';
+      status.innerHTML = 'অনুসন্ধান করা হচ্ছে...';
     }
 
-    status.style.display = 'none'; // Hide status when filtering is done
+    // No need to hide the status here, as it needs to stay until input is cleared
   }, 300); // 300ms delay
 }
 
