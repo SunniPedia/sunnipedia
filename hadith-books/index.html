@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:title" content="হাদিস সমগ্র- ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+    <title>হাদিস সমগ্র</title>
+    <style>
+        @font-face {
+            font-family: 'SolaimanLipi';
+            src: url('fonts/SolaimanLipi.ttf') format('truetype');
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Noorehuda';
+            src: url('fonts/noorehuda.ttf') format('truetype');
+            font-display: swap;
+        }
+        
+        body {
+            font-family: 'SolaimanLipi', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .toolbar {
+            background-color: #01837A;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .back-icon, .search-icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        
+        .title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .search-container {
+    display: none;
+    padding: 10px 10px; /* উপরে-নিচে এবং পাশে প্যাডিং */
+    background-color: white;
+    position: sticky;
+    top: 60px;
+    z-index: 99;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(100% - 100px); /* প্যাডিং বাদ দিয়ে পুরো প্রস্থ */
+    margin: 0 auto; /* কেন্দ্রে অবস্থান */
+    box-sizing: border-box; /* প্যাডিং সহ প্রস্থ গণনা */
+}
+        
+        .search-input {
+    width: 100%;
+    padding: 10px 15px; /* প্যাডিং বৃদ্ধি */
+    border: 2px solid #01837A;
+    border-radius: 25px;
+    font-family: 'SolaimanLipi';
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box; /* প্যাডিং এবং বর্ডার সহ প্রস্থ গণনা */
+    max-width: 100%; /* সর্বোচ্চ প্রস্থ সীমিত করা */
+}
+        
+        .books-container {
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .book-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border: 2px solid #01837A;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .book-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .book-id {
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            background-color: #01837A;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .book-title-en {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #01837A;
+        }
+        
+        .book-title-ar {
+            font-family: 'Noorehuda', sans-serif;
+            font-size: 18px;
+            text-align: right;
+            margin-bottom: 15px;
+            color: #333;
+            direction: rtl;
+            line-height: 1.5;
+        }
+        
+        .book-meta {
+            font-size: 14px;
+            color: #666;
+            padding-top: 10px;
+            border-top: 1px dashed #ddd;
+        }
+        
+        .info-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+            color: #01837A;
+        }
+        
+        .error-message {
+            text-align: center;
+            padding: 30px;
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <img src="back.png" class="back-icon" alt="Back" id="backButton">
+        <div class="title">হাদিস সমগ্র</div>
+        <img src="search.png" class="search-icon" alt="Search" id="searchToggle">
+    </div>
+    
+    <div class="search-container" id="searchContainer">
+        <input type="text" class="search-input" placeholder="হাদিস খুঁজুন..." id="searchInput">
+    </div>
+    
+    <div class="books-container" id="booksContainer">
+        <div class="loading">হাদিসের হাদিসের কিতাব গুলো লোড হচ্ছে...</div>
+    </div>
+    
+<script src="index.js"></script>
+</body>
+</html>
