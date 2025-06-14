@@ -270,7 +270,7 @@ if (ogTitleTag) {
     if (!hadith) return;
 
     const query = new URLSearchParams(window.location.search).get('search') || '';
-    const baseUrl = window.location.origin + 'hadith-books/book/1/hadith/search.html';
+    const baseUrl = window.location.origin + '/hadith-books/book/1/hadith/search.html';
     const link = `${baseUrl}?searchnum=${encodeURIComponent(hadithNumber)}`;
 
     const bookTitle = hadith.book?.title || 'বইয়ের নাম পাওয়া যায়নি';
@@ -296,7 +296,7 @@ function shareHadithLink(hadithNumber) {
     if (!hadith) return;
 
     const query = new URLSearchParams(window.location.search).get('search') || '';
-    const baseUrl = window.location.origin + 'hadith-books/book/1/hadith/search.html';
+    const baseUrl = window.location.origin + '/hadith-books/book/1/hadith/search.html';
     const link = `${baseUrl}?searchnum=${encodeURIComponent(hadithNumber)}`;
 
     const bookTitle = hadith.book?.title || 'বইয়ের নাম পাওয়া যায়নি';
