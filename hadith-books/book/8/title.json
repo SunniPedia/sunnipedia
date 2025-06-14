@@ -1,0 +1,54 @@
+[
+  {
+    "id": 420,
+    "title": "শামাইলে নববীর পরিচ্ছেদসমূহ",
+    "title_en": null,
+    "title_ar": "أبواب الشمائل المحمدية والخصائل المصطفوية",
+    "book_id": 8,
+    "status": "active",
+    "sequence": 1,
+    "total_hadith": 413,
+    "range_start": 1,
+    "range_end": 413,
+    "created_at": "2022-01-06T02:42:39.000Z",
+    "updated_at": "2022-01-24T12:42:03.000Z",
+    "book": {
+      "id": 8,
+      "title": "শামাঈলে তিরমিযী",
+      "title_en": "আশ-শামাঈলুল মুহাম্মাদিয়্যাহ- ইমাম তিরমিযী রহঃ",
+      "english_title": "Ash-Shama\u0027il Al-Muhammadiyah",
+      "title_ar": "الشمائل المحمدية للإمام الترمذي",
+      "has_title": 1,
+      "translation_type": "bangla",
+      "total_section": 2,
+      "total_hadith": 415
+    },
+    "hadith_count": 399
+  },
+  {
+    "id": 419,
+    "title": "শামাইলে নববীর পরিশিষ্ট",
+    "title_en": null,
+    "title_ar": "خاتمة الشمائل المحمدية",
+    "book_id": 8,
+    "status": "active",
+    "sequence": 2,
+    "total_hadith": 2,
+    "range_start": 414,
+    "range_end": 415,
+    "created_at": "2022-01-06T02:38:41.000Z",
+    "updated_at": "2022-01-24T12:44:04.000Z",
+    "book": {
+      "id": 8,
+      "title": "শামাঈলে তিরমিযী",
+      "title_en": "আশ-শামাঈলুল মুহাম্মাদিয়্যাহ- ইমাম তিরমিযী রহঃ",
+      "english_title": "Ash-Shama\u0027il Al-Muhammadiyah",
+      "title_ar": "الشمائل المحمدية للإمام الترمذي",
+      "has_title": 1,
+      "translation_type": "bangla",
+      "total_section": 2,
+      "total_hadith": 415
+    },
+    "hadith_count": 2
+  }
+]

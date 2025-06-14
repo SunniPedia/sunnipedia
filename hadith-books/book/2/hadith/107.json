@@ -1,0 +1,2689 @@
+[
+    {
+        "id": 10678,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4705,
+        "rabi_id": 66,
+        "type_id": 1,
+        "hadith_number": 3629,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬২৯। ইয়াহয়া ইবনে ইয়াহয়া (রাহঃ) বলেন, আমি মালিককে বললাম, আপনার কাছে নাফি’ (রাহঃ) ইবনে উমর ((رضي الله عنه)) থেকে বর্ণনা করেছেন যে, তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ যে ব্যক্তি শরীক (যৌথ মালিকানাধীন) ক্রীত-দাসের বেলায় তার নিজ অংশ মুক্ত করে দেয় এবং তার (মুক্তিদাতার) কাছে এই পরিমাণ ধন-সম্পদ থাকে যা উক্ত ক্রীতদাসের মূল্য পরিমাণ পৌছে যায় তবে ন্যায় সঙ্গতভাবে মূল্য নিরূপণ করতে হবে। অতঃপর অন্যান্য অংশীদারদের হিস্যার মূল্যও তাকে পরিশোধ করতে হবে। আর ক্রীতদাসটি পুরোপুরিভাবে তার পক্ষ থেকেই মুক্ত হয়ে যাবে। তবে যদি সে (পুরো অংশের মূল্য পরিশোধে) সক্ষম না হয় তাহলে সে যতটুকু অংশ মুক্ত করেছে ততটুকু মুক্ত হয়ে যাবে।",
+        "description_en": "Ibn Umar (Allah be pleased with them) reported Allah’s Messenger may peace be upon him) as saying:<br>If anyone emancipates his share ina slave and has enough money to pay the full price for him, a fair price for the slave should be fixed, his partners given their shares, and the slave be thus emancipated, otherwise he is emancipated only to the extent of the first man’s share.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، قَالَ قُلْتُ لِمَالِكٍ حَدَّثَكَ نَافِعٌ، عَنِ ابْنِ عُمَرَ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" مَنْ أَعْتَقَ شِرْكًا لَهُ فِي عَبْدٍ فَكَانَ لَهُ مَالٌ يَبْلُغُ ثَمَنَ الْعَبْدِ قُوِّمَ عَلَيْهِ قِيمَةَ الْعَدْلِ فَأُعْطِيَ شُرَكَاؤُهُ حِصَصَهُمْ وَعَتَقَ عَلَيْهِ الْعَبْدُ وَإِلاَّ فَقَدْ عَتَقَ مِنْهُ مَا عَتَقَ\" .",
+        "description_without_harkat": "حدثنا يحيى بن يحيى، قال قلت لمالك حدثك نافع، عن ابن عمر، قال قال رسول الله صلى الله عليه وسلم  \" من أعتق شركا له في عبد فكان له مال يبلغ ثمن العبد قوم عليه قيمة العدل فأعطي شركاؤه حصصهم وعتق عليه العبد وإلا فقد عتق منه ما عتق\" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2022-12-19T10:05:02.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4705,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3765,
+                "title": "1501-1",
+                "hadith_number": 3629,
+                "hadith_id": 10678,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:42:31.000Z",
+                "updated_at": "2024-10-15T16:42:31.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10679,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4705,
+        "rabi_id": 4,
+        "type_id": 1,
+        "hadith_number": 3630,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩০। কুতায়বা ইবনে সাঈদ ও মুহাম্মাদ ইবনে রুমহ, শায়বান ইবনে ফাররুখ, আবুর রাবী, আবু কামিল, ইবনে মুমায়র, মুহাম্মাদ ইবনুল মুসান্না, ইসহাক ইবনে মানসুর, হারুন ইবনে সাঈদ আয়লী ও মুহাম্মাদ ইবনে রাফি (রাহঃ) ......... ইবনে উমর ((رضي الله عنه)) থেকে বর্ণিত। মালিক (রাহঃ) নাফি (রাহঃ) থেকে মালিক (রাহঃ) বর্ণিত হাদীসের মর্মানুযায়ী।",
+        "description_en": "This hadith has been reported on the authority of Ibn ’Umar through another chain of transmitters.",
+        "description_ar": "وَحَدَّثَنَاهُ قُتَيْبَةُ بْنُ سَعِيدٍ، وَمُحَمَّدُ بْنُ رُمْحٍ، جَمِيعًا عَنِ اللَّيْثِ بْنِ سَعْدٍ، ح وَحَدَّثَنَا شَيْبَانُ بْنُ فَرُّوخَ، حَدَّثَنَا جَرِيرُ بْنُ حَازِمٍ، ح وَحَدَّثَنَا أَبُو الرَّبِيعِ، وَأَبُو كَامِلٍ قَالاَ حَدَّثَنَا حَمَّادٌ، حَدَّثَنَا أَيُّوبُ، ح وَحَدَّثَنَا ابْنُ نُمَيْرٍ، حَدَّثَنَا أَبِي، حَدَّثَنَا عُبَيْدُ اللَّهِ، ح وَحَدَّثَنَا مُحَمَّدُ بْنُ، الْمُثَنَّى حَدَّثَنَا عَبْدُ الْوَهَّابِ، قَالَ سَمِعْتُ يَحْيَى بْنَ سَعِيدٍ، ح وَحَدَّثَنِي إِسْحَاقُ بْنُ مَنْصُورٍ، أَخْبَرَنَا عَبْدُ الرَّزَّاقِ، عَنِ ابْنِ جُرَيْجٍ، أَخْبَرَنِي إِسْمَاعِيلُ بْنُ أُمَيَّةَ، ح وَحَدَّثَنَا هَارُونُ بْنُ سَعِيدٍ، الأَيْلِيُّ حَدَّثَنَا ابْنُ وَهْبٍ، أَخْبَرَنِي أُسَامَةُ، ح وَحَدَّثَنَا مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا ابْنُ أَبِي فُدَيْكٍ، عَنِ ابْنِ أَبِي ذِئْبٍ، كُلُّ هَؤُلاَءِ عَنْ نَافِعٍ، عَنِ ابْنِ عُمَرَ، بِمَعْنَى حَدِيثِ مَالِكٍ عَنْ نَافِعٍ.",
+        "description_without_harkat": "وحدثناه قتيبة بن سعيد، ومحمد بن رمح، جميعا عن الليث بن سعد، ح وحدثنا شيبان بن فروخ، حدثنا جرير بن حازم، ح وحدثنا أبو الربيع، وأبو كامل قالا حدثنا حماد، حدثنا أيوب، ح وحدثنا ابن نمير، حدثنا أبي، حدثنا عبيد الله، ح وحدثنا محمد بن، المثنى حدثنا عبد الوهاب، قال سمعت يحيى بن سعيد، ح وحدثني إسحاق بن منصور، أخبرنا عبد الرزاق، عن ابن جريج، أخبرني إسماعيل بن أمية، ح وحدثنا هارون بن سعيد، الأيلي حدثنا ابن وهب، أخبرني أسامة، ح وحدثنا محمد بن رافع، حدثنا ابن أبي فديك، عن ابن أبي ذئب، كل هؤلاء عن نافع، عن ابن عمر، بمعنى حديث مالك عن نافع.",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:48:50.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4705,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3766,
+                "title": "1501-2",
+                "hadith_number": 3630,
+                "hadith_id": 10679,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:48:50.000Z",
+                "updated_at": "2024-10-15T16:48:50.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10680,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4705,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3631,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩১। মুহাম্মাদ ইবনুল মুসান্না ও ইবনে বাশশার (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত যে, নবী (ﷺ) বলেছেনঃ যে ক্রীতদাসটি দু’জনের মালিকানাধীন তার একজন নিজের অংশ মুক্ত করে দিলে অপরজনের হিস্যারও সে যিম্মাদার হবে (যদি সে বিত্তবান হয়)।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported Allah’s Messenger (ﷺ) as saying:<br>The slave who is jointly owned by two persons, and is emancipated by one of them, (this one) has liability (upon him to secure complete freedom for that slave).",
+        "description_ar": "وَحَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ، بَشَّارٍ - وَاللَّفْظُ لاِبْنِ الْمُثَنَّى - قَالاَ حَدَّثَنَا مُحَمَّدُ، بْنُ جَعْفَرٍ حَدَّثَنَا شُعْبَةُ، عَنْ قَتَادَةَ، عَنِ النَّضْرِ بْنِ أَنَسٍ، عَنْ بَشِيرِ بْنِ نَهِيكٍ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ فِي الْمَمْلُوكِ بَيْنَ الرَّجُلَيْنِ فَيُعْتِقُ أَحَدُهُمَا قَالَ  \" يَضْمَنُ\" .",
+        "description_without_harkat": "وحدثنا محمد بن المثنى، وابن، بشار - واللفظ لابن المثنى - قالا حدثنا محمد، بن جعفر حدثنا شعبة، عن قتادة، عن النضر بن أنس، عن بشير بن نهيك، عن أبي هريرة، عن النبي صلى الله عليه وسلم قال في المملوك بين الرجلين فيعتق أحدهما قال  \" يضمن\" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:49:23.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4705,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3767,
+                "title": "1502",
+                "hadith_number": 3631,
+                "hadith_id": 10680,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:49:23.000Z",
+                "updated_at": "2024-10-15T16:49:23.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10681,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4705,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3632,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩২। আমরুন নাকিদ (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত যে, নবী (ﷺ) বলেছেনঃ যে ব্যক্তি যৌথ মালিকানাধীন গোলামকে নিজেরা হিস্যা মুক্ত করে দিবে তার বাকী অংশ তার সস্পদ দ্বারাই করতে হবে যদি সে ধনবান হয়। আর যদি সে বিত্তশালী না হয় তাহলে সে গোলামকে উপার্জনের মাধ্যমে আযাদী লাভের চেষ্টায় নিযুক্ত করতে হবে। তবে তার উপর তার সামর্থের বাইরে বোঝা চাপানো যাবে না।",
+        "description_en": "Abu Huraira (Allah be pleased witli him) reported Allah’s Prophet (ﷺ) as saying:<br>If anyone emancipates a share in a slave, he is to be completely emancipated if he has money; but if he has none, the slave will be required to work to pay for his freedom, but must not be over-burhened.",
+        "description_ar": "وَحَدَّثَنِي عَمْرٌو النَّاقِدُ، حَدَّثَنَا إِسْمَاعِيلُ بْنُ إِبْرَاهِيمَ، عَنِ ابْنِ أَبِي عَرُوبَةَ، عَنْ قَتَادَةَ، عَنِ النَّضْرِ بْنِ أَنَسٍ، عَنْ بَشِيرِ بْنِ نَهِيكٍ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" مَنْ أَعْتَقَ شِقْصًا لَهُ فِي عَبْدٍ فَخَلاَصُهُ فِي مَالِهِ إِنْ كَانَ لَهُ مَالٌ فَإِنْ لَمْ يَكُنْ لَهُ مَالٌ اسْتُسْعِيَ الْعَبْدُ غَيْرَ مَشْقُوقٍ عَلَيْهِ \" .",
+        "description_without_harkat": "وحدثني عمرو الناقد، حدثنا إسماعيل بن إبراهيم، عن ابن أبي عروبة، عن قتادة، عن النضر بن أنس، عن بشير بن نهيك، عن أبي هريرة، عن النبي صلى الله عليه وسلم قال  \" من أعتق شقصا له في عبد فخلاصه في ماله إن كان له مال فإن لم يكن له مال استسعي العبد غير مشقوق عليه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:51:09.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4705,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3768,
+                "title": "1503-1",
+                "hadith_number": 3632,
+                "hadith_id": 10681,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:51:09.000Z",
+                "updated_at": "2024-10-15T16:51:09.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10682,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4705,
+        "rabi_id": 579,
+        "type_id": 1,
+        "hadith_number": 3633,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩৩। আলী ইবনে খাশরাম (রাহঃ) ......... সাঈদ ইবনে আবু আরূবা (রাহঃ) থেকে এ সনদে বর্ণিত। তবে তিনি তার বর্ণনায় এতটুকু বেশী উল্লেখ করেছেন যে, ″যদি সে মুক্তিদাতা বিত্তবান না হয় তখন ঐ ক্রীতদাসের প্রচলিত মূল্য নিরূপণ করতে হবে। এরপর তার অবশিষ্ট অংশ মুক্ত করার লক্ষ্যে উপার্জনে নিয়োজিত করতে হবে। তবে এই ব্যাপারে তাকে সাধ্যাতীত কষ্টে ফেলা যাবে না।″",
+        "description_en": "This hadith has been narrated on the authority of Sa’id b. Abu ’Aruba with the same chain of transmitters but with the addition:<br>\" If he (one of the joint owners emancipating the slave) has not (enough) money (to secure freedom for the other half) a fair price for the slave should be fixed, and he will be required to work to pay for his freedom, but must not be over-burdened.",
+        "description_ar": "وَحَدَّثَنَاهُ عَلِيُّ بْنُ خَشْرَمٍ، أَخْبَرَنَا عِيسَى، - يَعْنِي ابْنَ يُونُسَ - عَنْ سَعِيدِ بْنِ، أَبِي عَرُوبَةَ بِهَذَا الإِسْنَادِ وَزَادَ  \" إِنْ لَمْ يَكُنْ لَهُ مَالٌ قُوِّمَ عَلَيْهِ الْعَبْدُ قِيمَةَ عَدْلٍ ثُمَّ يُسْتَسْعَى فِي نَصِيبِ الَّذِي لَمْ يُعْتِقْ غَيْرَ مَشْقُوقٍ عَلَيْهِ \" .",
+        "description_without_harkat": "وحدثناه علي بن خشرم، أخبرنا عيسى، - يعني ابن يونس - عن سعيد بن، أبي عروبة بهذا الإسناد وزاد  \" إن لم يكن له مال قوم عليه العبد قيمة عدل ثم يستسعى في نصيب الذي لم يعتق غير مشقوق عليه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:52:03.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4705,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 579,
+                "title": "সাঈদ ইবনে আবি আরূবা ((رحمة الله))",
+                "title_en": "Sa'id b. Abu 'Aruba",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3769,
+                "title": "1503-2",
+                "hadith_number": 3633,
+                "hadith_id": 10682,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:52:03.000Z",
+                "updated_at": "2024-10-15T16:52:03.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10683,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4705,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 3634,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩৪। হারুন ইবনে আব্দুল্লাহ (রাহঃ) ......... ওয়াহব ইবনে জারীর (রাহঃ) থেকে বর্ণিত। তিনি বলেন, আমি কাতাদা (রাহঃ) কে এ সনদে ইবনে আবু আরুবা এর হাদীসের মর্মানুযায়ী হাদীস বর্ণনা করতে শুনেছি। তিনি তার বর্ণনায় উল্লেখ করেন, ″দাসের উপযুক্ত মূল্য নিরূপণ করতে হবে।″",
+        "description_en": "A hadith like this is reported on the authority of the same chain of transmitters but with a slight change of words.",
+        "description_ar": "حَدَّثَنِي هَارُونُ بْنُ عَبْدِ اللَّهِ، حَدَّثَنَا وَهْبُ بْنُ جَرِيرٍ، حَدَّثَنَا أَبِي قَالَ، سَمِعْتُ قَتَادَةَ، يُحَدِّثُ بِهَذَا الإِسْنَادِ بِمَعْنَى حَدِيثِ ابْنِ أَبِي عَرُوبَةَ وَذَكَرَ فِي الْحَدِيثِ قُوِّمَ عَلَيْهِ قِيمَةَ عَدْلٍ.",
+        "description_without_harkat": "حدثني هارون بن عبد الله، حدثنا وهب بن جرير، حدثنا أبي قال، سمعت قتادة، يحدث بهذا الإسناد بمعنى حديث ابن أبي عروبة وذكر في الحديث قوم عليه قيمة عدل.",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:52:48.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4705,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 9,
+                "title": "বিবিধ",
+                "title_en": null,
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3770,
+                "title": "1503-3",
+                "hadith_number": 3634,
+                "hadith_id": 10683,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:52:48.000Z",
+                "updated_at": "2024-10-15T16:52:48.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10684,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إنما الولاء لمن أعتق",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 3635,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩৫। ইয়হইয়া ইবনে ইয়াহয়া (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি একবার একটি দাসী খরিদ করে তাকে মুক্ত করে দিবেন বলে ইচ্ছা পোষণ করেছিলেন। তখন সে দাসীর মনিবেরা তাকে জানালেন যে, আমরা আপনার কাছ থেকে এই শর্তে দাসটি বিক্রয় করতে পারি যে, তার ওয়ালার অধিকারী আমরাই থাকব। তিনি বলেন, বিষয়টি আমি রাসূলুল্লাহ (ﷺ) এর কাছে উপস্থাপন করলাম। তিনি বললেন, এই শর্ত তোমাকে ওয়ালা থেকে বঞ্চিত করবে না। কেননা মুক্তিদাতার জন্যই ’ওয়ালার হক’ নির্ধারিত।",
+        "description_en": "Ibn Umar reported that ’A’isha decided to buy a slave-girl and then set her free, but her masters said:<br>We are prepared to sell her to you on the condition that her right of inheritance would vest with you. She (Hadrat A’isha) made a mention of that to Allah’s Messenger (ﷺ) whereupon he said: This should not stand in your way. The right of inheritance vests in one who emancipates.",
+        "description_ar": "وَحَدَّثَنَا يَحْيَى بْنُ يَحْيَى، قَالَ قَرَأْتُ عَلَى مَالِكٍ عَنْ نَافِعٍ، عَنِ ابْنِ عُمَرَ، عَنْ عَائِشَةَ، أَنَّهَا أَرَادَتْ أَنْ تَشْتَرِيَ، جَارِيَةً تُعْتِقُهَا فَقَالَ أَهْلُهَا نَبِيعُكِهَا عَلَى أَنَّ وَلاَءَهَا لَنَا . فَذَكَرَتْ ذَلِكَ لِرَسُولِ اللَّهِ صلى الله عليه وسلم فَقَالَ  \" لاَ يَمْنَعُكِ ذَلِكَ فَإِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ \".",
+        "description_without_harkat": "وحدثنا يحيى بن يحيى، قال قرأت على مالك عن نافع، عن ابن عمر، عن عائشة، أنها أرادت أن تشتري، جارية تعتقها فقال أهلها نبيعكها على أن ولاءها لنا . فذكرت ذلك لرسول الله صلى الله عليه وسلم فقال  \" لا يمنعك ذلك فإنما الولاء لمن أعتق \".",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:53:17.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3771,
+                "title": " 1504-1",
+                "hadith_number": 3635,
+                "hadith_id": 10684,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:53:17.000Z",
+                "updated_at": "2024-10-15T16:53:17.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10685,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 3636,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩৬। কুতায়বা ইবনে সাঈদ (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। উরওয়া (রাহঃ) আয়িশা ((رضي الله عنه)) থেকে বর্ণনা করেন, তিনি বলেন, বারীরা ((رضي الله عنه)) তাঁর লিখিত মুক্তি চুক্তির বিনিময় পরিশোধের ব্যাপারে সাহায্যের জন্য আয়িশা ((رضي الله عنه)) এর কাছে এল। সে তার লিখিত মুক্তিপণের কিছুই আদায় করে নি। তখন আয়িশা ((رضي الله عنه)) তাকে বললেন, তুমি তোমার মুনিবের কাছে ফিরে যাও। যদি তারা এ শর্তে সন্মতি জ্ঞাপন করে যে, আমি তোমার লিখিত মুক্তিপণের যাবতীয় পাওনা পরিশোধ করলে তোমার ওয়ালা আমার প্রাপ্য হবে, তবে তা আমি করতে পারি। বারীরা তার মুনিবদের কাছে বিষয়টি উত্থাপন করল। কিন্তু তারা সে প্রস্তাব গ্রাহ্য করল না এবং বলে পাঠাল, যদি তিনি সাওয়াবের আশায় তোমার লিখিত মুক্তিপণ আদায়ের দায়িত্ব নেন তাহলে নিতে পারেন, তবে তোমার ওয়ালা আমাদের জন্যই থাকবে।<br><br>এরপর তিনি [আয়িশা ((رضي الله عنه))] বিষয়টি রাসুল (ﷺ) এর কাছে উপস্থাপন করলেন। তখন তিনি তাকে বললেন, তাকে খরিদ করে মুক্ত করে দিতে পার। কেননা ওয়ালা, মুক্তিদাতার জন্যই নির্ধারিত। এরপর রাসূলুল্লাহ (ﷺ) দাঁড়িয়ে গেলেন এবং বললেনঃ লোকদের কী হয়েছে তারা এমন কতক শর্তারোপ করে যা আল্লাহর কিতাবে নেই। যে ব্যক্তি এমন শর্তারোপ করবে যা আল্লাহর কিতাবে নেই- সে শর্তের কোন মূল্য নেই যদি ও সে একশো বার শর্তারোপ করে। আল্লাহর শর্তই কেবল যথার্থ ও নির্ভরযোগ্য।",
+        "description_en": "’A’isha (Allah be pjeased with her) reported that Barira came to her in order to seek her help in securing freedom, but she had (so far) paid nothing out of that sum stipulated in the contract. ’A’isba said to her. Go to your family (who owns you), and if they like that I should pay the amount (of the contract) on your behalf (for purchasing your freedom), then I shall have the right in your inheritance. (If they accepted it) I am prepared (to make this payment). Barira made a mention of that to the (members of) her family, but they refused and said:<br>If she (Hadrat ’A’isha) wants to do good to You for the sake of Allah, she may do it, but the right of inheritance will be ours. She (Hadrat ’A’isha) made a mention of that to Allah’s Messenger (ﷺ), and he said to her: Buy her, and emancipate her, for the right of inheritance vests with one who emancipates (the slave). Allah’s Messenger, may peace be upon him) then stood up and said: What has happened to the people that they lay down conditions which are not (found) in the Book of Allah? And he who laid down a condition not found in the Book of Allah, that is not valid. even if it is laid down hundred times. The condition laid down by Allah is the most weighty and the most valid.",
+        "description_ar": "وَحَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا لَيْثٌ، عَنِ ابْنِ شِهَابٍ، عَنْ عُرْوَةَ، أَنَّ عَائِشَةَ، أَخْبَرَتْهُ أَنَّ بَرِيرَةَ جَاءَتْ عَائِشَةَ تَسْتَعِينُهَا فِي كِتَابَتِهَا وَلَمْ تَكُنْ قَضَتْ مِنْ كِتَابَتِهَا شَيْئًا فَقَالَتْ لَهَا عَائِشَةُ ارْجِعِي إِلَى أَهْلِكِ فَإِنْ أَحَبُّوا أَنْ أَقْضِيَ عَنْكِ كِتَابَتَكِ وَيَكُونَ وَلاَؤُكِ لِي . فَعَلْتُ فَذَكَرَتْ ذَلِكَ بَرِيرَةُ لأَهْلِهَا فَأَبَوْا وَقَالُوا إِنْ شَاءَتْ أَنْ تَحْتَسِبَ عَلَيْكِ فَلْتَفْعَلْ وَيَكُونَ لَنَا وَلاَؤُكِ . فَذَكَرَتْ ذَلِكَ لِرَسُولِ اللَّهِ صلى الله عليه وسلم فَقَالَ لَهَا رَسُولُ اللَّهِ صلى الله عليه وسلم \" ابْتَاعِي فَأَعْتِقِي . فَإِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ \" . ثُمَّ قَامَ رَسُولُ اللَّهِ صلى الله عليه وسلم فَقَالَ \" مَا بَالُ أُنَاسٍ يَشْتَرِطُونَ شُرُوطًا لَيْسَتْ فِي كِتَابِ اللَّهِ مَنِ اشْتَرَطَ شَرْطًا لَيْسَ فِي كِتَابِ اللَّهِ فَلَيْسَ لَهُ وَإِنْ شَرَطَ مِائَةَ مَرَّةٍ شَرْطُ اللَّهِ أَحَقُّ وَأَوْثَقُ \" .",
+        "description_without_harkat": "وحدثنا قتيبة بن سعيد، حدثنا ليث، عن ابن شهاب، عن عروة، أن عائشة، أخبرته أن بريرة جاءت عائشة تستعينها في كتابتها ولم تكن قضت من كتابتها شيئا فقالت لها عائشة ارجعي إلى أهلك فإن أحبوا أن أقضي عنك كتابتك ويكون ولاؤك لي . فعلت فذكرت ذلك بريرة لأهلها فأبوا وقالوا إن شاءت أن تحتسب عليك فلتفعل ويكون لنا ولاؤك . فذكرت ذلك لرسول الله صلى الله عليه وسلم فقال لها رسول الله صلى الله عليه وسلم \" ابتاعي فأعتقي . فإنما الولاء لمن أعتق \" . ثم قام رسول الله صلى الله عليه وسلم فقال \" ما بال أناس يشترطون شروطا ليست في كتاب الله من اشترط شرطا ليس في كتاب الله فليس له وإن شرط مائة مرة شرط الله أحق وأوثق \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:54:35.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3772,
+                "title": "1504-2",
+                "hadith_number": 3636,
+                "hadith_id": 10685,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:54:35.000Z",
+                "updated_at": "2024-10-15T16:54:35.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10686,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 157,
+        "type_id": 1,
+        "hadith_number": 3637,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩৭। আবু তাহির (রাহঃ) ......... উরওয়া ইবনুয যুবাইর (রাহঃ) নবী (ﷺ) এর সহধর্মিনী আয়িশা ((رضي الله عنه)) থেকে বর্ণনা করেন যে, তিনি বলেন, বারীরা ((رضي الله عنه)) আমার কাছে এল। সে বলল, হে আয়িশা! আমি আমার মুনিবের কাছে মুক্তিপণের চুক্তিতে আব্দ্ধ হয়েছি যে, বছরে এক উকিয়া (চল্লিশ দিরহামে এক উকিয়া) করে নয় বছরে সর্বমোট নয় উকিয়া পরিশোধ করব। এরপর লাঈস (রাহঃ) বর্ণিত হাদীসের অনুরূপ।<br><br>তবে এই বর্ণনায় এতটুকু বেশী আছেঃ তিনি (রাসূলুল্লাহ (ﷺ)) বললেন, তাদের এ শর্ত করা তোমাকে “ওয়ালা” প্রাপ্তি হতে বাধা দিবে না। তুমি তাকে খরিদ করে মুক্ত করে দিতে পার। উরওয়া ইবনে যুবাইর (রাহঃ) এই হাদীসে উল্লেখ করেন, তখন রাসুলাল্লাহ (ﷺ) লোকদের সামনে দাঁড়িয়ে যান এবং আল্লাহর প্রশংসা ও তাঁর মহিমা বর্ণনা করেন।",
+        "description_en": "’A’isha, the wife of Allah’s Apostle (ﷺ), reported:<br>Barira came to me and said: ’A’isha, I have entered into contract for securing freedom with my family (who owns me) for nine ’uqiyas (of silver), one ’uqiya every year The rest of the hadith is the same (but with this addition):\" This (the problem of the right of inheritance) should not stand in your way. Buy her, and set her free. He said in a hadith: Allah’s Messenger (ﷺ) stood up among men, extolled Allah, praised Him, and then said:\" for......\"",
+        "description_ar": "حَدَّثَنِي أَبُو الطَّاهِرِ، أَخْبَرَنَا ابْنُ وَهْبٍ، أَخْبَرَنِي يُونُسُ، عَنِ ابْنِ شِهَابٍ، عَنْ عُرْوَةَ، بْنِ الزُّبَيْرِ عَنْ عَائِشَةَ، زَوْجِ النَّبِيِّ صلى الله عليه وسلم أَنَّهَا قَالَتْ جَاءَتْ بَرِيرَةُ إِلَىَّ فَقَالَتْ يَا عَائِشَةُ إِنِّي كَاتَبْتُ أَهْلِي عَلَى تِسْعِ أَوَاقٍ فِي كُلِّ عَامٍ أُوقِيَّةٌ . بِمَعْنَى حَدِيثِ اللَّيْثِ وَزَادَ فَقَالَ \" لاَ يَمْنَعُكِ ذَلِكِ مِنْهَا ابْتَاعِي وَأَعْتِقِي \" . وَقَالَ فِي الْحَدِيثِ ثُمَّ قَامَ رَسُولُ اللَّهِ صلى الله عليه وسلم فِي النَّاسِ فَحَمِدَ اللَّهَ وَأَثْنَى عَلَيْهِ ثُمَّ قَالَ \" أَمَّا بَعْدُ \" .",
+        "description_without_harkat": "حدثني أبو الطاهر، أخبرنا ابن وهب، أخبرني يونس، عن ابن شهاب، عن عروة، بن الزبير عن عائشة، زوج النبي صلى الله عليه وسلم أنها قالت جاءت بريرة إلى فقالت يا عائشة إني كاتبت أهلي على تسع أواق في كل عام أوقية . بمعنى حديث الليث وزاد فقال \" لا يمنعك ذلك منها ابتاعي وأعتقي \" . وقال في الحديث ثم قام رسول الله صلى الله عليه وسلم في الناس فحمد الله وأثنى عليه ثم قال \" أما بعد \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2022-12-27T04:31:49.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 85,
+                "title": "উরওয়া ইবনে যুবায়র ((رحمة الله))",
+                "title_en": "Urwah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3773,
+                "title": "1504-3",
+                "hadith_number": 3637,
+                "hadith_id": 10686,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:55:02.000Z",
+                "updated_at": "2024-10-15T16:55:02.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10687,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 3638,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩৮। আবু কুরায়ব মুহাম্মাদ ইবনে আলা হামদানী (রাহঃ) ......... আবু উসামা হতে, তিনি হিশাম ইবনে উরওয়া (রাহঃ) হতে, তিনি নিজ পিতা হতে এবং তিনি আয়িশা ((رضي الله عنه)) থেকে বর্ণনা করেন যে, তিনি বলেন, একদিন বারীরা ((رضي الله عنه)) আমার কাছে এল। এরপর সে বলল, আমার মুনিব আমাকে প্রতি বছর এক উকিয়া করে নয় বছরে নয় উকিয়া (চল্লিশ দিরহামে এক উকিয়া) আদায় করার শর্তে আমাকে মুক্তিদানের চুক্তি করেছে। আপনি আমাকে সাহায্য করুন। আমি [আয়িশা ((رضي الله عنه))] তাকে বললাম, তোমার মুনিব যদি এই শর্তে রাজী হয় যে, তোমার মুক্তিপণ এক সঙ্গে আদায় করে দিলে তোমার “ওয়ালা” আমার প্রাপ্য হবে তাহলে আমি তোমাকে মুক্তির ব্যাপারে সাহায্য করতে পারি।<br><br>তখন বারীরা ((رضي الله عنه)) এই বিষয়টি তার মুনিবের কাছে উত্থাপন করলে তাদের জন্য ’ওয়ালা’ ব্যতিরেকে তারা তার প্রস্তাব প্রত্যাখ্যান করল। এরপর সে আমার (আয়িশা ((رضي الله عنه)) এর) কাছে এসে তাদের কথা বলল। তিনি বলেন, আমি তাকে ধমক দিয়ে বললাম, তাহলে আল্লাহর কসম! আমি রাজী নই। আয়িশা ((رضي الله عنه)) বলেন, রাসূলুল্লাহ (ﷺ) বিষয়টি শুনলেন এবং আমাকে জিজ্ঞাসা করলেন। তার কাছে সমস্ত ঘটনা খুলে বললাম। এরপর তিনি বললেন, হে আয়িশা! তুমি তাকে খরিদ করে মুক্ত করে দাও এবং তাদের জন্য ওয়ালার শর্তে রাবী হয়ে যাও। প্রকৃত পক্ষে ওয়ালা সেই পাবে যে মুক্তি দান করে। আমি (আয়িশা) তাই করলাম।<br><br>রাবী বলেন, এরপর সন্ধ্যাবেলা রাসূলুল্লাহ (ﷺ) ভাষণ দিলেন। তিনি আল্লাহর যথাযথ প্রশংসা ও তাঁর মহিমা ঘোষণা করলেন। এরপর বললেনঃ লোকের অবস্থা এই পর্যায়ে নেমে গিয়েছে যে, তারা এমন সব শর্তারোপ করে যা আল্লাহর কিতাবে নেই। স্মরণ রাখ, যে শর্ত আল্লাহর কিতাবে নেই তা বাতিল বলে গণ্য, যদিও শতবার শর্তারোপ করা হয়। আল্লাহর কিতাবের শর্তই যথার্থ, আল্লাহর শর্তই নির্ভরযোগ্য। তোমাদের মধ্যে কতক লোকের কি হয়েছে যে, তারা অপরকে বলে অমুককে মুক্ত করে দাও আর ’ওয়ালা’ গ্রহণ করব আমরা? অথচ “ওয়ালা” তো তারই যে আযাদ করে।",
+        "description_en": "’A’isha (Allah be pleased with her) reported:<br>Barira came to me and said: My family (owners) have made contract with me (for granting freedom) for nine ’uqiyas (of silver) payable in nine years, one ’uqiya every year. Help me (in making this payment). I said to her: If your family so desires, I am prepared to make them the full payment in one instalment, and thus secure freedom for you, but the right of inheritance will vest in me, if I do so. She (Barira) made a mention of that to her family, but they refused (except) on the condition that the right of inheritance would vest in them. She came to me and made mention of if She (’A’isha) said: I scolded her. She (Barira) said: By Allah, it is not possible (they will never agree to it). And as she was saying it, Allah’s messenger (ﷺ) heard, and he asked me, I informed him and he said: Buy her and emancipate her, and let the right of inherit- ance vest in them, for they cannot claim it (rightfully) since the right of inherritance vests with one who emancipates (the slave; therefore, these people have no right to lay such false claims). And I did so. She (’A’isha) said: Then Allah’s Messenger (ﷺ) delivered a sermon in the evening. He extolled Allah and praised Him with what He deserves, and then said afterwards,: What has happened to the people that they lay down conditions which are not found in the Book of Allah? And the condition which is not found in the Book of Allah is invalid, even if its number is one hundred. The Book of Allah is more true (than any other deed) and the condition laid down by Allah is more binding (than any other condition). What has happened to the people among you that someone among you says:\" Emancipate so and so, but the right of inheritance vests in me\"? Verily, the right of inheritance vests in one who emancipates.",
+        "description_ar": "وَحَدَّثَنَا أَبُو كُرَيْبٍ، مُحَمَّدُ بْنُ الْعَلاَءِ الْهَمْدَانِيُّ حَدَّثَنَا أَبُو أُسَامَةَ، حَدَّثَنَا هِشَامُ، بْنُ عُرْوَةَ أَخْبَرَنِي أَبِي، عَنْ عَائِشَةَ، قَالَتْ دَخَلَتْ عَلَىَّ بَرِيرَةُ فَقَالَتْ إِنَّ أَهْلِي كَاتَبُونِي عَلَى تِسْعِ أَوَاقٍ فِي تِسْعِ سِنِينَ فِي كُلِّ سَنَةٍ أُوقِيَّةٌ . فَأَعِينِينِي . فَقُلْتُ لَهَا إِنْ شَاءَ أَهْلُكِ أَنْ أَعُدَّهَا لَهُمْ عَدَّةً وَاحِدَةً وَأُعْتِقَكِ وَيَكُونَ الْوَلاَءُ لِي فَعَلْتُ . فَذَكَرَتْ ذَلِكَ لأَهْلِهَا فَأَبَوْا إِلاَّ أَنْ يَكُونَ الْوَلاَءُ لَهُمْ فَأَتَتْنِي فَذَكَرَتْ ذَلِكَ قَالَتْ فَانْتَهَرْتُهَا فَقَالَتْ لاَهَا اللَّهِ إِذَا قَالَتْ . فَسَمِعَ رَسُولُ اللَّهِ صلى الله عليه وسلم فَسَأَلَنِي فَأَخْبَرْتُهُ فَقَالَ \" اشْتَرِيهَا وَأَعْتِقِيهَا وَاشْتَرِطِي لَهُمُ الْوَلاَءَ فَإِنَّ الْوَلاَءَ لِمَنْ أَعْتَقَ \" . فَفَعَلْتُ - قَالَتْ - ثُمَّ خَطَبَ رَسُولُ اللَّهِ صلى الله عليه وسلم عَشِيَّةً فَحَمِدَ اللَّهَ وَأَثْنَى عَلَيْهِ بِمَا هُوَ أَهْلُهُ ثُمَّ قَالَ \" أَمَّا بَعْدُ فَمَا بَالُ أَقْوَامٍ يَشْتَرِطُونَ شُرُوطًا لَيْسَتْ فِي كِتَابِ اللَّهِ مَا كَانَ مِنْ شَرْطٍ لَيْسَ فِي كِتَابِ اللَّهِ عَزَّ وَجَلَّ فَهُوَ بَاطِلٌ وَإِنْ كَانَ مِائَةَ شَرْطٍ كِتَابُ اللَّهِ أَحَقُّ وَشَرْطُ اللَّهِ أَوْثَقُ مَا بَالُ رِجَالٍ مِنْكُمْ يَقُولُ أَحَدُهُمْ أَعْتِقْ فُلاَنًا وَالْوَلاَءُ لِي إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ \" .",
+        "description_without_harkat": "وحدثنا أبو كريب، محمد بن العلاء الهمداني حدثنا أبو أسامة، حدثنا هشام، بن عروة أخبرني أبي، عن عائشة، قالت دخلت على بريرة فقالت إن أهلي كاتبوني على تسع أواق في تسع سنين في كل سنة أوقية . فأعينيني . فقلت لها إن شاء أهلك أن أعدها لهم عدة واحدة وأعتقك ويكون الولاء لي فعلت . فذكرت ذلك لأهلها فأبوا إلا أن يكون الولاء لهم فأتتني فذكرت ذلك قالت فانتهرتها فقالت لاها الله إذا قالت . فسمع رسول الله صلى الله عليه وسلم فسألني فأخبرته فقال \" اشتريها وأعتقيها واشترطي لهم الولاء فإن الولاء لمن أعتق \" . ففعلت - قالت - ثم خطب رسول الله صلى الله عليه وسلم عشية فحمد الله وأثنى عليه بما هو أهله ثم قال \" أما بعد فما بال أقوام يشترطون شروطا ليست في كتاب الله ما كان من شرط ليس في كتاب الله عز وجل فهو باطل وإن كان مائة شرط كتاب الله أحق وشرط الله أوثق ما بال رجال منكم يقول أحدهم أعتق فلانا والولاء لي إنما الولاء لمن أعتق \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:55:56.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3774,
+                "title": "1504-4",
+                "hadith_number": 3638,
+                "hadith_id": 10687,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:55:56.000Z",
+                "updated_at": "2024-10-15T16:55:56.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10688,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 277,
+        "type_id": 1,
+        "hadith_number": 3639,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৩৯। আবু বকর ইবনে শায়বা, আবু কুরায়ব ইবনে নুমাইর হতে, আবু কুরায়ব ওয়াকী (রাহঃ) হতে, যুহাইর ইবনে হারব ও ইসহাক ইবনে ইবরাহীম (রাহঃ) জারীর হতে, আর তারা সকলে হিশাম ইবনে উরওয়া (রাহঃ) হতে আবু উসামা ......... হিশাম বর্ণিত হাদীসের অনুরূপ একই সনদে বর্ণনা করেছেন।<br><br>তবে জারীর বর্ণিত হাদীসে উল্লেখ আছেঃ তিনি বলেন, তার (বারীরার) স্বামী ছিল দাস। সে কারণে রাসূলুল্লাহ (ﷺ) তাকে ইখতিয়ার দান করেছিলেন। (যখন সে মুক্ত হবে তখন দাস স্বামীর সঙ্গে বৈবাহিক সম্পর্ক বহাল রাখতে কিংবা তা নাকচ করে দিতে পারবে- এই ইখতিয়ার তাকে দেওয়া হয়েছিল)। সে নিজকেই বেছে নিল (দাস স্বামীকে পছন্দ করল না)। যদি সে স্বাধীন হত তাহলে তিনি (রাসূলুল্লাহ (ﷺ)) তাকে (বারীরাকে) ইখতিয়ার প্রদান করতেন না। আর তাদের বর্ণিত হাদীসে أَمَّا بَعْدُ (অতঃপর) শব্দটির উল্লেখ নেই।",
+        "description_en": "Hisham b. ’Urwa narrated a hadith like this with the same chain of trans- mitters except (with this change) that in the hadith transmitted on the authority of jartr (the words are):<br>Her (Barira’s) husband was a slave, so Allah’s Messenger (ﷺ) gave her the option (either to retain her matrimonial relation with her husband or sever it off). She opted to break off (and secure freedom for her even from the matrimonial alliance). And if he were free he would not have given her the option. In the hadith narrated on the authority (of this chain of transmitters) these words are not found: Amma ba’du.",
+        "description_ar": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ قَالاَ حَدَّثَنَا ابْنُ نُمَيْرٍ، ح وَحَدَّثَنَا أَبُو كُرَيْبٍ حَدَّثَنَا وَكِيعٌ، ح وَحَدَّثَنَا زُهَيْرُ بْنُ حَرْبٍ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، جَمِيعًا عَنْ جَرِيرٍ، كُلُّهُمْ عَنْ هِشَامِ بْنِ عُرْوَةَ، بِهَذَا الإِسْنَادِ . نَحْوَ حَدِيثِ أَبِي أُسَامَةَ غَيْرَ أَنَّ فِي، حَدِيثِ جَرِيرٍ قَالَ وَكَانَ زَوْجُهَا عَبْدًا فَخَيَّرَهَا رَسُولُ اللَّهِ صلى الله عليه وسلم فَاخْتَارَتْ نَفْسَهَا وَلَوْ كَانَ حُرًّا لَمْ يُخَيِّرْهَا . وَلَيْسَ فِي حَدِيثِهِمْ  \" أَمَّا بَعْدُ \" .",
+        "description_without_harkat": "وحدثنا أبو بكر بن أبي شيبة، وأبو كريب قالا حدثنا ابن نمير، ح وحدثنا أبو كريب حدثنا وكيع، ح وحدثنا زهير بن حرب، وإسحاق بن إبراهيم، جميعا عن جرير، كلهم عن هشام بن عروة، بهذا الإسناد . نحو حديث أبي أسامة غير أن في، حديث جرير قال وكان زوجها عبدا فخيرها رسول الله صلى الله عليه وسلم فاختارت نفسها ولو كان حرا لم يخيرها . وليس في حديثهم  \" أما بعد \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:56:25.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 277,
+                "title": "হিশাম ইবনে উরওয়া ((رحمة الله))",
+                "title_en": "Hisham Ibn Urwah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3775,
+                "title": "1504-5",
+                "hadith_number": 3639,
+                "hadith_id": 10688,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:56:25.000Z",
+                "updated_at": "2024-10-15T16:56:25.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10689,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 3640,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪০। যুহাইর ইবনে হারব ও মুহাম্মাদ ইবনুল আলা (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, বারীরার কল্যাণে তিনটি শরী’আতী বিধান লাভ হয়েছিলঃ<br><br>১. তার মুনিবেরা তাকে বিক্রি করার ইচ্ছা প্রকাশ করেছিল এবং তার ‘ওয়ালার’র উপর তাদের অধিকার লাভের শর্তারোপ করেছিল। আমি নবী (ﷺ) এর কাছে বিষয়টি উত্থাপন করলাম। তিনি আমাকে বললেন, তাকে খরিদ করে মুক্ত করে দাও। কেননা ‘ওয়ালা’ তারই প্রাপ্য যে আযাদ করে।<br><br>২. যখন তাকে (বারীরাকে) মুক্ত করে দেওয়া হল তখন রাসূলুল্লাহ (ﷺ) তাকে (তার দাস স্বামীকে রাখা, না রাখার) ইখতিয়ার প্রদান করেছিলেন। এরপর সে নিজেকে বেছে নিল। (তার দাস স্বামীকে প্রত্যাখ্যান করল)।<br><br>৩. তিনি [আয়িশা ((رضي الله عنه))] বলেন, লোকেরা বারীরাকে সাদ্‌কা-খয়রাত করত এবং সে তা (সাদ্‌কাকৃত জিনিস) থেকে আমাদের কাছে হাদিয়া পাঠাত। আমি নবী (ﷺ) এর কাছে বিষয়টি উপস্থাপন করলাম। তিনি বললেন, “তা তার জন্য সাদ্‌কা এবং তোমাদের জন্য হাদিয়া। সুতরাং তোমরা তা খেতে পার।”",
+        "description_en": "’Abd al-Rahman b. al. Qasim reported on the authority of his father:<br>’A’isha (Allah be pleased with her) said: There were three issues which were clarified in case of Barira: her owners had decided to sell her on the condition that the right of her inheritance would vest with them. She (’A’isha) said: I made a mention of that to Allah’s Apostle (ﷺ) and he said: Buy her and emancipate her, for verily the right of inheritance vests with one who emancipates. She said that she emancipated (her) and Allah’s Messenger (ﷺ) gave her the option (either to retain her matrimonial alliance or break it after emancipation). She (taking advantage of the option) opted for herself (the severing of matrimonial alliance). ’A’isha said: The people used to give her charity and she gave us that as gift. I made a mention of it to Allah’s Apostle (ﷺ), whereupon he said: That is charity for her but gift for you, so take that.",
+        "description_ar": "حَدَّثَنَا زُهَيْرُ بْنُ حَرْبٍ، وَمُحَمَّدُ بْنُ الْعَلاَءِ، - وَاللَّفْظُ لِزُهَيْرٍ - قَالاَ حَدَّثَنَا أَبُو مُعَاوِيَةَ، حَدَّثَنَا هِشَامُ بْنُ عُرْوَةَ، عَنْ عَبْدِ الرَّحْمَنِ بْنِ الْقَاسِمِ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، قَالَتْ كَانَ فِي بَرِيرَةَ ثَلاَثُ قَضِيَّاتٍ أَرَادَ أَهْلُهَا أَنْ يَبِيعُوهَا وَيَشْتَرِطُوا وَلاَءَهَا فَذَكَرْتُ ذَلِكَ لِلنَّبِيِّ صلى الله عليه وسلم فَقَالَ \" اشْتَرِيهَا وَأَعْتِقِيهَا فَإِنَّ الْوَلاَءَ لِمَنْ أَعْتَقَ \" . قَالَتْ وَعَتَقَتْ فَخَيَّرَهَا رَسُولُ اللَّهِ صلى الله عليه وسلم فَاخْتَارَتْ نَفْسَهَا . قَالَتْ وَكَانَ النَّاسُ يَتَصَدَّقُونَ عَلَيْهَا وَتُهْدِي لَنَا . فَذَكَرْتُ ذَلِكَ لِلنَّبِيِّ صلى الله عليه وسلم فَقَالَ \" هُوَ عَلَيْهَا صَدَقَةٌ وَهُوَ لَكُمْ هَدِيَّةٌ فَكُلُوهُ \" .",
+        "description_without_harkat": "حدثنا زهير بن حرب، ومحمد بن العلاء، - واللفظ لزهير - قالا حدثنا أبو معاوية، حدثنا هشام بن عروة، عن عبد الرحمن بن القاسم، عن أبيه، عن عائشة، قالت كان في بريرة ثلاث قضيات أراد أهلها أن يبيعوها ويشترطوا ولاءها فذكرت ذلك للنبي صلى الله عليه وسلم فقال \" اشتريها وأعتقيها فإن الولاء لمن أعتق \" . قالت وعتقت فخيرها رسول الله صلى الله عليه وسلم فاختارت نفسها . قالت وكان الناس يتصدقون عليها وتهدي لنا . فذكرت ذلك للنبي صلى الله عليه وسلم فقال \" هو عليها صدقة وهو لكم هدية فكلوه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:57:18.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3776,
+                "title": "1504-6",
+                "hadith_number": 3640,
+                "hadith_id": 10689,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:57:18.000Z",
+                "updated_at": "2024-10-15T16:57:18.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10690,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 3641,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪১। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি কতিপয় আনসার মুনিবের কাছ থেকে বারীরাকে খরিদ করলেন। তবে তারা (সে সময়) ‘ওয়ালা’র শর্তারোপ করেছিল। তখন রাসূলুল্লাহ (ﷺ) বললেনঃ ‘ওয়ালা’ তারই প্রাপ্য যে অনুগ্রহ প্রদর্শন করে (মুক্তিদাতা)। আর রাসূলুল্লাহ (ﷺ) তাকে ইখতিয়ার প্রদান করেছিলেন। তার স্বামী ছিল ক্রীতদাস। একবার সে আয়িশা ((رضي الله عنه)) এর কাছে কিছু পরিমাণ গোশত হাদিয়া পাঠাল। রাসূলুল্লাহ (ﷺ) বললেনঃ তোমরা যদি এই গোশত থেকে আমার জন্য কিছুটা রান্না করে আনতে......। তখন আয়িশা ((رضي الله عنه)) বললেন, এতো বারীরা সাদ্‌কা হিসেবে পেয়েছে (আর আপনার জন্য সাদ্‌কা হারাম)। তিনি বললেন, তা তার জন্য সাদ্‌কা এবং আমাদের জন্য হাদিয়া।",
+        "description_en": "’A’isha (Allah’s be pleased with her) reported that she had bought Barira from the people of Ansar, but they laid down the condition that the right of inheritance (would vest in them), whereupon Allah’s Messenger (ﷺ) said:<br>The right of inheritance vests with one who shows favour (who emancipates) and Allah’s Messenger (may peacebe upon him) gave her the choice (either to retain) her matrimonial alliance or break it). Her husband was a slave. She (Barira also) gave ’A’isha some meat as gift. Allah’s Messenger (ﷺ) said: I wish you could prepare (cook) for us out of this meat. ’A’isha said, It has been given as charity to Barira, whereupon he said: That is charity for her and gift for us.",
+        "description_ar": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا حُسَيْنُ بْنُ عَلِيٍّ، عَنْ زَائِدَةَ، عَنْ سِمَاكٍ، عَنْ عَبْدِ الرَّحْمَنِ بْنِ الْقَاسِمِ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، . أَنَّهَا اشْتَرَتْ بَرِيرَةَ مِنْ أُنَاسٍ مِنَ الأَنْصَارِ . وَاشْتَرَطُوا الْوَلاَءَ فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" الْوَلاَءُ لِمَنْ وَلِيَ النِّعْمَةَ \" . وَخَيَّرَهَا رَسُولُ اللَّهِ صلى الله عليه وسلم وَكَانَ زَوْجُهَا عَبْدًا وَأَهْدَتْ لِعَائِشَةَ لَحْمًا فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" لَوْ صَنَعْتُمْ لَنَا مِنْ هَذَا اللَّحْمِ \" . قَالَتْ عَائِشَةُ تُصُدِّقَ بِهِ عَلَى بَرِيرَةَ . فَقَالَ \" هُوَ لَهَا صَدَقَةٌ وَلَنَا هَدِيَّةٌ \" .",
+        "description_without_harkat": "وحدثنا أبو بكر بن أبي شيبة، حدثنا حسين بن علي، عن زائدة، عن سماك، عن عبد الرحمن بن القاسم، عن أبيه، عن عائشة، . أنها اشترت بريرة من أناس من الأنصار . واشترطوا الولاء فقال رسول الله صلى الله عليه وسلم \" الولاء لمن ولي النعمة \" . وخيرها رسول الله صلى الله عليه وسلم وكان زوجها عبدا وأهدت لعائشة لحما فقال رسول الله صلى الله عليه وسلم \" لو صنعتم لنا من هذا اللحم \" . قالت عائشة تصدق به على بريرة . فقال \" هو لها صدقة ولنا هدية \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T16:57:56.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3777,
+                "title": " 1504-7",
+                "hadith_number": 3641,
+                "hadith_id": 10690,
+                "book_id": 2,
+                "created_at": "2024-10-15T16:57:56.000Z",
+                "updated_at": "2024-10-15T16:57:56.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10691,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 3642,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪২। মুহাম্মাদ ইবনুল মুসান্না (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি মুক্ত করে দেওয়ার উদ্দেশ্যে বারীরাকে খরিদ করার ইচ্ছা প্রকাশ করলেন। কিন্তু তারা (বারীরার মুনিবেরা) তার “ওয়ালার” অধিকার লাভের শর্তারোপ করে বসল। তখন তিনি বিষয়টি রাসূলুল্লাহ (ﷺ) এর কাছে উত্থাপন করলেন। তিনি বললেন, তুমি তাকে খরিদ করে মুক্ত করে দাও। আসলে “ওযালা” সেই পাবে যে মুক্তিদান করে। রাসূলুল্লাহ (ﷺ) এর জন্য কিছু গোশত হাদিয়া রূপে পেশ করা হল। তখন তারা নবী (ﷺ) কে বললেন, এই গোশত বারীরাকে সাদ্‌কা হিসেবে দেওয়া হয়েছে। তিনি বললেন, এতো তার জন্য সাদ্‌কা এবং আমাদের জন্য হাদিয়া। তাকে (বারীরাকে) এ অবস্থায় ইখতিয়ার দেওয়া হল যে, তার স্বামী ছিল স্বাধীন। শু’বা (রাহঃ) বলেন, আমি পুনরায় তাকে (আব্দুর রহমানকে) তার (বারীরার) স্বামী সম্পর্কে জিজ্ঞাসা করলাম। তিনি বললেন, আমি জানি না।<br><br><br>৩৬৪২/১। আহমদ ইবনে উসমান নাওফালী (রাহঃ) ......... শুবা (রাহঃ) এর সূত্রে এই সনদে অনুরূপ বর্ণনা করেছেন।",
+        "description_en": "’A’isha (Allah be pleased with her) reported:<br>She wanted to buy Barira with a view to emancipating her. They (the sellers) laid down the condition that the right of inheritance would vest (with them). She (Hadrat ’A’isha) made a mention of that to Allah’s Messenger (ﷺ), whereupon he said: Buy her and emancipate her for the right of inheritance vests with one who emancipates. Allah’s Messenger (ﷺ) was given meat as gift. They (his Companions) said to Allah’s Apostle (ﷺ): This was given as charity to Barira, whereupon he said: That is charity for her but gift for us. And she was given option (to retain her matrimonial alliance or to break it). Abd al-Rahman said: Her husband was a free man. Shu’ba said: I then asked him (one of the narrators) about Barira’s husband (whether he had been a free mart or a slave), whereupon he said: I do not know.<br><br>This hadith has been narrated on the authority of Shu’ba with the same chain of transmitters.",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، قَالَ سَمِعْتُ عَبْدَ، الرَّحْمَنِ بْنَ الْقَاسِمِ قَالَ سَمِعْتُ الْقَاسِمَ، يُحَدِّثُ عَنْ عَائِشَةَ، أَنَّهَا أَرَادَتْ أَنْ تَشْتَرِيَ، بَرِيرَةَ لِلْعِتْقِ فَاشْتَرَطُوا وَلاَءَهَا فَذَكَرَتْ ذَلِكَ لِرَسُولِ اللَّهِ صلى الله عليه وسلم فَقَالَ \" اشْتَرِيهَا وَأَعْتِقِيهَا فَإِنَّ الْوَلاَءَ لِمَنْ أَعْتَقَ \" . وَأُهْدِيَ لِرَسُولِ اللَّهِ صلى الله عليه وسلم لَحْمٌ فَقَالُوا لِلنَّبِيِّ صلى الله عليه وسلم هَذَا تُصُدِّقَ بِهِ عَلَى بَرِيرَةَ . فَقَالَ \" هُوَ لَهَا صَدَقَةٌ وَهُوَ لَنَا هَدِيَّةٌ \" . وَخُيِّرَتْ . فَقَالَ عَبْدُ الرَّحْمَنِ وَكَانَ زَوْجُهَا حُرًّا . قَالَ شُعْبَةُ ثُمَّ سَأَلْتُهُ عَنْ زَوْجِهَا فَقَالَ لاَ أَدْرِي .<br> وَحَدَّثَنَاهُ أَحْمَدُ بْنُ عُثْمَانَ النَّوْفَلِيُّ، حَدَّثَنَا أَبُو دَاوُدَ، حَدَّثَنَا شُعْبَةُ، بِهَذَا الإِسْنَادِ نَحْوَهُ .",
+        "description_without_harkat": "حدثنا محمد بن المثنى، حدثنا محمد بن جعفر، حدثنا شعبة، قال سمعت عبد، الرحمن بن القاسم قال سمعت القاسم، يحدث عن عائشة، أنها أرادت أن تشتري، بريرة للعتق فاشترطوا ولاءها فذكرت ذلك لرسول الله صلى الله عليه وسلم فقال \" اشتريها وأعتقيها فإن الولاء لمن أعتق \" . وأهدي لرسول الله صلى الله عليه وسلم لحم فقالوا للنبي صلى الله عليه وسلم هذا تصدق به على بريرة . فقال \" هو لها صدقة وهو لنا هدية \" . وخيرت . فقال عبد الرحمن وكان زوجها حرا . قال شعبة ثم سألته عن زوجها فقال لا أدري .<br> وحدثناه أحمد بن عثمان النوفلي، حدثنا أبو داود، حدثنا شعبة، بهذا الإسناد نحوه .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T17:00:35.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3779,
+                "title": "1504-9",
+                "hadith_number": 3642,
+                "hadith_id": 10691,
+                "book_id": 2,
+                "created_at": "2024-10-15T17:00:35.000Z",
+                "updated_at": "2024-10-15T17:00:35.000Z"
+            },
+            {
+                "id": 3778,
+                "title": "1504-8",
+                "hadith_number": 3642,
+                "hadith_id": 10691,
+                "book_id": 2,
+                "created_at": "2024-10-15T17:00:35.000Z",
+                "updated_at": "2024-10-15T17:00:35.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10692,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 3643,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪৩। মুহাম্মাদ ইবনুল মুসান্না ও ইবনে বাশশার (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন যে, বারীরার স্বামী ছিল দাস।",
+        "description_en": "’A’isha reported that the husband of Barira was a slave.",
+        "description_ar": "وَحَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ، بَشَّارٍ جَمِيعًا عَنْ أَبِي هِشَامٍ، قَالَ ابْنُ الْمُثَنَّى حَدَّثَنَا مُغِيرَةُ بْنُ سَلَمَةَ الْمَخْزُومِيُّ، وَأَبُو هِشَامٍ حَدَّثَنَا وُهَيْبٌ، حَدَّثَنَا عُبَيْدُ اللَّهِ، عَنْ يَزِيدَ بْنِ رُومَانَ، عَنْ عُرْوَةَ، عَنْ عَائِشَةَ، قَالَتْ كَانَ زَوْجُ بَرِيرَةَ عَبْدًا .",
+        "description_without_harkat": "وحدثنا محمد بن المثنى، وابن، بشار جميعا عن أبي هشام، قال ابن المثنى حدثنا مغيرة بن سلمة المخزومي، وأبو هشام حدثنا وهيب، حدثنا عبيد الله، عن يزيد بن رومان، عن عروة، عن عائشة، قالت كان زوج بريرة عبدا .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T17:13:17.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3780,
+                "title": "1504-10",
+                "hadith_number": 3643,
+                "hadith_id": 10692,
+                "book_id": 2,
+                "created_at": "2024-10-15T17:13:17.000Z",
+                "updated_at": "2024-10-15T17:13:17.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10693,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 3644,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪৪। আবু তাহির (রাহঃ) ......... নবী (ﷺ) এর সহধর্মিনী অয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, বারীরার ঘটনায় তিনটি বিধান জারী হয়েছে<br><br>১. যখন সে মুক্তি লাভ করেছিল তখন স্বামীর (বৈবাহিক সূত্র বহাল রাখা, না রাখার) ব্যাপারে তাকে ইখতিয়ার প্রদান করা হয়েছিল।<br><br>২. তাকে গোশত সাদ্‌কা করা হয়েছিল। রাসূলুল্লাহ (ﷺ) আমার (আয়িশার) কাছে এলেন। তখন গোশতের হাড়ি উনুনের উপর টগবগ করছিল। তিনি খাবার চাইলেন। তখন তাঁর সামনে রুটি এবং ঘর থেকে তরকারী পরিবেশন করা হল। তিনি বললেন, আমি কি লক্ষ্য করি নি যে, উনুনের উপর হ্যাঁড়ি আছে যার মধ্যে গোশত রয়েছে। তারা বললেনঃ জি হ্যাঁ, ইয়া রাসুলাল্লাহ! ওটা তো এমন গোশত যা বারীরাকে সাদ্‌কা করা হয়েছে। আমরা তা থেকে আপনাকে খাওয়ানো পছন্দ করি না। তখন তিনি বললেন, এতে তার জন্য সাদ্‌কা এবং তার পক্ষ থেকে তা আমাদের জন্য হাদিয়া।<br><br>৩. নবী (ﷺ) তার (বারীরার) মুক্তির ব্যাপারে বললেন, ″ওয়ালা″ তারই প্রাপ্য যে আযাদ করে।",
+        "description_en": "’A’isha (Allah be pleased with her). the wife of Allah’s Apostle (may Peace be upon him) said:<br>Three are the Sunan (usages) (that we came to know in case of Bairara). She was given option in regard to her husband when she was emancipated. Sbe was given meat as charity. Allah’s Messenger (way peace be upon him) visited me when an earthen pot with meat in it was placed on the fire. He asked for food and be was given bread with ordinary meat (usually cooked in the) house. Thereupon he (Allah’s Messenger) said: Don’t I see the earthen pot on fire with meat in it? They said: Yes. Allah’s Messenger, there is meat in it which was given as charity to Barira. We did not deem it advisable that we should give you that to eat, whereupon he said: It is charity for her, but it is gift for us. Allah’s Apostle (ﷺ) also said: The right of inheritance vests with one who emancipates.",
+        "description_ar": "وَحَدَّثَنِي أَبُو الطَّاهِرِ، حَدَّثَنَا ابْنُ وَهْبٍ، أَخْبَرَنِي مَالِكُ بْنُ أَنَسٍ، عَنْ رَبِيعَةَ بْنِ أَبِي، عَبْدِ الرَّحْمَنِ عَنِ الْقَاسِمِ بْنِ مُحَمَّدٍ، عَنْ عَائِشَةَ، زَوْجِ النَّبِيِّ صلى الله عليه وسلم أَنَّهَا قَالَتْ كَانَ فِي بَرِيرَةَ ثَلاَثُ سُنَنٍ خُيِّرَتْ عَلَى زَوْجِهَا حِينَ عَتَقَتْ وَأُهْدِيَ لَهَا لَحْمٌ فَدَخَلَ عَلَىَّ رَسُولُ اللَّهِ صلى الله عليه وسلم وَالْبُرْمَةُ عَلَى النَّارِ فَدَعَا بِطَعَامٍ فَأُتِيَ بِخُبْزٍ وَأُدُمٍ مِنْ أُدُمِ الْبَيْتِ فَقَالَ \" أَلَمْ أَرَ بُرْمَةً عَلَى النَّارِ فِيهَا لَحْمٌ \" . فَقَالُوا بَلَى يَا رَسُولَ اللَّهِ ذَلِكَ لَحْمٌ تُصُدِّقَ بِهِ عَلَى بَرِيرَةَ فَكَرِهْنَا أَنْ نُطْعِمَكَ مِنْهُ . فَقَالَ \" هُوَ عَلَيْهَا صَدَقَةٌ وَهُوَ مِنْهَا لَنَا هَدِيَّةٌ \" . وَقَالَ النَّبِيُّ صلى الله عليه وسلم فِيهَا \" إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ \" .",
+        "description_without_harkat": "وحدثني أبو الطاهر، حدثنا ابن وهب، أخبرني مالك بن أنس، عن ربيعة بن أبي، عبد الرحمن عن القاسم بن محمد، عن عائشة، زوج النبي صلى الله عليه وسلم أنها قالت كان في بريرة ثلاث سنن خيرت على زوجها حين عتقت وأهدي لها لحم فدخل على رسول الله صلى الله عليه وسلم والبرمة على النار فدعا بطعام فأتي بخبز وأدم من أدم البيت فقال \" ألم أر برمة على النار فيها لحم \" . فقالوا بلى يا رسول الله ذلك لحم تصدق به على بريرة فكرهنا أن نطعمك منه . فقال \" هو عليها صدقة وهو منها لنا هدية \" . وقال النبي صلى الله عليه وسلم فيها \" إنما الولاء لمن أعتق \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:44.000Z",
+        "updated_at": "2024-10-15T17:13:57.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7714,
+                "title": "1504-11",
+                "hadith_number": 3644,
+                "hadith_id": 10693,
+                "book_id": 2,
+                "created_at": "2024-11-04T07:19:37.000Z",
+                "updated_at": "2024-11-04T07:19:37.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10694,
+        "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+        "title_en": "",
+        "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4706,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3645,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪৫। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, একবার আয়িশা ((رضي الله عنه)) একটি দাসী খরিদ করে মুক্ত করার ইচ্ছা প্রকাশ করলেন। তার মুনিবেরা তাদের জন্য তার ব্যতিরেকে প্রস্তাব প্রত্যাখ্যান করল। তবে“ওয়ালা” তাদের থাকলে ভিন্ন কথা। তিনি এই বিষয়টি রাসূলুল্লাহ (ﷺ) এর কাছে উত্থাপন করলেন। তখন তিনি বললেন, তুমি তাকে খরিদ করে মুক্তি দিয়ে দাও। তা (মুক্তি দেওয়া) তোমাকে “ওয়ালা” থেকে বাধাপ্রাপ্ত করবে না। কেননা ″ওয়ালা″ তারই প্রাপ্য যে মুক্তিদান করে।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported:<br>’A’isha (Allah be pleated with her) thought of buying a slave-girl and emancipating her, but her owners refused to (sell her but on the condition) that the right of inheritance would vest in them. She made a mention of that to Allah’s Messenger (ﷺ). whereupon he said: Let this (condition) not stand in your way for the right of inheritance vests with one who emancipates.",
+        "description_ar": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا خَالِدُ بْنُ مَخْلَدٍ، عَنْ سُلَيْمَانَ بْنِ بِلاَلٍ، حَدَّثَنِي سُهَيْلُ بْنُ أَبِي صَالِحٍ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، قَالَ أَرَادَتْ عَائِشَةُ أَنْ تَشْتَرِيَ، جَارِيَةً تُعْتِقُهَا فَأَبَى أَهْلُهَا إِلاَّ أَنْ يَكُونَ لَهُمُ الْوَلاَءُ فَذَكَرَتْ ذَلِكَ لِرَسُولِ اللَّهِ صلى الله عليه وسلم فَقَالَ  \" لاَ يَمْنَعُكِ ذَلِكِ فَإِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ \" .",
+        "description_without_harkat": "وحدثنا أبو بكر بن أبي شيبة، حدثنا خالد بن مخلد، عن سليمان بن بلال، حدثني سهيل بن أبي صالح، عن أبيه، عن أبي هريرة، قال أرادت عائشة أن تشتري، جارية تعتقها فأبى أهلها إلا أن يكون لهم الولاء فذكرت ذلك لرسول الله صلى الله عليه وسلم فقال  \" لا يمنعك ذلك فإنما الولاء لمن أعتق \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-15T17:14:22.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4706,
+            "title": "১. মুক্তদাসে অভিবাবকত্ব হবে মুক্তিদাতার",
+            "title_en": null,
+            "title_ar": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ",
+            "title_without_harkat": "باب إِنَّمَا الْوَلاَءُ لِمَنْ أَعْتَقَ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3782,
+                "title": "1505",
+                "hadith_number": 3645,
+                "hadith_id": 10694,
+                "book_id": 2,
+                "created_at": "2024-10-15T17:14:22.000Z",
+                "updated_at": "2024-10-15T17:14:22.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10695,
+        "title": "২. ওয়ালা বিক্রি কিংবা হেবা করা নিষিদ্ধ",
+        "title_en": "",
+        "title_ar": "باب النَّهْىِ عَنْ بَيْعِ الْوَلاَءِ، وَهِبَتِهِ،",
+        "title_without_harkat": "باب النهي عن بيع الولاء، وهبته",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4707,
+        "rabi_id": 4,
+        "type_id": 1,
+        "hadith_number": 3646,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪৬। ইয়াহয়া ইবনে ইয়াহয়া তামীমী (রাহঃ) ......... ইবনে উমর ((رضي الله عنه)) থেকে বর্ণিত যে, রাসূলুল্লাহ (ﷺ) ’ওয়ালা’ বিক্রি করা এবং তা হেবে (দান বা উইল) করা নিষিদ্ধ করেছেন। মুসলিম ইবনুল হাজ্জাজ (রাহঃ) বলেন, সকল মানুষ এই হাদীসের ব্যপারে আব্দুল্লাহ ইবনে দীনারের কৃপাধন্য [অর্থাৎ ইবনে উমর ((رضي الله عنه)) থেকে এ হাদীসটি কেবল তার সূত্রেই পাওয়া গেছে]",
+        "description_en": "Ibn Umar (Allah be pleased with them) reported that Allah’s Messenger (may peace he upon him) forbade the selling and making a gift of the right of inheritance of a slave. Imam Muslim said:<br>All the persons depend upon Abdullah b. Dinar in regard to this hadith.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى التَّمِيمِيُّ، أَخْبَرَنَا سُلَيْمَانُ بْنُ بِلاَلٍ، عَنْ عَبْدِ اللَّهِ بْنِ دِينَارٍ، عَنِ ابْنِ عُمَرَ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم نَهَى عَنْ بَيْعِ الْوَلاَءِ وَعَنْ هِبَتِهِ . قَالَ مُسْلِمٌ النَّاسُ كُلُّهُمْ عِيَالٌ عَلَى عَبْدِ اللَّهِ بْنِ دِينَارٍ فِي هَذَا الْحَدِيثِ .",
+        "description_without_harkat": "حدثنا يحيى بن يحيى التميمي، أخبرنا سليمان بن بلال، عن عبد الله بن دينار، عن ابن عمر، أن رسول الله صلى الله عليه وسلم نهى عن بيع الولاء وعن هبته . قال مسلم الناس كلهم عيال على عبد الله بن دينار في هذا الحديث .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-15T17:14:55.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4707,
+            "title": "২. ওয়ালা বিক্রি কিংবা হেবা করা নিষিদ্ধ",
+            "title_en": null,
+            "title_ar": "باب النَّهْىِ عَنْ بَيْعِ الْوَلاَءِ، وَهِبَتِهِ،",
+            "title_without_harkat": "باب النَّهْىِ عَنْ بَيْعِ الْوَلاَءِ، وَهِبَتِهِ،"
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3783,
+                "title": "1506-1",
+                "hadith_number": 3646,
+                "hadith_id": 10695,
+                "book_id": 2,
+                "created_at": "2024-10-15T17:14:55.000Z",
+                "updated_at": "2024-10-15T17:14:55.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10696,
+        "title": "২. ওয়ালা বিক্রি কিংবা হেবা করা নিষিদ্ধ",
+        "title_en": "",
+        "title_ar": "باب النَّهْىِ عَنْ بَيْعِ الْوَلاَءِ، وَهِبَتِهِ،",
+        "title_without_harkat": "باب النَّهْىِ عَنْ بَيْعِ الْوَلاَءِ، وَهِبَتِهِ،",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4707,
+        "rabi_id": 4,
+        "type_id": 1,
+        "hadith_number": 3647,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪৭। আবু বকর ইবনে আবি শাঈবা, যুহাইর ইবনে হারব, ইয়াহয়া ইবনে আইয়ুব, কুতায়বা ইবনে হুজর, ইবনে নুমাইর, ইবনে মুসান্না ও ইবনে রাফি ......... আব্দুল্লাহ ইবনে দীনার (রাহঃ) ইবনে উমর ((رضي الله عنه)) থেকে এবং তিনি নবী (ﷺ) থেকে অনুরূপ বর্ণনা করেছেন। তবে [আব্দুল ওয়াহহাব] সাকাফীর বর্ণনায় উবাইদুল্লাহর সূত্রে কেবল বিক্রির কথা বলা হয়েছে। তিনি হেবার কথা উল্লেখ করেন নি।",
+        "description_en": "This hadith has been narrated on the authority of Ibn ’Umar (Allah be pleased with them) through another chain of transmitters but with this change that in tba hadith narrated by al-Thaqafi from Ubaidullah there is only a mention of selling (or right of inheritance, al-Wala’ ) but not that of making a gift.",
+        "description_ar": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَزُهَيْرُ بْنُ حَرْبٍ، قَالاَ حَدَّثَنَا ابْنُ عُيَيْنَةَ، ح وَحَدَّثَنَا يَحْيَى بْنُ أَيُّوبَ، وَقُتَيْبَةُ، وَابْنُ، حُجْرٍ قَالُوا حَدَّثَنَا إِسْمَاعِيلُ بْنُ جَعْفَرٍ، ح وَحَدَّثَنَا ابْنُ نُمَيْرٍ، حَدَّثَنَا أَبِي، حَدَّثَنَا سُفْيَانُ بْنُ سَعِيدٍ، ح وَحَدَّثَنَا ابْنُ الْمُثَنَّى، حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، ح وَحَدَّثَنَا ابْنُ الْمُثَنَّى، قَالَ حَدَّثَنَا عَبْدُ الْوَهَّابِ، حَدَّثَنَا عُبَيْدُ اللَّهِ، ح وَحَدَّثَنَا ابْنُ رَافِعٍ، حَدَّثَنَا ابْنُ أَبِي فُدَيْكٍ، أَخْبَرَنَا الضَّحَّاكُ، - يَعْنِي ابْنَ عُثْمَانَ - كُلُّ هَؤُلاَءِ عَنْ عَبْدِ اللَّهِ بْنِ، دِينَارٍ عَنِ ابْنِ عُمَرَ، عَنِ النَّبِيِّ صلى الله عليه وسلم . بِمِثْلِهِ غَيْرَ أَنَّ الثَّقَفِيَّ لَيْسَ فِي حَدِيثِهِ عَنْ عُبَيْدِ اللَّهِ إِلاَّ الْبَيْعُ وَلَمْ يَذْكُرِ الْهِبَةَ .",
+        "description_without_harkat": "وحدثنا أبو بكر بن أبي شيبة، وزهير بن حرب، قالا حدثنا ابن عيينة، ح وحدثنا يحيى بن أيوب، وقتيبة، وابن، حجر قالوا حدثنا إسماعيل بن جعفر، ح وحدثنا ابن نمير، حدثنا أبي، حدثنا سفيان بن سعيد، ح وحدثنا ابن المثنى، حدثنا محمد بن جعفر، حدثنا شعبة، ح وحدثنا ابن المثنى، قال حدثنا عبد الوهاب، حدثنا عبيد الله، ح وحدثنا ابن رافع، حدثنا ابن أبي فديك، أخبرنا الضحاك، - يعني ابن عثمان - كل هؤلاء عن عبد الله بن، دينار عن ابن عمر، عن النبي صلى الله عليه وسلم . بمثله غير أن الثقفي ليس في حديثه عن عبيد الله إلا البيع ولم يذكر الهبة .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-15T17:15:25.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4707,
+            "title": "২. ওয়ালা বিক্রি কিংবা হেবা করা নিষিদ্ধ",
+            "title_en": null,
+            "title_ar": "باب النَّهْىِ عَنْ بَيْعِ الْوَلاَءِ، وَهِبَتِهِ،",
+            "title_without_harkat": "باب النَّهْىِ عَنْ بَيْعِ الْوَلاَءِ، وَهِبَتِهِ،"
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3784,
+                "title": "1506-2",
+                "hadith_number": 3647,
+                "hadith_id": 10696,
+                "book_id": 2,
+                "created_at": "2024-10-15T17:15:25.000Z",
+                "updated_at": "2024-10-15T17:15:25.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10697,
+        "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+        "title_en": "",
+        "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "title_without_harkat": "باب تحريم تولي العتيق غير مواليه",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4708,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 3648,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪৮। মুহাম্মাদ ইবনে রাফি (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) বলেন, নবী (ﷺ) ফরমান জারি করলেন যে, প্রত্যেক গোত্রের উপর তৎকর্তৃক হত্যাকাণ্ডের ক্ষতিণূরণ ওয়াজিব হবে। এরপর তিনি লিখলেন, কোন মুসললিম ব্যক্তির পক্ষে অপর মুসলিম ব্যক্তির অনুমতি ছাড়া তার মুক্তি দেওয়া গোলামের অলী (অভিবাবক) হওয়া হালাল নয়। এরপর আমি জানতে পারলাম যে, যে ব্যক্তি এরূপ কাজ করবে তিনি তার লিখিত ফরমানে তাকে লা’নত করেছেন।",
+        "description_en": "Jabir b. Abdullah (Allah be pleased with them) reported that Allah’s Apostle (ﷺ) made it obligatory for every tribe (the payment) of blood-wit; he then also made it explicit that it is not permissible for a Muslim to make himself the ally (of the slave emancipated by another) Muslim without his permission. He (the narrator further added):<br>I was informed that he (the Holy Prophet) cursed the one who did that (and it was recorded) in his Sahifa (in a document).",
+        "description_ar": "وَحَدَّثَنِي مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا ابْنُ جُرَيْجٍ، أَخْبَرَنِي أَبُو الزُّبَيْرِ، أَنَّهُ سَمِعَ جَابِرَ بْنَ عَبْدِ اللَّهِ، يَقُولُ كَتَبَ النَّبِيُّ صلى الله عليه وسلم عَلَى كُلِّ بَطْنٍ عُقُولَهُ ثُمَّ كَتَبَ  \" أَنَّهُ لاَ يَحِلُّ لِمُسْلِمٍ أَنْ يَتَوَالَى مَوْلَى رَجُلٍ مُسْلِمٍ بِغَيْرِ إِذْنِهِ \" . ثُمَّ أُخْبِرْتُ أَنَّهُ لَعَنَ فِي صَحِيفَتِهِ مَنْ فَعَلَ ذَلِكَ .",
+        "description_without_harkat": "وحدثني محمد بن رافع، حدثنا عبد الرزاق، أخبرنا ابن جريج، أخبرني أبو الزبير، أنه سمع جابر بن عبد الله، يقول كتب النبي صلى الله عليه وسلم على كل بطن عقوله ثم كتب  \" أنه لا يحل لمسلم أن يتوالى مولى رجل مسلم بغير إذنه \" . ثم أخبرت أنه لعن في صحيفته من فعل ذلك .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-15T17:16:05.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4708,
+            "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+            "title_en": null,
+            "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+            "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3785,
+                "title": "1507",
+                "hadith_number": 3648,
+                "hadith_id": 10697,
+                "book_id": 2,
+                "created_at": "2024-10-15T17:16:05.000Z",
+                "updated_at": "2024-10-15T17:16:05.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10698,
+        "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+        "title_en": "",
+        "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4708,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3649,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৪৯। কুতায়বা ইবনে সাঈদ (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত আছে যে, রাসূলুল্লাহ (ﷺ) বলেছেনঃ যে ব্যক্তি (ক্রীতদাস) তার মুনিবের অনুমতি ছাড়া অন্য কাউকে মুনিব বানাবে তার উপর আল্লাহর লা’নত এবং তার ফিরিশতাদেরও লা’নত। তার ফরয কিংবা নফল কিছুই (আল্লাহর কাছে) কবুল হবে না।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported that Allah’s Messenger (ﷺ) said:<br>He who takes anyone as his ally without the consent of his previous master, there will be the curse of Allah and that of His angels upon him, and neither, any obligatory act of his nor the supererogatory one will be accepted (by Allah).",
+        "description_ar": "حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا يَعْقُوبُ، - يَعْنِي ابْنَ عَبْدِ الرَّحْمَنِ الْقَارِيَّ - عَنْ سُهَيْلٍ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ  \" مَنْ تَوَلَّى قَوْمًا بِغَيْرِ إِذْنِ مَوَالِيهِ فَعَلَيْهِ لَعْنَةُ اللَّهِ وَالْمَلاَئِكَةِ لاَ يُقْبَلُ مِنْهُ عَدْلٌ وَلاَ صَرْفٌ \" .",
+        "description_without_harkat": "حدثنا قتيبة بن سعيد، حدثنا يعقوب، - يعني ابن عبد الرحمن القاري - عن سهيل، عن أبيه، عن أبي هريرة، أن رسول الله صلى الله عليه وسلم قال  \" من تولى قوما بغير إذن مواليه فعليه لعنة الله والملائكة لا يقبل منه عدل ولا صرف \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-16T04:31:55.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4708,
+            "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+            "title_en": null,
+            "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+            "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3786,
+                "title": "1508-1",
+                "hadith_number": 3649,
+                "hadith_id": 10698,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:31:55.000Z",
+                "updated_at": "2024-10-16T04:31:55.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10699,
+        "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+        "title_en": "",
+        "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4708,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3650,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫০। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) সূত্রে নবী (ﷺ) থেকে বর্ণিত। তিনি বলেন, যে ব্যক্তি তার মুনিবের অনুমতি ছাড়া অন্য কাউকে মাওলা বানাবে তার উপর আল্লাহর লা’নত, ফিরিশতা ও সমগ্র মানব জাতির লা’নত বর্ষিত হবে। কিয়ামত দিবসে তার কোন ফরয কিংবা নফল আল্লাহর নিকট গৃহীত হবে না।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported Allah’s Apostle (ﷺ) as saying:<br>He who took the freed slave as his ally without the consent of his previous master, there is upon him the curse of Allah and that of His angels and that of the whole mankind, and there will not be accepted from him his obligatory acts or supercrogatory acts on the Day of Resurrection.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا حُسَيْنُ بْنُ عَلِيٍّ الْجُعْفِيُّ، عَنْ زَائِدَةَ، عَنْ سُلَيْمَانَ، عَنْ أَبِي صَالِحٍ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ \" مَنْ تَوَلَّى قَوْمًا بِغَيْرِ إِذْنِ مَوَالِيهِ فَعَلَيْهِ لَعْنَةُ اللَّهِ وَالْمَلاَئِكَةِ وَالنَّاسِ أَجْمَعِينَ لاَ يُقْبَلُ مِنْهُ يَوْمَ الْقِيَامَةِ عَدْلٌ وَلاَ صَرْفٌ \" .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا حسين بن علي الجعفي، عن زائدة، عن سليمان، عن أبي صالح، عن أبي هريرة، عن النبي صلى الله عليه وسلم قال \" من تولى قوما بغير إذن مواليه فعليه لعنة الله والملائكة والناس أجمعين لا يقبل منه يوم القيامة عدل ولا صرف \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-16T04:34:18.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4708,
+            "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+            "title_en": null,
+            "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+            "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3787,
+                "title": "1508-2",
+                "hadith_number": 3650,
+                "hadith_id": 10699,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:34:18.000Z",
+                "updated_at": "2024-10-16T04:34:18.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10700,
+        "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+        "title_en": "",
+        "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4708,
+        "rabi_id": 225,
+        "type_id": 1,
+        "hadith_number": 3651,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫১। ইবরাহীম ইবনে দীনার (রাহঃ) ......... আমাশ (রাহঃ) থেকে এই সনদে বর্ণিত- তবে এতে বলেছেনঃ যে ব্যক্তি তার মুনীবের অনুমতি ছাড়া অন্যকে মাওলা বানাবে ......।",
+        "description_en": "This hadith is narrated through the same chain of transmitters, but with a slight change of words.",
+        "description_ar": "وَحَدَّثَنِيهِ إِبْرَاهِيمُ بْنُ دِينَارٍ، حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ مُوسَى، حَدَّثَنَا شَيْبَانُ، عَنِ الأَعْمَشِ، بِهَذَا الإِسْنَادِ غَيْرَ أَنَّهُ قَالَ \" وَمَنْ وَالَى غَيْرَ مَوَالِيهِ بِغَيْرِ إِذْنِهِمْ \" .",
+        "description_without_harkat": "وحدثنيه إبراهيم بن دينار، حدثنا عبيد الله بن موسى، حدثنا شيبان، عن الأعمش، بهذا الإسناد غير أنه قال \" ومن والى غير مواليه بغير إذنهم \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-16T04:35:56.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4708,
+            "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+            "title_en": null,
+            "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+            "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ"
+        },
+        "rabis": [
+            {
+                "id": 225,
+                "title": "সুলাইমান আ‘মাশ ((رحمة الله))",
+                "title_en": "A'mash (RH)",
+                "title_ar": null,
+                "death_year": "147"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3788,
+                "title": "1508-3",
+                "hadith_number": 3651,
+                "hadith_id": 10700,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:35:56.000Z",
+                "updated_at": "2024-10-16T04:35:56.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10701,
+        "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+        "title_en": "",
+        "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4708,
+        "rabi_id": 317,
+        "type_id": 1,
+        "hadith_number": 3652,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫২। আবু কুরায়ব (রাহঃ) ......... ইবরাহীম তায়মী তার পিতার সূত্রে বর্ণনা করেন। তিনি বলেন, একবার আলী ইবনে আবু তালিব ((رضي الله عنه)) আমাদের সামনে ভাষণ দিচ্ছিলেন। তিনি তাঁর ভাষণে বলেন, যে ব্যক্তি মনে করে যে, এই ক্ষুদ্র পুস্তিকা ও আল্লাহর কিতাব ব্যতীত আমাদের কাছে যা আমরা পাঠ করি, সে নিশ্চিত মিথ্যা বলছে। বর্ণনাকারী বললেন, সে সময় তার (আলীর) তরবারীর খাপের মধ্যে একথানি পুস্তিকা ঝুলানো ছিল। এই পুস্তিকায় উটের দাঁতের বিবরণ ছিল এবং যখমের দিয়াত (ক্ষতিপূরণ) সম্পর্কে বিধান ছিল। এতে আরও উল্লেখ ছিল যে, নবী (ﷺ) বলেছেনঃ মদীনার ’আয়র’ থেকে ’সাওর’ পর্বত পর্যন্ত এলাকা হারাম (সংরক্ষিত স্থান)। যে ব্যক্তি এই এলাকায় বিদ’আত করবে অথবা কোন বিদআতীকে আশ্রয় দিবে তার উপর আল্লাহর লানত, তাঁর ফিরিশতাদের ও সমগ্র মানব জাতির লানত বর্ষিত হবে। কিয়ামত দিবসে আল্লাহ তার কোন ফরয কিংবা নফল কবুল করবেন না। সকল মুসলমানের যিম্মা অভিন্ন। একজন আদনা (সাধারণ) মুসলমানও তা প্রদান করতে পারবে।<br><br>যে ব্যক্তি তার পিতাকে বাদ দিয়ে অন্য কাউকে পিতা বলে দাবী করবে অথবা যদি কোন দাস তার মুনিবকে বাদ দিয়ে অন্য কাউকে মুনিব বানাবে, তার উপর আল্লাহর, ফিরিশতা ও সমগ্র মানব জাতির লা’নত বর্ষিত হবে। কিয়ামত দিবসে আল্লাহ তার কোন ফরয কিংবা নফল (ইবাদত) কবুল করবেন না।",
+        "description_en": "Ibrahim al-Taimi reported on the authority of his father:<br>’Ali b. Abu Talib (Allah be pleased with him) addressed us and said: He who thinks that we (the members of the Prophet’s family) read anything else besides the Book of Allah and this Sahifa (and he said that Sahifa was tied to the scabbard of the sword) tells a lie. (This Sahifa) contains (problems) pertaining to the ages of the camels and (the recompense) of the injuries, and it also records the words of the Prophet (ﷺ): Medina is a sacred territory from ’Ayr to Thaur (it is most probably Uhud). He who innovates (an act or practice) or gives protection to an innovator, there is a curse of Allah and that of His angels and that of the whole humanity upon him. Allah will not accdpt from him (as a recompense) any obligatory act or supererogatory act, and the responsibility of the Muslims is a joint responsibility; even the lowest in rank can undertake the responsibility (on behalf of others), and he who claims anyone else as his father besides his own father or makes one his ally other than the one (who freed him), there is a curse of Allah. that of His angels and that of the wholemankind upon him. Allah will not accept the obligatory act of the supererogatery act (as a recompense) from him.",
+        "description_ar": "وَحَدَّثَنَا أَبُو كُرَيْبٍ، حَدَّثَنَا أَبُو مُعَاوِيَةَ، حَدَّثَنَا الأَعْمَشُ، عَنْ إِبْرَاهِيمَ التَّيْمِيِّ، عَنْ أَبِيهِ، قَالَ خَطَبَنَا عَلِيُّ بْنُ أَبِي طَالِبٍ فَقَالَ مَنْ زَعَمَ أَنَّ عِنْدَنَا، شَيْئًا نَقْرَأُهُ إِلاَّ كِتَابَ اللَّهِ وَهَذِهِ الصَّحِيفَةَ - قَالَ وَصَحِيفَةٌ مُعَلَّقَةٌ فِي قِرَابِ سَيْفِهِ - فَقَدْ كَذَبَ . فِيهَا أَسْنَانُ الإِبِلِ وَأَشْيَاءُ مِنَ الْجِرَاحَاتِ وَفِيهَا قَالَ النَّبِيُّ صلى الله عليه وسلم  \" الْمَدِينَةُ حَرَمٌ مَا بَيْنَ عَيْرٍ إِلَى ثَوْرٍ فَمَنْ أَحْدَثَ فِيهَا حَدَثًا أَوْ آوَى مُحْدِثًا فَعَلَيْهِ لَعْنَةُ اللَّهِ وَالْمَلاَئِكَةِ وَالنَّاسِ أَجْمَعِينَ لاَ يَقْبَلُ اللَّهُ مِنْهُ يَوْمَ الْقِيَامَةِ صَرْفًا وَلاَ عَدْلاً وَذِمَّةُ الْمُسْلِمِينَ وَاحِدَةٌ يَسْعَى بِهَا أَدْنَاهُمْ وَمَنِ ادَّعَى إِلَى غَيْرِ أَبِيهِ أَوِ انْتَمَى إِلَى غَيْرِ مَوَالِيهِ فَعَلَيْهِ لَعْنَةُ اللَّهِ وَالْمَلاَئِكَةِ وَالنَّاسِ أَجْمَعِينَ لاَ يَقْبَلُ اللَّهُ مِنْهُ يَوْمَ الْقِيَامَةِ صَرْفًا وَلاَ عَدْلاً \" .",
+        "description_without_harkat": "وحدثنا أبو كريب، حدثنا أبو معاوية، حدثنا الأعمش، عن إبراهيم التيمي، عن أبيه، قال خطبنا علي بن أبي طالب فقال من زعم أن عندنا، شيئا نقرأه إلا كتاب الله وهذه الصحيفة - قال وصحيفة معلقة في قراب سيفه - فقد كذب . فيها أسنان الإبل وأشياء من الجراحات وفيها قال النبي صلى الله عليه وسلم  \" المدينة حرم ما بين عير إلى ثور فمن أحدث فيها حدثا أو آوى محدثا فعليه لعنة الله والملائكة والناس أجمعين لا يقبل الله منه يوم القيامة صرفا ولا عدلا وذمة المسلمين واحدة يسعى بها أدناهم ومن ادعى إلى غير أبيه أو انتمى إلى غير مواليه فعليه لعنة الله والملائكة والناس أجمعين لا يقبل الله منه يوم القيامة صرفا ولا عدلا \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-16T04:39:53.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4708,
+            "title": "৩. মুক্তদাসের জন্য তার মুক্তিদাতা ব্যতীত অন্য কাউকে মাওলা বানানো হারাম",
+            "title_en": null,
+            "title_ar": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ",
+            "title_without_harkat": "باب تَحْرِيمِ تَوَلِّي الْعَتِيقِ غَيْرَ مَوَالِيهِ"
+        },
+        "rabis": [
+            {
+                "id": 317,
+                "title": "ইব্রাহীম তাইমী ((رحمة الله))",
+                "title_en": "Ibrahim Taimi (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3789,
+                "title": "1370-4",
+                "hadith_number": 3652,
+                "hadith_id": 10701,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:39:53.000Z",
+                "updated_at": "2024-10-16T04:39:53.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10702,
+        "title": "৪. দাসমুক্তির ফযীলত",
+        "title_en": "",
+        "title_ar": "باب فَضْلِ الْعِتْقِ",
+        "title_without_harkat": "باب فضل العتق",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4709,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3653,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫৩। মুহাম্মাদ ইবনুল মুসান্না আনাযী (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) এর সূত্রে নবী (ﷺ) থেকে বর্ণিত। তিনি বলেন, যে ব্যক্তি কোন মুসলিম দাসকে মুক্ত করে দিবে, আল্লাহ তার প্রত্যেকটি অঙ্গ প্রত্যেঙ্গের বিনিময়ে মুক্তিদাতার প্রতিটি অঙ্গ প্রত্যঙ্গ জাহান্নাম থেকে রক্ষা করবেন।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported Allah’s Messenger (ﷺ) as saying:<br>If anyone emancipates a Muslim slave, Allah will set free from Hell an organ of his body for every organ of his (slave’s) body.",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى الْعَنَزِيُّ، حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ، عَنْ عَبْدِ اللَّهِ بْنِ سَعِيدٍ، - وَهُوَ ابْنُ أَبِي هِنْدٍ - حَدَّثَنِي إِسْمَاعِيلُ بْنُ أَبِي حَكِيمٍ، عَنْ سَعِيدِ ابْنِ مَرْجَانَةَ، عَنْ أَبِي، هُرَيْرَةَ عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" مَنْ أَعْتَقَ رَقَبَةً مُؤْمِنَةً أَعْتَقَ اللَّهُ بِكُلِّ إِرْبٍ مِنْهَا إِرْبًا مِنْهُ مِنَ النَّارِ \" .",
+        "description_without_harkat": "حدثنا محمد بن المثنى العنزي، حدثنا يحيى بن سعيد، عن عبد الله بن سعيد، - وهو ابن أبي هند - حدثني إسماعيل بن أبي حكيم، عن سعيد ابن مرجانة، عن أبي، هريرة عن النبي صلى الله عليه وسلم قال  \" من أعتق رقبة مؤمنة أعتق الله بكل إرب منها إربا منه من النار \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-16T04:49:54.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4709,
+            "title": "৪. দাসমুক্তির ফযীলত",
+            "title_en": null,
+            "title_ar": "باب فَضْلِ الْعِتْقِ",
+            "title_without_harkat": "باب فَضْلِ الْعِتْقِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3790,
+                "title": "1509-1",
+                "hadith_number": 3653,
+                "hadith_id": 10702,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:49:55.000Z",
+                "updated_at": "2024-10-16T04:49:55.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10703,
+        "title": "৪. দাসমুক্তির ফযীলত",
+        "title_en": "",
+        "title_ar": "باب فَضْلِ الْعِتْقِ",
+        "title_without_harkat": "باب فَضْلِ الْعِتْقِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4709,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3654,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫৪। দাউদ ইবনে রুশায়দ (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) এর সূত্রে রাসূলুল্লাহ (ﷺ) থেকে বর্ণিত। তিনি বলেন, যে ব্যক্তি কোন ঈমানদার দাসকে মুক্ত করে দিবে আল্লাহ তার প্রত্যেকটি অঙ্গ প্রত্যঙ্গের বিনিময়ে মুক্তিদাতার প্রতিটি অঙ্গ-প্রত্যঙ্গ জাহান্নামের আগুন থেকে রক্ষা করবেন-এমন কি তার লজ্জাস্থানের বিনিময়ে তার লজ্জা স্থানও।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported Allah’s Messenger (may peace benpon him) as saying:<br>He who emancipates a slave, Allah will set free from Hell every limb (of his body) for every limb of his (slave’s) body, even his private parts.",
+        "description_ar": "وَحَدَّثَنَا دَاوُدُ بْنُ رُشَيْدٍ، حَدَّثَنَا الْوَلِيدُ بْنُ مُسْلِمٍ، عَنْ مُحَمَّدِ بْنِ مُطَرِّفٍ أَبِي غَسَّانَ، الْمَدَنِيِّ عَنْ زَيْدِ بْنِ أَسْلَمَ، عَنْ عَلِيِّ بْنِ حُسَيْنٍ، عَنْ سَعِيدِ ابْنِ مَرْجَانَةَ، عَنْ أَبِي هُرَيْرَةَ، عَنْ رَسُولِ اللَّهِ صلى الله عليه وسلم قَالَ  \" مَنْ أَعْتَقَ رَقَبَةً أَعْتَقَ اللَّهُ بِكُلِّ عُضْوٍ مِنْهَا عُضْوًا مِنْ أَعْضَائِهِ مِنَ النَّارِ حَتَّى فَرْجَهُ بِفَرْجِهِ \" .",
+        "description_without_harkat": "وحدثنا داود بن رشيد، حدثنا الوليد بن مسلم، عن محمد بن مطرف أبي غسان، المدني عن زيد بن أسلم، عن علي بن حسين، عن سعيد ابن مرجانة، عن أبي هريرة، عن رسول الله صلى الله عليه وسلم قال  \" من أعتق رقبة أعتق الله بكل عضو منها عضوا من أعضائه من النار حتى فرجه بفرجه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-16T04:50:22.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4709,
+            "title": "৪. দাসমুক্তির ফযীলত",
+            "title_en": null,
+            "title_ar": "باب فَضْلِ الْعِتْقِ",
+            "title_without_harkat": "باب فَضْلِ الْعِتْقِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3791,
+                "title": "1509-2",
+                "hadith_number": 3654,
+                "hadith_id": 10703,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:50:22.000Z",
+                "updated_at": "2024-10-16T04:50:22.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10704,
+        "title": "৪. দাসমুক্তির ফযীলত",
+        "title_en": "",
+        "title_ar": "باب فَضْلِ الْعِتْقِ",
+        "title_without_harkat": "باب فَضْلِ الْعِتْقِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4709,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3655,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫৫। কুতায়বা ইবনে সাঈদ (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন যে, আমি রাসূলুল্লাহ (ﷺ) কে বলতে শুনেছি, যে ব্যক্তি কোন ঈমানদার ক্রীতদাস মুক্ত করবে আল্লাহ তার (শরীরের) অঙ্গ-প্রত্যঙ্গের বিনিময়ে তার (শরীরের) অঙ্গ-প্রত্যঙ্গ জাহান্নাম থেকে রক্ষা করবেন- এমনকি তিনি তার (মুক্তদাসের) গুপ্তস্থানের পরিবর্তে তার (মুক্তিকারীর) গুপ্তস্থানও রক্ষা করবেন।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported:<br>I heard Allah’s Messenger (ﷺ) as saying: He who emancipates a believing slave. Allah will set free from Fire his every limb for every limb of his (slave’s), even his private parts for his.",
+        "description_ar": "وَحَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا لَيْثٌ، عَنِ ابْنِ الْهَادِ، عَنْ عُمَرَ بْنِ عَلِيِّ بْنِ حُسَيْنٍ، عَنْ سَعِيدِ ابْنِ مَرْجَانَةَ، عَنْ أَبِي هُرَيْرَةَ، قَالَ سَمِعْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم يَقُولُ  \" مَنْ أَعْتَقَ رَقَبَةً مُؤْمِنَةً أَعْتَقَ اللَّهُ بِكُلِّ عُضْوٍ مِنْهُ عُضْوًا مِنَ النَّارِ حَتَّى يُعْتِقَ فَرْجَهُ بِفَرْجِهِ\" .",
+        "description_without_harkat": "وحدثنا قتيبة بن سعيد، حدثنا ليث، عن ابن الهاد، عن عمر بن علي بن حسين، عن سعيد ابن مرجانة، عن أبي هريرة، قال سمعت رسول الله صلى الله عليه وسلم يقول  \" من أعتق رقبة مؤمنة أعتق الله بكل عضو منه عضوا من النار حتى يعتق فرجه بفرجه\" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2024-10-16T04:50:49.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4709,
+            "title": "৪. দাসমুক্তির ফযীলত",
+            "title_en": null,
+            "title_ar": "باب فَضْلِ الْعِتْقِ",
+            "title_without_harkat": "باب فَضْلِ الْعِتْقِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3792,
+                "title": "1509-3",
+                "hadith_number": 3655,
+                "hadith_id": 10704,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:50:49.000Z",
+                "updated_at": "2024-10-16T04:50:49.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10705,
+        "title": "৪. দাসমুক্তির ফযীলত",
+        "title_en": "",
+        "title_ar": "باب فَضْلِ الْعِتْقِ",
+        "title_without_harkat": "باب فَضْلِ الْعِتْقِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4709,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 3656,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫৬। হুমায়দ ইবনে মাস’আদা (রাহঃ) ......... আলী ইবনে হুসাইন এর সহচর সা’ঈদ ইবনে মারজানা (রাহঃ) বলেন, আমি আবু হুরায়রা ((رضي الله عنه)) কে বলতে শুনেছি যে, রাসূলুল্লাহ (ﷺ) বলেছেন, কোন মুসলিম অপর কোন মুসলিম দাসকে মুক্ত করলে আল্লাহ তার (মুক্ত দাসের) প্রত্যেকটি অঙ্গ-প্রত্যঙ্গের বিনিময়ে তার (মুক্তিদাতার) প্রত্যেকটি অঙ্গ-প্রত্যঙ্গ জাহান্নামের আগুন থেকে বাঁচাবেন। সাঈদ ইবনে মারজানা (রাহঃ) বললেন, আবু হুরায়রা ((رضي الله عنه)) থেকে এই হাদীস শোনার পরপরই আলী ইবনে হুসাইন এর কাছে গেলাম এবং তাঁর কাছে হাদীসখানি উপস্থাপন করলাম। তখনই তিনি তাঁর একটি গোলাম (ক্রীতদাস) মুক্ত করে দিলেন যার বিনিময় মূল্য হিসেবে তিনি ইবনে জাফরকে দশ হাজার দিরহাম অথবা এক হাজার দীনার পরিশোধ করেছিলেন।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported Allah’s Messenger (ﷺ) as saying:<br>A Muslim who emancipates a Muslim (slave). Allah will save from Fire every limb of his for every limb (of the slave). Sa’id b. Marjana said: When I heard this hadith from Abu Huraira (Allah be pleased with him), I went away and made a mention of it to ’Ali b. Husain and he at once emancipated the slave for which Ibn ja’far was prepared to pay ten thousand dirhams or one thousand dinars.",
+        "description_ar": "وَحَدَّثَنِي حُمَيْدُ بْنُ مَسْعَدَةَ، حَدَّثَنَا بِشْرُ بْنُ الْمُفَضَّلِ، حَدَّثَنَا عَاصِمٌ، - وَهُوَ ابْنُ مُحَمَّدٍ الْعُمَرِيُّ - حَدَّثَنَا وَاقِدٌ، - يَعْنِي أَخَاهُ - حَدَّثَنِي سَعِيدُ ابْنُ مَرْجَانَةَ، - صَاحِبُ عَلِيِّ بْنِ حُسَيْنٍ - قَالَ سَمِعْتُ أَبَا هُرَيْرَةَ، يَقُولُ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" أَيُّمَا امْرِئٍ مُسْلِمٍ أَعْتَقَ امْرَأً مُسْلِمًا اسْتَنْقَذَ اللَّهُ بِكُلِّ عُضْوٍ مِنْهُ عُضْوًا مِنْهُ مِنَ النَّارِ \" . قَالَ فَانْطَلَقْتُ حِينَ سَمِعْتُ الْحَدِيثَ مِنْ أَبِي هُرَيْرَةَ فَذَكَرْتُهُ لِعَلِيِّ بْنِ الْحُسَيْنِ فَأَعْتَقَ عَبْدًا لَهُ قَدْ أَعْطَاهُ بِهِ ابْنُ جَعْفَرٍ عَشْرَةَ آلاَفِ دِرْهَمٍ أَوْ أَلْفَ دِينَارٍ .",
+        "description_without_harkat": "وحدثني حميد بن مسعدة، حدثنا بشر بن المفضل، حدثنا عاصم، - وهو ابن محمد العمري - حدثنا واقد، - يعني أخاه - حدثني سعيد ابن مرجانة، - صاحب علي بن حسين - قال سمعت أبا هريرة، يقول قال رسول الله صلى الله عليه وسلم  \" أيما امرئ مسلم أعتق امرأ مسلما استنقذ الله بكل عضو منه عضوا منه من النار \" . قال فانطلقت حين سمعت الحديث من أبي هريرة فذكرته لعلي بن الحسين فأعتق عبدا له قد أعطاه به ابن جعفر عشرة آلاف درهم أو ألف دينار .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2022-12-26T06:51:19.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4709,
+            "title": "৪. দাসমুক্তির ফযীলত",
+            "title_en": null,
+            "title_ar": "باب فَضْلِ الْعِتْقِ",
+            "title_without_harkat": "باب فَضْلِ الْعِتْقِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 3793,
+                "title": "1509-4",
+                "hadith_number": 3656,
+                "hadith_id": 10705,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:54:40.000Z",
+                "updated_at": "2024-10-16T04:54:40.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10706,
+        "title": "৫. পিতাকে মুক্ত করার ফযীলত",
+        "title_en": "",
+        "title_ar": "باب فَضْلِ عِتْقِ الْوَالِدِ",
+        "title_without_harkat": "باب فضل عتق الوالد",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4710,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 3657,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫৭। আবু বকর ইবনে আবি শাঈবা ও যুহাইর ইবনে হারব (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ কোন সন্তান তার পিতার ঋণ পরিশোধ করতে পারে না। তবে হ্যাঁ, সে যদি তার পিতাকে ক্রীতদাস হিসেবে দেখতে পায় এবং তখনি তাকে খরিদ করে মুক্ত করে দেয় (তাহলে ভিন্ন কথা)।<br><br>ইবনে আবি শাঈবা (রাহঃ) এর বর্ণনায়আছেوَلَدٌ وَالِدَهُ ’সন্তান তার পিতার’।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported Allah’s Messenger (ﷺ) as saying:<br>A son does not repay what he owes his father unless he buys him (the father) in case he is a slave and then emancipates him. In the narration transmitted by Ibn Abu Shaiba there is a slight change of words.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَزُهَيْرُ بْنُ حَرْبٍ، قَالاَ حَدَّثَنَا جَرِيرٌ، عَنْ سُهَيْلٍ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" لاَ يَجْزِي وَلَدٌ وَالِدًا إِلاَّ أَنْ يَجِدَهُ مَمْلُوكًا فَيَشْتَرِيَهُ فَيُعْتِقَهُ \" . وَفِي رِوَايَةِ ابْنِ أَبِي شَيْبَةَ \" وَلَدٌ وَالِدَهُ \" .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، وزهير بن حرب، قالا حدثنا جرير، عن سهيل، عن أبيه، عن أبي هريرة، قال قال رسول الله صلى الله عليه وسلم \" لا يجزي ولد والدا إلا أن يجده مملوكا فيشتريه فيعتقه \" . وفي رواية ابن أبي شيبة \" ولد والده \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": 5680,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2025-02-09T14:36:44.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4710,
+            "title": "৫. পিতাকে মুক্ত করার ফযীলত",
+            "title_en": null,
+            "title_ar": "باب فَضْلِ عِتْقِ الْوَالِدِ",
+            "title_without_harkat": "باب فَضْلِ عِتْقِ الْوَالِدِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": {
+            "id": 5680,
+            "title": "এ হাদীছ দ্বারা সন্তানের প্রতি পিতা-মাতার অপরিসীম অনুগ্রহ ও কল্যাণের প্রতি ইশারা করা হয়েছে। জানানো হচ্ছে যে, সে অনুগ্রহ ও কল্যাণ এত বিপুল, যার প্রতিদান দেওয়া কোনও সন্তানের পক্ষে কিছুতেই সম্ভব নয়। এ হাদীছে যে একটি উপায়ের কথা উল্লেখ করা হয়েছে তার মধ্যে মূলত সে অসম্ভাব্যতার প্রতি ইঙ্গিত রয়েছে। হাদীছে বলা হয়েছে, সন্তান তার পিতাকে প্রতিদান দিতে পারে কেবল একটি উপায়ে। আর তা হচ্ছে পিতাকে কারও দাসরূপে পেলে তার মনিবের কাছ থেকে তাকে কিনে নিয়ে আযাদ করে দেওয়া। কিন্তু এটি একটি অসম্ভব উপায়। কেননা এ উপায়টিতে পিতাকে ক্রয় করার পর নিজের পক্ষ থেকে আযাদ করার কথা বলা হয়েছে। ওদিকে মাসআলা হলো, কারও পিতা যদি অন্যের গোলাম হয় আর পুত্র তাকে ক্রয় করে, তবে ক্রয় করা মাত্রই সে পিতা আপনা-আপনিই আযাদ হয়ে যায়; পুত্রের পক্ষ থেকে আযাদ করার দরকার হয় না। এমনিভাবে কারও সন্তান যদি গোলাম হয় আর পিতা তাকে মনিবের কাছ থেকে ক্রয় করে, তবে সে সন্তানও আপনা-আপনিই আযাদ হয়ে যায়; পিতার পক্ষ থেকে ইচ্ছাকৃতভাবে তাকে আযাদ করার দরকার হয় না। সুতরাং কোনও সন্তানের পক্ষে ‘দাস পিতা'-কে ইচ্ছাকৃতভাবে আযাদ করা সম্ভব নয়। আর তা যখন সম্ভব নয়, তখন সন্তানের পক্ষে পিতাকে প্রতিদান দেওয়াও অসম্ভব।\n  \n অবশ্য ক্রয় করার দ্বারা স্বয়ংক্রিয়ভাবে হলেও পিতা যেহেতু আযাদ হয়ে যায়, তাই এতটুকু তো অনস্বীকার্য যে, তার আযাদ হওয়ার পেছনে সন্তানের একটা ভূমিকা আছে। কাজেই এর দ্বারা পুরোপুরি না হলেও একপর্যায়ের প্রতিদান হবে বলে ধারণা করা যায়। এই হিসেবে বলা যেতে পারে, সন্তানের পক্ষ থেকে পিতাকে কিছুটা হলেও প্রতিদান দেওয়া কেবল এ উপায়েই সম্ভব। এছাড়া আর যত বড় কাজই হোক না কেন এবং তা দ্বারা পিতার যত বড় উপকারই সাধিত হোক না কেন, সে কাজকে আংশিক প্রতিদানরূপেও অভিহিত করা যায় না । \n    \nপিতাকে আযাদ করায় ভূমিকা রাখার দ্বারা যে আংশিক প্রতিদান হয় তার কারণ এই যে, কারও গোলাম হয়ে যাওয়াটা একপর্যায়ের অস্তিত্বহীন হয়ে যাওয়ার মত। কেননা গোলামের তার নিজের উপর কোনও কর্তৃত্ব থাকে না। সে তার মনিবের মালিকানাধীন বস্তুতে পরিণত হয়ে যায়। সে নিজে কিছু উপার্জন করলে তাও তার মনিবের মালিকানায় চলে যায়। মনিবের অনুমতি ছাড়া তার নিজের কোনওকিছু করার এখতিয়ারই থাকে না। সেই হিসেবে সে যেন থেকেও নেই। তারপর সে কোনও উপায়ে যদি মুক্তিলাভ করতে পারে, তবে যেন সে নবজীবন লাভ করল। সে যেন অস্তিত্বহীন অবস্থা থেকে অস্তিত্বমান হলো। কাজেই কোনও পুত্র যদি ‘দাস পিতা'র মুক্তিলাভে ভূমিকা রাখে, তবে তা যেন তার অস্তিত্বলাভেই ভূমিকা রাখা হয়। পিতা হতে পুত্রের জন্মলাভের বিষয়টাও তো এরকমই। পুত্রের প্রকৃত অস্তিত্বদাতা আল্লাহ তাআলা। তবে বাহ্যিকভাবে তার সে অস্তিত্বলাভে পিতার একরকম ভূমিকা থাকে। তারপর প্রকৃত প্রতিপালন তো আল্লাহ তাআলাই করেন, কিন্তু বাহ্যিকভাবে তার লালন-পালনে পিতারও একরকম মেহনত থাকে। তার অস্তিত্বের সূচনা থেকে পূর্ণতাপ্রাপ্তি পর্যন্ত পিতার পর্যায়ক্রমিক সেবাযত্ন থাকে। ব্যস এ মিলের কারণেই বলা হয়েছে, পিতাকে ক্রয় করার পর আযাদ করে দিলে সেটা একরকম প্রতিদানরূপে গণ্য হয়।\n    \nউল্লেখ্য, সন্তানের জন্ম ও প্রতিপালনে পিতা অপেক্ষা মায়ের ভূমিকা অনেক বেশি। কাজেই এ হাদীছ দ্বারা যখন জানা গেল যে, কোনও সন্তানের পক্ষে তার পিতাকে পুরোপুরি প্রতিদান দেওয়া কিছুতেই সম্ভব নয়, তখন সন্তানের পক্ষে মায়ের প্রতিদান দেওয়ার তো প্রশ্নই আসে না। দুনিয়ার সন্তানগণ মায়ের এ মর্যাদার গুরুত্ব ঠিক কতটুকু উপলব্ধি করে?\n\nহাদীস থেকে শিক্ষণীয়ঃ \n\nক. এ হাদীছ দ্বারা সন্তানের প্রতি পিতার এবং আরও অধিক পরিমাণে মায়ের অনুগ্রহ ও কল্যাণের বিপুলতা সম্পর্কে ধারণা লাভ হয়। \n\nখ.কোনও সন্তানের পক্ষে তার পিতা-মাতাকে প্রতিদান দেওয়া কিছুতেই সম্ভব নয় । \n\nগ.সন্তানের কর্তব্য পিতা-মাতার সেবাযত্ন করা ও তাদেরকে সন্তুষ্ট রাখার জন্য সর্বদা সচেষ্ট থাকা।",
+            "reference": "ব্যাখ্যা সূত্রঃ_ রিয়াযুস সালিহীন (অনুবাদ- মাওলানা আবুল বাশার মুহাম্মাদ সাইফুল ইসলাম হাফি.)"
+        },
+        "hadithNumbers": [
+            {
+                "id": 3794,
+                "title": "1510-1",
+                "hadith_number": 3657,
+                "hadith_id": 10706,
+                "book_id": 2,
+                "created_at": "2024-10-16T04:55:01.000Z",
+                "updated_at": "2024-10-16T04:55:01.000Z"
+            }
+        ]
+    },
+    {
+        "id": 10707,
+        "title": "৫. পিতাকে মুক্ত করার ফযীলত",
+        "title_en": "",
+        "title_ar": "باب فَضْلِ عِتْقِ الْوَالِدِ",
+        "title_without_harkat": "باب فَضْلِ عِتْقِ الْوَالِدِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 107,
+        "title_id": 4710,
+        "rabi_id": 486,
+        "type_id": 1,
+        "hadith_number": 3658,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৬৫৮। আবু কুরায়ব, ইবনে নুমাইর ও আমরুন নাকিদ (রাহঃ) ......... সুহাঈল (রাহঃ) থেকে এই সনদে অনুরূপ বর্ণিত আছে। তারা তাদের বর্ণনায় বলেছেনوَلَدٌ وَالِدَهُ সন্তান তার পিতার।",
+        "description_en": "A hadith like this has been narrated on the authority of Suhail with the same chain of transmitters.",
+        "description_ar": "وَحَدَّثَنَاهُ أَبُو كُرَيْبٍ، حَدَّثَنَا وَكِيعٌ، ح وَحَدَّثَنَا ابْنُ نُمَيْرٍ، حَدَّثَنَا أَبِي ح، وَحَدَّثَنِي عَمْرٌو النَّاقِدُ، حَدَّثَنَا أَبُو أَحْمَدَ الزُّبَيْرِيُّ، كُلُّهُمْ عَنْ سُفْيَانَ، عَنْ سُهَيْلٍ، بِهَذَا الإِسْنَادِ مِثْلَهُ وَقَالُوا  \" وَلَدٌ وَالِدَهُ \" .",
+        "description_without_harkat": "وحدثناه أبو كريب، حدثنا وكيع، ح وحدثنا ابن نمير، حدثنا أبي ح، وحدثني عمرو الناقد، حدثنا أبو أحمد الزبيري، كلهم عن سفيان، عن سهيل، بهذا الإسناد مثله وقالوا  \" ولد والده \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": 5680,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:45.000Z",
+        "updated_at": "2025-02-09T14:36:45.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 107,
+            "title": "২১- গোলাম আযাদ করা",
+            "title_en": "21. The Book of Emancipating Slaves",
+            "title_ar": "كتاب العتق",
+            "range_start": 3629,
+            "range_end": 3658
+        },
+        "titles": {
+            "id": 4710,
+            "title": "৫. পিতাকে মুক্ত করার ফযীলত",
+            "title_en": null,
+            "title_ar": "باب فَضْلِ عِتْقِ الْوَالِدِ",
+            "title_without_harkat": "باب فَضْلِ عِتْقِ الْوَالِدِ"
+        },
+        "rabis": [
+            {
+                "id": 486,
+                "title": "সুহায়ল ইবনে আবু সালিহ ((رحمة الله))",
+                "title_en": "Suhayl Ibn Abu Saleh",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": {
+            "id": 5680,
+            "title": "এ হাদীছ দ্বারা সন্তানের প্রতি পিতা-মাতার অপরিসীম অনুগ্রহ ও কল্যাণের প্রতি ইশারা করা হয়েছে। জানানো হচ্ছে যে, সে অনুগ্রহ ও কল্যাণ এত বিপুল, যার প্রতিদান দেওয়া কোনও সন্তানের পক্ষে কিছুতেই সম্ভব নয়। এ হাদীছে যে একটি উপায়ের কথা উল্লেখ করা হয়েছে তার মধ্যে মূলত সে অসম্ভাব্যতার প্রতি ইঙ্গিত রয়েছে। হাদীছে বলা হয়েছে, সন্তান তার পিতাকে প্রতিদান দিতে পারে কেবল একটি উপায়ে। আর তা হচ্ছে পিতাকে কারও দাসরূপে পেলে তার মনিবের কাছ থেকে তাকে কিনে নিয়ে আযাদ করে দেওয়া। কিন্তু এটি একটি অসম্ভব উপায়। কেননা এ উপায়টিতে পিতাকে ক্রয় করার পর নিজের পক্ষ থেকে আযাদ করার কথা বলা হয়েছে। ওদিকে মাসআলা হলো, কারও পিতা যদি অন্যের গোলাম হয় আর পুত্র তাকে ক্রয় করে, তবে ক্রয় করা মাত্রই সে পিতা আপনা-আপনিই আযাদ হয়ে যায়; পুত্রের পক্ষ থেকে আযাদ করার দরকার হয় না। এমনিভাবে কারও সন্তান যদি গোলাম হয় আর পিতা তাকে মনিবের কাছ থেকে ক্রয় করে, তবে সে সন্তানও আপনা-আপনিই আযাদ হয়ে যায়; পিতার পক্ষ থেকে ইচ্ছাকৃতভাবে তাকে আযাদ করার দরকার হয় না। সুতরাং কোনও সন্তানের পক্ষে ‘দাস পিতা'-কে ইচ্ছাকৃতভাবে আযাদ করা সম্ভব নয়। আর তা যখন সম্ভব নয়, তখন সন্তানের পক্ষে পিতাকে প্রতিদান দেওয়াও অসম্ভব।\n  \n অবশ্য ক্রয় করার দ্বারা স্বয়ংক্রিয়ভাবে হলেও পিতা যেহেতু আযাদ হয়ে যায়, তাই এতটুকু তো অনস্বীকার্য যে, তার আযাদ হওয়ার পেছনে সন্তানের একটা ভূমিকা আছে। কাজেই এর দ্বারা পুরোপুরি না হলেও একপর্যায়ের প্রতিদান হবে বলে ধারণা করা যায়। এই হিসেবে বলা যেতে পারে, সন্তানের পক্ষ থেকে পিতাকে কিছুটা হলেও প্রতিদান দেওয়া কেবল এ উপায়েই সম্ভব। এছাড়া আর যত বড় কাজই হোক না কেন এবং তা দ্বারা পিতার যত বড় উপকারই সাধিত হোক না কেন, সে কাজকে আংশিক প্রতিদানরূপেও অভিহিত করা যায় না । \n    \nপিতাকে আযাদ করায় ভূমিকা রাখার দ্বারা যে আংশিক প্রতিদান হয় তার কারণ এই যে, কারও গোলাম হয়ে যাওয়াটা একপর্যায়ের অস্তিত্বহীন হয়ে যাওয়ার মত। কেননা গোলামের তার নিজের উপর কোনও কর্তৃত্ব থাকে না। সে তার মনিবের মালিকানাধীন বস্তুতে পরিণত হয়ে যায়। সে নিজে কিছু উপার্জন করলে তাও তার মনিবের মালিকানায় চলে যায়। মনিবের অনুমতি ছাড়া তার নিজের কোনওকিছু করার এখতিয়ারই থাকে না। সেই হিসেবে সে যেন থেকেও নেই। তারপর সে কোনও উপায়ে যদি মুক্তিলাভ করতে পারে, তবে যেন সে নবজীবন লাভ করল। সে যেন অস্তিত্বহীন অবস্থা থেকে অস্তিত্বমান হলো। কাজেই কোনও পুত্র যদি ‘দাস পিতা'র মুক্তিলাভে ভূমিকা রাখে, তবে তা যেন তার অস্তিত্বলাভেই ভূমিকা রাখা হয়। পিতা হতে পুত্রের জন্মলাভের বিষয়টাও তো এরকমই। পুত্রের প্রকৃত অস্তিত্বদাতা আল্লাহ তাআলা। তবে বাহ্যিকভাবে তার সে অস্তিত্বলাভে পিতার একরকম ভূমিকা থাকে। তারপর প্রকৃত প্রতিপালন তো আল্লাহ তাআলাই করেন, কিন্তু বাহ্যিকভাবে তার লালন-পালনে পিতারও একরকম মেহনত থাকে। তার অস্তিত্বের সূচনা থেকে পূর্ণতাপ্রাপ্তি পর্যন্ত পিতার পর্যায়ক্রমিক সেবাযত্ন থাকে। ব্যস এ মিলের কারণেই বলা হয়েছে, পিতাকে ক্রয় করার পর আযাদ করে দিলে সেটা একরকম প্রতিদানরূপে গণ্য হয়।\n    \nউল্লেখ্য, সন্তানের জন্ম ও প্রতিপালনে পিতা অপেক্ষা মায়ের ভূমিকা অনেক বেশি। কাজেই এ হাদীছ দ্বারা যখন জানা গেল যে, কোনও সন্তানের পক্ষে তার পিতাকে পুরোপুরি প্রতিদান দেওয়া কিছুতেই সম্ভব নয়, তখন সন্তানের পক্ষে মায়ের প্রতিদান দেওয়ার তো প্রশ্নই আসে না। দুনিয়ার সন্তানগণ মায়ের এ মর্যাদার গুরুত্ব ঠিক কতটুকু উপলব্ধি করে?\n\nহাদীস থেকে শিক্ষণীয়ঃ \n\nক. এ হাদীছ দ্বারা সন্তানের প্রতি পিতার এবং আরও অধিক পরিমাণে মায়ের অনুগ্রহ ও কল্যাণের বিপুলতা সম্পর্কে ধারণা লাভ হয়। \n\nখ.কোনও সন্তানের পক্ষে তার পিতা-মাতাকে প্রতিদান দেওয়া কিছুতেই সম্ভব নয় । \n\nগ.সন্তানের কর্তব্য পিতা-মাতার সেবাযত্ন করা ও তাদেরকে সন্তুষ্ট রাখার জন্য সর্বদা সচেষ্ট থাকা।",
+            "reference": "ব্যাখ্যা সূত্রঃ_ রিয়াযুস সালিহীন (অনুবাদ- মাওলানা আবুল বাশার মুহাম্মাদ সাইফুল ইসলাম হাফি.)"
+        },
+        "hadithNumbers": [
+            {
+                "id": 3795,
+                "title": "1510-2",
+                "hadith_number": 3658,
+                "hadith_id": 10707,
+                "book_id": 2,
+                "created_at": "2024-10-16T05:01:35.000Z",
+                "updated_at": "2024-10-16T05:01:35.000Z"
+            }
+        ]
+    }
+]

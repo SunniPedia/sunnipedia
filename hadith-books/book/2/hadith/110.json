@@ -1,0 +1,2041 @@
+[
+    {
+        "id": 11044,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4760,
+        "rabi_id": 49,
+        "type_id": 1,
+        "hadith_number": 3995,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৯৯৫। ইয়াহয়া ইবনে ইয়াহয়া আবু বকর ইবনে আবি শাঈবা ও ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... উসামা ইবনে যায়দ ((رضي الله عنه)) থেকে বর্ণিত। নবী (ﷺ) বলেছেনঃ মুসলমান কাফিরের ওয়ারিস হবে না এবং কাফিরও মুসলমানের ওয়ারিস হবে না।",
+        "description_en": "Usama b. Zaid reported Allah’s Messenger (ﷺ) as saying:<br>A Muslim is not entitled to inherit from a non-Muslim, and a non-Muslim is not entitled to inherit from a Muslim.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، وَأَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ - وَاللَّفْظُ لِيَحْيَى - قَالَ يَحْيَى أَخْبَرَنَا وَقَالَ الآخَرَانِ، حَدَّثَنَا ابْنُ عُيَيْنَةَ، عَنِ الزُّهْرِيِّ، عَنْ عَلِيِّ بْنِ، حُسَيْنٍ عَنْ عَمْرِو بْنِ عُثْمَانَ، عَنْ أُسَامَةَ بْنِ زَيْدٍ، أَنَّ النَّبِيَّ صلى الله عليه وسلم قَالَ  \" لاَ يَرِثُ الْمُسْلِمُ الْكَافِرَ وَلاَ يَرِثُ الْكَافِرُ الْمُسْلِمَ \" .",
+        "description_without_harkat": "حدثنا يحيى بن يحيى، وأبو بكر بن أبي شيبة وإسحاق بن إبراهيم - واللفظ ليحيى - قال يحيى أخبرنا وقال الآخران، حدثنا ابن عيينة، عن الزهري، عن علي بن، حسين عن عمرو بن عثمان، عن أسامة بن زيد، أن النبي صلى الله عليه وسلم قال  \" لا يرث المسلم الكافر ولا يرث الكافر المسلم \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:38:54.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4760,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": "",
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 49,
+                "title": "হযরত উসামা ইবন যায়দ (رضي الله عنه)",
+                "title_en": "Usama Ibn Zayed (RA)",
+                "title_ar": "أسامة بن زيد بن حارثة بن شراحيل بن كعب بن عبد العزي الكلبي",
+                "death_year": "54"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4140,
+                "title": "1614",
+                "hadith_number": 3995,
+                "hadith_id": 11044,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:38:54.000Z",
+                "updated_at": "2024-10-17T04:38:54.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11045,
+        "title": "১. অংশীদারদের প্রাপ্য অংশ তাদেরকে দিয়ে দাও, তারপর যা থাকবে তা নিকটতম পুরুষদের",
+        "title_en": "",
+        "title_ar": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+        "title_without_harkat": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4761,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 3996,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৯৯৬। আব্দুল আলা ইবনে হাম্মাদ নারসী (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ অংশীদারদের প্রাপ্য অংশ দিয়ে দাও। অতঃপর যা বেঁচে থাকে তা নিকটতম পুরুষ লোকের প্রাপ্য।",
+        "description_en": "Ibn Abbas (Allah be pleased with them) reported Allah’s Messenger (ﷺ) as saying:<br>Give the shares to those who are entitled to them, and what remains over goes to the nearest male heir.",
+        "description_ar": "حَدَّثَنَا عَبْدُ الأَعْلَى بْنُ حَمَّادٍ، - وَهُوَ النَّرْسِيُّ - حَدَّثَنَا وُهَيْبٌ، عَنِ ابْنِ طَاوُسٍ، عَنْ أَبِيهِ، عَنِ ابْنِ عَبَّاسٍ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَهُوَ لأَوْلَى رَجُلٍ ذَكَرٍ \" .",
+        "description_without_harkat": "حدثنا عبد الأعلى بن حماد، - وهو النرسي - حدثنا وهيب، عن ابن طاوس، عن أبيه، عن ابن عباس، قال قال رسول الله صلى الله عليه وسلم  \" ألحقوا الفرائض بأهلها فما بقي فهو لأولى رجل ذكر \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:39:28.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4761,
+            "title": "১. অংশীদারদের প্রাপ্য অংশ তাদেরকে দিয়ে দাও, তারপর যা থাকবে তা নিকটতম পুরুষদের",
+            "title_en": "",
+            "title_ar": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+            "title_without_harkat": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ"
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4141,
+                "title": "1615-1",
+                "hadith_number": 3996,
+                "hadith_id": 11045,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:39:28.000Z",
+                "updated_at": "2024-10-17T04:39:28.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11046,
+        "title": "১. অংশীদারদের প্রাপ্য অংশ তাদেরকে দিয়ে দাও, তারপর যা থাকবে তা নিকটতম পুরুষদের",
+        "title_en": "",
+        "title_ar": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+        "title_without_harkat": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4761,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 3997,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৯৯৭। উমাইয়া ইবনে বিসতাম আল আয়শী (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত। রাসূলুল্লাহ (ﷺ) বলেছেনঃ অংশীদারদের (ফারাইযের) অংশ প্রদান কর। তারপর যে অংশ অবশিষ্ট থাকবে তা নিকটতম পুরুষের প্রাপ্য।",
+        "description_en": "Ibn ’Abbas (Allah be pleased with them) reported Allah’s Messenger (ﷺ) as saying:<br>Give the shares to those who are entitled to them, and what is left from those wno are entitled to it goes to the nearest male heir.",
+        "description_ar": "حَدَّثَنَا أُمَيَّةُ بْنُ بِسْطَامَ الْعَيْشِيُّ، حَدَّثَنَا يَزِيدُ بْنُ زُرَيْعٍ، حَدَّثَنَا رَوْحُ بْنُ الْقَاسِمِ، عَنْ عَبْدِ اللَّهِ بْنِ طَاوُسٍ، عَنْ أَبِيهِ، عَنِ ابْنِ عَبَّاسٍ، عَنْ رَسُولِ اللَّهِ صلى الله عليه وسلم قَالَ  \" أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا تَرَكَتِ الْفَرَائِضُ فَلأَوْلَى رَجُلٍ ذَكَرٍ \" .",
+        "description_without_harkat": "حدثنا أمية بن بسطام العيشي، حدثنا يزيد بن زريع، حدثنا روح بن القاسم، عن عبد الله بن طاوس، عن أبيه، عن ابن عباس، عن رسول الله صلى الله عليه وسلم قال  \" ألحقوا الفرائض بأهلها فما تركت الفرائض فلأولى رجل ذكر \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:39:53.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4761,
+            "title": "১. অংশীদারদের প্রাপ্য অংশ তাদেরকে দিয়ে দাও, তারপর যা থাকবে তা নিকটতম পুরুষদের",
+            "title_en": "",
+            "title_ar": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+            "title_without_harkat": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ"
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4142,
+                "title": "1615-2",
+                "hadith_number": 3997,
+                "hadith_id": 11046,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:39:53.000Z",
+                "updated_at": "2024-10-17T04:39:53.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11047,
+        "title": "১. অংশীদারদের প্রাপ্য অংশ তাদেরকে দিয়ে দাও, তারপর যা থাকবে তা নিকটতম পুরুষদের",
+        "title_en": "",
+        "title_ar": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+        "title_without_harkat": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4761,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 3998,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৯৯৮। ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ সম্পদ অংশীদারদের মধ্যে আল্লাহর কিতাব অনুযায়ী বণ্টন কর। তারপর ফারাইয যা অবশিষ্ট রাখবে তা নিকটতম পুরুষের প্রাপ্য।",
+        "description_en": "Tawus reported on the authority of Ibn Abbas (Allah be pleased with them) narrating that Allah’s Messenger (ﷺ) said:<br>Distribute the property amongst Ahl al-Fara’id, according to the Book of Allah, and what is left out of them goes to the nearest male heir.",
+        "description_ar": "حَدَّثَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَمُحَمَّدُ بْنُ رَافِعٍ، وَعَبْدُ بْنُ حُمَيْدٍ، - وَاللَّفْظُ لاِبْنِ رَافِعٍ - قَالَ إِسْحَاقُ حَدَّثَنَا وَقَالَ الآخَرَانِ، أَخْبَرَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا مَعْمَرٌ، عَنِ ابْنِ طَاوُسٍ، عَنْ أَبِيهِ، عَنِ ابْنِ عَبَّاسٍ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" اقْسِمُوا الْمَالَ بَيْنَ أَهْلِ الْفَرَائِضِ عَلَى كِتَابِ اللَّهِ فَمَا تَرَكَتِ الْفَرَائِضُ فَلأَوْلَى رَجُلٍ ذَكَرٍ \" .",
+        "description_without_harkat": "حدثنا إسحاق بن إبراهيم، ومحمد بن رافع، وعبد بن حميد، - واللفظ لابن رافع - قال إسحاق حدثنا وقال الآخران، أخبرنا عبد الرزاق، أخبرنا معمر، عن ابن طاوس، عن أبيه، عن ابن عباس، قال قال رسول الله صلى الله عليه وسلم  \" اقسموا المال بين أهل الفرائض على كتاب الله فما تركت الفرائض فلأولى رجل ذكر \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:40:18.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4761,
+            "title": "১. অংশীদারদের প্রাপ্য অংশ তাদেরকে দিয়ে দাও, তারপর যা থাকবে তা নিকটতম পুরুষদের",
+            "title_en": "",
+            "title_ar": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+            "title_without_harkat": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ"
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4143,
+                "title": "1615-3",
+                "hadith_number": 3998,
+                "hadith_id": 11047,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:40:18.000Z",
+                "updated_at": "2024-10-17T04:40:18.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11048,
+        "title": "১. অংশীদারদের প্রাপ্য অংশ তাদেরকে দিয়ে দাও, তারপর যা থাকবে তা নিকটতম পুরুষদের",
+        "title_en": "",
+        "title_ar": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+        "title_without_harkat": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4761,
+        "rabi_id": 588,
+        "type_id": 1,
+        "hadith_number": 3999,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৩৯৯৯। মুহাম্মাদ ইবনে আলা আবু কুরায়ব হামদানী (রাহঃ) ......... ইবনে তাউস (রাহঃ) এর সূত্রে উপরোক্ত হাদীস ওহায়ব ও রাওহ ইবনে কাসিমের হাদীসের অনুরূপ বর্ণনা করেন।",
+        "description_en": "There is another chain of Tawus reporting like the reports that were mentioned before the previous hadith chain through Tawus (the chains of Wuhaib and Rowh bin Qasim).",
+        "description_ar": "وَحَدَّثَنِيهِ مُحَمَّدُ بْنُ الْعَلاَءِ أَبُو كُرَيْبٍ الْهَمْدَانِيُّ، حَدَّثَنَا زَيْدُ بْنُ حُبَابٍ، عَنْ يَحْيَى، بْنِ أَيُّوبَ عَنِ ابْنِ طَاوُسٍ، بِهَذَا الإِسْنَادِ . نَحْوَ حَدِيثِ وُهَيْبٍ وَرَوْحِ بْنِ الْقَاسِمِ .",
+        "description_without_harkat": "وحدثنيه محمد بن العلاء أبو كريب الهمداني، حدثنا زيد بن حباب، عن يحيى، بن أيوب عن ابن طاوس، بهذا الإسناد . نحو حديث وهيب وروح بن القاسم .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2022-12-17T08:47:30.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4761,
+            "title": "১. অংশীদারদের প্রাপ্য অংশ তাদেরকে দিয়ে দাও, তারপর যা থাকবে তা নিকটতম পুরুষদের",
+            "title_en": "",
+            "title_ar": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ",
+            "title_without_harkat": "باب أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا فَمَا بَقِيَ فَلأَوْلَى رَجُلٍ ذَكَرٍ"
+        },
+        "rabis": [],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4144,
+                "title": " 1615-4",
+                "hadith_number": 3999,
+                "hadith_id": 11048,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:40:45.000Z",
+                "updated_at": "2024-10-17T04:40:45.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11049,
+        "title": "২. কালালার* উত্তরাধিকার",
+        "title_en": "",
+        "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4762,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4000,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০০। আমর ইবনে মুহাম্মাদ ইবনে বুকায়র নাকিদ (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমি একবার পিড়িত হই। রাসূলুল্লাহ (ﷺ) ও আবু বকর ((رضي الله عنه)) পায়ে হেঁটে আমাকে দেখতে আসেন। আমি অজ্ঞান হয়ে পড়ি। রাসূলুল্লাহ (ﷺ) উযু করেন এবং উযুর অবশিষ্ট পানি আমার উপর ছিটিয়ে দেন। আমি জ্ঞান ফিরে পেয়ে বললাম, হে আল্লাহর রাসুল! আমি আমার সম্পদ কিরূপে বন্টন করবো? তিনি আমাকে কোন উত্তর দেন নি। অবশেষে মীরাস সংক্রান্ত আয়াত নাযিল হল- (অর্থঃ লোকে আপনার নিকট ব্যবস্থা জানতে চায়। বলুন, পিতামাতাহীন নিঃসন্তান ব্যক্তি সম্বন্ধে তোমাদেরকে আল্লাহ জানাচ্ছেন...)<br><br>*সন্তান ও পিতৃমাতৃহীন অবস্থায় মারা গেলে তাকে 'কালালা' বলা হয়।",
+        "description_en": "Jabir b. ’Abdullah (Allah be pleased with them) reported:<br>I fell sick and there came to me on foot Allah’s Messenger (ﷺ) and Abu Bakr for inquiring after my health. I fainted. He (the Holy Prophet) performed ablution and then sprinkled over me the water of his ablution. I felt some relief and said: Allah’s Messenger, how should I decide about my property? He said nothing to me in response until this verse pertaining to the law of inheritance was revealed:\" They ask you for a decision; say: Allah gives you a decision concerning the person who has neither parents nor children\" (iv. 177).",
+        "description_ar": "حَدَّثَنَا عَمْرُو بْنُ مُحَمَّدِ بْنِ بُكَيْرٍ النَّاقِدُ، حَدَّثَنَا سُفْيَانُ بْنُ عُيَيْنَةَ، عَنْ مُحَمَّدِ بْنِ، الْمُنْكَدِرِ سَمِعَ جَابِرَ بْنَ عَبْدِ اللَّهِ، قَالَ مَرِضْتُ فَأَتَانِي رَسُولُ اللَّهِ صلى الله عليه وسلم وَأَبُو بَكْرٍ يَعُودَانِي مَاشِيَيْنِ فَأُغْمِيَ عَلَىَّ فَتَوَضَّأَ ثُمَّ صَبَّ عَلَىَّ مِنْ وَضُوئِهِ فَأَفَقْتُ قُلْتُ يَا رَسُولَ اللَّهِ كَيْفَ أَقْضِي فِي مَالِي فَلَمْ يَرُدَّ عَلَىَّ شَيْئًا حَتَّى نَزَلَتْ آيَةُ الْمِيرَاثِ ( يَسْتَفْتُونَكَ قُلِ اللَّهُ يُفْتِيكُمْ فِي الْكَلاَلَةِ)",
+        "description_without_harkat": "حدثنا عمرو بن محمد بن بكير الناقد، حدثنا سفيان بن عيينة، عن محمد بن، المنكدر سمع جابر بن عبد الله، قال مرضت فأتاني رسول الله صلى الله عليه وسلم وأبو بكر يعوداني ماشيين فأغمي على فتوضأ ثم صب على من وضوئه فأفقت قلت يا رسول الله كيف أقضي في مالي فلم يرد على شيئا حتى نزلت آية الميراث ( يستفتونك قل الله يفتيكم في الكلالة)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:41:32.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4762,
+            "title": "২. কালালার* উত্তরাধিকার",
+            "title_en": null,
+            "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+            "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4145,
+                "title": "1616-1",
+                "hadith_number": 4000,
+                "hadith_id": 11049,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:41:32.000Z",
+                "updated_at": "2024-10-17T04:41:32.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11050,
+        "title": "২. কালালার উত্তরাধিকার",
+        "title_en": "",
+        "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4763,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4001,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০১। মুহাম্মাদ ইবনে হাতিম ইবনে মায়মুন (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেনঃ নবী (ﷺ) ও আবু বকর ((رضي الله عنه)) পায়ে হেঁটে বনু সালামায় আমাকে দেখতে আসেন। তাঁরা আমাকে অজ্ঞান অবস্থায় পান। রাসূলুল্লাহ (ﷺ) পানি আনতে বলেন। এরপর তিনি উযু করেন এবং তা থেকে কিছু পানি আমার উপর ছিটিয়ে দেন। আমি জ্ঞান লাভ করে বললামঃ হে আল্লাহর রাসুল! আমি আমার সম্পদ কিভাবে বন্টন করবো তখন নাযিল হয়ঃ আল্লাহ তোমাদের সন্তান সম্বন্ধে নির্দেশ দিচ্ছেন; এক পুত্রের অংশ দুই কন্যার অংশের সমান......।",
+        "description_en": "Jabir b. ’Abdullah (Allah be pleased with him) reported:<br>Allah’s Apostle (ﷺ) and Abi Bakr (Allah be pleased with him) visited me on foot in Banu Salama, and found me unconscious. He (the Holy Prophet) called for water and performed ablution and sprinkled out of it (the water) over me. I felt relieved. I said: Allah’s Messenger, what should I do with my property? And this verse was revealed:\" Allah enjoins you concerning your children: for the male is equal of the portion of two females.\"",
+        "description_ar": "حَدَّثَنِي مُحَمَّدُ بْنُ حَاتِمِ بْنِ مَيْمُونٍ، حَدَّثَنَا حَجَّاجُ بْنُ مُحَمَّدٍ، حَدَّثَنَا ابْنُ جُرَيْجٍ، قَالَ أَخْبَرَنِي ابْنُ الْمُنْكَدِرِ، عَنْ جَابِرِ بْنِ عَبْدِ اللَّهِ، قَالَ عَادَنِي النَّبِيُّ صلى الله عليه وسلم وَأَبُو بَكْرٍ فِي بَنِي سَلَمَةَ يَمْشِيَانِ فَوَجَدَنِي لاَ أَعْقِلُ فَدَعَا بِمَاءٍ فَتَوَضَّأَ ثُمَّ رَشَّ عَلَىَّ مِنْهُ فَأَفَقْتُ فَقُلْتُ كَيْفَ أَصْنَعُ فِي مَالِي يَا رَسُولَ اللَّهِ فَنَزَلَتْ (يُوصِيكُمُ اللَّهُ فِي أَوْلاَدِكُمْ لِلذَّكَرِ مِثْلُ حَظِّ الأُنْثَيَيْنِ)",
+        "description_without_harkat": "حدثني محمد بن حاتم بن ميمون، حدثنا حجاج بن محمد، حدثنا ابن جريج، قال أخبرني ابن المنكدر، عن جابر بن عبد الله، قال عادني النبي صلى الله عليه وسلم وأبو بكر في بني سلمة يمشيان فوجدني لا أعقل فدعا بماء فتوضأ ثم رش على منه فأفقت فقلت كيف أصنع في مالي يا رسول الله فنزلت (يوصيكم الله في أولادكم للذكر مثل حظ الأنثيين)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:42:31.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4763,
+            "title": "২. কালালার উত্তরাধিকার",
+            "title_en": null,
+            "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+            "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4146,
+                "title": "1616-2",
+                "hadith_number": 4001,
+                "hadith_id": 11050,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:42:31.000Z",
+                "updated_at": "2024-10-17T04:42:31.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11051,
+        "title": "২. কালালার উত্তরাধিকার",
+        "title_en": "",
+        "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4763,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4002,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০২। উবাইদুল্লাহ ইবনে উমর কাওয়ারীরী (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমাকে রাসূলুল্লাহ (ﷺ) দেখতে আসেন। আমি রোগাক্রান্ত ছিলাম। তার সঙ্গে ছিলেন আবু বকর ((رضي الله عنه))। তাঁরা উভয়েই পায়ে হেঁটে আসেন। তিনি আমাকে বেহুশ অবস্থায় দেখতে পান। এরপর রাসূলুল্লাহ (ﷺ) উযু করেন এবং তাঁর উযুর অবশিষ্ট পানির কিছু আমার উপর ছিটিয়ে দেন। আমি জ্ঞান ফিরে পেয়ে রাসূলুল্লাহ (ﷺ) কে দেখতে পেলাম। আমি বললামঃ হে আল্লাহর রাসুল! আমি আমার সম্পদ কিভাবে বন্টন করবো? আমাকে তিনি কিছুই উত্তর দিলেন না। পরে মীরাসের আয়াত নাযিল হয়।",
+        "description_en": "Jabir b. ’Abdullah (Allah be pleased with them) reported:<br>While I had been ill Allah’s Messenger (ﷺ) visited me and Abu akr (Allah be pleased with him) was with him, and they both came walking on foot. He (the Holy Prophet) found me unconscious. Allahs Messenger (ﷺ) performed ablution and then sprinkled over me the water of his ablution. I felt relieved regained my consciousness) and found Allah’s Messenger (ﷺ) there. I said: Allah’s Messenger, what should I do with my property? He gave me no reply until the verse (iv. 177) relating to the law of inheritance was revealed.",
+        "description_ar": "حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ عُمَرَ الْقَوَارِيرِيُّ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ، - يَعْنِي ابْنَ مَهْدِيٍّ - حَدَّثَنَا سُفْيَانُ، قَالَ سَمِعْتُ مُحَمَّدَ بْنَ الْمُنْكَدِرِ، قَالَ سَمِعْتُ جَابِرَ بْنَ عَبْدِ اللَّهِ، يَقُولُ عَادَنِي رَسُولُ اللَّهِ صلى الله عليه وسلم وَأَنَا مَرِيضٌ وَمَعَهُ أَبُو بَكْرٍ مَاشِيَيْنِ فَوَجَدَنِي قَدْ أُغْمِيَ عَلَىَّ فَتَوَضَّأَ رَسُولُ اللَّهِ صلى الله عليه وسلم ثُمَّ صَبَّ عَلَىَّ مِنْ وَضُوئِهِ فَأَفَقْتُ فَإِذَا رَسُولُ اللَّهِ صلى الله عليه وسلم فَقُلْتُ يَا رَسُولَ اللَّهِ كَيْفَ أَصْنَعُ فِي مَالِي فَلَمْ يَرُدَّ عَلَىَّ شَيْئًا حَتَّى نَزَلَتْ آيَةُ الْمِيرَاثِ .",
+        "description_without_harkat": "حدثنا عبيد الله بن عمر القواريري، حدثنا عبد الرحمن، - يعني ابن مهدي - حدثنا سفيان، قال سمعت محمد بن المنكدر، قال سمعت جابر بن عبد الله، يقول عادني رسول الله صلى الله عليه وسلم وأنا مريض ومعه أبو بكر ماشيين فوجدني قد أغمي على فتوضأ رسول الله صلى الله عليه وسلم ثم صب على من وضوئه فأفقت فإذا رسول الله صلى الله عليه وسلم فقلت يا رسول الله كيف أصنع في مالي فلم يرد على شيئا حتى نزلت آية الميراث .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:43:58.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4763,
+            "title": "২. কালালার উত্তরাধিকার",
+            "title_en": null,
+            "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+            "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4147,
+                "title": "1616-3",
+                "hadith_number": 4002,
+                "hadith_id": 11051,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:43:58.000Z",
+                "updated_at": "2024-10-17T04:43:58.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11052,
+        "title": "২. কালালার উত্তরাধিকার",
+        "title_en": "",
+        "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4763,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4003,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০৩। মুহাম্মাদ ইবনে হাতিম (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) আমার কাছে আগমন করেন। আমি তখন রোগে বেহুশ ছিলাম। তিনি উযু করেন। তাঁর উযুর পানির কিছু অংশ লোকেরা আমার উপর ছিটিয়ে দেয়। আমি জ্ঞান ফিরে পেয়ে বললাম, হে আল্লাহর রাসুল! কালালা আমার মিরাস পাবে। এরপর মীরাসের আয়াত অবতীর্ণ হয়। আমি মুহাম্মাদ ইবনে মুনকাদিরকে বললাম يَسْتَفْتُونَكَ قُلِ اللَّهُ يُفْتِيكُمْ فِي الْكَلاَلَةِ (আয়াত) তিনি বললেন, এরূপই অবতীর্ণ হয়েছে।",
+        "description_en": "Jabir b. Abdullah (Allah be pleased with him) reported:<br>Whilo I was ill Allah’s Messenger (ﷺ) came to me and found me unconscious. He (the Holy Prophet) performed ablution, and sprinkled over me the water of his ablution. I regained my consciousness and said: Allah’s Messenger, my case of inheritance is that of Kalala. Then the verse pertaining to the inheritance ( of Kalala) was revealed. I (one of the narrators) said: I said to Muhammad b. Munkadir: (Do you mean this verse)\" They ask you; say: Allah gives you decision in regard to Kalala\" (iv. 177)? He said: Yes, it was thus revealed.",
+        "description_ar": "حَدَّثَنِي مُحَمَّدُ بْنُ حَاتِمٍ، حَدَّثَنَا بَهْزٌ، حَدَّثَنَا شُعْبَةُ، أَخْبَرَنِي مُحَمَّدُ بْنُ الْمُنْكَدِرِ، قَالَ سَمِعْتُ جَابِرَ بْنَ عَبْدِ اللَّهِ، يَقُولُ دَخَلَ عَلَىَّ رَسُولُ اللَّهِ صلى الله عليه وسلم وَأَنَا مَرِيضٌ لاَ أَعْقِلُ فَتَوَضَّأَ فَصَبُّوا عَلَىَّ مِنْ وَضُوئِهِ فَعَقَلْتُ فَقُلْتُ يَا رَسُولَ اللَّهِ إِنَّمَا يَرِثُنِي كَلاَلَةٌ . فَنَزَلَتْ آيَةُ الْمِيرَاثِ . فَقُلْتُ لِمُحَمَّدِ بْنِ الْمُنْكَدِرِ ( يَسْتَفْتُونَكَ قُلِ اللَّهُ يُفْتِيكُمْ فِي الْكَلاَلَةِ) قَالَ هَكَذَا أُنْزِلَتْ.",
+        "description_without_harkat": "حدثني محمد بن حاتم، حدثنا بهز، حدثنا شعبة، أخبرني محمد بن المنكدر، قال سمعت جابر بن عبد الله، يقول دخل على رسول الله صلى الله عليه وسلم وأنا مريض لا أعقل فتوضأ فصبوا على من وضوئه فعقلت فقلت يا رسول الله إنما يرثني كلالة . فنزلت آية الميراث . فقلت لمحمد بن المنكدر ( يستفتونك قل الله يفتيكم في الكلالة) قال هكذا أنزلت.",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:46:04.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4763,
+            "title": "২. কালালার উত্তরাধিকার",
+            "title_en": null,
+            "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+            "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4148,
+                "title": " 1616-4",
+                "hadith_number": 4003,
+                "hadith_id": 11052,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:46:04.000Z",
+                "updated_at": "2024-10-17T04:46:04.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11053,
+        "title": "২. কালালার উত্তরাধিকার",
+        "title_en": "",
+        "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4763,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 4004,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০৪। ইসহাক ইবনে ইবরাহীম (রাহঃ) নযর ইবনে শুমায়ল ও আবু আমির আকাদী (রাহঃ) থেকে এবং মুহাম্মাদ ইবনে মুসান্না (রাহঃ) ওয়াহব ইবনে জারীর (রাহঃ) থেকে এবং তারা সকলেই শু’বা (রাহঃ) থেকে উক্ত হাদীস বর্ণনা করেন। ওয়াহাব ইবনে জারীর এর হাদীসে আছে ‘ফারাইয এর আয়াত নাযিল হলো’। আর নযর ও আকাদীর বর্ণনায় আছে ’ফারয এর আয়াত নাযিল হলো’। কিন্তু তাদের কারও বর্ণনায়ই একথা নেই যে, শু’বা ইবনে মুনকাদিরকে বলেছেন।",
+        "description_en": "This hadith is transmitted on the authority of Shu’ba but with a slight variation of words.",
+        "description_ar": "حَدَّثَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ، أَخْبَرَنَا النَّضْرُ بْنُ شُمَيْلٍ، وَأَبُو عَامِرٍ الْعَقَدِيُّ ح وَحَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، حَدَّثَنَا وَهْبُ بْنُ جَرِيرٍ، كُلُّهُمْ عَنْ شُعْبَةَ، بِهَذَا الإِسْنَادِ . فِي حَدِيثِ وَهْبِ بْنِ جَرِيرٍ فَنَزَلَتْ آيَةُ الْفَرَائِضِ . وَفِي حَدِيثِ النَّضْرِ وَالْعَقَدِيِّ فَنَزَلَتْ آيَةُ الْفَرْضِ . وَلَيْسَ فِي رِوَايَةِ أَحَدٍ مِنْهُمْ قَوْلُ شُعْبَةَ لاِبْنِ الْمُنْكَدِرِ .",
+        "description_without_harkat": "حدثنا إسحاق بن إبراهيم، أخبرنا النضر بن شميل، وأبو عامر العقدي ح وحدثنا محمد بن المثنى، حدثنا وهب بن جرير، كلهم عن شعبة، بهذا الإسناد . في حديث وهب بن جرير فنزلت آية الفرائض . وفي حديث النضر والعقدي فنزلت آية الفرض . وليس في رواية أحد منهم قول شعبة لابن المنكدر .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:52:43.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4763,
+            "title": "২. কালালার উত্তরাধিকার",
+            "title_en": null,
+            "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+            "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 9,
+                "title": "বিবিধ",
+                "title_en": null,
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4150,
+                "title": "1616-5",
+                "hadith_number": 4004,
+                "hadith_id": 11053,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:55:31.000Z",
+                "updated_at": "2024-10-17T04:55:31.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11054,
+        "title": "২. কালালার উত্তরাধিকার",
+        "title_en": "",
+        "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4763,
+        "rabi_id": 494,
+        "type_id": 1,
+        "hadith_number": 4005,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০৫। মুহাম্মাদ ইবনে আবু বকর মুকাদ্দামী ও মুহাম্মাদ ইবনে মুসান্না (রাহঃ) ......... মা’দান ইবনে আবু তালহা (রাহঃ) থেকে বর্ণিত। উমর ইবনে খাত্তাব ((رضي الله عنه)) এক জুমআর খুতবা দেন। তিনি নবী (ﷺ) ও আবু বকর ((رضي الله عنه)) এর উল্লেখ করেন। এরপর বলেন, আমি আমার পরে এমন কোন বিষয় রেখে যাব না, যা আমার নিকট কালালার চেয়ে বেশী জটিল। আমি রাসূলুল্লাহ (ﷺ) এর নিকট আর কোন বিষয় নিয়ে বারবার জিজ্ঞাসা করিনি, যেমন বারবার জিজ্ঞাসা করেছি ’কালালা’ সম্পর্কে। আর তিনিও অন্য কোন বিষয়ে এমন কঠোরতা আমাকে দেখাননি যেরূপ কঠোরতা দেখিয়েছেন এ বিষয়ে। এমন কি তিনি তাঁর আঙ্গুল আমার বুকের উপর চেপে ধরেন এবং বলেন, হে উমর! গ্রীষ্মকালে অবতীর্ণ সূরা নিসার শেষের আয়াত কি তোমার জন্য যথেষ্ট নয়? আর আমি যদি জীবিত থাকি তবে এ ব্যাপারে এমন ফয়সালা করবো যা দেখে ফয়সালা করবে সেই ব্যক্তি যে কুরআন পড়ে আর যে কুরআন পড়ে না উভয়ে।",
+        "description_en": "Abu Talha reported:<br>’Umar b. al-Khattab (Allah be pleased with him) delivered a sermon on Friday and made a mention of Allah’s Apostle (ﷺ) and he also made a mention of Abu Bakr (Allah be pleased with him) and then said: I do not leave behind me any problem more difficult than that of Kalala. I did not refer to Allah’s Messenger (ﷺ) more repeatedly than in case of the problem of Kalala, and he (the Holy Prophet) never showed more annoyance to me than in regard to this problem, so much so that he struck my chest with his fingers and said: ’Umar, does the verse revealed in summer season, at the end of Sura al-Nisa’ not suffice you? Hadrat ’Umar (then) said: If I live I would give such verdict about (Kalala) that everyone would be able to decide whether he reads the Qur’an or he does not.",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ أَبِي بَكْرٍ الْمُقَدَّمِيُّ، وَمُحَمَّدُ بْنُ الْمُثَنَّى، - وَاللَّفْظُ لاِبْنِ الْمُثَنَّى - قَالاَ حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ، حَدَّثَنَا هِشَامٌ، حَدَّثَنَا قَتَادَةُ، عَنْ سَالِمِ بْنِ أَبِي الْجَعْدِ، عَنْ مَعْدَانَ بْنِ، أَبِي طَلْحَةَ أَنَّ عُمَرَ بْنَ الْخَطَّابِ، خَطَبَ يَوْمَ جُمُعَةٍ فَذَكَرَ نَبِيَّ اللَّهِ صلى الله عليه وسلم وَذَكَرَ أَبَا بَكْرٍ ثُمَّ قَالَ إِنِّي لاَ أَدَعُ بَعْدِي شَيْئًا أَهَمَّ عِنْدِي مِنَ الْكَلاَلَةِ مَا رَاجَعْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم فِي شَىْءٍ مَا رَاجَعْتُهُ فِي الْكَلاَلَةِ وَمَا أَغْلَظَ لِي فِي شَىْءٍ مَا أَغْلَظَ لِي فِيهِ حَتَّى طَعَنَ بِإِصْبَعِهِ فِي صَدْرِي وَقَالَ  \" يَا عُمَرُ أَلاَ تَكْفِيكَ آيَةُ الصَّيْفِ الَّتِي فِي آخِرِ سُورَةِ النِّسَاءِ \" . وَإِنِّي إِنْ أَعِشْ أَقْضِ فِيهَا بِقَضِيَّةٍ يَقْضِي بِهَا مَنْ يَقْرَأُ الْقُرْآنَ وَمَنْ لاَ يَقْرَأُ الْقُرْآنَ .",
+        "description_without_harkat": "حدثنا محمد بن أبي بكر المقدمي، ومحمد بن المثنى، - واللفظ لابن المثنى - قالا حدثنا يحيى بن سعيد، حدثنا هشام، حدثنا قتادة، عن سالم بن أبي الجعد، عن معدان بن، أبي طلحة أن عمر بن الخطاب، خطب يوم جمعة فذكر نبي الله صلى الله عليه وسلم وذكر أبا بكر ثم قال إني لا أدع بعدي شيئا أهم عندي من الكلالة ما راجعت رسول الله صلى الله عليه وسلم في شىء ما راجعته في الكلالة وما أغلظ لي في شىء ما أغلظ لي فيه حتى طعن بإصبعه في صدري وقال  \" يا عمر ألا تكفيك آية الصيف التي في آخر سورة النساء \" . وإني إن أعش أقض فيها بقضية يقضي بها من يقرأ القرآن ومن لا يقرأ القرآن .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T04:58:34.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4763,
+            "title": "২. কালালার উত্তরাধিকার",
+            "title_en": null,
+            "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+            "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 494,
+                "title": "মা'দান ইবনে তালহা ((رحمة الله))",
+                "title_en": "Ma'dan Ibn Takha",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4151,
+                "title": "1617-1",
+                "hadith_number": 4005,
+                "hadith_id": 11054,
+                "book_id": 2,
+                "created_at": "2024-10-17T04:58:34.000Z",
+                "updated_at": "2024-10-17T04:58:34.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11055,
+        "title": "২. কালালার উত্তরাধিকার",
+        "title_en": "",
+        "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4763,
+        "rabi_id": 228,
+        "type_id": 1,
+        "hadith_number": 4006,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০৬। আবু বকর ইবনে আবি শাঈবা, যুহাইর ইবনে হারব, ইসহাক ইবনে ইবরাহীম ও ইবনে রাফি (রাহঃ) ......... কাতাদা (রাহঃ) সূত্রে এই সনদে অনুরূপ বর্ণনা করেন।",
+        "description_en": "This hadith has been narrated on the authority of Qatada with the same chain of transmitters.",
+        "description_ar": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا إِسْمَاعِيلُ ابْنُ عُلَيَّةَ، عَنْ سَعِيدِ بْنِ أَبِي عَرُوبَةَ، ح وَحَدَّثَنَا زُهَيْرُ بْنُ حَرْبٍ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَابْنُ، رَافِعٍ عَنْ شَبَابَةَ بْنِ سَوَّارٍ، عَنْ شُعْبَةَ، كِلاَهُمَا عَنْ قَتَادَةَ، بِهَذَا الإِسْنَادِ نَحْوَهُ .",
+        "description_without_harkat": "وحدثنا أبو بكر بن أبي شيبة، حدثنا إسماعيل ابن علية، عن سعيد بن أبي عروبة، ح وحدثنا زهير بن حرب، وإسحاق بن إبراهيم، وابن، رافع عن شبابة بن سوار، عن شعبة، كلاهما عن قتادة، بهذا الإسناد نحوه .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:01:13.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4763,
+            "title": "২. কালালার উত্তরাধিকার",
+            "title_en": null,
+            "title_ar": "باب مِيرَاثِ الْكَلاَلَةِ",
+            "title_without_harkat": "باب مِيرَاثِ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 228,
+                "title": "কাতাদা ইবনে দিআমা ((رحمة الله))",
+                "title_en": "Katadah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4152,
+                "title": "1617-2",
+                "hadith_number": 4006,
+                "hadith_id": 11055,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:01:13.000Z",
+                "updated_at": "2024-10-17T05:01:13.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11056,
+        "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+        "title_en": "",
+        "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4764,
+        "rabi_id": 16,
+        "type_id": 1,
+        "hadith_number": 4007,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০৭। আলী ইবনে খাশরাম (রাহঃ) ......... বারা’ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, কুরআনের সর্বশেষ যে আয়াত নাযিল হয় তা হলোঃ يَسْتَفْتُونَكَ قُلِ اللَّهُ يُفْتِيكُمْ فِي الْكَلاَلَةِ",
+        "description_en": "Al-Bara’ (Allah be pleased with him) reported that the last verse revealed in the Holy Qur’an is:<br>\" They ask thee for a religious verdict; say: Allah gives you a religious verdict about Kalala (the person who has neither parents nor children)\" (iv 177).",
+        "description_ar": "حَدَّثَنَا عَلِيُّ بْنُ خَشْرَمٍ، أَخْبَرَنَا وَكِيعٌ، عَنِ ابْنِ أَبِي خَالِدٍ، عَنْ أَبِي إِسْحَاقَ، عَنِ الْبَرَاءِ، قَالَ آخِرُ آيَةٍ أُنْزِلَتْ مِنَ الْقُرْآنِ ( يَسْتَفْتُونَكَ قُلِ اللَّهُ يُفْتِيكُمْ فِي الْكَلاَلَةِ)",
+        "description_without_harkat": "حدثنا علي بن خشرم، أخبرنا وكيع، عن ابن أبي خالد، عن أبي إسحاق، عن البراء، قال آخر آية أنزلت من القرآن ( يستفتونك قل الله يفتيكم في الكلالة)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:04:03.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4764,
+            "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+            "title_en": null,
+            "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+            "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 16,
+                "title": "হযরত বারা’ ইবনে আযিব (رضي الله عنه)",
+                "title_en": "Bara Ibnu Ajib (RA)",
+                "title_ar": "البراء بن عازب الانصاري ثم الحارثي",
+                "death_year": "71"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4153,
+                "title": "1618-1",
+                "hadith_number": 4007,
+                "hadith_id": 11056,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:04:03.000Z",
+                "updated_at": "2024-10-17T05:04:03.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11057,
+        "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+        "title_en": "",
+        "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4764,
+        "rabi_id": 229,
+        "type_id": 1,
+        "hadith_number": 4008,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০৮। মুহাম্মাদ ইবনে মুসান্না ও ইবনে বাশশার (রাহঃ) ......... আবু ইসহাক (রাহঃ) থেকে বর্ণিত। তিনি বলেন, আমি বারা’ ইবনে আযিব ((رضي الله عنه)) কে বলতে শুনেছি যে, সর্বশেষ নাযিলকৃত আয়াত কালালার আয়াত এবং সর্বশেষ নাযিলকৃত সূরা বারাআত (তাওবা)।",
+        "description_en": "Abu Ishaq said that he heard al-Bara’ b. ’Azib (Allah be pleased with him say:<br>The last verse revealed (in the Holy Quran) is that pertaining to Kalala, and the last sura revealed is Sura al-Bara’at.",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ، بَشَّارٍ قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، عَنْ أَبِي إِسْحَاقَ، قَالَ سَمِعْتُ الْبَرَاءَ بْنَ عَازِبٍ، يَقُولُ آخِرُ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ وَآخِرُ سُورَةٍ أُنْزِلَتْ بَرَاءَةُ .",
+        "description_without_harkat": "حدثنا محمد بن المثنى، وابن، بشار قالا حدثنا محمد بن جعفر، حدثنا شعبة، عن أبي إسحاق، قال سمعت البراء بن عازب، يقول آخر آية أنزلت آية الكلالة وآخر سورة أنزلت براءة .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:04:31.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4764,
+            "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+            "title_en": null,
+            "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+            "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 229,
+                "title": "আবু ইসহাক সাবিঈ ((رحمة الله))",
+                "title_en": "Abu Ishak (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4154,
+                "title": "1618-2",
+                "hadith_number": 4008,
+                "hadith_id": 11057,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:04:31.000Z",
+                "updated_at": "2024-10-17T05:04:31.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11058,
+        "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+        "title_en": "",
+        "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4764,
+        "rabi_id": 16,
+        "type_id": 1,
+        "hadith_number": 4009,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০০৯। ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... বারা’ ((رضي الله عنه)) থেকে বর্ণিত যে, সর্বশেষ অবতীর্ণ পূর্ণাঙ্গ সূরা, সূরা তাওবা আর সর্বশেষ অবতীর্ণ আয়াত ’কালালা’র আয়াত।",
+        "description_en": "Abu Ishaq said that he heard al-Bara’ b. ’Azib (Allah be pleased with him) say:<br>The last complete sura revealed (in the Holy Qur’an) is Sura Tauba (i e. al-Bara’at, ix.), and the last verse revealed is that pertaining to Kalala.",
+        "description_ar": "حَدَّثَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ الْحَنْظَلِيُّ، أَخْبَرَنَا عِيسَى، - وَهُوَ ابْنُ يُونُسَ - حَدَّثَنَا زَكَرِيَّاءُ، عَنْ أَبِي إِسْحَاقَ، عَنِ الْبَرَاءِ، أَنَّ آخِرَ، سُورَةٍ أُنْزِلَتْ تَامَّةً سُورَةُ التَّوْبَةِ وَأَنَّ آخِرَ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ .",
+        "description_without_harkat": "حدثنا إسحاق بن إبراهيم الحنظلي، أخبرنا عيسى، - وهو ابن يونس - حدثنا زكرياء، عن أبي إسحاق، عن البراء، أن آخر، سورة أنزلت تامة سورة التوبة وأن آخر آية أنزلت آية الكلالة .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:05:03.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4764,
+            "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+            "title_en": null,
+            "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+            "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 16,
+                "title": "হযরত বারা’ ইবনে আযিব (رضي الله عنه)",
+                "title_en": "Bara Ibnu Ajib (RA)",
+                "title_ar": "البراء بن عازب الانصاري ثم الحارثي",
+                "death_year": "71"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4155,
+                "title": " 1618-3",
+                "hadith_number": 4009,
+                "hadith_id": 11058,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:05:03.000Z",
+                "updated_at": "2024-10-17T05:05:03.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11059,
+        "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+        "title_en": "",
+        "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4764,
+        "rabi_id": 16,
+        "type_id": 1,
+        "hadith_number": 4010,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১০। আবু কুরায়ব (রাহঃ) ......... বারা’ ((رضي الله عنه)) থেকে অনুরূপ বর্ণনা করেন। তবে তিনি (تَامَّةً স্থলে) كَامِلَةً (পূর্ণাঙ্গ সূরা) বলেন।",
+        "description_en": "Aba Ishaq reported this hadith on the authority of al-Bara’ (Allah be pleased with him) with a slight variation of words, viz. the last sura that was revealed complete.",
+        "description_ar": "حَدَّثَنَا أَبُو كُرَيْبٍ، حَدَّثَنَا يَحْيَى، - يَعْنِي ابْنَ آدَمَ - حَدَّثَنَا عَمَّارٌ، - وَهُوَ ابْنُ رُزَيْقٍ - عَنْ أَبِي إِسْحَاقَ، عَنِ الْبَرَاءِ، بِمِثْلِهِ غَيْرَ أَنَّهُ قَالَ آخِرُ سُورَةٍ أُنْزِلَتْ كَامِلَةً .",
+        "description_without_harkat": "حدثنا أبو كريب، حدثنا يحيى، - يعني ابن آدم - حدثنا عمار، - وهو ابن رزيق - عن أبي إسحاق، عن البراء، بمثله غير أنه قال آخر سورة أنزلت كاملة .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:08:03.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4764,
+            "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+            "title_en": null,
+            "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+            "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 16,
+                "title": "হযরত বারা’ ইবনে আযিব (رضي الله عنه)",
+                "title_en": "Bara Ibnu Ajib (RA)",
+                "title_ar": "البراء بن عازب الانصاري ثم الحارثي",
+                "death_year": "71"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4156,
+                "title": "1618-4",
+                "hadith_number": 4010,
+                "hadith_id": 11059,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:08:03.000Z",
+                "updated_at": "2024-10-17T05:08:03.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11060,
+        "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+        "title_en": "",
+        "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4764,
+        "rabi_id": 16,
+        "type_id": 1,
+        "hadith_number": 4011,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১১। আমর নাকিদ (রাহঃ) ......... বারা’ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, সর্বশেষ অবতীর্ণ আয়াত يَسْتَفْتُونَكَ",
+        "description_en": "Al-Bara’ (Allah be pleased with him) reported that the last verse revealed was:<br>\" They ask of thee religious verdict..\" (iv. 177).",
+        "description_ar": "حَدَّثَنَا عَمْرٌو النَّاقِدُ، حَدَّثَنَا أَبُو أَحْمَدَ الزُّبَيْرِيُّ، حَدَّثَنَا مَالِكُ بْنُ مِغْوَلٍ، عَنْ أَبِي، السَّفَرِ عَنِ الْبَرَاءِ، قَالَ آخِرُ آيَةٍ أُنْزِلَتْ يَسْتَفْتُونَكَ .",
+        "description_without_harkat": "حدثنا عمرو الناقد، حدثنا أبو أحمد الزبيري، حدثنا مالك بن مغول، عن أبي، السفر عن البراء، قال آخر آية أنزلت يستفتونك .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:09:45.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4764,
+            "title": "৩. কালালা সম্পর্কিত আয়াতই সর্বশেষ নাযিলকৃত আয়াত",
+            "title_en": null,
+            "title_ar": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ",
+            "title_without_harkat": "باب آخِرِ آيَةٍ أُنْزِلَتْ آيَةُ الْكَلاَلَةِ"
+        },
+        "rabis": [
+            {
+                "id": 16,
+                "title": "হযরত বারা’ ইবনে আযিব (رضي الله عنه)",
+                "title_en": "Bara Ibnu Ajib (RA)",
+                "title_ar": "البراء بن عازب الانصاري ثم الحارثي",
+                "death_year": "71"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4157,
+                "title": "1618-5",
+                "hadith_number": 4011,
+                "hadith_id": 11060,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:09:45.000Z",
+                "updated_at": "2024-10-17T05:09:45.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11061,
+        "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+        "title_en": "",
+        "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4765,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 4012,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১২। যুহাইর ইবনে হারব ও হারামালা ইবনে ইয়াহয়া (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত যে, রাসূলুল্লাহ (ﷺ) এর নিকট যদি এমন লাশ আসতো যার উপর ঋণ থাকতো, তবে তিনি জিজ্ঞাসা করতেন, সে কি তার ঋণ পরিশোধের জন্য ঐ পরিমাণ সম্পদ রেখে গেছে (যা দ্বারা ঋণ পূরা হতে পারে)? যদি জানান হতো যে, সে ঋণ পুরো করার পরিমাণ সম্পদ রেখে গেছে, তবে তিনি তার জানাযা পড়াতেন। অন্যথায় বলতেন, তোমরা তোমাদের সাথীর জানাযা পড়ো।<br><br>যখন আল্লাহ তাকে বিজয়সমূহ দান করেন (এবং সম্পদের প্রাচুর্যের পথ খুলে দেন), তখন তিনি বলেন যে, আমি মুমিনদের জন্য তাদের নিজেদের অপেক্ষাও বেশী নিকটবর্তী। সুতরাং যে ব্যক্তি ঋণগ্রস্ত অবস্থায় মারা যাবে, তার সে ঋণ পরিশোধের দায়িত্ব আমার উপর। আর যে লোক সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported that when the body of a dead person having burden of debt upon him was brought to Allah’s Messenger (ﷺ) he would ask whether he had left property enough to clear off his debt, and if the property left had been sufficient for that (purpose), he observed funeral prayer for him, otherwise he said (to his companions):<br>You observe prayer for your companion. But when Allah opened the gateways of victory for him, he said: I am nearer to the believers than themselves, so if anyone dies leaving a debt, its payment is my responsibility, and if anyone leaves a property, it goes to his heirs.",
+        "description_ar": "وَحَدَّثَنِي زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا أَبُو صَفْوَانَ الأُمَوِيُّ، عَنْ يُونُسَ الأَيْلِيِّ، ح وَحَدَّثَنِي حَرْمَلَةُ بْنُ يَحْيَى، - وَاللَّفْظُ لَهُ - قَالَ أَخْبَرَنَا عَبْدُ اللَّهِ بْنُ وَهْبٍ، أَخْبَرَنِي يُونُسُ، عَنِ ابْنِ، شِهَابٍ عَنْ أَبِي سَلَمَةَ بْنِ عَبْدِ الرَّحْمَنِ، عَنْ أَبِي هُرَيْرَةَ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم كَانَ يُؤْتَى بِالرَّجُلِ الْمَيِّتِ عَلَيْهِ الدَّيْنُ فَيَسْأَلُ \" هَلْ تَرَكَ لِدَيْنِهِ مِنْ قَضَاءٍ \" . فَإِنْ حُدِّثَ أَنَّهُ تَرَكَ وَفَاءً صَلَّى عَلَيْهِ وَإِلاَّ قَالَ \" صَلُّوا عَلَى صَاحِبِكُمْ \" . فَلَمَّا فَتَحَ اللَّهُ عَلَيْهِ الْفُتُوحَ قَالَ \" أَنَا أَوْلَى بِالْمُؤْمِنِينَ مِنْ أَنْفُسِهِمْ فَمَنْ تُوُفِّيَ وَعَلَيْهِ دَيْنٌ فَعَلَىَّ قَضَاؤُهُ وَمَنْ تَرَكَ مَالاً فَهُوَ لِوَرَثَتِهِ \" .",
+        "description_without_harkat": "وحدثني زهير بن حرب، حدثنا أبو صفوان الأموي، عن يونس الأيلي، ح وحدثني حرملة بن يحيى، - واللفظ له - قال أخبرنا عبد الله بن وهب، أخبرني يونس، عن ابن، شهاب عن أبي سلمة بن عبد الرحمن، عن أبي هريرة، أن رسول الله صلى الله عليه وسلم كان يؤتى بالرجل الميت عليه الدين فيسأل \" هل ترك لدينه من قضاء \" . فإن حدث أنه ترك وفاء صلى عليه وإلا قال \" صلوا على صاحبكم \" . فلما فتح الله عليه الفتوح قال \" أنا أولى بالمؤمنين من أنفسهم فمن توفي وعليه دين فعلى قضاؤه ومن ترك مالا فهو لورثته \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:10:06.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4765,
+            "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+            "title_en": "",
+            "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+            "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4158,
+                "title": "1619-1",
+                "hadith_number": 4012,
+                "hadith_id": 11061,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:10:06.000Z",
+                "updated_at": "2024-10-17T05:10:06.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11062,
+        "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+        "title_en": "",
+        "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4765,
+        "rabi_id": 115,
+        "type_id": 1,
+        "hadith_number": 4013,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১৩। আব্দুল মালিক ইবনে শুআয়ব ইবনে লাঈস, যূহায়র ইবনে হারব ও ইবনে নুমাইর (রাহঃ) ......... যুহরী (রাহঃ) এর সূত্রে উক্ত সনদে এ হাদীসটি বর্ণনা করেন।",
+        "description_en": "This hadith has been narrated on the authority of al-Zuhri through another chain of transmitters.",
+        "description_ar": "حَدَّثَنَا عَبْدُ الْمَلِكِ بْنُ شُعَيْبِ بْنِ اللَّيْثِ، حَدَّثَنِي أَبِي، عَنْ جَدِّي، حَدَّثَنِي عُقَيْلٌ، ح وَحَدَّثَنِي زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا يَعْقُوبُ بْنُ إِبْرَاهِيمَ، حَدَّثَنَا ابْنُ أَخِي ابْنِ شِهَابٍ، ح وَحَدَّثَنَا ابْنُ نُمَيْرٍ، حَدَّثَنَا أَبِي، حَدَّثَنَا ابْنُ أَبِي ذِئْبٍ، كُلُّهُمْ عَنِ الزُّهْرِيِّ، بِهَذَا الإِسْنَادِ هَذَا الْحَدِيثَ .",
+        "description_without_harkat": "حدثنا عبد الملك بن شعيب بن الليث، حدثني أبي، عن جدي، حدثني عقيل، ح وحدثني زهير بن حرب، حدثنا يعقوب بن إبراهيم، حدثنا ابن أخي ابن شهاب، ح وحدثنا ابن نمير، حدثنا أبي، حدثنا ابن أبي ذئب، كلهم عن الزهري، بهذا الإسناد هذا الحديث .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:21:15.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4765,
+            "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+            "title_en": "",
+            "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+            "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ"
+        },
+        "rabis": [
+            {
+                "id": 115,
+                "title": "ইবনে শিহাব যুহরী ((رحمة الله))",
+                "title_en": "Ibn Shihab (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4159,
+                "title": "1619-2",
+                "hadith_number": 4013,
+                "hadith_id": 11062,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:21:15.000Z",
+                "updated_at": "2024-10-17T05:21:15.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11063,
+        "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+        "title_en": "",
+        "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4765,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 4014,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১৪। মুহাম্মাদ ইবনে রাফি’ (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) এর সূত্রে নবী (ﷺ) থেকে বর্ণনা করেন। তিনি বলেন, ঐ সত্তার শপথ যার হাতে মুহাম্মাদের প্রাণ, পৃথিবীর উপর এমন কোন মুমিন নাই, যার সবচেয়ে নিকটতম লোক আমি নই। সুতরাং যে লোক ঋণ অথবা নিঃস্ব নিঃসম্বল সন্তান রেখে যাবে, আমি হবো তার অভিভাবক। আর তোমাদের কেউ যদি সম্পদ রেখে যায় তবে সে মাল পাবে তার ঘনিষ্ঠ আত্মীয়; সে যেই হোক না কেন।",
+        "description_en": "Abn Huraira (Allah be pleased with him) reported Allah’s Apostle (ﷺ) having said this:<br>By Him in Whose Hand is the life of Muhammad, there is no believer on the earth with whom I am not the nearest among all the people. He who amongst you (dies) and leaves a debt, I am there to pay it, and he who amongst you (dies) leaving behind children I am there to look after them. And he who amongst You leaves behind property, that is for the inheritor whoever he is.",
+        "description_ar": "حَدَّثَنِي مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا شَبَابَةُ، قَالَ حَدَّثَنِي وَرْقَاءُ، عَنْ أَبِي الزِّنَادِ، عَنِ الأَعْرَجِ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" وَالَّذِي نَفْسُ مُحَمَّدٍ بِيَدِهِ إِنْ عَلَى الأَرْضِ مِنْ مُؤْمِنٍ إِلاَّ أَنَا أَوْلَى النَّاسِ بِهِ فَأَيُّكُمْ مَا تَرَكَ دَيْنًا أَوْ ضَيَاعًا فَأَنَا مَوْلاَهُ وَأَيُّكُمْ تَرَكَ مَالاً فَإِلَى الْعَصَبَةِ مَنْ كَانَ \" .",
+        "description_without_harkat": "حدثني محمد بن رافع، حدثنا شبابة، قال حدثني ورقاء، عن أبي الزناد، عن الأعرج، عن أبي هريرة، عن النبي صلى الله عليه وسلم قال  \" والذي نفس محمد بيده إن على الأرض من مؤمن إلا أنا أولى الناس به فأيكم ما ترك دينا أو ضياعا فأنا مولاه وأيكم ترك مالا فإلى العصبة من كان \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:21:51.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4765,
+            "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+            "title_en": "",
+            "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+            "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4160,
+                "title": " 1619-3",
+                "hadith_number": 4014,
+                "hadith_id": 11063,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:21:51.000Z",
+                "updated_at": "2024-10-17T05:21:51.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11064,
+        "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+        "title_en": "",
+        "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4765,
+        "rabi_id": 463,
+        "type_id": 1,
+        "hadith_number": 4015,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১৫। মুহাম্মাদ ইবনে রাফি’ (রাহঃ) ......... হাম্মাম ইবনে মুনাব্বিহ (রাহঃ) এর সূত্রে বর্ণিত। তিনি বলেনঃ এগুলো আবু হুরায়রা ((رضي الله عنه)) রাসূলুল্লাহ (ﷺ) থেকে আমাদের কাছে বর্ণনা করেছেন। অতঃপর তিনি কতগুলো হাদীস বর্ণনা করেন। তার মধ্যে একটি এই যে, রাসূলুল্লাহ (ﷺ) বলেছেন, আল্লাহর কিতাব অনুযায়ী অন্য সব লোক অপেক্ষা আমি মুমিনদের সবচেয়ে নিকটবর্তী। সুতরাং তোমাদের মধ্যে যে ব্যক্তি ঋণ অথবা নিঃসম্বল পরিজন রেখে যায় আমাকে ডাকবে, আমি তার অভিভাবক। আর তোমাদের মধ্যে যে সস্পদ রেখে যায়, তার সস্পদের অধিকারী হবে তার ঘনিষ্ঠ আত্মীয় সে যেই হোক।",
+        "description_en": "Hammam b. Munabbih reported:<br>This is what Abu Huraira (Allah be pleased with him) narrated to us from Allah’s Messenger (may peace he upon him). And he narrated many ahadith, and one was this: Allah’s Messenger (may peace be upon him said: I am, according to the Book of Allah, the Exalted and Majestic, nearest to the believers of all the human beings. So whoever amongst you dies in debt or leaves behind destitute children, you should call me (for help) ), for I am his guardian. And who amongst you leaves property, his inheritor is entitled to get it, whoever he is.",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا مَعْمَرٌ، عَنْ هَمَّامِ بْنِ مُنَبِّهٍ، قَالَ هَذَا مَا حَدَّثَنَا أَبُو هُرَيْرَةَ، عَنْ رَسُولِ اللَّهِ صلى الله عليه وسلم فَذَكَرَ أَحَادِيثَ مِنْهَا وَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" أَنَا أَوْلَى النَّاسِ بِالْمُؤْمِنِينَ فِي كِتَابِ اللَّهِ عَزَّ وَجَلَّ فَأَيُّكُمْ مَا تَرَكَ دَيْنًا أَوْ ضَيْعَةً فَادْعُونِي فَأَنَا وَلِيُّهُ وَأَيُّكُمْ مَا تَرَكَ مَالاً فَلْيُؤْثَرْ بِمَالِهِ عَصَبَتُهُ مَنْ كَانَ \" .",
+        "description_without_harkat": "حدثنا محمد بن رافع، حدثنا عبد الرزاق، أخبرنا معمر، عن همام بن منبه، قال هذا ما حدثنا أبو هريرة، عن رسول الله صلى الله عليه وسلم فذكر أحاديث منها وقال رسول الله صلى الله عليه وسلم  \" أنا أولى الناس بالمؤمنين في كتاب الله عز وجل فأيكم ما ترك دينا أو ضيعة فادعوني فأنا وليه وأيكم ما ترك مالا فليؤثر بماله عصبته من كان \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:26:34.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4765,
+            "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+            "title_en": "",
+            "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+            "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ"
+        },
+        "rabis": [
+            {
+                "id": 463,
+                "title": "হাম্মাম ইবনে মুনাব্বিহ ((رحمة الله))",
+                "title_en": "Hammam Ibn Munabbih",
+                "title_ar": "همام بن منبه بن كامل بن سيج الأبناوي",
+                "death_year": "132"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4161,
+                "title": "1619-4",
+                "hadith_number": 4015,
+                "hadith_id": 11064,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:26:34.000Z",
+                "updated_at": "2024-10-17T05:26:34.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11065,
+        "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+        "title_en": "",
+        "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4765,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 4016,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১৬। উবাইদুল্লাহ ইবনে মু’আয আম্বারী (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) সূত্রে নবী (ﷺ) থেকে বর্ণিত। তিনি বলেছেন, যে ব্যক্তি সম্পদ ছেড়ে যায়, তা তার ওয়ারিসদের প্রাপ্য। আর যে অসহায় পরিজন রেখে যায় তারা আমাদের দায়িত্বে।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported Allah’s Apostle (ﷺ) as saying:<br>He who leaves property, that is for the inheritors; and he who leaves behind destitute children, then it is my responsibility (to look after them).",
+        "description_ar": "حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ مُعَاذٍ الْعَنْبَرِيُّ، حَدَّثَنَا أَبِي، حَدَّثَنَا شُعْبَةُ، عَنْ عَدِيٍّ، أَنَّهُ سَمِعَ أَبَا حَازِمٍ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم أَنَّهُ قَالَ  \" مَنْ تَرَكَ مَالاً فَلِلْوَرَثَةِ وَمَنْ تَرَكَ كَلاًّ فَإِلَيْنَا \" .",
+        "description_without_harkat": "حدثنا عبيد الله بن معاذ العنبري، حدثنا أبي، حدثنا شعبة، عن عدي، أنه سمع أبا حازم، عن أبي هريرة، عن النبي صلى الله عليه وسلم أنه قال  \" من ترك مالا فللورثة ومن ترك كلا فإلينا \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:26:58.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4765,
+            "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+            "title_en": "",
+            "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+            "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4162,
+                "title": " 1619-5",
+                "hadith_number": 4016,
+                "hadith_id": 11065,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:26:58.000Z",
+                "updated_at": "2024-10-17T05:26:58.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11066,
+        "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+        "title_en": "",
+        "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 110,
+        "title_id": 4765,
+        "rabi_id": 205,
+        "type_id": 1,
+        "hadith_number": 4017,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১৭। আবু বকর ইবনে নাফি’ (রাহঃ) এবং যুহাইর ইবনে হারব (রাহঃ) ......... শুবা (রাহঃ) থেকে উপরোক্ত সনদে বর্ণনা করেন। অবশ্য গুনদার বর্ণিত হাদীসে আছে, আর যে ব্যক্তি অসহায় পরিজন রেখে যায় আমি তাদের অভিভাবক হবো।",
+        "description_en": "This hadith has been narrated on the authority of Shu’ba with the same chain of transmitters.",
+        "description_ar": "وَحَدَّثَنِيهِ أَبُو بَكْرِ بْنُ نَافِعٍ، حَدَّثَنَا غُنْدَرٌ، ح وَحَدَّثَنِي زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا عَبْدُ، الرَّحْمَنِ - يَعْنِي ابْنَ مَهْدِيٍّ - قَالاَ حَدَّثَنَا شُعْبَةُ، بِهَذَا الإِسْنَادِ . غَيْرَ أَنَّ فِي، حَدِيثِ غُنْدَرٍ  \" وَمَنْ تَرَكَ كَلاًّ وَلِيتُهُ \" .",
+        "description_without_harkat": "وحدثنيه أبو بكر بن نافع، حدثنا غندر، ح وحدثني زهير بن حرب، حدثنا عبد، الرحمن - يعني ابن مهدي - قالا حدثنا شعبة، بهذا الإسناد . غير أن في، حديث غندر  \" ومن ترك كلا وليته \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:27:26.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 110,
+            "title": "২৪- মাইয়্যেতের সম্পত্তি বন্টনের অধ্যায়",
+            "title_en": "24. The Book of the Rules of Inheritance",
+            "title_ar": "كتاب الفرائض",
+            "range_start": 3995,
+            "range_end": 4017
+        },
+        "titles": {
+            "id": 4765,
+            "title": "৪. যে ব্যক্তি সম্পদ রেখে যাবে তা তার উত্তরাধিকারীদের প্রাপ্য",
+            "title_en": "",
+            "title_ar": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ",
+            "title_without_harkat": "باب مَنْ تَرَكَ مَالاً فَلِوَرَثَتِهِ"
+        },
+        "rabis": [
+            {
+                "id": 205,
+                "title": "শু'বা ইবনুল হাজ্জাজ ((رحمة الله))",
+                "title_en": "Shu'ba (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4163,
+                "title": " 1619-6",
+                "hadith_number": 4017,
+                "hadith_id": 11066,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:27:26.000Z",
+                "updated_at": "2024-10-17T05:27:26.000Z"
+            }
+        ]
+    }
+]

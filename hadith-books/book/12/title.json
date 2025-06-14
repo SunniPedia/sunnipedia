@@ -1,0 +1,28 @@
+[
+  {
+    "id": 490,
+    "title": "আল - আদাবুল মুফরাদের পরিচ্ছেদসমূহ",
+    "title_en": null,
+    "title_ar": "أبواب الأدب المفرد للبخاري",
+    "book_id": 12,
+    "status": "active",
+    "sequence": 1,
+    "total_hadith": 1330,
+    "range_start": 1,
+    "range_end": 1330,
+    "created_at": "2022 - 03 - 23T09:28:23.000Z",
+    "updated_at": "2022 - 09 - 01T05:16:20.000Z",
+    "book": {
+      "id": 12,
+      "title": "আল - আদাবুল মুফরাদ",
+      "title_en": "আল - আদাবুল মুফরাদ -  ইমাম বুখারী রহঃ",
+      "english_title": "Al - Adab Al - Mufrad",
+      "title_ar": "الأدب المفرد للبخاري",
+      "has_title": 1,
+      "translation_type": "bangla",
+      "total_section": 1,
+      "total_hadith": 1330
+    },
+    "hadith_count": 1330
+  }
+]

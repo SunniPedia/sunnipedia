@@ -1,0 +1,32 @@
+[
+  {
+    "id": 10001,
+    "book_id": 57,
+    "sequence": 1,
+    "title": "১. পবিত্রতা",
+    "title_ar": "كتاب الطهارة",
+    "total_hadith": 761,
+    "range_start": 1,
+    "range_end": 761
+  },
+  {
+    "id": 10002,
+    "book_id": 57,
+    "sequence": 2,
+    "title": "২. ঋতুস্রাব",
+    "title_ar": "كتاب الحيض",
+    "total_hadith": 97,
+    "range_start": 762,
+    "range_end": 858
+  },
+  {
+    "id": 10003,
+    "book_id": 57,
+    "sequence": 3,
+    "title": "৩. নামায",
+    "title_ar": "كتاب الصلاة",
+    "total_hadith": 686,
+    "range_start": 859,
+    "range_end": 1154
+  }
+]

@@ -19,7 +19,7 @@ function jumpToAyah() {
   const jumpIndex = isExactSurah ? target - 1 : target;
 
   if (jumpIndex >= 0 && jumpIndex < cards.length) {
-    cards[jumpIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    cards[jumpIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
   } else {
     alert("এই সূরায় এতগুলো আয়াত নেই");
   }
@@ -146,7 +146,7 @@ function toggleAudio(el) {
   currentAudio.play().then(() => {
     const card = el.closest('.ayah-card');
     if (card) {
-      card.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
       removeAllHighlights();
       card.classList.add('highlighted');
     }

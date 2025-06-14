@@ -1,0 +1,162 @@
+[
+  {
+    "id": 8001,
+    "book_id": 55,
+    "sequence": 1,
+    "title": "পর্ব - ১ঃ পবিত্রতা",
+    "title_ar": "كتاب الطهارة",
+    "total_hadith": 150,
+    "range_start": 1,
+    "range_end": 150
+  },
+  {
+    "id": 8002,
+    "book_id": 55,
+    "sequence": 2,
+    "title": "পর্ব - ২ঃ সালাত",
+    "title_ar": "كتاب الصلاة",
+    "total_hadith": 383,
+    "range_start": 151,
+    "range_end": 533
+  },
+  {
+    "id": 8003,
+    "book_id": 55,
+    "sequence": 3,
+    "title": "পর্ব - ৩ঃ জানাযা",
+    "title_ar": "كتاب الجنائز",
+    "total_hadith": 65,
+    "range_start": 534,
+    "range_end": 598
+  },
+  {
+    "id": 8004,
+    "book_id": 55,
+    "sequence": 4,
+    "title": "পর্ব - ৪ঃ যাকাত",
+    "title_ar": "كتاب الزكاة",
+    "total_hadith": 51,
+    "range_start": 599,
+    "range_end": 649
+  },
+  {
+    "id": 8005,
+    "book_id": 55,
+    "sequence": 5,
+    "title": "পর্ব - ৫ঃ সিয়াম",
+    "title_ar": "كتاب الصيام",
+    "total_hadith": 58,
+    "range_start": 650,
+    "range_end": 707
+  },
+  {
+    "id": 8006,
+    "book_id": 55,
+    "sequence": 6,
+    "title": "পর্ব - ৬ঃ হাজ্জ (হজ্জ/হজ) প্রসঙ্গ",
+    "title_ar": "كتاب الحج",
+    "total_hadith": 74,
+    "range_start": 708,
+    "range_end": 781
+  },
+  {
+    "id": 8007,
+    "book_id": 55,
+    "sequence": 7,
+    "title": "পর্ব - ৭ঃ ক্ৰয়-বিক্রয়ের বিধান",
+    "title_ar": "كتاب البيوع",
+    "total_hadith": 185,
+    "range_start": 782,
+    "range_end": 966
+  },
+  {
+    "id": 8008,
+    "book_id": 55,
+    "sequence": 8,
+    "title": "পর্ব - ৮ঃ বিবাহ",
+    "title_ar": "كتاب النكاح",
+    "total_hadith": 191,
+    "range_start": 967,
+    "range_end": 1157
+  },
+  {
+    "id": 8009,
+    "book_id": 55,
+    "sequence": 9,
+    "title": "পর্ব - ৯ঃ অপরাধ প্রসঙ্গ",
+    "title_ar": "كتاب الجنايات",
+    "total_hadith": 47,
+    "range_start": 1158,
+    "range_end": 1204
+  },
+  {
+    "id": 8010,
+    "book_id": 55,
+    "sequence": 10,
+    "title": "পর্ব - ১০ঃ দণ্ড বিধি",
+    "title_ar": "كتاب الحدود",
+    "total_hadith": 54,
+    "range_start": 1205,
+    "range_end": 1258
+  },
+  {
+    "id": 8011,
+    "book_id": 55,
+    "sequence": 11,
+    "title": "পর্ব - ১১ঃ জিহাদ",
+    "title_ar": "كتاب الجهاد",
+    "total_hadith": 60,
+    "range_start": 1259,
+    "range_end": 1318
+  },
+  {
+    "id": 8012,
+    "book_id": 55,
+    "sequence": 12,
+    "title": "পর্ব - ১২ঃ খাদ্য",
+    "title_ar": "كتاب الاطعمة",
+    "total_hadith": 41,
+    "range_start": 1319,
+    "range_end": 1359
+  },
+  {
+    "id": 8013,
+    "book_id": 55,
+    "sequence": 13,
+    "title": "পর্ব - ১৩ঃ কসম ও মান্নত প্রসঙ্গ",
+    "title_ar": "كتاب الأيمان والنذور",
+    "total_hadith": 23,
+    "range_start": 1360,
+    "range_end": 1382
+  },
+  {
+    "id": 8014,
+    "book_id": 55,
+    "sequence": 14,
+    "title": "পর্ব - ১৪ঃ বিচার-ফায়সালা",
+    "title_ar": "كتاب القضاء",
+    "total_hadith": 35,
+    "range_start": 1383,
+    "range_end": 1417
+  },
+  {
+    "id": 8015,
+    "book_id": 55,
+    "sequence": 15,
+    "title": "পর্ব - ১৫ঃ দাস-দাসী মুক্ত করা",
+    "title_ar": "كتاب العتق",
+    "total_hadith": 19,
+    "range_start": 1418,
+    "range_end": 1436
+  },
+  {
+    "id": 8016,
+    "book_id": 55,
+    "sequence": 16,
+    "title": "পর্ব - ১৬ঃ বিবিধ প্রসঙ্গ",
+    "title_ar": "كتاب الجامع",
+    "total_hadith": 132,
+    "range_start": 1437,
+    "range_end": 1568
+  }
+]

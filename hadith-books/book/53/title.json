@@ -1,0 +1,552 @@
+[
+    {
+        "id": 6000,
+        "book_id": 53,
+        "sequence": 1,
+        "title": "বিবিধ হাদিসসমূহ",
+        "title_ar": "بِمُتَفَرِّقَاتِ الْأَحَادِيثِ",
+        "total_hadith": 4,
+        "range_start": 1,
+        "range_end": 4
+    },
+    {
+        "id": 6001,
+        "book_id": 53,
+        "sequence": 2,
+        "title": "১/ ঈমান (كتاب الإيمان )",
+        "title_ar": "إِيمَانٌ",
+        "total_hadith": 129,
+        "range_start": 5,
+        "range_end": 133
+    },
+    {
+        "id": 6002,
+        "book_id": 53,
+        "sequence": 3,
+        "title": "২/ পবিত্রতা (كتاب الطهارة)",
+        "title_ar": "الطَّهَارَةُ",
+        "total_hadith": 34,
+        "range_start": 134,
+        "range_end": 167
+    },
+    {
+        "id": 6003,
+        "book_id": 53,
+        "sequence": 4,
+        "title": "৩/ হায়িজ (كتاب الحيض)",
+        "title_ar": "الْحَيْضُ",
+        "total_hadith": 45,
+        "range_start": 168,
+        "range_end": 212
+    },
+    {
+        "id": 6004,
+        "book_id": 53,
+        "sequence": 5,
+        "title": "৪/ সালাত (كتاب الصلاة)",
+        "title_ar": "الصَّلَاةُ",
+        "total_hadith": 85,
+        "range_start": 213,
+        "range_end": 297
+    },
+    {
+        "id": 6005,
+        "book_id": 53,
+        "sequence": 6,
+        "title": "৫/ মাসজিদ ও সালাতের স্থানসমূহের বর্ণনা (كتاب المساجد ومواضع الصلاة)",
+        "title_ar": "الْمَسَاجِدُ وَمَوَاضِعُ الصَّلَاةِ",
+        "total_hadith": 100,
+        "range_start": 298,
+        "range_end": 397
+    },
+    {
+        "id": 6006,
+        "book_id": 53,
+        "sequence": 7,
+        "title": "৬/ মুসাফির ব্যক্তির সালাত ও তা ক্বসর করার বর্ণনা (كتاب صلاة المسافرين وقصرها)",
+        "title_ar": "صَلاَةُ الْمُسَافِرِينَ وَقَصْرُهَا",
+        "total_hadith": 87,
+        "range_start": 398,
+        "range_end": 484
+    },
+    {
+        "id": 6007,
+        "book_id": 53,
+        "sequence": 8,
+        "title": "৭/ জুমু‘আহর বর্ণনা (كتاب الجمعة)",
+        "title_ar": "الْجُمُعَةُ",
+        "total_hadith": 20,
+        "range_start": 485,
+        "range_end": 504
+    },
+    {
+        "id": 6008,
+        "book_id": 53,
+        "sequence": 9,
+        "title": "৮/ ঈদাইন বা দু’ ঈদের সালাত (كتاب صلاة العدين)",
+        "title_ar": "صَلاَةُ الْعِيدَيْنِ",
+        "total_hadith": 10,
+        "range_start": 505,
+        "range_end": 514
+    },
+    {
+        "id": 6009,
+        "book_id": 53,
+        "sequence": 10,
+        "title": "৯/ পানি প্রার্থনার সালাত (كتاب صلاة الإستسقاء)",
+        "title_ar": "صَلاَةُ الْإِسْتِسْقَاء",
+        "total_hadith": 5,
+        "range_start": 515,
+        "range_end": 519
+    },
+    {
+        "id": 6010,
+        "book_id": 53,
+        "sequence": 11,
+        "title": "১০/ সূর্য গ্রহণের সালাত (كتاب الكسوف)",
+        "title_ar": "صَلاَةُ الْكُسُوف",
+        "total_hadith": 11,
+        "range_start": 520,
+        "range_end": 530
+    },
+    {
+        "id": 6011,
+        "book_id": 53,
+        "sequence": 12,
+        "title": "১১/ জানাযা (كتاب صلاة الجنائز)",
+        "title_ar": "صَلاَةُ الْجَنَائِزِ",
+        "total_hadith": 36,
+        "range_start": 531,
+        "range_end": 566
+    },
+    {
+        "id": 6012,
+        "book_id": 53,
+        "sequence": 13,
+        "title": "১২/ যাকাত (كتاب الزكاة)",
+        "title_ar": "الزَّكَاةُ",
+        "total_hadith": 85,
+        "range_start": 567,
+        "range_end": 651
+    },
+    {
+        "id": 6013,
+        "book_id": 53,
+        "sequence": 14,
+        "title": "১৩/ সওম (كتاب الصيام)",
+        "title_ar": "الصَّوْمُ",
+        "total_hadith": 75,
+        "range_start": 652,
+        "range_end": 726
+    },
+    {
+        "id": 6014,
+        "book_id": 53,
+        "sequence": 15,
+        "title": "১৪/ ইতিকাফ (كتاب الاعتكاف)",
+        "title_ar": "الْاعْتِكَافُ",
+        "total_hadith": 4,
+        "range_start": 727,
+        "range_end": 730
+    },
+    {
+        "id": 6015,
+        "book_id": 53,
+        "sequence": 16,
+        "title": "১৫/ হজ্জ (كتاب الحج)",
+        "title_ar": "الْحَجُّ",
+        "total_hadith": 153,
+        "range_start": 731,
+        "range_end": 883
+    },
+    {
+        "id": 6016,
+        "book_id": 53,
+        "sequence": 17,
+        "title": "১৬/ বিবাহ (كتاب النكاح)",
+        "title_ar": "النِّكَاحُ",
+        "total_hadith": 32,
+        "range_start": 884,
+        "range_end": 915
+    },
+    {
+        "id": 6017,
+        "book_id": 53,
+        "sequence": 18,
+        "title": "১৭/ দুধপান (كتاب الرضاع)",
+        "title_ar": "الرَّضَاعُ",
+        "total_hadith": 20,
+        "range_start": 916,
+        "range_end": 935
+    },
+    {
+        "id": 6018,
+        "book_id": 53,
+        "sequence": 19,
+        "title": "১৮/ তালাক (كتاب الطلاق)",
+        "title_ar": "الطَّلَاقُ",
+        "total_hadith": 16,
+        "range_start": 936,
+        "range_end": 951
+    },
+    {
+        "id": 6019,
+        "book_id": 53,
+        "sequence": 20,
+        "title": "১৯/ লি'আন (كتاب اللعان)",
+        "title_ar": "اللَّعَانُ",
+        "total_hadith": 6,
+        "range_start": 952,
+        "range_end": 957
+    },
+    {
+        "id": 6020,
+        "book_id": 53,
+        "sequence": 21,
+        "title": "২০/ ইত্‌ক (মুক্তি) (كتاب العتق)",
+        "title_ar": "الْعِتْقُ",
+        "total_hadith": 7,
+        "range_start": 958,
+        "range_end": 964
+    },
+    {
+        "id": 6021,
+        "book_id": 53,
+        "sequence": 22,
+        "title": "২১/ ক্ৰয়-বিক্ৰয় (كتاب البيوع)",
+        "title_ar": "الْبِيُوعُ",
+        "total_hadith": 34,
+        "range_start": 965,
+        "range_end": 998
+    },
+    {
+        "id": 6022,
+        "book_id": 53,
+        "sequence": 23,
+        "title": "২২/ পানি সিঞ্চন (كتاب المساقاة)",
+        "title_ar": "الْمِسَاقَاةُ",
+        "total_hadith": 42,
+        "range_start": 999,
+        "range_end": 1040
+    },
+    {
+        "id": 6023,
+        "book_id": 53,
+        "sequence": 24,
+        "title": "২৩/ ফারায়েজ (كتاب الفرائض)",
+        "title_ar": "الْفَرَائِضُ",
+        "total_hadith": 4,
+        "range_start": 1041,
+        "range_end": 1044
+    },
+    {
+        "id": 6024,
+        "book_id": 53,
+        "sequence": 25,
+        "title": "২৪/ হেবা (كتاب الهبات)",
+        "title_ar": "الْهِبَاتُ",
+        "total_hadith": 7,
+        "range_start": 1045,
+        "range_end": 1051
+    },
+    {
+        "id": 6025,
+        "book_id": 53,
+        "sequence": 26,
+        "title": "২৫/ অসীয়াত (كتاب الوصية)",
+        "title_ar": "الْوَصِيَّةُ",
+        "total_hadith": 9,
+        "range_start": 1052,
+        "range_end": 1060
+    },
+    {
+        "id": 6026,
+        "book_id": 53,
+        "sequence": 27,
+        "title": "২৬/ নায্‌র (كتاب النذر)",
+        "title_ar": "النُّذُورُ",
+        "total_hadith": 5,
+        "range_start": 1061,
+        "range_end": 1065
+    },
+    {
+        "id": 6027,
+        "book_id": 53,
+        "sequence": 28,
+        "title": "২৭/ কসম (كتاب الأيمان)",
+        "title_ar": "الْأَيْمَانُ",
+        "total_hadith": 19,
+        "range_start": 1066,
+        "range_end": 1084
+    },
+    {
+        "id": 6028,
+        "book_id": 53,
+        "sequence": 29,
+        "title": "২৮/ কাসামাহ (كتاب القسامة)",
+        "title_ar": "الْقَسَامَةُ",
+        "total_hadith": 12,
+        "range_start": 1085,
+        "range_end": 1096
+    },
+    {
+        "id": 6029,
+        "book_id": 53,
+        "sequence": 30,
+        "title": "২৯/ হুদূদ (كتاب الحدود)",
+        "title_ar": "الْحُدُودُ",
+        "total_hadith": 16,
+        "range_start": 1097,
+        "range_end": 1112
+    },
+    {
+        "id": 6030,
+        "book_id": 53,
+        "sequence": 31,
+        "title": "৩০/ বিচার-ফায়সালা (كتاب الأقضية)",
+        "title_ar": "الْأَقْضِيَةُ",
+        "total_hadith": 10,
+        "range_start": 1113,
+        "range_end": 1122
+    },
+    {
+        "id": 6031,
+        "book_id": 53,
+        "sequence": 32,
+        "title": "৩১/ কুড়িয়ে পাওয়া বস্তু (كتاب اللقطة)",
+        "title_ar": "الْلُّقَطَةُ",
+        "total_hadith": 6,
+        "range_start": 1123,
+        "range_end": 1128
+    },
+    {
+        "id": 6032,
+        "book_id": 53,
+        "sequence": 33,
+        "title": "৩২/ জিহাদ (كتاب الجهاد)",
+        "title_ar": "الْجِهَادُ",
+        "total_hadith": 64,
+        "range_start": 1129,
+        "range_end": 1192
+    },
+    {
+        "id": 6033,
+        "book_id": 53,
+        "sequence": 34,
+        "title": "৩৩/ ইমারাত বা নেতৃত্ব (كتاب الإمارة)",
+        "title_ar": "الإمَارَةُ",
+        "total_hadith": 61,
+        "range_start": 1193,
+        "range_end": 1253
+    },
+    {
+        "id": 6034,
+        "book_id": 53,
+        "sequence": 35,
+        "title": "৩৪/ শিকার, যব্‌হ ও কোন প্রকার জন্তু খাওয়া যায় (كتاب الصيد والذبائح ما يؤكل من الحيوان)",
+        "title_ar": "الصَّيْدُ وَالذَّبَائِحُ مَا يُؤْكَلُ مِنْهَا",
+        "total_hadith": 26,
+        "range_start": 1254,
+        "range_end": 1279
+    },
+    {
+        "id": 6035,
+        "book_id": 53,
+        "sequence": 36,
+        "title": "৩৫/ কুরবানী (كتاب الأضاحي)",
+        "title_ar": "الْأَضَاحِي",
+        "total_hadith": 12,
+        "range_start": 1280,
+        "range_end": 1291
+    },
+    {
+        "id": 6036,
+        "book_id": 53,
+        "sequence": 37,
+        "title": "৩৬/ পানীয় (كتاب الأشربة)",
+        "title_ar": "الْأَشْرِبَةُ",
+        "total_hadith": 45,
+        "range_start": 1292,
+        "range_end": 1336
+    },
+    {
+        "id": 6037,
+        "book_id": 53,
+        "sequence": 38,
+        "title": "৩৭/ পোষাক ও অলঙ্কার (كتاب اللباس والزينة)",
+        "title_ar": "اللِّبَاسُ وَالزِّينَةُ",
+        "total_hadith": 43,
+        "range_start": 1337,
+        "range_end": 1379
+    },
+    {
+        "id": 6038,
+        "book_id": 53,
+        "sequence": 39,
+        "title": "৩৮/ আচার-ব্যবহার (كتاب الآداب)",
+        "title_ar": "الْآدَابُ",
+        "total_hadith": 16,
+        "range_start": 1380,
+        "range_end": 1395
+    },
+    {
+        "id": 6039,
+        "book_id": 53,
+        "sequence": 40,
+        "title": "৩৯/ সালাম (كتاب السلام)",
+        "title_ar": "السَّلاَمُ",
+        "total_hadith": 53,
+        "range_start": 1396,
+        "range_end": 1448
+    },
+    {
+        "id": 6040,
+        "book_id": 53,
+        "sequence": 41,
+        "title": "৪০/ সৌজন্যমূলক কথা বলা ইত্যাদি (كتاب الألفاظ من الأدب وغيرها)",
+        "title_ar": "الْأَلْفَاظُ مِنَ الْآدَابِ وَغَيْرِهَا",
+        "total_hadith": 5,
+        "range_start": 1449,
+        "range_end": 1453
+    },
+    {
+        "id": 6041,
+        "book_id": 53,
+        "sequence": 42,
+        "title": "৪১/ কবিতা (كتاب الشعر)",
+        "title_ar": "الشِّعْرُ",
+        "total_hadith": 2,
+        "range_start": 1454,
+        "range_end": 1455
+    },
+    {
+        "id": 6042,
+        "book_id": 53,
+        "sequence": 43,
+        "title": "৪২/ স্বপ্ন (كتاب الرؤيا)",
+        "title_ar": "الرُّؤْيَا",
+        "total_hadith": 12,
+        "range_start": 1456,
+        "range_end": 1467
+    },
+    {
+        "id": 6043,
+        "book_id": 53,
+        "sequence": 44,
+        "title": "৪৩/ ফাযায়েল (كتاب الفضائل)",
+        "title_ar": "الْفَضَائِلُ",
+        "total_hadith": 72,
+        "range_start": 1468,
+        "range_end": 1539
+    },
+    {
+        "id": 6044,
+        "book_id": 53,
+        "sequence": 45,
+        "title": "৪৪/ সাহাবাগণের মর্যাদা (كتاب فضائل الصحابة)",
+        "title_ar": "فَضَائِلُ الصَّحَابَةِ",
+        "total_hadith": 112,
+        "range_start": 1540,
+        "range_end": 1651
+    },
+    {
+        "id": 6045,
+        "book_id": 53,
+        "sequence": 46,
+        "title": "৪৫/ সদাচরণ, আত্মীয়তার সম্পর্ক ও শিষ্ঠাচার অধ্যায় (كتاب البر والصلة والآداب)",
+        "title_ar": "الْبِرُّ وَالصِّلَةُ وَالْآدَابُ",
+        "total_hadith": 43,
+        "range_start": 1652,
+        "range_end": 1694
+    },
+    {
+        "id": 6046,
+        "book_id": 53,
+        "sequence": 47,
+        "title": "৪৬/ ক্বাদর (কদর) বা ভাগ্য (كتاب القدر)",
+        "title_ar": "الْقَدَرُ",
+        "total_hadith": 10,
+        "range_start": 1695,
+        "range_end": 1704
+    },
+    {
+        "id": 6047,
+        "book_id": 53,
+        "sequence": 48,
+        "title": "৪৭/ ইলম (كتاب العلم)",
+        "title_ar": "الْعِلْمُ",
+        "total_hadith": 8,
+        "range_start": 1705,
+        "range_end": 1712
+    },
+    {
+        "id": 6048,
+        "book_id": 53,
+        "sequence": 49,
+        "title": "৪৮/ যিক্‌র, দুআ, তাওবাহ এবং ক্ষমা প্রার্থনা (كتاب الذكر والدعاء والتوبة والاستغفار)",
+        "title_ar": "الذِّكْرُ وَالدُّعَاءُ وَالتَّوْبَةُ وَالْإِسْتِغْفَارُ",
+        "total_hadith": 33,
+        "range_start": 1713,
+        "range_end": 1745
+    },
+    {
+        "id": 6049,
+        "book_id": 53,
+        "sequence": 50,
+        "title": "৪৯/ তাওবাহ (كتاب التوبة)",
+        "title_ar": "التَّوْبَةُ",
+        "total_hadith": 19,
+        "range_start": 1746,
+        "range_end": 1764
+    },
+    {
+        "id": 6050,
+        "book_id": 53,
+        "sequence": 51,
+        "title": "৫০/ মুনাফিক ও তাদের হুকুম (كتاب صفات المنافقين وأحكامهم)",
+        "title_ar": "صِفَاتُ الْمُنَافِقِينَ وَأَحْكَامُهُمْ",
+        "total_hadith": 32,
+        "range_start": 1765,
+        "range_end": 1796
+    },
+    {
+        "id": 6051,
+        "book_id": 53,
+        "sequence": 52,
+        "title": "৫১/ জান্নাত, তার বিবরণ, আনন্দ-উপভােগ ও তার বাসিন্দা (كتاب الجنة وصفة نعيمها وأهلها)",
+        "title_ar": "الْجَنَّةُ وَوَصْفُ نَعِيمِهَا وَأَهْلِهَا",
+        "total_hadith": 32,
+        "range_start": 1797,
+        "range_end": 1828
+    },
+    {
+        "id": 6052,
+        "book_id": 53,
+        "sequence": 53,
+        "title": "৫২/ ফিতনা এবং তার অশুভ আলামতসমূহ (كتاب الفتن وأشراط الساعة)",
+        "title_ar": "الْفِتَنُ وَأَشْرَاطُ السَّاعَةِ",
+        "total_hadith": 36,
+        "range_start": 1829,
+        "range_end": 1864
+    },
+    {
+        "id": 6053,
+        "book_id": 53,
+        "sequence": 54,
+        "title": "৫৩/ সংসারের প্রতি অনাসক্তি ও অন্তরের কোমলতা (كتاب الزهد والرقائق)",
+        "title_ar": "الزُّهْدُ وَالرَّقَائِقُ",
+        "total_hadith": 28,
+        "range_start": 1865,
+        "range_end": 1892
+    },
+    {
+        "id": 6054,
+        "book_id": 53,
+        "sequence": 55,
+        "title": "৫৪/ তাফসীর (كتاب التفسير)",
+        "title_ar": "التَّفْسِيرُ",
+        "total_hadith": 14,
+        "range_start": 1893,
+        "range_end": 1906
+    }
+]

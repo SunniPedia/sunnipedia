@@ -241,9 +241,9 @@ function renderAyahs(query) {
             <div class="number-text">${banglaNum}</div>
           </div>
           <div class="actions">
-            <img src="play.png" class="play-icon" data-id="${ayah._id}" title="প্লে" />
-            <img src="copy.png" class="copy-icon" title="কপি" />
-            <img src="share.png" class="share-icon" title="শেয়ার" />
+            <img src="img/play.png" class="play-icon" data-id="${ayah._id}" title="প্লে" />
+            <img src="img/copy.png" class="copy-icon" title="কপি" />
+            <img src="img/share.png" class="share-icon" title="শেয়ার" />
           </div>
         </div>
         <div class="sura-name">সুরা: ${ayah.suraName}</div>

@@ -1,0 +1,892 @@
+@charset "utf-8";
+@import url("../webfonts/Kalpurush/stylesheet.css");
+@import url("../webfonts/indopak/stylesheet.css");
+
+
+/* Default Light Mode Styles */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url(../img/bg-paper-tex.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #222;
+	font-family: 'Kalpurush', Arial, sans-serif;
+ 	font-size: 16px;
+  	line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(10,80,90,1) 100%);
+}
+
+/* Default Text & Fonts */
+[dir="rtl"] {
+   font-family: 'indopak' !important;
+    font-size: 1.85rem;
+    line-height: 3rem;
+    font-weight: normal;
+    direction: rtl !important;
+	text-align: right !important;
+    unicode-range: U+0600-06FF;
+	
+  
+}
+.font-arabic,
+.arabic-alphabate,
+.font-arabic-dropdown {
+ font-family: 'indopak'!important;
+	font-weight: normal;
+    direction: rtl !important;
+	text-align: right !important;
+	unicode-range: U+0600-06FF;
+	unicode-bidi: isolate;
+    display: inline;
+
+}
+
+/* Night Mode for Arabic Fonts */
+.night-mode .font-arabic,
+.night-mode .arabic-alphabate,
+.night-mode .font-arabic-dropdown {
+    color: #DADADA;
+	font-family: 'indopak' !important;
+	font-weight: normal;
+   direction: rtl !important;
+	text-align: right !important;
+	unicode-range: U+0600-06FF;
+	font-size: 1.85rem;
+	unicode-bidi: isolate;
+    display: inline;
+	
+
+}
+
+.arabic-text {
+   font-family: 'indopak' !important;
+   font-size: 1.85rem;
+	direction: rtl !important;
+	text-align: right !important;
+	unicode-bidi: isolate;
+    display: inline;
+
+}
+
+h1 {
+    font-size: 70%;
+    color: #222;
+}
+
+.font-kalpurush-reading {
+    font-family: Kalpurush !important;
+    font-weight: 500;
+    font-size: large;
+    color: #111;
+}
+
+/* Night Mode for Kalpurush Reading Font */
+.night-mode .font-kalpurush-reading {
+    color: #DADADA !important;
+}
+
+/* Titles */
+.titleSecondary, .titleChild {
+    text-align: center;
+    color: #333;
+}
+
+/* General Container */
+.container {
+    font-family: Kalpurush;
+    color: #222;
+}
+
+/* Default Tooltip */
+.tooltip {
+    font-family: Kalpurush;
+    color: #444;
+}
+
+/* Loading */
+#loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.86);
+}
+
+#loading-image {
+    position: fixed;
+    top: 50%;
+    left: 49%;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #FF7E00;
+}
+
+/* Horizontal Line */
+hr {
+    background-color: #AFAFAF;
+    opacity: 0.4;
+}
+
+
+/* Form Inputs */
+input, textarea, select {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+
+/* Badge Colors */
+.badge {
+    min-width: 60px;
+}
+
+.badge-sahih { background-color: green; color: white; }
+.badge-hasan { background-color: #9fd568; color: black; }
+.badge-daif { background-color: darkorange; color: white; }
+.badge-jaal { background-color: red; color: white; }
+.badge-munkar { background-color: hotpink; color: white; }
+.badge-mursal { background-color: #64b5f6; color: black; }
+.badge-shaj { background-color: lightpink; color: black; }
+.badge-notahkik { background-color: black; color: white; }
+.badge-waitingtahkik { background-color: grey; color: white; }
+.badge-sahih-daif { background: linear-gradient(90deg, #4C8000, yellow); }
+
+.container-header {
+ min-height:85px;
+ background-image: url(../img/book-pattern.png), -webkit-repeating-linear-gradient(270deg, rgba(28, 35, 49, 1.00) 0%, rgba(28, 35, 49, 0.93) 100%);
+ background-image: url(../img/book-pattern.png), -moz-repeating-linear-gradient(270deg, rgba(28, 35, 49, 1.00) 0%, rgba(28, 35, 49, 0.93) 100%);
+ background-image: url(../img/book-pattern.png), -o-repeating-linear-gradient(270deg, rgba(28, 35, 49, 1.00) 0%, rgba(28, 35, 49, 0.93) 100%);
+ background-image: url(../img/book-pattern.png), repeating-linear-gradient(180deg, rgba(28, 35, 49, 1.00) 0%, rgba(28, 35, 49, 0.93) 100%);
+ background-repeat: repeat;
+ background-attachment: fixed;
+ width: auto;
+ border-bottom: thin solid #8B8B8B;
+}
+
+/* Bootstrap 5 Dark Mode */
+body.night-mode {
+    background-color: #121212 !important;
+    color: #DADADA !important;
+    background-image: none !important;
+}
+
+/* Text & Component Colors */
+.night-mode [dir="rtl"],
+.night-mode .font-kalpurush-reading,
+.night-mode .font-arabic,
+.night-mode .arabic-alphabate,
+.night-mode .titleSecondary,
+.night-mode .titleChild,
+.night-mode .container,
+.night-mode h1 {
+    color: #DADADA;
+}
+
+
+/* Footer */
+.night-mode footer {
+    background-color: #1E1E1E !important;
+    background-image: none !important;
+}
+
+.night-mode footer a {
+    color: #BB86FC !important;
+}
+
+.night-mode footer a:hover {
+    color: #FF9800 !important;
+}
+
+/* Buttons */
+
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Primary Button */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: 1px solid #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #3d4247;
+}
+
+/* Success Button */
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: 1px solid #28a745;
+}
+
+.btn-success:hover {
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+/* Danger Button */
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+    border-color: #b21f2d;
+}
+
+/* Warning Button */
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+    border: 1px solid #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #d39e00;
+    border-color: #c69500;
+}
+
+/* Info Button */
+.btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+    border: 1px solid #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #117a8b;
+    border-color: #10707f;
+}
+
+/* Light Button */
+.btn-light {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #f8f9fa;
+}
+
+.btn-light:hover {
+    background-color: #dae0e5;
+    border-color: #d6d8db;
+}
+
+/* Dark Button */
+.btn-dark {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #343a40;
+}
+
+.btn-dark:hover {
+    background-color: #1d2124;
+    border-color: #171a1d;
+}
+
+/* General Button Styling */
+body.dark-mode .btn {
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Primary Button */
+body.dark-mode .btn-primary {
+    background-color: #375a7f;
+    color: #fff;
+    border: 1px solid #375a7f;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #2b4c6e;
+    border-color: #223d5d;
+}
+
+/* Secondary Button */
+body.dark-mode .btn-secondary {
+    background-color: #444950;
+    color: #fff;
+    border: 1px solid #444950;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: #363a3f;
+    border-color: #2b2e32;
+}
+
+/* Success Button */
+body.dark-mode .btn-success {
+    background-color: #218838;
+    color: #fff;
+    border: 1px solid #218838;
+}
+
+body.dark-mode .btn-success:hover {
+    background-color: #1a682b;
+    border-color: #155524;
+}
+
+/* Danger Button */
+body.dark-mode .btn-danger {
+    background-color: #c82333;
+    color: #fff;
+    border: 1px solid #c82333;
+}
+
+body.dark-mode .btn-danger:hover {
+    background-color: #a71d2a;
+    border-color: #911721;
+}
+
+/* Warning Button */
+body.dark-mode .btn-warning {
+    background-color: #e0a800;
+    color: #212529;
+    border: 1px solid #e0a800;
+}
+
+body.dark-mode .btn-warning:hover {
+    background-color: #c69500;
+    border-color: #a37f00;
+}
+
+/* Info Button */
+body.dark-mode .btn-info {
+    background-color: #138496;
+    color: #fff;
+    border: 1px solid #138496;
+}
+
+body.dark-mode .btn-info:hover {
+    background-color: #0f6674;
+    border-color: #0c5560;
+}
+
+/* Light Button */
+body.dark-mode .btn-light {
+    background-color: #444;
+    color: #f8f9fa;
+    border: 1px solid #444;
+}
+
+body.dark-mode .btn-light:hover {
+    background-color: #333;
+    border-color: #222;
+}
+
+/* Dark Button */
+body.dark-mode .btn-dark {
+    background-color: #212529;
+    color: #fff;
+    border: 1px solid #212529;
+}
+
+body.dark-mode .btn-dark:hover {
+    background-color: #1a1d20;
+    border-color: #111;
+}
+
+
+
+/* Cards */
+.night-mode .card {
+    background-color: #1E1E1E !important;
+    border-color: #444 !important;
+}
+
+.night-mode .card-title, .night-mode .card-text {
+    color: #DADADA !important;
+}
+
+/* Navbar */
+.night-mode .navbar {
+    background-color: #1E1E1E !important;
+}
+
+.night-mode .navbar-brand, .night-mode .navbar-nav .nav-link {
+    color: #DADADA !important;
+}
+
+.night-mode .navbar-nav .nav-link:hover {
+    color: #BB86FC !important;
+}
+
+/* Dropdown */
+.night-mode .dropdown-menu {
+    background-color: #1E1E1E !important;
+    border-color: #444 !important;
+}
+
+.night-mode .dropdown-item {
+    color: #DADADA !important;
+}
+
+.night-mode .dropdown-item:hover {
+    background-color: #333 !important;
+}
+
+/* Tables */
+
+
+.night-mode .table {
+    color: #DADADA !important;
+}
+
+.night-mode .table th, .night-mode .table td {
+    border-color: #444 !important;
+}
+
+/* Modal */
+.night-mode .modal-content {
+    background-color: #1E1E1E !important;
+}
+
+.night-mode .modal-header, .night-mode .modal-footer {
+    border-color: #444 !important;
+}
+
+.night-mode .modal-title {
+    color: #DADADA !important;
+}
+
+
+/* Pagination */
+.night-mode .pagination .page-link {
+    color: #BB86FC !important;
+}
+
+.night-mode .pagination .page-item.active .page-link {
+    background-color: #BB86FC !important;
+    border-color: #BB86FC !important;
+}
+
+/* Scrollbar */
+.night-mode ::-webkit-scrollbar-track {
+    background: #333 !important;
+}
+
+.night-mode ::-webkit-scrollbar-thumb {
+    background: #555 !important;
+}
+
+/* Light Mode (Default) */
+.card-body {
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* General Alert Styling */
+.alert {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Specific Alert Colors for Day Mode */
+.alert-primary {
+    background-color: #cce5ff;
+    color: #004085;
+    border: 1px solid #b8daff;
+}
+
+.alert-secondary {
+    background-color: #e2e3e5;
+    color: #383d41;
+    border: 1px solid #d6d8db;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.alert-light {
+    background-color: #fefefe;
+    color: #818182;
+    border: 1px solid #fdfdfe;
+}
+
+.alert-dark {
+    background-color: #d6d8d9;
+    color: #1b1e21;
+    border: 1px solid #c6c8ca;
+}
+
+/* Night Mode General Alert */
+.night-mode .alert,
+.night-mode .alert-primary, .night-mode .alert-secondary, .night-mode .alert-success,
+.night-mode .alert-danger, .night-mode .alert-warning, .night-mode .alert-info, .night-mode .alert-light, .night-mode .alert-dark {
+    background-color: #1E1E1E !important;
+    color: #DADADA !important;
+    border-color: #444 !important;
+}
+
+
+
+/* Forms */
+input, textarea, select {
+    background-color: #ffffff;
+    color: #222;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #777;
+}
+
+/* Buttons */
+.btn {
+    background-color: #f8f9fa;
+    color: #222;
+    border: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+.dropdown-item {
+    color: #222;
+    padding: 8px;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Tab Content */
+.tab-content {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.tab-pane {
+    background-color: #ffffff;
+    color: #222;
+    padding: 10px;
+}
+
+/* Night Mode */
+
+/* Night Mode for Card Body */
+.night-mode .card-body {
+    background-color: #1E1E1E !important;
+    color: #DADADA !important;
+}
+
+
+/* Night Mode for Forms */
+.night-mode input,
+.night-mode textarea,
+.night-mode select {
+    background-color: #333 !important;
+    color: #DADADA !important;
+    border: 1px solid #555 !important;
+}
+
+.night-mode input::placeholder,
+.night-mode textarea::placeholder {
+    color: #999 !important;
+}
+
+/* Night Mode for Buttons */
+.night-mode .btn {
+    background-color: #333 !important;
+    color: #DADADA !important;
+    border: 1px solid #555 !important;
+}
+
+.night-mode .btn-primary {
+    background-color: #BB86FC !important;
+    border-color: #BB86FC !important;
+    color: #1E1E1E !important;
+}
+
+.night-mode .btn-secondary {
+    background-color: #555 !important;
+    border-color: #777 !important;
+    color: #DADADA !important;
+}
+
+/* Night Mode for Dropdowns */
+.night-mode .dropdown-menu {
+    background-color: #1E1E1E !important;
+    border-color: #444 !important;
+}
+
+.night-mode .dropdown-item {
+    color: #DADADA !important;
+}
+
+.night-mode .dropdown-item:hover {
+    background-color: #333 !important;
+}
+
+/* Night Mode for Tabs */
+.night-mode .tab-content {
+    background-color: #1E1E1E !important;
+    border-color: #444 !important;
+}
+
+.night-mode .tab-pane {
+    background-color: #1E1E1E !important;
+    color: #DADADA !important;
+}
+
+/* Tab Navigation */
+.night-mode .nav-tabs .nav-link {
+    background-color: #1E1E1E !important;
+    color: #DADADA !important;
+    border-color: #444 !important;
+}
+
+.night-mode .nav-tabs .nav-link.active {
+    background-color: #333 !important;
+    border-bottom-color: transparent !important;
+}
+/* Default (Light Mode) */
+.card-footer {
+    background-color: #f8f9fa;
+    color: #222;
+    border-top: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+/* Night Mode for Card Footer */
+.night-mode .card-footer {
+    background-color: #1E1E1E !important;
+    color: #DADADA !important;
+    border-top: 1px solid #444 !important;
+}
+/* Default (Light Mode) */
+.list-group-item {
+    background-color: #ffffff;
+    color: #222;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item-action:hover {
+    background-color: #f8f9fa;
+}
+
+li {
+    color: #222;
+}
+
+/* Night Mode for List Group Items */
+.night-mode .list-group-item {
+    background-color: #1E1E1E !important;
+    color: #DADADA !important;
+    border-color: #444 !important;
+}
+
+.night-mode .list-group-item-action:hover {
+    background-color: #333 !important;
+}
+
+/* Night Mode for List Items */
+.night-mode li {
+    color: #DADADA !important;
+}
+
+/* Default (Light Mode) remains unchanged */
+
+/* Night Mode Background Colors */
+.night-mode .bg-primary {
+    background-color: #1A1A2E !important;
+    color: #DADADA !important;
+}
+
+.night-mode .bg-secondary {
+    background-color: #2C2C2C !important;
+    color: #B0B0B0 !important;
+}
+
+.night-mode .bg-success {
+    background-color: #153D2E !important;
+    color: #9FD29E !important;
+}
+
+.night-mode .bg-danger {
+    background-color: #4A1A1A !important;
+    color: #FF8A80 !important;
+}
+
+.night-mode .bg-warning {
+    background-color: #4E3B0A !important;
+    color: #FFCA28 !important;
+}
+
+.night-mode .bg-info {
+    background-color: #0A3D5E !important;
+    color: #81D4FA !important;
+}
+
+.night-mode .bg-light {
+    background-color: #2A2A2A !important;
+    color: #DADADA !important;
+}
+
+.night-mode .bg-dark {
+    background-color: #101010 !important;
+    color: #D1D1D1 !important;
+}
+/* Night Mode Text Colors */
+.night-mode .text-primary {
+    color: #BB86FC !important;
+}
+
+.night-mode .text-secondary {
+    color: #B0B0B0 !important;
+}
+
+.night-mode .text-success {
+    color: #81C784 !important;
+}
+
+.night-mode .text-danger {
+    color: #FF8A80 !important;
+}
+
+.night-mode .text-warning {
+    color: #FFCA28 !important;
+}
+
+.night-mode .text-info {
+    color: #81D4FA !important;
+}
+
+.night-mode .text-light {
+    color: #DADADA !important;
+}
+
+.night-mode .text-dark {
+    color: #A0A0A0 !important;
+}
+
+/* Light Mode (Default) remains unchanged */
+
+/* Night Mode for Pills */
+.night-mode .nav-pills .nav-link {
+    background-color: #1E1E1E !important;
+    color: #DADADA !important;
+    border: 1px solid #444 !important;
+}
+
+.night-mode .nav-pills .nav-link:hover {
+    background-color: #333 !important;
+    color: #BB86FC !important;
+}
+
+/* Active Pill */
+.night-mode .nav-pills .nav-link.active {
+    background-color: #BB86FC !important;
+    color: #1E1E1E !important;
+    border-color: #BB86FC !important;
+}
+
+/* Disabled Pill */
+.night-mode .nav-pills .nav-link.disabled {
+    background-color: #222 !important;
+    color: #777 !important;
+    border-color: #444 !important;
+}
+
+/* Light Mode (Default) remains unchanged */
+
+/* Night Mode for Rounded Pills */
+.night-mode .rounded-pill {
+    background-color: #1E1E1E !important;
+    color: #DADADA !important;
+    border: 1px solid #444 !important;
+}
+
+/* Active Rounded Pill */
+.night-mode .rounded-pill.active {
+    background-color: #BB86FC !important;
+    color: #1E1E1E !important;
+    border-color: #BB86FC !important;
+}
+
+/* Hover Effect */
+.night-mode .rounded-pill:hover {
+    background-color: #333 !important;
+    color: #BB86FC !important;
+}
+
+/* Disabled Rounded Pill */
+.night-mode .rounded-pill.disabled {
+    background-color: #222 !important;
+    color: #777 !important;
+    border-color: #444 !important;
+}

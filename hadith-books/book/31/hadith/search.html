@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:title" content="হাদিস সার্চ - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+    <title>হাদিস সার্চ</title>
+    <style>
+        @font-face {
+            font-family: 'SolaimanLipi';
+            src: url('fonts/SolaimanLipi.ttf') format('truetype');
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Noorehuda';
+            src: url('fonts/noorehuda.ttf') format('truetype');
+            font-display: swap;
+        }
+        body {
+            font-family: 'SolaimanLipi', sans-serif;
+            margin: 0; padding: 0;
+            background-color: #f5f5f5;
+        }
+        .toolbar {
+            background-color: #01837A;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .back-icon {
+            width: 24px; height: 24px;
+            cursor: pointer;
+        }
+        .title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .search-container {
+            display: none;
+            padding: 10px 10px;
+            background-color: white;
+            position: sticky;
+            top: 60px;
+            z-index: 99;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(100% - 100px);
+            margin: 0 auto;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #01837A;
+            border-radius: 25px;
+            font-family: 'SolaimanLipi';
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        .hadith-container {
+            padding: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hadith-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border: 2px solid #01837A;
+        }
+        .hadith-number {
+            font-size: 18px;
+            font-weight: bold;
+            color: #01837A;
+            margin-right: 20px;
+        }
+        .hadith-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .hadith-description-ar {
+            font-family: 'Noorehuda', sans-serif;
+            font-size: 20px;
+            color: #333;
+            direction: rtl;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .hadith-description {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        mark {
+            background-color: yellow;
+            color: black;
+        }
+        .loading {
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+            color: #01837A;
+        }
+        .error-message {
+            text-align: center;
+            padding: 30px;
+            color: red;
+            font-size: 16px;
+        }
+        .copy-share-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .copy-share-container img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .app-link {
+            font-size: 14px;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <img src="back.png" class="back-icon" alt="Back" id="backButton" />
+        <div class="title" id="pageTitle">হাদিস সার্চ</div>
+        <img src="search.png" alt="Search" class="back-icon" id="searchToggle" style="cursor:pointer;" />
+    </div>
+
+    <div class="search-container" id="searchContainer">
+        <input
+            type="text"
+            class="search-input"
+            id="searchInput"
+            placeholder="সার্চ করুন..."
+            autocomplete="off"
+        />
+    </div>
+
+    <div class="hadith-container" id="hadithDetails">
+        <div class="loading">হাদিসের বিস্তারিত তথ্য লোড হচ্ছে...</div>
+    </div>
+
+    <script>
+        // বাংলা সংখ্যা রূপান্তর
+        function toBanglaNumber(num) {
+            const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+            return num.toString().replace(/\d/g, (digit) => banglaDigits[digit]);
+        }
+
+        // টেক্সট হাইলাইট করার ফাংশন
+        function highlightText(text, searchTerm) {
+            if (!searchTerm) return text;
+            const escapedTerm = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // regex escape
+            const regex = new RegExp(escapedTerm, 'gi');
+            return text.replace(regex, (match) => `<mark>${match}</mark>`);
+        }
+
+        let loadedHadithData = [];
+
+        async function loadAllHadiths() {
+            const container = document.getElementById('hadithDetails');
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchQuery = urlParams.get('search') || '';
+            const searchNum = urlParams.get('searchnum') || '';
+            const bookId = '31';
+
+            const minHadithFile = 2281;
+            const maxHadithFile = 2331;
+            const extraFiles = [2331];
+
+            container.innerHTML = `<div class="loading">হাদিসের বিস্তারিত তথ্য লোড হচ্ছে...</div>`;
+
+            try {
+                let fetchPromises = [];
+
+                for (let i = minHadithFile; i <= maxHadithFile; i++) {
+                    const url = `https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/hadith-books/book/${bookId}/hadith/${i}.json`;
+                    fetchPromises.push(
+                        fetch(url).then(res => (res.ok ? res.json() : null)).catch(() => null)
+                    );
+                }
+
+                for (let i of extraFiles) {
+                    const url = `https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/hadith-books/book/${bookId}/hadith/${i}.json`;
+                    fetchPromises.push(
+                        fetch(url).then(res => (res.ok ? res.json() : null)).catch(() => null)
+                    );
+                }
+
+                const results = await Promise.all(fetchPromises);
+                loadedHadithData = results.filter(data => Array.isArray(data)).flat();
+
+                if (loadedHadithData.length === 0) {
+                    container.innerHTML = `<div class="error-message">কোন হাদিস পাওয়া যায়নি।</div>`;
+                    return;
+                }
+
+                let filteredHadiths;
+
+                if (searchNum) {
+                    filteredHadiths = loadedHadithData.filter(h => h.hadith_number == searchNum);
+                } else {
+                    filteredHadiths = loadedHadithData.filter((hadith) => {
+                        return (
+                            hadith.hadith_number.toString().includes(searchQuery) ||
+                            (hadith.title &&
+                                hadith.title.toLowerCase().includes(searchQuery.toLowerCase())) ||
+                            (hadith.description &&
+                                hadith.description.toLowerCase().includes(searchQuery.toLowerCase())) ||
+                            (hadith.description_ar &&
+                                hadith.description_ar.toLowerCase().includes(searchQuery.toLowerCase()))
+                        );
+                    });
+                }
+
+                displayHadithDetails(filteredHadiths);
+            } catch (error) {
+                console.error('ডেটা লোড করতে সমস্যা:', error);
+                container.innerHTML = `<div class="error-message">হাদিসের তথ্য লোড করতে সমস্যা হচ্ছে।<br><small>${error.message}</small></div>`;
+            }
+        }
+
+        function displayHadithDetails(hadithData) {
+            const container = document.getElementById('hadithDetails');
+            container.innerHTML = '';
+
+            if (!hadithData || hadithData.length === 0) {
+                container.innerHTML = `<div class="error-message">কোন হাদিস পাওয়া যায়নি।</div>`;
+                return;
+            }
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const searchTerm = urlParams.get('search') || '';
+
+            hadithData.forEach((hadith) => {
+                const hadithNumber = hadith.hadith_number || 'তথ্য নেই';
+
+                const title = highlightText(hadith.title || 'তথ্য নেই', searchTerm);
+                const description = highlightText(hadith.description || 'তথ্য নেই', searchTerm);
+                const description_ar = highlightText(hadith.description_ar || 'তথ্য নেই', searchTerm);
+
+                const box = document.createElement('div');
+                box.className = 'hadith-box';
+                box.innerHTML = `
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="hadith-number">হাদিস নং: ${toBanglaNumber(hadithNumber)}</div>
+                        <div class="copy-share-container">
+                            <img src="copy.png" alt="Copy" onclick="copyHadithLink('${hadithNumber}')" />
+                            <img src="share.png" alt="Share" onclick="shareHadithLink('${hadithNumber}')" />
+                        </div>
+                    </div>
+                    <div class="hadith-title">${title}</div>
+                    <div class="hadith-description-ar">${description_ar}</div>
+                    <div class="hadith-description">${description}</div>
+                `;
+                container.appendChild(box);
+            });
+        }
+
+        function findHadithByNumber(hadithNumber) {
+            return loadedHadithData.find((h) => h.hadith_number == hadithNumber);
+        }
+
+        function copyHadithLink(hadithNumber) {
+    const hadith = findHadithByNumber(hadithNumber);
+    if (!hadith) return;
+
+    const query = new URLSearchParams(window.location.search).get('search') || '';
+    const baseUrl = window.location.origin + '/hadith-books/book/31/hadith/search.html';
+    const link = `${baseUrl}?searchnum=${encodeURIComponent(hadithNumber)}`;
+
+    const bookTitle = hadith.book?.title || 'বইয়ের নাম পাওয়া যায়নি';
+
+    const fullText = `
+${bookTitle} হাদিস নং: ${toBanglaNumber(hadith.hadith_number)}
+${hadith.title}
+${hadith.description_ar}
+${hadith.description}
+
+আসসালামু আলাইকুম
+হাদিসের লিংক: ${link}
+অ্যাপ লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500
+    `.trim();
+
+    navigator.clipboard.writeText(fullText).then(() => {
+        alert('কপি করা হয়েছে!');
+    });
+}
+
+function shareHadithLink(hadithNumber) {
+    const hadith = findHadithByNumber(hadithNumber);
+    if (!hadith) return;
+
+    const query = new URLSearchParams(window.location.search).get('search') || '';
+    const baseUrl = window.location.origin + '/hadith-books/book/31/hadith/search.html';
+    const link = `${baseUrl}?searchnum=${encodeURIComponent(hadithNumber)}`;
+
+    const bookTitle = hadith.book?.title || 'বইয়ের নাম পাওয়া যায়নি';
+
+    const shareText = `
+${bookTitle} হাদিস নং: ${toBanglaNumber(hadith.hadith_number)}
+${hadith.title}
+${hadith.description_ar}
+${hadith.description}
+
+আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2
+হাদিসের লিংক: ${link}
+অ্যাপ লিংকঃ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500
+    `.trim();
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'হাদিস',
+            text: shareText
+        }).catch((error) => console.log('Error sharing', error));
+    } else {
+        alert('এই ব্রাউজারে শেয়ার ফিচার সমর্থিত নয়');
+    }
+}
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            loadAllHadiths();
+
+            document.getElementById('backButton').addEventListener('click', () => {
+                window.history.back();
+            });
+
+            // সার্চ টগল করার জন্য
+            const searchToggle = document.getElementById('searchToggle');
+            const searchContainer = document.getElementById('searchContainer');
+            const searchInput = document.getElementById('searchInput');
+
+            searchToggle.addEventListener('click', () => {
+                if (searchContainer.style.display === 'flex') {
+                    searchContainer.style.display = 'none';
+                } else {
+                    searchContainer.style.display = 'flex';
+                    searchInput.focus();
+                }
+            });
+
+            // সার্চ ইনপুট এন্টার দিলে URL আপডেট করে রিলোড
+            searchInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    const val = searchInput.value.trim();
+                    if (val) {
+                        const newUrl = new URL(window.location);
+                        newUrl.searchParams.delete('searchnum');
+                        newUrl.searchParams.set('search', val);
+                        window.location.href = newUrl.toString();
+                    } else {
+                        // খালি করলে সার্চ প্যারামিটার মুছে দিয়ে রিলোড
+                        const newUrl = new URL(window.location);
+                        newUrl.searchParams.delete('search');
+                        newUrl.searchParams.delete('searchnum');
+                        window.location.href = newUrl.toString();
+                    }
+                }
+            });
+
+            // যদি URL এ search থাকে, ইনপুট ফিল্ডে সেট করে দাও
+            const urlParams = new URLSearchParams(window.location.search);
+            const currentSearch = urlParams.get('search');
+            if (currentSearch) {
+                searchContainer.style.display = 'flex';
+                searchInput.value = currentSearch;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:title" content="মুসান্নাফ ইবনু আবী শাইবাহ (উর্দু) - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+    <title>মুসান্নাফ ইবনু আবী শাইবাহ (উর্দু)</title>
+    <style>
+        @font-face {
+            font-family: 'SolaimanLipi';
+            src: url('fonts/SolaimanLipi.ttf') format('truetype');
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'Noorehuda';
+            src: url('fonts/noorehuda.ttf') format('truetype');
+            font-display: swap;
+        }
+        
+        body {
+            font-family: 'SolaimanLipi', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .toolbar {
+            background-color: #01837A;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .back-icon, .search-icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        
+        .title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .search-container {
+            display: none;
+            padding: 10px 10px;
+            background-color: white;
+            position: sticky;
+            top: 60px;
+            z-index: 99;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(100% - 100px);
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #01837A;
+            border-radius: 25px;
+            font-family: 'SolaimanLipi';
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        
+        .books-container {
+            padding: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .book-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border: 2px solid #01837A;
+        }
+        
+        .book-id {
+            display: inline-block;
+            background-color: #01837A;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            line-height: 35px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .book-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #01837A;
+            margin-bottom: 8px;
+        }
+        
+        .book-title-ar {
+            font-family: 'Noorehuda', sans-serif;
+            font-size: 18px;
+            color: #333;
+            direction: rtl;
+            margin-bottom: 15px;
+        }
+        
+        .book-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #666;
+            padding-top: 10px;
+            border-top: 1px dashed #ddd;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+            color: #01837A;
+        }
+        
+        .error-message {
+            text-align: center;
+            padding: 30px;
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <img src="back.png" class="back-icon" alt="Back" id="backButton">
+        <div class="title" id="pageTitle">মুসান্নাফ ইবনু আবী শাইবাহ (উর্দু)</div>
+        <img src="search.png" class="search-icon" alt="Search" id="searchToggle">
+    </div>
+    
+    <div class="search-container" id="searchContainer">
+        <input type="text" class="search-input" placeholder="হাদিস খুঁজুন..." id="searchInput">
+    </div>
+    
+    <div class="books-container" id="bookDetails">
+        <div class="loading">হাদিসের বিস্তারিত তথ্য লোড হচ্ছে...</div>
+    </div>
+
+    <script>
+        const toBanglaNumber = (num) => {
+            if (num === null || num === undefined || isNaN(num)) {
+                return '০';
+            }
+            const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+            return num.toString().replace(/\d/g, digit => banglaDigits[digit]);
+        };
+
+        const safeString = (str) => {
+            return str || 'তথ্য নেই';
+        };
+
+        function getBookIdFromUrl() {
+            const pathParts = window.location.pathname.split('/');
+            const bookIndex = pathParts.indexOf('book');
+            if (bookIndex !== -1 && pathParts.length > bookIndex + 1) {
+                return pathParts[bookIndex + 1];
+            }
+            return null;
+        }
+
+        let allSectionsData = [];
+
+        async function loadBookDetails() {
+            const container = document.getElementById('bookDetails');
+            const bookId = getBookIdFromUrl();
+            
+            if (!bookId) {
+                container.innerHTML = `
+                    <div class="error-message">
+                        হাদিসের কিতাবের ID পাওয়া যায়নি। দয়া করে সঠিক লিংক ব্যবহার করুন।
+                    </div>
+                `;
+                return;
+            }
+            
+            try {
+                const response = await fetch(`https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/hadith-books/book/${bookId}/title.json`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                allSectionsData = await response.json();
+                
+                if (!Array.isArray(allSectionsData)) {
+                    throw new Error('অবৈধ ডেটা ফরম্যাট: অ্যারে এক্সপেক্টেড');
+                }
+                
+                const pageTitle = document.getElementById('pageTitle');
+                if (pageTitle) {
+                    pageTitle.textContent = localStorage.getItem('currentBookTitle') || 'মুসান্নাফ ইবনু আবী শাইবাহ (উর্দু)';
+
+                }
+                
+                displayAllSections(allSectionsData);
+                
+            } catch (error) {
+                console.error('ডেটা লোড করতে সমস্যা:', error);
+                container.innerHTML = `
+                    <div class="error-message">
+                        হাদিসের কিতাবের তথ্য লোড করতে সমস্যা হচ্ছে। দয়া করে পরে আবার চেষ্টা করুন।<br>
+                        <small>${error.message}</small>
+                    </div>
+                `;
+            }
+        }
+
+        function displayAllSections(sections) {
+            const container = document.getElementById('bookDetails');
+            container.innerHTML = '';
+            
+            if (sections.length === 0) {
+                container.innerHTML = `
+                    <div class="error-message">
+                        কোন সেকশন পাওয়া যায়নি।
+                    </div>
+                `;
+                return;
+            }
+            
+            sections.forEach(section => {
+                const sectionData = {
+                    id: section.id || 0,
+					sequence: section.sequence || 0,
+                    book_id: section.book_id || 0,
+                    title: safeString(section.title),
+                    title_ar: safeString(section.title_ar),
+                    total_hadith: section.total_hadith || 0,
+                    range_start: section.range_start || 0,
+                    range_end: section.range_end || 0
+                };
+                
+                let hadithRange = 'তথ্য নেই';
+                if (sectionData.range_start && sectionData.range_end) {
+                    hadithRange = `${toBanglaNumber(sectionData.range_start)} - ${toBanglaNumber(sectionData.range_end)}`;
+                } else if (sectionData.range_start) {
+                    hadithRange = `${toBanglaNumber(sectionData.range_start)} থেকে শুরু`;
+                } else if (sectionData.range_end) {
+                    hadithRange = `${toBanglaNumber(sectionData.range_end)} পর্যন্ত`;
+                }
+                
+                const box = document.createElement('div');
+                box.className = 'book-box';
+                box.innerHTML = `
+                    <div class="book-id">${toBanglaNumber(sectionData.sequence)}</div>
+                    <div class="book-title">${sectionData.title}</div>
+                    
+                    <div class="book-meta">
+                        <span>মোট হাদিস: ${toBanglaNumber(sectionData.total_hadith)} টি</span>
+                        <span>ব্যাপ্তি: ${hadithRange}</span>
+                    </div>
+                `;
+                box.addEventListener('click', function() {
+                    localStorage.setItem('currentSectionTitle', sectionData.title); // Store section title
+                    localStorage.setItem('currentBookId', sectionData.book_id); // Store book ID
+                    localStorage.setItem('currentSectionId', sectionData.id); // Store section ID
+
+                    // Redirection to the index.html page for this book and section
+                    window.location.href = `hadith/index.html`; 
+                });
+                container.appendChild(box);
+            });
+        }
+
+        function initSearch() {
+            const searchToggle = document.getElementById('searchToggle');
+            const searchContainer = document.getElementById('searchContainer');
+            const searchInput = document.getElementById('searchInput');
+            
+            searchToggle.addEventListener('click', function() {
+                if (searchContainer.style.display === 'none' || !searchContainer.style.display) {
+                    searchContainer.style.display = 'block';
+                    searchInput.focus();
+                } else {
+                    searchContainer.style.display = 'none';
+                    searchInput.value = '';
+                    displayAllSections(allSectionsData);
+                }
+            });
+            
+            searchInput.addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase().trim();
+                
+                if (searchTerm === '') {
+                    displayAllSections(allSectionsData);
+                    return;
+                }
+                
+                const filteredSections = allSectionsData.filter(section => {
+                    const title = section.title ? section.title.toLowerCase() : '';
+                    return title.includes(searchTerm);
+                });
+                
+                displayAllSections(filteredSections);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadBookDetails();
+            initSearch();
+            
+            document.getElementById('backButton').addEventListener('click', function() {
+                window.history.back();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+[
+    {
+        "id": 4001,
+        "book_id": 51,
+        "sequence": 1,
+        "title": "মুকাদ্দিমাহ",
+        "title_ar": "المقدمة",
+        "total_hadith": 32,
+        "range_start": 1,
+        "range_end": 32
+    },
+    {
+        "id": 4002,
+        "book_id": 51,
+        "sequence": 2,
+        "title": "কিতাবুল ওহী",
+        "title_ar": "كتاب الوحي",
+        "total_hadith": 12,
+        "range_start": 33,
+        "range_end": 44
+    },
+    {
+        "id": 4003,
+        "book_id": 51,
+        "sequence": 3,
+        "title": "কিতাবুল ইসরা [ও মে’রাজ]",
+        "title_ar": "الإسراء",
+        "total_hadith": 16,
+        "range_start": 45,
+        "range_end": 60
+    },
+    {
+        "id": 4004,
+        "book_id": 51,
+        "sequence": 4,
+        "title": "কিতাবুল ঈলম",
+        "title_ar": "كتاب العلم",
+        "total_hadith": 67,
+        "range_start": 61,
+        "range_end": 127
+    },
+    {
+        "id": 4005,
+        "book_id": 51,
+        "sequence": 5,
+        "title": "কিতাবুল ঈমান",
+        "title_ar": "كِتَابُ الْإِيمَانِ",
+        "total_hadith": 143,
+        "range_start": 128,
+        "range_end": 270
+    },
+    {
+        "id": 4006,
+        "book_id": 51,
+        "sequence": 6,
+        "title": "সদাচারণ ও ন্যায়নিষ্ঠতা সংশ্লিষ্ট কিতাব",
+        "title_ar": "كِتَابُ الْبِرِّ وَالْإِحْسَانِ",
+        "total_hadith": 339,
+        "range_start": 271,
+        "range_end": 605
+    },
+    {
+        "id": 4007,
+        "book_id": 51,
+        "sequence": 7,
+        "title": "মন গলানো সুমিষ্ট উপদেশমালা",
+        "title_ar": "كِتَابُ الرَّقَائِقِ",
+        "total_hadith": 431,
+        "range_start": 606,
+        "range_end": 1033
+    },
+    {
+        "id": 4008,
+        "book_id": 51,
+        "sequence": 8,
+        "title": "পবিত্রতা অর্জন",
+        "title_ar": "كِتَابُ الطَّهَارَةِ",
+        "total_hadith": 411,
+        "range_start": 1034,
+        "range_end": 1442
+    },
+    {
+        "id": 4009,
+        "book_id": 51,
+        "sequence": 9,
+        "title": "কিতাবুস সালাত",
+        "title_ar": "كتاب الصلاة",
+        "total_hadith": 411,
+        "range_start": 1043,
+        "range_end": 2426
+    }
+]

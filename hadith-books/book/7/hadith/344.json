@@ -1,0 +1,80 @@
+[
+    {
+        "id": 43125,
+        "title": "১. ইলম তলব করা প্রসঙ্গ",
+        "title_en": "",
+        "title_ar": "باب مَا جَاءَ فِي طَلَبِ الْعِلْمِ",
+        "title_without_harkat": "باب مَا جَاءَ فِي طَلَبِ الْعِلْمِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 7,
+        "chapter_id": 344,
+        "title_id": 13901,
+        "rabi_id": 283,
+        "type_id": 3,
+        "hadith_number": 1887,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "রেওয়ায়ত ১. মালিক (رحمة الله)-এর নিকট রেওয়ায়ত পৌছিয়াছে, লুকমান হাকীম (আলাইহিস সালাম) স্বীয় ছেলেকে (মৃত্যুকালে) উপদেশ দিয়াছেন, বৎস! আলিমগণের মজলিসে বসিও এবং তাঁহাদের নিকটে হাটু পাতিয়া (আদব সহকারে) বসিও। কেননা আল্লাহ তাআলা হিকমতের নুর দ্বারা হৃদয়কে এমনভাবে সঞ্জীবিত করেন যেমন মৃত যমীনকে বৃষ্টির পানি দ্বারা জীবিত করেন।",
+        "description_en": "Yahya related to me from Malik that he heard that Luqman al-Hakim made his will and counselled his son, saying, \"My son! Sit with the learned men and keep close to them. Allah gives life to the hearts with the light of wisdom as Allah gives life to the dead earth with the abundant rain of the sky.\"",
+        "description_ar": "حَدَّثَنِي عَنْ مَالِك أَنَّهُ بَلَغَهُ أَنَّ لُقْمَانَ الْحَكِيمَ أَوْصَى ابْنَهُ فَقَالَ يَا بُنَيَّ جَالِسْ الْعُلَمَاءَ وَزَاحِمْهُمْ بِرُكْبَتَيْكَ فَإِنَّ اللَّهَ يُحْيِي الْقُلُوبَ بِنُورِ الْحِكْمَةِ كَمَا يُحْيِي اللَّهُ الْأَرْضَ الْمَيْتَةَ بِوَابِلِ السَّمَاءِ",
+        "description_without_harkat": "حدثني عن مالك أنه بلغه أن لقمان الحكيم أوصى ابنه فقال يا بني جالس العلماء وزاحمهم بركبتيك فإن الله يحيي القلوب بنور الحكمة كما يحيي الله الأرض الميتة بوابل السماء",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T05:14:16.000Z",
+        "updated_at": "2022-05-26T06:14:28.000Z",
+        "book": {
+            "id": 7,
+            "title": "মুওয়াত্তা মালিক",
+            "title_en": "আল মুওয়াত্তা - ইমাম মালিক (رحمة الله)",
+            "english_title": "Al-Muwatta by Imam Malik",
+            "title_ar": "كتاب الموطأ للإمام مالك",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 344,
+            "title": "৫৯. ইলম আহরণের ফযীলত",
+            "title_en": "59. Knowledge",
+            "title_ar": "كتاب العلم",
+            "range_start": 1887,
+            "range_end": 1887
+        },
+        "titles": {
+            "id": 13901,
+            "title": "১. ইলম তলব করা প্রসঙ্গ",
+            "title_en": null,
+            "title_ar": "باب مَا جَاءَ فِي طَلَبِ الْعِلْمِ",
+            "title_without_harkat": "باب مَا جَاءَ فِي طَلَبِ الْعِلْمِ"
+        },
+        "rabis": [
+            {
+                "id": 283,
+                "title": "মালিক ইবনে আনাস ((رحمة الله))",
+                "title_en": "Malik Ibn Anas (R)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 3,
+            "title": "তাহকীক চলমান",
+            "title_en": "Tahqiq ongoing",
+            "title_ar": "ضعيف"
+        },
+        "explanations": null
+    }
+]

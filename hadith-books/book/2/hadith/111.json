@@ -1,0 +1,3571 @@
+[
+    {
+        "id": 11067,
+        "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4766,
+        "rabi_id": 17,
+        "type_id": 1,
+        "hadith_number": 4018,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১৮। আব্দুল্লাহ ইবনে মাসলামা ইবনে কা’নাব (রাহঃ) ......... উমর ইবনে খাত্তাব ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেনঃ আমি একটি উত্তম ঘোড়া আল্লাহর রাস্তায় দান করেছি। কিন্তু সে ব্যক্তি ঘোড়াটির সঠিক রক্ষণাবেক্ষণ করতে অক্ষম থাকে। আমার ধারণা হলো সে তা সস্তায় বিক্তি করে দিবে। আমি এ ব্যাপারে রাসুলাল্লাহ (ﷺ) এর নিকট জিজ্ঞাসা করলাম। তিনি বললেন, তুমি উহা খরিদ করবে না এবং তোমার দানকে ফিরিয়ে আনবে না। কেননা, যে ব্যক্তি আপন দান ফিরিয়ে নেয়, সে সেই কুকুরের ন্যায়, যে বমি করে তা আবার খায়।",
+        "description_en": "Umar b. Khattab (Allah be pleased with him) reported:<br>I donated a pedigree horse in the path of Allah. Its possessor made it languish. I thought that he would sell it at a cheap price. I asked Allah’s Messenger (ﷺ) about it, whereupon he said: Don’t buy it and do not get back your charity, for one who gets back the charity is like a dog who swallows its vomit.",
+        "description_ar": "حَدَّثَنَا عَبْدُ اللَّهِ بْنُ مَسْلَمَةَ بْنِ قَعْنَبٍ، حَدَّثَنَا مَالِكُ بْنُ أَنَسٍ، عَنْ زَيْدِ بْنِ أَسْلَمَ، عَنْ أَبِيهِ، أَنَّ عُمَرَ بْنَ الْخَطَّابِ، قَالَ حَمَلْتُ عَلَى فَرَسٍ عَتِيقٍ فِي سَبِيلِ اللَّهِ فَأَضَاعَهُ صَاحِبُهُ فَظَنَنْتُ أَنَّهُ بَائِعُهُ بِرُخْصٍ فَسَأَلْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم عَنْ ذَلِكَ فَقَالَ  \" لاَ تَبْتَعْهُ وَلاَ تَعُدْ فِي صَدَقَتِكَ فَإِنَّ الْعَائِدَ فِي صَدَقَتِهِ كَالْكَلْبِ يَعُودُ فِي قَيْئِهِ \" .",
+        "description_without_harkat": "حدثنا عبد الله بن مسلمة بن قعنب، حدثنا مالك بن أنس، عن زيد بن أسلم، عن أبيه، أن عمر بن الخطاب، قال حملت على فرس عتيق في سبيل الله فأضاعه صاحبه فظننت أنه بائعه برخص فسألت رسول الله صلى الله عليه وسلم عن ذلك فقال  \" لا تبتعه ولا تعد في صدقتك فإن العائد في صدقته كالكلب يعود في قيئه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:30:27.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4766,
+            "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+            "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ"
+        },
+        "rabis": [
+            {
+                "id": 17,
+                "title": "হযরত উমর ইবনুল খাত্তাব (رضي الله عنه)",
+                "title_en": "Umar Ibnul Khattab (RA)",
+                "title_ar": "عمر بْن الخطاب -أمير المؤمنين رضى الله عنه- القرشي العدوي",
+                "death_year": "23"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4164,
+                "title": "1620-1",
+                "hadith_number": 4018,
+                "hadith_id": 11067,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:30:27.000Z",
+                "updated_at": "2024-10-17T05:30:27.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11068,
+        "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4766,
+        "rabi_id": 283,
+        "type_id": 1,
+        "hadith_number": 4019,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০১৯। যুহাইর ইবনে হারব (রাহঃ) ......... মালিক ইবনে আনাস (রাহঃ) থেকে উক্ত সনদে বর্ণনা করেন। তবে এতে তিনি আরো বলেছেন যে, তুমি তা খরীদ করবে না, যদি এক দিরহামের বিনিময়েও সে তোমাকে তা দিয়ে দেয়।",
+        "description_en": "This hadith has been narrated on the authority of Malik b. Anas with the same chain of transmitters but with this addition:<br>\" Don’t buy that even if he gives you for one dirham.\"",
+        "description_ar": "وَحَدَّثَنِيهِ زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ، - يَعْنِي ابْنَ مَهْدِيٍّ - عَنْ مَالِكِ، بْنِ أَنَسٍ بِهَذَا الإِسْنَادِ وَزَادَ  \" لاَ تَبْتَعْهُ وَإِنْ أَعْطَاكَهُ بِدِرْهَمٍ \" .",
+        "description_without_harkat": "وحدثنيه زهير بن حرب، حدثنا عبد الرحمن، - يعني ابن مهدي - عن مالك، بن أنس بهذا الإسناد وزاد  \" لا تبتعه وإن أعطاكه بدرهم \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:30:51.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4766,
+            "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+            "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ"
+        },
+        "rabis": [
+            {
+                "id": 283,
+                "title": "মালিক ইবনে আনাস ((رحمة الله))",
+                "title_en": "Malik Ibn Anas (R)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4165,
+                "title": " 1620-2",
+                "hadith_number": 4019,
+                "hadith_id": 11068,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:30:51.000Z",
+                "updated_at": "2024-10-17T05:30:51.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11069,
+        "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4766,
+        "rabi_id": 17,
+        "type_id": 1,
+        "hadith_number": 4020,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২০। উমাইয়া ইবনে বিসতাম (রাহঃ) ......... উমর ((رضي الله عنه)) থেকে বর্ণিত যে, তিনি একটি ঘোড়া আল্লাহর রাস্তায় দান করেন। পরে তিনি তার মালিকের নিকট ঘোড়াটি দেখতে পান যে, সে তাকে নষ্ট করে ফেলেছে। সে লোকটি ছিল দরিদ্র। তাই তিনি তা কিনে নেয়ার ইচ্ছা করেন। তখন তিনি রাসূলুল্লাহ (ﷺ) এর নিকট গিয়ে এ বিষয়টি তাকে বললেন। তিনি বললেন, তুমি তা খরিদ করবে না, যদিও সে তোমাকে তা এক দিরহামের বিনিময়ে দেয়। কেননা, যে ব্যক্তি আপন দান ফিরিয়ে নেয়, সে সেই কুকুরের ন্যায়, যে বমি করে তা আবার খায়।",
+        "description_en": "Zaid b. Aslam reported on the authority of his father that ’Umar (Allah be pleased with him) donated a horse in the path of Allah. He found that it had languished in the hand of its possessor, and he was a man of meagre resources He (Hadrat ’Umar) intended to buy it. He came to Allah’s Messenger (ﷺ) and made a mention of that to him, whereupon he said:<br>Don’t buy that even if you get it for a dirham for he who gets back the charity is like a dog which swallows its vomit.",
+        "description_ar": "حَدَّثَنِي أُمَيَّةُ بْنُ بِسْطَامَ، حَدَّثَنَا يَزِيدُ، - يَعْنِي ابْنَ زُرَيْعٍ - حَدَّثَنَا رَوْحٌ، - وَهُوَ ابْنُ الْقَاسِمِ - عَنْ زَيْدِ بْنِ أَسْلَمَ، عَنْ أَبِيهِ، عَنْ عُمَرَ، أَنَّهُ حَمَلَ عَلَى فَرَسٍ فِي سَبِيلِ اللَّهِ فَوَجَدَهُ عِنْدَ صَاحِبِهِ وَقَدْ أَضَاعَهُ وَكَانَ قَلِيلَ الْمَالِ فَأَرَادَ أَنْ يَشْتَرِيَهُ فَأَتَى رَسُولَ اللَّهِ صلى الله عليه وسلم فَذَكَرَ ذَلِكَ لَهُ فَقَالَ  \" لاَ تَشْتَرِهِ وَإِنْ أُعْطِيتَهُ بِدِرْهَمٍ فَإِنَّ مَثَلَ الْعَائِدِ فِي صَدَقَتِهِ كَمَثَلِ الْكَلْبِ يَعُودُ فِي قَيْئِهِ \" .",
+        "description_without_harkat": "حدثني أمية بن بسطام، حدثنا يزيد، - يعني ابن زريع - حدثنا روح، - وهو ابن القاسم - عن زيد بن أسلم، عن أبيه، عن عمر، أنه حمل على فرس في سبيل الله فوجده عند صاحبه وقد أضاعه وكان قليل المال فأراد أن يشتريه فأتى رسول الله صلى الله عليه وسلم فذكر ذلك له فقال  \" لا تشتره وإن أعطيته بدرهم فإن مثل العائد في صدقته كمثل الكلب يعود في قيئه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:31:19.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4766,
+            "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+            "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ"
+        },
+        "rabis": [
+            {
+                "id": 17,
+                "title": "হযরত উমর ইবনুল খাত্তাব (رضي الله عنه)",
+                "title_en": "Umar Ibnul Khattab (RA)",
+                "title_ar": "عمر بْن الخطاب -أمير المؤمنين رضى الله عنه- القرشي العدوي",
+                "death_year": "23"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4166,
+                "title": "1620-3",
+                "hadith_number": 4020,
+                "hadith_id": 11069,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:31:19.000Z",
+                "updated_at": "2024-10-17T05:31:19.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11070,
+        "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4766,
+        "rabi_id": 313,
+        "type_id": 1,
+        "hadith_number": 4021,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২১। ইবনে আবু উমর (রাহঃ) ......... যায়দ ইবনে আসলাম (রাহঃ) এর সূত্রে উক্ত হাদীস বর্ণনা করেন। তবে মালিক ও রাওহ (রাহঃ) এর হাদীস পূর্ণাঙ্গ ও অধিক প্রসিদ্ধ।",
+        "description_en": "This hadith has been narrated on the authority of Zaid b. Aslam with the same chain of transmitters but with this (change) that the hadith transmitted on the authority of Malik and Rauh (he was the son of Qisirn) is more complete and lengthy.",
+        "description_ar": "وَحَدَّثَنَاهُ ابْنُ أَبِي عُمَرَ، حَدَّثَنَا سُفْيَانُ، عَنْ زَيْدِ بْنِ أَسْلَمَ، بِهَذَا الإِسْنَادِ غَيْرَ أَنَّ مَالِكٍ وَرَوْحٍ أَتَمُّ وَأَكْثَرُ .",
+        "description_without_harkat": "وحدثناه ابن أبي عمر، حدثنا سفيان، عن زيد بن أسلم، بهذا الإسناد غير أن مالك وروح أتم وأكثر .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:31:50.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4766,
+            "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+            "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ"
+        },
+        "rabis": [
+            {
+                "id": 313,
+                "title": "যায়দ ইবনে আসলাম ((رحمة الله))",
+                "title_en": "Zayd Ibn Aslam",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4167,
+                "title": "1620-4",
+                "hadith_number": 4021,
+                "hadith_id": 11070,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:31:50.000Z",
+                "updated_at": "2024-10-17T05:31:50.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11071,
+        "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4766,
+        "rabi_id": 4,
+        "type_id": 1,
+        "hadith_number": 4022,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২২। ইয়াহয়া ইবনে ইয়াহয়া (রাহঃ) ......... ইবনে উমর ((رضي الله عنه)) থেকে বর্ণিত যে, উমর ইবনে খাত্তাব ((رضي الله عنه)) আল্লাহর রাস্তায় একটি ঘোড়া দান করেন। পরে তিনি তা নষ্ট হতে দেখেন। তখন তিনি তা খরিদ করতে চাইলেন এবং রাসূলুল্লাহ (ﷺ) এর নিকট এ সম্পর্কে জিজ্ঞাসা করলেন। রাসূলুল্লাহ (ﷺ) বললেন, তুমি তা খরিদ করো না এবং তোমার দানের বস্তুকে ফিরিয়ে নিও না।",
+        "description_en": "Ibn ’Umar reported that ’Umar b. al-Khattib (Allah be pleased with him) donated a horse in the path of Allah and (later on) he found it being sold, and he decided to buy that. He asked the Messenger of Allah (ﷺ) about it. whereupon he (the Holy prophet) said:<br>Don’t buy that and do not get back what you gave in charity.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، قَالَ قَرَأْتُ عَلَى مَالِكٍ عَنْ نَافِعٍ، عَنِ ابْنِ عُمَرَ، أَنَّ عُمَرَ، بْنَ الْخَطَّابِ حَمَلَ عَلَى فَرَسٍ فِي سَبِيلِ اللَّهِ فَوَجَدَهُ يُبَاعُ فَأَرَادَ أَنْ يَبْتَاعَهُ فَسَأَلَ رَسُولَ اللَّهِ صلى الله عليه وسلم عَنْ ذَلِكَ فَقَالَ  \" لاَ تَبْتَعْهُ وَلاَ تَعُدْ فِي صَدَقَتِكَ \" .",
+        "description_without_harkat": "حدثنا يحيى بن يحيى، قال قرأت على مالك عن نافع، عن ابن عمر، أن عمر، بن الخطاب حمل على فرس في سبيل الله فوجده يباع فأراد أن يبتاعه فسأل رسول الله صلى الله عليه وسلم عن ذلك فقال  \" لا تبتعه ولا تعد في صدقتك \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:33:20.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4766,
+            "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+            "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ"
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4168,
+                "title": "1621-1",
+                "hadith_number": 4022,
+                "hadith_id": 11071,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:33:20.000Z",
+                "updated_at": "2024-10-17T05:33:20.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11072,
+        "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4766,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 4023,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২৩। কুতায়বা ও ইবনে রুমহ (রাহঃ) লাঈস ইবনে সা’দ (রাহঃ) থেকে এবং মুকাদ্দামী, মুহাম্মাদ ইবনে মুসান্না, ইবনে নুমাইর, আবু বকর ইবনে আবি শাঈবা (রাহঃ) উবাইদূল্লাহ (রাহঃ) থেকে উভয়ে বর্ণনা করেন নাফি’ সূত্রে ইবনে উমর ((رضي الله عنه)) থেকে, তিনি নবী (ﷺ) থেকে উক্ত হাদীস মালিক (রাহঃ) এর হাদীসের অনুরূপ বর্ণনা করেন।",
+        "description_en": "This hadith has been narrated on the authority of Ibn Umar through another chain of transmitters.",
+        "description_ar": "وَحَدَّثَنَاهُ قُتَيْبَةُ بْنُ سَعِيدٍ، وَابْنُ، رُمْحٍ جَمِيعًا عَنِ اللَّيْثِ بْنِ سَعْدٍ، ح وَحَدَّثَنَا الْمُقَدَّمِيُّ، وَمُحَمَّدُ بْنُ الْمُثَنَّى قَالاَ حَدَّثَنَا يَحْيَى، وَهُوَ الْقَطَّانُ ح وَحَدَّثَنَا ابْنُ نُمَيْرٍ، حَدَّثَنَا أَبِي ح، وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا أَبُو أُسَامَةَ، كُلُّهُمْ عَنْ عُبَيْدِ اللَّهِ، كِلاَهُمَا عَنْ نَافِعٍ، عَنِ ابْنِ، عُمَرَ عَنِ النَّبِيِّ صلى الله عليه وسلم بِمِثْلِ حَدِيثِ مَالِكٍ .",
+        "description_without_harkat": "وحدثناه قتيبة بن سعيد، وابن، رمح جميعا عن الليث بن سعد، ح وحدثنا المقدمي، ومحمد بن المثنى قالا حدثنا يحيى، وهو القطان ح وحدثنا ابن نمير، حدثنا أبي ح، وحدثنا أبو بكر بن أبي شيبة، حدثنا أبو أسامة، كلهم عن عبيد الله، كلاهما عن نافع، عن ابن، عمر عن النبي صلى الله عليه وسلم بمثل حديث مالك .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2022-12-26T07:04:39.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4766,
+            "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+            "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ"
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4169,
+                "title": "1621-2",
+                "hadith_number": 4023,
+                "hadith_id": 11072,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:34:08.000Z",
+                "updated_at": "2024-10-17T05:34:08.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11073,
+        "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4766,
+        "rabi_id": 4,
+        "type_id": 1,
+        "hadith_number": 4024,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২৪। ইবনে আবু উমর ও আব্দ ইবনে হুমায়দ (রাহঃ) ......... ইবনে উমর ((رضي الله عنه)) থেকে বর্ণিত যে, উমর ((رضي الله عنه)) একটি ঘোড়া আল্লাহর রাস্তায় দান করেন। এরপর তিনি উহাকে বিক্রি হতে দেখেন। তখন তিনি উহা খরিদ করার ইচ্ছা করেন এবং নবী (ﷺ) -এর নিকট জিজ্ঞাসা করেন। রাসূলুল্লাহ (ﷺ) বললেনঃ হে উমর! তোমার দানের বস্তুকে ফিরিয়ে নিও না।",
+        "description_en": "Salim reported from Ibn Umar (Allah be pleased with them) that ’Umar donated a horse in the path of Allah and then found it being sold, and he decided to buy that. He asked Allah’s Apostle (ﷺ) about it, whereupon Allah’s Messenger (ﷺ) said:<br>Umar, do not get back what you gave as charity.",
+        "description_ar": "حَدَّثَنَا ابْنُ أَبِي عُمَرَ، وَعَبْدُ بْنُ حُمَيْدٍ، - وَاللَّفْظُ لِعَبْدٍ - قَالَ أَخْبَرَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا مَعْمَرٌ، عَنِ الزُّهْرِيِّ، عَنْ سَالِمٍ، عَنِ ابْنِ عُمَرَ، أَنَّ عُمَرَ، حَمَلَ عَلَى فَرَسٍ فِي سَبِيلِ اللَّهِ ثُمَّ رَآهَا تُبَاعُ فَأَرَادَ أَنْ يَشْتَرِيَهَا فَسَأَلَ النَّبِيَّ صلى الله عليه وسلم فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" لاَ تَعُدْ فِي صَدَقَتِكَ يَا عُمَرُ \" .",
+        "description_without_harkat": "حدثنا ابن أبي عمر، وعبد بن حميد، - واللفظ لعبد - قال أخبرنا عبد الرزاق، أخبرنا معمر، عن الزهري، عن سالم، عن ابن عمر، أن عمر، حمل على فرس في سبيل الله ثم رآها تباع فأراد أن يشتريها فسأل النبي صلى الله عليه وسلم فقال رسول الله صلى الله عليه وسلم  \" لا تعد في صدقتك يا عمر \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:34:54.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4766,
+            "title": "১. কাউকে কিছু দান করার পর তার থেকে সেই বস্তু ক্রয় করা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ",
+            "title_without_harkat": "باب كَرَاهَةِ شِرَاءِ الإِنْسَانِ مَا تَصَدَّقَ بِهِ مِمَّنْ تَصَدَّقَ عَلَيْهِ"
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4170,
+                "title": "1621-3",
+                "hadith_number": 4024,
+                "hadith_id": 11073,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:34:54.000Z",
+                "updated_at": "2024-10-17T05:34:54.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11074,
+        "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+        "title_en": "",
+        "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4767,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 4025,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২৫। ইবরাহীম ইবনে মুসা রাযী ও ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত যে, নবী (ﷺ) বলেছেনঃ যে ব্যক্তি তার দান ফিরিয়ে নেয় তার উদাহরণ ঐ কুকুরের ন্যায়, যে বমি করে এবং পুনরায় তার বমি খেয়ে ফেলে।",
+        "description_en": "Ibn ’Abbas (Allah be pleased with them) reported Allah’s Apostle (ﷺ) having said this:<br>He who gets back his charity is like a dog which vomits, and then returns to that and eats it.",
+        "description_ar": "حَدَّثَنِي إِبْرَاهِيمُ بْنُ مُوسَى الرَّازِيُّ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، قَالاَ أَخْبَرَنَا عِيسَى، بْنُ يُونُسَ حَدَّثَنَا الأَوْزَاعِيُّ، عَنْ أَبِي جَعْفَرٍ، مُحَمَّدِ بْنِ عَلِيٍّ عَنِ ابْنِ الْمُسَيَّبِ، عَنِ ابْنِ عَبَّاسٍ، أَنَّ النَّبِيَّ صلى الله عليه وسلم قَالَ  \" مَثَلُ الَّذِي يَرْجِعُ فِي صَدَقَتِهِ كَمَثَلِ الْكَلْبِ يَقِيءُ ثُمَّ يَعُودُ فِي قَيْئِهِ فَيَأْكُلُهُ \" .",
+        "description_without_harkat": "حدثني إبراهيم بن موسى الرازي، وإسحاق بن إبراهيم، قالا أخبرنا عيسى، بن يونس حدثنا الأوزاعي، عن أبي جعفر، محمد بن علي عن ابن المسيب، عن ابن عباس، أن النبي صلى الله عليه وسلم قال  \" مثل الذي يرجع في صدقته كمثل الكلب يقيء ثم يعود في قيئه فيأكله \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:47.000Z",
+        "updated_at": "2024-10-17T05:35:34.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4767,
+            "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+            "title_en": null,
+            "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+            "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ"
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4171,
+                "title": " 1622-1",
+                "hadith_number": 4025,
+                "hadith_id": 11074,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:35:34.000Z",
+                "updated_at": "2024-10-17T05:35:34.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11075,
+        "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+        "title_en": "",
+        "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4767,
+        "rabi_id": 403,
+        "type_id": 1,
+        "hadith_number": 4026,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২৬। আবু কুরায়ব মুহাম্মাদ ইবনুূল ’আলা (রাহঃ) ......... আওযাঈ (রাহঃ) এর সূত্রে বর্ণিত। তিনি বলেন, আমি মুহাম্মাদ ইবনে আলী ইবনে হুসাইন (রাহঃ) কে উক্ত সনদে অনুরূপ বর্ণনা করতে শুনেছি।",
+        "description_en": "This hadith is also reported through another chain.",
+        "description_ar": "وَحَدَّثَنَاهُ أَبُو كُرَيْبٍ، مُحَمَّدُ بْنُ الْعَلاَءِ أَخْبَرَنَا ابْنُ الْمُبَارَكِ، عَنِ الأَوْزَاعِيِّ، قَالَ سَمِعْتُ مُحَمَّدَ بْنَ عَلِيِّ بْنِ الْحُسَيْنِ، يَذْكُرُ بِهَذَا الإِسْنَادِ نَحْوَهُ .",
+        "description_without_harkat": "وحدثناه أبو كريب، محمد بن العلاء أخبرنا ابن المبارك، عن الأوزاعي، قال سمعت محمد بن علي بن الحسين، يذكر بهذا الإسناد نحوه .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:36:34.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4767,
+            "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+            "title_en": null,
+            "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+            "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ"
+        },
+        "rabis": [
+            {
+                "id": 403,
+                "title": "আওযায়ী ((رحمة الله))",
+                "title_en": "Awjayi (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4172,
+                "title": "1622-2",
+                "hadith_number": 4026,
+                "hadith_id": 11075,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:36:34.000Z",
+                "updated_at": "2024-10-17T05:36:34.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11076,
+        "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+        "title_en": "",
+        "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4767,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 4027,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২৭। হাজাজ ইবনে শাইর (রাহঃ) ......... আব্দুর রহমান ইবনে আমর (রাহঃ) এর সূত্রে বর্ণিত যে, মুহাম্মাদ ইবনে ফাতিমা বিনতে রাসূলুল্লাহ (ﷺ) উক্ত সনদে হাদীসটি তাঁদের অনুরূপ বর্ণনা করেছেন।",
+        "description_en": "A hadith like this is reported on the authority of Muhammad son of Fatima (Allah be pleased with her) daughter of Allah’s Messenger (ﷺ).",
+        "description_ar": "وَحَدَّثَنِيهِ حَجَّاجُ بْنُ الشَّاعِرِ، حَدَّثَنَا عَبْدُ الصَّمَدِ، حَدَّثَنَا حَرْبٌ، حَدَّثَنَا يَحْيَى، - وَهُوَ ابْنُ أَبِي كَثِيرٍ - حَدَّثَنِي عَبْدُ الرَّحْمَنِ بْنُ عَمْرٍو، أَنَّ مُحَمَّدَ ابْنَ فَاطِمَةَ بِنْتِ رَسُولِ اللَّهِ، صلى الله عليه وسلم حَدَّثَهُ بِهَذَا الإِسْنَادِ، نَحْوَ حَدِيثِهِمْ .",
+        "description_without_harkat": "وحدثنيه حجاج بن الشاعر، حدثنا عبد الصمد، حدثنا حرب، حدثنا يحيى، - وهو ابن أبي كثير - حدثني عبد الرحمن بن عمرو، أن محمد ابن فاطمة بنت رسول الله، صلى الله عليه وسلم حدثه بهذا الإسناد، نحو حديثهم .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:37:03.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4767,
+            "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+            "title_en": null,
+            "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+            "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ"
+        },
+        "rabis": [
+            {
+                "id": 9,
+                "title": "বিবিধ",
+                "title_en": null,
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4173,
+                "title": "1622-3",
+                "hadith_number": 4027,
+                "hadith_id": 11076,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:37:03.000Z",
+                "updated_at": "2024-10-17T05:37:03.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11077,
+        "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+        "title_en": "",
+        "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4767,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 4028,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২৮। হারুন ইবনে সাঈদ আয়লী এবং আহমাদ ইবনে ঈসা (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমি রাসূলুল্লাহ (ﷺ) কে বলতে শুনেছি যে, যে দান করে তা ফিরিয়ে আনে ঐ ব্যক্তির উদাহরণ, সেই কুকুরের ন্যায়, যে বমি করে পরে তরে বমি খেয়ে ফেলে।",
+        "description_en": "Ibn Abbas (Allah be pleased with them) reported:<br>I heard Allah’s Messenger (ﷺ) say: The similitude of one who gives a charity and then gets it back is like that of a dog which vomits and then eats its vomit.",
+        "description_ar": "وَحَدَّثَنِي هَارُونُ بْنُ سَعِيدٍ الأَيْلِيُّ، وَأَحْمَدُ بْنُ عِيسَى، قَالاَ حَدَّثَنَا ابْنُ وَهْبٍ، أَخْبَرَنِي عَمْرٌو، - وَهُوَ ابْنُ الْحَارِثِ - عَنْ بُكَيْرٍ، أَنَّهُ سَمِعَ سَعِيدَ بْنَ الْمُسَيَّبِ، يَقُولُ سَمِعْتُ ابْنَ عَبَّاسٍ، يَقُولُ سَمِعْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم يَقُولُ  \" إِنَّمَا مَثَلُ الَّذِي يَتَصَدَّقُ بِصَدَقَةٍ ثُمَّ يَعُودُ فِي صَدَقَتِهِ كَمَثَلِ الْكَلْبِ يَقِيءُ ثُمَّ يَأْكُلُ قَيْأَهُ \" .",
+        "description_without_harkat": "وحدثني هارون بن سعيد الأيلي، وأحمد بن عيسى، قالا حدثنا ابن وهب، أخبرني عمرو، - وهو ابن الحارث - عن بكير، أنه سمع سعيد بن المسيب، يقول سمعت ابن عباس، يقول سمعت رسول الله صلى الله عليه وسلم يقول  \" إنما مثل الذي يتصدق بصدقة ثم يعود في صدقته كمثل الكلب يقيء ثم يأكل قيأه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:37:39.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4767,
+            "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+            "title_en": null,
+            "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+            "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ"
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4174,
+                "title": "1622-4",
+                "hadith_number": 4028,
+                "hadith_id": 11077,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:37:39.000Z",
+                "updated_at": "2024-10-17T05:37:39.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11078,
+        "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+        "title_en": "",
+        "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4767,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 4029,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০২৯। মুহাম্মাদ ইবনে মুসান্না ও মুহাম্মাদ ইবনে বাশশার (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত যে, নবী (ﷺ) বলেছেনঃ স্বীয় দান প্রত্যাহারকারী আপন বমি পুনরায় ভক্ষণকারীর ন্যায়।",
+        "description_en": "Ibn Abbas (Allah be pleased with them) reported Allah’s Apostle (ﷺ) as saying:<br>One who gets back the gift is like one who eats vomit.",
+        "description_ar": "وَحَدَّثَنَاهُ مُحَمَّدُ بْنُ الْمُثَنَّى، وَمُحَمَّدُ بْنُ بَشَّارٍ، قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، سَمِعْتُ قَتَادَةَ، يُحَدِّثُ عَنْ سَعِيدِ بْنِ الْمُسَيَّبِ، عَنِ ابْنِ عَبَّاسٍ، عَنِ النَّبِيِّ صلى الله عليه وسلم أَنَّهُ قَالَ  \" الْعَائِدُ فِي هِبَتِهِ كَالْعَائِدِ فِي قَيْئِهِ \" .",
+        "description_without_harkat": "وحدثناه محمد بن المثنى، ومحمد بن بشار، قالا حدثنا محمد بن جعفر، حدثنا شعبة، سمعت قتادة، يحدث عن سعيد بن المسيب، عن ابن عباس، عن النبي صلى الله عليه وسلم أنه قال  \" العائد في هبته كالعائد في قيئه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:38:12.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4767,
+            "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+            "title_en": null,
+            "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+            "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ"
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4175,
+                "title": "1622-5",
+                "hadith_number": 4029,
+                "hadith_id": 11078,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:38:12.000Z",
+                "updated_at": "2024-10-17T05:38:12.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11079,
+        "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+        "title_en": "",
+        "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4767,
+        "rabi_id": 228,
+        "type_id": 1,
+        "hadith_number": 4030,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩০। মুহাম্মাদ ইবনে মুসান্না (রাহঃ) ......... কাতাদা (রাহঃ) এর সূত্রে এই সনদে উপরোক্ত হাদীস বর্ণনা করেন।",
+        "description_en": "This hadith has been narrated on the authority of Qatada with the same chain of transmitters.",
+        "description_ar": "وَحَدَّثَنَاهُ مُحَمَّدُ بْنُ الْمُثَنَّى، حَدَّثَنَا ابْنُ أَبِي عَدِيٍّ، عَنْ سَعِيدٍ، عَنْ قَتَادَةَ، بِهَذَا الإِسْنَادِ مِثْلَهُ .",
+        "description_without_harkat": "وحدثناه محمد بن المثنى، حدثنا ابن أبي عدي، عن سعيد، عن قتادة، بهذا الإسناد مثله .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:38:39.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4767,
+            "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+            "title_en": null,
+            "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+            "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ"
+        },
+        "rabis": [
+            {
+                "id": 228,
+                "title": "কাতাদা ইবনে দিআমা ((رحمة الله))",
+                "title_en": "Katadah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4176,
+                "title": "1622-6",
+                "hadith_number": 4030,
+                "hadith_id": 11079,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:38:39.000Z",
+                "updated_at": "2024-10-17T05:38:39.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11080,
+        "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+        "title_en": "",
+        "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4767,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 4031,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩১। ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত যে, রাসুলাল্লাহ (ﷺ) বলেছেনঃ নিজের দান প্রত্যাহারকারী ব্যক্তি কুকুরের ন্যায়, যে বমি করে ও পরে সে তার বমি পুনরায় ভক্ষণ করে।",
+        "description_en": "Abdullah b. Tawus reported on the authority of his father who reported from Ibn Abas (Allah be pleased with them) who reported from Allah’s Messenger ’may peace be upon him) that he said:<br>One who gets back his gift is like a dog which vomits and then swallows that vomit.",
+        "description_ar": "وَحَدَّثَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ، أَخْبَرَنَا الْمَخْزُومِيُّ، حَدَّثَنَا وُهَيْبٌ، حَدَّثَنَا عَبْدُ اللَّهِ، بْنُ طَاوُسٍ عَنْ أَبِيهِ، عَنِ ابْنِ عَبَّاسٍ، عَنْ رَسُولِ اللَّهِ صلى الله عليه وسلم قَالَ  \" الْعَائِدُ فِي هِبَتِهِ كَالْكَلْبِ يَقِيءُ ثُمَّ يَعُودُ فِي قَيْئِهِ \" .",
+        "description_without_harkat": "وحدثنا إسحاق بن إبراهيم، أخبرنا المخزومي، حدثنا وهيب، حدثنا عبد الله، بن طاوس عن أبيه، عن ابن عباس، عن رسول الله صلى الله عليه وسلم قال  \" العائد في هبته كالكلب يقيء ثم يعود في قيئه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:39:21.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4767,
+            "title": "২. দান (গ্রহিতার) দখলে চলে যাওয়ার পর ফিরিয়ে আনা হারাম। কিন্তু নিজের সন্তান সন্তুতিকে দিলে তা ভিন্ন বিষয়",
+            "title_en": null,
+            "title_ar": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ",
+            "title_without_harkat": "بَاب تَحْرِيمِ الرُّجُوعِ فِي الصَّدَقَةِ وَالْهِبَةِ بَعْدَ الْقَبْضِ إِلَّا مَا وَهَبَهُ لِوَلَدِهِ وَإِنْ سَفَلَ"
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4177,
+                "title": "1622-7",
+                "hadith_number": 4031,
+                "hadith_id": 11080,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:39:21.000Z",
+                "updated_at": "2024-10-17T05:39:21.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11081,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4032,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩২। ইয়াহয়া ইবনে ইয় ইয়াহয়া (রাহঃ) ......... নুমান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, তাঁর পিতা তাঁকে সঙ্গে করে রাসূলুল্লাহ (ﷺ) এর নিকট আসেন। তারপর বলেন যে, আমি আমার এ পুত্রকে আমার একটি গোলাম দান করেছি। রাসূলুল্লাহ (ﷺ) বললেন, তোমার সকল পুত্রকে কি এভাবে দান করেছ? তিনি বললেন, না। রাসূলুল্লাহ (ﷺ) বললেন, তা হলে তুমি তা ফিরিয়ে নাও।",
+        "description_en": "Nu’man b. Bashir reported that his father brought him to Allah’s Messenger (ﷺ) and said:<br>I have donated this slave of mine to my son. Allah’s Messenger (ﷺ) said: Have you donated to every one of your sons (a slave) like this? He said: No. Thereupon Allah’s Messenger (may peace he upon him) said: Then take him back.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، قَالَ قَرَأْتُ عَلَى مَالِكٍ عَنِ ابْنِ شِهَابٍ، عَنْ حُمَيْدِ بْنِ عَبْدِ، الرَّحْمَنِ وَعَنْ مُحَمَّدِ بْنِ النُّعْمَانِ بْنِ بَشِيرٍ، يُحَدِّثَانِهِ عَنِ النُّعْمَانِ بْنِ بَشِيرٍ، أَنَّهُ قَالَ إِنَّ أَبَاهُ أَتَى بِهِ رَسُولَ اللَّهِ صلى الله عليه وسلم فَقَالَ إِنِّي نَحَلْتُ ابْنِي هَذَا غُلاَمًا كَانَ لِي . فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" أَكُلَّ وَلَدِكَ نَحَلْتَهُ مِثْلَ هَذَا \" . فَقَالَ لاَ . فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" فَارْجِعْهُ \" .",
+        "description_without_harkat": "حدثنا يحيى بن يحيى، قال قرأت على مالك عن ابن شهاب، عن حميد بن عبد، الرحمن وعن محمد بن النعمان بن بشير، يحدثانه عن النعمان بن بشير، أنه قال إن أباه أتى به رسول الله صلى الله عليه وسلم فقال إني نحلت ابني هذا غلاما كان لي . فقال رسول الله صلى الله عليه وسلم \" أكل ولدك نحلته مثل هذا \" . فقال لا . فقال رسول الله صلى الله عليه وسلم \" فارجعه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:40:18.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4178,
+                "title": "1623-1",
+                "hadith_number": 4032,
+                "hadith_id": 11081,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:40:19.000Z",
+                "updated_at": "2024-10-17T05:40:19.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11082,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4033,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩৩। ইয়াহয়া ইবনে ইয়াহয়া (রাহঃ) ......... নুমান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমার পিতা আমাকে নিয়ে রাসূলুল্লাহ (ﷺ) এর নিকট আসেন এবং বলেন যে, আমি আমার এই পুত্রকে একটি গোলাম দান করেছি। তিনি বললেন, তোমার সকল পুত্রকে দান করেছ কী? তিনি বললেন, না। (রাসূলুল্লাহ (ﷺ)) বললেনঃ তাহলে তা ফিরিয়ে নাও।",
+        "description_en": "Nu’man b. Bashir reported:<br>My father brought me to Allah’s Messenger (ﷺ) and said: I have donated this slave to my son. whereupon he said: Have you made (such) donation to every one or your sons? He said: No. Thereupon he (the-Holy Prophet) said: Then take him back.",
+        "description_ar": "وَحَدَّثَنَا يَحْيَى بْنُ يَحْيَى، أَخْبَرَنَا إِبْرَاهِيمُ بْنُ سَعْدٍ، عَنِ ابْنِ شِهَابٍ، عَنْ حُمَيْدِ بْنِ، عَبْدِ الرَّحْمَنِ وَمُحَمَّدِ بْنِ النُّعْمَانِ عَنِ النُّعْمَانِ بْنِ بَشِيرٍ، قَالَ أَتَى بِي أَبِي إِلَى رَسُولِ اللَّهِ صلى الله عليه وسلم فَقَالَ إِنِّي نَحَلْتُ ابْنِي هَذَا غُلاَمًا . فَقَالَ \" أَكُلَّ بَنِيكَ نَحَلْتَ \" . قَالَ لاَ . قَالَ \" فَارْدُدْهُ \" .",
+        "description_without_harkat": "وحدثنا يحيى بن يحيى، أخبرنا إبراهيم بن سعد، عن ابن شهاب، عن حميد بن، عبد الرحمن ومحمد بن النعمان عن النعمان بن بشير، قال أتى بي أبي إلى رسول الله صلى الله عليه وسلم فقال إني نحلت ابني هذا غلاما . فقال \" أكل بنيك نحلت \" . قال لا . قال \" فاردده \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:42:20.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4179,
+                "title": "1623-2",
+                "hadith_number": 4033,
+                "hadith_id": 11082,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:42:20.000Z",
+                "updated_at": "2024-10-17T05:42:20.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11083,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 4034,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩৪। আবু বকর ইবনে আবি শাঈবা, ইসহাক ইবনে ইবরাহীম ও ইবনে আবু উমর (রাহঃ) ইবনে উযায়না (রাহঃ) থেকে এবং কুতায়বা ও ইবনে রুমহ (রাহঃ) লাঈস ইবনে সা’দ (রাহঃ) থেকে, হারামালা ইবনে ইয়াহয়া (রাহঃ) ইউনূস (রাহঃ) থেকে, ইসহাক ইবনে ইবরাহীম ও আব্দ ইবনে হুমায়দ (রাহঃ) মামার (রাহঃ) থেকে, তারা সকলেই যুহরী (রাহঃ) এর সূত্রে উক্ত সনদে এ হাদীস বর্ণনা করেন। তবে ইউনুস ও মামার (রাহঃ) এর বর্ণনায় أَكُلَّ بَنِيكَ (তোমার সকল পুত্রকে) এবং লাঈস ও ইবনে উয়াইনা (রাহঃ) এর বর্ণনায় أَكُلَّ وَلَدِكَ (তোমার সকল সন্তানকে) এবং মুহাম্মাদ ইবনে নুমান ও হুমায়দ ইবনে আব্দুর রহমান থেকে লাঈস এর বর্ণনায় ’বাশীর নু’মানকে সঙ্গে নিয়ে আসেন’ বলা হয়েছে।",
+        "description_en": "This hadith has been narrated on the authority of Zuhri with different chains of transmitters and a slight variation of words.",
+        "description_ar": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَابْنُ أَبِي عُمَرَ، عَنِ ابْنِ عُيَيْنَةَ، ح وَحَدَّثَنَا قُتَيْبَةُ، وَابْنُ، رُمْحٍ عَنِ اللَّيْثِ بْنِ سَعْدٍ، ح وَحَدَّثَنِي حَرْمَلَةُ بْنُ يَحْيَى، أَخْبَرَنَا ابْنُ، وَهْبٍ قَالَ أَخْبَرَنِي يُونُسُ، ح وَحَدَّثَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَعَبْدُ بْنُ حُمَيْدٍ، قَالاَ أَخْبَرَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا مَعْمَرٌ، كُلُّهُمْ عَنِ الزُّهْرِيِّ، بِهَذَا الإِسْنَادِ . أَمَّا يُونُسُ وَمَعْمَرٌ فَفِي حَدِيثِهِمَا \" أَكُلَّ بَنِيكَ \" . وَفِي حَدِيثِ اللَّيْثِ وَابْنِ عُيَيْنَةَ \" أَكُلَّ وَلَدِكَ \" . وَرِوَايَةُ اللَّيْثِ عَنْ مُحَمَّدِ بْنِ النُّعْمَانِ وَحُمَيْدِ بْنِ عَبْدِ الرَّحْمَنِ أَنَّ بَشِيرًا جَاءَ بِالنُّعْمَانِ .",
+        "description_without_harkat": "وحدثنا أبو بكر بن أبي شيبة، وإسحاق بن إبراهيم، وابن أبي عمر، عن ابن عيينة، ح وحدثنا قتيبة، وابن، رمح عن الليث بن سعد، ح وحدثني حرملة بن يحيى، أخبرنا ابن، وهب قال أخبرني يونس، ح وحدثنا إسحاق بن إبراهيم، وعبد بن حميد، قالا أخبرنا عبد الرزاق، أخبرنا معمر، كلهم عن الزهري، بهذا الإسناد . أما يونس ومعمر ففي حديثهما \" أكل بنيك \" . وفي حديث الليث وابن عيينة \" أكل ولدك \" . ورواية الليث عن محمد بن النعمان وحميد بن عبد الرحمن أن بشيرا جاء بالنعمان .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:43:46.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 9,
+                "title": "বিবিধ",
+                "title_en": null,
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4180,
+                "title": "1623-3",
+                "hadith_number": 4034,
+                "hadith_id": 11083,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:43:46.000Z",
+                "updated_at": "2024-10-17T05:43:46.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11084,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4035,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩৫। কুতায়বা ইবনে সাঈদ (রাহঃ) ......... নু’মান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, তাঁকে তার পিতা একটি গোলাম দান করেছিলেন। নবী (ﷺ) তাঁকে জিজ্ঞাসা করেন, এ গোলামটি কিসের! তিনি বললেন, একে আমার পিতা আমাকে দান করেছেন। নবী (ﷺ) বললেন, তার সকল ভাইদেরকে তুমি দান করেছ কী, যেভাবে একে দান করেছ? তিনি বললেন, না। নবী (ﷺ) বললেন, তাহলে তা ফিরিয়ে নাও।",
+        "description_en": "Nu’man b. Bashir reported that his father had donated a slave to him. Allah’s Apostle (may peace he upon him) said:<br>Who is this slave (how have you come to possess it)? Thereupon he (Nu’man b. Bashir) said: My father has donated it to me, whereupon he said: Have all brothers (of yours) been given this gift as given to you? He said: No. Thereupon he (the Holy Prophet) said: Then return him.",
+        "description_ar": "حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا جَرِيرٌ، عَنْ هِشَامِ بْنِ عُرْوَةَ، عَنْ أَبِيهِ، قَالَ حَدَّثَنَا النُّعْمَانُ بْنُ بَشِيرٍ، قَالَ وَقَدْ أَعْطَاهُ أَبُوهُ غُلاَمًا فَقَالَ لَهُ النَّبِيُّ صلى الله عليه وسلم \" مَا هَذَا الْغُلاَمُ \" . قَالَ أَعْطَانِيهِ أَبِي . قَالَ \" فَكُلَّ إِخْوَتِهِ أَعْطَيْتَهُ كَمَا أَعْطَيْتَ هَذَا \" . قَالَ لاَ . قَالَ \" فَرُدَّهُ \" .",
+        "description_without_harkat": "حدثنا قتيبة بن سعيد، حدثنا جرير، عن هشام بن عروة، عن أبيه، قال حدثنا النعمان بن بشير، قال وقد أعطاه أبوه غلاما فقال له النبي صلى الله عليه وسلم \" ما هذا الغلام \" . قال أعطانيه أبي . قال \" فكل إخوته أعطيته كما أعطيت هذا \" . قال لا . قال \" فرده \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:44:14.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4181,
+                "title": "1623-4",
+                "hadith_number": 4035,
+                "hadith_id": 11084,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:44:14.000Z",
+                "updated_at": "2024-10-17T05:44:14.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11085,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4036,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩৬। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... নুমান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমাকে আমার পিতা তার সম্পদ থেকে কিছু দান করেন। আমার মা আমরা বিনতে রাওয়াহা (রাহঃ) বললেন, আমি সন্তুষ্ট হতে পারছি না, যতক্ষণ না আপনি রাসূলুল্লাহ (ﷺ) কে সাক্ষী রাখেন। এরপর আমার পিতা আমাকে নিয়ে নবী (ﷺ) এর নিকট আসেন, আমার দানের উপর তাকে সাক্ষী রাখার জন্য। রাসূলুল্লাহ (ﷺ) তাকে বললেন, এরূপ কাজ কি তুমি তোমার আর সব পুত্রদের সঙ্গে করেছ? তিনি বললেন, না। নবী (ﷺ) বললেন, আল্লাহকে ভয় কর এবং তোমার সন্তানদের মধ্যে সমতা বিধান কর। তখন আমার পিতা চলে আসেন এবং সে দান ফিরিয়ে নেন।",
+        "description_en": "Nu’man b. Bashir reported:<br>My father donated to me some of his property. My mother Amra bint Rawaha said: I shall not be pleased (with this act) until you make Allah’s Messenger (ﷺ) a witness to it. My father went to Allah’s Apostle (ﷺ) in order to make him the witness of the donation given to me. Allah’s Messenger (ﷺ) said to him: Have you done the same with every son of yours? He said: No. Thereupon he (the Holy Prophet) said: Fear Allah, and observe equity in case of your children. My father returned and got back the gift.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا عَبَّادُ بْنُ الْعَوَّامِ، عَنْ حُصَيْنٍ، عَنِ الشَّعْبِيِّ، قَالَ سَمِعْتُ النُّعْمَانَ بْنَ بَشِيرٍ، ح وَحَدَّثَنَا يَحْيَى بْنُ يَحْيَى، - وَاللَّفْظُ لَهُ - أَخْبَرَنَا أَبُو الأَحْوَصِ، عَنْ حُصَيْنٍ، عَنِ الشَّعْبِيِّ، عَنِ النُّعْمَانِ بْنِ بَشِيرٍ، قَالَ تَصَدَّقَ عَلَىَّ أَبِي بِبَعْضِ مَالِهِ فَقَالَتْ أُمِّي عَمْرَةُ بِنْتُ رَوَاحَةَ لاَ أَرْضَى حَتَّى تُشْهِدَ رَسُولَ اللَّهِ صلى الله عليه وسلم . فَانْطَلَقَ أَبِي إِلَى النَّبِيِّ صلى الله عليه وسلم لِيُشْهِدَهُ عَلَى صَدَقَتِي فَقَالَ لَهُ رَسُولُ اللَّهِ صلى الله عليه وسلم \" أَفَعَلْتَ هَذَا بِوَلَدِكَ كُلِّهِمْ \" . قَالَ لاَ . قَالَ \" اتَّقُوا اللَّهَ وَاعْدِلُوا فِي أَوْلاَدِكُمْ \" . فَرَجَعَ أَبِي فَرَدَّ تِلْكَ الصَّدَقَةَ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا عباد بن العوام، عن حصين، عن الشعبي، قال سمعت النعمان بن بشير، ح وحدثنا يحيى بن يحيى، - واللفظ له - أخبرنا أبو الأحوص، عن حصين، عن الشعبي، عن النعمان بن بشير، قال تصدق على أبي ببعض ماله فقالت أمي عمرة بنت رواحة لا أرضى حتى تشهد رسول الله صلى الله عليه وسلم . فانطلق أبي إلى النبي صلى الله عليه وسلم ليشهده على صدقتي فقال له رسول الله صلى الله عليه وسلم \" أفعلت هذا بولدك كلهم \" . قال لا . قال \" اتقوا الله واعدلوا في أولادكم \" . فرجع أبي فرد تلك الصدقة .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:44:54.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4182,
+                "title": "1623-5",
+                "hadith_number": 4036,
+                "hadith_id": 11085,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:44:54.000Z",
+                "updated_at": "2024-10-17T05:44:54.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11086,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4037,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩৭। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... নু’মান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। তাঁর মা বিনতে রাওয়াহা ((رضي الله عنه)) তার পিতার নিকট স্বীয় পুত্রের জন্য তার সস্পদ থেকে কিছু দান করার অনুরোধ করলেন। এক বছর যাবত তিনি বিষয়টি মুলতবী করে রাখেন। পরে ইচ্ছা হলো। বিনতে রাওয়াহা ((رضي الله عنه)) বললেন, আমার পুত্রকে যা দান করবেন তার উপর রাসূলুল্লাহ (ﷺ) কে সাক্ষী না রাখা পর্যন্ত আমি খুশি হবো না। তখন আমার পিতা আমার হাত ধরে রাসূলুল্লাহ (ﷺ) এর নিকট আসলেন। সে সময় আমি বালক ছিলাম।<br><br>তিনি বললেন, ইয়া রাসুলাল্লাহ! এর মা বিনতে রাওয়াহার আগ্রহ হয়েছে যে, আমি তাঁর পুত্রকে যা দান করেছি আপনাকে তার সাক্ষী রাখি। রাসূলুল্লাহ (ﷺ) বললেন, হে বাশীর! এ ছাড়া তোমার কি আর কোন পুত্র আছে বললেন, তিনি বললেনঃ হ্যাঁ। তিনি বললেন, তুমি কি তাদের সকলকে এরূপ দান করেছ? তিনি বললেন, না। তখন তিনি বললেন, তাহলে আমাকে সাক্ষী রেখো না। কারণ, আমি যুলুমের ব্যাপারে সাক্ষী হই না।",
+        "description_en": "Nu’man b. Bashir reported that his mother bint Rawaha asked his (Nu’man’s) father about donating some gifts from his property to his son. He deferred the matter by one year, and then set forth to do that. She (Nu’man’s mother) said:<br>I shall not be pleased unless you call Allah’s Messenger (ﷺ) as witness to what you confer as a gift on your son. (Nu’man said): So father took hold of my hand and I was at that time a boy, and came to Allah’s Messenger (ﷺ). and said: Allah’s Messenger, the mother of this son (of mine), daughter of Rawaha wishes that I should call you witness to what I confer as gift to her son. Allah’s Messenger (may pease be upon him) said: Bashir, have you any other son besides this (son of yours)? He said: Yes. He (the Holy Prophet) said: Have you given gifts to all of them like this? He said: No. Thereupon he (the Holy Prophet) said: Then call me not as witness, for I cannot be witness to an injustice.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا عَلِيُّ بْنُ مُسْهِرٍ، عَنْ أَبِي حَيَّانَ، عَنِ الشَّعْبِيِّ، عَنِ النُّعْمَانِ بْنِ بَشِيرٍ، ح. وَحَدَّثَنَا مُحَمَّدُ بْنُ عَبْدِ اللَّهِ بْنِ نُمَيْرٍ، - وَاللَّفْظُ لَهُ - حَدَّثَنَا مُحَمَّدُ بْنُ بِشْرٍ، حَدَّثَنَا أَبُو حَيَّانَ التَّيْمِيُّ، عَنِ الشَّعْبِيِّ، حَدَّثَنِي النُّعْمَانُ بْنُ بَشِيرٍ، أَنَّ أُمَّهُ بِنْتَ رَوَاحَةَ، سَأَلَتْ أَبَاهُ بَعْضَ الْمَوْهِبَةِ مِنْ مَالِهِ لاِبْنِهَا فَالْتَوَى بِهَا سَنَةً ثُمَّ بَدَا لَهُ فَقَالَتْ لاَ أَرْضَى حَتَّى تُشْهِدَ رَسُولَ اللَّهِ صلى الله عليه وسلم عَلَى مَا وَهَبْتَ لاِبْنِي . فَأَخَذَ أَبِي بِيَدِي وَأَنَا يَوْمَئِذٍ غُلاَمٌ فَأَتَى رَسُولَ اللَّهِ صلى الله عليه وسلم فَقَالَ يَا رَسُولَ اللَّهِ إِنَّ أُمَّ هَذَا بِنْتَ رَوَاحَةَ أَعْجَبَهَا أَنْ أُشْهِدَكَ عَلَى الَّذِي وَهَبْتُ لاِبْنِهَا . فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" يَا بَشِيرُ أَلَكَ وَلَدٌ سِوَى هَذَا \" . قَالَ نَعَمْ . فَقَالَ \" أَكُلَّهُمْ وَهَبْتَ لَهُ مِثْلَ هَذَا \" . قَالَ لاَ . قَالَ \" فَلاَ تُشْهِدْنِي إِذًا فَإِنِّي لاَ أَشْهَدُ عَلَى جَوْرٍ \" .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا علي بن مسهر، عن أبي حيان، عن الشعبي، عن النعمان بن بشير، ح. وحدثنا محمد بن عبد الله بن نمير، - واللفظ له - حدثنا محمد بن بشر، حدثنا أبو حيان التيمي، عن الشعبي، حدثني النعمان بن بشير، أن أمه بنت رواحة، سألت أباه بعض الموهبة من ماله لابنها فالتوى بها سنة ثم بدا له فقالت لا أرضى حتى تشهد رسول الله صلى الله عليه وسلم على ما وهبت لابني . فأخذ أبي بيدي وأنا يومئذ غلام فأتى رسول الله صلى الله عليه وسلم فقال يا رسول الله إن أم هذا بنت رواحة أعجبها أن أشهدك على الذي وهبت لابنها . فقال رسول الله صلى الله عليه وسلم \" يا بشير ألك ولد سوى هذا \" . قال نعم . فقال \" أكلهم وهبت له مثل هذا \" . قال لا . قال \" فلا تشهدني إذا فإني لا أشهد على جور \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:46:09.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4183,
+                "title": " 1623-6",
+                "hadith_number": 4037,
+                "hadith_id": 11086,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:46:09.000Z",
+                "updated_at": "2024-10-17T05:46:09.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11087,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4038,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩৮। ইবনে নুমাইর (রাহঃ) ......... নুমান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। রাসূলুল্লাহ (ﷺ) বললেন, এ ছাড়া কি তোমার আরও পুত্র আছে তিনি বললেন, হ্যাঁ। তিনি বললেনঃ তাদের সবাইকে কি এভাবে দান করেছ? বললেন, না। তিনি বললেনঃ তা হলে আমি যুলুমের ব্যাপারে সাক্ষী হবো না।",
+        "description_en": "Nu’man b. Bashir, reported that Allah’s Messenger (ﷺ) had said:<br>Have you, besides him, other sons? He said: Yes. Thereupon he (the Holy Prophet) said: Have you given gifts to all of them like this (as you have given to Nu’man)? He said: No. Thereupon he (the Holy Prophet) said: I cannot bear witness to an injustice.",
+        "description_ar": "حَدَّثَنَا ابْنُ نُمَيْرٍ، حَدَّثَنِي أَبِي، حَدَّثَنَا إِسْمَاعِيلُ، عَنِ الشَّعْبِيِّ، عَنِ النُّعْمَانِ بْنِ بَشِيرٍ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ \" أَلَكَ بَنُونَ سِوَاهُ \" . قَالَ نَعَمْ . قَالَ \" فَكُلَّهُمْ أَعْطَيْتَ مِثْلَ هَذَا \" . قَالَ لاَ . قَالَ \" فَلاَ أَشْهَدُ عَلَى جَوْرٍ \" .",
+        "description_without_harkat": "حدثنا ابن نمير، حدثني أبي، حدثنا إسماعيل، عن الشعبي، عن النعمان بن بشير، أن رسول الله صلى الله عليه وسلم قال \" ألك بنون سواه \" . قال نعم . قال \" فكلهم أعطيت مثل هذا \" . قال لا . قال \" فلا أشهد على جور \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:46:43.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4184,
+                "title": "1623-7",
+                "hadith_number": 4038,
+                "hadith_id": 11087,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:46:43.000Z",
+                "updated_at": "2024-10-17T05:46:43.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11088,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4039,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৩৯। ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... নুমান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। রাসুলাল্লাহ (ﷺ) তার পিতাকে বললেন, আমাকে যুলুমের ব্যাপারে সাক্ষী রেখো না।",
+        "description_en": "Nu’man b. Bashir (Allah be pleased with them) reported that Allah’s Messenger (ﷺ) said to his father:<br>Call me not as witness to an injustice.",
+        "description_ar": "حَدَّثَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ، أَخْبَرَنَا جَرِيرٌ، عَنْ عَاصِمٍ الأَحْوَلِ، عَنِ الشَّعْبِيِّ، عَنِ النُّعْمَانِ بْنِ بَشِيرٍ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ لأَبِيهِ  \" لاَ تُشْهِدْنِي عَلَى جَوْرٍ \" .",
+        "description_without_harkat": "حدثنا إسحاق بن إبراهيم، أخبرنا جرير، عن عاصم الأحول، عن الشعبي، عن النعمان بن بشير، أن رسول الله صلى الله عليه وسلم قال لأبيه  \" لا تشهدني على جور \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:49:08.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4185,
+                "title": " 1623-8",
+                "hadith_number": 4039,
+                "hadith_id": 11088,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:49:08.000Z",
+                "updated_at": "2024-10-17T05:49:08.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11089,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4040,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪০। মুহাম্মাদ ইবনে মুসান্না (রাহঃ) ......... নু’মান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমার পিতা আমাকে (কোলে) তুলে রাসূলুল্লাহ (ﷺ) এর কাছে গেলেন। তারপর বললেন, ইয়া রাসুলাল্লাহ! আপনি সাক্ষী থাকুন, আমি নুমানকে আমার সম্পদ থেকে অমুক অমুক কে দান করেছি। তিনি বললেন, তোমার সকল পুত্রদেরও কি তুমি তা দান করেছ, যেরূপ নুমানকে দান করেছ? তিনি বললেন, না। রাসূলুল্লাহ (ﷺ) বললেন, তাহলে আমাকে ছাড়া অন্য কাউকে এর সাক্ষী রাখো। তারপর বললেন, তুমি কি চাও যে, তারা সবাই তোমার প্রতি সমান সদাচরণ করুক? তিনি বললেন, হ্যাঁ। রাসূলুল্লাহ (ﷺ) বললেন, তাহলে এরূপ করো না।",
+        "description_en": "Nu’man b. Bashir (Allah be pleased with them) reported:<br>My father took me to Allah’s Messenger (ﷺ) and said: Allah’s Messenger, bear witness that I have given such and such gift to Nu’man from my property, whereupon he (the Holy Prophet) said: Have you conferred upon all of your sons as you have conferred upon Nu’man? He said: No. Thereupon he (the Holy Prophet) said: Call someone else besides me as a witness. And he further said: Would it, please you that they (your children) should all behave virtuously towards you? He said: Yes. He (the Holy Prophet) said: Then don’t do that (i e. don’t give gift to one to the exclusion of others).",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، حَدَّثَنَا عَبْدُ الْوَهَّابِ، وَعَبْدُ الأَعْلَى، ح وَحَدَّثَنَا إِسْحَاقُ، بْنُ إِبْرَاهِيمَ وَيَعْقُوبُ الدَّوْرَقِيُّ جَمِيعًا عَنِ ابْنِ عُلَيَّةَ، - وَاللَّفْظُ لِيَعْقُوبَ - قَالَ حَدَّثَنَا إِسْمَاعِيلُ، بْنُ إِبْرَاهِيمَ عَنْ دَاوُدَ بْنِ أَبِي هِنْدٍ، عَنِ الشَّعْبِيِّ، عَنِ النُّعْمَانِ بْنِ بَشِيرٍ، قَالَ انْطَلَقَ بِي أَبِي يَحْمِلُنِي إِلَى رَسُولِ اللَّهِ صلى الله عليه وسلم فَقَالَ يَا رَسُولَ اللَّهِ اشْهَدْ أَنِّي قَدْ نَحَلْتُ النُّعْمَانَ كَذَا وَكَذَا مِنْ مَالِي . فَقَالَ \" أَكُلَّ بَنِيكَ قَدْ نَحَلْتَ مِثْلَ مَا نَحَلْتَ النُّعْمَانَ \" . قَالَ لاَ . قَالَ \" فَأَشْهِدْ عَلَى هَذَا غَيْرِي - ثُمَّ قَالَ - أَيَسُرُّكَ أَنْ يَكُونُوا إِلَيْكَ فِي الْبِرِّ سَوَاءً \" . قَالَ بَلَى . قَالَ \" فَلاَ إِذًا \" .",
+        "description_without_harkat": "حدثنا محمد بن المثنى، حدثنا عبد الوهاب، وعبد الأعلى، ح وحدثنا إسحاق، بن إبراهيم ويعقوب الدورقي جميعا عن ابن علية، - واللفظ ليعقوب - قال حدثنا إسماعيل، بن إبراهيم عن داود بن أبي هند، عن الشعبي، عن النعمان بن بشير، قال انطلق بي أبي يحملني إلى رسول الله صلى الله عليه وسلم فقال يا رسول الله اشهد أني قد نحلت النعمان كذا وكذا من مالي . فقال \" أكل بنيك قد نحلت مثل ما نحلت النعمان \" . قال لا . قال \" فأشهد على هذا غيري - ثم قال - أيسرك أن يكونوا إليك في البر سواء \" . قال بلى . قال \" فلا إذا \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:57:50.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4186,
+                "title": "1623-9",
+                "hadith_number": 4040,
+                "hadith_id": 11089,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:57:50.000Z",
+                "updated_at": "2024-10-17T05:57:50.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11090,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 21,
+        "type_id": 1,
+        "hadith_number": 4041,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪১। আহমাদ ইবনে উসমান নাওফালী (রাহঃ) ......... নু’মান ইবনে বাশীর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমার পিতা আমাকে কোন এক জিনিস দান করেন। পরে তিনি আমাকে সহ রাসুলাল্লাহ (ﷺ) এর নিকট গমন করেন তাঁকে সাক্ষী করার জন্য। তিনি বললেন, তোমার সকল পুত্রকে কি এভাবে দান করেছ? তিনি বললেন, না। তিনি বললেন, তুমি কি তাদের থেকে সদ্ব্যবহার আশা করো না, যেমন আশা করো এর থেকে? তিনি বললেন, হ্যাঁ। রাসূলুল্লাহ (ﷺ) বললেন, তাহলে আমি সাক্ষী হবো না।<br><br>ইবনে আওন বলেন, আমি এ হাদীসটি মুহাম্মাদের নিকট বর্ণনা করলে তিনি বলেন, আমার নিকট হাদীস বর্ণনা করা হয়েছে যে, রাসূলুল্লাহ (ﷺ) বলছেন, তোমরা তোমাদের পুত্রদের মধ্যে সামঞ্জস্য বিধান করো।",
+        "description_en": "Nu’man b. Bashir reported:<br>My father conferred a gift upon me, and then brought me to Allah’s Messenger (ﷺ) to make him a witness (to it). He (the Holy Prophet) said: Have you given such gift to every son of yours (as you have given to Nu’man)? He said: No. Thereupon he (the Holy Prophet) said: Don’t you expect goodness from them as you expect from him? He said: Yes. of course. He (the Holy Prophet) said: I am not going to bear witness to it (as it is injustice). Ibn Aun (one of the narrators) said: I narrated this hadith to Muhammad (the other narrator) who said: Verily we narrated that lie (the Holy Prophet) had said: Observe equity amongst your children.",
+        "description_ar": "حَدَّثَنَا أَحْمَدُ بْنُ عُثْمَانَ النَّوْفَلِيُّ، حَدَّثَنَا أَزْهَرُ، حَدَّثَنَا ابْنُ عَوْنٍ، عَنِ الشَّعْبِيِّ، عَنِ النُّعْمَانِ بْنِ بَشِيرٍ، قَالَ نَحَلَنِي أَبِي نُحْلاً ثُمَّ أَتَى بِي إِلَى رَسُولِ اللَّهِ صلى الله عليه وسلم لِيُشْهِدَهُ فَقَالَ \" أَكُلَّ وَلَدِكَ أَعْطَيْتَهُ هَذَا \" . قَالَ لاَ . قَالَ \" أَلَيْسَ تُرِيدُ مِنْهُمُ الْبِرَّ مِثْلَ مَا تُرِيدُ مِنْ ذَا \" . قَالَ بَلَى . قَالَ \" فَإِنِّي لاَ أَشْهَدُ \" . قَالَ ابْنُ عَوْنٍ فَحَدَّثْتُ بِهِ مُحَمَّدًا فَقَالَ إِنَّمَا تَحَدَّثْنَا أَنَّهُ قَالَ \" قَارِبُوا بَيْنَ أَوْلاَدِكُمْ \" .",
+        "description_without_harkat": "حدثنا أحمد بن عثمان النوفلي، حدثنا أزهر، حدثنا ابن عون، عن الشعبي، عن النعمان بن بشير، قال نحلني أبي نحلا ثم أتى بي إلى رسول الله صلى الله عليه وسلم ليشهده فقال \" أكل ولدك أعطيته هذا \" . قال لا . قال \" أليس تريد منهم البر مثل ما تريد من ذا \" . قال بلى . قال \" فإني لا أشهد \" . قال ابن عون فحدثت به محمدا فقال إنما تحدثنا أنه قال \" قاربوا بين أولادكم \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:58:57.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 21,
+                "title": "হযরত নু'মান ইবন বাশীর (رضي الله عنه)",
+                "title_en": "Numan Ibnu Bashir (RA)",
+                "title_ar": "الــنعمان بن بشير بن سعد ثعلبة الأنصاري",
+                "death_year": "65"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4187,
+                "title": "1623-10",
+                "hadith_number": 4041,
+                "hadith_id": 11090,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:58:57.000Z",
+                "updated_at": "2024-10-17T05:58:57.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11091,
+        "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4768,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4042,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪২। আহমাদ ইবনে আব্দুল্লাহ ইবনে ইউনুস (রাহঃ) ......... জাবির ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, বাশীরের স্ত্রী তাকে বলেন, আমার পুত্রকে আপনার গোলামটি দান করে দিন এবং রাসূলুল্লাহ (ﷺ) কে আমার পক্ষে সাক্ষী রাখুন। তিনি রাসুলাল্লাহ (ﷺ) এর নিকট এসে বললেন, অমুকের কন্যা (আমার স্ত্রী) আমার কাছে আবেদন করেছে, যেন আমি তার পুত্রকে আমার গোলামটি দান করে দেই। আর সে বলেছে, রাসূলুল্লাহ (ﷺ) আমার জন্য সাক্ষী করুন। তখন তিনি জিজ্ঞাসা করলেন, তার কি আরও ভাই আছে? তিনি বললেন, হ্যাঁ। এরপর তিনি (রাসূলুল্লাহ (ﷺ)) বললেন, তাদের সকলকে কি দান করেছ, যেরূপ ওকে দান করেছ? তিনি বললেন, না। রাসূলুল্লাহ (ﷺ) বললেন, তাহলে এটি ঠিক হবে না। আর ন্যায়ের উপর ব্যতীত আমি সাক্ষী হই না।",
+        "description_en": "Jabir (Allah be pleased with him) reported that the wife of Bashir said (to her husband):<br>Give to my son your slave as a gift, and make for me Allah’s Messenger (ﷺ) a witness He came to Allah’s Messenger (ﷺ) and said: The daughter of so and so (his wife Amra bint Rawaha) asked me to give my slave as a gift to her son, and call for me Allah’s Messenger (ﷺ) as a witness. Thereupon he (the Holy Prophet) said: Has he (Nu’man) brothers? He (Bashir) said: Yes. He (further) said: Have you given to all others as you have given to him? He said: No. He said: Then it is not fair; and verily I cannot bear witness but only to what is just.",
+        "description_ar": "حَدَّثَنَا أَحْمَدُ بْنُ عَبْدِ اللَّهِ بْنِ يُونُسَ، حَدَّثَنَا زُهَيْرٌ، حَدَّثَنَا أَبُو الزُّبَيْرِ، عَنْ جَابِرٍ، قَالَ قَالَتِ امْرَأَةُ بَشِيرٍ انْحَلِ ابْنِي غُلاَمَكَ وَأَشْهِدْ لِي رَسُولَ اللَّهِ صلى الله عليه وسلم . فَأَتَى رَسُولَ اللَّهِ صلى الله عليه وسلم فَقَالَ إِنَّ ابْنَةَ فُلاَنٍ سَأَلَتْنِي أَنْ أَنْحَلَ ابْنَهَا غُلاَمِي وَقَالَتْ أَشْهِدْ لِي رَسُولَ اللَّهِ صلى الله عليه وسلم فَقَالَ \" أَلَهُ إِخْوَةٌ \" . قَالَ نَعَمْ . قَالَ \" أَفَكُلَّهُمْ أَعْطَيْتَ مِثْلَ مَا أَعْطَيْتَهُ \" . قَالَ لاَ . قَالَ \" فَلَيْسَ يَصْلُحُ هَذَا . وَإِنِّي لاَ أَشْهَدُ إِلاَّ عَلَى حَقٍّ \" .",
+        "description_without_harkat": "حدثنا أحمد بن عبد الله بن يونس، حدثنا زهير، حدثنا أبو الزبير، عن جابر، قال قالت امرأة بشير انحل ابني غلامك وأشهد لي رسول الله صلى الله عليه وسلم . فأتى رسول الله صلى الله عليه وسلم فقال إن ابنة فلان سألتني أن أنحل ابنها غلامي وقالت أشهد لي رسول الله صلى الله عليه وسلم فقال \" أله إخوة \" . قال نعم . قال \" أفكلهم أعطيت مثل ما أعطيته \" . قال لا . قال \" فليس يصلح هذا . وإني لا أشهد إلا على حق \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:59:19.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4768,
+            "title": "৩. দানে সন্তানদের মধ্যে কাউকে প্রাধান্য দেওয়া মাকরূহ",
+            "title_en": "",
+            "title_ar": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ",
+            "title_without_harkat": "باب كَرَاهَةِ تَفْضِيلِ بَعْضِ الأَوْلاَدِ فِي الْهِبَةِ"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4188,
+                "title": "1624",
+                "hadith_number": 4042,
+                "hadith_id": 11091,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:59:19.000Z",
+                "updated_at": "2024-10-17T05:59:19.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11092,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4043,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪৩। ইয়াহয়া ইবনে ইয়াহয়া (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। রাসুলাল্লাহ (ﷺ) বলেছেন, যে ব্যক্তিকে এবং যার উত্তরসূরিদেরকে কিছু দান করা হলো, তবে তাকে যা দান করেছে, তা তারই হয়ে যাবে। এরপরে যে দান করেছে তা তার কাছে ফিরে আসবে না। কেননা, সে এমনভাবে দান করেছে, যার মধ্যে মীরাস (এর অধিকার) প্রবর্তিত হয়েছে।",
+        "description_en": "Jabir b. ’Abdullah (Allah be pleased with them) reported Allah’s Messenger (ﷺ) as saying:<br>\"Any man who is given a gift for life, it belongs to him and his heirs. It belongs to the one to whom it is given, and does not go back to the one who gave it, because he has given it in such a way that it is subject to the rules of inheritance.\"",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، قَالَ قَرَأْتُ عَلَى مَالِكٍ عَنِ ابْنِ شِهَابٍ، عَنْ أَبِي سَلَمَةَ بْنِ، عَبْدِ الرَّحْمَنِ عَنْ جَابِرِ بْنِ عَبْدِ اللَّهِ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ  \" أَيُّمَا رَجُلٍ أُعْمِرَ عُمْرَى لَهُ وَلِعَقِبِهِ فَإِنَّهَا لِلَّذِي أُعْطِيَهَا لاَ تَرْجِعُ إِلَى الَّذِي أَعْطَاهَا لأَنَّهُ أَعْطَى عَطَاءً وَقَعَتْ فِيهِ الْمَوَارِيثُ \" .",
+        "description_without_harkat": "حدثنا يحيى بن يحيى، قال قرأت على مالك عن ابن شهاب، عن أبي سلمة بن، عبد الرحمن عن جابر بن عبد الله، أن رسول الله صلى الله عليه وسلم قال  \" أيما رجل أعمر عمرى له ولعقبه فإنها للذي أعطيها لا ترجع إلى الذي أعطاها لأنه أعطى عطاء وقعت فيه المواريث \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T05:59:48.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4189,
+                "title": "1625-1",
+                "hadith_number": 4043,
+                "hadith_id": 11092,
+                "book_id": 2,
+                "created_at": "2024-10-17T05:59:48.000Z",
+                "updated_at": "2024-10-17T05:59:48.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11093,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4044,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪৪। ইয়াহয়া ইবনে ইয়াহয়া, মুহাম্মাদ ইবনে রুমহ ও কুতায়বা (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমি রাসূলুল্লাহ (ﷺ) বলতে শুনেছি, যদি কোন ব্যক্তি অন্য কোন ব্যক্তি এবং উত্তরসূরিদেরকে জীবনকালের জন্য দান করে, তাহলে সে তার কথা দ্বারা তার মধ্যে স্বীয় অধিকার কেটে দিল এবং সে বস্তু তারই হবে যার জন্য দান করা হয়েছে এবং তার উত্তরসুরীদের জন্যও।<br><br>অবশ্য ইয়াহয়া তাঁর হাদীসের প্রথম অংশে বলেছেন, যদি কোন ব্যক্তিকে জীবিতকালের জন্য দান করা হয় তবে তা তার জন্য ও উত্তরসূরীদের জন্য হয়ে যাবে।",
+        "description_en": "Jaber b. ’Abdullah (Allah be pleased with them) reported Allah’s Messenger (may peace be upan him) as saying:<br>He who conferred a life grant upon a person, it becomes his possession and that of his successors, for he surrendered his right in that by his declaration. (This property) now belongs to one to whom this lifelong grant has been made, and to his successors. Yahya narrated in the beginning of his narration: Whatever man is given a life grant, then it belongs to him and his posterity.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، وَمُحَمَّدُ بْنُ رُمْحٍ، قَالاَ أَخْبَرَنَا اللَّيْثُ، ح وَحَدَّثَنَا قُتَيْبَةُ، حَدَّثَنَا لَيْثٌ، عَنِ ابْنِ شِهَابٍ، عَنْ أَبِي سَلَمَةَ، عَنْ جَابِرِ بْنِ عَبْدِ اللَّهِ، أَنَّهُ قَالَ سَمِعْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم يَقُولُ \" مَنْ أَعْمَرَ رَجُلاً عُمْرَى لَهُ وَلِعَقِبِهِ فَقَدْ قَطَعَ قَوْلُهُ حَقَّهُ فِيهَا وَهِيَ لِمَنْ أُعْمِرَ وَلِعَقِبِهِ \" . غَيْرَ أَنَّ يَحْيَى قَالَ فِي أَوَّلِ حَدِيثِهِ \" أَيُّمَا رَجُلٍ أُعْمِرَ عُمْرَى فَهِيَ لَهُ وَلِعَقِبِهِ \" .",
+        "description_without_harkat": "حدثنا يحيى بن يحيى، ومحمد بن رمح، قالا أخبرنا الليث، ح وحدثنا قتيبة، حدثنا ليث، عن ابن شهاب، عن أبي سلمة، عن جابر بن عبد الله، أنه قال سمعت رسول الله صلى الله عليه وسلم يقول \" من أعمر رجلا عمرى له ولعقبه فقد قطع قوله حقه فيها وهي لمن أعمر ولعقبه \" . غير أن يحيى قال في أول حديثه \" أيما رجل أعمر عمرى فهي له ولعقبه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:00:10.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4190,
+                "title": "1625-2",
+                "hadith_number": 4044,
+                "hadith_id": 11093,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:00:10.000Z",
+                "updated_at": "2024-10-17T06:00:10.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11094,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4045,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪৫। আব্দুর রহমান ইবনে বিশর আব্দী (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। রাসূলুল্লাহ (ﷺ) বলেছেন, যে কোন ব্যক্তি কাউকে তার জীবনকালের জন্য এবং তার আওলাদদের জন্য দান করবে, এরূপ বলে যে, আমি তোমাকে তা দিলাম এবং তোমার আওলাদদের যতদিন পর্যন্ত তোমাদের মধ্যে কেউ জীবিত থাকে, তবে উহা তারই হয়ে যাবে যাকে দান করা হলো। তা তার মালিকের নিকট আর ফিরে আসবে না। কারণ সে এমনভাবে দান করেছে যার মধ্যে উত্তরাধিকার প্রবর্তিত হয়ে গেছে।",
+        "description_en": "Jabir b. ’Abdullah al-Ansari (Allah be pleased with him) said:<br>Allah’s Messenger (ﷺ) said: Whoever a person conferred Umra (life grant) upon a person and he says: I confer upon you this and upon your descendants and anyone who survives you, and that becomes his possession and that of his posterity. It would become (a permanent possession) of those who were conferred upon this gift, and it would not return to its owner (donor), for he gave that as a gift in which accrued the right of inheritance.",
+        "description_ar": "حَدَّثَنِي عَبْدُ الرَّحْمَنِ بْنُ بِشْرٍ الْعَبْدِيُّ، أَخْبَرَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا ابْنُ جُرَيْجٍ، أَخْبَرَنِي ابْنُ شِهَابٍ، عَنِ الْعُمْرَى، وَسُنَّتِهَا، عَنْ حَدِيثِ أَبِي سَلَمَةَ بْنِ عَبْدِ الرَّحْمَنِ، أَنَّ جَابِرَ بْنَ عَبْدِ، اللَّهِ الأَنْصَارِيَّ أَخْبَرَهُ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ  \" أَيُّمَا رَجُلٍ أَعْمَرَ رَجُلاً عُمْرَى لَهُ وَلِعَقِبِهِ فَقَالَ قَدْ أَعْطَيْتُكَهَا وَعَقِبَكَ مَا بَقِيَ مِنْكُمْ أَحَدٌ . فَإِنَّهَا لِمَنْ أُعْطِيَهَا . وَإِنَّهَا لاَ تَرْجِعُ إِلَى صَاحِبِهَا مِنْ أَجْلِ أَنَّهُ أَعْطَى عَطَاءً وَقَعَتْ فِيهِ الْمَوَارِيثُ \" .",
+        "description_without_harkat": "حدثني عبد الرحمن بن بشر العبدي، أخبرنا عبد الرزاق، أخبرنا ابن جريج، أخبرني ابن شهاب، عن العمرى، وسنتها، عن حديث أبي سلمة بن عبد الرحمن، أن جابر بن عبد، الله الأنصاري أخبره أن رسول الله صلى الله عليه وسلم قال  \" أيما رجل أعمر رجلا عمرى له ولعقبه فقال قد أعطيتكها وعقبك ما بقي منكم أحد . فإنها لمن أعطيها . وإنها لا ترجع إلى صاحبها من أجل أنه أعطى عطاء وقعت فيه المواريث \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:00:37.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4191,
+                "title": "1625-3",
+                "hadith_number": 4045,
+                "hadith_id": 11094,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:00:37.000Z",
+                "updated_at": "2024-10-17T06:00:37.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11095,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4046,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪৬। ইসহাক ইবনে ইবরাহীম ও আব্দ ইবনে হুমায়দ (রাহঃ) ......... জাবির ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, যে জীবনকালের দান (উমরা) রাসূলুল্লাহ (ﷺ) কার্যকরী বলে গণ্য করেছেন, তা হলো এই যে, সে বলে, ″এ তোমার ও তোমার উত্তরাধিকারীদের জন্য।″ কিন্তু সে যদি বলে যে, এ তোমার জন্য যতদিন তুমি জীবিত আছ, তবে তা তার মালিকের নিকট ফিরে আসবে। মা’মার বলেন, যুহরী এ ফাতওয়াই দিতেন।",
+        "description_en": "Jabir (Allah be pleased with him) said:<br>The Umra for which Allah’s Messenger (ﷺ) gave sanction that a person way say: This (property) is for you and for your descendants. And when he said: That is for you as long as you live, then it will return to its owner (after the death of the donee). Ma’mar said: Zuhri used to give religious verdict according to this.",
+        "description_ar": "حَدَّثَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَعَبْدُ بْنُ حُمَيْدٍ، - وَاللَّفْظُ لِعَبْدٍ - قَالاَ أَخْبَرَنَا عَبْدُ، الرَّزَّاقِ أَخْبَرَنَا مَعْمَرٌ، عَنِ الزُّهْرِيِّ، عَنْ أَبِي سَلَمَةَ، عَنْ جَابِرٍ، قَالَ إِنَّمَا الْعُمْرَى الَّتِي أَجَازَ رَسُولُ اللَّهِ صلى الله عليه وسلم أَنْ يَقُولَ هِيَ لَكَ وَلِعَقِبِكَ . فَأَمَّا إِذَا قَالَ هِيَ لَكَ مَا عِشْتَ . فَإِنَّهَا تَرْجِعُ إِلَى صَاحِبِهَا . قَالَ مَعْمَرٌ وَكَانَ الزُّهْرِيُّ يُفْتِي بِهِ .",
+        "description_without_harkat": "حدثنا إسحاق بن إبراهيم، وعبد بن حميد، - واللفظ لعبد - قالا أخبرنا عبد، الرزاق أخبرنا معمر، عن الزهري، عن أبي سلمة، عن جابر، قال إنما العمرى التي أجاز رسول الله صلى الله عليه وسلم أن يقول هي لك ولعقبك . فأما إذا قال هي لك ما عشت . فإنها ترجع إلى صاحبها . قال معمر وكان الزهري يفتي به .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:01:05.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4192,
+                "title": "1625-4",
+                "hadith_number": 4046,
+                "hadith_id": 11095,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:01:05.000Z",
+                "updated_at": "2024-10-17T06:01:05.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11096,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4047,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪৭। মুহাম্মাদ ইবনে রাফি (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। রাসুলাল্লাহ (ﷺ) সে ব্যক্তির জন্য যার জীবনকালের জন্য ও তার উত্তরসূরির জন্য দান করা হয়, ফয়সালা দিয়েছেন যে, তা তার জন্য চিরস্থায়ী হবে। তাতে দাতার পক্ষ থেকে কোন শর্ত বা ব্যতিক্রম আরোপ করা জায়েয নয়। রাবী আবু সালামা ((رضي الله عنه)) বলেন, কারণ হলো, সে এমনভাবে দান করেছে যার মধ্যে উত্তরাধিকার প্রযোজ্য হয়েছে। তাই মীরাস (বিধান) দ্বারা তার শর্তকে খণ্ডিত করেছে।",
+        "description_en": "Jabir b. ’Abdullah (Allah be pleased with him) reported that Allah’s Messenger (ﷺ) commanded that whoever is conferred upon a life grant along with his descendants is entitled to make use of the property conferred so long as he lives and his successors (also enjoy this privilege). That (property) becomes the their defect belonging. The donor cannot (after declaring Umra) lay down any condition or make any exception. Abu Salama said:<br>For he conferred a grant and as such it becomes heritage. and the right of inheritance abrogated his condition.",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا ابْنُ أَبِي فُدَيْكٍ، عَنِ ابْنِ أَبِي ذِئْبٍ، عَنِ ابْنِ شِهَابٍ، عَنْ أَبِي سَلَمَةَ بْنِ عَبْدِ الرَّحْمَنِ، عَنْ جَابِرٍ، - وَهُوَ ابْنُ عَبْدِ اللَّهِ - أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَضَى فِيمَنْ أُعْمِرَ عُمْرَى لَهُ وَلِعَقِبِهِ فَهِيَ لَهُ بَتْلَةً لاَ يَجُوزُ لِلْمُعْطِي فِيهَا شَرْطٌ وَلاَ ثُنْيَا . قَالَ أَبُو سَلَمَةَ لأَنَّهُ أَعْطَى عَطَاءً وَقَعَتْ فِيهِ الْمَوَارِيثُ فَقَطَعَتِ الْمَوَارِيثُ شَرْطَهُ .",
+        "description_without_harkat": "حدثنا محمد بن رافع، حدثنا ابن أبي فديك، عن ابن أبي ذئب، عن ابن شهاب، عن أبي سلمة بن عبد الرحمن، عن جابر، - وهو ابن عبد الله - أن رسول الله صلى الله عليه وسلم قضى فيمن أعمر عمرى له ولعقبه فهي له بتلة لا يجوز للمعطي فيها شرط ولا ثنيا . قال أبو سلمة لأنه أعطى عطاء وقعت فيه المواريث فقطعت المواريث شرطه .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:01:39.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4193,
+                "title": "1625-5",
+                "hadith_number": 4047,
+                "hadith_id": 11096,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:01:39.000Z",
+                "updated_at": "2024-10-17T06:01:39.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11097,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4048,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪৮। উবাইদুল্লাহ ইবনে উমর কাওয়ারীরী (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেন, জীবিৎকালের জন্য দান তারই প্রাপ্য যাকে তা দান করা হয়েছে।",
+        "description_en": "Jabir (b. ’Abdullah) (Allah be pleased with him) reported Allah’s Messenger (ﷺ) as saying:<br>Life grant is for one upon whom it is bestowed.",
+        "description_ar": "حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ عُمَرَ الْقَوَارِيرِيُّ، حَدَّثَنَا خَالِدُ بْنُ الْحَارِثِ، حَدَّثَنَا هِشَامٌ، عَنْ يَحْيَى بْنِ أَبِي كَثِيرٍ، حَدَّثَنِي أَبُو سَلَمَةَ بْنُ عَبْدِ الرَّحْمَنِ، قَالَ سَمِعْتُ جَابِرَ بْنَ عَبْدِ اللَّهِ، يَقُولُ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" الْعُمْرَى لِمَنْ وُهِبَتْ لَهُ \" .",
+        "description_without_harkat": "حدثنا عبيد الله بن عمر القواريري، حدثنا خالد بن الحارث، حدثنا هشام، عن يحيى بن أبي كثير، حدثني أبو سلمة بن عبد الرحمن، قال سمعت جابر بن عبد الله، يقول قال رسول الله صلى الله عليه وسلم  \" العمرى لمن وهبت له \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:02:08.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4194,
+                "title": "1625-6",
+                "hadith_number": 4048,
+                "hadith_id": 11097,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:02:08.000Z",
+                "updated_at": "2024-10-17T06:02:08.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11098,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4049,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৪৯। মুহাম্মাদ ইবনে মুসান্না (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত যে, রাসূলুল্লাহ (ﷺ) বলেছেনঃ পরবর্তী অংশ অনুরূপ বর্ণনা করেন।",
+        "description_en": "Jabir b. ’Abdullah reported a hadith like this through another chain of transmitters.",
+        "description_ar": "وَحَدَّثَنَاهُ مُحَمَّدُ بْنُ الْمُثَنَّى، حَدَّثَنَا مُعَاذُ بْنُ هِشَامٍ، حَدَّثَنِي أَبِي، عَنْ يَحْيَى بْنِ أَبِي، كَثِيرٍ حَدَّثَنَا أَبُو سَلَمَةَ بْنُ عَبْدِ الرَّحْمَنِ، عَنْ جَابِرِ بْنِ عَبْدِ اللَّهِ، أَنَّ نَبِيَّ اللَّهِ صلى الله عليه وسلم قَالَ بِمِثْلِهِ .",
+        "description_without_harkat": "وحدثناه محمد بن المثنى، حدثنا معاذ بن هشام، حدثني أبي، عن يحيى بن أبي، كثير حدثنا أبو سلمة بن عبد الرحمن، عن جابر بن عبد الله، أن نبي الله صلى الله عليه وسلم قال بمثله .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:02:33.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4195,
+                "title": "1625-7",
+                "hadith_number": 4049,
+                "hadith_id": 11098,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:02:33.000Z",
+                "updated_at": "2024-10-17T06:02:33.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11099,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4050,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৫০। আহমাদ ইবনে ইউনুস ও ইয়াহয়া ইবনে ইয়াহয়া (রাহঃ) ......... জাবির ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ তোমরা তোমাদের ধন-সম্পদ সংরক্ষণ করবে, নষ্ট করবে না। কেননা, যে ব্যক্তি চির জীবনের জন্য দান করে তবে তা তারই হয়ে যাবে যাকে দান করা হলো, তার জীবিত অবস্থায়, মৃত অবস্থায় এবং তার উত্তরাধিকারীদের জন্য।",
+        "description_en": "Jabir reported this hadith directly from Allah’s Apostle (ﷺ)<br><br>Jabir (b. ’Abdullah) (Allah be pleased with him) reported Allah’s Messenger (ﷺ) having said:<br>Keep your property to yourselves and do not squander it, for he who conferred a life grant upon another that property will belong to him upon whom it is conferred whether he lives or dies, and (would pass on) to his successors (as heritage).",
+        "description_ar": "حَدَّثَنَا أَحْمَدُ بْنُ يُونُسَ، حَدَّثَنَا زُهَيْرٌ، حَدَّثَنَا أَبُو الزُّبَيْرِ، عَنْ جَابِرٍ، يَرْفَعُهُ إِلَى النَّبِيِّ صلى الله عليه وسلم .<br>وَحَدَّثَنَا يَحْيَى بْنُ يَحْيَى، - وَاللَّفْظُ لَهُ - أَخْبَرَنَا أَبُو خَيْثَمَةَ، عَنْ أَبِي الزُّبَيْرِ، عَنْ جَابِرٍ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" أَمْسِكُوا عَلَيْكُمْ أَمْوَالَكُمْ وَلاَ تُفْسِدُوهَا فَإِنَّهُ مَنْ أَعْمَرَ عُمْرَى فَهِيَ لِلَّذِي أُعْمِرَهَا حَيًّا وَمَيِّتًا وَلِعَقِبِهِ \" .",
+        "description_without_harkat": "حدثنا أحمد بن يونس، حدثنا زهير، حدثنا أبو الزبير، عن جابر، يرفعه إلى النبي صلى الله عليه وسلم .<br>وحدثنا يحيى بن يحيى، - واللفظ له - أخبرنا أبو خيثمة، عن أبي الزبير، عن جابر، قال قال رسول الله صلى الله عليه وسلم  \" أمسكوا عليكم أموالكم ولا تفسدوها فإنه من أعمر عمرى فهي للذي أعمرها حيا وميتا ولعقبه \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:03:22.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4198,
+                "title": "1625-9",
+                "hadith_number": 4050,
+                "hadith_id": 11099,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:05:06.000Z",
+                "updated_at": "2024-10-17T06:05:06.000Z"
+            },
+            {
+                "id": 4197,
+                "title": "1625-8",
+                "hadith_number": 4050,
+                "hadith_id": 11099,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:05:06.000Z",
+                "updated_at": "2024-10-17T06:05:06.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11100,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4051,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৫১। আবু বকর ইবনে আবি শাঈবা, ইসহাক ইবনে ইবরাহীম ও আব্দুল ওয়ারিস ইবনে আব্দুস সামাদ (রাহঃ) ......... জাবির ((رضي الله عنه)) সূত্রে নবী (ﷺ) থেকে বর্ণনা করেন, উপরোক্ত আবু খায়সামার হাদীসের মর্মানুসারে। তবে আইয়ুব (রাহঃ) এর বর্ণনায় কিছু অতিরিক্ত আছে। তিনি বলেছেন, আনসারগণ মুহাজিরদেরকে জীবৎকালের জন্য দান করতেন। তখন রাসূলুল্লাহ (ﷺ) বললেন, তোমরা তোমাদের সম্পদ নিজেদের জন্য সংরক্ষিত রাখো।",
+        "description_en": "This hadith is narrated on the authority of Jabir through other chains of transmitters, but (with this addition of words) that thehadith transmitted on the authority of Ayyub (these words are found):<br>\" The Helpers (Ansar) conferred the benefit of ’Umra, upon the Emigrants (Muhajirin), whereupon Allah’s Messenger (ﷺ) said: Keep your property to yourselves.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا مُحَمَّدُ بْنُ بِشْرٍ، حَدَّثَنَا حَجَّاجُ بْنُ أَبِي عُثْمَانَ، ح وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، عَنْ وَكِيعٍ، عَنْ سُفْيَانَ، ح وَحَدَّثَنَا عَبْدُ الْوَارِثِ بْنُ عَبْدِ الصَّمَدِ، حَدَّثَنِي أَبِي، عَنْ جَدِّي، عَنْ أَيُّوبَ، كُلُّ هَؤُلاَءِ عَنْ أَبِي الزُّبَيْرِ، عَنْ جَابِرٍ، عَنِ النَّبِيِّ صلى الله عليه وسلم بِمَعْنَى حَدِيثِ أَبِي خَيْثَمَةَ وَفِي حَدِيثِ أَيُّوبَ مِنَ الزِّيَادَةِ قَالَ جَعَلَ الأَنْصَارُ يُعْمِرُونَ الْمُهَاجِرِينَ فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" أَمْسِكُوا عَلَيْكُمْ أَمْوَالَكُمْ \" .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا محمد بن بشر، حدثنا حجاج بن أبي عثمان، ح وحدثنا أبو بكر بن أبي شيبة، وإسحاق بن إبراهيم، عن وكيع، عن سفيان، ح وحدثنا عبد الوارث بن عبد الصمد، حدثني أبي، عن جدي، عن أيوب، كل هؤلاء عن أبي الزبير، عن جابر، عن النبي صلى الله عليه وسلم بمعنى حديث أبي خيثمة وفي حديث أيوب من الزيادة قال جعل الأنصار يعمرون المهاجرين فقال رسول الله صلى الله عليه وسلم  \" أمسكوا عليكم أموالكم \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:05:38.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4199,
+                "title": "1625-10",
+                "hadith_number": 4051,
+                "hadith_id": 11100,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:05:38.000Z",
+                "updated_at": "2024-10-17T06:05:38.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11101,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4052,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৫২। মুহাম্মাদ ইবনে রাফি’ ও ইসহাক ইবনে মানসুর (রাহঃ) ......... জাবির ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, মদীনার জনৈক মহিলা তার একটা বাগান তার এক পূত্রকে জীবৎকালের জন্য দান করেন। পরে পুত্র মারা যায় এবং তারপর মহিলাটিও মারা যায়। পুত্র নিজের সন্তান রেখে যায়। আর তার ছিল কয়েকজন ভাই, যারা দানকারীনীর পুত্র। তারপর দানকারীনীর পুত্ররা বললো, বাগানটি আমাদের কাছে ফিরে এসেছে। আর যাকে দান করা হয়েছিল তার পুত্ররা বললো বরং এ ছিল আমার পিতার, তার জীবদ্দশায় ও মৃত অবস্থায়।<br><br>এরপর তারা উসমান ((رضي الله عنه)) এর আযাদকৃত গোলাম (শাসনকর্তা) তারিক (রাহঃ) এর নিকট বিচার চাইল। তিনি জাবির ((رضي الله عنه)) কে ডেকে পাঠালেন। জাবির ((رضي الله عنه)) সাক্ষ্য দেন, জীবৎকালীন দান তারই প্রাপ্য যাকে দান করা হয়েছে। রাসূলুল্লাহ (ﷺ) এ নির্দেশ দিয়েছেন। তারিক তদনুযায়ী ফয়সালা দেন। তারপর তিনি (খলীফা) আব্দুল মালিককে এ ঘটনা লিখে জানান এবং জাবিরের সাক্ষ্য দান সম্পর্কেও তাঁকে অবগত করেন। আব্দুল মালিক বলেন, জাবির ((رضي الله عنه)) সত্যই বলেছেনঃ। পরে তারিক (রাহঃ) এ হুকুম জারি করেন। কাজেই বাগানটি আজ পর্যন্ত দানকৃত ব্যক্তির বংশধরদের অধিকারে রয়েছে।",
+        "description_en": "Jabir (Allah be pleased with him) reported that a woman gave her garden as a life grant to her son. He died and later on she also died and left a son behind and brothers also, The sons of the woman making life grant said (to those who had been conferred upon this ’Umra):<br>This garden has returned to us. The sons of the one who had been given life grant said: This belonged to our father, during his lifetime and in case of his death. They took their dispute to Tariq, the freed slave of ’Uthman. He called Jabir and he gave testimony of Allah’s Messenger (ﷺ) having said: Life grant belongs to one who is conferred upon this (privilege). Tariq gave this decision and then wrote to Abd al-Malik and informed him, Jabir bearing witness to it. Abd al-Malik said: Jabir has told the truth. Then Tariq gave a decree and, as a result thereof, it is to this day that the garden belongs to descendants of one who was conferred upon the life grant.",
+        "description_ar": "وَحَدَّثَنِي مُحَمَّدُ بْنُ رَافِعٍ، وَإِسْحَاقُ بْنُ مَنْصُورٍ، - وَاللَّفْظُ لاِبْنِ رَافِعٍ - قَالاَ حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا ابْنُ جُرَيْجٍ، أَخْبَرَنِي أَبُو الزُّبَيْرِ، عَنْ جَابِرٍ، قَالَ أَعْمَرَتِ امْرَأَةٌ بِالْمَدِينَةِ حَائِطًا لَهَا ابْنًا لَهَا ثُمَّ تُوُفِّيَ وَتُوُفِّيَتْ بَعْدَهُ وَتَرَكَتْ وَلَدًا وَلَهُ إِخْوَةٌ بَنُونَ لِلْمُعْمِرَةِ فَقَالَ وَلَدُ الْمُعْمِرَةِ رَجَعَ الْحَائِطُ إِلَيْنَا وَقَالَ بَنُو الْمُعْمَرِ بَلْ كَانَ لأَبِينَا حَيَاتَهُ وَمَوْتَهُ . فَاخْتَصَمُوا إِلَى طَارِقٍ مَوْلَى عُثْمَانَ فَدَعَا جَابِرًا فَشَهِدَ عَلَى رَسُولِ اللَّهِ صلى الله عليه وسلم بِالْعُمْرَى لِصَاحِبِهَا فَقَضَى بِذَلِكَ طَارِقٌ ثُمَّ كَتَبَ إِلَى عَبْدِ الْمَلِكِ فَأَخْبَرَهُ ذَلِكَ وَأَخْبَرَهُ بِشَهَادَةِ جَابِرٍ فَقَالَ عَبْدُ الْمَلِكِ صَدَقَ جَابِرٌ . فَأَمْضَى ذَلِكَ طَارِقٌ . فَإِنَّ ذَلِكَ الْحَائِطَ لِبَنِي الْمُعْمَرِ حَتَّى الْيَوْمِ .",
+        "description_without_harkat": "وحدثني محمد بن رافع، وإسحاق بن منصور، - واللفظ لابن رافع - قالا حدثنا عبد الرزاق، أخبرنا ابن جريج، أخبرني أبو الزبير، عن جابر، قال أعمرت امرأة بالمدينة حائطا لها ابنا لها ثم توفي وتوفيت بعده وتركت ولدا وله إخوة بنون للمعمرة فقال ولد المعمرة رجع الحائط إلينا وقال بنو المعمر بل كان لأبينا حياته وموته . فاختصموا إلى طارق مولى عثمان فدعا جابرا فشهد على رسول الله صلى الله عليه وسلم بالعمرى لصاحبها فقضى بذلك طارق ثم كتب إلى عبد الملك فأخبره ذلك وأخبره بشهادة جابر فقال عبد الملك صدق جابر . فأمضى ذلك طارق . فإن ذلك الحائط لبني المعمر حتى اليوم .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:06:24.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4200,
+                "title": "1625-11",
+                "hadith_number": 4052,
+                "hadith_id": 11101,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:06:24.000Z",
+                "updated_at": "2024-10-17T06:06:24.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11102,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 75,
+        "type_id": 1,
+        "hadith_number": 4053,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৫৩। আবু বকর ইবনে আবি শাঈবা ও ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... সুলাইমান ইবনে ইয়াসার ((رضي الله عنه)) থেকে বর্ণিত যে, রাসূলুল্লাহ (ﷺ) থেকে বর্ণিত জাবির ((رضي الله عنه)) এর বর্ণিত হাদীসের প্রেক্ষিতে তারিক (রাহঃ) ’জীবৎকালের জন্য দান’ (দানকৃত ব্যক্তির) তার ওয়ারিসদের জন্য হওয়ার ফয়সালা দেন।",
+        "description_en": "Sulaiman b. Yasir reported that Jabir gave this verdict. The inheritor has a right (to inherit) the life grant according to the statement of Jabir (b. ’Abdullah) (Allah be pleased with him) which he narrated from Allah’s Messenger (ﷺ).",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، - وَاللَّفْظُ لأَبِي بَكْرٍ قَالَ إِسْحَاقُ أَخْبَرَنَا وَقَالَ أَبُو بَكْرٍ، حَدَّثَنَا سُفْيَانُ بْنُ عُيَيْنَةَ، عَنْ عَمْرٍو، عَنْ سُلَيْمَانَ بْنِ يَسَارٍ، أَنَّ طَارِقًا، قَضَى بِالْعُمْرَى لِلْوَارِثِ لِقَوْلِ جَابِرِ بْنِ عَبْدِ اللَّهِ عَنْ رَسُولِ اللَّهِ صلى الله عليه وسلم .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، وإسحاق بن إبراهيم، - واللفظ لأبي بكر قال إسحاق أخبرنا وقال أبو بكر، حدثنا سفيان بن عيينة، عن عمرو، عن سليمان بن يسار، أن طارقا، قضى بالعمرى للوارث لقول جابر بن عبد الله عن رسول الله صلى الله عليه وسلم .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:07:18.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 75,
+                "title": "সুলাইমান ইবনে ইয়াসার ((رحمة الله))",
+                "title_en": "Sulaiman Ibn Yasar (R)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4201,
+                "title": "1625-12",
+                "hadith_number": 4053,
+                "hadith_id": 11102,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:07:18.000Z",
+                "updated_at": "2024-10-17T06:07:18.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11103,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4054,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৫৪। মুহাম্মাদ ইবনে মুসান্না ও মুহাম্মাদ ইবনে বাশশার (রাহঃ) ......... জাবির ইবনে আব্দুল্লাহ ((رضي الله عنه)) সূত্রে থেকে নবী (ﷺ) থেকে বর্ণিত যে, বলেছেন, জীবৎকালের জন্য দান বৈধ (কার্যকর)।",
+        "description_en": "Jabir b. ’Abdullah reported Allah’s Apostle (ﷺ) as saying:<br>Life grant is permissible.",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَمُحَمَّدُ بْنُ بَشَّارٍ، قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، قَالَ سَمِعْتُ قَتَادَةَ، يُحَدِّثُ عَنْ عَطَاءٍ، عَنْ جَابِرِ بْنِ عَبْدِ اللَّهِ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" الْعُمْرَى جَائِزَةٌ \" .",
+        "description_without_harkat": "حدثنا محمد بن المثنى، ومحمد بن بشار، قالا حدثنا محمد بن جعفر، حدثنا شعبة، قال سمعت قتادة، يحدث عن عطاء، عن جابر بن عبد الله، عن النبي صلى الله عليه وسلم قال  \" العمرى جائزة \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:09:26.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4202,
+                "title": "1625-13",
+                "hadith_number": 4054,
+                "hadith_id": 11103,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:09:26.000Z",
+                "updated_at": "2024-10-17T06:09:26.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11104,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 4055,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৫৫। ইয়াহয়া ইবনে হাবীব হারিসী (রাহঃ) ......... জাবির ((رضي الله عنه)) থেকে বর্ণিত যে, নবী (ﷺ) বলেছেন, জীবৎকালের জন্য দান দানকৃত ব্যক্তির পরিজনের মীরাসে পরিগণিত।",
+        "description_en": "Jabir b. Abdullah (Allah be pleased with them) reported Allah’s Apostle (ﷺ) as saying:<br>Life grant is the heritage of one upon whom it is conferred.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ حَبِيبٍ الْحَارِثِيُّ، حَدَّثَنَا خَالِدٌ، - يَعْنِي ابْنَ الْحَارِثِ - حَدَّثَنَا سَعِيدٌ، عَنْ قَتَادَةَ، عَنْ عَطَاءٍ، عَنْ جَابِرٍ، عَنِ النَّبِيِّ صلى الله عليه وسلم أَنَّهُ قَالَ  \" الْعُمْرَى مِيرَاثٌ لأَهْلِهَا \" .",
+        "description_without_harkat": "حدثنا يحيى بن حبيب الحارثي، حدثنا خالد، - يعني ابن الحارث - حدثنا سعيد، عن قتادة، عن عطاء، عن جابر، عن النبي صلى الله عليه وسلم أنه قال  \" العمرى ميراث لأهلها \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:10:38.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4203,
+                "title": " 1625-14",
+                "hadith_number": 4055,
+                "hadith_id": 11104,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:10:38.000Z",
+                "updated_at": "2024-10-17T06:10:38.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11105,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 4056,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৫৬। মুহাম্মাদ ইবনে মুসান্না ও ইবনে বাশশার (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত যে, নবী (ﷺ) বলেছেন, জীবৎকালের জন্য দান করা বৈধ (কার্যকর)।",
+        "description_en": "Abu Huraira (Allah be pleased with him) reported Allah’s Apostle (ﷺ) as saying:<br>Life grant is permissible.",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ، بَشَّارٍ قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، عَنْ قَتَادَةَ، عَنِ النَّضْرِ بْنِ أَنَسٍ، عَنْ بَشِيرِ بْنِ نَهِيكٍ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" الْعُمْرَى جَائِزَةٌ \" .",
+        "description_without_harkat": "حدثنا محمد بن المثنى، وابن، بشار قالا حدثنا محمد بن جعفر، حدثنا شعبة، عن قتادة، عن النضر بن أنس، عن بشير بن نهيك، عن أبي هريرة، عن النبي صلى الله عليه وسلم قال  \" العمرى جائزة \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:11:06.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4204,
+                "title": "1626-1",
+                "hadith_number": 4056,
+                "hadith_id": 11105,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:11:06.000Z",
+                "updated_at": "2024-10-17T06:11:06.000Z"
+            }
+        ]
+    },
+    {
+        "id": 11106,
+        "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+        "title_en": "",
+        "title_ar": "باب الْعُمْرَى",
+        "title_without_harkat": "باب الْعُمْرَى",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 111,
+        "title_id": 4769,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 4057,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৪০৫৭। ইয়াহয়া ইবনে হাবীব (রাহঃ) ......... সাঈদ সূত্রে কাতাদা (রাহঃ) থেকে উক্ত সনদে বর্ণনা করেন। তবে সাঈদ বলেছেন, তার পরিজনদের মীরাসে পরিগণিত অথবা বলেছেন জায়েয (কার্যকর)।",
+        "description_en": "This hadith is narrated on the authority of Qatada with the same chain of transmitters.",
+        "description_ar": "وَحَدَّثَنِيهِ يَحْيَى بْنُ حَبِيبٍ، حَدَّثَنَا خَالِدٌ، - يَعْنِي ابْنَ الْحَارِثِ - حَدَّثَنَا سَعِيدٌ، عَنْ قَتَادَةَ، بِهَذَا الإِسْنَادِ غَيْرَ أَنَّهُ قَالَ \" مِيرَاثٌ لأَهْلِهَا \" . أَوْ قَالَ \" جَائِزَةٌ \" .",
+        "description_without_harkat": "وحدثنيه يحيى بن حبيب، حدثنا خالد، - يعني ابن الحارث - حدثنا سعيد، عن قتادة، بهذا الإسناد غير أنه قال \" ميراث لأهلها \" . أو قال \" جائزة \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:28:48.000Z",
+        "updated_at": "2024-10-17T06:11:46.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 111,
+            "title": "২৫- হিবা / উপহার প্রদান সংক্রান্ত অধ্যায়",
+            "title_en": "25. The Book of Gifts",
+            "title_ar": "كتاب الهبات",
+            "range_start": 4018,
+            "range_end": 4057
+        },
+        "titles": {
+            "id": 4769,
+            "title": "৪. উমরা’ অর্থাৎ ’জীবনকালের জন্য’ দান করা",
+            "title_en": "",
+            "title_ar": "باب الْعُمْرَى",
+            "title_without_harkat": "باب الْعُمْرَى"
+        },
+        "rabis": [
+            {
+                "id": 9,
+                "title": "বিবিধ",
+                "title_en": null,
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 4205,
+                "title": "1626-2",
+                "hadith_number": 4057,
+                "hadith_id": 11106,
+                "book_id": 2,
+                "created_at": "2024-10-17T06:11:46.000Z",
+                "updated_at": "2024-10-17T06:11:46.000Z"
+            }
+        ]
+    }
+]

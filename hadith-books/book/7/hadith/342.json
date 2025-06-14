@@ -1,0 +1,158 @@
+[
+    {
+        "id": 43108,
+        "title": "১. জাহান্নামের বিবরণ",
+        "title_en": "",
+        "title_ar": "بَاب مَا جَاءَ فِي صِفَةِ جَهَنَّمَ",
+        "title_without_harkat": "بَاب مَا جَاءَ فِي صِفَةِ جَهَنَّمَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 7,
+        "chapter_id": 342,
+        "title_id": 13897,
+        "rabi_id": 2,
+        "type_id": 3,
+        "hadith_number": 1870,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "রেওয়ায়ত ১. আবু হুরায়রা (رضي الله عنه) হইতে বর্ণিত, রাসূলুল্লাহ (ﷺ) বলিয়াছেন, আদম সন্তান যে আগুন প্রজ্বলিত করে (ব্যবহার করে) উহা জাহান্নামের আগুনের সত্তর ভাগের এক ভাগের সমান। সাহাবীগণ আরয করিলেন, ইয়া রাসূলাল্লাহ! (জ্বালাইবার জন্য তো) দুনিয়ার এই আগুনই যথেষ্ট। রাসূলুল্লাহ (ﷺ) বললেন, (জাহান্নামের) সেই আগুন (ক্ষমতার দিক দিয়া) দুনিয়ার এই আগুনের চাইতে আরও উনসত্তর গুণ অধিক ক্ষমতাসম্পন্ন।",
+        "description_en": "Malik related to me from Abu’z-Zinad from al-Araj from Abu Hurayra that the Messenger of Allah, may Allah bless him and grant him peace, said, \"The fire of the children of Adam which they kindle is a seventieth part of the fire of Jahannam.\" They said, \"Messenger of Allah, this fire is certainly enough.\" He said, \"That fire is sixty- nine times greater.\"",
+        "description_ar": "حَدَّثَنِي مَالِك عَنْ أَبِي الزِّنَادِ عَنْ الْأَعْرَجِ عَنْ أَبِي هُرَيْرَةَ أَنَّ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ قَالَ نَارُ بَنِي آدَمَ الَّتِي يُوقِدُونَ جُزْءٌ مِنْ سَبْعِينَ جُزْءًا مِنْ نَارِ جَهَنَّمَ فَقَالُوا يَا رَسُولَ اللَّهِ إِنْ كَانَتْ لَكَافِيَةً قَالَ إِنَّهَا فُضِّلَتْ عَلَيْهَا بِتِسْعَةٍ وَسِتِّينَ جُزْءًا",
+        "description_without_harkat": "حدثني مالك عن أبي الزناد عن الأعرج عن أبي هريرة أن رسول الله صلى الله عليه وسلم قال نار بني آدم التي يوقدون جزء من سبعين جزءا من نار جهنم فقالوا يا رسول الله إن كانت لكافية قال إنها فضلت عليها بتسعة وستين جزءا",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T05:14:16.000Z",
+        "updated_at": "2022-05-26T05:39:57.000Z",
+        "book": {
+            "id": 7,
+            "title": "মুওয়াত্তা মালিক",
+            "title_en": "আল মুওয়াত্তা - ইমাম মালিক (رحمة الله)",
+            "english_title": "Al-Muwatta by Imam Malik",
+            "title_ar": "كتاب الموطأ للإمام مالك",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 342,
+            "title": "৫৭. জাহান্নাম অধ্যায়",
+            "title_en": "57. Jahannam",
+            "title_ar": "كتاب جهنم",
+            "range_start": 1870,
+            "range_end": 1871
+        },
+        "titles": {
+            "id": 13897,
+            "title": "১. জাহান্নামের বিবরণ",
+            "title_en": null,
+            "title_ar": "بَاب مَا جَاءَ فِي صِفَةِ جَهَنَّمَ",
+            "title_without_harkat": "بَاب مَا جَاءَ فِي صِفَةِ جَهَنَّمَ"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 3,
+            "title": "তাহকীক চলমান",
+            "title_en": "Tahqiq ongoing",
+            "title_ar": "ضعيف"
+        },
+        "explanations": null
+    },
+    {
+        "id": 43109,
+        "title": "১. জাহান্নামের বিবরণ",
+        "title_en": "",
+        "title_ar": "بَاب مَا جَاءَ فِي صِفَةِ جَهَنَّمَ",
+        "title_without_harkat": "بَاب مَا جَاءَ فِي صِفَةِ جَهَنَّمَ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 7,
+        "chapter_id": 342,
+        "title_id": 13897,
+        "rabi_id": 5,
+        "type_id": 3,
+        "hadith_number": 1871,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "রেওয়ায়ত ২. আবু হুরায়রা (رضي الله عنه) বলেন, জাহান্নামের আগুনকে তোমরা দুনিয়ার এই আগুনের মতো লাল মনে করিতেছ। অথচ উহা আলকাতরা হইতেও অধিক কালো।",
+        "description_en": "Malik related to me from his paternal uncle Abu Suhayl ibn Malik from his father that Abu Hurayra said, \"Do you think that it is red like this fire of yours? It is blacker than tar.\"",
+        "description_ar": "وَحَدَّثَنِي مَالِك عَنْ عَمِّهِ أَبِي سُهَيْلِ بْنِ مَالِكٍ عَنْ أَبِيهِ عَنْ أَبِي هُرَيْرَةَ أَنَّهُ قَالَ أَتُرَوْنَهَا حَمْرَاءَ كَنَارِكُمْ هَذِهِ لَهِيَ أَسْوَدُ مِنْ الْقَارِ وَالْقَارُ الزِّفْتُ",
+        "description_without_harkat": "وحدثني مالك عن عمه أبي سهيل بن مالك عن أبيه عن أبي هريرة أنه قال أترونها حمراء كناركم هذه لهي أسود من القار والقار الزفت",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T05:14:16.000Z",
+        "updated_at": "2022-05-26T05:40:16.000Z",
+        "book": {
+            "id": 7,
+            "title": "মুওয়াত্তা মালিক",
+            "title_en": "আল মুওয়াত্তা - ইমাম মালিক (رحمة الله)",
+            "english_title": "Al-Muwatta by Imam Malik",
+            "title_ar": "كتاب الموطأ للإمام مالك",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 342,
+            "title": "৫৭. জাহান্নাম অধ্যায়",
+            "title_en": "57. Jahannam",
+            "title_ar": "كتاب جهنم",
+            "range_start": 1870,
+            "range_end": 1871
+        },
+        "titles": {
+            "id": 13897,
+            "title": "১. জাহান্নামের বিবরণ",
+            "title_en": null,
+            "title_ar": "بَاب مَا جَاءَ فِي صِفَةِ جَهَنَّمَ",
+            "title_without_harkat": "بَاب مَا جَاءَ فِي صِفَةِ جَهَنَّمَ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 3,
+            "title": "তাহকীক চলমান",
+            "title_en": "Tahqiq ongoing",
+            "title_ar": "ضعيف"
+        },
+        "explanations": null
+    }
+]

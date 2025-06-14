@@ -22,7 +22,7 @@
         container.innerHTML = '<div class="loading">হাদিসের হাদিসের কিতাব গুলো লোড হচ্ছে...</div>';
         
         try {
-            const response = await fetch('https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/hadith-books/book-title.json');
+            const response = await fetch('https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/hadith-books/book/book-title.json');
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -89,7 +89,7 @@
                 <div class="book-meta">
                     ${toBanglaNumber(bookData.total_section)} টি অধ্যায়, 
                     ${toBanglaNumber(bookData.total_hadith)} টি হাদিস
-                    <img src="info.png" class="info-icon" alt="Info" title="বিস্তারিত তথ্য">
+                   
                 </div>
             `;
             // বক্সে ক্লিক ইভেন্ট হ্যান্ডলার

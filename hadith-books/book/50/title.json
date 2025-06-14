@@ -1,0 +1,202 @@
+[
+    {
+        "id": 3000,
+        "book_id": 50,
+        "sequence": 1,
+        "title": "বিবিধ",
+        "title_ar": "المقدمات",
+        "total_hadith": 685,
+        "range_start": 1,
+        "range_end": 685
+    },
+    {
+        "id": 3001,
+        "book_id": 50,
+        "sequence": 2,
+        "title": "১/ শিষ্টাচার",
+        "title_ar": "الأدب",
+        "total_hadith": 46,
+        "range_start": 686,
+        "range_end": 731
+    },
+    {
+        "id": 3002,
+        "book_id": 50,
+        "sequence": 3,
+        "title": "২/ পানাহারের আদব-কায়দা",
+        "title_ar": "أدب الطعام",
+        "total_hadith": 51,
+        "range_start": 732,
+        "range_end": 782
+    },
+    {
+        "id": 3003,
+        "book_id": 50,
+        "sequence": 4,
+        "title": "৩/ পোষাক-পরিচছদ",
+        "title_ar": "اللباس",
+        "total_hadith": 35,
+        "range_start": 783,
+        "range_end": 817
+    },
+    {
+        "id": 3004,
+        "book_id": 50,
+        "sequence": 5,
+        "title": "৪/ নিদ্রার আদব",
+        "title_ar": "آداب النوم",
+        "total_hadith": 31,
+        "range_start": 818,
+        "range_end": 848
+    },
+    {
+        "id": 3005,
+        "book_id": 50,
+        "sequence": 6,
+        "title": "৫/ সালামের আদব",
+        "title_ar": "السلام",
+        "total_hadith": 50,
+        "range_start": 849,
+        "range_end": 898
+    },
+    {
+        "id": 3006,
+        "book_id": 50,
+        "sequence": 7,
+        "title": "৬/ রোগীদর্শন ও জানাযায় অংশগ্রহণ",
+        "title_ar": "عيادة المريض وتشييع الميت والصلاة عليه وحضور دفنه المكث عند قبره بعد دفنه",
+        "total_hadith": 64,
+        "range_start": 899,
+        "range_end": 962
+    },
+    {
+        "id": 3007,
+        "book_id": 50,
+        "sequence": 8,
+        "title": "৭/ সফরের আদব-কায়দা",
+        "title_ar": "آداب السفر",
+        "total_hadith": 35,
+        "range_start": 963,
+        "range_end": 997
+    },
+    {
+        "id": 3008,
+        "book_id": 50,
+        "sequence": 9,
+        "title": "৮/ বিভিন্ন নেক আমলের ফযীলত প্রসঙ্গে",
+        "title_ar": "الفضائل",
+        "total_hadith": 278,
+        "range_start": 998,
+        "range_end": 1275
+    },
+    {
+        "id": 3009,
+        "book_id": 50,
+        "sequence": 10,
+        "title": "৯/ ই‘তিকাফ",
+        "title_ar": "الاعتكاف",
+        "total_hadith": 3,
+        "range_start": 1276,
+        "range_end": 1278
+    },
+    {
+        "id": 3010,
+        "book_id": 50,
+        "sequence": 11,
+        "title": "১০/ (কা‘বাগৃহের) হজ্জ পালন",
+        "title_ar": "الحج",
+        "total_hadith": 14,
+        "range_start": 1279,
+        "range_end": 1292
+    },
+    {
+        "id": 3011,
+        "book_id": 50,
+        "sequence": 12,
+        "title": "১১/ (আল্লাহর পথে) জিহাদ",
+        "title_ar": "الجهاد",
+        "total_hadith": 91,
+        "range_start": 1293,
+        "range_end": 1383
+    },
+    {
+        "id": 3012,
+        "book_id": 50,
+        "sequence": 13,
+        "title": "১২/ ইলম",
+        "title_ar": "العلم",
+        "total_hadith": 17,
+        "range_start": 1384,
+        "range_end": 1400
+    },
+    {
+        "id": 3013,
+        "book_id": 50,
+        "sequence": 14,
+        "title": "১৩/ মহান আল্লাহর প্রশংসা ও তাঁর কৃতজ্ঞতা স্বীকার",
+        "title_ar": "حمد الله تعالى وشكره",
+        "total_hadith": 4,
+        "range_start": 1401,
+        "range_end": 1404
+    },
+    {
+        "id": 3014,
+        "book_id": 50,
+        "sequence": 15,
+        "title": "১৪/ রাসূলুল্লাহ ﷺ এর উপর দরূদ ও সালাম প্রসঙ্গে",
+        "title_ar": "الصلاة على رسول الله صلى الله عليه وسل",
+        "total_hadith": 11,
+        "range_start": 1405,
+        "range_end": 1415
+    },
+    {
+        "id": 3015,
+        "book_id": 50,
+        "sequence": 16,
+        "title": "১৫/ যিকির-আযকার প্রসঙ্গে",
+        "title_ar": "الأذكار",
+        "total_hadith": 57,
+        "range_start": 1416,
+        "range_end": 1472
+    },
+    {
+        "id": 3016,
+        "book_id": 50,
+        "sequence": 17,
+        "title": "১৬/ (প্রার্থনামূলক) দো‘আসমূহ",
+        "title_ar": "الدعوات",
+        "total_hadith": 46,
+        "range_start": 1473,
+        "range_end": 1518
+    },
+    {
+        "id": 3017,
+        "book_id": 50,
+        "sequence": 18,
+        "title": "১৭/ নিষিদ্ধ বিষয়াবলী",
+        "title_ar": "الأمور المنهي عنها",
+        "total_hadith": 298,
+        "range_start": 1519,
+        "range_end": 1816
+    },
+    {
+        "id": 3018,
+        "book_id": 50,
+        "sequence": 19,
+        "title": "১৮/ বিবিধ চিত্তকর্ষী হাদিসসমূহ",
+        "title_ar": "المنثورات والملح",
+        "total_hadith": 61,
+        "range_start": 1817,
+        "range_end": 1877
+    },
+    {
+        "id": 3019,
+        "book_id": 50,
+        "sequence": 20,
+        "title": "১৯/ ক্ষমাপ্রার্থনামূলক নির্দেশাবলী",
+        "title_ar": "الاستغفار",
+        "total_hadith": 28,
+        "range_start": 1878,
+        "range_end": 1905
+    }
+]

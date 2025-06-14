@@ -60,7 +60,7 @@ function incrementCounter() {
     counterEl.textContent = toBanglaNumber(duaCounters[currentIndex]);
 
     if (soundOn) {
-        const audio = new Audio("tasbih_click.mp3");
+        const audio = new Audio("sound/tasbih_click.mp3");
         audio.play();
     }
 }

@@ -1,0 +1,3575 @@
+[
+    {
+        "id": 14291,
+        "title": "অধ্যায়: তাফসীর",
+        "title_en": "",
+        "title_ar": "كتاب التفسير",
+        "title_without_harkat": "كتاب التفسير",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5403,
+        "rabi_id": 463,
+        "type_id": 1,
+        "hadith_number": 7242,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৪২। মুহাম্মাদ ইবনে রাফি (রাহঃ) ......... হাম্মাম ইবনে মুনাব্বিহ (রাহঃ) থেকে বর্ণিত, তিনি বলেন, এ হচ্ছে (সে সব হাদীস) যা আবু হুরায়রা ((رضي الله عنه)) রাসূলুল্লাহ (ﷺ) থেকে আমাদের কাছে বর্ণনা করেছেন। এ কথা বলে তিনি কয়েকটি হাদীস উল্লেখ করেছেন। এর মধ্যে একটি হাদীস হচ্ছে এই যে রাসূলুল্লাহ (ﷺ) বলেনঃ বনী ইসরাইলদের বলা হয়েছিল, তোমরা (বিজিত নগরীতে) দরজা দিয়ে প্রবেশ করার সময় সিজদাবনতঃ হয়ে প্রবেশ কর এবং বলো حِطَّةٌ (তউবা—মাফ করে দাও) তাহলে আমি তোমাদের গুনাহসমুহ মাফ করে দেব, কিন্তু তাঁরা শব্দটি পরিবর্তন করে নিতম্বের উপর হেঁচড়াতে হেঁচড়াতে প্রবেশ করল এবং বললحَبَّةٌ فِي شَعَرَةٍ “যবের শিষে দানা দাও, যব চাই, গম চাই”।",
+        "description_en": "Hammim b. Munabbih reported:<br>This is what Abu Huraira reported to us from Allah’s Messenger (ﷺ) and in this connection he narrated some of the ahadith and Allah’s Messenger (ﷺ) said: It was said to people of Israel: Enter this land saying Hitta (Remove Thou from us the burden of our sins), whereupon We would forgive you your sins, but they twisted (this statement) and entered the gate dragging upon their breech and said: The\" grain in the ear.\"",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، حَدَّثَنَا مَعْمَرٌ، عَنْ هَمَّامِ بْنِ مُنَبِّهٍ، قَالَ هَذَا مَا حَدَّثَنَا أَبُو هُرَيْرَةَ، عَنْ رَسُولِ اللَّهِ صلى الله عليه وسلم . فَذَكَرَ أَحَادِيثَ مِنْهَا وَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" قِيلَ لِبَنِي إِسْرَائِيلَ ( ادْخُلُوا الْبَابَ سُجَّدًا وَقُولُوا حِطَّةٌ يُغْفَرْ لَكُمْ خَطَايَاكُمْ) فَبَدَّلُوا فَدَخَلُوا الْبَابَ يَزْحَفُونَ عَلَى أَسْتَاهِهِمْ وَقَالُوا حَبَّةٌ فِي شَعَرَةٍ\" .",
+        "description_without_harkat": "حدثنا محمد بن رافع، حدثنا عبد الرزاق، حدثنا معمر، عن همام بن منبه، قال هذا ما حدثنا أبو هريرة، عن رسول الله صلى الله عليه وسلم . فذكر أحاديث منها وقال رسول الله صلى الله عليه وسلم  \" قيل لبني إسرائيل ( ادخلوا الباب سجدا وقولوا حطة يغفر لكم خطاياكم) فبدلوا فدخلوا الباب يزحفون على أستاههم وقالوا حبة في شعرة\" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:32:40.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5403,
+            "title": "অধ্যায়: তাফসীর",
+            "title_en": null,
+            "title_ar": "كتاب التفسير",
+            "title_without_harkat": "كتاب التفسير"
+        },
+        "rabis": [
+            {
+                "id": 463,
+                "title": "হাম্মাম ইবনে মুনাব্বিহ ((رحمة الله))",
+                "title_en": "Hammam Ibn Munabbih",
+                "title_ar": "همام بن منبه بن كامل بن سيج الأبناوي",
+                "death_year": "132"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7537,
+                "title": "3015",
+                "hadith_number": 7242,
+                "hadith_id": 14291,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:32:40.000Z",
+                "updated_at": "2024-10-28T15:32:40.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14292,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 8,
+        "type_id": 1,
+        "hadith_number": 7243,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৪৩। আমর ইবনে মুহাম্মাদ ইবনে বুকায়র আন-নাকিদ, হাসান ইবনে আলী আল-হুলওয়ানী ও আব্দ ইবনে হুমায়দ (রাহঃ) ......... আনাস ইবনে মালিক ((رضي الله عنه)) থকে বর্ণিত, তিনি বলেন, ওফাতের পূর্ব (সময়) হতে ওফাত পর্যন্ত সময়ের মধ্যে আল্লাহ তাআলা রাসূলুল্লাহ (ﷺ) এর প্রতি অনবরত ওহী নাযিল করেন। যে দিন রাসূলুল্লাহ (ﷺ) ইন্তিকাল করেন সেদিন তাঁর প্রতি বিপুল পরিমাণ ওহী নাযিল হয়।",
+        "description_en": "Anas b. Malik reported that Allah, the Exalted and Glorious, sent revelation to Allah’s Messenger (ﷺ) just before his death in quick succession until he left for his heavenly home, and the day when he died, he received the revelation profusely.",
+        "description_ar": "حَدَّثَنِي عَمْرُو بْنُ مُحَمَّدِ بْنِ بُكَيْرٍ النَّاقِدُ، وَالْحَسَنُ بْنُ عَلِيٍّ الْحُلْوَانِيُّ، وَعَبْدُ بْنُ، حُمَيْدٍ - قَالَ عَبْدٌ حَدَّثَنِي وَقَالَ الآخَرَانِ، حَدَّثَنَا يَعْقُوبُ، - يَعْنُونَ ابْنَ إِبْرَاهِيمَ بْنِ سَعْدٍ - حَدَّثَنَا أَبِي، عَنْ صَالِحٍ، - وَهُوَ ابْنُ كَيْسَانَ - عَنِ ابْنِ شِهَابٍ، قَالَ أَخْبَرَنِي أَنَسُ بْنُ، مَالِكٍ أَنَّ اللَّهَ، عَزَّ وَجَلَّ تَابَعَ الْوَحْىَ عَلَى رَسُولِ اللَّهِ صلى الله عليه وسلم قَبْلَ وَفَاتِهِ حَتَّى تُوُفِّيَ وَأَكْثَرُ مَا كَانَ الْوَحْىُ يَوْمَ تُوُفِّيَ رَسُولُ اللَّهِ صلى الله عليه وسلم .",
+        "description_without_harkat": "حدثني عمرو بن محمد بن بكير الناقد، والحسن بن علي الحلواني، وعبد بن، حميد - قال عبد حدثني وقال الآخران، حدثنا يعقوب، - يعنون ابن إبراهيم بن سعد - حدثنا أبي، عن صالح، - وهو ابن كيسان - عن ابن شهاب، قال أخبرني أنس بن، مالك أن الله، عز وجل تابع الوحى على رسول الله صلى الله عليه وسلم قبل وفاته حتى توفي وأكثر ما كان الوحى يوم توفي رسول الله صلى الله عليه وسلم .",
+        "note": "",
+        "explanation": "রাসূলুল্লাহ সাল্লাল্লাহু 'আলাইহি ওয়া সাল্লামের ওফাতের আগে তাঁর প্রতি ঘন ঘন ওহী নাযিল হওয়ার কারণ, এ সময় বিভিন্ন অঞ্চল থেকে তাঁর কাছে প্রতিনিধি দলসমূহের আগমন খুব বেশি বেশি হচ্ছিল। তারা তাঁর কাছে বিভিন্ন বিষয়ে প্রশ্ন করছিল, যার সমাধানকল্পে আল্লাহ তা'আলা একের পর এক ওহী নাযিল করতে থাকেন। সেইসঙ্গে তাঁর ওফাতের আগে যেহেতু দীন পরিপূর্ণ করে দেওয়ার প্রয়োজন ছিল, তাই এ সময় প্রয়োজনীয় বিধানাবলি সম্বলিত ওহী একের পর এক নাযিল করা হতে থাকে, যাতে ওফাতের পূর্বেই শরী'আত পরিপূর্ণতা লাভ করতে পারে।<br>     উল্লেখ্য, এ হাদীছের প্রথমেই যেহেতু আল্লাহ তা'আলার নাম এসে গেছে, তাই পরে ব্যাকরণ অনুযায়ী رسول الله (আল্লাহর রাসূল)-এর স্থলে رسوله (তাঁর রাসূল) বললেই চলত। অর্থাৎ‍ দ্বিতীয়বার বিশেষ্যের পরিবর্তে সর্বনাম ব্যবহার করাই যথেষ্ট ছিল। তা সত্ত্বেও বিশেষ্য (الله) ব্যবহার করা হয়েছে বারবার উচ্চারণ দ্বারা আল্লাহ তা'আলার মহান নামের অধিকতর আস্বাদ লাভের জন্য। পরম প্রিয়ের নাম বারংবার উচ্চারণের মাধ্যমে অন্তরে প্রশান্তি যোগানোও ইশক ও মহব্বতের চিরন্তন রেওয়াজ। সেইসঙ্গে সর্বনামের বদলে মহান এ নামের সঙ্গে 'রাসূল'-এর সম্বন্ধ স্থাপন দ্বারা প্রিয়নবী সাল্লাল্লাহু 'আলাইহি ওয়া সাল্লামের প্রতি ভক্তি-শ্রদ্ধা নিবেদনেও পূর্ণতা আসে বৈ কি।<br><br>হাদীস থেকে শিক্ষণীয়ঃ<br><br>ক. এ হাদীছ দ্বারাও জীবনের শেষপ্রান্তে বেশি বেশি কল্যাণকর কর্মকাণ্ডে জড়িত থাকার উৎসাহ পাওয়া যায়।<br><br>খ. এর দ্বারা আরও বোঝা যায়, জীবনের পরিসমাপ্তি যদি ঘটে 'ইলমে ওহীর খেদমতে ব্যতিব্যস্ত থাকা অবস্থায়, তবে তা অতি বড় সৌভাগ্য।",
+        "explanation_id": 4383,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2025-05-27T02:51:45.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 8,
+                "title": "হযরত আনাস ইবনে মালিক (رضي الله عنه)",
+                "title_en": "Anas ibn Malik (RA)",
+                "title_ar": "أنس بن مالك بن النضر بن ضمضم الأنصاري",
+                "death_year": "93"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": {
+            "id": 4383,
+            "title": "রাসূলুল্লাহ সাল্লাল্লাহু 'আলাইহি ওয়া সাল্লামের ওফাতের আগে তাঁর প্রতি ঘন ঘন ওহী নাযিল হওয়ার কারণ, এ সময় বিভিন্ন অঞ্চল থেকে তাঁর কাছে প্রতিনিধি দলসমূহের আগমন খুব বেশি বেশি হচ্ছিল। তারা তাঁর কাছে বিভিন্ন বিষয়ে প্রশ্ন করছিল, যার সমাধানকল্পে আল্লাহ তা'আলা একের পর এক ওহী নাযিল করতে থাকেন। সেইসঙ্গে তাঁর ওফাতের আগে যেহেতু দীন পরিপূর্ণ করে দেওয়ার প্রয়োজন ছিল, তাই এ সময় প্রয়োজনীয় বিধানাবলি সম্বলিত ওহী একের পর এক নাযিল করা হতে থাকে, যাতে ওফাতের পূর্বেই শরী'আত পরিপূর্ণতা লাভ করতে পারে।\n     উল্লেখ্য, এ হাদীছের প্রথমেই যেহেতু আল্লাহ তা'আলার নাম এসে গেছে, তাই পরে ব্যাকরণ অনুযায়ী رسول الله (আল্লাহর রাসূল)-এর স্থলে رسوله (তাঁর রাসূল) বললেই চলত। অর্থাৎ‍ দ্বিতীয়বার বিশেষ্যের পরিবর্তে সর্বনাম ব্যবহার করাই যথেষ্ট ছিল। তা সত্ত্বেও বিশেষ্য (الله) ব্যবহার করা হয়েছে বারবার উচ্চারণ দ্বারা আল্লাহ তা'আলার মহান নামের অধিকতর আস্বাদ লাভের জন্য। পরম প্রিয়ের নাম বারংবার উচ্চারণের মাধ্যমে অন্তরে প্রশান্তি যোগানোও ইশক ও মহব্বতের চিরন্তন রেওয়াজ। সেইসঙ্গে সর্বনামের বদলে মহান এ নামের সঙ্গে 'রাসূল'-এর সম্বন্ধ স্থাপন দ্বারা প্রিয়নবী সাল্লাল্লাহু 'আলাইহি ওয়া সাল্লামের প্রতি ভক্তি-শ্রদ্ধা নিবেদনেও পূর্ণতা আসে বৈ কি।\n\nহাদীস থেকে শিক্ষণীয়ঃ\n\nক. এ হাদীছ দ্বারাও জীবনের শেষপ্রান্তে বেশি বেশি কল্যাণকর কর্মকাণ্ডে জড়িত থাকার উৎসাহ পাওয়া যায়।\n\nখ. এর দ্বারা আরও বোঝা যায়, জীবনের পরিসমাপ্তি যদি ঘটে 'ইলমে ওহীর খেদমতে ব্যতিব্যস্ত থাকা অবস্থায়, তবে তা অতি বড় সৌভাগ্য।",
+            "reference": "ব্যাখ্যা সূত্রঃ_ রিয়াযুস সালিহীন (অনুবাদ- মাওলানা আবুল বাশার মুহাম্মাদ সাইফুল ইসলাম হাফি.)"
+        },
+        "hadithNumbers": [
+            {
+                "id": 7538,
+                "title": "3016",
+                "hadith_number": 7243,
+                "hadith_id": 14292,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:34:00.000Z",
+                "updated_at": "2024-10-28T15:34:00.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14293,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 368,
+        "type_id": 1,
+        "hadith_number": 7244,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৪৪। আবু খায়সামা যুহাইর ইবনে হারব ও মুহাম্মাদ ইবনে মুসান্না (রাহঃ) ......... তারিক ইবনে শিহাব (রাহঃ) থেকে বর্ণিত। তিনি বলেন, ইয়াহুদী লোকেরা উমর ((رضي الله عنه)) কে বললো, তোমরা এমন একটি আয়াত পাঠ করে থাকো তা যদি আমাদের সম্পর্কে নাযিল হতো, তবে এ দিনটিকে আমরা উৎসবের দিন হিসাবে গ্রহণ করতাম। উমর ((رضي الله عنه)) বললেন, আমি জানি, ঐ আয়াতটি কখন (কোথায়) ও কোন দিন নাযিল হয়েছিল। আর যখন তা নাযিল হয়েছিল তখন রাসূলুল্লাহ (ﷺ) কোথায় কোথায় অবস্থান করছিলেন (তাও জানি)। আয়াতটি আরাফার দিন নাযিল হয়েছিল; রাসূলুল্লাহ (ﷺ) তখন আরাফাতে অবস্থান করছিলেন।<br><br>রাবী সুফিয়ান (রাহঃ) বলেন, আয়াতটি যেদিন নাযিল হয়েছে তা জুমআর দিন ছিল কিনা এ ব্যাপারে আমি সন্দিহান। অর্থাৎ এ আয়াতالْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي (আজ আমি তোমাদের দ্বীনকে তোমাদের জন্য পরিপূর্ণ করে দিলাম এবং পূর্ণ করে দিলাম তোমাদের প্রতি আমার অনুগ্রহকে।)",
+        "description_en": "Tariq b. Shihab reported that a Jew said to’Umar:<br>You recite a verse which, if it had been revealed in relation to us, we would have taken that day as the day of rejoicing. Thereupon ’Umar said: I know where it was revealed and on the day when it was revealed and where Allah’s Messenger (ﷺ) had been at that time when it was revealed. It was revealed on the day of ’Arafa (ninth of Dhu’l Hijjah) and Allah’s Messenger (ﷺ) had been staying in ’Arafat. Sufyan said: I doubt, whether it was Friday or not (and the verse referred to) is this:\" Today I have perfected your religion for you and completed My favours upon you\" (v. 4).",
+        "description_ar": "حَدَّثَنِي أَبُو خَيْثَمَةَ، زُهَيْرُ بْنُ حَرْبٍ وَمُحَمَّدُ بْنُ الْمُثَنَّى - وَاللَّفْظُ لاِبْنِ الْمُثَنَّى - قَالاَ حَدَّثَنَا عَبْدُ الرَّحْمَنِ، - وَهُوَ ابْنُ مَهْدِيٍّ - حَدَّثَنَا سُفْيَانُ، عَنْ قَيْسِ بْنِ مُسْلِمٍ، عَنْ طَارِقِ، بْنِ شِهَابٍ أَنَّ الْيَهُودَ، قَالُوا لِعُمَرَ إِنَّكُمْ تَقْرَءُونَ آيَةً لَوْ أُنْزِلَتْ فِينَا لاَتَّخَذْنَا ذَلِكَ الْيَوْمَ عِيدًا . فَقَالَ عُمَرُ إِنِّي لأَعْلَمُ حَيْثُ أُنْزِلَتْ وَأَىَّ يَوْمٍ أُنْزِلَتْ وَأَيْنَ رَسُولُ اللَّهِ صلى الله عليه وسلم حَيْثُ أُنْزِلَتْ أُنْزِلَتْ بِعَرَفَةَ وَرَسُولُ اللَّهِ صلى الله عليه وسلم وَاقِفٌ بِعَرَفَةَ . قَالَ سُفْيَانُ أَشُكُّ كَانَ يَوْمَ جُمُعَةٍ أَمْ لاَ . يَعْنِي ( الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي)",
+        "description_without_harkat": "حدثني أبو خيثمة، زهير بن حرب ومحمد بن المثنى - واللفظ لابن المثنى - قالا حدثنا عبد الرحمن، - وهو ابن مهدي - حدثنا سفيان، عن قيس بن مسلم، عن طارق، بن شهاب أن اليهود، قالوا لعمر إنكم تقرءون آية لو أنزلت فينا لاتخذنا ذلك اليوم عيدا . فقال عمر إني لأعلم حيث أنزلت وأى يوم أنزلت وأين رسول الله صلى الله عليه وسلم حيث أنزلت أنزلت بعرفة ورسول الله صلى الله عليه وسلم واقف بعرفة . قال سفيان أشك كان يوم جمعة أم لا . يعني ( اليوم أكملت لكم دينكم وأتممت عليكم نعمتي)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:34:27.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 368,
+                "title": "তারিক ইবনে শিহাব (رضي الله عنه)",
+                "title_en": "Tareq Ibn Shihab (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7539,
+                "title": "3017-1",
+                "hadith_number": 7244,
+                "hadith_id": 14293,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:34:27.000Z",
+                "updated_at": "2024-10-28T15:34:27.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14294,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 368,
+        "type_id": 1,
+        "hadith_number": 7245,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৪৫। আবু বকর ইবনে আবি শাঈবা ও আবু কুরায়ব (রাহঃ) ......... তারিক ইবনে শিহাব (রাহঃ) থেকে বর্ণিত। তিনি বলেন, জনৈক ইয়াহুদী উমর ((رضي الله عنه)) কে বললো, الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الإِسْلاَمَ دِينًا (আজ আমি তোমাদের দ্বীনকে তোমাদের জন্য পরিপূর্ণ করে দিলাম এবং পূর্ণ করে দিলাম তোমাদের প্রতি আমার অনুগ্রহকে...) এ আয়াতটি আমাদের ইয়াহুদী সম্প্রদায় সম্পর্কে নাযিল হলে এ দিনটিকে আমরা উৎসব দিবস হিসাবে পালন করতাম। আমরা জানি, কোন দিন এ আয়াতটি নাযিল হয়েছে। রাবী বলেন, এ কথা শুনে উমর ((رضي الله عنه)) বললেন, যে দিন, যে সময় এ আয়াতটি নাযিল হয়েছে সে দিন ও সে সময় সম্পর্কে আমি সম্যক অবগত আছি। এ আয়াতটি নাযিল হওয়ার সময় রাসূলুল্লাহ (ﷺ) কোথায় ছিলেন, তাও আমি জানি। এ আয়াতটি মুযদালিফার রাতে নাযিল হয়েছে। তখন আমরা রাসূলুল্লাহ (ﷺ) এর সাথে আরাফাতে ছিলাম।",
+        "description_en": "Tariq b. Shihab reported that a Jew said to ’Umar:<br>If this verse were revealed in relation to the Jews (i e. \"This day I have perfected your religion for you and have completed My favours for you and have chosen for you al-Islam as religion\") we would have taken the day of rejoicing on which this verse was revealed. Thereupon ’Umar said: I know the day on which it was revealed and the hour when it was revealed and where Allah’s Messenger (ﷺ) had been when it was revealed. It was revealed on the night of Friday and we were in ’Arafat with Allah’s Messenger (ﷺ) at that time.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ - وَاللَّفْظُ لأَبِي بَكْرٍ - قَالَ حَدَّثَنَا عَبْدُ، اللَّهِ بْنُ إِدْرِيسَ عَنْ أَبِيهِ، عَنْ قَيْسِ بْنِ مُسْلِمٍ، عَنْ طَارِقِ بْنِ شِهَابٍ، قَالَ قَالَتِ الْيَهُودُ لِعُمَرَ لَوْ عَلَيْنَا مَعْشَرَ يَهُودَ نَزَلَتْ هَذِهِ الآيَةُ ( الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الإِسْلاَمَ دِينًا) نَعْلَمُ الْيَوْمَ الَّذِي أُنْزِلَتْ فِيهِ لاَتَّخَذْنَا ذَلِكَ الْيَوْمَ عِيدًا . قَالَ فَقَالَ عُمَرُ فَقَدْ عَلِمْتُ الْيَوْمَ الَّذِي أُنْزِلَتْ فِيهِ وَالسَّاعَةَ وَأَيْنَ رَسُولُ اللَّهِ صلى الله عليه وسلم حِينَ نَزَلَتْ نَزَلَتْ لَيْلَةَ جَمْعٍ وَنَحْنُ مَعَ رَسُولِ اللَّهِ صلى الله عليه وسلم بِعَرَفَاتٍ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، وأبو كريب - واللفظ لأبي بكر - قال حدثنا عبد، الله بن إدريس عن أبيه، عن قيس بن مسلم، عن طارق بن شهاب، قال قالت اليهود لعمر لو علينا معشر يهود نزلت هذه الآية ( اليوم أكملت لكم دينكم وأتممت عليكم نعمتي ورضيت لكم الإسلام دينا) نعلم اليوم الذي أنزلت فيه لاتخذنا ذلك اليوم عيدا . قال فقال عمر فقد علمت اليوم الذي أنزلت فيه والساعة وأين رسول الله صلى الله عليه وسلم حين نزلت نزلت ليلة جمع ونحن مع رسول الله صلى الله عليه وسلم بعرفات .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:38:22.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 368,
+                "title": "তারিক ইবনে শিহাব (رضي الله عنه)",
+                "title_en": "Tareq Ibn Shihab (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7540,
+                "title": "3017-2",
+                "hadith_number": 7245,
+                "hadith_id": 14294,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:38:22.000Z",
+                "updated_at": "2024-10-28T15:38:22.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14295,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 368,
+        "type_id": 1,
+        "hadith_number": 7246,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৪৬। আব্দ ইবনে হুমায়দ (রাহঃ) ......... তারিক ইবনে শিহাব (রাহঃ) থেকে বর্ণিত। তিনি বলেন, জনৈক ইয়াহুদী ব্যক্তি উমর ((رضي الله عنه)) এর নিকট এসে বললো, হে আমীরুল মু'মিনীন! আপনাদের কিতাবের মধ্যে এমন একটি আয়াত আপনারা পাঠ করে থাকেন। যদি তা আমাদের ইয়াহুদী সম্প্রদায় সম্পর্কে নাযিল হত তাহলে ঐ দিনটিকে আমরা উৎসব দিবস হিসাবে গ্রহণ করতাম। উমর ((رضي الله عنه)) জিজ্ঞাসা করলেন, আয়াতটি কি? সে বলল, আয়াতটি হলঃالْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الإِسْلاَمَ دِينًا (আজ আমি তোমাদের দ্বীনকে তোমাদের জন্য পরিপূর্ণ করে দিলাম এবং পূর্ণ করে দিলাম তোমাদের প্রতি আমার অনুগ্রহকে।)<br><br>এ কথা শুনে উমর ((رضي الله عنه)) বললেন, যে দিন, যে স্থানে আয়াতটি নাযিল হয়েছে অবশ্যই আমি তা জানি। আয়াতটি জুমআর দিন আরাফাতের ময়দানে রাসূলুল্লাহ (ﷺ) এর প্রতি অবতীর্ণ হয়েছে।",
+        "description_en": "Tariq b. Shihab reported that a Jew came to ’Umar and said:<br>Commander of the Faithful, there is a verse in your Book, which you recite. Had it been revealed in connection with the Jews, we would have taken it as the day of rejoicing. Thereupon he said: Which verse do you mean? He replied:\" This day I have perfected your religion for you and I have completed My favours upon you and I have chosen al-Islam as religion for you.\" Umar said, I know the day when it was revealed and the place where it was revealed. It was revealed to Allah’s Messenger (ﷺ) at ’Arafat on Friday.",
+        "description_ar": "وَحَدَّثَنِي عَبْدُ بْنُ حُمَيْدٍ، أَخْبَرَنَا جَعْفَرُ بْنُ عَوْنٍ، أَخْبَرَنَا أَبُو عُمَيْسٍ، عَنْ قَيْسِ، بْنِ مُسْلِمٍ عَنْ طَارِقِ بْنِ شِهَابٍ، قَالَ جَاءَ رَجُلٌ مِنَ الْيَهُودِ إِلَى عُمَرَ فَقَالَ يَا أَمِيرَ الْمُؤْمِنِينَ آيَةٌ فِي كِتَابِكُمْ تَقْرَءُونَهَا لَوْ عَلَيْنَا نَزَلَتْ مَعْشَرَ الْيَهُودِ لاَتَّخَذْنَا ذَلِكَ الْيَوْمَ عِيدًا . قَالَ وَأَىُّ آيَةٍ قَالَ ( الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الإِسْلاَمَ دِينًا) فَقَالَ عُمَرُ إِنِّي لأَعْلَمُ الْيَوْمَ الَّذِي نَزَلَتْ فِيهِ وَالْمَكَانَ الَّذِي نَزَلَتْ فِيهِ نَزَلَتْ عَلَى رَسُولِ اللَّهِ صلى الله عليه وسلم بِعَرَفَاتٍ فِي يَوْمِ جُمُعَةٍ .",
+        "description_without_harkat": "وحدثني عبد بن حميد، أخبرنا جعفر بن عون، أخبرنا أبو عميس، عن قيس، بن مسلم عن طارق بن شهاب، قال جاء رجل من اليهود إلى عمر فقال يا أمير المؤمنين آية في كتابكم تقرءونها لو علينا نزلت معشر اليهود لاتخذنا ذلك اليوم عيدا . قال وأى آية قال ( اليوم أكملت لكم دينكم وأتممت عليكم نعمتي ورضيت لكم الإسلام دينا) فقال عمر إني لأعلم اليوم الذي نزلت فيه والمكان الذي نزلت فيه نزلت على رسول الله صلى الله عليه وسلم بعرفات في يوم جمعة .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:38:55.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 368,
+                "title": "তারিক ইবনে শিহাব (رضي الله عنه)",
+                "title_en": "Tareq Ibn Shihab (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7541,
+                "title": "3017-3",
+                "hadith_number": 7246,
+                "hadith_id": 14295,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:38:55.000Z",
+                "updated_at": "2024-10-28T15:38:55.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14296,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 157,
+        "type_id": 1,
+        "hadith_number": 7247,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৪৭। আবু তাহির আহমাদ ইবনে আমর ইবনে সারহ ও হারামালা ইবনে ইয়াহয়া (রাহঃ) ......... উরওয়া ইবনে যুবাইর ((رضي الله عنه)) থেকে বর্ণিত। তিনি আয়িশা ((رضي الله عنه)) কে মহান আল্লাহর ইরশাদঃ তোমরা যদি আশঙ্কা কর যে, ইয়াতীম মেয়েদের প্রতি সুবিচার করতে পারবে না, তবে বিবাহ করবে নারীদের মধ্যে যাকে তোমাদের মনঃপুত হয়, দুই, তিন অথবা চার এর ব্যাখ্যা জিজ্ঞাসা করলে তিনি বললেন, হে ভাগ্নে! যে সব ইয়াতীম মেয়েরা তাদের (তত্ত্বাবধানকারী) অভিভাবকদের লালন পালনে থাকত এবং তার সম্পদের অংশীদার হতো তার সম্পদের লোভ ও রূপ-যৌবনের আকর্ষণ হেতু উক্ত অভিভাবাকারা তাকে অন্যরা যে পরিমাণ মোহরানা দিয়ে বিয়ে করতে প্রস্তুত ইনসাফের দাবী অনুযায়ী উক্ত পরিমাণ মোহরানা দিয়ে বিয়ে করতে চাইতো না। এ আয়াতে তাদেরকে ঐসব ইয়াতীমদের বিয়ে করতে নিষেধ করা হয়েছে।<br><br>তবে তাদের মোহরানা প্রদানের ব্যাপারে সর্বোত্তম রীতি (মোহরে মিছাল) অনুসরণ করলে তা স্বতন্ত্র কথা। অন্যথায় তাদের পছন্দমত অন্য মেয়েদের বিয়ে করতে নির্দেশ দেয়া হয়েছে। উরওয়া ((رضي الله عنه)) বলেন, আয়িশা ((رضي الله عنه)) বলেছেন, এ আয়াত নাযিল হওয়ার পর কিছু লোক বিষয়টি সম্পর্কে রাসূলুল্লাহ (ﷺ) এর নিকট জানতে চাইলে আল্লাহ তাআলা ইরশাদ করেনঃ এবং লোকেরা আপনার নিকট নারীদের বিষয়ে ব্যবস্থা জানতে চায়। বলুন, আল্লাহ তোমাদেরকে তাদের সম্বন্ধে আইনের ব্যবস্থা জানাচ্ছেন এবং ইয়াতীম নারী সম্পর্কে-যাদের প্রাপ্য তোমরা প্রদান কর না অথচ তোমরা তাদেরকে বিবাহ করতে চাও ও অসহায় শিশুদের সম্বন্ধে এবং ইয়াতীমদের প্রতি তোমাদের ন্যায়বিচার সম্পর্কে যা কিতাবে তোমাদেরকে শুনান হয় তাও পরিস্কারভাবে জানিয়ে দেন। এবং যে সৎকাজ তোমরা কর আল্লাহ তা সবিশেষ অবহিত।”<br><br>আয়িশা ((رضي الله عنه)) বলেন, আল্লাহর ইরশাদঃ وَمَا يُتْلَى عَلَيْكُمْ فِي الْكِتَابِ এর দ্বারা প্রথম আয়াতটিকে বুঝানো হয়েছে, যার মধ্যে আল্লাহ তাআলা বলেছেন, তোমরা যদি আশঙ্কা কর যে ইয়াতীম মেয়েদের প্রতি সুবিচার করতে পারবে না তবে বিবাহ করবে নারীদের মধ্যে যাকে তোমাদের ভাল লাগে দুই, তিন অথবা চার।<br><br>আয়িশা ((رضي الله عنه)) বলেন, আল্লাহর ইরশাদঃ وَتَرْغَبُونَ أَنْ تَنْكِحُوهُنَّ এর মানে হচ্ছে, অর্থ-সম্পদ ও রূপ-যৌবন কম থাকার কারণে তোমাদের লালন পালনে থাকা ইয়াতীম মেয়েদেরকে বিবাহ করতে অপছন্দ করলে-তাদেরকে অর্থ সম্পদ ও রূপ যৌবনবতী ইয়াতীম নারীদের পছন্দ হলেও বিয়ে করতে নিষেধ করা হয়েছে। ইনসাফের ভিত্তিতে (মোহরানা দেয়া হয়) তবে বিয়ে করার অনুমতি দেয়া হয়েছে। এ বিধান (ধনহীনা, রূপহীনা) ইয়াতিম মেয়ের প্রতি অনীহার কারণে দেয়া হয়েছে।",
+        "description_en": "’Urwa b. Zubair reported that he asked ’A’isha about the words of Allah:<br>\" If you fear that you will not be able to maintain equity amongst the orphan girls, then marry (those) you like from amongst the women two, three or four.\" She said: O, the son of my sister, the orphan girl is one who is under the patronage of her guardian and she shares with him in his property and her property and beauty fascinate him and her guardian makes up his mind to marry her without giving her due share of the wedding money and is not prepared (to pay so much amount) which anyone else is prepared to pay and so Allah has forbidden to marry these girls but in case when equity is observed as regards the wedding money and they are prepared to pay them the full amount of the wedding money and Allah commanded to marry other women besides them according to the liking of their heart. ’Urwa reported that ’A’isha said that people began to seek verdict from Allah’s Messenger (ﷺ) after the revelation of this verse about them (orphan girls) and Allah, the Exalted and Glorious, revealed this verse:\" They asked thee verdict about women; say: Allah gives verdict to you in regard to them and what is recited to you in the Book about orphan woman, whom you give not what is ordained for them while you like to marry them\" (iv. 126). She said: The wording of Allah\" what is recited to you\" in the Book means the first verse, i. e.\" if you fear that you may not be able to observe equity in case of an orphan woman, marry what you like in case of woman\" (iv. 3). ’A’isha said: (And as for this verse [iv. 126], i. e. and you intend\" to marry one of them from amongst the orphan girls\" it pertains to one who is in charge (of orphans) having small amount of wealth and less beauty and they have been forbidden that they should marry what they like of her wealth and beauty out of the orphan girls, but with equity, because of their disliking for them.",
+        "description_ar": "حَدَّثَنِي أَبُو الطَّاهِرِ، أَحْمَدُ بْنُ عَمْرِو بْنِ سَرْحٍ وَحَرْمَلَةُ بْنُ يَحْيَى التُّجِيبِيُّ - قَالَ أَبُو الطَّاهِرِ حَدَّثَنَا وَقَالَ، حَرْمَلَةُ أَخْبَرَنَا - ابْنُ وَهْبٍ، أَخْبَرَنِي يُونُسُ، عَنِ ابْنِ شِهَابٍ، أَخْبَرَنِي عُرْوَةُ بْنُ الزُّبَيْرِ، أَنَّهُ سَأَلَ عَائِشَةَ عَنْ قَوْلِ اللَّهِ، ( وَإِنْ خِفْتُمْ أَنْ لاَ، تُقْسِطُوا فِي الْيَتَامَى فَانْكِحُوا مَا طَابَ لَكُمْ مِنَ النِّسَاءِ مَثْنَى وَثُلاَثَ وَرُبَاعَ) قَالَتْ يَا ابْنَ أُخْتِي هِيَ الْيَتِيمَةُ تَكُونُ فِي حَجْرِ وَلِيِّهَا تُشَارِكُهُ فِي مَالِهِ فَيُعْجِبُهُ مَالُهَا وَجَمَالُهَا فَيُرِيدُ وَلِيُّهَا أَنْ يَتَزَوَّجَهَا بِغَيْرِ أَنْ يُقْسِطَ فِي صَدَاقِهَا فَيُعْطِيَهَا مِثْلَ مَا يُعْطِيهَا غَيْرُهُ فَنُهُوا أَنْ يَنْكِحُوهُنَّ إِلاَّ أَنْ يُقْسِطُوا لَهُنَّ وَيَبْلُغُوا بِهِنَّ أَعْلَى سُنَّتِهِنَّ مِنَ الصَّدَاقِ وَأُمِرُوا أَنْ يَنْكِحُوا مَا طَابَ لَهُمْ مِنَ النِّسَاءِ سِوَاهُنَّ . قَالَ عُرْوَةُ قَالَتْ عَائِشَةُ ثُمَّ إِنَّ النَّاسَ اسْتَفْتَوْا رَسُولَ اللَّهِ صلى الله عليه وسلم بَعْدَ هَذِهِ الآيَةِ فِيهِنَّ فَأَنْزَلَ اللَّهُ عَزَّ وَجَلَّ ( وَيَسْتَفْتُونَكَ فِي النِّسَاءِ قُلِ اللَّهُ يُفْتِيكُمْ فِيهِنَّ وَمَا يُتْلَى عَلَيْكُمْ فِي الْكِتَابِ فِي يَتَامَى النِّسَاءِ اللاَّتِي لاَ تُؤْتُونَهُنَّ مَا كُتِبَ لَهُنَّ وَتَرْغَبُونَ أَنْ تَنْكِحُوهُنَّ) . قَالَتْ وَالَّذِي ذَكَرَ اللَّهُ تَعَالَى أَنَّهُ يُتْلَى عَلَيْكُمْ فِي الْكِتَابِ الآيَةُ الأُولَى الَّتِي قَالَ اللَّهُ فِيهَا ( وَإِنْ خِفْتُمْ أَنْ لاَ تُقْسِطُوا فِي الْيَتَامَى فَانْكِحُوا مَا طَابَ لَكُمْ مِنَ النِّسَاءِ) . قَالَتْ عَائِشَةُ وَقَوْلُ اللَّهِ فِي الآيَةِ الأُخْرَى ( وَتَرْغَبُونَ أَنْ تَنْكِحُوهُنَّ) رَغْبَةَ أَحَدِكُمْ عَنِ الْيَتِيمَةِ الَّتِي تَكُونُ فِي حَجْرِهِ حِينَ تَكُونُ قَلِيلَةَ الْمَالِ وَالْجَمَالِ فَنُهُوا أَنْ يَنْكِحُوا مَا رَغِبُوا فِي مَالِهَا وَجَمَالِهَا مِنْ يَتَامَى النِّسَاءِ إِلاَّ بِالْقِسْطِ مِنْ أَجْلِ رَغْبَتِهِمْ عَنْهُنَّ .",
+        "description_without_harkat": "حدثني أبو الطاهر، أحمد بن عمرو بن سرح وحرملة بن يحيى التجيبي - قال أبو الطاهر حدثنا وقال، حرملة أخبرنا - ابن وهب، أخبرني يونس، عن ابن شهاب، أخبرني عروة بن الزبير، أنه سأل عائشة عن قول الله، ( وإن خفتم أن لا، تقسطوا في اليتامى فانكحوا ما طاب لكم من النساء مثنى وثلاث ورباع) قالت يا ابن أختي هي اليتيمة تكون في حجر وليها تشاركه في ماله فيعجبه مالها وجمالها فيريد وليها أن يتزوجها بغير أن يقسط في صداقها فيعطيها مثل ما يعطيها غيره فنهوا أن ينكحوهن إلا أن يقسطوا لهن ويبلغوا بهن أعلى سنتهن من الصداق وأمروا أن ينكحوا ما طاب لهم من النساء سواهن . قال عروة قالت عائشة ثم إن الناس استفتوا رسول الله صلى الله عليه وسلم بعد هذه الآية فيهن فأنزل الله عز وجل ( ويستفتونك في النساء قل الله يفتيكم فيهن وما يتلى عليكم في الكتاب في يتامى النساء اللاتي لا تؤتونهن ما كتب لهن وترغبون أن تنكحوهن) . قالت والذي ذكر الله تعالى أنه يتلى عليكم في الكتاب الآية الأولى التي قال الله فيها ( وإن خفتم أن لا تقسطوا في اليتامى فانكحوا ما طاب لكم من النساء) . قالت عائشة وقول الله في الآية الأخرى ( وترغبون أن تنكحوهن) رغبة أحدكم عن اليتيمة التي تكون في حجره حين تكون قليلة المال والجمال فنهوا أن ينكحوا ما رغبوا في مالها وجمالها من يتامى النساء إلا بالقسط من أجل رغبتهم عنهن .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2022-12-27T04:34:03.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 85,
+                "title": "উরওয়া ইবনে যুবায়র ((رحمة الله))",
+                "title_en": "Urwah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7542,
+                "title": "3018-1",
+                "hadith_number": 7247,
+                "hadith_id": 14296,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:39:39.000Z",
+                "updated_at": "2024-10-28T15:39:39.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14297,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 85,
+        "type_id": 1,
+        "hadith_number": 7248,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৪৮। হাসান হুলওয়ানী ও আব্দ ইবনে হুমায়দ (রাহঃ) ......... উরওয়া (রাহঃ) থেকে বর্ণিত। তিনি আয়িশা ((رضي الله عنه)) কে আল্লাহর ইরশাদঃ ″তোমরা যদি আশঙ্কা কর যে, ইয়াতীম মেয়েদের প্রতি সুবিচার করতে পারবে না″ এর ব্যাখ্যা সম্পর্কে জিজ্ঞাসা করেন। ...... অতঃপর রাবী ইউনুসের সূত্রে যুহরী (রাহঃ) থেকে বর্ণিত হাদীসের অনুরূপ বর্ণনা করেছেন। তবে হাদীসের শেষাংশে তিনি مِنْ أَجْلِ رَغْبَتِهِمْ عَنْهُنَّ إِذَا كُنَّ قَلِيلاَتِ الْمَالِ وَالْجَمَالِ বাক্যটি অধিক বর্ণনা করেছেন। (অর্থাৎ তারা (ইয়াতীম মেয়েরা) কম সম্পদ ও কম রূপ-গুণের হওয়ার ক্ষেত্রে তাদের প্রতি তাদের অনীহার কারণে এ বিধান।)",
+        "description_en": "’Urwa reported that he asked ’A’isha about the words of Allah:<br>\" If you fear that you will not be able to observe equity in case of orphan girls\" ; the rest of the hadith is the same but with a slight variation of wording.",
+        "description_ar": "وَحَدَّثَنَا الْحَسَنُ الْحُلْوَانِيُّ، وَعَبْدُ بْنُ حُمَيْدٍ، جَمِيعًا عَنْ يَعْقُوبَ بْنِ إِبْرَاهِيمَ بْنِ سَعْدٍ، حَدَّثَنَا أَبِي، عَنْ صَالِحٍ، عَنِ ابْنِ شِهَابٍ، أَخْبَرَنِي عُرْوَةُ، أَنَّهُ سَأَلَ عَائِشَةَ عَنْ قَوْلِ اللَّهِ، (وَإِنْ خِفْتُمْ أَنْ لاَ، تُقْسِطُوا فِي الْيَتَامَى) وَسَاقَ الْحَدِيثَ بِمِثْلِ حَدِيثِ يُونُسَ عَنِ الزُّهْرِيِّ وَزَادَ فِي آخِرِهِ مِنْ أَجْلِ رَغْبَتِهِمْ عَنْهُنَّ إِذَا كُنَّ قَلِيلاَتِ الْمَالِ وَالْجَمَالِ .",
+        "description_without_harkat": "وحدثنا الحسن الحلواني، وعبد بن حميد، جميعا عن يعقوب بن إبراهيم بن سعد، حدثنا أبي، عن صالح، عن ابن شهاب، أخبرني عروة، أنه سأل عائشة عن قول الله، (وإن خفتم أن لا، تقسطوا في اليتامى) وساق الحديث بمثل حديث يونس عن الزهري وزاد في آخره من أجل رغبتهم عنهن إذا كن قليلات المال والجمال .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:40:05.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 85,
+                "title": "উরওয়া ইবনে যুবায়র ((رحمة الله))",
+                "title_en": "Urwah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7543,
+                "title": "3018-2",
+                "hadith_number": 7248,
+                "hadith_id": 14297,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:40:05.000Z",
+                "updated_at": "2024-10-28T15:40:05.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14298,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 7249,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৪৯। আবু বকর ইবনে আবি শাঈবা ও আবু কুবায়র (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি আল্লাহর ইরশাদ, “তোমরা যদি আশঙ্কা কর যে, ইয়াতীম মেয়েদের প্রতি সুবিচার করতে পারবেনা” সম্পর্কে বলেন, এ আয়াতটি ঐ পুরুষ সম্বন্ধে নাযিল হয়েছে; যার তত্ত্বাবধানে রয়েছে একজন ইয়াতীম মহিলা এবং এ পুরুষই হচ্ছে তাঁর অভিভাবক ও ওয়ারীস। আর এ মেয়েটির আছে কিছু ধন-সম্পদ। কিন্তু তার পক্ষ অবলম্বন করার জন্য তার কেউই অভিভাবক (অলী) এই ধরনের মেয়েকে তার সম্পদের উদ্দেশ্যে বিয়ে করে তাকে কষ্ট দিতে এবং তার সাথে নিষ্ঠুরভাবে জীবন যাপন করতে পারবে না। এ ব্যক্তি সম্পর্কেই আল্লাহ তাআলা বলেছেনঃ তোমরা যদি আশঙ্কা কর যে, ইয়াতীম মেয়েদের প্রতি সুবিচার করতে পারবে না তবে বিবাহ করবে নারীদের মধ্যে যাকে তোমাদের ভাল লাগে দুই, তিন অথবা চার অর্থাৎ যে মহিলাদেরকে আমি তোমদের জন্য হালাল করেছি তাদেরকে বিবাহ কর এবং এই (ইয়াতীম মেয়েকে) ছেড়ে দাও যার প্রতি তুমি নিষ্ঠুর আচরণ করেছ।",
+        "description_en": "’A’isha said that as for the words of Allah:<br>\" If you fear that you would not be able to observe equity in case of orphan girls),\" it was revealed in reference to a person who had an orphan girl (as his ward) and he was her guardian, and her heir, and she possessed property, but there was none to contend on her behalf except her ownself. And he (her guardian) did not give her in marriage because of her property and he tortured her and ill-treated her, it was in relation to her that (Allah said: )\" If you fear that you would not be able to observe equity in case of orphan girls, then marry whom you like among women,\" i. e. whatever I have made lawful for you and leave her whom you are putting to torture.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ قَالاَ حَدَّثَنَا أَبُو أُسَامَةَ، حَدَّثَنَا هِشَامٌ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، فِي قَوْلِهِ ( وَإِنْ خِفْتُمْ أَنْ لاَ تُقْسِطُوا فِي الْيَتَامَى) قَالَتْ أُنْزِلَتْ فِي الرَّجُلِ تَكُونُ لَهُ الْيَتِيمَةُ وَهُوَ وَلِيُّهَا وَوَارِثُهَا وَلَهَا مَالٌ وَلَيْسَ لَهَا أَحَدٌ يُخَاصِمُ دُونَهَا فَلاَ يُنْكِحُهَا لِمَالِهَا فَيَضُرُّ بِهَا وَيُسِيءُ صُحْبَتَهَا فَقَالَ ( إِنْ خِفْتُمْ أَنْ لاَ تُقْسِطُوا فِي الْيَتَامَى فَانْكِحُوا مَا طَابَ لَكُمْ مِنَ النِّسَاءِ) يَقُولُ مَا أَحْلَلْتُ لَكُمْ وَدَعْ هَذِهِ الَّتِي تَضُرُّ بِهَا .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، وأبو كريب قالا حدثنا أبو أسامة، حدثنا هشام، عن أبيه، عن عائشة، في قوله ( وإن خفتم أن لا تقسطوا في اليتامى) قالت أنزلت في الرجل تكون له اليتيمة وهو وليها ووارثها ولها مال وليس لها أحد يخاصم دونها فلا ينكحها لمالها فيضر بها ويسيء صحبتها فقال ( إن خفتم أن لا تقسطوا في اليتامى فانكحوا ما طاب لكم من النساء) يقول ما أحللت لكم ودع هذه التي تضر بها .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:40:30.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7544,
+                "title": "3018-3",
+                "hadith_number": 7249,
+                "hadith_id": 14298,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:40:30.000Z",
+                "updated_at": "2024-10-28T15:40:30.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14299,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 7250,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫০। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। আল্লাহর ইরশাদ করেছেনঃ “এবং ইয়াতীম নারী সম্পর্কে তাদের প্রাপ্য তোমরা প্রদান কর না- অথচ তোমরা তাদেরকে বিবাহ করতে চাও ও অসহায় শিশুদের সম্বন্ধে এবং ইয়াতীমদের প্রতি তোমাদের ন্যায় বিচার সম্পর্কে যা কিতাবে তোমাদেরকে শুনান হয় তাও পরিস্কারভাবে জানিয়ে দেয়” সম্পর্কে বলেন, এ আয়াতটি ঐ ইয়াতীম মেয়ে সম্বন্ধে অবতীর্ণ হয়েছে, যে এমন এক পুরুষের তত্ত্বাবধানে রয়েছে, যার সাথে সে সম্পদের মধ্যে শরীক আছে। কিন্তু সে তাকে বিয়ে করা পছন্দ করছে না এবং অন্য কোন ব্যক্তির সাথে তার বিবাহ হোক এটাও পছন্দ করছে না এই আশঙ্কায় যে, সে তার সস্পদের অংশীদার হয়ে যাবে। অবশেষে সে তাকে এমনই ছেড়ে রাখছে; নিজেও তাকে বিয়ে করছে না এবং অন্য কারো নিকট বিবাহ দিচ্ছেও না।",
+        "description_en": "’A’isha said in connection with His words (those of Allah):<br>\" What is recited to you in the Book about orphan women whom you give not what is ordained for them, while you like to marry them,\" these were revealed in connection with an orphan girl who was in the charge of the person and she shared with him in his property and he was reluctant to marry her himself and was also unwilling to marry her to someone else (fearing) that (that person) would share in his property (as the husband of that girl), preventing her to marry, neither marrying her himself nor marrying her to another person.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا عَبْدَةُ بْنُ سُلَيْمَانَ، عَنْ هِشَامٍ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، فِي قَوْلِهِ ( وَمَا يُتْلَى عَلَيْكُمْ فِي الْكِتَابِ فِي يَتَامَى النِّسَاءِ اللاَّتِي لاَ تُؤْتُونَهُنَّ مَا كُتِبَ لَهُنَّ وَتَرْغَبُونَ أَنْ تَنْكِحُوهُنَّ) قَالَتْ أُنْزِلَتْ فِي الْيَتِيمَةِ تَكُونُ عِنْدَ الرَّجُلِ فَتَشْرَكُهُ فِي مَالِهِ فَيَرْغَبُ عَنْهَا أَنْ يَتَزَوَّجَهَا وَيَكْرَهُ أَنْ يُزَوِّجَهَا غَيْرَهُ فَيَشْرَكُهُ فِي مَالِهِ فَيَعْضِلُهَا فَلاَ يَتَزَوَّجُهَا وَلاَ يُزَوِّجُهَا غَيْرَهُ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا عبدة بن سليمان، عن هشام، عن أبيه، عن عائشة، في قوله ( وما يتلى عليكم في الكتاب في يتامى النساء اللاتي لا تؤتونهن ما كتب لهن وترغبون أن تنكحوهن) قالت أنزلت في اليتيمة تكون عند الرجل فتشركه في ماله فيرغب عنها أن يتزوجها ويكره أن يزوجها غيره فيشركه في ماله فيعضلها فلا يتزوجها ولا يزوجها غيره .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:40:57.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7545,
+                "title": "3018-4",
+                "hadith_number": 7250,
+                "hadith_id": 14299,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:40:57.000Z",
+                "updated_at": "2024-10-28T15:40:57.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14300,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 7251,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫১। আবু কুরায়ব (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি আল্লাহর বাণীঃ ″এবং লোকেরা আপনার নিকট নারীদের বিষয়ে ব্যবস্থা জানতে চায়, বলুন, আল্লাহ তোমাদেরকে তাদের সম্বন্ধে ব্যবস্থা জানিয়ে দিচ্ছেন″ এর ব্যাখ্যায় বলেন, আয়াতটি ঐ ইয়াতীম মেয়ে সম্পর্কে নাযিল হয়েছে, যে রয়েছে এমন এক পুরুষের তত্ত্বাবধানে যার সম্পদের এমনকি খেজুর বাগানেরও উক্ত নারী অংশীদার। সে তাকে বিয়ে করতেও আগ্রহী নয় এবং অন্যের নিকট বিয়ে দিতেও ইচ্ছ্বুক নয়। কেননা তাহলে সে তার সম্পদের অংশীদার হয়ে যাবে। ফলে সে তাকে (এমনিই) ফেলে রাখছে।",
+        "description_en": "Hisham reported that ’A’isha said in connection with the words of Allah:<br>\" They ask thee the religious verdict about women, say: Allah gives you the verdict about them\" (iv. 126), that these relate to an orphan girl who is in charge of the person and she shares with him in his property (as a heir) even in the date-palm trees and he is reluctant to give her hand in marriage to any other person lest he (her husband) should partake of his property, and thus keep her in a lingering state.",
+        "description_ar": "حَدَّثَنَا أَبُو كُرَيْبٍ، حَدَّثَنَا أَبُو أُسَامَةَ، أَخْبَرَنَا هِشَامٌ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، فِي قَوْلِهِ ( ويَسْتَفْتُونَكَ فِي النِّسَاءِ قُلِ اللَّهُ يُفْتِيكُمْ فِيهِنَّ) الآيَةَ قَالَتْ هِيَ الْيَتِيمَةُ الَّتِي تَكُونُ عِنْدَ الرَّجُلِ لَعَلَّهَا أَنْ تَكُونَ قَدْ شَرِكَتْهُ فِي مَالِهِ حَتَّى فِي الْعَذْقِ فَيَرْغَبُ يَعْنِي أَنْ يَنْكِحَهَا وَيَكْرَهُ أَنْ يُنْكِحَهَا رَجُلاً فَيَشْرَكُهُ فِي مَالِهِ فَيَعْضِلُهَا .",
+        "description_without_harkat": "حدثنا أبو كريب، حدثنا أبو أسامة، أخبرنا هشام، عن أبيه، عن عائشة، في قوله ( ويستفتونك في النساء قل الله يفتيكم فيهن) الآية قالت هي اليتيمة التي تكون عند الرجل لعلها أن تكون قد شركته في ماله حتى في العذق فيرغب يعني أن ينكحها ويكره أن ينكحها رجلا فيشركه في ماله فيعضلها .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:41:28.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7546,
+                "title": "3018-5",
+                "hadith_number": 7251,
+                "hadith_id": 14300,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:41:28.000Z",
+                "updated_at": "2024-10-28T15:41:28.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14301,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 7252,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫২। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। আল্লাহর ইরশাদঃ ″এবং যে বিত্তহীন সে যেন সঙ্গত পরিমাণ ভোগ করে″ এর ব্যাখ্যায় বলেন- এ আয়াতটি ইয়াতীমের মালের ঐ অবিভাবক সম্বন্ধে নাযিল হয়েছে, যে তার সম্পদের তত্ত্বাবধান করছে এবং উহা দেখাশুনা করছে। যদি তত্ত্বাবধানকারী ব্যক্তি মুখাপেক্ষী হয় তবে সে তা হতে সঙ্গত পরিমাণ ভোগ করবে।",
+        "description_en": "Hisham reported on the authority of his father that ’A’isha said in connection with His (Allah’s) words:<br>\" And whoever is poor let him take reasonably (out of it)\" that it was revealed in connection with the custodian of the property of an orphan, who is in charge of her and looks after her; In case he is poor, he is allowed to eat out of that.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا عَبْدَةُ بْنُ سُلَيْمَانَ، عَنْ هِشَامٍ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، فِي قَوْلِهِ ( وَمَنْ كَانَ فَقِيرًا فَلْيَأْكُلْ بِالْمَعْرُوفِ) قَالَتْ أُنْزِلَتْ فِي وَالِي مَالِ الْيَتِيمِ الَّذِي يَقُومُ عَلَيْهِ وَيُصْلِحُهُ إِذَا كَانَ مُحْتَاجًا أَنْ يَأْكُلَ مِنْهُ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا عبدة بن سليمان، عن هشام، عن أبيه، عن عائشة، في قوله ( ومن كان فقيرا فليأكل بالمعروف) قالت أنزلت في والي مال اليتيم الذي يقوم عليه ويصلحه إذا كان محتاجا أن يأكل منه .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:42:09.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7547,
+                "title": "3019-1",
+                "hadith_number": 7252,
+                "hadith_id": 14301,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:42:09.000Z",
+                "updated_at": "2024-10-28T15:42:09.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14302,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 7253,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫৩। আবু কুরায়ব (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি আল্লাহর ইরশাদঃ ″যে সচ্ছল সে যেন নিবৃত থাকে এবং যে বিত্তহীন সে যেন সঙ্গত পরিমাণ ভোগ করে″ এর ব্যাখ্যায় বলেন, এ আয়াতটি ইয়াতীমের তত্তাবধানকারী ব্যক্তি সম্পর্কে অবতীর্ণ হয়েছে, সে যদি বিত্তহীন হয় তবে সে যেন তার সম্পদ হতে সঙ্গত পরিমাণ ভোগ করতে পারে।",
+        "description_en": "’A’isha reported in connection with the words of Allah, the Exalted:<br>\" He who is rich should abstain, and he who is poor may reasonably eat (out of it)\" that this was revealed in relation to the guardian of an orphan who is poor; he may get out of that what is reasonable keeping in view his own status of solvency.",
+        "description_ar": "وَحَدَّثَنَاهُ أَبُو كُرَيْبٍ، حَدَّثَنَا أَبُو أُسَامَةَ، حَدَّثَنَا هِشَامٌ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، فِي قَوْلِهِ تَعَالَى ( وَمَنْ كَانَ غَنِيًّا فَلْيَسْتَعْفِفْ وَمَنْ كَانَ فَقِيرًا فَلْيَأْكُلْ بِالْمَعْرُوفِ) قَالَتْ أُنْزِلَتْ فِي وَلِيِّ الْيَتِيمِ أَنْ يُصِيبَ مِنْ مَالِهِ إِذَا كَانَ مُحْتَاجًا بِقَدْرِ مَالِهِ بِالْمَعْرُوفِ .",
+        "description_without_harkat": "وحدثناه أبو كريب، حدثنا أبو أسامة، حدثنا هشام، عن أبيه، عن عائشة، في قوله تعالى ( ومن كان غنيا فليستعفف ومن كان فقيرا فليأكل بالمعروف) قالت أنزلت في ولي اليتيم أن يصيب من ماله إذا كان محتاجا بقدر ماله بالمعروف .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:44:17.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7548,
+                "title": "3019-2",
+                "hadith_number": 7253,
+                "hadith_id": 14302,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:44:17.000Z",
+                "updated_at": "2024-10-28T15:44:17.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14303,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 277,
+        "type_id": 1,
+        "hadith_number": 7254,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫৪। আবু কুরায়ব (রাহঃ) ......... হিশামের সূত্রে এ সনদে অনুরূপ বর্ণনা করেছেন।",
+        "description_en": "This hadith has been narrated on the authority of Hisham with the same chain of transmitters.",
+        "description_ar": "وَحَدَّثَنَاهُ أَبُو كُرَيْبٍ، حَدَّثَنَا ابْنُ نُمَيْرٍ، حَدَّثَنَا هِشَامٌ، بِهَذَا الإِسْنَادِ .",
+        "description_without_harkat": "وحدثناه أبو كريب، حدثنا ابن نمير، حدثنا هشام، بهذا الإسناد .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:44:45.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 277,
+                "title": "হিশাম ইবনে উরওয়া ((رحمة الله))",
+                "title_en": "Hisham Ibn Urwah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7549,
+                "title": "3019-3",
+                "hadith_number": 7254,
+                "hadith_id": 14303,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:44:45.000Z",
+                "updated_at": "2024-10-28T15:44:45.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14304,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 7255,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫৫। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। আল্লাহর ইরশাদঃ ″যখন তারা তোমাদের বিরুদ্ধে সমাগত হয়েছিল উচ্চাঞ্চল ও নিন্মাঞ্চল হতে- তোমাদের চক্ষু বিস্ফারিত হয়েছিল, তোমাদের প্রাণ হয়েছিল কণ্ঠাগত এবং তোমরা আল্লাহ সম্বন্ধে নানাবিধ ধারণা পোষণ করছিলে″ এর ব্যাখ্যায় বলেন, এ আয়াতটি খন্দকের দিন অবতীর্ণ হয়েছে।",
+        "description_en": "’A’isha reported that these words of Allah:<br>\" When they came upon you from above you and from below you and when the eyes turned dull and the hearts rose up to the throats\" (xxxiii. 10) pertain to the day of Ditch.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا عَبْدَةُ بْنُ سُلَيْمَانَ، عَنْ هِشَامٍ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، فِي قَوْلِهِ عَزَّ وَجَلَّ ( إِذْ جَاءُوكُمْ مِنْ فَوْقِكُمْ وَمِنْ أَسْفَلَ مِنْكُمْ وَإِذْ زَاغَتِ الأَبْصَارُ وَبَلَغَتِ الْقُلُوبُ الْحَنَاجِرَ) قَالَتْ كَانَ ذَلِكَ يَوْمَ الْخَنْدَقِ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا عبدة بن سليمان، عن هشام، عن أبيه، عن عائشة، في قوله عز وجل ( إذ جاءوكم من فوقكم ومن أسفل منكم وإذ زاغت الأبصار وبلغت القلوب الحناجر) قالت كان ذلك يوم الخندق .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:45:09.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7550,
+                "title": "3020",
+                "hadith_number": 7255,
+                "hadith_id": 14304,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:45:09.000Z",
+                "updated_at": "2024-10-28T15:45:09.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14305,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 7256,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫৬। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি (আল্লাহর ইরশাদঃ) ″কোন স্ত্রী যদি তার স্বামীর দুর্ব্যবহার ও উপেক্ষার আশঙ্কা করে তবে তারা আপোষ-নিষ্পত্তি করতে চাইলে তাদের কোন দোষ নেই এবং আপোষ-নিষ্পত্তিই শ্রেয়″ এর ব্যাখ্যায় বলেন, এ আয়াতটি ঐ মহিলা সম্বন্ধে অবতীর্ণ হয়েছে, যে এমন একজন পুরুষের নিকট ছিল, যার সাহচর্যে সে দীর্ঘ দিন ছিল। এখন সে তাকে তালাক দিতে চাচ্ছে আর মছিলা বলছে, আমাকে তালাক দিওনা বরং আমাকে তোমার কাছে থাকতে দাও। তবে তুমি আমার পক্ষ হতে মুক্ত। তখন এ আয়াতটি নাযিল হয়।",
+        "description_en": "’A’isha said in connection with the verse:<br>\" And if a woman has reason to fear ill-treatment from her husband or that he might turn away from her\" (iv. 128) that it was revealed in case of a woman who had long association with a person (as his wife) and now he intends to divorce her and she says: Do not divorce me, but retain me (as wife in your house) and you are permitted to live with another wife. It is in this context that this verse was revealed.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا عَبْدَةُ بْنُ سُلَيْمَانَ، حَدَّثَنَا هِشَامٌ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، ( وَإِنِ امْرَأَةٌ خَافَتْ مِنْ بَعْلِهَا نُشُوزًا أَوْ إِعْرَاضًا) الآيَةَ قَالَتْ أُنْزِلَتْ فِي الْمَرْأَةِ تَكُونُ عِنْدَ الرَّجُلِ فَتَطُولُ صُحْبَتُهَا فَيُرِيدُ طَلاَقَهَا فَتَقُولُ لاَ تُطَلِّقْنِي وَأَمْسِكْنِي وَأَنْتَ فِي حِلٍّ مِنِّي . فَنَزَلَتْ هَذِهِ الآيَةُ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا عبدة بن سليمان، حدثنا هشام، عن أبيه، عن عائشة، ( وإن امرأة خافت من بعلها نشوزا أو إعراضا) الآية قالت أنزلت في المرأة تكون عند الرجل فتطول صحبتها فيريد طلاقها فتقول لا تطلقني وأمسكني وأنت في حل مني . فنزلت هذه الآية .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:45:57.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7551,
+                "title": "3021-1",
+                "hadith_number": 7256,
+                "hadith_id": 14305,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:45:57.000Z",
+                "updated_at": "2024-10-28T15:45:57.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14306,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 7257,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫৭। আবু কুরায়ব (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি আল্লাহর বাণীঃ “কোন স্ত্রী যদি তার স্বামীর দুর্ব্যবহার ও উপেক্ষার আশঙ্কা করে তবে তারা আপোষ-নিষ্পত্তি করতে চাইলে তাদের কোন দোষ নেই এবং আপোষ-নিষ্পত্তিই শ্রেয়” এর ব্যাখ্যায় বলেন, এ আয়াতটি ঐ মহিলা সম্পর্কে নাযিল হয়েছে, যে এমন একজন পুরুষের নিকট ছিল, সম্ভবত সে তার প্রতি বড় একটা ভালবাসা ও আকর্ষণ অনুভব করে না। অথচ সে তার দীর্ঘ সাহচর্যে ছিল এবং তার সন্তান-সন্ততিও রয়েছে। এদিকে স্বামীও তাকে তালাক দিক, তাও সে পছন্দ করছে না। তখন সে (স্ত্রী) তাকে বলছে, তুমি আমার পক্ষ হতে দায় মুক্ত।",
+        "description_en": "’A’isha said in connection with these words of Allah, the Exalted and Glorious:<br>\" And if a woman has reason to fear ill-treatment from her husband or that he might turn away from her\" that it was revealed in case of a woman who lived with a person and perhaps he does not want to prolong (his relationship with her) whereas she has had sexual relationship with him (and as a result thereof) she got a child from him and she does not like that she should be divorced, so she says to him: I permit you to live with the other wife.",
+        "description_ar": "حَدَّثَنَا أَبُو كُرَيْبٍ، حَدَّثَنَا أَبُو أُسَامَةَ، حَدَّثَنَا هِشَامٌ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، فِي قَوْلِهِ عَزَّ وَجَلَّ ( وَإِنِ امْرَأَةٌ خَافَتْ مِنْ بَعْلِهَا نُشُوزًا أَوْ إِعْرَاضًا) قَالَتْ نَزَلَتْ فِي الْمَرْأَةِ تَكُونُ عِنْدَ الرَّجُلِ فَلَعَلَّهُ أَنْ لاَ يَسْتَكْثِرَ مِنْهَا وَتَكُونُ لَهَا صُحْبَةٌ وَوَلَدٌ فَتَكْرَهُ أَنْ يُفَارِقَهَا فَتَقُولُ لَهُ أَنْتَ فِي حِلٍّ مِنْ شَأْنِي .",
+        "description_without_harkat": "حدثنا أبو كريب، حدثنا أبو أسامة، حدثنا هشام، عن أبيه، عن عائشة، في قوله عز وجل ( وإن امرأة خافت من بعلها نشوزا أو إعراضا) قالت نزلت في المرأة تكون عند الرجل فلعله أن لا يستكثر منها وتكون لها صحبة وولد فتكره أن يفارقها فتقول له أنت في حل من شأني .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:46:24.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7552,
+                "title": "3021-2",
+                "hadith_number": 7257,
+                "hadith_id": 14306,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:46:24.000Z",
+                "updated_at": "2024-10-28T15:46:24.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14307,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 85,
+        "type_id": 1,
+        "hadith_number": 7258,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫৮। ইয়াহয়া ইবনে ইয়াহয়া (রাহঃ) ......... উরওয়া (রাহঃ) থেকে বর্ণিত। তিনি বলেন, আয়িশা ((رضي الله عنه)) আমাকে বলেছেনঃ হে ভাগ্নে! লোকদেরকে নবী (ﷺ) এর সাহাবীদের জন্য ক্ষমা প্রার্থনা করার আদেশ দেয়া হয়েছিল, কিন্তু তারা তাদের সমালোচনা করেছে।",
+        "description_en": "’Urwa reported on the authority of his father that ’A’isha said to him:<br>O, the son of my sister, the Muslims were commanded to seek forgiveness for the Companions of Allah’s Apostle (ﷺ) but they reviled them.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، أَخْبَرَنَا أَبُو مُعَاوِيَةَ، عَنْ هِشَامِ بْنِ عُرْوَةَ، عَنْ أَبِيهِ، قَالَ قَالَتْ لِي عَائِشَةُ يَا ابْنَ أُخْتِي أُمِرُوا أَنْ يَسْتَغْفِرُوا، لأَصْحَابِ النَّبِيِّ صلى الله عليه وسلم فَسَبُّوهُمْ .",
+        "description_without_harkat": "حدثنا يحيى بن يحيى، أخبرنا أبو معاوية، عن هشام بن عروة، عن أبيه، قال قالت لي عائشة يا ابن أختي أمروا أن يستغفروا، لأصحاب النبي صلى الله عليه وسلم فسبوهم .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:50:11.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 85,
+                "title": "উরওয়া ইবনে যুবায়র ((رحمة الله))",
+                "title_en": "Urwah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7553,
+                "title": "3022-1",
+                "hadith_number": 7258,
+                "hadith_id": 14307,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:50:11.000Z",
+                "updated_at": "2024-10-28T15:50:11.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14308,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 277,
+        "type_id": 1,
+        "hadith_number": 7259,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৫৯। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... হিশামের সূত্রে এ সনদে অনুরূপ বর্ণনা করেছেন।",
+        "description_en": "This hadith has been transmitted on the authority of Abu Usama with the same chain of narrators.",
+        "description_ar": "وَحَدَّثَنَاهُ أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا أَبُو أُسَامَةَ، حَدَّثَنَا هِشَامٌ، بِهَذَا الإِسْنَادِ مِثْلَهُ .",
+        "description_without_harkat": "وحدثناه أبو بكر بن أبي شيبة، حدثنا أبو أسامة، حدثنا هشام، بهذا الإسناد مثله .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:50:38.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 277,
+                "title": "হিশাম ইবনে উরওয়া ((رحمة الله))",
+                "title_en": "Hisham Ibn Urwah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7554,
+                "title": "3022-2",
+                "hadith_number": 7259,
+                "hadith_id": 14308,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:50:38.000Z",
+                "updated_at": "2024-10-28T15:50:38.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14309,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 45,
+        "type_id": 1,
+        "hadith_number": 7260,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬০। উবাইদুল্লাহ ইবনে মুআয আনবারী (রাহঃ) ......... সাঈদ ইবনে জুবাইর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেনঃ কুফাবাসী লোকেরা আল্লাহর ইরশাদঃ “কেউ ইচ্ছাকৃতভাবে কোন মুমিনকে হত্যা করলে তার শাস্তি জাহান্নাম; সেখানে সে স্থায়ি হবে এবং আল্লাহ তার প্রতি রুষ্ট হবেন, তাকে লানত করবেন এবং তার জন্য মহা শাস্তি প্রস্তুত করবেন ” সম্পর্কে মতবিরোধ করলে আমি ইবনে আব্বাস ((رضي الله عنه)) এর নিকট আসলাম এবং তাকে এ বিষয়ে জিজ্ঞাসা করলাম। তিনি বললেন, এ আয়াত শেষ পর্যায়ে অবতীর্ণ হয়েছে। সুতরাং কোন আয়াত উহাকে রহিত করতে পারেনি।",
+        "description_en": "Sa’id b. Jubair reported:<br>The inhabitants of Kufa differed in regard to this verse:\" But whoever slays another believer intentionally, his requital shall be Hell\" (iv. 92), so I went to Ibn ’Abbas and asked him about it, whereupon he said: This has been revealed and nothing abrogated it.",
+        "description_ar": "حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ مُعَاذٍ الْعَنْبَرِيُّ، حَدَّثَنَا أَبِي، حَدَّثَنَا شُعْبَةُ، عَنِ الْمُغِيرَةِ بْنِ النُّعْمَانِ، عَنْ سَعِيدِ بْنِ جُبَيْرٍ، قَالَ اخْتَلَفَ أَهْلُ الْكُوفَةِ فِي هَذِهِ الآيَةِ ( وَمَنْ يَقْتُلْ مُؤْمِنًا مُتَعَمِّدًا فَجَزَاؤُهُ جَهَنَّمُ) فَرَحَلْتُ إِلَى ابْنِ عَبَّاسٍ فَسَأَلْتُهُ عَنْهَا فَقَالَ لَقَدْ أُنْزِلَتْ آخِرَ مَا أُنْزِلَ ثُمَّ مَا نَسَخَهَا شَىْءٌ .",
+        "description_without_harkat": "حدثنا عبيد الله بن معاذ العنبري، حدثنا أبي، حدثنا شعبة، عن المغيرة بن النعمان، عن سعيد بن جبير، قال اختلف أهل الكوفة في هذه الآية ( ومن يقتل مؤمنا متعمدا فجزاؤه جهنم) فرحلت إلى ابن عباس فسألته عنها فقال لقد أنزلت آخر ما أنزل ثم ما نسخها شىء .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:51:04.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 45,
+                "title": "সাঈদ ইবনে জুবায়র ((رحمة الله))",
+                "title_en": "Sayed Ibn Jubair (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7555,
+                "title": "3023-1",
+                "hadith_number": 7260,
+                "hadith_id": 14309,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:51:04.000Z",
+                "updated_at": "2024-10-28T15:51:04.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14310,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 205,
+        "type_id": 1,
+        "hadith_number": 7261,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬১। মুহাম্মাদ ইবনে মুসান্না ও ইবনে বাশশার (অন্য সনদে) ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... শু’বা (রাহঃ) থেকে এ সনদে অনুরূপ হাদীস বর্ণনা করেছেন। তবে মুহাম্মাদ ইবনে জা’ফারের বর্ণনায় আছে آخِرِ مَا أُنْزِلَ আর নযরের হাদীসের মধ্যে রয়েছে إِنَّهَا لَمِنْ آخِرِ مَا أُنْزِلَتْ --।",
+        "description_en": "This hadith has been transmitted on the authority of Shu’ba with the same chain of narrators but with a slight variation of wording.",
+        "description_ar": "وَحَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ، بَشَّارٍ قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، ح وَحَدَّثَنَا إِسْحَاقُ، بْنُ إِبْرَاهِيمَ أَخْبَرَنَا النَّضْرُ، قَالاَ جَمِيعًا حَدَّثَنَا شُعْبَةُ، بِهَذَا الإِسْنَادِ . فِي حَدِيثِ ابْنِ جَعْفَرٍ نَزَلَتْ فِي آخِرِ مَا أُنْزِلَ . وَفِي حَدِيثِ النَّضْرِ إِنَّهَا لَمِنْ آخِرِ مَا أُنْزِلَتْ .",
+        "description_without_harkat": "وحدثنا محمد بن المثنى، وابن، بشار قالا حدثنا محمد بن جعفر، ح وحدثنا إسحاق، بن إبراهيم أخبرنا النضر، قالا جميعا حدثنا شعبة، بهذا الإسناد . في حديث ابن جعفر نزلت في آخر ما أنزل . وفي حديث النضر إنها لمن آخر ما أنزلت .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:52:12.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 205,
+                "title": "শু'বা ইবনুল হাজ্জাজ ((رحمة الله))",
+                "title_en": "Shu'ba (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7556,
+                "title": "3023-2",
+                "hadith_number": 7261,
+                "hadith_id": 14310,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:52:12.000Z",
+                "updated_at": "2024-10-28T15:52:12.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14311,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 45,
+        "type_id": 1,
+        "hadith_number": 7262,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬২। মুহাম্মাদ ইবনে মুসান্না ও মুহাম্মাদ ইবনে বাশশার (রাহঃ) ......... সাঈদ ইবনে জুবাইর (রাহঃ) থেকে বর্ণিত। তিনি বলেন, আব্দুর রহমান ইবনে আবযা ((رضي الله عنه)) আমাকে নিম্ন বর্ণিত আয়াত দুটি সম্পর্কে ইবনে আব্বাস ((رضي الله عنه)) কে জিজ্ঞাসা করার জন্য নির্দেশ দিলেন। তন্মধ্যে প্রথমটি হলোঃ ″কেউ ইচ্ছাকৃতভাবে কোন মুমিনকে হত্যা করলে″ এর হুকুম সম্পর্কে আমি তাকে জিজ্ঞাসা করলে তিনি বললেন কোন আয়াত এ আয়াতটিকে রহিত করেনি।<br><br>আর দ্বিতীয় আয়াতটি হচ্ছে, ″এবং তারা আল্লাহর সাথে কোন ইলাহকে ডাকে না। আল্লাহ যার হত্যা নিষেধ করেছেন যথার্থ কারণ ব্যতিরেকে তাকে হত্যা করে না এবং ব্যভিচার করে না। যে এ গুলো করে সে শাস্তি ভোগ করবে″। এ সম্পর্কে আমি তাকে জিজ্ঞাসা করলে তিনি বললেন, এ আয়াতটি মুশরিকদের সম্পর্কে অবতীর্ণ হয়েছিল।",
+        "description_en": "Sa’id b. Jubair reported:<br>’Abd al Rahman b. Abzi commanded me that I should ask Ibn ’Abbas about these two verses:\" He who slays a believer intentionally his requital shall be Hell where he would abide for ever\" (iv. 92). So, I asked him and he said: Nothing has abrogated it. And as for this verse:\" And they who call not upon another god with Allah and slay not the soul which Allah has forbidden, except in the cause of justice\" (xxv. 68), he (Ibn Abbas) said: This has been revealed in regard to the polytheists.\"",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَمُحَمَّدُ بْنُ بَشَّارٍ، قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، عَنْ مَنْصُورٍ، عَنْ سَعِيدِ بْنِ جُبَيْرٍ، قَالَ أَمَرَنِي عَبْدُ الرَّحْمَنِ بْنُ أَبْزَى أَنْ أَسْأَلَ ابْنَ عَبَّاسٍ، عَنْ هَاتَيْنِ الآيَتَيْنِ، ( وَمَنْ يَقْتُلْ مُؤْمِنًا مُتَعَمِّدًا فَجَزَاؤُهُ جَهَنَّمُ خَالِدًا فِيهَا) فَسَأَلْتُهُ فَقَالَ لَمْ يَنْسَخْهَا شَىْءٌ . وَعَنْ هَذِهِ الآيَةِ ( وَالَّذِينَ لاَ يَدْعُونَ مَعَ اللَّهِ إِلَهًا آخَرَ وَلاَ يَقْتُلُونَ النَّفْسَ الَّتِي حَرَّمَ اللَّهُ إِلاَّ بِالْحَقِّ) قَالَ نَزَلَتْ فِي أَهْلِ الشِّرْكِ .",
+        "description_without_harkat": "حدثنا محمد بن المثنى، ومحمد بن بشار، قالا حدثنا محمد بن جعفر، حدثنا شعبة، عن منصور، عن سعيد بن جبير، قال أمرني عبد الرحمن بن أبزى أن أسأل ابن عباس، عن هاتين الآيتين، ( ومن يقتل مؤمنا متعمدا فجزاؤه جهنم خالدا فيها) فسألته فقال لم ينسخها شىء . وعن هذه الآية ( والذين لا يدعون مع الله إلها آخر ولا يقتلون النفس التي حرم الله إلا بالحق) قال نزلت في أهل الشرك .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:52:50.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 45,
+                "title": "সাঈদ ইবনে জুবায়র ((رحمة الله))",
+                "title_en": "Sayed Ibn Jubair (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7557,
+                "title": "3023-3",
+                "hadith_number": 7262,
+                "hadith_id": 14311,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:52:50.000Z",
+                "updated_at": "2024-10-28T15:52:50.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14312,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 7263,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬৩। হারুন ইবনে আব্দুল্লাহ (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, এবং তারা আল্লাহ ব্যতীত কোন ইলাহকে ডাকে না। আল্লাহ যার হত্যা নিষেধ করেছেন যথার্থ কারণ ব্যতিরেকে তাকে হত্যা করে না এবং ব্যভিচার করে না। যে এগুলো করে সে শাস্তি ভোগ করবে। কিয়ামতের দিন তার শাস্তি দ্বিগুণ করা হবে এবং সেখানে স্থায়ী হবে হীন অবস্থায়।” উক্ত আয়াতটি মক্কায় অবতীর্ণ হবার পর মুশরিকরা বলতে আরম্ভ করল যে, ইসলাম গ্রহণ করলে আমাদের কি ফায়দা হবে, অথচ আমরা আল্লাহ সাথে শরীক করেছি, যাদেরকে হত্যা করা আল্লাহ হারাম করেছেন, আমরা তাদেরকে হত্যা করেছি এবং আমরা অবৈধ যৌন ব্যভিচার করেছি। তখন আল্লাহ তাআলা নাযিল করলেন, “তারা নয় যারা তাওবা করে ঈমান আনে ও সৎকর্ম করে। আল্লাহ তাদের পাপ পরিবর্তন করে দিবেন পূণ্যের দ্বারা। আল্লাহ ক্ষমাশীল, পরম দয়ালু।”<br><br>অতঃপর ইবনে আব্বাস ((رضي الله عنه)) বলেন, যে ব্যক্তি ইসলাম গ্রহণ করল এবং ইসলাম সম্পর্কে যথাযথ উপলব্ধি হাসিল করল এরপর হত্যা করল, তার তাওবা গ্রহণ যোগ্য নয়।",
+        "description_en": "Ibn ’Abbas said:<br>This verse was revealed in Mecca:\" And they who call not upon another god with Allah and slay not the soul which Allah has forbidden except in the cause of justice\" up to the word Muhdana (abased). Thereupon the polytheists said: Islam is of no avail to us for we have made peer with Allah and we killed the soul which Allah had forbidden to do and we committed debauchery, and it was (on this occasion) that Allah, the Exalted and Glorious, revealed this verse:\" Except him who repents and believes and does good deeds\" up to the end Ibn ’Abbis says: He who enters the fold of Islam and understands its command and then kills the soul there is no repentance for him.",
+        "description_ar": "حَدَّثَنِي هَارُونُ بْنُ عَبْدِ اللَّهِ، حَدَّثَنَا أَبُو النَّضْرِ، هَاشِمُ بْنُ الْقَاسِمِ اللَّيْثِيُّ حَدَّثَنَا أَبُو مُعَاوِيَةَ، - يَعْنِي شَيْبَانَ - عَنْ مَنْصُورِ بْنِ الْمُعْتَمِرِ، عَنْ سَعِيدِ بْنِ جُبَيْرٍ، عَنِ ابْنِ عَبَّاسٍ،قَالَ نَزَلَتْ هَذِهِ الآيَةُ بِمَكَّةَ ( وَالَّذِينَ لاَ يَدْعُونَ مَعَ اللَّهِ إِلَهًا آخَرَ) إِلَى قَوْلِهِ ( مُهَانًا) فَقَالَ الْمُشْرِكُونَ وَمَا يُغْنِي عَنَّا الإِسْلاَمُ وَقَدْ عَدَلْنَا بِاللَّهِ وَقَدْ قَتَلْنَا النَّفْسَ الَّتِي حَرَّمَ اللَّهُ وَأَتَيْنَا الْفَوَاحِشَ فَأَنْزَلَ اللَّهُ عَزَّ وَجَلَّ ( إِلاَّ مَنْ تَابَ وَآمَنَ وَعَمِلَ عَمَلاً صَالِحًا) إِلَى آخِرِ الآيَةِ . قَالَ فَأَمَّا مَنْ دَخَلَ فِي الإِسْلاَمِ وَعَقَلَهُ ثُمَّ قَتَلَ فَلاَ تَوْبَةَ لَهُ .",
+        "description_without_harkat": "حدثني هارون بن عبد الله، حدثنا أبو النضر، هاشم بن القاسم الليثي حدثنا أبو معاوية، - يعني شيبان - عن منصور بن المعتمر، عن سعيد بن جبير، عن ابن عباس،قال نزلت هذه الآية بمكة ( والذين لا يدعون مع الله إلها آخر) إلى قوله ( مهانا) فقال المشركون وما يغني عنا الإسلام وقد عدلنا بالله وقد قتلنا النفس التي حرم الله وأتينا الفواحش فأنزل الله عز وجل ( إلا من تاب وآمن وعمل عملا صالحا) إلى آخر الآية . قال فأما من دخل في الإسلام وعقله ثم قتل فلا توبة له .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:53:14.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7558,
+                "title": "3023-4",
+                "hadith_number": 7263,
+                "hadith_id": 14312,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:53:14.000Z",
+                "updated_at": "2024-10-28T15:53:14.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14313,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 45,
+        "type_id": 1,
+        "hadith_number": 7264,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬৪। আব্দুল্লাহ ইবনে হাশিম ও আব্দুর রহমান ইবনে বিশর আবাদী (রাহঃ) ......... সাঈদ ইবনে জুবাইর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমি ইবনে আব্বাস ((رضي الله عنه)) কে জিজ্ঞাসা করলাম, যে ব্যক্তি ইচ্ছাকৃতভাবে কোন মুমিন ব্যক্তিকে হত্যা করে তার তাওবা কবুল হবে কি? তিনি বললেন, না, কবুল হবে না। অতঃপর আমি তার নিকট সূরা ফুরকানে বর্ণিত নিন্মোক্ত আয়াতটি পাঠ করলাম, “যারা আল্লাহর সাথে কোন ইলাহকে ডাকে না। আল্লাহ যার হত্যা নিষেধ করেছেন যথার্থ কারণ ব্যতিরেকে তাকে হত্যা করে না এবং ব্যভিচারও করে না। যে এগুলো করে সে শাস্তি ভোগ করবে।” তিনি বললেন, এতো হচ্ছে মক্কী আয়াত। মাদানী আয়াত উহাকে রহিত করে দিয়েছে আর তা হলো। ″যে ব্যক্তি ইচ্ছাকৃতাবে কোন মুমিনকে হত্যা করে তার শাস্তি জাহান্নাম।″<br><br>তবে ইবনে হাশিমের বর্ণনায় রয়েছে যে, অতঃপর আমি তার নিকট সূরা ফুরকানে উল্লেখিত إِلاَّ مَنْ تَابَ আয়াতটি পাঠ করলাম।",
+        "description_en": "Sa’id b. Jubair reported:<br>I said to Ibn Abbas: Will the repentance of that person be accepted who kills a believer intentionally? He said: No. I recited to him this verse of Sura al-Furqan (xix.):\" And those who call not upon another god with Allah and slay not the soul which Allah has forbidden except in the cause of justice\" to the end of the verse. He said: This is a Meccan verse which has been abrogated by a verse revealed at Medina:\" He who slays a believer intentionally, for him is the requital of Hell-Fire where he would abide for ever,\" and in the narration of Ibn Hisham (the words are): I recited to him this verse of Sura al-Furqan:\" Except one who made repentance.\"",
+        "description_ar": "حَدَّثَنِي عَبْدُ اللَّهِ بْنُ هَاشِمٍ، وَعَبْدُ الرَّحْمَنِ بْنُ بِشْرٍ الْعَبْدِيُّ، قَالاَ حَدَّثَنَا يَحْيَى، - وَهُوَ ابْنُ سَعِيدٍ الْقَطَّانُ - عَنِ ابْنِ جُرَيْجٍ، حَدَّثَنِي الْقَاسِمُ بْنُ أَبِي بَزَّةَ، عَنْ سَعِيدِ بْنِ جُبَيْرٍ، قَالَ قُلْتُ لاِبْنِ عَبَّاسٍ أَلِمَنْ قَتَلَ مُؤْمِنًا مُتَعَمِّدًا مِنْ تَوْبَةٍ قَالَ لاَ . قَالَ فَتَلَوْتُ عَلَيْهِ هَذِهِ الآيَةَ الَّتِي فِي الْفُرْقَانِ ( وَالَّذِينَ لاَ يَدْعُونَ مَعَ اللَّهِ إِلَهًا آخَرَ وَلاَ يَقْتُلُونَ النَّفْسَ الَّتِي حَرَّمَ اللَّهُ إِلاَّ بِالْحَقِّ) إِلَى آخِرِ الآيَةِ . قَالَ هَذِهِ آيَةٌ مَكِّيَّةٌ نَسَخَتْهَا آيَةٌ مَدَنِيَّةٌ ( وَمَنْ يَقْتُلْ مُؤْمِنًا مُتَعَمِّدًا فَجَزَاؤُهُ جَهَنَّمُ خَالِدًا) . وَفِي رِوَايَةِ ابْنِ هَاشِمٍ فَتَلَوْتُ هَذِهِ الآيَةَ الَّتِي فِي الْفُرْقَانِ( إِلاَّ مَنْ تَابَ)",
+        "description_without_harkat": "حدثني عبد الله بن هاشم، وعبد الرحمن بن بشر العبدي، قالا حدثنا يحيى، - وهو ابن سعيد القطان - عن ابن جريج، حدثني القاسم بن أبي بزة، عن سعيد بن جبير، قال قلت لابن عباس ألمن قتل مؤمنا متعمدا من توبة قال لا . قال فتلوت عليه هذه الآية التي في الفرقان ( والذين لا يدعون مع الله إلها آخر ولا يقتلون النفس التي حرم الله إلا بالحق) إلى آخر الآية . قال هذه آية مكية نسختها آية مدنية ( ومن يقتل مؤمنا متعمدا فجزاؤه جهنم خالدا) . وفي رواية ابن هاشم فتلوت هذه الآية التي في الفرقان( إلا من تاب)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:53:44.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 45,
+                "title": "সাঈদ ইবনে জুবায়র ((رحمة الله))",
+                "title_en": "Sayed Ibn Jubair (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7559,
+                "title": "3023-5",
+                "hadith_number": 7264,
+                "hadith_id": 14313,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:53:45.000Z",
+                "updated_at": "2024-10-28T15:53:45.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14314,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 106,
+        "type_id": 1,
+        "hadith_number": 7265,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬৫। আবু বকর ইবনে আবি শাঈবা, হারুন ইবনে আব্দুল্লাহ ও আব্দ ইবনে হুমায়দ (রাহঃ) ......... উবাইদুল্লাহ ইবনে আব্দুল্লাহ ইবনে উতবা (রাহঃ) থেকে বর্ণিত। তিনি বলেন, আমাকে ইবনে আব্বাস ((رضي الله عنه)) বললেন, তুমি কি জান? হারুন (রাহঃ) বলেন, তিনি বলেছেন, কুরআনের সর্বশেষ নাযিলকৃত পূর্ণাঙ্গ সূরা কোনটি? আমি বললাম, হ্যাঁ, তা হলإِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ তিনি বললেন, তুমি সত্য বলেছো। ইবনে আবি শাঈবার বর্ণনায় تَعْلَمُ أَىُّ سُورَةٍ আছে। তিনি آخِرَ বলেন নি।",
+        "description_en": "Ubaidullah b. ’Abdullah b. ’Utba reported:<br>Ibn Abbas said to me: Do you know-and in the words of Harun (another narrator): Are you aware of-the last Sura which was revealed in the Qur’an as a whole? I said: Yes,\" When came the help from Allah and the victory\" (cx.). Thereupon, he said: You have told the truth. And in the narration of Abu Shaiba (the words are): Do you know the Sura? And he did not mention the words\" the last one\".",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَهَارُونُ بْنُ عَبْدِ اللَّهِ، وَعَبْدُ بْنُ حُمَيْدٍ، قَالَ عَبْدٌ أَخْبَرَنَا وَقَالَ الآخَرَانِ، حَدَّثَنَا جَعْفَرُ بْنُ عَوْنٍ، أَخْبَرَنَا أَبُو عُمَيْسٍ، عَنْ عَبْدِ الْمَجِيدِ بْنِ سُهَيْلٍ، عَنْ عُبَيْدِ اللَّهِ بْنِ عَبْدِ اللَّهِ بْنِ عُتْبَةَ، قَالَ قَالَ لِيَ ابْنُ عَبَّاسٍ تَعْلَمُ - وَقَالَ هَارُونُ تَدْرِي - آخِرَ سُورَةٍ نَزَلَتْ مِنَ الْقُرْآنِ نَزَلَتْ جَمِيعًا قُلْتُ نَعَمْ . ( إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ) قَالَ صَدَقْتَ . وَفِي رِوَايَةِ ابْنِ أَبِي شَيْبَةَ تَعْلَمُ أَىُّ سُورَةٍ . وَلَمْ يَقُلْ آخِرَ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، وهارون بن عبد الله، وعبد بن حميد، قال عبد أخبرنا وقال الآخران، حدثنا جعفر بن عون، أخبرنا أبو عميس، عن عبد المجيد بن سهيل، عن عبيد الله بن عبد الله بن عتبة، قال قال لي ابن عباس تعلم - وقال هارون تدري - آخر سورة نزلت من القرآن نزلت جميعا قلت نعم . ( إذا جاء نصر الله والفتح) قال صدقت . وفي رواية ابن أبي شيبة تعلم أى سورة . ولم يقل آخر .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:54:09.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 106,
+                "title": "উবাইদুল্লাহ ইবনে আবদুল্লাহ ইবনে উতবা ইবনে মাসউদ ((رحمة الله))",
+                "title_en": "Ubaidullah Ibn Abdullah Ibn Utbah (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7560,
+                "title": "3024-1",
+                "hadith_number": 7265,
+                "hadith_id": 14314,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:54:09.000Z",
+                "updated_at": "2024-10-28T15:54:09.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14315,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 7266,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬৬। ইসহাক ইবনে ইবরাহীম হানযালী (রাহঃ) ......... আবু উমায়স (রাহঃ) থেকে এ সনদে অনুরূপ হাদীস বর্ণনা করেছেন। আবু উমায়স তার বর্ণনায় آخِرَ سُورَةٍ বলেছেন। এবং তিনি ইবনে সুহাঈল বলেন নি (শুধু আব্দুল মজীদ শব্দটি উল্লেখ করেছেন)।",
+        "description_en": "This hadith has been reported on the authority of Abu ’Umais through the same chain of transmitters but with a slight variation of wording.",
+        "description_ar": "وَحَدَّثَنَا إِسْحَاقُ بْنُ إِبْرَاهِيمَ، أَخْبَرَنَا أَبُو مُعَاوِيَةَ، حَدَّثَنَا أَبُو عُمَيْسٍ، بِهَذَا الإِسْنَادِ مِثْلَهُ وَقَالَ آخِرَ سُورَةٍ وَقَالَ عَبْدُ الْمَجِيدِ وَلَمْ يَقُلِ ابْنِ سُهَيْلٍ .",
+        "description_without_harkat": "وحدثنا إسحاق بن إبراهيم، أخبرنا أبو معاوية، حدثنا أبو عميس، بهذا الإسناد مثله وقال آخر سورة وقال عبد المجيد ولم يقل ابن سهيل .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:54:35.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 9,
+                "title": "বিবিধ",
+                "title_en": null,
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7561,
+                "title": "3024-2",
+                "hadith_number": 7266,
+                "hadith_id": 14315,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:54:35.000Z",
+                "updated_at": "2024-10-28T15:54:35.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14316,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 7267,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬৭। আবু বকর ইবনে আবি শাঈবা, ইসহাক ইবনে ইবরাহীম ও আহমদ ইবনে আব্দা আয-যাব্বী (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, এক ব্যক্তি একটি ক্ষুদ্র বকরীর পাল চরাচ্ছিল, এমন সময় কতিপয় মুসলমান তার নিকট পৌছলে সে বলল, ’আসসালামু আলাইকুম। এতদসত্ত্বেও তারা তাকে পাকড়াও করল। অতঃপর তারা তাকে হত্যা করতঃ তার এ ক্ষুদ্র বকরীর পালটি নিয়ে নিল। এ ঘটনার প্রেক্ষিতে নাযিল হলোঃ ‘যারা তোমাদেরকে সালাম করে, ইহ জীবনের সম্পদের আকাংক্ষায় তাকে বলো না, তুমি মুমিন নও”। ইবনে আব্বাস ((رضي الله عنه))السَّلاَمَ বলেছেন, (তবে অন্যরা سلم আলিফ ব্যতীত পাঠ করেছেন)।",
+        "description_en": "Ibn Abbas reported that some Muslims met a person with a small flock of sheep. He said:<br>As-Salam-o-’Alaikum. They caught hold of him and killed him and took possession of his flock. Then this verse was revealed:\" He who meets you and extends you salutations, don’t say: You are not a Muslim\" (iv. 94). Ibn ’Abbas, however, recited the word as-Salam instead of\" as-Salam\".",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَأَحْمَدُ بْنُ عَبْدَةَ الضَّبِّيُّ، - وَاللَّفْظُ لاِبْنِ أَبِي شَيْبَةَ - قَالَ حَدَّثَنَا وَقَالَ الآخَرَانِ، أَخْبَرَنَا سُفْيَانُ، عَنْ عَمْرٍو، عَنْ عَطَاءٍ، عَنِ ابْنِ عَبَّاسٍ، قَالَ لَقِيَ نَاسٌ مِنَ الْمُسْلِمِينَ رَجُلاً فِي غُنَيْمَةٍ لَهُ فَقَالَ السَّلاَمُ عَلَيْكُمْ . فَأَخَذُوهُ فَقَتَلُوهُ وَأَخَذُوا تِلْكَ الْغُنَيْمَةَ فَنَزَلَتْ ( وَلاَ تَقُولُوا لِمَنْ أَلْقَى إِلَيْكُمُ السَّلَمَ لَسْتَ مُؤْمِنًا) وَقَرَأَهَا ابْنُ عَبَّاسٍ السَّلاَمَ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، وإسحاق بن إبراهيم، وأحمد بن عبدة الضبي، - واللفظ لابن أبي شيبة - قال حدثنا وقال الآخران، أخبرنا سفيان، عن عمرو، عن عطاء، عن ابن عباس، قال لقي ناس من المسلمين رجلا في غنيمة له فقال السلام عليكم . فأخذوه فقتلوه وأخذوا تلك الغنيمة فنزلت ( ولا تقولوا لمن ألقى إليكم السلم لست مؤمنا) وقرأها ابن عباس السلام .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:54:58.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7562,
+                "title": "3025",
+                "hadith_number": 7267,
+                "hadith_id": 14316,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:54:58.000Z",
+                "updated_at": "2024-10-28T15:54:58.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14317,
+        "title": "শিরোনামবিহীন পরিচ্ছেদ",
+        "title_en": "",
+        "title_ar": "",
+        "title_without_harkat": "",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5404,
+        "rabi_id": 16,
+        "type_id": 1,
+        "hadith_number": 7268,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬৮। আবু বকর ইবনে আবি শাঈবা (অন্য সনদে) মুহাম্মাদ ইবনে মুসান্না ও ইবনে বাশশার (রাহঃ) ......... বারা’ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আনসারী লোকেরা হজ্জ সমাপন করে বাড়ী প্রত্যাবর্তনের পর দরজা দিয়ে প্রবেশ না করে পেছন দিক থেকে প্রবেশ করতো। অতঃপর এক আনসারী সাহাবী দরজা দিয়ে প্রবেশ করলে এ ব্যাপারে তাকে কিছু বলা হলে “পাচাৎ দিক দিয়ে তোমাদের গৃহে প্রবেশ করাতে কোন পুণ্য নেই” এ আয়াতটি নাযিল হল।",
+        "description_en": "Bara’ reported:<br>When the Ansar performed the Pilgrimage, they did not enter their houses but from behind. A person from the Ansar came and he began to enter from his door but it was said to him (why he was doing something in contravention to the common practice of coming to the houses from behind). Then this verse was revealed.\" Piety is not that you come to the doors from behind\" (ii. 189).",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا غُنْدَرٌ، عَنْ شُعْبَةَ، ح وَحَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ بَشَّارٍ - وَاللَّفْظُ لاِبْنِ الْمُثَنَّى - قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، عَنْ شُعْبَةَ، عَنْ أَبِي إِسْحَاقَ، قَالَ سَمِعْتُ الْبَرَاءَ، يَقُولُ كَانَتِ الأَنْصَارُ إِذَا حَجُّوا فَرَجَعُوا لَمْ يَدْخُلُوا الْبُيُوتَ إِلاَّ مِنْ ظُهُورِهَا - قَالَ - فَجَاءَ رَجُلٌ مِنَ الأَنْصَارِ فَدَخَلَ مِنْ بَابِهِ فَقِيلَ لَهُ فِي ذَلِكَ فَنَزَلَتْ هَذِهِ الآيَةُ (وَلَيْسَ الْبِرُّ بِأَنْ تَأْتُوا الْبُيُوتَ مِنْ ظُهُورِهَا) .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا غندر، عن شعبة، ح وحدثنا محمد بن المثنى، وابن بشار - واللفظ لابن المثنى - قالا حدثنا محمد بن جعفر، عن شعبة، عن أبي إسحاق، قال سمعت البراء، يقول كانت الأنصار إذا حجوا فرجعوا لم يدخلوا البيوت إلا من ظهورها - قال - فجاء رجل من الأنصار فدخل من بابه فقيل له في ذلك فنزلت هذه الآية (وليس البر بأن تأتوا البيوت من ظهورها) .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:55:20.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5404,
+            "title": "শিরোনামবিহীন পরিচ্ছেদ",
+            "title_en": null,
+            "title_ar": null,
+            "title_without_harkat": null
+        },
+        "rabis": [
+            {
+                "id": 16,
+                "title": "হযরত বারা’ ইবনে আযিব (رضي الله عنه)",
+                "title_en": "Bara Ibnu Ajib (RA)",
+                "title_ar": "البراء بن عازب الانصاري ثم الحارثي",
+                "death_year": "71"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7563,
+                "title": "3026",
+                "hadith_number": 7268,
+                "hadith_id": 14317,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:55:20.000Z",
+                "updated_at": "2024-10-28T15:55:20.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14318,
+        "title": "১. মহান আল্লাহর বাণীঃ \"যারা ঈমান আনে, আল্লাহর স্মরণে তাদের হৃদয় বিগলিত হওয়ার সময় কি আসেনি\"",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى { أَلَمْ يَأْنِ لِلَّذِينَ آمَنُوا أَنْ تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ اللَّهِ}",
+        "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى { أَلَمْ يَأْنِ لِلَّذِينَ آمَنُوا أَنْ تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ اللَّهِ}",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5405,
+        "rabi_id": 15,
+        "type_id": 1,
+        "hadith_number": 7269,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৬৯। ইউনূস ইবনে আব্দুল আলা সাদাফী (রাহঃ) ......... ইবনে মাসউদ ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমাদের ইসলাম গ্রহণ করা ও নিন্মোক্ত আয়াত তথা ″যারা ঈমান আনে তাদের আল্লাহর স্মরণে হৃদয় বিগলিত হওয়ার সময় কি আসেনি″-এর দ্বারা আমাদেরকে ভতসনা করার মাঝে মাত্র চার বছরের ব্যবধান ছিল।",
+        "description_en": "Ibn Mas’ud said:<br>Since our acceptance of Islam and the revelation of this verse in which Allah has shown annoyance to us:\" Has not the time yet come for the believers that their hearts should be humble for the remembrance of Allah?\" (lvii. 16), there was a gap of four years.",
+        "description_ar": "حَدَّثَنِي يُونُسُ بْنُ عَبْدِ الأَعْلَى الصَّدَفِيُّ، أَخْبَرَنَا عَبْدُ اللَّهِ بْنُ وَهْبٍ، أَخْبَرَنِي عَمْرُو، بْنُ الْحَارِثِ عَنْ سَعِيدِ بْنِ أَبِي هِلاَلٍ، عَنْ عَوْنِ بْنِ عَبْدِ اللَّهِ، عَنْ أَبِيهِ، أَنَّ ابْنَ مَسْعُودٍ، قَالَ مَا كَانَ بَيْنَ إِسْلاَمِنَا وَبَيْنَ أَنْ عَاتَبَنَا اللَّهُ بِهَذِهِ الآيَةِ ( أَلَمْ يَأْنِ لِلَّذِينَ آمَنُوا أَنْ تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ اللَّهِ) إِلاَّ أَرْبَعُ سِنِينَ .",
+        "description_without_harkat": "حدثني يونس بن عبد الأعلى الصدفي، أخبرنا عبد الله بن وهب، أخبرني عمرو، بن الحارث عن سعيد بن أبي هلال، عن عون بن عبد الله، عن أبيه، أن ابن مسعود، قال ما كان بين إسلامنا وبين أن عاتبنا الله بهذه الآية ( ألم يأن للذين آمنوا أن تخشع قلوبهم لذكر الله) إلا أربع سنين .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:55:43.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5405,
+            "title": "১. মহান আল্লাহর বাণীঃ \"যারা ঈমান আনে, আল্লাহর স্মরণে তাদের হৃদয় বিগলিত হওয়ার সময় কি আসেনি\"",
+            "title_en": "",
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى { أَلَمْ يَأْنِ لِلَّذِينَ آمَنُوا أَنْ تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ اللَّهِ}",
+            "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى { أَلَمْ يَأْنِ لِلَّذِينَ آمَنُوا أَنْ تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ اللَّهِ}"
+        },
+        "rabis": [
+            {
+                "id": 15,
+                "title": "হযরত আব্দুল্লাহ ইবনে মাসউদ (رضي الله عنه)",
+                "title_en": "Abdullah Ibn Masud",
+                "title_ar": "عبد الله بن مسعود بن غافل بن حبيب الهذلي",
+                "death_year": "32"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7564,
+                "title": "3027",
+                "hadith_number": 7269,
+                "hadith_id": 14318,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:55:43.000Z",
+                "updated_at": "2024-10-28T15:55:43.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14319,
+        "title": "২. মহান আল্লাহর বাণীঃ প্রত্যেক নামাযের সময় সুন্দর পরিচ্ছদ পরিধান করবে",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى {خُذُوا زِينَتَكُمْ عِنْدَ كُلِّ مَسْجِدٍ}",
+        "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى {خُذُوا زِينَتَكُمْ عِنْدَ كُلِّ مَسْجِدٍ}",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5406,
+        "rabi_id": 3,
+        "type_id": 1,
+        "hadith_number": 7270,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৭০। মুহাম্মাদ ইবনে বাশশার (অন্য সনদে) আবু বকর ইবনে নাফি (রাহঃ) ......... ইবনে আব্বাস ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, মহিলাগণ উলঙ্গ অবস্থায় বায়তুল্লাহর তাওয়াফ করতো এবং বলতো কে আমাকে একটি তাওয়াফের কাপড় ধার দিবে? (উদ্দেশ্য) এর দ্বারা তার লজ্জাস্থান ঢেকে রাখবে। এবং এও বলতো, (কবিতা) আজ খুলে যাচ্ছে কিয়দাংশ বা পূর্ণ অংশ। তবে যে অংশটা খুলে (দেখা) আমি হালাল করছি না। তখন নাযিল হল, ″প্রত্যেক নামাযের সময় সুন্দর পরিচ্ছদ পরিধান করবে।″",
+        "description_en": "Ibn Abbas reported:<br>During the pre-Islamic days women circumambulated the Ka’ba nakedly, and said: Who would provide cloth to cover the one who is circumambulating the Ka’ba so that she would cover her private parts? And then she would say: Today will be exposed the whole or the part and what is exposed I shall not make it lawful. It was in this connection that the verse was revealed:\" Adorn yourself at every place of worship\" (vii. 31).",
+        "description_ar": "حَدَّثَنَا مُحَمَّدُ بْنُ بَشَّارٍ، حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، ح وَحَدَّثَنِي أَبُو بَكْرِ بْنُ نَافِعٍ، - وَاللَّفْظُ لَهُ - حَدَّثَنَا غُنْدَرٌ، حَدَّثَنَا شُعْبَةُ، عَنْ سَلَمَةَ بْنِ كُهَيْلٍ، عَنْ مُسْلِمٍ الْبَطِينِ، عَنْ سَعِيدِ بْنِ، جُبَيْرٍ عَنِ ابْنِ عَبَّاسٍ، قَالَ كَانَتِ الْمَرْأَةُ تَطُوفُ بِالْبَيْتِ وَهِيَ عُرْيَانَةٌ فَتَقُولُ مَنْ يُعِيرُنِي تِطْوَافًا تَجْعَلُهُ عَلَى فَرْجِهَا وَتَقُولُ الْيَوْمَ يَبْدُو بَعْضُهُ أَوْ كُلُّهُ فَمَا بَدَا مِنْهُ فَلاَ أُحِلُّهُ فَنَزَلَتْ هَذِهِ الآيَةَ ( خُذُوا زِينَتَكُمْ عِنْدَ كُلِّ مَسْجِدٍ)",
+        "description_without_harkat": "حدثنا محمد بن بشار، حدثنا محمد بن جعفر، ح وحدثني أبو بكر بن نافع، - واللفظ له - حدثنا غندر، حدثنا شعبة، عن سلمة بن كهيل، عن مسلم البطين، عن سعيد بن، جبير عن ابن عباس، قال كانت المرأة تطوف بالبيت وهي عريانة فتقول من يعيرني تطوافا تجعله على فرجها وتقول اليوم يبدو بعضه أو كله فما بدا منه فلا أحله فنزلت هذه الآية ( خذوا زينتكم عند كل مسجد)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:56:07.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5406,
+            "title": "২. মহান আল্লাহর বাণীঃ প্রত্যেক নামাযের সময় সুন্দর পরিচ্ছদ পরিধান করবে",
+            "title_en": null,
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى {خُذُوا زِينَتَكُمْ عِنْدَ كُلِّ مَسْجِدٍ}",
+            "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى {خُذُوا زِينَتَكُمْ عِنْدَ كُلِّ مَسْجِدٍ}"
+        },
+        "rabis": [
+            {
+                "id": 3,
+                "title": "হযরত আব্দুল্লাহ ইবনে আব্বাস (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Abbas (RA)",
+                "title_ar": "عبد الله بن عباس بن عبد المطلب الهاشمي ابن عم رسول الله صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وترجمان القرآن",
+                "death_year": "68"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7565,
+                "title": "3028",
+                "hadith_number": 7270,
+                "hadith_id": 14319,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:56:07.000Z",
+                "updated_at": "2024-10-28T15:56:07.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14320,
+        "title": "৩. মহান আল্লাহর বাণীঃ তোমাদের দাসীদেরকে ব্যভিচারে বাধ্য করবে না",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى {وَلاَ تُكْرِهُوا فَتَيَاتِكُمْ عَلَى الْبِغَاءِ}",
+        "title_without_harkat": "باب في قوله تعالى: {ولا تكرهوا فتياتكم على البغاء} [النور: 33]",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5407,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 7271,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৭১। আবু বকর ইবনে আবি শাঈবা ও আবু কুরায়ব (রাহঃ) ......... জাবির ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আব্দুল্লাহ ইবনে উবাই অর্থাৎ ইবনে সালুল তার দাসীকে বলতো, যাও, এবং ব্যভিচারের মাধ্যমে পয়সা উপার্জন করে নিয়ে এসো। তখন আল্লাহ তাআলা নাযিল করলেন, “তোমাদের দাসীদেরকে সততা রক্ষা করতে চাইলে পার্থিব জীবনের ধন-লালসায় তাদেরকে ব্যভিচারিনা হতে বাধ্য করবে না। আর যে তাদেরকে বাধ্য করে তবে তাদের উপর জবর দস্তির পর, আল্লাহ তো ক্ষমাশীল, পরম দয়ালু”।",
+        "description_en": "Jabir reported that ’Abdullah b. Ubayy b. Salul used to say to his slave-girl:<br>Go and fetch something for us by committing prostitution. It was in this connection that Allah, the Exalted and Glorious, revealed this verse:\" And compel not your slave-girls to prostitution when they desire to keep chaste in order to seek the frail goods of this world’s life, and whoever compels them, then surely after their compulsion Allah is Forgiving, Merciful\" (xxiv. 33).",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ جَمِيعًا عَنْ أَبِي مُعَاوِيَةَ، - وَاللَّفْظُ لأَبِي كُرَيْبٍ - حَدَّثَنَا أَبُو مُعَاوِيَةَ، حَدَّثَنَا الأَعْمَشُ، عَنْ أَبِي سُفْيَانَ، عَنْ جَابِرٍ، قَالَ كَانَ عَبْدُ اللَّهِ بْنُ أُبَىٍّ ابْنُ سَلُولَ يَقُولُ لِجَارِيَةٍ لَهُ اذْهَبِي فَابْغِينَا شَيْئًا فَأَنْزَلَ اللَّهُ عَزَّ وَجَلَّ ( وَلاَ تُكْرِهُوا فَتَيَاتِكُمْ عَلَى الْبِغَاءِ إِنْ أَرَدْنَ تَحَصُّنًا لِتَبْتَغُوا عَرَضَ الْحَيَاةِ الدُّنْيَا وَمَنْ يُكْرِهْهُنَّ فَإِنَّ اللَّهَ مِنْ بَعْدِ إِكْرَاهِهِنَّ) لَهُنَّ ( غَفُورٌ رَحِيمٌ)",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، وأبو كريب جميعا عن أبي معاوية، - واللفظ لأبي كريب - حدثنا أبو معاوية، حدثنا الأعمش، عن أبي سفيان، عن جابر، قال كان عبد الله بن أبى ابن سلول يقول لجارية له اذهبي فابغينا شيئا فأنزل الله عز وجل ( ولا تكرهوا فتياتكم على البغاء إن أردن تحصنا لتبتغوا عرض الحياة الدنيا ومن يكرههن فإن الله من بعد إكراههن) لهن ( غفور رحيم)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:56:38.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5407,
+            "title": "৩. মহান আল্লাহর বাণীঃ তোমাদের দাসীদেরকে ব্যভিচারে বাধ্য করবে না",
+            "title_en": null,
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى {وَلاَ تُكْرِهُوا فَتَيَاتِكُمْ عَلَى الْبِغَاءِ}",
+            "title_without_harkat": "باب في قوله تعالى: {ولا تكرهوا فتياتكم على البغاء} [النور: 33]"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7566,
+                "title": "3029-1",
+                "hadith_number": 7271,
+                "hadith_id": 14320,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:56:38.000Z",
+                "updated_at": "2024-10-28T15:56:38.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14321,
+        "title": "৩. মহান আল্লাহর বাণীঃ তোমাদের দাসীদের ব্যভিচারে বাধ্য করবে না",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى {وَلاَ تُكْرِهُوا فَتَيَاتِكُمْ عَلَى الْبِغَاءِ}",
+        "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى {وَلاَ تُكْرِهُوا فَتَيَاتِكُمْ عَلَى الْبِغَاءِ}",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5408,
+        "rabi_id": 67,
+        "type_id": 1,
+        "hadith_number": 7272,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৭২। আবু কামিল জাহদারী (রাহঃ) ......... জাবির ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আব্দুল্লাহ ইবনে উবাই ইবনে সালুল এর দু’জন দাসী ছিল। একজনের নাম মুসায়কা এবং অপর জনের নাম ছিল উমায়মা। সে তাদের থেকে ব্যক্তিচার কামনা করছিল। তাই তারা এ বিষয়ে নবী (ﷺ) এর নিকট অভিযোগ করলো। তখন আল্লাহ তাআলা নাযিল করলেনঃ ″তোমাদের দাসীদের সততা রক্ষা করতে চাইলে পার্থিব জীবনের ধন-লালসায় তাদেরকে ব্যভিচারিণী হতে বাধ্য করবে না। আর যে তাদেরকে বাধ্য করে তবে তাদের উপর জবরদস্তির পর আল্লাহ তো ক্ষমাশীল, পরম দয়ালু।″",
+        "description_en": "Jabir reported that ’Abdullah b. Ubayy b. Salul had two slave-girls; one was called Musaika and the other one was called Umaima and he compelled them to prostitution (for which’Abdullah b. Ubayy b. Salul compelled them). They made a complaint about this to Allah’s Messenger (ﷺ) and it was upon this that this verse was revealed:<br>\" And compel not your slave-girls to prostitute\" up to the words:\" Allah is Forgiving, Merciful.\"",
+        "description_ar": "وَحَدَّثَنِي أَبُو كَامِلٍ الْجَحْدَرِيُّ، حَدَّثَنَا أَبُو عَوَانَةَ، عَنِ الأَعْمَشِ، عَنْ أَبِي سُفْيَانَ، عَنْ جَابِرٍ، أَنَّ جَارِيَةً، لِعَبْدِ اللَّهِ بْنِ أُبَىٍّ ابْنِ سَلُولَ يُقَالُ لَهَا مُسَيْكَةُ وَأُخْرَى يُقَالُ لَهَا أُمَيْمَةُ فَكَانَ يُكْرِهُهُمَا عَلَى الزِّنَى فَشَكَتَا ذَلِكَ إِلَى النَّبِيِّ صلى الله عليه وسلم فَأَنْزَلَ اللَّهُ ( وَلاَ تُكْرِهُوا فَتَيَاتِكُمْ عَلَى الْبِغَاءِ) إِلَى قَوْلِهِ ( غَفُورٌ رَحِيمٌ)",
+        "description_without_harkat": "وحدثني أبو كامل الجحدري، حدثنا أبو عوانة، عن الأعمش، عن أبي سفيان، عن جابر، أن جارية، لعبد الله بن أبى ابن سلول يقال لها مسيكة وأخرى يقال لها أميمة فكان يكرههما على الزنى فشكتا ذلك إلى النبي صلى الله عليه وسلم فأنزل الله ( ولا تكرهوا فتياتكم على البغاء) إلى قوله ( غفور رحيم)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:57:06.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5408,
+            "title": "৩. মহান আল্লাহর বাণীঃ তোমাদের দাসীদের ব্যভিচারে বাধ্য করবে না",
+            "title_en": null,
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى {وَلاَ تُكْرِهُوا فَتَيَاتِكُمْ عَلَى الْبِغَاءِ}",
+            "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى {وَلاَ تُكْرِهُوا فَتَيَاتِكُمْ عَلَى الْبِغَاءِ}"
+        },
+        "rabis": [
+            {
+                "id": 67,
+                "title": "জাবির ইবনে আব্দুল্লাহ আনসারী (رضي الله عنه)",
+                "title_en": "Jabir Ibnu Abdullah Ansari (RA)",
+                "title_ar": "جابر بن عبد الله بن عمرو بن حرام ابو عبد الله السلمي الانصاري المدني",
+                "death_year": "78"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7567,
+                "title": "3029-2",
+                "hadith_number": 7272,
+                "hadith_id": 14321,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:57:06.000Z",
+                "updated_at": "2024-10-28T15:57:06.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14322,
+        "title": "৪. মহান আল্লাহর বাণীঃ তারা যাদেরকে আহবান করে, তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে- প্রসঙ্গে",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}",
+        "title_without_harkat": "باب في قوله تعالى: {أولئك الذين يدعون يبتغون إلى ربهم الوسيلة} [الإسراء: 57]",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5409,
+        "rabi_id": 15,
+        "type_id": 1,
+        "hadith_number": 7273,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৭৩। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। আল্লাহর ইরশাদঃ ″তারা যাদেরকে আহবান করে তারাই তো তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে″ এর ব্যাখ্যায় বলেন, একদা একদল জ্বিন মুসলমান হলো। তাদের পূজা করা হতো। কিন্তু পূজাকারী এ লোকগুলো তাদের পূজাই আকড়ে থাকলো। অথচ জ্বিনের দলটি ইসলাম গ্রহণ করেছে।",
+        "description_en": "Abdullah b. Mas’ud reported in connection with the words of Allah, the Exalted and Glorious:<br>\" Those to whom they call upon, themselves seek the means or access to their Lord as to whoever of them becomes nearest\" (xvii. 57) that it related to a party of Jinn who were being worshipped and they embraced Islam but those who worshipped them kept on worshipping them (though the Jinn whom the misguided people worshipped had become Muslims). It was then that this verse was revealed.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا عَبْدُ اللَّهِ بْنُ إِدْرِيسَ، عَنِ الأَعْمَشِ، عَنْ إِبْرَاهِيمَ، عَنْ أَبِي مَعْمَرٍ، عَنْ عَبْدِ اللَّهِ، فِي قَوْلِهِ عَزَّ وَجَلَّ ( أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمُ الْوَسِيلَةَ أَيُّهُمْ أَقْرَبُ) قَالَ كَانَ نَفَرٌ مِنَ الْجِنِّ أَسْلَمُوا وَكَانُوا يُعْبَدُونَ فَبَقِيَ الَّذِينَ كَانُوا يَعْبُدُونَ عَلَى عِبَادَتِهِمْ وَقَدْ أَسْلَمَ النَّفَرُ مِنَ الْجِنِّ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا عبد الله بن إدريس، عن الأعمش، عن إبراهيم، عن أبي معمر، عن عبد الله، في قوله عز وجل ( أولئك الذين يدعون يبتغون إلى ربهم الوسيلة أيهم أقرب) قال كان نفر من الجن أسلموا وكانوا يعبدون فبقي الذين كانوا يعبدون على عبادتهم وقد أسلم النفر من الجن .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:57:31.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5409,
+            "title": "৪. মহান আল্লাহর বাণীঃ তারা যাদেরকে আহবান করে, তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে- প্রসঙ্গে",
+            "title_en": null,
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}",
+            "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}"
+        },
+        "rabis": [
+            {
+                "id": 15,
+                "title": "হযরত আব্দুল্লাহ ইবনে মাসউদ (رضي الله عنه)",
+                "title_en": "Abdullah Ibn Masud",
+                "title_ar": "عبد الله بن مسعود بن غافل بن حبيب الهذلي",
+                "death_year": "32"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7568,
+                "title": "3030-1",
+                "hadith_number": 7273,
+                "hadith_id": 14322,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:57:31.000Z",
+                "updated_at": "2024-10-28T15:57:31.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14323,
+        "title": "৪. মহান আল্লাহর বাণীঃ তারা যাদেরকে আহবান করে, তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে- প্রসঙ্গে",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}",
+        "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5409,
+        "rabi_id": 15,
+        "type_id": 1,
+        "hadith_number": 7274,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৭৪। আবু বকর ইবনে নাফি আবাদী (রাহঃ) ......... আব্দুল্লাহ ((رضي الله عنه)) থেকে বর্ণিত। তিনি মহান আল্লাহর ইরশাদঃ ″তারা যাদেরকে আহবান করে তারাই তো তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে″ এর ব্যাখ্যায় বলেন, একদল মানুষ কতিপয় জিনের পূজা করতো। অতঃপর জিনের দলটি ইসলাম গ্রহণ করলো। কিন্তু এ লোকগুলো তাদের ইবাদতের উপর আকড়ে থাকে। তখন নাযিল হলোঃ তারা যাদেরকে আহবান করে, তারাই তো তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে।<br><br>বিশর ইবনে খালিদ (রাহঃ) ......... সুলাইমান ((رضي الله عنه)) থেকে এ সনদে (অনুরূপ) বর্ণনা করেছেন।",
+        "description_en": "Abdullah b. Mas’ud reported in connection with the verse:<br>\" Those whom they call upon, themselves seek the means of access to their Lord,\" that it related to a group of people who worshipped a party amongst the Jinn. The group from amongst the Jinn embraced Islam, but the people kept worshipping them as they did before, and it was (on this occasion) that the verse was revealed:\" Those whom they call upon, themselves seek the means of access to their Lord.\" This hadith has been narrated on the authority of Sulaiman with the same chain of transmitters.",
+        "description_ar": "حَدَّثَنِي أَبُو بَكْرِ بْنُ نَافِعٍ الْعَبْدِيُّ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ، حَدَّثَنَا سُفْيَانُ، عَنِ الأَعْمَشِ، عَنْ إِبْرَاهِيمَ، عَنْ أَبِي مَعْمَرٍ، عَنْ عَبْدِ اللَّهِ، ( أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمُ الْوَسِيلَةَ) قَالَ كَانَ نَفَرٌ مِنَ الإِنْسِ يَعْبُدُونَ نَفَرًا مِنَ الْجِنِّ فَأَسْلَمَ النَّفَرُ مِنَ الْجِنِّ . وَاسْتَمْسَكَ الإِنْسُ بِعِبَادَتِهِمْ فَنَزَلَتْ ( أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمُ الْوَسِيلَةَ) وَحَدَّثَنِيهِ بِشْرُ بْنُ خَالِدٍ، أَخْبَرَنَا مُحَمَّدٌ، - يَعْنِي ابْنَ جَعْفَرٍ - عَنْ شُعْبَةَ، عَنْ سُلَيْمَانَ، بِهَذَا الإِسْنَادِ .",
+        "description_without_harkat": "حدثني أبو بكر بن نافع العبدي، حدثنا عبد الرحمن، حدثنا سفيان، عن الأعمش، عن إبراهيم، عن أبي معمر، عن عبد الله، ( أولئك الذين يدعون يبتغون إلى ربهم الوسيلة) قال كان نفر من الإنس يعبدون نفرا من الجن فأسلم النفر من الجن . واستمسك الإنس بعبادتهم فنزلت ( أولئك الذين يدعون يبتغون إلى ربهم الوسيلة) وحدثنيه بشر بن خالد، أخبرنا محمد، - يعني ابن جعفر - عن شعبة، عن سليمان، بهذا الإسناد .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:58:11.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5409,
+            "title": "৪. মহান আল্লাহর বাণীঃ তারা যাদেরকে আহবান করে, তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে- প্রসঙ্গে",
+            "title_en": null,
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}",
+            "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}"
+        },
+        "rabis": [
+            {
+                "id": 15,
+                "title": "হযরত আব্দুল্লাহ ইবনে মাসউদ (رضي الله عنه)",
+                "title_en": "Abdullah Ibn Masud",
+                "title_ar": "عبد الله بن مسعود بن غافل بن حبيب الهذلي",
+                "death_year": "32"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7570,
+                "title": " 3030-3",
+                "hadith_number": 7274,
+                "hadith_id": 14323,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:58:11.000Z",
+                "updated_at": "2024-10-28T15:58:11.000Z"
+            },
+            {
+                "id": 7569,
+                "title": " 3030-2",
+                "hadith_number": 7274,
+                "hadith_id": 14323,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:58:11.000Z",
+                "updated_at": "2024-10-28T15:58:11.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14324,
+        "title": "৪. মহান আল্লাহর বাণীঃ তারা যাদেরকে আহবান করে, তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে- প্রসঙ্গে",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}",
+        "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5409,
+        "rabi_id": 15,
+        "type_id": 1,
+        "hadith_number": 7275,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৭৫। হাজ্জাজ ইবনে শাঈর (রাহঃ) ......... আব্দুল্লাহ ইবনে মাসউদ ((رضي الله عنه)) থেকে বর্ণিত। তিনি মহান আল্লাহর ইরশাদঃ ″তারা যাদেরকে আহবান করে তারাই তো তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে″ এর ব্যাখ্যায় বলেন, এ আয়াতটি আরবের এক দল লোক সম্পর্কে অবতীর্ণ হয়েছে। তারা কতিপয় জিনের পূজা করতো। অতঃপর জিনেরা তো মুসলমান হলো; কিন্তু তাদের ইবাদতকারী এ মানুষগুলো তা বুঝতে পারল না। তখন নাযিল হলো, “তারা যাদেরকে আহবান করে তারাই তো তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে।″",
+        "description_en": "Abdullah b. Mas’ud said in connection with the verse:<br>\" Those whom they call upon, themselves seek the means of access to their Lord,\" that that verse was revealed in connection with a party of Arabs who used to worship a group amnogst the jinn; the jinn embraced Islam but the people kept worshipping them without being conscious of it. Then this verse was revealed:\" Those whom they call upon, themselves seek the means of access to their Lord.\"",
+        "description_ar": "وَحَدَّثَنِي حَجَّاجُ بْنُ الشَّاعِرِ، حَدَّثَنَا عَبْدُ الصَّمَدِ بْنُ عَبْدِ الْوَارِثِ، حَدَّثَنِي أَبِي، حَدَّثَنَا حُسَيْنٌ، عَنْ قَتَادَةَ، عَنْ عَبْدِ اللَّهِ بْنِ مَعْبَدٍ الزِّمَّانِيِّ، عَنْ عَبْدِ اللَّهِ بْنِ عُتْبَةَ، عَنْ عَبْدِ اللَّهِ بْنِ، مَسْعُودٍ ( أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمُ الْوَسِيلَةَ) قَالَ نَزَلَتْ فِي نَفَرٍ مِنَ الْعَرَبِ كَانُوا يَعْبُدُونَ نَفَرًا مِنَ الْجِنِّ فَأَسْلَمَ الْجِنِّيُّونَ وَالإِنْسُ الَّذِينَ كَانُوا يَعْبُدُونَهُمْ لاَ يَشْعُرُونَ فَنَزَلَتْ ( أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمُ الْوَسِيلَةَ)",
+        "description_without_harkat": "وحدثني حجاج بن الشاعر، حدثنا عبد الصمد بن عبد الوارث، حدثني أبي، حدثنا حسين، عن قتادة، عن عبد الله بن معبد الزماني، عن عبد الله بن عتبة، عن عبد الله بن، مسعود ( أولئك الذين يدعون يبتغون إلى ربهم الوسيلة) قال نزلت في نفر من العرب كانوا يعبدون نفرا من الجن فأسلم الجنيون والإنس الذين كانوا يعبدونهم لا يشعرون فنزلت ( أولئك الذين يدعون يبتغون إلى ربهم الوسيلة)",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:58:35.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5409,
+            "title": "৪. মহান আল্লাহর বাণীঃ তারা যাদেরকে আহবান করে, তাদের প্রতিপালকের নৈকট্য লাভের উপায় সন্ধান করে- প্রসঙ্গে",
+            "title_en": null,
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}",
+            "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى { أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمْ الْوَسِيلَةَ}"
+        },
+        "rabis": [
+            {
+                "id": 15,
+                "title": "হযরত আব্দুল্লাহ ইবনে মাসউদ (رضي الله عنه)",
+                "title_en": "Abdullah Ibn Masud",
+                "title_ar": "عبد الله بن مسعود بن غافل بن حبيب الهذلي",
+                "death_year": "32"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7571,
+                "title": "3030-4",
+                "hadith_number": 7275,
+                "hadith_id": 14324,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:58:35.000Z",
+                "updated_at": "2024-10-28T15:58:35.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14325,
+        "title": "৫. সূরা বারাআত, আনফাল ও হাশর",
+        "title_en": "",
+        "title_ar": "باب فِي سُورَةِ بَرَاءَةَ وَالأَنْفَالِ وَالْحَشْرِ",
+        "title_without_harkat": "باب فِي سُورَةِ بَرَاءَةَ وَالأَنْفَالِ وَالْحَشْرِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5410,
+        "rabi_id": 45,
+        "type_id": 1,
+        "hadith_number": 7276,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৭৬। আব্দুল্লাহ ইবনে মুতী (রাহঃ) ......... সাঈদ ইবনে জুবাইর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, একদা আমি ইবনে আব্বাস ((رضي الله عنه)) এর নিকট বললাম, সূরা তাওবা ...। তিনি বললেন, না বরং এ হচ্ছে অপদস্থকারী সূরা। এ সূরাতে কেবল مِنْهُمْ مِنْهُمْ বলা হয়েছে। একদল, একদল ......... (বলে রহস্য ফাঁস করা হয়েছে) ফলে লোকেরা মনে করতে লাগল যে, এ সূরায় আমাদের কেউ আলোচনা ছাড়া বাকী থাকবে না। অতঃপর আমি বললাম, সূরা আনফাল। তিনি বললেন, এ তো হচ্ছে সূরা বদর। এরপর আমি সূরা হাশরের কথা উল্লেখ করলাম। তিনি বললেন, এতো বনু নযীর সম্প্রদায় সম্পর্কে অবতীর্ণ হয়েছে।",
+        "description_en": "Sa’id b. Jubair reported:<br>I said to Ibn ’Abbas about Sura Tauba, whereupon he said: As for Sura Tauba, it is meant to humiliate (the non-believers and the hypocrites). There is constantly revealed in it (the pronoun) minhum (of them) and minhom (of them, i. e. such is the condition of some of them) till they (the Muslims) thought that none would be left unmentioned out of them who would not be blamed (for one fault or the other). I again said: What about Sura Anfal? He said: It pertains to the Battle of Badr. I again asked him about Sura al-Hashr. He said: It was revealed in connection with (the tribe) of Banu Nadir.",
+        "description_ar": "حَدَّثَنِي عَبْدُ اللَّهِ بْنُ مُطِيعٍ، حَدَّثَنَا هُشَيْمٌ، عَنْ أَبِي بِشْرٍ، عَنْ سَعِيدِ بْنِ جُبَيْرٍ، قَالَ قُلْتُ لاِبْنِ عَبَّاسٍ سُورَةُ التَّوْبَةِ قَالَ آلتَّوْبَةِ قَالَ بَلْ هِيَ الْفَاضِحَةُ مَا زَالَتْ تَنْزِلُ وَمِنْهُمْ وَمِنْهُمْ . حَتَّى ظَنُّوا أَنْ لاَ يَبْقَى مِنَّا أَحَدٌ إِلاَّ ذُكِرَ فِيهَا . قَالَ قُلْتُ سُورَةُ الأَنْفَالِ قَالَ تِلْكَ سُورَةُ بَدْرٍ . قَالَ قُلْتُ فَالْحَشْرُ قَالَ نَزَلَتْ فِي بَنِي النَّضِيرِ .",
+        "description_without_harkat": "حدثني عبد الله بن مطيع، حدثنا هشيم، عن أبي بشر، عن سعيد بن جبير، قال قلت لابن عباس سورة التوبة قال آلتوبة قال بل هي الفاضحة ما زالت تنزل ومنهم ومنهم . حتى ظنوا أن لا يبقى منا أحد إلا ذكر فيها . قال قلت سورة الأنفال قال تلك سورة بدر . قال قلت فالحشر قال نزلت في بني النضير .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T15:58:57.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5410,
+            "title": "৫. সূরা বারাআত, আনফাল ও হাশর",
+            "title_en": "",
+            "title_ar": "باب فِي سُورَةِ بَرَاءَةَ وَالأَنْفَالِ وَالْحَشْرِ",
+            "title_without_harkat": "باب فِي سُورَةِ بَرَاءَةَ وَالأَنْفَالِ وَالْحَشْرِ"
+        },
+        "rabis": [
+            {
+                "id": 45,
+                "title": "সাঈদ ইবনে জুবায়র ((رحمة الله))",
+                "title_en": "Sayed Ibn Jubair (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7572,
+                "title": "3031",
+                "hadith_number": 7276,
+                "hadith_id": 14325,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:58:57.000Z",
+                "updated_at": "2024-10-28T15:58:57.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14326,
+        "title": "৬. মধ্যপান হারাম হওয়ার বিধান নাযিল",
+        "title_en": "",
+        "title_ar": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ",
+        "title_without_harkat": "باب في نزول تحريم الخمر",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5411,
+        "rabi_id": 4,
+        "type_id": 1,
+        "hadith_number": 7277,
+        "hadith_number_one": 3032,
+        "hadith_number_two": null,
+        "description": "৭২৭৭। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... ইবনে উমর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, একদা উমর ((رضي الله عنه)) রাসূলুল্লাহ (ﷺ) এর মিম্বরে বসে খুতবা প্রদান করলেন। প্রথমে আল্লাহর প্রশংসা এবং গুণকীর্তন করে বললেন, আম্মা বাদঃ (অতঃপর) মদ হারাম হওয়ার বিধান যেদিন নাযিল হওয়ার নাযিল হয়েছে। তা পাঁচটি জিনিস হতে বানানো হয়, গম, যব, খেজুর, আঙ্গুর এবং মধু হতে। আর যা মানুষের বিবেক-বুদ্ধিকে লুপ্ত করে দেয়, তাই মদ। হে লোক সকল! আমার কামনা। তিনটি বিষয় যদি রাসূলুল্লাহ (ﷺ) আমাদের নিকট দাদা, কালালা (পিতা-মাতাহীন নিঃসন্তান ব্যক্তি) এবং সুদের কতিপয় অধ্যায় সম্পর্কে বলে যেতেন।",
+        "description_en": "Ibn ’Umar reported that Umar delivered a sermon on the pulpit of Allah’s Messenger (ﷺ) and he praised Allah and lauded Him and then said:<br>Now coming to the point. Behold I when the command pertaining to the prohibition of wine was revealed, it was prepared from five things: from wheat, barley, date, grape, honey; and wine is that which clouds the intellect; and O people, I wish Allah’s Messenger (ﷺ) could have explained to us in (more) detail the laws pertaining to the inheritance of the grandfather, about one who dies leaving no issue, and some of the problems pertaining to interest.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا عَلِيُّ بْنُ مُسْهِرٍ، عَنْ أَبِي حَيَّانَ، عَنِ الشَّعْبِيِّ، عَنِ ابْنِ عُمَرَ، قَالَ خَطَبَ عُمَرُ عَلَى مِنْبَرِ رَسُولِ اللَّهِ صلى الله عليه وسلم فَحَمِدَ اللَّهَ وَأَثْنَى عَلَيْهِ ثُمَّ قَالَ أَمَّا بَعْدُ أَلاَ وَإِنَّ الْخَمْرَ نَزَلَ تَحْرِيمُهَا يَوْمَ نَزَلَ وَهْىَ مِنْ خَمْسَةِ أَشْيَاءَ مِنَ الْحِنْطَةِ وَالشَّعِيرِ وَالتَّمْرِ وَالزَّبِيبِ وَالْعَسَلِ . وَالْخَمْرُ مَا خَامَرَ الْعَقْلَ وَثَلاَثَةُ أَشْيَاءَ وَدِدْتُ أَيُّهَا النَّاسُ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم كَانَ عَهِدَ إِلَيْنَا فِيهَا الْجَدُّ وَالْكَلاَلَةُ وَأَبْوَابٌ مِنْ أَبْوَابِ الرِّبَا .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا علي بن مسهر، عن أبي حيان، عن الشعبي، عن ابن عمر، قال خطب عمر على منبر رسول الله صلى الله عليه وسلم فحمد الله وأثنى عليه ثم قال أما بعد ألا وإن الخمر نزل تحريمها يوم نزل وهى من خمسة أشياء من الحنطة والشعير والتمر والزبيب والعسل . والخمر ما خامر العقل وثلاثة أشياء وددت أيها الناس أن رسول الله صلى الله عليه وسلم كان عهد إلينا فيها الجد والكلالة وأبواب من أبواب الربا .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2023-05-10T07:11:58.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5411,
+            "title": "৬. মধ্যপান হারাম হওয়ার বিধান নাযিল",
+            "title_en": null,
+            "title_ar": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ",
+            "title_without_harkat": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ"
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7573,
+                "title": "3032-1",
+                "hadith_number": 7277,
+                "hadith_id": 14326,
+                "book_id": 2,
+                "created_at": "2024-10-28T15:59:35.000Z",
+                "updated_at": "2024-10-28T15:59:35.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14327,
+        "title": "৬. মধ্যপান হারাম হওয়ার বিধান নাযিল",
+        "title_en": "",
+        "title_ar": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ",
+        "title_without_harkat": "باب في نزول تحريم الخمر",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5411,
+        "rabi_id": 4,
+        "type_id": 1,
+        "hadith_number": 7278,
+        "hadith_number_one": 3032,
+        "hadith_number_two": null,
+        "description": "৭২৭৮। আবু কুরায়ব (রাহঃ) ......... ইবনে উমর ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, আমি উমর ইবনে খাত্তাব ((رضي الله عنه)) কে রাসূলুল্লাহ (ﷺ) এর মিম্বরে বসে ভাষণরত অবস্থায় এ কথা বলতে শুনেছি যে, হে লোক সকল! মদ হারাম হওয়ার বিধান নাযিল হয়েছে। তা পাঁচটি জিনিস হতে বানানো হয়। আঙ্গুর, খেজুর, মধু, গম ও যব হতে। আর যা মানুষের বিবেক-বুদ্ধিকে বিলুপ্ত করে দেয় তাই মদ। হে লোক সকল! আমার মনের আকাংক্ষা, যদি রাসূলুল্লাহ (ﷺ) আমাদেরকে নিন্মোক্ত কতিপয় বিষয়ে সুম্পষ্ট বলে যেতেন তবে তো আমরা এ সম্বন্ধে চূড়ান্ত সিদ্ধান্তে পৌছে যেতে পারতাম। আর তা হচ্ছে, দাদা, কালালা এবং সুদের কতিপয় বিষয়াদি সম্পর্কিত বিধান।",
+        "description_en": "Ibn ’Umar reported:<br>I heard ’Umar b. Khattab delivering sermon on the pulpit ol Allah’s messenger (ﷺ) and saying’: Now, coming to the point, O people, there was revealed (the command pertaining to the prohibition of wine) and it was prepared (at that time) out of five things: grape, date, honey, wheat, barley, and wine is that which clouds the intellect, and, O people, I wish Allah’s Messenger (ﷺ) had explained to us in greater detail three things: the inheritance of the grandfather, of one who dies without leaving any issue, and some of the problems of interest.",
+        "description_ar": "وَحَدَّثَنَا أَبُو كُرَيْبٍ، أَخْبَرَنَا ابْنُ إِدْرِيسَ، حَدَّثَنَا أَبُو حَيَّانَ، عَنِ الشَّعْبِيِّ، عَنِ ابْنِ، عُمَرَ قَالَ سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ، عَلَى مِنْبَرِ رَسُولِ اللَّهِ صلى الله عليه وسلم يَقُولُ أَمَّا بَعْدُ أَيُّهَا النَّاسُ فَإِنَّهُ نَزَلَ تَحْرِيمُ الْخَمْرِ وَهْىَ مِنْ خَمْسَةٍ مِنَ الْعِنَبِ وَالتَّمْرِ وَالْعَسَلِ وَالْحِنْطَةِ وَالشَّعِيرِ وَالْخَمْرُ مَا خَامَرَ الْعَقْلَ وَثَلاَثٌ أَيُّهَا النَّاسُ وَدِدْتُ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم كَانَ عَهِدَ إِلَيْنَا فِيهِنَّ عَهْدًا نَنْتَهِي إِلَيْهِ الْجَدُّ وَالْكَلاَلَةُ وَأَبْوَابٌ مِنْ أَبْوَابِ الرِّبَا .",
+        "description_without_harkat": "وحدثنا أبو كريب، أخبرنا ابن إدريس، حدثنا أبو حيان، عن الشعبي، عن ابن، عمر قال سمعت عمر بن الخطاب، على منبر رسول الله صلى الله عليه وسلم يقول أما بعد أيها الناس فإنه نزل تحريم الخمر وهى من خمسة من العنب والتمر والعسل والحنطة والشعير والخمر ما خامر العقل وثلاث أيها الناس وددت أن رسول الله صلى الله عليه وسلم كان عهد إلينا فيهن عهدا ننتهي إليه الجد والكلالة وأبواب من أبواب الربا .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2023-05-10T07:11:48.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5411,
+            "title": "৬. মধ্যপান হারাম হওয়ার বিধান নাযিল",
+            "title_en": null,
+            "title_ar": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ",
+            "title_without_harkat": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ"
+        },
+        "rabis": [
+            {
+                "id": 4,
+                "title": "হযরত আব্দুল্লাহ ইবনে উমর (رضي الله عنه)",
+                "title_en": "Abdullah Ibnu Umar (RA)",
+                "title_ar": "عبد الله بن عمر بن الخطاب العدوي",
+                "death_year": "73"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7574,
+                "title": "3032-2",
+                "hadith_number": 7278,
+                "hadith_id": 14327,
+                "book_id": 2,
+                "created_at": "2024-10-28T16:00:02.000Z",
+                "updated_at": "2024-10-28T16:00:02.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14328,
+        "title": "৬. মধ্যপান হারাম হওয়ার বিধান নাযিল",
+        "title_en": "",
+        "title_ar": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ",
+        "title_without_harkat": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5411,
+        "rabi_id": 448,
+        "type_id": 1,
+        "hadith_number": 7279,
+        "hadith_number_one": 3032,
+        "hadith_number_two": null,
+        "description": "৭২৭৯। আবু বকর ইবনে আবি শাঈবা (অন্য সনদে) ইসহাক ইবনে ইবরাহীম (রাহঃ) ......... আবু হায়্যান (রাহঃ) থেকে এ সনদে অনুরূপ বর্ণনা করেছেন। তবে ইবনে উলায়্যা আবু ইদরীসের মত তার হাদীসেعِنَبِ (আঙ্গুর) শব্দটি উল্লেখ করেছেন। আর রাবী ঈসা ইবনে মুসহীর (রাহঃ) এর মত তার হাদীসের মধ্যেزبِيبِ (কিসমিস) শব্দটি উল্লেখ করেছেন।",
+        "description_en": "This hadith has been transmitted on the same authority but with a slight variation of wording.",
+        "description_ar": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا إِسْمَاعِيلُ ابْنُ عُلَيَّةَ، ح وَحَدَّثَنَا إِسْحَاقُ، بْنُ إِبْرَاهِيمَ أَخْبَرَنَا عِيسَى بْنُ يُونُسَ، كِلاَهُمَا عَنْ أَبِي حَيَّانَ، بِهَذَا الإِسْنَادِ . بِمِثْلِ حَدِيثِهِمَا غَيْرَ أَنَّ ابْنَ عُلَيَّةَ فِي حَدِيثِهِ الْعِنَبِ . كَمَا قَالَ ابْنُ إِدْرِيسَ وَفِي حَدِيثِ عِيسَى الزَّبِيبِ . كَمَا قَالَ ابْنُ مُسْهِرٍ .",
+        "description_without_harkat": "وحدثنا أبو بكر بن أبي شيبة، حدثنا إسماعيل ابن علية، ح وحدثنا إسحاق، بن إبراهيم أخبرنا عيسى بن يونس، كلاهما عن أبي حيان، بهذا الإسناد . بمثل حديثهما غير أن ابن علية في حديثه العنب . كما قال ابن إدريس وفي حديث عيسى الزبيب . كما قال ابن مسهر .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2022-10-27T08:46:01.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5411,
+            "title": "৬. মধ্যপান হারাম হওয়ার বিধান নাযিল",
+            "title_en": null,
+            "title_ar": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ",
+            "title_without_harkat": "باب فِي نُزُولِ تَحْرِيمِ الْخَمْرِ"
+        },
+        "rabis": [
+            {
+                "id": 448,
+                "title": "আবূ হায়্যান আত তায়মী ((رحمة الله))",
+                "title_en": "Abu Hayyan At-Taymi",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7575,
+                "title": "3032-3",
+                "hadith_number": 7279,
+                "hadith_id": 14328,
+                "book_id": 2,
+                "created_at": "2024-10-28T16:00:27.000Z",
+                "updated_at": "2024-10-28T16:00:27.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14329,
+        "title": "৭. মহান আল্লাহর বাণীঃ তারা দু’টি বিবাদমান পক্ষে তাদের প্রতিপালকের সম্বন্ধে বিতর্ক করে",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى {هَذَانِ خَصْمَانِ اخْتَصَمُوا فِي رَبِّهِمْ}",
+        "title_without_harkat": "باب في قوله تعالى: {هذان خصمان اختصموا في ربهم} [الحج: 19]",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5412,
+        "rabi_id": 117,
+        "type_id": 1,
+        "hadith_number": 7280,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৮০। আমর ইবনে যুরারা (রাহঃ) ......... আবু যর ((رضي الله عنه)) থেকে বর্ণিত। তিনি কসম করে বলতেন, ″তারা দুটি বিবাদমান পক্ষ তাদের প্রতিপালক সম্বন্ধে বিতর্ক করে″ আল্লাহর এ ইরশাদ ঐ লোকদের ব্যাপারেই নাযিল হয়েছে, যারা বদরের দিন লড়াই করার জন্য যুদ্ধ ক্ষেত্রে নেমেছিল। এদের একদিকে ছিলেন আলী, হামযা ও উবাইদা ইবনুল হারিস ((رضي الله عنه)) আর অন্য দিকে ছিলো, রাবীআর দুই পুত্র উকবা ও শায়বা এবং ওয়ালীদ ইবনে উকবা।",
+        "description_en": "Abu Dharr took an oath that this verse:<br>\" These two adversaries who dispute about their Lord\" (xxii. 19) was revealed in connection with those who on the Day of Badr came out (of rows to fight against the non-believers and they were) Hamza, ’Ali, ’Ubaida b. Harith (from the side of the Muslims) and ’Utba and Shaiba, both of them the sons of Rabi’a and Walid b. ’Utba (from the side of the non-believers of Mecca).",
+        "description_ar": "حَدَّثَنَا عَمْرُو بْنُ زُرَارَةَ، حَدَّثَنَا هُشَيْمٌ، عَنْ أَبِي هَاشِمٍ، عَنْ أَبِي مِجْلَزٍ، عَنْ قَيْسِ، بْنِ عُبَادٍ قَالَ سَمِعْتُ أَبَا ذَرٍّ، يُقْسِمُ قَسَمًا إِنَّ ( هَذَانِ خَصْمَانِ اخْتَصَمُوا فِي رَبِّهِمْ) إِنَّهَا نَزَلَتْ فِي الَّذِينَ بَرَزُوا يَوْمَ بَدْرٍ حَمْزَةُ وَعَلِيٌّ وَعُبَيْدَةُ بْنُ الْحَارِثِ وَعُتْبَةُ وَشَيْبَةُ ابْنَا رَبِيعَةَ وَالْوَلِيدُ بْنُ عُتْبَةَ .",
+        "description_without_harkat": "حدثنا عمرو بن زرارة، حدثنا هشيم، عن أبي هاشم، عن أبي مجلز، عن قيس، بن عباد قال سمعت أبا ذر، يقسم قسما إن ( هذان خصمان اختصموا في ربهم) إنها نزلت في الذين برزوا يوم بدر حمزة وعلي وعبيدة بن الحارث وعتبة وشيبة ابنا ربيعة والوليد بن عتبة .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T16:00:54.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5412,
+            "title": "৭. মহান আল্লাহর বাণীঃ তারা দু’টি বিবাদমান পক্ষে তাদের প্রতিপালকের সম্বন্ধে বিতর্ক করে",
+            "title_en": null,
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى {هَذَانِ خَصْمَانِ اخْتَصَمُوا فِي رَبِّهِمْ}",
+            "title_without_harkat": "باب في قوله تعالى: {هذان خصمان اختصموا في ربهم} [الحج: 19]"
+        },
+        "rabis": [
+            {
+                "id": 117,
+                "title": "হযরত আবু যার গিফারী (رضي الله عنه)",
+                "title_en": "Abu Zar Al-Gifari (RA)",
+                "title_ar": "أبو ذر جندب بن جنادة الغفاري",
+                "death_year": "32"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7576,
+                "title": "3033-1",
+                "hadith_number": 7280,
+                "hadith_id": 14329,
+                "book_id": 2,
+                "created_at": "2024-10-28T16:00:54.000Z",
+                "updated_at": "2024-10-28T16:00:54.000Z"
+            }
+        ]
+    },
+    {
+        "id": 14330,
+        "title": "৭. মহান আল্লাহর বাণীঃ তারা দু’টি বিবাদমান পক্ষে তাদের তাদের প্রতিপালকের সম্বন্ধে বিতর্ক করে",
+        "title_en": "",
+        "title_ar": "باب فِي قَوْلِهِ تَعَالَى {هَذَانِ خَصْمَانِ اخْتَصَمُوا فِي رَبِّهِمْ}",
+        "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى {هَذَانِ خَصْمَانِ اخْتَصَمُوا فِي رَبِّهِمْ}",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 142,
+        "title_id": 5413,
+        "rabi_id": 117,
+        "type_id": 1,
+        "hadith_number": 7281,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৭২৮১। আবু বকর ইবনে আবি শাঈবা (অন্য সনদে) মুহাম্মাদ ইবনে মুসান্না (রাহঃ) ......... আবু যর ((رضي الله عنه)) থেকে বর্ণিত। তিনি কসম করে বলতেন,هَذَانِ خَصْمَانِ আয়াতটি নাযিল হয়েছে-অতঃপর হুশায়মের অনুরূপ বর্ণনা করেছেন।",
+        "description_en": "This hadith has been narrated on the authority of Abu Dharr through another chain of transmitters.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا وَكِيعٌ، ح وَحَدَّثَنِي مُحَمَّدُ بْنُ الْمُثَنَّى، حَدَّثَنَا عَبْدُ الرَّحْمَنِ، جَمِيعًا عَنْ سُفْيَانَ، عَنْ أَبِي هَاشِمٍ، عَنْ أَبِي مِجْلَزٍ، عَنْ قَيْسِ بْنِ عُبَادٍ، قَالَ سَمِعْتُ أَبَا ذَرٍّ، يُقْسِمُ لَنَزَلَتْ ( هَذَانِ خَصْمَانِ) بِمِثْلِ حَدِيثِ هُشَيْمٍ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا وكيع، ح وحدثني محمد بن المثنى، حدثنا عبد الرحمن، جميعا عن سفيان، عن أبي هاشم، عن أبي مجلز، عن قيس بن عباد، قال سمعت أبا ذر، يقسم لنزلت ( هذان خصمان) بمثل حديث هشيم .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:16.000Z",
+        "updated_at": "2024-10-28T16:01:17.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 142,
+            "title": "৫৭- কুরআনে কারীমের তাফসীর অধ্যায়",
+            "title_en": "57. The Book of Commentary on the Qur&#039;an",
+            "title_ar": "كتاب التفسير",
+            "range_start": 7242,
+            "range_end": 7281
+        },
+        "titles": {
+            "id": 5413,
+            "title": "৭. মহান আল্লাহর বাণীঃ তারা দু’টি বিবাদমান পক্ষে তাদের তাদের প্রতিপালকের সম্বন্ধে বিতর্ক করে",
+            "title_en": "",
+            "title_ar": "باب فِي قَوْلِهِ تَعَالَى {هَذَانِ خَصْمَانِ اخْتَصَمُوا فِي رَبِّهِمْ}",
+            "title_without_harkat": "باب فِي قَوْلِهِ تَعَالَى {هَذَانِ خَصْمَانِ اخْتَصَمُوا فِي رَبِّهِمْ}"
+        },
+        "rabis": [
+            {
+                "id": 117,
+                "title": "হযরত আবু যার গিফারী (رضي الله عنه)",
+                "title_en": "Abu Zar Al-Gifari (RA)",
+                "title_ar": "أبو ذر جندب بن جنادة الغفاري",
+                "death_year": "32"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 7578,
+                "title": "3033-2",
+                "hadith_number": 7281,
+                "hadith_id": 14330,
+                "book_id": 2,
+                "created_at": "2024-10-28T17:04:03.000Z",
+                "updated_at": "2024-10-28T17:04:03.000Z"
+            }
+        ]
+    }
+]

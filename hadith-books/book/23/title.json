@@ -1,0 +1,28 @@
+[
+      {
+        "id": 730,
+        "title": "ا ب ج",
+        "title_en": null,
+        "title_ar": null,
+        "book_id": 23,
+        "status": "active",
+        "sequence": 1,
+        "total_hadith": 139,
+        "range_start": 1,
+        "range_end": 139,
+        "created_at": null,
+        "updated_at": null,
+        "book": {
+          "id": 23,
+          "title": "সহীফায়ে হাম্মাম ইবনে মুনাব্বিহ (উর্দু)",
+          "title_en": "সহীফায়ে হাম্মাম ইবনে মুনাব্বিহ (উর্দু)",
+          "english_title": "Sahifah Hammam ibn Munabbih",
+          "title_ar": "صحيفة همام بن منبه",
+          "has_title": 0,
+          "translation_type": "urdu",
+          "total_section": 1,
+          "total_hadith": 138
+        },
+        "hadith_count": 138
+      }
+    ]

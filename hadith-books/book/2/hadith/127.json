@@ -1,0 +1,1969 @@
+[
+    {
+        "id": 12716,
+        "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+        "title_en": "",
+        "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "title_without_harkat": "باب النهي عن سب الدهر",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5081,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5667,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৬৭। আবু তাহির (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) কে আমি বলতে শুনেছি, মহীয়ান গরীয়ান আল্লাহ বলেনঃ আদম সন্তান সময় ও কালকে গাল-মন্দ করে, অথচ আমিই সময়, আমার হাতেই রাত ও দিন (-এর বিবর্তন সাধিত হয়)।",
+        "description_en": "Abu Huraira reported:<br>I heard Allah’s Messenger (ﷺ) as saying: Allah, the Exalted and Glorious, said: The son of Adam abuses Dahr (the time), whereas I am Dahr since in My hand are the day and the night.",
+        "description_ar": "حَدَّثَنِي أَبُو الطَّاهِرِ، أَحْمَدُ بْنُ عَمْرِو بْنِ سَرْحٍ وَحَرْمَلَةُ بْنُ يَحْيَى قَالاَ أَخْبَرَنَا ابْنُ وَهْبٍ، حَدَّثَنِي يُونُسُ، عَنِ ابْنِ شِهَابٍ، أَخْبَرَنِي أَبُو سَلَمَةَ بْنُ عَبْدِ الرَّحْمَنِ، قَالَ قَالَ أَبُو هُرَيْرَةَ سَمِعْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم يَقُولُ  \" قَالَ اللَّهُ عَزَّ وَجَلَّ يَسُبُّ ابْنُ آدَمَ الدَّهْرَ وَأَنَا الدَّهْرُ بِيَدِيَ اللَّيْلُ وَالنَّهَارُ \" .",
+        "description_without_harkat": "حدثني أبو الطاهر، أحمد بن عمرو بن سرح وحرملة بن يحيى قالا أخبرنا ابن وهب، حدثني يونس، عن ابن شهاب، أخبرني أبو سلمة بن عبد الرحمن، قال قال أبو هريرة سمعت رسول الله صلى الله عليه وسلم يقول  \" قال الله عز وجل يسب ابن آدم الدهر وأنا الدهر بيدي الليل والنهار \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:43:04.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5081,
+            "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+            "title_en": null,
+            "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+            "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5845,
+                "title": "2246-1",
+                "hadith_number": 5667,
+                "hadith_id": 12716,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:43:04.000Z",
+                "updated_at": "2024-10-23T06:43:04.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12717,
+        "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+        "title_en": "",
+        "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5081,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5668,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৬৮। ইসহাক ইবনে ইবরাহীম ও ইবনে আবু উমর (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। রাসূলুল্লাহ (ﷺ) বলেছেনঃ মহীয়ান গরীয়ান আল্লাহ বলেন, আদম সন্তান আমাকে কষ্ট দেয়, সে সময়কে গালি দেয়, অথচ আমিই সময়, রাত ও দিন আমিই বিবর্তিত করে থাকি।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>Allah, the Exalted and Glorious, said: The son of Adam displeases Me by abusing Dahr (time), whereas I am Dahr--I alternate the night and the day.",
+        "description_ar": "وَحَدَّثَنَاهُ إِسْحَاقُ بْنُ إِبْرَاهِيمَ، وَابْنُ أَبِي عُمَرَ، - وَاللَّفْظُ لاِبْنِ أَبِي عُمَرَ - قَالَ إِسْحَاقُ أَخْبَرَنَا وَقَالَ ابْنُ أَبِي عُمَرَ، حَدَّثَنَا سُفْيَانُ، عَنِ الزُّهْرِيِّ، عَنِ ابْنِ الْمُسَيَّبِ، عَنْ أَبِي، هُرَيْرَةَ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ  \" قَالَ اللَّهُ عَزَّ وَجَلَّ يُؤْذِينِي ابْنُ آدَمَ يَسُبُّ الدَّهْرَ وَأَنَا الدَّهْرُ أُقَلِّبُ اللَّيْلَ وَالنَّهَارَ \" .",
+        "description_without_harkat": "وحدثناه إسحاق بن إبراهيم، وابن أبي عمر، - واللفظ لابن أبي عمر - قال إسحاق أخبرنا وقال ابن أبي عمر، حدثنا سفيان، عن الزهري، عن ابن المسيب، عن أبي، هريرة أن رسول الله صلى الله عليه وسلم قال  \" قال الله عز وجل يؤذيني ابن آدم يسب الدهر وأنا الدهر أقلب الليل والنهار \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:43:20.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5081,
+            "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+            "title_en": null,
+            "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+            "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5846,
+                "title": "2246-2",
+                "hadith_number": 5668,
+                "hadith_id": 12717,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:43:20.000Z",
+                "updated_at": "2024-10-23T06:43:20.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12718,
+        "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+        "title_en": "",
+        "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5081,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5669,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৬৯। আব্দ ইবনে হুমায়দ (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ মহীয়ান-গরীয়ান আল্লাহ বলেনঃ আদম সন্তান আমাকে কষ্ট দেয়, সে বলে, হায় সময়ের ফের-দুর্ভাগ্য! (আমার সময় মন্দ)! তোমাদের কেউ যেন ’হায় সময়ের ফের’ না বলে। কেননা আমিই তো সময়; আর রাত ও দিন আমিই পরিবর্তিত করে থাকি; যখন আমি ইচ্ছা করি, তখন তাদের দু’টিকে সংকুচিত করে দেই।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>Allah, the Exalted and Glorious, said: The son of Adam causes Me pain as he says: Woe be upon the Time. None of you should say this: Woe be upon the Time, as I am the Time (because) I alternate the day and the night, and when I wish I can finish them up.",
+        "description_ar": "وَحَدَّثَنَا عَبْدُ بْنُ حُمَيْدٍ، أَخْبَرَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا مَعْمَرٌ، عَنِ الزُّهْرِيِّ، عَنِ ابْنِ، الْمُسَيَّبِ عَنْ أَبِي هُرَيْرَةَ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" قَالَ اللَّهُ عَزَّ وَجَلَّ يُؤْذِينِي ابْنُ آدَمَ يَقُولُ يَا خَيْبَةَ الدَّهْرِ . فَلاَ يَقُولَنَّ أَحَدُكُمْ يَا خَيْبَةَ الدَّهْرِ . فَإِنِّي أَنَا الدَّهْرُ أُقَلِّبُ لَيْلَهُ وَنَهَارَهُ فَإِذَا شِئْتُ قَبَضْتُهُمَا \" .",
+        "description_without_harkat": "وحدثنا عبد بن حميد، أخبرنا عبد الرزاق، أخبرنا معمر، عن الزهري، عن ابن، المسيب عن أبي هريرة، قال قال رسول الله صلى الله عليه وسلم  \" قال الله عز وجل يؤذيني ابن آدم يقول يا خيبة الدهر . فلا يقولن أحدكم يا خيبة الدهر . فإني أنا الدهر أقلب ليله ونهاره فإذا شئت قبضتهما \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:46:05.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5081,
+            "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+            "title_en": null,
+            "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+            "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5847,
+                "title": "2246-3",
+                "hadith_number": 5669,
+                "hadith_id": 12718,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:46:06.000Z",
+                "updated_at": "2024-10-23T06:46:06.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12719,
+        "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+        "title_en": "",
+        "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5081,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5670,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭০। কুতায়বা ইবনে সাঈদ (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত যে, রাসূলুল্লাহ (ﷺ) বলেছেনঃ তোমাদের কেউ যেন ‘হায়! সময়ের ভোগ’ না বলে। কেননা আল্লাহ, তিনি সময় (নিয়ন্ত্রক)।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>None of you should say: Woe be upon the Time, for verily Allah is the Time.",
+        "description_ar": "حَدَّثَنَا قُتَيْبَةُ، حَدَّثَنَا الْمُغِيرَةُ بْنُ عَبْدِ الرَّحْمَنِ، عَنْ أَبِي الزِّنَادِ، عَنِ الأَعْرَجِ، عَنْ أَبِي هُرَيْرَةَ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ  \" لاَ يَقُولَنَّ أَحَدُكُمْ يَا خَيْبَةَ الدَّهْرِ . فَإِنَّ اللَّهَ هُوَ الدَّهْرُ \" .",
+        "description_without_harkat": "حدثنا قتيبة، حدثنا المغيرة بن عبد الرحمن، عن أبي الزناد، عن الأعرج، عن أبي هريرة، أن رسول الله صلى الله عليه وسلم قال  \" لا يقولن أحدكم يا خيبة الدهر . فإن الله هو الدهر \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:47:57.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5081,
+            "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+            "title_en": null,
+            "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+            "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5850,
+                "title": " 2246-4",
+                "hadith_number": 5670,
+                "hadith_id": 12719,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:48:51.000Z",
+                "updated_at": "2024-10-23T06:48:51.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12720,
+        "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+        "title_en": "",
+        "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5081,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5671,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭১। যুহাইর ইবনে হারব (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) সূত্রে নবী (ﷺ) থেকে বর্ণিত। তিনি বলেন, তোমরা সময়কে গালমন্দ করো না। কেননা আল্লাহ, তিনিই সময়।",
+        "description_en": "Abu Huraira reported Allah’s Apostle (ﷺ) as saying:<br>Do not abuse Time, for it is Allah Who is the Time.",
+        "description_ar": "وَحَدَّثَنِي زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا جَرِيرٌ، عَنْ هِشَامٍ، عَنِ ابْنِ سِيرِينَ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" لاَ تَسُبُّوا الدَّهْرَ فَإِنَّ اللَّهَ هُوَ الدَّهْرُ \" .",
+        "description_without_harkat": "وحدثني زهير بن حرب، حدثنا جرير، عن هشام، عن ابن سيرين، عن أبي هريرة، عن النبي صلى الله عليه وسلم قال  \" لا تسبوا الدهر فإن الله هو الدهر \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:48:33.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5081,
+            "title": "১. সময় ও কালকে গালি দেওয়া নিষিদ্ধ",
+            "title_en": null,
+            "title_ar": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،",
+            "title_without_harkat": "باب النَّهْىِ عَنْ سَبِّ الدَّهْرِ،"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5849,
+                "title": "2246-5",
+                "hadith_number": 5671,
+                "hadith_id": 12720,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:48:33.000Z",
+                "updated_at": "2024-10-23T06:48:33.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12721,
+        "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "title_without_harkat": "باب كراهة تسمية العنب كرما",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5082,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5672,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭২। হাজ্জাজ ইবনে শাইর (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ তোমাদের কেউ সময়কে গালি দিবে না। কেননা আল্লাহ, তিনিই সময়। আর তোমাদের কেউ আঙ্গুরকে (الْعِنَب এর পরিবর্তে) الْكَرْم (মর্যাদাবান) বলবে না। কেননা الكرم (বদান্যতা ও মর্যাদাশীল) হল মুসলমান ব্যক্তি।[১] <br><br><br><br>[১] الكرم শব্দের অর্থ হল, আভিজাত্য, বদান্যতা ও মর্যাদা। সুতরাং শব্দের অর্থ বিচারে একজন মুসলমানই এ নামে অভিহিত হওয়ার যোগ্য। কেননা আল্লাহ্ পাকের কাছে একজন মুসলমানই এ মর্যাদার অধিকারী। একটি নাম, বিশেষত যা সে যুগে মদের উৎস ও উপকরণ ছিল, তা এ মর্যাদা পেতে পারে না।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>None of you should abuse Time for it is Allah Who is the Time, and none of you should call ’Inab (grape) as al-karm, for karm is a Muslim person.",
+        "description_ar": "حَدَّثَنَا حَجَّاجُ بْنُ الشَّاعِرِ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا مَعْمَرٌ، عَنْ أَيُّوبَ، عَنِ ابْنِ، سِيرِينَ عَنْ أَبِي هُرَيْرَةَ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" لاَ يَسُبُّ أَحَدُكُمُ الدَّهْرَ فَإِنَّ اللَّهَ هُوَ الدَّهْرُ وَلاَ يَقُولَنَّ أَحَدُكُمْ لِلْعِنَبِ الْكَرْمَ . فَإِنَّ الْكَرْمَ الرَّجُلُ الْمُسْلِمُ \" .",
+        "description_without_harkat": "حدثنا حجاج بن الشاعر، حدثنا عبد الرزاق، أخبرنا معمر، عن أيوب، عن ابن، سيرين عن أبي هريرة، قال قال رسول الله صلى الله عليه وسلم  \" لا يسب أحدكم الدهر فإن الله هو الدهر ولا يقولن أحدكم للعنب الكرم . فإن الكرم الرجل المسلم \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:50:13.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5082,
+            "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+            "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5851,
+                "title": "2247-1",
+                "hadith_number": 5672,
+                "hadith_id": 12721,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:50:13.000Z",
+                "updated_at": "2024-10-23T06:50:13.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12722,
+        "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5082,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5673,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭৩। আমর আন-নাকিদ ও ইবনে আবু উমর (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) সূত্রে নবী (ﷺ) থেকে বর্ণিত। তিনি বলেন, তোমরা (আঙ্গুরকে) আল-কারম’ বল না কেননা ’কারম’ হল ‘মুমিনের কালব।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>Do not use the word karm (for wine) for worthy of respect is the heart of a believer.",
+        "description_ar": "حَدَّثَنَا عَمْرٌو النَّاقِدُ، وَابْنُ أَبِي عُمَرَ، قَالاَ حَدَّثَنَا سُفْيَانُ، عَنِ الزُّهْرِيِّ، عَنْ سَعِيدٍ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" لاَ تَقُولُوا كَرْمٌ . فَإِنَّ الْكَرْمَ قَلْبُ الْمُؤْمِنِ \" .",
+        "description_without_harkat": "حدثنا عمرو الناقد، وابن أبي عمر، قالا حدثنا سفيان، عن الزهري، عن سعيد، عن أبي هريرة، عن النبي صلى الله عليه وسلم قال  \" لا تقولوا كرم . فإن الكرم قلب المؤمن \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:50:38.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5082,
+            "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+            "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5852,
+                "title": " 2247-2",
+                "hadith_number": 5673,
+                "hadith_id": 12722,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:50:38.000Z",
+                "updated_at": "2024-10-23T06:50:38.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12723,
+        "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5082,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5674,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭৪। যুহাইর ইবনে হারব (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) সূত্রে নবী (ﷺ) থেকে বর্ণিত। তিনি বলেন, আঙ্গুরকে الْكَرْمَ নাম দিও না। কেননা আল-কারম’ হল মুসলিম ব্যক্তি।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>Do not name grape as karm, for worthy of respect is a Muslim.",
+        "description_ar": "حَدَّثَنَا زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا جَرِيرٌ، عَنْ هِشَامٍ، عَنِ ابْنِ سِيرِينَ، عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" لاَ تُسَمُّوا الْعِنَبَ الْكَرْمَ فَإِنَّ الْكَرْمَ الرَّجُلُ الْمُسْلِمُ \" .",
+        "description_without_harkat": "حدثنا زهير بن حرب، حدثنا جرير، عن هشام، عن ابن سيرين، عن أبي هريرة، عن النبي صلى الله عليه وسلم قال  \" لا تسموا العنب الكرم فإن الكرم الرجل المسلم \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:50:58.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5082,
+            "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+            "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5853,
+                "title": "2247-3",
+                "hadith_number": 5674,
+                "hadith_id": 12723,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:50:58.000Z",
+                "updated_at": "2024-10-23T06:50:58.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12724,
+        "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5082,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5675,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭৫। যুহাইর ইবনে হারব (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ তোমাদের কেউ (আংগুরকে) অবশ্যই আল-কারাম’ বলবে না। কেননা আল-কারাম’ হল মুমিনের কালব।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>None of you should use the word al-harin (for grape) for the heart of a believer is karm (worthy of respect).",
+        "description_ar": "حَدَّثَنَا زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا عَلِيُّ بْنُ حَفْصٍ، حَدَّثَنَا وَرْقَاءُ، عَنْ أَبِي الزِّنَادِ، عَنِ الأَعْرَجِ، عَنْ أَبِي هُرَيْرَةَ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" لاَ يَقُولَنَّ أَحَدُكُمُ الْكَرْمُ . فَإِنَّمَا الْكَرْمُ قَلْبُ الْمُؤْمِنِ \" .",
+        "description_without_harkat": "حدثنا زهير بن حرب، حدثنا علي بن حفص، حدثنا ورقاء، عن أبي الزناد، عن الأعرج، عن أبي هريرة، قال قال رسول الله صلى الله عليه وسلم  \" لا يقولن أحدكم الكرم . فإنما الكرم قلب المؤمن \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:51:15.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5082,
+            "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+            "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5855,
+                "title": "2247-4",
+                "hadith_number": 5675,
+                "hadith_id": 12724,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:53:14.000Z",
+                "updated_at": "2024-10-23T06:53:14.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12725,
+        "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5082,
+        "rabi_id": 463,
+        "type_id": 1,
+        "hadith_number": 5676,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭৬। ইবনে রাফি (রাহঃ) ......... হাম্মাম ইবনে মুনাব্বিহ (রাহঃ) থেকে বর্ণিত। তিনি বলেন, এ হল সে সব হাদীস যা আবু হুরায়রা ((رضي الله عنه)) রাসূলুল্লাহ (ﷺ) থেকে আমাদের কাছে রিওয়ায়াত করেছেন। এ কথা বলে তিনি কয়েকটি হাদীস উল্লেখ করে। সে সবের একটি হল রাসূলুল্লাহ (ﷺ) বলেছেনঃ তোমাদের কেউ আংগুরকে (العنب না বলে) কখনো الكَرم বলবে না। ’আল কারম’ তো মুসলিম ব্যক্তি।",
+        "description_en": "Abu Huraira reported from Allah’s Messenger (ﷺ) various ahadith, one of which is this that he said:<br>None of you should use the word al-karm for ’Inab, for karm (worthy of respect) is a Muslim person.",
+        "description_ar": "وَحَدَّثَنَا ابْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا مَعْمَرٌ، عَنْ هَمَّامِ بْنِ مُنَبِّهٍ، قَالَ هَذَا مَا حَدَّثَنَا أَبُو هُرَيْرَةَ، عَنْ رَسُولِ اللَّهِ صلى الله عليه وسلم . فَذَكَرَ أَحَادِيثَ مِنْهَا وَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" لاَ يَقُولَنَّ أَحَدُكُمْ لِلْعِنَبِ الْكَرْمَ . إِنَّمَا الْكَرْمُ الرَّجُلُ الْمُسْلِمُ \" .",
+        "description_without_harkat": "وحدثنا ابن رافع، حدثنا عبد الرزاق، أخبرنا معمر، عن همام بن منبه، قال هذا ما حدثنا أبو هريرة، عن رسول الله صلى الله عليه وسلم . فذكر أحاديث منها وقال رسول الله صلى الله عليه وسلم  \" لا يقولن أحدكم للعنب الكرم . إنما الكرم الرجل المسلم \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:53:34.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5082,
+            "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+            "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا"
+        },
+        "rabis": [
+            {
+                "id": 463,
+                "title": "হাম্মাম ইবনে মুনাব্বিহ ((رحمة الله))",
+                "title_en": "Hammam Ibn Munabbih",
+                "title_ar": "همام بن منبه بن كامل بن سيج الأبناوي",
+                "death_year": "132"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5856,
+                "title": "2247-5",
+                "hadith_number": 5676,
+                "hadith_id": 12725,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:53:34.000Z",
+                "updated_at": "2024-10-23T06:53:34.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12726,
+        "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5082,
+        "rabi_id": 241,
+        "type_id": 1,
+        "hadith_number": 5677,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭৭। আলী ইবনে খাশরাম (রাহঃ) ......... আলকামা ইবনে ওয়াইল (রাহঃ) তার পিতা সূত্রে নবী (ﷺ) থেকে বর্ণিত। তিনি বলেন, তোমরা (আংগুরকে)- আল-কারম, বল না, বরংالْحَبَلَة (আল-হাবলাহ) বল।<br><br>অপর সনদে যুহাইর (রাহঃ) ......... সিমাক (রাহঃ) থেকে তিনি বলেন যে, আলকামা ইবনে ওয়াইল (রাহঃ) কে তাঁর পিতা সূত্রে নবী (ﷺ) থেকে বর্ণনা করতে শুনেছি। তিনি বলেছেন, তোমরা (আংগুরকে) আল-কারম- বল না। তবে বল আল-হাবালাহ (الْحَبَلَة) ও আল-ইনাব (الْعِنَب)। [১]<br><br><br>[১] الْحَبَلَة (আল-হাবালাহ্) আংগুরের একটি প্রচলিত নাম। যার অর্থ-আংগুর গাছ বা তার শাখা-প্রশাখা।",
+        "description_en": "’Alqama b. Wa’il reported, from his father, Allah’s Apostle (ﷺ) having said:<br>Do not say al-karm (for the word vine) but say al-habala (that is grape).<br><br>This hadith has been reported by Alqama b. Wa’il on the authority of his father with a different chain of transmitters and with a slight variation of wording.",
+        "description_ar": "حَدَّثَنَا عَلِيُّ بْنُ خَشْرَمٍ، أَخْبَرَنَا عِيسَى، - يَعْنِي ابْنَ يُونُسَ - عَنْ شُعْبَةَ، عَنْ سِمَاكِ، بْنِ حَرْبٍ عَنْ عَلْقَمَةَ بْنِ وَائِلٍ، عَنْ أَبِيهِ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" لاَ تَقُولُوا الْكَرْمُ . وَلَكِنْ قُولُوا الْحَبَلَةُ \" . يَعْنِي الْعِنَبَ .<br>وَحَدَّثَنِيهِ زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا عُثْمَانُ بْنُ عُمَرَ، حَدَّثَنَا شُعْبَةُ، عَنْ سِمَاكٍ، قَالَ سَمِعْتُ عَلْقَمَةَ بْنَ وَائِلٍ، عَنْ أَبِيهِ، أَنَّ النَّبِيَّ صلى الله عليه وسلم قَالَ  \" لاَ تَقُولُوا الْكَرْمُ . وَلَكِنْ قُولُوا الْعِنَبُ وَالْحَبَلَةُ \" .",
+        "description_without_harkat": "حدثنا علي بن خشرم، أخبرنا عيسى، - يعني ابن يونس - عن شعبة، عن سماك، بن حرب عن علقمة بن وائل، عن أبيه، عن النبي صلى الله عليه وسلم قال  \" لا تقولوا الكرم . ولكن قولوا الحبلة \" . يعني العنب .<br>وحدثنيه زهير بن حرب، حدثنا عثمان بن عمر، حدثنا شعبة، عن سماك، قال سمعت علقمة بن وائل، عن أبيه، أن النبي صلى الله عليه وسلم قال  \" لا تقولوا الكرم . ولكن قولوا العنب والحبلة \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:54:17.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5082,
+            "title": "২. العنب (আঙ্গুর) কে الكرم নামকরণ মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا",
+            "title_without_harkat": "باب كَرَاهَةِ تَسْمِيَةِ الْعِنَبِ كَرْمًا"
+        },
+        "rabis": [
+            {
+                "id": 241,
+                "title": "আলকামা ইবনে কায়স নাখঈ ((رحمة الله))",
+                "title_en": "Alqamah (RH)",
+                "title_ar": "عَلْقَمَةُ بنُ قَيْسِ بنِ عَبْدِ اللهِ أَبُو شِبْلٍ النَّخَعِيُّ",
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5858,
+                "title": "2248-2",
+                "hadith_number": 5677,
+                "hadith_id": 12726,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:54:17.000Z",
+                "updated_at": "2024-10-23T06:54:17.000Z"
+            },
+            {
+                "id": 5857,
+                "title": "2248-1",
+                "hadith_number": 5677,
+                "hadith_id": 12726,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:54:17.000Z",
+                "updated_at": "2024-10-23T06:54:17.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12727,
+        "title": "৩. ’আব্দ’ ’আমাত’ (দাস-দাসী) এবং ’মাওলা’, ’সায়্যিদ’ (মনিব ও নেতা) শব্দসমূহ ব্যবহারের বিধান",
+        "title_en": "",
+        "title_ar": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+        "title_without_harkat": "باب حكم إطلاق لفظة العبد، والأمة، والمولى، والسيد",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5083,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5678,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭৮। ইয়াহয়া ইবনে আইয়ুব, কুতায়বা ও ইবনে হুজর (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত যে, রাসূলুল্লাহ (ﷺ) বলেছেনঃ তোমাদের কেউعَبْدِي (আমার বান্দা, দাস)أَمَتِي (আমার বাঁদী, দাসী) বলবে না। কেননা তোমাদের প্রত্যেক পুরুষই আল্লাহর বান্দা (দাস) এবং তোমাদের প্রত্যেক মহিলাই আল্লাহর বাঁদী (দাসী)। বরং বলবে, غُلاَمِي -جَارِيَتِي -فَتَاىَ -فَتَاتِي (অর্থাৎ আমার বালক-কিশোর, আমার বালিকা-কিশোরী, আমার সেবক, আমার সেবিকা)।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>None of you should say: My bondman and my slave-girl, for all of you are the bondmen of Allah, and all your women are the slave-girls of Allah; but say: My servant, my girl, and my young man and my young girl.",
+        "description_ar": "حَدَّثَنَا يَحْيَى بْنُ أَيُّوبَ، وَقُتَيْبَةُ، وَابْنُ، حُجْرٍ قَالُوا حَدَّثَنَا إِسْمَاعِيلُ، - وَهُوَ ابْنُ جَعْفَرٍ - عَنِ الْعَلاَءِ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ  \" لاَ يَقُولَنَّ أَحَدُكُمْ عَبْدِي وَأَمَتِي . كُلُّكُمْ عَبِيدُ اللَّهِ وَكُلُّ نِسَائِكُمْ إِمَاءُ اللَّهِ وَلَكِنْ لِيَقُلْ غُلاَمِي وَجَارِيَتِي وَفَتَاىَ وَفَتَاتِي \" .",
+        "description_without_harkat": "حدثنا يحيى بن أيوب، وقتيبة، وابن، حجر قالوا حدثنا إسماعيل، - وهو ابن جعفر - عن العلاء، عن أبيه، عن أبي هريرة، أن رسول الله صلى الله عليه وسلم قال  \" لا يقولن أحدكم عبدي وأمتي . كلكم عبيد الله وكل نسائكم إماء الله ولكن ليقل غلامي وجاريتي وفتاى وفتاتي \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:55:27.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5083,
+            "title": "৩. ’আব্দ’ ’আমাত’ (দাস-দাসী) এবং ’মাওলা’, ’সায়্যিদ’ (মনিব ও নেতা) শব্দসমূহ ব্যবহারের বিধান",
+            "title_en": null,
+            "title_ar": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+            "title_without_harkat": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5859,
+                "title": "2249-1",
+                "hadith_number": 5678,
+                "hadith_id": 12727,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:55:27.000Z",
+                "updated_at": "2024-10-23T06:55:27.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12728,
+        "title": "৩. ’আব্দ’ ’আমাত’ (দাস-দাসী) এবং ’মাওলা’, ’সায়্যিদ’ (মনিব ও নেতা) শব্দসমূহ ব্যবহারের বিধান",
+        "title_en": "",
+        "title_ar": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+        "title_without_harkat": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5083,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5679,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৭৯। যুহাইর ইবনে হারব (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ তোমাদের কেউ অবশ্যই ’আমার দাস’ বলবে না। কেননা তোমাদের প্রত্যেকেই আল্লাহর দাস ও বান্দা। তবে সে বলবে আমার সেবক’। আর আব্দ তার মনিবকে আমার ‘রব’ বলবে না বরং বলবে আমার সায়্যিদ (মনিব ও নেতা)।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>None of you should say: My bondman, for all of you are the bondmen of Allah, but say: My young man, and the servant should not say: My Lord, but should say: My chief.",
+        "description_ar": "وَحَدَّثَنِي زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا جَرِيرٌ، عَنِ الأَعْمَشِ، عَنْ أَبِي صَالِحٍ، عَنْ أَبِي، هُرَيْرَةَ قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" لاَ يَقُولَنَّ أَحَدُكُمْ عَبْدِي . فَكُلُّكُمْ عَبِيدُ اللَّهِ وَلَكِنْ لِيَقُلْ فَتَاىَ . وَلاَ يَقُلِ الْعَبْدُ رَبِّي . وَلَكِنْ لِيَقُلْ سَيِّدِي \" .",
+        "description_without_harkat": "وحدثني زهير بن حرب، حدثنا جرير، عن الأعمش، عن أبي صالح، عن أبي، هريرة قال قال رسول الله صلى الله عليه وسلم  \" لا يقولن أحدكم عبدي . فكلكم عبيد الله ولكن ليقل فتاى . ولا يقل العبد ربي . ولكن ليقل سيدي \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:55:50.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5083,
+            "title": "৩. ’আব্দ’ ’আমাত’ (দাস-দাসী) এবং ’মাওলা’, ’সায়্যিদ’ (মনিব ও নেতা) শব্দসমূহ ব্যবহারের বিধান",
+            "title_en": null,
+            "title_ar": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+            "title_without_harkat": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5860,
+                "title": "2249-2",
+                "hadith_number": 5679,
+                "hadith_id": 12728,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:55:50.000Z",
+                "updated_at": "2024-10-23T06:55:50.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12729,
+        "title": "৩. ’আব্দ’ ’আমাত’ (দাস-দাসী) এবং ’মাওলা’, ’সায়্যিদ’ (মনিব ও নেতা) শব্দসমূহ ব্যবহারের বিধান",
+        "title_en": "",
+        "title_ar": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+        "title_without_harkat": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5083,
+        "rabi_id": 225,
+        "type_id": 1,
+        "hadith_number": 5680,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮০। আবু বকর ইবনে আবি শাঈবা, আবু কুরায়ব ও আবু সাঈদ আশাজ্জ (রাহঃ) ......... আ’মাশ (রাহঃ) থেকে উল্লিখিত সনদে হাদীস রিওয়ায়াত করেছেন। তবে তাদের দু’জনের রিওয়ায়াতে রয়েছে গোলাম তার সায়্যিদ ও মনিবকে আমার মাওলা’ বলবে না এবং (প্রথম সনদের) রাবী আবু মুআবিয়া (রাহঃ) এর বর্ণিত হাদীসে আরো অধিক বিষয়ে উল্লেখ করেছেন যে, ’কেননা তোমাদের মাওলা’ হলেন আল্লাহ।",
+        "description_en": "This hadith has been reported on the authority of al-A’mash with the same chain of transmitters, and the words are that the servant should not say to his chief:<br>My Lord, and Abu Mu’awiya made an addition:\" For it is Allah, the Exalted and Glorious, Who is your Lord.\"",
+        "description_ar": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَأَبُو كُرَيْبٍ قَالاَ حَدَّثَنَا أَبُو مُعَاوِيَةَ، ح وَحَدَّثَنَا أَبُو سَعِيدٍ الأَشَجُّ، حَدَّثَنَا وَكِيعٌ، كِلاَهُمَا عَنِ الأَعْمَشِ، بِهَذَا الإِسْنَادِ وَفِي حَدِيثِهِمَا \" وَلاَ يَقُلِ الْعَبْدُ لِسَيِّدِهِ مَوْلاَىَ \" . وَزَادَ فِي حَدِيثِ أَبِي مُعَاوِيَةَ \" فَإِنَّ مَوْلاَكُمُ اللَّهُ عَزَّ وَجَلَّ \" .",
+        "description_without_harkat": "وحدثنا أبو بكر بن أبي شيبة، وأبو كريب قالا حدثنا أبو معاوية، ح وحدثنا أبو سعيد الأشج، حدثنا وكيع، كلاهما عن الأعمش، بهذا الإسناد وفي حديثهما \" ولا يقل العبد لسيده مولاى \" . وزاد في حديث أبي معاوية \" فإن مولاكم الله عز وجل \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:56:11.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5083,
+            "title": "৩. ’আব্দ’ ’আমাত’ (দাস-দাসী) এবং ’মাওলা’, ’সায়্যিদ’ (মনিব ও নেতা) শব্দসমূহ ব্যবহারের বিধান",
+            "title_en": null,
+            "title_ar": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+            "title_without_harkat": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ"
+        },
+        "rabis": [
+            {
+                "id": 225,
+                "title": "সুলাইমান আ‘মাশ ((رحمة الله))",
+                "title_en": "A'mash (RH)",
+                "title_ar": null,
+                "death_year": "147"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5861,
+                "title": "2249-3",
+                "hadith_number": 5680,
+                "hadith_id": 12729,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:56:11.000Z",
+                "updated_at": "2024-10-23T06:56:11.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12730,
+        "title": "৩. ’আব্দ’ ’আমাত’ (দাস-দাসী) এবং ’মাওলা’, ’সায়্যিদ’ (মনিব ও নেতা) শব্দসমূহ ব্যবহারের বিধান",
+        "title_en": "",
+        "title_ar": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+        "title_without_harkat": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5083,
+        "rabi_id": 463,
+        "type_id": 1,
+        "hadith_number": 5681,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮১। মুহাম্মাদ ইবনে রাফি (রাহঃ) ......... হাম্মাম ইবনে মুনাব্বিহ (রাহঃ) থেকে বর্ণিত। তিনি বলেন, এ হল সে সব হাদীস, যা আবু হুরায়রা ((رضي الله عنه)) রাসূলুল্লাহ (ﷺ) থেকে আমাদের কাছে রিওয়ায়াত করেছেন। একথা বলে তিনি কয়েকখানি হাদীস উল্লেখ করেছেন। সে সবের একখানি হল, রাসূলুল্লাহ (ﷺ) আরও বলেছেনঃ তোমাদের কেউ (মনিব সম্বন্ধে এভাবে) বলবে না যে, তোমার ’রব’কে পান করাও, তোমার ’রব’কে খাবার দাও, তোমার ’রব’কে উযু করাও। তিনি আরও বলেন, তোমাদের কেউ (নিজেও) বলবে না, আমার রব বরং বলবে আমার সায়্যিদ সরদার বা নেতা, আমার মাওলা-মনিব। আর তোমাদের কেউ বলবে না, আমার বান্দা আমার বাঁদী, বরং বলবে, কিশোর, কিশরী, বালক, বালিকা (আমার সেবক আমার সেবিকা)।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) so many ahadith and one of them is this that Allah’s Messenger (ﷺ) said:<br>None of you should say: Supply drink to your lord, feed your lord, help your lord in performing ablution, and none of you should say: My Lord. He should say: My chief, my patron; and none of you should say: My bondman, my slave-girl, but simply say: My boy, my girl, my servant.",
+        "description_ar": "وَحَدَّثَنَا مُحَمَّدُ بْنُ رَافِعٍ، حَدَّثَنَا عَبْدُ الرَّزَّاقِ، أَخْبَرَنَا مَعْمَرٌ، عَنْ هَمَّامِ بْنِ مُنَبِّهٍ، قَالَ هَذَا مَا حَدَّثَنَا أَبُو هُرَيْرَةَ، عَنْ رَسُولِ اللَّهِ صلى الله عليه وسلم . فَذَكَرَ أَحَادِيثَ مِنْهَا وَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" لاَ يَقُلْ أَحَدُكُمُ اسْقِ رَبَّكَ أَطْعِمْ رَبَّكَ وَضِّئْ رَبَّكَ . وَلاَ يَقُلْ أَحَدُكُمْ رَبِّي . وَلْيَقُلْ سَيِّدِي مَوْلاَىَ وَلاَ يَقُلْ أَحَدُكُمْ عَبْدِي أَمَتِي . وَلْيَقُلْ فَتَاىَ فَتَاتِي غُلاَمِي \" .",
+        "description_without_harkat": "وحدثنا محمد بن رافع، حدثنا عبد الرزاق، أخبرنا معمر، عن همام بن منبه، قال هذا ما حدثنا أبو هريرة، عن رسول الله صلى الله عليه وسلم . فذكر أحاديث منها وقال رسول الله صلى الله عليه وسلم  \" لا يقل أحدكم اسق ربك أطعم ربك وضئ ربك . ولا يقل أحدكم ربي . وليقل سيدي مولاى ولا يقل أحدكم عبدي أمتي . وليقل فتاى فتاتي غلامي \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:57:03.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5083,
+            "title": "৩. ’আব্দ’ ’আমাত’ (দাস-দাসী) এবং ’মাওলা’, ’সায়্যিদ’ (মনিব ও নেতা) শব্দসমূহ ব্যবহারের বিধান",
+            "title_en": null,
+            "title_ar": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ",
+            "title_without_harkat": "باب حُكْمِ إِطْلاَقِ لَفْظَةِ الْعَبْدِ وَالأَمَةِ وَالْمَوْلَى وَالسَّيِّدِ"
+        },
+        "rabis": [
+            {
+                "id": 463,
+                "title": "হাম্মাম ইবনে মুনাব্বিহ ((رحمة الله))",
+                "title_en": "Hammam Ibn Munabbih",
+                "title_ar": "همام بن منبه بن كامل بن سيج الأبناوي",
+                "death_year": "132"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5862,
+                "title": "2249-4",
+                "hadith_number": 5681,
+                "hadith_id": 12730,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:57:03.000Z",
+                "updated_at": "2024-10-23T06:57:03.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12731,
+        "title": "৪. কোন মানুষের নিজের (দুরবস্থা প্রকাশে) خَبُثَتْ نَفْسِي আমার মন খবীছ (পিশাচ অধম হয়ে গিয়েছে) বলা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي",
+        "title_without_harkat": "باب كراهة قول الإنسان خبثت نفسي",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5084,
+        "rabi_id": 2,
+        "type_id": 1,
+        "hadith_number": 5682,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮২। আবু বকর ইবনে আবি শাঈবা, আবু কুরায়ব মূহাম্মাদ ইবনে আলা (রাহঃ) ......... আয়িশা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ কেউ নিজেকে (দুরবস্থা প্রকাশে) বলবে না, আমার মন খবীস (পিশাচ ইতর নিকৃষ্ট) হয়ে গিয়েছে, বরং বলবে (لَقِسَتْ) আমার মন সংকুচিত ও বিমর্ষ হয়ে গিয়েছে। এ ভাষ্য আবু কুরায়ব (রাহঃ) বর্ণিত হাদীসের। আর আবু বকর (রাহঃ) নবী (ﷺ) থেকে যা বর্ণনা করেছেন তাতে لَكِنْ শব্দটির উল্লেখ নেই।",
+        "description_en": "’A’isha reported Allah’s Messenger (ﷺ) having said:<br>None of you should say: \"My soul has become evil,\" but he should say: \"My soul has become remorseless.\" This hadith has been transmitted on the authority of Abu Bakr with a slight variation of wording.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا سُفْيَانُ بْنُ عُيَيْنَةَ، ح وَحَدَّثَنَا أَبُو كُرَيْبٍ، مُحَمَّدُ بْنُ الْعَلاَءِ حَدَّثَنَا أَبُو أُسَامَةَ، كِلاَهُمَا عَنْ هِشَامٍ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، قَالَتْ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" لاَ يَقُولَنَّ أَحَدُكُمْ خَبُثَتْ نَفْسِي . وَلَكِنْ لِيَقُلْ لَقِسَتْ نَفْسِي \" . هَذَا حَدِيثُ أَبِي كُرَيْبٍ وَقَالَ أَبُو بَكْرٍ عَنِ النَّبِيِّ صلى الله عليه وسلم . وَلَمْ يَذْكُرْ \" لَكِنْ \" .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا سفيان بن عيينة، ح وحدثنا أبو كريب، محمد بن العلاء حدثنا أبو أسامة، كلاهما عن هشام، عن أبيه، عن عائشة، قالت قال رسول الله صلى الله عليه وسلم \" لا يقولن أحدكم خبثت نفسي . ولكن ليقل لقست نفسي \" . هذا حديث أبي كريب وقال أبو بكر عن النبي صلى الله عليه وسلم . ولم يذكر \" لكن \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:57:25.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5084,
+            "title": "৪. কোন মানুষের নিজের (দুরবস্থা প্রকাশে) خَبُثَتْ نَفْسِي আমার মন খবীছ (পিশাচ অধম হয়ে গিয়েছে) বলা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي",
+            "title_without_harkat": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي"
+        },
+        "rabis": [
+            {
+                "id": 2,
+                "title": "উম্মুল মু'মিনীন হযরত আয়েশা (رضي الله عنه)",
+                "title_en": "Ayesha (RA)",
+                "title_ar": "عائشة بنت الصديق أبي بكر التيمية أم المؤمنين",
+                "death_year": "57/58"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5863,
+                "title": "2250-1",
+                "hadith_number": 5682,
+                "hadith_id": 12731,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:57:25.000Z",
+                "updated_at": "2024-10-23T06:57:25.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12732,
+        "title": "৪. কোন মানুষের নিজের (দুরবস্থা প্রকাশে) خَبُثَتْ نَفْسِي আমার মন খবীছ (পিশাচ অধম হয়ে গিয়েছে) বলা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي",
+        "title_without_harkat": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5084,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 5683,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮৩। আবু কুরায়ব (রাহঃ) ......... আবু মুআবিয়া (রাহঃ) থেকে উল্লেখিত সনদে ঐ হাদীস রিওয়ায়াত করেছেন।",
+        "description_en": "This hadith has been narrated on the authority of Abia Mu’iwiya with the same chain of transmitters.",
+        "description_ar": "وَحَدَّثَنَاهُ أَبُو كُرَيْبٍ، حَدَّثَنَا أَبُو مُعَاوِيَةَ، بِهَذَا الإِسْنَادِ .",
+        "description_without_harkat": "وحدثناه أبو كريب، حدثنا أبو معاوية، بهذا الإسناد .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:57:43.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5084,
+            "title": "৪. কোন মানুষের নিজের (দুরবস্থা প্রকাশে) خَبُثَتْ نَفْسِي আমার মন খবীছ (পিশাচ অধম হয়ে গিয়েছে) বলা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي",
+            "title_without_harkat": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي"
+        },
+        "rabis": [
+            {
+                "id": 9,
+                "title": "বিবিধ",
+                "title_en": null,
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5864,
+                "title": "2250-2",
+                "hadith_number": 5683,
+                "hadith_id": 12732,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:57:43.000Z",
+                "updated_at": "2024-10-23T06:57:43.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12733,
+        "title": "৪. কোন মানুষের নিজের (দুরবস্থা প্রকাশে) خَبُثَتْ نَفْسِي আমার মন খবীছ (পিশাচ অধম হয়ে গিয়েছে) বলা মাকরূহ",
+        "title_en": "",
+        "title_ar": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي",
+        "title_without_harkat": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5084,
+        "rabi_id": 9,
+        "type_id": 1,
+        "hadith_number": 5684,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮৪। আবু তাহির ও হারামালা (রাহঃ) ......... আবু উমামা ইবনে সাহব ইবনে হুনায়ফ (রাহঃ) তাঁর পিতা [সাহল ((رضي الله عنه))] সূত্রে বর্ণনা করেন যে, রাসূলুল্লাহ (ﷺ) বলেছেনঃ তোমাদের কেউ আমার আত্মা খবীস হয়ে গিয়েছে, বলবে না, ’আমার মন সংকুচিত ও বিমর্ষ হয়ে গিয়েছে’ বলবে।",
+        "description_en": "Abu Umama b. Sahl b. Hunaif, on the authority of his father, reported Allah’s Messenger (ﷺ) as saying:<br>None of you should say:\" My soul has become evil,\" but he should say:\" My soul has become remorseless.\"",
+        "description_ar": "وَحَدَّثَنِي أَبُو الطَّاهِرِ، وَحَرْمَلَةُ، قَالاَ أَخْبَرَنَا ابْنُ وَهْبٍ، أَخْبَرَنِي يُونُسُ، عَنِ ابْنِ، شِهَابٍ عَنْ أَبِي أُمَامَةَ بْنِ سَهْلِ بْنِ حُنَيْفٍ، عَنْ أَبِيهِ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ  \" لاَ يَقُلْ أَحَدُكُمْ خَبُثَتْ نَفْسِي . وَلْيَقُلْ لَقِسَتْ نَفْسِي \" .",
+        "description_without_harkat": "وحدثني أبو الطاهر، وحرملة، قالا أخبرنا ابن وهب، أخبرني يونس، عن ابن، شهاب عن أبي أمامة بن سهل بن حنيف، عن أبيه، أن رسول الله صلى الله عليه وسلم قال  \" لا يقل أحدكم خبثت نفسي . وليقل لقست نفسي \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2022-12-26T09:47:11.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5084,
+            "title": "৪. কোন মানুষের নিজের (দুরবস্থা প্রকাশে) خَبُثَتْ نَفْسِي আমার মন খবীছ (পিশাচ অধম হয়ে গিয়েছে) বলা মাকরূহ",
+            "title_en": null,
+            "title_ar": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي",
+            "title_without_harkat": "باب كَرَاهَةِ قَوْلِ الإِنْسَانِ خَبُثَتْ نَفْسِي"
+        },
+        "rabis": [
+            {
+                "id": 11,
+                "title": "হযরত সাহল ইবনে হুনায়ফ (رضي الله عنه)",
+                "title_en": "Sahl Ibn Hunaif (RA)",
+                "title_ar": "سهل بن حنيف أبو ثابت الأنصاري الأوسي",
+                "death_year": "38"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5865,
+                "title": "2251",
+                "hadith_number": 5684,
+                "hadith_id": 12733,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:58:01.000Z",
+                "updated_at": "2024-10-23T06:58:01.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12734,
+        "title": "৫. মেশক (কস্তূরী) ব্যবহার এবং তা শ্রেষ্ঠ সুগন্ধি হওয়ার এবং ফুল ও সুগন্ধি প্রত্যাখ্যান মাকরূহ হওয়ার বিবরণ",
+        "title_en": "",
+        "title_ar": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+        "title_without_harkat": "باب استعمال المسك وأنه أطيب الطيب وكراهة رد الريحان والطيب",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5085,
+        "rabi_id": 10,
+        "type_id": 1,
+        "hadith_number": 5685,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮৫। আবু বকর ইবনে আবি শাঈবা (রাহঃ) ......... আবু সাঈদ ((رضي الله عنه)) সূত্রে নবী (ﷺ) থেকে বর্ণিত। তিনি বলেন, বনী ইসরাঈলের বেটে আকৃতির একটি স্ত্রীলোক দু’জন দীর্ঘাঙ্গী স্ত্রীলোকের সাথে হেঁটৈ চলছিল। সে (উচু হওয়ার জন্য) এবং লোকদের চোখে ধরা না পড়ার উদ্দেশ্যে কাঠের দুটি পা বানিয়ে নিল এবং সোনা দিয়ে মুখ বন্ধ একটি বড় সড় আংটি বানিয়ে পরে তার ভিতরে মেশক ভরে দিল। আর তা (মেশক) হল সুগন্ধিকুলের সেরা সুগন্ধি। পরে সে ঐ দুই স্ত্রীলোকের মাঝে থেকে চলতে লাগলো এবং লোকেরা তাকে চিনতে পারল না। তখন সে তার হাত দিয়ে এভাবে ঝাড়া দিল। (এ কথা বলে) রাবী শু’বা (রাহঃ) তাঁর হাত ঝাড়া দিলেন (এবং স্ত্রীলোকটির হাত ঝাড়ার ভঙ্গী নকল করলেন)।",
+        "description_en": "Abd Sa’id Khudri reported Allah’s Apostle (ﷺ) as saying:<br>There was a woman from Bani Isra’il who was short-statured and she walked in the company of two tall women with wooden sandals in her feet and a ring of gold made of plates with musk filled in them and then looked up, and musk is the best of scents; then she walked between two women and they (the people) did not recognise her, and she made a gesture with her hand like this, and Shu’ba shook his hand in order to give an indication how she shook her hand.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا أَبُو أُسَامَةَ، عَنْ شُعْبَةَ، حَدَّثَنِي خُلَيْدُ بْنُ جَعْفَرٍ، عَنْ أَبِي نَضْرَةَ، عَنْ أَبِي سَعِيدٍ الْخُدْرِيِّ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ  \" كَانَتِ امْرَأَةٌ مِنْ بَنِي إِسْرَائِيلَ قَصِيرَةٌ تَمْشِي مَعَ امْرَأَتَيْنِ طَوِيلَتَيْنِ فَاتَّخَذَتْ رِجْلَيْنِ مِنْ خَشَبٍ وَخَاتَمًا مِنْ ذَهَبٍ مُغْلَقٍ مُطْبَقٍ ثُمَّ حَشَتْهُ مِسْكًا وَهُوَ أَطْيَبُ الطِّيبِ فَمَرَّتْ بَيْنَ الْمَرْأَتَيْنِ فَلَمْ يَعْرِفُوهَا فَقَالَتْ بِيَدِهَا هَكَذَا \" . وَنَفَضَ شُعْبَةُ يَدَهُ .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، حدثنا أبو أسامة، عن شعبة، حدثني خليد بن جعفر، عن أبي نضرة، عن أبي سعيد الخدري، عن النبي صلى الله عليه وسلم قال  \" كانت امرأة من بني إسرائيل قصيرة تمشي مع امرأتين طويلتين فاتخذت رجلين من خشب وخاتما من ذهب مغلق مطبق ثم حشته مسكا وهو أطيب الطيب فمرت بين المرأتين فلم يعرفوها فقالت بيدها هكذا \" . ونفض شعبة يده .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:58:29.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5085,
+            "title": "৫. মেশক (কস্তূরী) ব্যবহার এবং তা শ্রেষ্ঠ সুগন্ধি হওয়ার এবং ফুল ও সুগন্ধি প্রত্যাখ্যান মাকরূহ হওয়ার বিবরণ",
+            "title_en": null,
+            "title_ar": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+            "title_without_harkat": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ"
+        },
+        "rabis": [
+            {
+                "id": 10,
+                "title": "হযরত আবু সাঈদ খুদরী (رضي الله عنه)",
+                "title_en": "Abu Saeed Khudri (RA)",
+                "title_ar": "أبو سعيد الخدري سعد بن مالك بن سنان",
+                "death_year": "74"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5866,
+                "title": " 2252-1",
+                "hadith_number": 5685,
+                "hadith_id": 12734,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:58:29.000Z",
+                "updated_at": "2024-10-23T06:58:29.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12735,
+        "title": "৫. মেশক (কস্তূরী) ব্যবহার এবং তা শ্রেষ্ঠ সুগন্ধি হওয়ার এবং ফুল ও সুগন্ধি প্রত্যাখ্যান মাকরূহ হওয়ার বিবরণ",
+        "title_en": "",
+        "title_ar": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+        "title_without_harkat": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5085,
+        "rabi_id": 10,
+        "type_id": 1,
+        "hadith_number": 5686,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮৬। আমর আন-নাকিদ (রাহঃ) ......... আবু সাঈদ ((رضي الله عنه)) থেকে বর্ণিত। রাসূলুল্লাহ (ﷺ) বনী ইসরাঈলের এক মহিলার কথা উল্লেখ করলেন, যে তার আংটি মেশক দিয়ে ভরে রেখেছিল ...... (এ প্রসঙ্গে তিনি বললেন), আর মেশক হল  সুগন্ধিকুলের সেরা সুগন্ধি।",
+        "description_en": "Abu Sa’id Khudri reported that Allah’s Messenger (ﷺ) made a mention of a woman of Bana Isra’il who had filled her ring with musk and musk is the most fragrant of the scents.",
+        "description_ar": "حَدَّثَنَا عَمْرٌو النَّاقِدُ، حَدَّثَنَا يَزِيدُ بْنُ هَارُونَ، عَنْ شُعْبَةَ، عَنْ خُلَيْدِ بْنِ جَعْفَرٍ، وَالْمُسْتَمِرِّ، قَالاَ سَمِعْنَا أَبَا نَضْرَةَ، يُحَدِّثُ عَنْ أَبِي سَعِيدٍ الْخُدْرِيِّ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم ذَكَرَ امْرَأَةً مِنْ بَنِي إِسْرَائِيلَ حَشَتْ خَاتَمَهَا مِسْكًا وَالْمِسْكُ أَطْيَبُ الطِّيبِ .",
+        "description_without_harkat": "حدثنا عمرو الناقد، حدثنا يزيد بن هارون، عن شعبة، عن خليد بن جعفر، والمستمر، قالا سمعنا أبا نضرة، يحدث عن أبي سعيد الخدري، أن رسول الله صلى الله عليه وسلم ذكر امرأة من بني إسرائيل حشت خاتمها مسكا والمسك أطيب الطيب .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T06:58:51.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5085,
+            "title": "৫. মেশক (কস্তূরী) ব্যবহার এবং তা শ্রেষ্ঠ সুগন্ধি হওয়ার এবং ফুল ও সুগন্ধি প্রত্যাখ্যান মাকরূহ হওয়ার বিবরণ",
+            "title_en": null,
+            "title_ar": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+            "title_without_harkat": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ"
+        },
+        "rabis": [
+            {
+                "id": 10,
+                "title": "হযরত আবু সাঈদ খুদরী (رضي الله عنه)",
+                "title_en": "Abu Saeed Khudri (RA)",
+                "title_ar": "أبو سعيد الخدري سعد بن مالك بن سنان",
+                "death_year": "74"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5867,
+                "title": "2252-2",
+                "hadith_number": 5686,
+                "hadith_id": 12735,
+                "book_id": 2,
+                "created_at": "2024-10-23T06:58:51.000Z",
+                "updated_at": "2024-10-23T06:58:51.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12736,
+        "title": "৫. মেশক (কস্তূরী) ব্যবহার এবং তা শ্রেষ্ঠ সুগন্ধি হওয়ার এবং ফুল ও সুগন্ধি প্রত্যাখ্যান মাকরূহ হওয়ার বিবরণ",
+        "title_en": "",
+        "title_ar": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+        "title_without_harkat": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5085,
+        "rabi_id": 5,
+        "type_id": 1,
+        "hadith_number": 5687,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮৭। আবু বকর ইবনে শায়বা ও যুহাইর ইবনে হারব (রাহঃ) ......... আবু হুরায়রা ((رضي الله عنه)) থেকে বর্ণিত। তিনি বলেন, রাসূলুল্লাহ (ﷺ) বলেছেনঃ কারো কাছে কোন ফুল পেশ করা হলে সে যেন তা প্রত্যাখ্যান না করে। কেননা তা বোঝায় হালকা এবং ঘ্রাণে উত্তম।",
+        "description_en": "Abu Huraira reported Allah’s Messenger (ﷺ) as saying:<br>He who is presented with a flower should not reject it, for it is light to carry and pleasant in odour.",
+        "description_ar": "حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، وَزُهَيْرُ بْنُ حَرْبٍ، كِلاَهُمَا عَنِ الْمُقْرِئِ، قَالَ أَبُو بَكْرٍ حَدَّثَنَا أَبُو عَبْدِ الرَّحْمَنِ الْمُقْرِئُ، عَنْ سَعِيدِ بْنِ أَبِي أَيُّوبَ، حَدَّثَنِي عُبَيْدُ اللَّهِ بْنُ أَبِي جَعْفَرٍ، عَنْ عَبْدِ الرَّحْمَنِ الأَعْرَجِ، عَنْ أَبِي هُرَيْرَةَ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم  \" مَنْ عُرِضَ عَلَيْهِ رَيْحَانٌ فَلاَ يَرُدُّهُ فَإِنَّهُ خَفِيفُ الْمَحْمِلِ طَيِّبُ الرِّيحِ \" .",
+        "description_without_harkat": "حدثنا أبو بكر بن أبي شيبة، وزهير بن حرب، كلاهما عن المقرئ، قال أبو بكر حدثنا أبو عبد الرحمن المقرئ، عن سعيد بن أبي أيوب، حدثني عبيد الله بن أبي جعفر، عن عبد الرحمن الأعرج، عن أبي هريرة، قال قال رسول الله صلى الله عليه وسلم  \" من عرض عليه ريحان فلا يرده فإنه خفيف المحمل طيب الريح \" .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2022-03-02T09:43:42.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5085,
+            "title": "৫. মেশক (কস্তূরী) ব্যবহার এবং তা শ্রেষ্ঠ সুগন্ধি হওয়ার এবং ফুল ও সুগন্ধি প্রত্যাখ্যান মাকরূহ হওয়ার বিবরণ",
+            "title_en": null,
+            "title_ar": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+            "title_without_harkat": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ"
+        },
+        "rabis": [
+            {
+                "id": 5,
+                "title": "হযরত আবু হুরায়রা (رضي الله عنه)",
+                "title_en": "Abu Hurayra (RA)",
+                "title_ar": "أبو هريرة الدوسي عبد الرحمن بن صخر",
+                "death_year": "57/58/59"
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5868,
+                "title": "2253",
+                "hadith_number": 5687,
+                "hadith_id": 12736,
+                "book_id": 2,
+                "created_at": "2024-10-23T07:44:34.000Z",
+                "updated_at": "2024-10-23T07:44:34.000Z"
+            }
+        ]
+    },
+    {
+        "id": 12737,
+        "title": "৫. মেশক (কস্তূরী) ব্যবহার এবং তা শ্রেষ্ঠ সুগন্ধি হওয়ার এবং ফুল ও সুগন্ধি প্রত্যাখ্যান মাকরূহ হওয়ার বিবরণ",
+        "title_en": "",
+        "title_ar": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+        "title_without_harkat": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+        "sub_title": null,
+        "sub_title_ar": null,
+        "sub_title_without_harkat": null,
+        "status": "active",
+        "sequence": null,
+        "book_id": 2,
+        "chapter_id": 127,
+        "title_id": 5085,
+        "rabi_id": 105,
+        "type_id": 1,
+        "hadith_number": 5688,
+        "hadith_number_one": null,
+        "hadith_number_two": null,
+        "description": "৫৬৮৮। হারুন ইবনে সাঈদ আয়লী, আবু তাহির ও আহমদ ইবনে ঈসা (রাহঃ) ......... নাফি (রাহঃ) থেকে বর্ণিত। তিনি বলেন, ইবনে উমর ((رضي الله عنه)) অভ্যস্ত ছিলেন যে, যখন তিনি সুগন্ধি জ্বালাতেন, তখন (খাঁটি) উদ ’আগর’, তার সাথে অন্য কোন সুগন্ধি না মিশিয়ে জালাতেন, আবার (কখনো) আগরের সাথে কর্পূর ঢেলে দিতেন। এরপর বলতেন, রাসূলুল্লাহ (ﷺ) এ ভাবে সুগন্ধি জ্বালিয়ে ব্যবহার করতেন।",
+        "description_en": "Nafi’ reported that when Ibn Umar wanted fumigation he got it from aloeswood without mixing anything with it, or he put camphor along with aloeswood and then said:<br>This is how Allah’s Messenger (ﷺ) fumigated.",
+        "description_ar": "حَدَّثَنِي هَارُونُ بْنُ سَعِيدٍ الأَيْلِيُّ، وَأَبُو طَاهِرٍ وَأَحْمَدُ بْنُ عِيسَى قَالَ أَحْمَدُ حَدَّثَنَا وَقَالَ الآخَرَانِ، أَخْبَرَنَا ابْنُ وَهْبٍ، أَخْبَرَنِي مَخْرَمَةُ، عَنْ أَبِيهِ، عَنْ نَافِعٍ، قَالَ كَانَ ابْنُ عُمَرَ إِذَا اسْتَجْمَرَ اسْتَجْمَرَ بِالأَلُوَّةِ غَيْرِ مُطَرَّاةٍ وَبِكَافُورٍ يَطْرَحُهُ مَعَ الأَلُوَّةِ ثُمَّ قَالَ هَكَذَا كَانَ يَسْتَجْمِرُ رَسُولُ اللَّهِ صلى الله عليه وسلم .",
+        "description_without_harkat": "حدثني هارون بن سعيد الأيلي، وأبو طاهر وأحمد بن عيسى قال أحمد حدثنا وقال الآخران، أخبرنا ابن وهب، أخبرني مخرمة، عن أبيه، عن نافع، قال كان ابن عمر إذا استجمر استجمر بالألوة غير مطراة وبكافور يطرحه مع الألوة ثم قال هكذا كان يستجمر رسول الله صلى الله عليه وسلم .",
+        "note": "",
+        "explanation": "",
+        "explanation_id": null,
+        "reference": null,
+        "title_shamela": null,
+        "title_shamela_without_harkat": null,
+        "description_shamela": "",
+        "description_shamela_without_harkat": "",
+        "foot_note": null,
+        "tahqeeq_explanation": null,
+        "extra_tahqeeq_explanation": false,
+        "show_in": "mb",
+        "created_at": "2021-06-05T04:29:01.000Z",
+        "updated_at": "2024-10-23T07:45:03.000Z",
+        "book": {
+            "id": 2,
+            "title": "সহীহ মুসলিম",
+            "title_en": "আল মুসনাদুস সহীহ- ইমাম মুসলিম (رحمة الله)",
+            "english_title": "Al-Musnad Al-Sahih'- Muslim",
+            "title_ar": "المسند الصحيح لمسلم",
+            "has_title": 1,
+            "translation_type": "bangla"
+        },
+        "chapter": {
+            "id": 127,
+            "title": "৪৩- শব্দ নির্বাচন ও ব্যবহারে শিষ্টাচার",
+            "title_en": "43. The Book Concerning the Use of Correct Words",
+            "title_ar": "كتاب الألفاظ من الأدب وغيرها",
+            "range_start": 5667,
+            "range_end": 5688
+        },
+        "titles": {
+            "id": 5085,
+            "title": "৫. মেশক (কস্তূরী) ব্যবহার এবং তা শ্রেষ্ঠ সুগন্ধি হওয়ার এবং ফুল ও সুগন্ধি প্রত্যাখ্যান মাকরূহ হওয়ার বিবরণ",
+            "title_en": null,
+            "title_ar": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ",
+            "title_without_harkat": "باب اسْتِعْمَالِ الْمِسْكِ وَأَنَّهُ أَطْيَبُ الطِّيبِ وَكَرَاهَةِ رَدِّ الرَّيْحَانِ وَالطِّيبِ"
+        },
+        "rabis": [
+            {
+                "id": 105,
+                "title": "নাফি‘ ((رحمة الله))",
+                "title_en": "Nafi' (RH)",
+                "title_ar": null,
+                "death_year": null
+            }
+        ],
+        "type": {
+            "id": 1,
+            "title": "বিশুদ্ধ (পারিভাষিক সহীহ)",
+            "title_en": "Authentic",
+            "title_ar": "صحيح"
+        },
+        "explanations": null,
+        "hadithNumbers": [
+            {
+                "id": 5869,
+                "title": "2254",
+                "hadith_number": 5688,
+                "hadith_id": 12737,
+                "book_id": 2,
+                "created_at": "2024-10-23T07:45:03.000Z",
+                "updated_at": "2024-10-23T07:45:03.000Z"
+            }
+        ]
+    }
+]

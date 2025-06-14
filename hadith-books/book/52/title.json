@@ -1,0 +1,242 @@
+[
+    {
+        "id": 5000,
+        "book_id": 52,
+        "sequence": 1,
+        "title": "ভূমিকা",
+        "title_ar": "المقدمة",
+        "total_hadith": 672,
+        "range_start": 1,
+        "range_end": 672
+    },
+    {
+        "id": 5001,
+        "book_id": 52,
+        "sequence": 2,
+        "title": "পবিত্রতা অধ্যায়",
+        "title_ar": "كتاب الطهارة",
+        "total_hadith": 542,
+        "range_start": 673,
+        "range_end": 1214
+    },
+    {
+        "id": 5002,
+        "book_id": 52,
+        "sequence": 3,
+        "title": "সালাত অধ্যায়",
+        "title_ar": "كتاب الصلاة",
+        "total_hadith": 437,
+        "range_start": 1215,
+        "range_end": 1651
+    },
+    {
+        "id": 5003,
+        "book_id": 52,
+        "sequence": 4,
+        "title": "যাকাত অধ্যায়",
+        "title_ar": "كتاب الزكاة",
+        "total_hadith": 67,
+        "range_start": 1652,
+        "range_end": 1718
+    },
+    {
+        "id": 5004,
+        "book_id": 52,
+        "sequence": 5,
+        "title": "সাওম অধ্যায়",
+        "title_ar": "كتاب الصوم",
+        "total_hadith": 102,
+        "range_start": 1719,
+        "range_end": 1820
+    },
+    {
+        "id": 5005,
+        "book_id": 52,
+        "sequence": 6,
+        "title": "হজ্জ অধ্যায়",
+        "title_ar": "كتاب المناسك",
+        "total_hadith": 162,
+        "range_start": 1821,
+        "range_end": 1982
+    },
+    {
+        "id": 5006,
+        "book_id": 52,
+        "sequence": 7,
+        "title": "কুরবানী অধ্যায়",
+        "title_ar": "كتاب الأضاحي",
+        "total_hadith": 57,
+        "range_start": 1983,
+        "range_end": 2039
+    },
+    {
+        "id": 5007,
+        "book_id": 52,
+        "sequence": 8,
+        "title": "শিকার অধ্যায়",
+        "title_ar": "كتاب الصيد",
+        "total_hadith": 17,
+        "range_start": 2040,
+        "range_end": 2056
+    },
+    {
+        "id": 5008,
+        "book_id": 52,
+        "sequence": 9,
+        "title": "খাদ্য অধ্যায়",
+        "title_ar": "كتاب الأطعمة",
+        "total_hadith": 70,
+        "range_start": 2057,
+        "range_end": 2126
+    },
+    {
+        "id": 5009,
+        "book_id": 52,
+        "sequence": 10,
+        "title": "পানীয় অধ্যায়",
+        "title_ar": "كتاب الأشربة",
+        "total_hadith": 48,
+        "range_start": 2127,
+        "range_end": 2174
+    },
+    {
+        "id": 5010,
+        "book_id": 52,
+        "sequence": 11,
+        "title": "স্বপ্ন অধ্যায়",
+        "title_ar": "كتاب الرؤيا",
+        "total_hadith": 28,
+        "range_start": 2175,
+        "range_end": 2202
+    },
+    {
+        "id": 5011,
+        "book_id": 52,
+        "sequence": 12,
+        "title": "বিবাহ অধ্যায়",
+        "title_ar": "كتاب النكاح",
+        "total_hadith": 98,
+        "range_start": 2203,
+        "range_end": 2300
+    },
+    {
+        "id": 5012,
+        "book_id": 52,
+        "sequence": 13,
+        "title": "তালাক অধ্যায়",
+        "title_ar": "كتاب الطلاق",
+        "total_hadith": 34,
+        "range_start": 2301,
+        "range_end": 2334
+    },
+    {
+        "id": 5013,
+        "book_id": 52,
+        "sequence": 14,
+        "title": "শাস্তি অধ্যায়",
+        "title_ar": "كتاب الحدود",
+        "total_hadith": 36,
+        "range_start": 2335,
+        "range_end": 2370
+    },
+    {
+        "id": 5014,
+        "book_id": 52,
+        "sequence": 15,
+        "title": "মানত ও শপথ অধ্যায়",
+        "title_ar": "كتاب النذور والأيمان",
+        "total_hadith": 19,
+        "range_start": 2371,
+        "range_end": 2389
+    },
+    {
+        "id": 5015,
+        "book_id": 52,
+        "sequence": 16,
+        "title": "রক্তপণ অধ্যায়",
+        "title_ar": "كتاب الديات",
+        "total_hadith": 39,
+        "range_start": 2390,
+        "range_end": 2428
+    },
+    {
+        "id": 5016,
+        "book_id": 52,
+        "sequence": 17,
+        "title": "জিহাদ অধ্যায়",
+        "title_ar": "كتاب الجهاد",
+        "total_hadith": 45,
+        "range_start": 2429,
+        "range_end": 2473
+    },
+    {
+        "id": 5017,
+        "book_id": 52,
+        "sequence": 18,
+        "title": "যুদ্ধাভিযান অধ্যায়",
+        "title_ar": "كتاب السير",
+        "total_hadith": 95,
+        "range_start": 2474,
+        "range_end": 2568
+    },
+    {
+        "id": 5018,
+        "book_id": 52,
+        "sequence": 19,
+        "title": "ব্যবসা-বাণিজ্য অধ্যায়",
+        "title_ar": "كتاب البيوع",
+        "total_hadith": 98,
+        "range_start": 2569,
+        "range_end": 2666
+    },
+    {
+        "id": 5019,
+        "book_id": 52,
+        "sequence": 20,
+        "title": "অনুমতি গ্রহণ অধ্যায়",
+        "title_ar": "كتاب الاستئذان",
+        "total_hadith": 77,
+        "range_start": 2667,
+        "range_end": 2743
+    },
+    {
+        "id": 5020,
+        "book_id": 52,
+        "sequence": 21,
+        "title": "কোমলতা অধ্যায়",
+        "title_ar": "كتاب الرقاق",
+        "total_hadith": 144,
+        "range_start": 2744,
+        "range_end": 2887
+    },
+    {
+        "id": 5021,
+        "book_id": 52,
+        "sequence": 22,
+        "title": "উত্তরাধিকার অধ্যায়",
+        "title_ar": "كتاب الفرائض",
+        "total_hadith": 327,
+        "range_start": 2888,
+        "range_end": 3214
+    },
+    {
+        "id": 5022,
+        "book_id": 52,
+        "sequence": 23,
+        "title": "ওয়াসিয়াত অধ্যায়",
+        "title_ar": "كتاب الوصايا",
+        "total_hadith": 130,
+        "range_start": 3215,
+        "range_end": 3344
+    },
+    {
+        "id": 5023,
+        "book_id": 52,
+        "sequence": 24,
+        "title": "কুরআনের ফযীলত অধ্যায়",
+        "title_ar": "كتاب فضائل القرآن",
+        "total_hadith": 198,
+        "range_start": 3345,
+        "range_end": 3542
+    }
+]
