@@ -60,7 +60,29 @@ function framework_load_plugin_url(plugin,form,div,framework_path,on_success_sta
 	</script>
 </meta></meta></meta></meta></head>
 <body>
-<main>
+<div class="toolbar" style="
+    padding: 10px 15px; /* Top-Bottom: 10px, Left-Right: 15px */
+    background-color: #01837A;
+    color: white;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 50px; /* Fixed height for consistency */
+    box-sizing: border-box; /* Ensures padding is included in height */
+">
+    <a href="javascript:history.back()" style="color: white; text-decoration: none;">
+        <img src="back.png" alt="Back" style="height: 30px; vertical-align: middle;">
+        <span style="vertical-align: middle;">আসমাউল হুসনা</span>
+    </a>
+</div>
+<main style="
+    margin-top: 70px; /* Toolbar height (50px) + extra space (20px) */
+    padding-bottom: 30px; /* Extra space at the bottom for better scrolling */
+">
+
 <div class="container mt-4 mb-5">
 <div class="card bg-light shadow">
 <div class="card-header shadow h3 text-center bg-success text-white">মহান আল্লাহর নাম ও তার অর্থ (আসমাউল হুসনা / ইসমে আজম)</div>

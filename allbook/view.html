@@ -22,7 +22,19 @@
       margin: 0;
       padding: 0;
     }
-
+.toast {
+  position: fixed;
+  bottom: 20px;
+  font-family: 'SolaimanLipi', sans-serif;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 9999;
+}
     .header {
       background-color: #01837A;
       color: white;
@@ -188,43 +200,53 @@
       }
     }
 
-    function copyContent() {
-      const tempInput = document.createElement('textarea');
-      tempInput.value = viewTitle.innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
-      document.body.appendChild(tempInput);
-      tempInput.select();
-      document.execCommand('copy');
-      document.body.removeChild(tempInput);
-      alert('লেখাটি কপি করা হয়েছে');
-    }
+    function showToast(message) {
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.innerText = message;
+  document.body.appendChild(toast);
+  setTimeout(() => {
+    toast.remove();
+  }, 3000); // Toast disappears after 3 seconds
+}
 
-    function shareContent() {
-      const textToShare = viewTitle.innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
-      if (navigator.share) {
-        navigator.share({
-          title: 'বই শেয়ার করুন',
-          text: textToShare
-        }).catch(console.error);
-      } else {
-        alert('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
-      }
-    }
+function copyContent() {
+  const tempInput = document.createElement('textarea');
+  tempInput.value = viewTitle.innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand('copy');
+  document.body.removeChild(tempInput);
+  showToast('লেখাটি কপি করা হয়েছে');
+}
 
-    function copyShortLink() {
-      const longUrl = window.location.href;
+function shareContent() {
+  const textToShare = viewTitle.innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
+  if (navigator.share) {
+    navigator.share({
+      title: 'বই শেয়ার করুন',
+      text: textToShare
+    }).catch(console.error);
+  } else {
+    showToast('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
+  }
+}
 
-      fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`)
-        .then(response => response.text())
-        .then(shortLink => {
-          navigator.clipboard.writeText(shortLink)
-            .then(() => alert('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
-            .catch(() => alert('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
-        })
-        .catch(error => {
-          console.error('TinyURL error:', error);
-          alert('লিংক শর্ট করতে সমস্যা হয়েছে');
-        });
-    }
+function copyShortLink() {
+  const longUrl = window.location.href;
+
+  fetch(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(longUrl)}`)
+    .then(response => response.text())
+    .then(shortLink => {
+      navigator.clipboard.writeText(shortLink)
+        .then(() => showToast('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
+        .catch(() => showToast('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
+    })
+    .catch(error => {
+      console.error('TinyURL error:', error);
+      showToast('লিংক শর্ট করতে সমস্যা হয়েছে');
+    });
+}
 
     function loadDataAndDisplay() {
       if (!bookid || isNaN(index)) {

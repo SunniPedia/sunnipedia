@@ -147,6 +147,29 @@
         </div>
   </div>
   <script>
+// Toast function for displaying message
+function showToast(message) {
+    let toast = document.createElement("div");
+    toast.style.position = "fixed";
+    toast.style.bottom = "30px";
+    toast.style.left = "50%";
+    toast.style.transform = "translateX(-50%)";
+    toast.style.padding = "10px 20px";
+    toast.style.backgroundColor = "#333";
+    toast.style.color = "white";
+    toast.style.borderRadius = "5px";
+    toast.style.fontSize = "14px";
+    toast.style.zIndex = "9999";
+    toast.innerText = message;
+    document.body.appendChild(toast);
+    setTimeout(function() {
+        toast.style.opacity = "0";
+        setTimeout(function() {
+            document.body.removeChild(toast);
+        }, 500);
+    }, 3000);
+}
+
     let fullData = [{"1": "ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ", "2": "ইমাম হুসাইন (رضي الله عنه) শাহাদাতের পরবর্তী ঘটনাসমূহ\n\n🖋মুহাম্মদ তুহিনুর রহমান শাহজাহান"}, {"1": "কারবালার ময়দানে রাসূলে পাক (ﷺ) এর পরিবার-পরিজনের উপর এমন ভয়ানক নির্যাতন-জুলুম চলেছিল", "2": "কারবালার ময়দানে রাসূলে পাক (ﷺ) এর পরিবার-পরিজনের উপর এমন ভয়ানক নির্যাতন-জুলুম চলেছিল, যাতে আসমান-যমীন পর্যন্ত রক্ত-অশ্রু বর্ষণ করেছিল। সৃষ্টিকুল অন্ধকারে নিমজ্জিত হয়েছিল।\n\n\n❏ হযরত বুসরাহ্ আযদিয়া (رضي الله عنه) বর্ণনা করেন, \"যখন হযরত হুসাইন (رضي الله عنه) কে শহীদ করা হল,  তখন আসমান থেকে রক্ত-বর্ষণ হল, প্রভাতে (আমরা দেখি) আমাদের মটকী আর কলসী গুলো রক্তে পরিপূর্ণ হয়ে গিয়েছে। (বায়হাকী,আবু নুআইম,সিররুশ শাহাদাতাইন ৩২, সাওয়াকে মুহরিকা ১৯২)\n\n\n❏ হযরত যুহরী (رضي الله عنه) বলেন, \" আমি জানতে পারলাম, যে দিন হযরত হুসাইন (رضي الله عنه) কে শহীদ করা হয়েছিল,  সে দিন বাইতুল মুক্বাদ্দাসের যে পাথরটিই সরানো হচ্ছিল, তার নিচেই তাজা রক্ত পাওয়া যাচ্ছিল।\" (বায়হাকী, আবু নুআইম, সিররুশ শাহাদাতাইন ৩২, তাহযীবুত তাহযীব ৩৫৪, সাওয়ায়িকে মুহরিকা ১৯২)\n\n\n❏ উম্মে হিব্বান (رضي الله عنه) বলেন, \"যে দিন হযরত হুসাইন (رضي الله عنه) কে শহীদ করা হয়েছিল,  সে দিন থেকে তিন দিন পর্যন্ত আমাদের উপর অন্ধকার ছেয়ে গিয়েছিল,  যে ব্যক্তিই মুখে জাফরান (গাজা) নিয়েছিল,  তার মুখ পুড়ে গিয়েছিল। বাইতুল মুক্বাদ্দাসের যে পাথর সরানো হয়েছিল তার নিচে তাজা রক্ত পাওয়া গিয়েছিল। (বায়হাকী, সিররুশ শাহাদাতাইন ৩২)\n\n\n❏ খালাফ বিন খলিফা স্বীয় পিতা থেকে বর্ণনা করেন,\n\n\" যখন ইমাম হুসাইন (رضي الله عنه) কে শহীদ করা হয়েছিল,  তখন আসমান কালো বর্ণ ধারন করেছিল সূর্যে গ্রহন লেগেছিল। (তাহযীবুত তাহযীব ৩৫৪/২, সাওয়াইকে মুহরিকা১৯২)\n\n\n❏ হযরত হুসাইন (رضي الله عنه)র শাহাদাতের কারনে আসমান হয়েছিল রক্তিম। আর সূর্যে লেগেছিল গ্রহণ।  এমন কি দিন দুপুরে তারকা রাজি দেখা গিয়েছিল। মানুষ ভেবেছিল কিয়ামত বুঝি সংঘটিত হয়ে যাচ্ছে। সিরিয়াতে কোন পাথর সরানো গেলেই তার নিচে তাজা রক্ত পাওয়া যাচ্ছিল। (সাওয়ায়িকে মুহরিকা ১৯২)\n\n\n❏ ইমাম ইবনে সীরীন (رضي الله عنه) বলেন,\n\n\"নিঃসন্দেহে তখন পৃথিবীতে তিনদিন পর্যন্ত অন্ধকার ছেয়ে রয়েছিল। অতঃপর আসমানে রক্তিম বর্ণ প্রকাশ পেয়েছিল। (সাওয়ায়েকে মুহরিকা ১৯২)\n\n\nহযরত ইমাম হুসাইন (رضي الله عنه) শাহাদাত একটি মারাত্মক হৃদয় বিদারক ঘটনা, যাহাকে প্রিয়নবী (ﷺ) এত আদর করতেন হাদীসে যার প্রমান পাওয়া যায়।  এজিদ বাহিনী ক্ষমতার মোহে ইমাম হুসাইন (رضي الله عنه) কে শহীদ করে। ইমাম হুসাইন রাদ্বিয়াল্লাহু আনহু ছিলেন হক, আর নাপাক এজিদ ছিল জুলুমবাজ,  উপরোক্ত ঘটনা থেকে বুঝা যায়। আল্লাহ যেন আমাদেরকে ইমাম হুসাইন (رضي الله عنه) র প্রেমে ও তাহাঁর শিক্ষার উপর চলার তৈফিক দান করেন।  \"আমিন\"\n"}];
 
     function convertToBanglaNumber(number) {
@@ -206,14 +229,37 @@
         .then(res => res.text())
         .then(shortLink => {
           navigator.clipboard.writeText(shortLink)
-            .then(() => alert('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
-            .catch(() => alert('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
+            .then(() => showToast('শর্ট লিংক কপি করা হয়েছে:\n' + shortLink))
+            .catch(() => showToast('ক্লিপবোর্ডে কপি করতে সমস্যা হয়েছে'));
         })
         .catch(error => {
-          alert('লিংক শর্ট করতে সমস্যা হয়েছে');
+          showToast('লিংক শর্ট করতে সমস্যা হয়েছে');
         });
     }
   </script>
-<script src="marquee.js"></script>
+<script src="marquee.js">
+// Toast function for displaying message
+function showToast(message) {
+    let toast = document.createElement("div");
+    toast.style.position = "fixed";
+    toast.style.bottom = "30px";
+    toast.style.left = "50%";
+    toast.style.transform = "translateX(-50%)";
+    toast.style.padding = "10px 20px";
+    toast.style.backgroundColor = "#333";
+    toast.style.color = "white";
+    toast.style.borderRadius = "5px";
+    toast.style.fontSize = "14px";
+    toast.style.zIndex = "9999";
+    toast.innerText = message;
+    document.body.appendChild(toast);
+    setTimeout(function() {
+        toast.style.opacity = "0";
+        setTimeout(function() {
+            document.body.removeChild(toast);
+        }, 500);
+    }, 3000);
+}
+</script>
 </body>
 </html>

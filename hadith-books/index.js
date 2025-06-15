@@ -19,7 +19,7 @@
     // ডেটা লোড এবং প্রদর্শন
     async function loadHadithBooks() {
         const container = document.getElementById('booksContainer');
-        container.innerHTML = '<div class="loading">হাদিসের হাদিসের কিতাব গুলো লোড হচ্ছে...</div>';
+        container.innerHTML = '<div class="loading">হাদিসের কিতাব গুলো লোড হচ্ছে...</div>';
         
         try {
             const response = await fetch('https://cdn.jsdelivr.net/gh/SunniPedia/sunnipedia@main/hadith-books/book/book-title.json');

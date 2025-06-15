@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">ইসলামী বিশ্বকোষ ও আল হাদিস S2</title>
+
+  <meta name="description" content="৮৭০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta property="og:title" content="ইসলামী বই - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামী বই - ৮৭০ টি কিতাব পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+  <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'SolaimanLipi', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #01837A;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+    }
+
+    .header img {
+      height: 24px;
+      cursor: pointer;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .title-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      flex-grow: 1;
+      position: relative;
+    }
+
+    #viewTitle {
+      display: inline-block;
+      color: white;
+      white-space: nowrap;
+      padding-left: 100%;
+    }
+
+    #viewTitle.marquee {
+      animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-around;
+      background-color: #eeeeee;
+      padding: 10px;
+      position: sticky;
+      top: 50px;
+      z-index: 998;
+    }
+
+    .controls button {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 15px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background-color: #009688;
+      color: white;
+      cursor: pointer;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .controls img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .content {
+      background-color: #fff;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      line-height: 1.6;
+      font-size: 18px;
+      color: #333;
+      white-space: pre-wrap;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .content, .content * {
+      font-family: 'SolaimanLipi', sans-serif !important;
+      text-align: justify;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #999;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="back.png" alt="Back" id="backButton">
+    <div class="title-wrapper">
+      <div id="viewTitle">বই পড়ুন</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button onclick="increaseFont()">আকার+</button>
+    <button onclick="decreaseFont()">আকার−</button>
+    <button onclick="copyContent()">
+      <img src="copy.png" alt="Copy"> কপি
+    </button>
+    <button onclick="shareContent()">
+      <img src="share.png" alt="Share"> শেয়ার
+    </button>
+  </div>
+
+  <div class="content" id="content">লোড হচ্ছে...</div>
+
+  <div class="footer">©ইসলামী বিশ্বকোষ ও আল হাদিস S2</div>
+
+  <script>
+    // Toast function for displaying message
+    function showToast(message) {
+      let toast = document.createElement("div");
+      toast.style.position = "fixed";
+      toast.style.bottom = "30px";
+      toast.style.left = "50%";
+      toast.style.transform = "translateX(-50%)";
+      toast.style.padding = "10px 20px";
+      toast.style.backgroundColor = "#333";
+      toast.style.color = "white";
+      toast.style.borderRadius = "5px";
+      toast.style.fontSize = "14px";
+      toast.style.zIndex = "9999";
+      toast.innerText = message;
+      document.body.appendChild(toast);
+      setTimeout(function() {
+        toast.style.opacity = "0";
+        setTimeout(function() {
+          document.body.removeChild(toast);
+        }, 500);
+      }, 3000);
+    }
+
+    let fontSize = 18;
+    const contentDiv = document.getElementById('content');
+    const viewTitle = document.getElementById('viewTitle');
+    const backButton = document.getElementById('backButton');
+
+    // Back button functionality
+    backButton.addEventListener('click', function() {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        // If no history, redirect to home or previous page
+        window.location.href = 'onlinebook.html'; // Change to your home page URL
+      }
+    });
+
+    // Load content
+    const selectedIndex = sessionStorage.getItem('selectedIndex');
+    const bookData = JSON.parse(sessionStorage.getItem('bookData'));
+
+    if (selectedIndex !== null && bookData) {
+      const item = bookData[selectedIndex];
+      const title = item["1"] || "বই পড়ুন";
+      const content = item["2"] || "কোনো তথ্য পাওয়া যায়নি।";
+      
+      viewTitle.innerText = title;
+      contentDiv.innerHTML = `<p>${content}</p>`;
+      
+      // Check if title needs marquee
+      setTimeout(() => {
+        if (viewTitle.scrollWidth > viewTitle.parentElement.offsetWidth) {
+          viewTitle.classList.add('marquee');
+        }
+      }, 100);
+    } else {
+      contentDiv.innerHTML = '<p>কোনো তথ্য পাওয়া যায়নি।</p>';
+    }
+
+    function increaseFont() {
+      fontSize += 1;
+      contentDiv.style.fontSize = fontSize + 'px';
+    }
+
+    function decreaseFont() {
+      if (fontSize > 10) {
+        fontSize -= 1;
+        contentDiv.style.fontSize = fontSize + 'px';
+      }
+    }
+
+    function copyContent() {
+      const tempInput = document.createElement('textarea');
+      tempInput.value = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast('লেখাটি কপি করা হয়েছে');
+    }
+
+    function shareContent() {
+      const textToShare = document.getElementById('viewTitle').innerText + '\n\n' + contentDiv.innerText + '\n\nআসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2\nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500';
+      if (navigator.share) {
+        navigator.share({
+          title: 'বই শেয়ার করুন',
+          text: textToShare
+        }).catch(console.error);
+      } else {
+        showToast('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
+      }
+    }
+  </script>
+</body>
+</html>

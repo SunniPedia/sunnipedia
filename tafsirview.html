@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="bn">  
 <head>  
   <meta charset="UTF-8">  
   <title>তাফসির সমগ্র</title>  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <meta name="description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামী বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
   <meta property="og:title" content="ইসলামী বিশ্বকোষ ও আল হাদিস S2">
   <meta property="og:description" content="ইসলামী বিশেকোষ ও আল হাদিস S2 - আল কুরআন, হাদিস, ইসলামীক বই ও ইসলামী তথ্য ভান্ডারের সমাহার">
   <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
@@ -12,325 +12,410 @@
     @font-face {  
       font-family: 'SolaimanLipi';  
       src: url('fonts/SolaimanLipi.ttf') format('truetype');  
-    }  @font-face {  
-  font-family: 'NooreHuda';  
-  src: url('fonts/noorehuda.ttf') format('truetype');  
-}  
+    }
+    
+    @font-face {  
+      font-family: 'NooreHuda';  
+      src: url('fonts/noorehuda.ttf') format('truetype');  
+    }  
 
-body {  
-  margin: 0;  
-  font-family: 'SolaimanLipi', sans-serif;  
-  background-color: #ffffff;  
-}  
+    body {  
+      margin: 0;  
+      font-family: 'SolaimanLipi', sans-serif;  
+      background-color: #ffffff;  
+    }  
 
-.toolbar {  
-  background-color: #01837A;  
-  color: white;  
-  padding: 15px;  
-  display: flex;  
-  align-items: center;  
-  justify-content: space-between;
-}  
+    .toolbar {  
+      background-color: #01837A;  
+      color: white;  
+      padding: 15px;  
+      display: flex;  
+      align-items: center;  
+      justify-content: space-between;
+    }  
 
-.toolbar-title {  
-  font-size: 18px;  
-  font-weight: bold;  
-}  
+    .toolbar-title {  
+      font-size: 18px;  
+      font-weight: bold;  
+    }  
 
-.icon-img {  
-  width: 24px;  
-  height: 24px;  
-  cursor: pointer;  
-}  
+    .icon-img {  
+      width: 24px;  
+      height: 24px;  
+      cursor: pointer;  
+    }  
 
-#loading {  
-  text-align: center;  
-  padding: 20px;  
-  font-size: 18px;  
-  color: #555;  
-}  
+    #loading {  
+      text-align: center;  
+      padding: 20px;  
+      font-size: 18px;  
+      color: #555;  
+    }  
 
-.ayah-card {  
-  margin: 10px;  
-  background-color: #ffffff;  
-  border-radius: 8px;  
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
-  padding: 10px;
-}  
+    .ayah-card {  
+      margin: 10px;  
+      background-color: #ffffff;  
+      border-radius: 8px;  
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+      padding: 10px;
+    }  
 
-.top-row {  
-  display: flex;  
-  align-items: center;  
-  margin-bottom: 10px;  
-}  
+    .top-row {  
+      display: flex;  
+      align-items: center;  
+      margin-bottom: 10px;  
+    }  
 
-.number-box {  
-  width: 50px;  
-  height: 50px;  
-  background-image: url('ic_1_4.png');  
-  background-size: cover;  
-  display: flex;  
-  align-items: center;  
-  justify-content: center;  
-}  
+    .number-box {  
+      width: 50px;  
+      height: 50px;  
+      background-image: url('ic_1_4.png');  
+      background-size: cover;  
+      display: flex;  
+      align-items: center;  
+      justify-content: center;  
+    }
+    
+    .custom-dialog {
+      display: none;
+      position: fixed;
+      font-family: 'SolaimanLipi', sans-serif;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
 
-.number-text {  
-  font-size: 11px;  
-  font-weight: bold;  
-  color: #607D8B;  
-}  
+    .dialog-content {
+      background-color: #ffffff;
+      font-family: 'SolaimanLipi', sans-serif;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
 
-.actions {  
-  margin-left: auto;  
-  display: flex;  
-  gap: 10px;  
-}  
+    #ayahInput {
+      padding: 10px;
+      font-family: 'SolaimanLipi', sans-serif;
+      margin: 10px 0;
+      width: calc(100% - 20px);
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
 
-.actions img {  
-  width: 24px;  
-  height: 24px;  
-  cursor: pointer;  
-}  
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #01837A;
+      font-family: 'SolaimanLipi', sans-serif;
+      color: white;
+      cursor: pointer;
+    }
 
-.verse-arabic {  
-  font-family: 'NooreHuda', serif;  
-  font-size: 28px;  
-  text-align: right;  
-  direction: rtl;  
-  unicode-bidi: plaintext;  
-  color: #000;  
-  margin: 10px 0;  
-}  
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    .number-text {  
+      font-size: 11px;  
+      font-weight: bold;  
+      color: #607D8B;  
+    }  
 
-.kanzul, .irfan {  
-  font-size: 14px;  
-  padding: 8px;  
-  margin: 10px 0 5px;  
-  font-weight: bold;  
-}  
+    .actions {  
+      margin-left: auto;  
+      display: flex;  
+      gap: 10px;  
+    }  
 
-.kanzul {  
-  background-color: #E0F2F1;  
-  color: #009688;  
-}  
+    .actions img {  
+      width: 24px;  
+      height: 24px;  
+      cursor: pointer;  
+    }  
 
-.irfan {  
-  background-color: #E3F2FD;  
-  color: #1E88E5;  
-}  
+    .verse-arabic {  
+      font-family: 'NooreHuda', serif;  
+      font-size: 28px;  
+      text-align: right;  
+      direction: rtl;  
+      unicode-bidi: plaintext;  
+      color: #000;  
+      margin: 10px 0;  
+    }  
 
-.kanzul-text, .irfan-text {  
-  font-size: 16px;  
-  color: #000;  
-  margin: 5px 0 10px;  
-}  
+    .kanzul, .irfan {  
+      font-size: 14px;  
+      padding: 8px;  
+      margin: 10px 0 5px;  
+      font-weight: bold;  
+    }  
 
-#searchBox {  
-  display: none;  
-  padding: 10px;  
-}  
+    .kanzul {  
+      background-color: #E0F2F1;  
+      color: #009688;  
+    }  
 
-#searchInput {  
-  width: 100%;  
-  padding: 10px;  
-  font-size: 16px;  
-  border-radius: 8px;  
-  font-family: 'SolaimanLipi', sans-serif;  
-  border: 1px solid #ccc;  
-  box-sizing: border-box;  
-}  
+    .irfan {  
+      background-color: #E3F2FD;  
+      color: #1E88E5;  
+    }  
 
-.audio-controller {  
-  position: fixed;  
-  bottom: 20px;  
-  left: 50%;  
-  transform: translateX(-50%);  
-  background: #01837A;  
-  color: white;  
-  padding: 10px 20px;  
-  border-radius: 30px;  
-  display: flex;  
-  align-items: center;  
-  gap: 15px;  
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);  
-  z-index: 999;  
-  display: none;  
-}  
+    .kanzul-text, .irfan-text {  
+      font-size: 16px;  
+      color: #000;  
+      margin: 5px 0 10px;  
+    }  
 
-.audio-controller img {  
-  width: 28px;  
-  height: 28px;  
-  cursor: pointer;  
-}
-.khazinul {
-  background-color: #FFF3E0;
-  color: #F57C00;
-  font-size: 14px;
-  padding: 8px;
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
+    #searchBox {  
+      display: none;  
+      padding: 10px;  
+    }  
 
-.khazinul-text {
-  font-size: 16px;
-  color: #000;
-  margin: 5px 0 10px;
-}
+    #searchInput {  
+      width: 100%;  
+      padding: 10px;  
+      font-size: 16px;  
+      border-radius: 8px;  
+      font-family: 'SolaimanLipi', sans-serif;  
+      border: 1px solid #ccc;  
+      box-sizing: border-box;  
+    }  
 
-.abbas {
-  color: white;
-  background-color: #0288D1;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
+    .audio-controller {  
+      position: fixed;  
+      bottom: 20px;  
+      left: 50%;  
+      transform: translateX(-50%);  
+      background: #01837A;  
+      color: white;  
+      padding: 10px 20px;  
+      border-radius: 30px;  
+      display: flex;  
+      align-items: center;  
+      gap: 15px;  
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);  
+      z-index: 999;  
+      display: none;  
+    }  
 
-.abbas-text {
-  background-color: #E1F5FE;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-}
+    .audio-controller img {  
+      width: 28px;  
+      height: 28px;  
+      cursor: pointer;  
+    }
+    
+    .khazinul {
+      background-color: #FFF3E0;
+      color: #F57C00;
+      font-size: 14px;
+      padding: 8px;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
 
-.kasir {
-  color: white;
-  background-color: #D84315;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
+    .khazinul-text {
+      font-size: 16px;
+      color: #000;
+      margin: 5px 0 10px;
+    }
 
-.kasir-text {
-  background-color: #FBE9E7;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-}
+    .abbas {
+      color: white;
+      background-color: #0288D1;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
 
-.nurul {
-  color: white;
-  background-color: #AD1457;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
+    .abbas-text {
+      background-color: #E1F5FE;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
 
-.nurul-text {
-  background-color: #FCE4EC;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-}
+    .kasir {
+      color: white;
+      background-color: #D84315;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
 
-.baizabi {
-  color: white;
-  background-color: #455A64;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
+    .kasir-text {
+      background-color: #FBE9E7;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
 
-.baizabi-text {
-  background-color: #ECEFF1;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-}
+    .nurul {
+      color: white;
+      background-color: #AD1457;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
 
-.tabari {
-  color: white;
-  background-color: #6D4C41;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
+    .nurul-text {
+      background-color: #FCE4EC;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
 
-.tabari-text {
-  background-color: #EFEBE9;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-}
+    .baizabi {
+      color: white;
+      background-color: #455A64;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
 
-.kurtubi {
-  color: white;
-  background-color: #00897B;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
+    .baizabi-text {
+      background-color: #ECEFF1;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
 
-.kurtubi-text {
-  background-color: #E0F2F1;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-}
+    .tabari {
+      color: white;
+      background-color: #6D4C41;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
 
-.rejviya {
-  color: white;
-  background-color: #C62828;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
+    .tabari-text {
+      background-color: #EFEBE9;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
 
-.rejviya-text {
-  background-color: #FFEBEE;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-}
+    .kurtubi {
+      color: white;
+      background-color: #00897B;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
 
+    .kurtubi-text {
+      background-color: #E0F2F1;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
 
-.next-icon {
-transform: rotate(180deg);
-}
-</style>
+    .rejviya {
+      color: white;
+      background-color: #C62828;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
 
+    .rejviya-text {
+      background-color: #FFEBEE;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+
+    .next-icon {
+      transform: rotate(180deg);
+    }
+  </style>
 </head>  
-<body>    <div class="toolbar">
-  <div style="display: flex; align-items: center; gap: 10px;">
-    <img src="img/back.png" alt="Back" class="icon-img" onclick="goBack()">
-    <div class="toolbar-title" id="surahTitle">সূরা</div>
+<body>
+  <div class="toolbar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="img/back.png" alt="Back" class="icon-img" onclick="goBack()">
+      <div class="toolbar-title" id="surahTitle">সূরা</div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
+      <img src="img/jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
+      <img src="img/search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
+    </div>
   </div>
-  <div style="display: flex; align-items: center; gap: 10px; padding-right: 5px;">
-    <img src="img/jump.png" alt="Jump to Ayah" class="icon-img" onclick="jumpToAyah()" title="Jump to Ayah">
-    <img src="img/search.png" alt="Search" class="icon-img" onclick="toggleSearch()">
-  </div>
-</div>  
-  </div>    <div id="searchBox">  
+  
+  <div id="searchBox">  
     <input type="text" id="searchInput" placeholder="আয়াত অনুসন্ধান করুন...">  
-  </div>    <div id="loading">লোড হচ্ছে...</div>  
-  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;"></div>    <!-- Floating audio controller -->    <div class="audio-controller" id="audioController">  
+  </div>
+  
+  <div id="loading">লোড হচ্ছে...</div>  
+  <div id="ayahList" style="max-height: 80vh; overflow-y: auto; padding: 10px;"></div>
+  
+  <!-- Floating audio controller -->
+  <div class="audio-controller" id="audioController">  
     <img src="img/next.png" onclick="playPrevious()" alt="Previous" class="next-icon">  
     <img src="img/pause.png" id="mainPlayPause" onclick="toggleMainPlayPause()" alt="Play/Pause">  
     <img src="img/next.png" onclick="playNext()" alt="Next">  
     <img src="img/stop.png" onclick="stopAudio()" alt="Stop">  
-  </div>    <script>  
-function jumpToAyah() {
-  const userInput = prompt("কোন আয়াতে যেতে চান? (সংখ্যা লিখুন)", "");
-  if (!userInput) return;
+  </div>
+  
+  <script>  
+    function jumpToAyah() {
+      const dialog = document.createElement('div');
+      dialog.className = 'custom-dialog';
+      dialog.innerHTML = `
+        <div class="dialog-content">
+          <h2>কোন আয়াতে যেতে চান?</h2>
+          <input type="number" id="ayahInput" placeholder="সংখ্যা লিখুন">
+          <button id="submitBtn">সাবমিট করুন</button>
+          <button id="closeBtn">বন্ধ করুন</button>
+        </div>
+      `;
+      document.body.appendChild(dialog);
 
-  const target = parseInt(userInput);
-  if (isNaN(target)) {
-    alert("সঠিক সংখ্যা লিখুন");
-    return;
-  }
+      // Show the dialog
+      dialog.style.display = 'flex';
 
-  const cards = document.querySelectorAll('.ayah-card');
+      // Close button functionality
+      document.getElementById('closeBtn').addEventListener('click', function() {
+        document.body.removeChild(dialog);
+      });
 
-  const surah = getQueryParam('surah');
-  const isExactSurah = ['Al-Fatihah', 'At-Talaq', 'At-Tawbah'].includes(surah);
+      // Submit button functionality
+      document.getElementById('submitBtn').addEventListener('click', function() {
+        const userInput = document.getElementById('ayahInput').value.trim();
+        if (!userInput) {
+          showToast("কোনো সংখ্যা লিখুন");
+          return;
+        }
 
-  const jumpIndex = isExactSurah ? target - 1 : target; // +1 মূলত এখানে বাস্তবায়ন হচ্ছে
+        const target = parseInt(userInput);
+        if (isNaN(target)) {
+          showToast("সঠিক সংখ্যা লিখুন");
+          return;
+        }
 
-  if (jumpIndex >= 0 && jumpIndex < cards.length) {
-    cards[jumpIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
-  } else {
-    alert("এই সূরায় এতগুলো আয়াত নেই");
-  }
-}
+        const cards = document.querySelectorAll('.ayah-card');
+        const surah = getQueryParam('surah');
+        const isExactSurah = ['Al-Fatihah', 'At-Talaq', 'At-Tawbah'].includes(surah);
+        const jumpIndex = isExactSurah ? target - 1 : target;
+
+        if (jumpIndex >= 0 && jumpIndex < cards.length) {
+          cards[jumpIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+          document.body.removeChild(dialog);
+        } else {
+          showToast("এই সূরায় এতগুলো আয়াত নেই");
+        }
+      });
+    }
+    
     function goBack() {  
       window.location.href = 'tafsir.html';  
     }  
@@ -338,9 +423,12 @@ function jumpToAyah() {
     function toggleSearch() {  
       const box = document.getElementById('searchBox');  
       box.style.display = box.style.display === 'none' ? 'block' : 'none';  
+      if (box.style.display === 'block') {
+        document.getElementById('searchInput').focus();
+      }
     }  
   
-    document.getElementById('searchInput').addEventListener('input', function () {  
+    document.getElementById('searchInput').addEventListener('input', function() {  
       const query = this.value.trim().toLowerCase();  
       const cards = document.querySelectorAll('.ayah-card');  
       cards.forEach(card => {  
@@ -382,7 +470,10 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       const irfan = el.dataset.irfan;  
       const text = formatAyahText(ayahNum, arabic, kanzul, irfan);  
       navigator.clipboard.writeText(text).then(() => {  
-        alert("আয়াত কপি হয়েছে!");  
+        showToast("আয়াত কপি হয়েছে!");  
+      }).catch(err => {
+        console.error('Copy failed:', err);
+        showToast("কপি করতে ব্যর্থ হয়েছে");
       });  
     }  
   
@@ -393,9 +484,9 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       const irfan = el.dataset.irfan;  
       const text = formatAyahText(ayahNum, arabic, kanzul, irfan);  
       if (navigator.share) {  
-        navigator.share({ text: text }).catch(() => alert("শেয়ার ব্যর্থ হয়েছে"));  
+        navigator.share({ text: text }).catch(() => showToast("শেয়ার ব্যর্থ হয়েছে"));  
       } else {  
-        alert("এই ব্রাউজারে শেয়ার সাপোর্ট করে না। কপি করে নিতে পারেন।");  
+        showToast("এই ব্রাউজারে শেয়ার সাপোর্ট করে না। কপি করে নিতে পারেন।");  
       }  
     }  
   
@@ -417,33 +508,32 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
     }  
   
     function toggleAudio(el) {
-  const id = el.dataset.id;
-  const index = audioElements.indexOf(el);
+      const id = el.dataset.id;
+      const index = audioElements.indexOf(el);
 
-  if (currentAudio && !currentAudio.paused && index === currentIndex) {
-    currentAudio.pause();
-    el.src = 'img/play.png';
-    mainPlayPause.src = 'img/play.png';
-    
-    // যদি শেষ আয়াত হয়, controller নিচে চলে যাবে
-    if (currentIndex === audioElements.length - 1) {
-      controller.style.position = 'static';
-      controller.style.marginTop = '20px';
-      controller.style.transform = 'none';
-      controller.style.left = 'unset';
-      controller.style.bottom = 'unset';
-    } else {
-      // অন্যথায় controller আবার নিচে স্থির থাকবে
-      controller.style.position = 'fixed';
-      controller.style.bottom = '20px';
-      controller.style.left = '50%';
-      controller.style.transform = 'translateX(-50%)';
-      controller.style.marginTop = '0';
-    }
-    return;
-  }
+      if (currentAudio && !currentAudio.paused && index === currentIndex) {
+        currentAudio.pause();
+        el.src = 'img/play.png';
+        mainPlayPause.src = 'img/play.png';
+        
+        // যদি শেষ আয়াত হয়, controller নিচে চলে যাবে
+        if (currentIndex === audioElements.length - 1) {
+          controller.style.position = 'static';
+          controller.style.marginTop = '20px';
+          controller.style.transform = 'none';
+          controller.style.left = 'unset';
+          controller.style.bottom = 'unset';
+        } else {
+          // অন্যথায় controller আবার নিচে স্থির থাকবে
+          controller.style.position = 'fixed';
+          controller.style.bottom = '20px';
+          controller.style.left = '50%';
+          controller.style.transform = 'translateX(-50%)';
+          controller.style.marginTop = '0';
+        }
+        return;
+      }
 
-  
       if (currentAudio) {  
         currentAudio.pause();  
         audioElements[currentIndex].src = 'img/play.png';  
@@ -457,7 +547,7 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
       showController();  
   
       currentAudio.play().catch(err => {  
-        alert("অডিও চালাতে সমস্যা হচ্ছে");  
+        showToast("অডিও চালাতে সমস্যা হচ্ছে");  
         console.error(err);  
       });  
   
@@ -498,18 +588,18 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
     }  
   
     function playNext() {
-  const nextIndex = currentIndex + 1;
-  if (nextIndex < audioElements.length) {
-    toggleAudio(audioElements[nextIndex]);
-  } else {
-    // শেষ আয়াতে পৌঁছালে অডিও controller অবস্থান পরিবর্তন হবে
-    controller.style.position = 'static';
-    controller.style.marginTop = '20px';
-    controller.style.transform = 'none';
-    controller.style.left = 'unset';
-    controller.style.bottom = 'unset';
-  }
-}
+      const nextIndex = currentIndex + 1;
+      if (nextIndex < audioElements.length) {
+        toggleAudio(audioElements[nextIndex]);
+      } else {
+        // শেষ আয়াতে পৌঁছালে অডিও controller অবস্থান পরিবর্তন হবে
+        controller.style.position = 'static';
+        controller.style.marginTop = '20px';
+        controller.style.transform = 'none';
+        controller.style.left = 'unset';
+        controller.style.bottom = 'unset';
+      }
+    }
   
     function playPrevious() {  
       const prevIndex = currentIndex - 1;  
@@ -555,49 +645,48 @@ https://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
               <div class="verse-arabic">${ayah.names || ''}</div>  
               <div class="kanzul">কানযুল ঈমান</div>  
               <div class="kanzul-text">${ayahNum}. ${ayah.name || ''}</div>
-${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
-  <div class="khazinul">তাফসিরে খাযাইনুল ইরফান</div>  
-  <div class="khazinul-text">${ayah.khazainulirfan}</div>  
-` : ''}
+              ${ayah.khazainulirfan && ayah.khazainulirfan !== 'not' ? `
+                <div class="khazinul">তাফসিরে খাযাইনুল ইরফান</div>  
+                <div class="khazinul-text">${ayah.khazainulirfan}</div>  
+              ` : ''}
 
-<div class="irfan">ইরফানুল কুরআন</div>  
-<div class="irfan-text">${ayah.author || ''}</div>
+              <div class="irfan">ইরফানুল কুরআন</div>  
+              <div class="irfan-text">${ayah.author || ''}</div>
 
-${ayah.abbas && ayah.abbas !== 'not' ? `
-  <div class="abbas">তাফসিরে ইবনে আব্বাস</div>
-  <div class="abbas-text">${ayah.abbas}</div>
-` : ''}
+              ${ayah.abbas && ayah.abbas !== 'not' ? `
+                <div class="abbas">তাফসিরে ইবনে আব্বাস</div>
+                <div class="abbas-text">${ayah.abbas}</div>
+              ` : ''}
 
-${ayah.kasir && ayah.kasir !== 'not' ? `
-  <div class="kasir">তাফসিরে ইবনে কাসির</div>
-  <div class="kasir-text">${ayah.kasir}</div>
-` : ''}
+              ${ayah.kasir && ayah.kasir !== 'not' ? `
+                <div class="kasir">তাফসিরে ইবনে কাসির</div>
+                <div class="kasir-text">${ayah.kasir}</div>
+              ` : ''}
 
-${ayah.nurul && ayah.nurul !== 'not' ? `
-  <div class="nurul">তাফসিরে নুরুল ইরফান</div>
-  <div class="nurul-text">${ayah.nurul}</div>
-` : ''}
+              ${ayah.nurul && ayah.nurul !== 'not' ? `
+                <div class="nurul">তাফসিরে নুরুল ইরফান</div>
+                <div class="nurul-text">${ayah.nurul}</div>
+              ` : ''}
 
-${ayah.baizabi && ayah.baizabi !== 'not' ? `
-  <div class="baizabi">তাফসিরে বায়যাবী</div>
-  <div class="baizabi-text">${ayah.baizabi}</div>
-` : ''}
+              ${ayah.baizabi && ayah.baizabi !== 'not' ? `
+                <div class="baizabi">তাফসিরে বায়যাবী</div>
+                <div class="baizabi-text">${ayah.baizabi}</div>
+              ` : ''}
 
-${ayah.tabari && ayah.tabari !== 'not' ? `
-  <div class="tabari">তাফসিরে তাবারী</div>
-  <div class="tabari-text">${ayah.tabari}</div>
-` : ''}
+              ${ayah.tabari && ayah.tabari !== 'not' ? `
+                <div class="tabari">তাফসিরে তাবারী</div>
+                <div class="tabari-text">${ayah.tabari}</div>
+              ` : ''}
 
-${ayah.kurtubi && ayah.kurtubi !== 'not' ? `
-  <div class="kurtubi">তাফসিরে কুরতুবী</div>
-  <div class="kurtubi-text">${ayah.kurtubi}</div>
-` : ''}
+              ${ayah.kurtubi && ayah.kurtubi !== 'not' ? `
+                <div class="kurtubi">তাফসিরে কুরতুবী</div>
+                <div class="kurtubi-text">${ayah.kurtubi}</div>
+              ` : ''}
 
-${ayah.rejviya && ayah.rejviya !== 'not' ? `
-  <div class="rejviya">তাফসিরে রেজভীয়া</div>
-  <div class="rejviya-text">${ayah.rejviya}</div>
-` : ''}
-
+              ${ayah.rejviya && ayah.rejviya !== 'not' ? `
+                <div class="rejviya">তাফসিরে রেজভীয়া</div>
+                <div class="rejviya-text">${ayah.rejviya}</div>
+              ` : ''}
             `;  
   
             ayahList.appendChild(card);  
@@ -619,5 +708,29 @@ ${ayah.rejviya && ayah.rejviya !== 'not' ? `
     } else {  
       document.getElementById('ayahList').innerHTML = '<p>কোন সূরা নির্ধারিত হয়নি।</p>';  
     }  
-  </script>  </body>  
+    
+    // Toast function for displaying message
+    function showToast(message) {
+      let toast = document.createElement("div");
+      toast.style.position = "fixed";
+      toast.style.bottom = "30px";
+      toast.style.left = "50%";
+      toast.style.transform = "translateX(-50%)";
+      toast.style.padding = "10px 20px";
+      toast.style.backgroundColor = "#333";
+      toast.style.color = "white";
+      toast.style.borderRadius = "5px";
+      toast.style.fontSize = "14px";
+      toast.style.zIndex = "9999";
+      toast.innerText = message;
+      document.body.appendChild(toast);
+      setTimeout(function() {
+        toast.style.opacity = "0";
+        setTimeout(function() {
+          document.body.removeChild(toast);
+        }, 500);
+      }, 3000);
+    }
+  </script>
+</body>  
 </html>

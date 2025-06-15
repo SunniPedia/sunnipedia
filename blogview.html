@@ -136,7 +136,7 @@ function decreaseFont() {
       tempInput.select();
       document.execCommand('copy');
       document.body.removeChild(tempInput);
-      alert('লেখাটি কপি করা হয়েছে');
+      showToast('লেখাটি কপি করা হয়েছে');
     }
 
     function shareContent() {
@@ -144,9 +144,31 @@ function decreaseFont() {
       if (navigator.share) {
         navigator.share({ title: 'প্রবন্ধ', text: textToShare }).catch(console.error);
       } else {
-        alert('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
+        showToast('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
       }
     }
+     // Toast function for displaying message
+        function showToast(message) {
+            let toast = document.createElement("div");
+            toast.style.position = "fixed";
+            toast.style.bottom = "30px";
+            toast.style.left = "50%";
+            toast.style.transform = "translateX(-50%)";
+            toast.style.padding = "10px 20px";
+            toast.style.backgroundColor = "#333";
+            toast.style.color = "white";
+            toast.style.borderRadius = "5px";
+            toast.style.fontSize = "14px";
+            toast.style.zIndex = "9999";
+            toast.innerText = message;
+            document.body.appendChild(toast);
+            setTimeout(function() {
+                toast.style.opacity = "0";
+                setTimeout(function() {
+                    document.body.removeChild(toast);
+                }, 500);
+            }, 3000);
+        }
   </script>
 
 </body>

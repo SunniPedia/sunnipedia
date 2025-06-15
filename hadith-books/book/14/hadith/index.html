@@ -173,6 +173,29 @@
     </div>
 
     <script>
+// Toast function for displaying message
+function showToast(message) {
+    let toast = document.createElement("div");
+    toast.style.position = "fixed";
+    toast.style.bottom = "30px";
+    toast.style.left = "50%";
+    toast.style.transform = "translateX(-50%)";
+    toast.style.padding = "10px 20px";
+    toast.style.backgroundColor = "#333";
+    toast.style.color = "white";
+    toast.style.borderRadius = "5px";
+    toast.style.fontSize = "14px";
+    toast.style.zIndex = "9999";
+    toast.innerText = message;
+    document.body.appendChild(toast);
+    setTimeout(function() {
+        toast.style.opacity = "0";
+        setTimeout(function() {
+            document.body.removeChild(toast);
+        }, 500);
+    }, 3000);
+}
+
         function toBanglaNumber(num) {
             const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
             return num.toString().replace(/\d/g, digit => banglaDigits[digit]);
@@ -284,7 +307,7 @@ ${hadith.description}
     `.trim();
 
     navigator.clipboard.writeText(fullText).then(() => {
-        alert('কপি করা হয়েছে!');
+        showToast('কপি করা হয়েছে!');
     });
 }
 
@@ -315,7 +338,7 @@ ${hadith.description}
             text: shareText
         }).catch((error) => console.log('Error sharing', error));
     } else {
-        alert('এই ব্রাউজারে শেয়ার ফিচার সমর্থিত নয়');
+        showToast('এই ব্রাউজারে শেয়ার ফিচার সমর্থিত নয়');
     }
 }
 
