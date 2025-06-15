@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ইসলামিক নাম পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta property="og:title" content="ইসলামিক নাম - ইসলামী বিশ্বকোষ ও আল হাদিস S2">
+  <meta property="og:description" content="ইসলামিক নাম - ইসলামিক নাম পড়ুন ইসলামী বিশ্বকোষ ও আল হাদিস S2 তে">
+  <meta property="og:image" content="https://islamipedia.vercel.app/icon.png">
+  <style>
+    @font-face {
+      font-family: 'SolaimanLipi';
+      src: url('fonts/SolaimanLipi.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'SolaimanLipi', sans-serif;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background-color: #F1F4F7;
+      padding: 5px;
+      height: 15px;
+    }
+
+    .toolbar img {
+      height: 24px;
+      cursor: pointer;
+      filter: invert(100%);
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100% - 34px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <img src="img/back.png" alt="Back" onclick="goBack()">
+  </div>
+
+  <iframe id="mainFrame" src="https://islamipedia.vercel.app/islamic-name/"></iframe>
+
+  <script>
+    function goBack() {
+      history.back();
+    }
+  </script>
+
+</body>
+</html>
