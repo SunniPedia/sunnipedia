@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দু'আ অনুসন্ধান</title>
+    <style>
+        @font-face {
+            font-family: 'SolaimanLipi';
+            src: url('fonts/SolaimanLipi.ttf') format('truetype');
+        }
+        
+        body {
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .toolbar {
+            background-color: #01837A;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: fixed; /* Fix toolbar at the top */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding-bottom: 10px;
+        }
+        
+        .toolbar-title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .toolbar img {
+            height: 24px;
+            cursor: pointer;
+        }
+        
+        .search-container {
+            background-color: #01837A;
+            padding: 10px 15px;
+            display: none;
+            position: fixed; /* Fix search bar on top */
+            top: 50px; /* Below the toolbar */
+            left: 0;
+            right: 0;
+            z-index: 99; /* Below toolbar */
+        }
+        
+        .search-container.active {
+            display: block;
+        }
+        
+        .search-input-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .search-input-wrapper img {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 16px;
+            opacity: 0.7;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 3px; /* padding on all sides */
+            border-radius: 20px;
+            border: none;
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+            font-size: 16px;
+            text-align: center; /* Text aligned to the center */
+        }
+        
+        .content {
+            padding: 15px;
+            margin-top: 80px; /* Make sure content doesn't go under the toolbar */
+        }
+        
+        .category-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .category-box {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .category-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .category-image {
+            padding-top: 10px;
+            width: 100%;
+            height: 50px;
+            object-fit: scale-down;
+        }
+        
+        .category-details {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .category-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #01837A;
+            margin-bottom: 5px;
+        }
+        
+        .category-count {
+            font-size: 14px;
+            color: #666;
+            background-color: #e0f2f1;
+            padding: 5px 10px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <img src="back.png" alt="Back" onclick="history.back()">
+        <div class="toolbar-title">দু'আ</div>
+        <img src="search.png" alt="Search" id="searchToggle">
+    </div>
+    
+    <div class="search-container" id="searchContainer">
+        <div class="search-input-wrapper">
+            <img src="search.png" alt="Search">
+            <input type="text" class="search-input" id="searchInput" placeholder="দু'আ খুঁজুন...">
+        </div>
+    </div>
+    
+    <div class="content">
+        <div id="categories-container" class="category-list">
+            <!-- Categories will be loaded here -->
+        </div>
+        <div id="loading" class="loading">লোড হচ্ছে...</div>
+        <div id="error" class="error" style="display: none;">ডেটা লোড করতে সমস্যা হয়েছে</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoriesContainer = document.getElementById('categories-container');
+            const loadingElement = document.getElementById('loading');
+            const errorElement = document.getElementById('error');
+            const searchInput = document.getElementById('searchInput');
+            const searchToggle = document.getElementById('searchToggle');
+            const searchContainer = document.getElementById('searchContainer');
+            
+            let categoriesData = [];
+            
+            // Toggle search visibility
+            searchToggle.addEventListener('click', function() {
+                searchContainer.classList.toggle('active');
+                if (searchContainer.classList.contains('active')) {
+                    searchInput.focus();
+                }
+            });
+            
+            // Fetch categories from API
+            fetch('https://api.muslimbangla.com/categories')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    categoriesData = data.data.rows;
+                    displayCategories(categoriesData);
+                    loadingElement.style.display = 'none';
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    loadingElement.style.display = 'none';
+                    errorElement.style.display = 'block';
+                });
+            
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const filteredCategories = categoriesData.filter(category => 
+                    category.title.toLowerCase().includes(searchTerm)
+                );
+                displayCategories(filteredCategories);
+            });
+            
+            // Function to display categories
+            function displayCategories(categories) {
+                categoriesContainer.innerHTML = '';
+                
+                if (categories.length === 0) {
+                    categoriesContainer.innerHTML = '<div class="error">কোন ফলাফল পাওয়া যায়নি</div>';
+                    return;
+                }
+                
+                categories.forEach(category => {
+                    const categoryBox = document.createElement('div');
+                    categoryBox.className = 'category-box';
+                    
+                    const imageUrl = `https://cdn.topofstacksoftware.com/dua-category-thumbnails/${category.thumbnail}`;
+                    
+                    // Convert numbers to Bengali numerals
+                    const sequenceBn = toBengaliNumerals(category.sequence);
+                    const countBn = toBengaliNumerals(category.total_duas);
+                    
+                    categoryBox.innerHTML = `
+                        <img src="${imageUrl}" alt="${category.title}" class="category-image">
+                        <div class="category-details">
+                            <div class="category-title">${sequenceBn}. ${category.title}</div>
+                            <div class="category-count">মোট দু'আ - ${countBn} টি</div>
+                        </div>
+                    `;
+                    
+                    categoryBox.addEventListener('click', function() {
+                        // Pass data to dua.html using URL parameters
+                        const params = new URLSearchParams();
+                        params.append('id', category.id);
+                        params.append('sequence', category.sequence);
+                        params.append('title', category.title);
+                        params.append('total_duas', category.total_duas);
+                        
+                        window.location.href = `dua.html?${params.toString()}`;
+                    });
+                    
+                    categoriesContainer.appendChild(categoryBox);
+                });
+            }
+            
+            // Function to convert English numerals to Bengali
+            function toBengaliNumerals(number) {
+                const englishDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+                const bengaliDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+                
+                return number.toString().split('').map(digit => {
+                    const index = englishDigits.indexOf(digit);
+                    return index !== -1 ? bengaliDigits[index] : digit;
+                }).join('');
+            }
+        });
+    </script>
+</body>
+</html>

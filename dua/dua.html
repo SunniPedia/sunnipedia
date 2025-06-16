@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দু'আ</title>
+    <style>
+        @font-face {
+    font-family: 'Noorehuda';
+    src: url('fonts/noorehuda.ttf') format('truetype');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+    font-family: 'SolaimanLipi';
+    src: url('fonts/SolaimanLipi.ttf') format('truetype');
+    unicode-range: U+0980-09FF, U+200C-200D, U+2018-2019;
+}
+
+.dua-mixed {
+    font-family: 'Noorehuda', 'SolaimanLipi', Arial, sans-serif;
+    font-size: 24px;
+    text-align: right;
+    direction: rtl;
+    margin: 15px 0;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.arabic-text {
+    font-family: 'Noorehuda', 'Traditional Arabic', Arial, sans-serif;
+}
+.bangla-text {
+    font-family: 'SolaimanLipi', Arial, sans-serif;
+}        
+        body { 
+            font-family: 'SolaimanLipi', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f5f5f5; 
+        }
+        
+        .toolbar { 
+            background-color: #01837A; 
+            color: white; 
+            padding: 15px; 
+            display: flex; 
+            align-items: center; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            z-index: 100; 
+            padding-bottom: 10px; 
+        }
+        
+        .toolbar-title { 
+            flex-grow: 1; 
+            text-align: center; 
+            font-size: 18px; 
+            font-weight: bold; 
+        }
+        
+        .toolbar img { 
+            height: 24px; 
+            cursor: pointer; 
+        }
+        
+        .content { 
+            padding: 15px; 
+            margin-top: 80px; 
+        }
+        
+        .dua-box { 
+            background-color: white; 
+            border-radius: 10px; 
+            padding: 20px; 
+            margin-bottom: 15px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            position: relative;
+        }
+        
+        .dua-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .dua-title { 
+            font-size: 20px; 
+            font-weight: bold; 
+            color: #01837A; 
+            margin: 0;
+        }
+        
+        .dua-number {
+            font-size: 18px;
+            color: #01837A;
+            margin-right: 10px;
+        }
+        
+        .dua-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .dua-actions img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        
+ .dua-arabic {
+    font-family: 'Noorehuda', 'Traditional Arabic', 'SolaimanLipi', Arial, sans-serif;
+    font-size: 24px;
+    text-align: right;
+    direction: rtl;
+    margin: 15px 0;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+        
+        .dua-other {
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+            font-size: 18px;
+            margin: 15px 0;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+        
+        .dua-transliteration { 
+            font-size: 16px; 
+            font-style: italic; 
+            color: #333; 
+            white-space: pre-line;
+        }
+        
+        .dua-meaning { 
+            font-size: 16px; 
+            color: #555;
+            white-space: pre-line;
+        }
+        
+        .dua-benefit { 
+            background-color: #01837A; 
+            color: white; 
+            padding: 10px; 
+            margin-top: 10px; 
+            border-radius: 5px;
+            white-space: pre-line;
+        }
+        
+        .dua-source { 
+            margin-top: 10px; 
+            font-size: 14px; 
+            color: #777;
+            white-space: pre-line;
+        }
+        
+        .error { 
+            text-align: center; 
+            padding: 20px; 
+            font-size: 18px; 
+            color: #d32f2f; 
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: #01837A;
+        }
+        
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .search-container {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 99;
+        }
+        
+        #searchInput {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'SolaimanLipi';
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <img src="back.png" alt="Back" onclick="history.back()">
+        <div class="toolbar-title" id="toolbarTitle">দু'আ</div>
+    </div>
+    
+    <div class="search-container" id="searchContainer">
+        <input type="text" id="searchInput" placeholder="দু'আ খুঁজুন..." oninput="searchDuas()">
+    </div>
+    
+    <div class="content">
+        <div id="totalDuas" class="dua-title"></div>
+        <div id="duas-container"></div>
+        <div id="loading" class="loading">লোড হচ্ছে...</div>
+        <div id="error" class="error" style="display: none;">ডেটা লোড করতে সমস্যা হয়েছে</div>
+    </div>
+    
+    <div class="toast" id="toast"></div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const duasContainer = document.getElementById('duas-container');
+            const totalDuas = document.getElementById('totalDuas');
+            const loadingElement = document.getElementById('loading');
+            const errorElement = document.getElementById('error');
+            const toolbarTitle = document.getElementById('toolbarTitle');
+            const searchToggle = document.getElementById('searchToggle');
+            const searchContainer = document.getElementById('searchContainer');
+            const searchInput = document.getElementById('searchInput');
+            const toast = document.getElementById('toast');
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryId = urlParams.get('id');
+            const categoryTitle = urlParams.get('title');
+            const totalDuasCount = urlParams.get('total_duas');
+            
+            // Set toolbar title and total duas count
+            toolbarTitle.innerText = categoryTitle || "দু'আ";
+            totalDuas.innerText = `মোট দু'আ: ${convertToBanglaNumerals(totalDuasCount || "০")} টি`;
+            
+            let allDuas = [];
+            let currentPage = 1;
+            const totalPages = Math.ceil((totalDuasCount || 0) / 10);
+            let currentAudio = null;
+            let isPlaying = false;
+            
+            function toggleSearch() {
+                if (searchContainer.style.display === 'block') {
+                    searchContainer.style.display = 'none';
+                } else {
+                    searchContainer.style.display = 'block';
+                    searchInput.focus();
+                }
+            }
+            
+            function searchDuas() {
+                const searchTerm = searchInput.value.toLowerCase();
+                if (!searchTerm) {
+                    displayDuas(allDuas);
+                    return;
+                }
+                
+                const filteredDuas = allDuas.filter(dua => {
+                    return (
+                        (dua.title && dua.title.toLowerCase().includes(searchTerm)) ||
+                        (dua.dua && dua.dua.toLowerCase().includes(searchTerm)) ||
+                        (dua.transliteration && dua.transliteration.toLowerCase().includes(searchTerm)) ||
+                        (dua.meaning && dua.meaning.toLowerCase().includes(searchTerm)) ||
+                        (dua.benefit && dua.benefit.toLowerCase().includes(searchTerm)) ||
+                        (dua.source && dua.source.toLowerCase().includes(searchTerm))
+                    );
+                });
+                
+                displayDuas(filteredDuas);
+            }
+            
+            function showToast(message) {
+                toast.textContent = message;
+                toast.style.opacity = 1;
+                setTimeout(() => {
+                    toast.style.opacity = 0;
+                }, 2000);
+            }
+            
+            // Fetch data function
+            function fetchData(page) {
+                fetch(`https://api.muslimbangla.com/duas?page=${page}&category_id=${categoryId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data && data.data && data.data.rows) {
+                            allDuas = [...allDuas, ...data.data.rows];
+                            if (currentPage < totalPages) {
+                                currentPage++;
+                                fetchData(currentPage); // Fetch next page data
+                            } else {
+                                displayDuas(allDuas);
+                                loadingElement.style.display = 'none';
+                            }
+                        } else {
+                            loadingElement.style.display = 'none';
+                            errorElement.style.display = 'block';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                        loadingElement.style.display = 'none';
+                        errorElement.style.display = 'block';
+                    });
+            }
+            
+            fetchData(currentPage); // Start fetching data
+            
+            // Display the duas
+function displayDuas(duas) {
+    duasContainer.innerHTML = '';
+    
+    duas.forEach((dua, index) => {
+        if (!dua) return;
+        
+        const duaBox = document.createElement('div');
+        duaBox.classList.add('dua-box');
+        
+        const audioUrl = dua.audio ? `https://cdn.topofstacksoftware.com/dua/${dua.audio}.mp3` : null;
+        const banglaNumber = convertToBanglaNumerals(index + 1);
+        
+        // Determine if the dua is Arabic or other language
+        const isArabic = /[\u0600-\u06FF]/.test(dua.dua);
+        const duaClass = isArabic ? 'dua-arabic' : 'dua-other';
+        
+        duaBox.innerHTML = `
+    <div class="dua-header">
+        <div style="display: flex; align-items: center;">
+            <span class="dua-number">${banglaNumber}.</span>
+            <h3 class="dua-title">${replaceHonorifics(dua.title || '')}</h3>
+        </div>
+        <div class="dua-actions">
+            ${audioUrl ? `<img src="play.png" alt="Play" onclick="toggleAudio('${audioUrl}', this)" data-playing="false">` : ''}
+            <img src="copy.png" alt="Copy" onclick="copyDua(this)">
+            <img src="share.png" alt="Share" onclick="shareDua(this)">
+        </div>
+    </div>
+${dua.dua ? `<div class="dua-mixed">${formatMixedText(dua.dua.replace(/\\n/g, '\n'))}</div>` : ''}
+    ${dua.transliteration ? `<div class="dua-transliteration">উচ্চারণ: ${replaceHonorifics(dua.transliteration.replace(/\\n/g, '\n'))}</div>` : ''}
+    ${dua.meaning ? `<div class="dua-meaning">অর্থ: ${replaceHonorifics(dua.meaning.replace(/\\n/g, '\n'))}</div>` : ''}
+    ${dua.benefit ? `<div class="dua-benefit">বিস্তারিত:\n${replaceHonorifics(dua.benefit.replace(/\\n/g, '\n'))}</div>` : ''}
+    ${dua.source ? `<div class="dua-source">সূত্র: ${replaceHonorifics(dua.source.replace(/\\n/g, '\n'))}</div>` : ''}
+    <div class="dua-content" style="display:none;">${getFullDuaText(dua, banglaNumber)}</div>
+`;
+        
+        const elementsToHide = [
+            { selector: '.dua-title', value: dua.title },
+            { selector: `.${duaClass}`, value: dua.dua },
+            { selector: '.dua-transliteration', value: dua.transliteration },
+            { selector: '.dua-meaning', value: dua.meaning },
+            { selector: '.dua-benefit', value: dua.benefit },
+            { selector: '.dua-source', value: dua.source }
+        ];
+
+        elementsToHide.forEach(item => {
+            if (!item.value || item.value === "null") {
+                const element = duaBox.querySelector(item.selector);
+                if (element) {
+                    element.classList.add('hidden');
+                }
+            }
+        });
+
+        duasContainer.appendChild(duaBox);
+    }); // This closing bracket was missing
+}
+            
+            function getFullDuaText(dua, number) {
+    let text = '';
+    
+    // শিরোনাম
+    if (dua.title && dua.title !== "null") {
+        text += `${number}. ${replaceHonorifics(dua.title)}\n\n`;
+    }
+
+    // দুআ টেক্সট
+    if (dua.dua && dua.dua !== "null" && dua.dua.trim() !== "") {
+        text += `${replaceHonorifics(dua.dua.replace(/\\n/g, '\n'))}\n\n`;
+    }
+
+    // উচ্চারণ
+    if (dua.transliteration && dua.transliteration !== "null" && dua.transliteration.trim() !== "") {
+        text += `উচ্চারণ: ${replaceHonorifics(dua.transliteration.replace(/\\n/g, '\n'))}\n\n`;
+    }
+
+    // অর্থ
+    if (dua.meaning && dua.meaning !== "null" && dua.meaning.trim() !== "") {
+        text += `অর্থ: ${replaceHonorifics(dua.meaning.replace(/\\n/g, '\n'))}\n\n`;
+    }
+
+    // বিস্তারিত
+    if (dua.benefit && dua.benefit !== "null" && dua.benefit.trim() !== "") {
+        text += `বিস্তারিত: ${replaceHonorifics(dua.benefit.replace(/\\n/g, '\n'))}\n\n`;
+    }
+
+    // সূত্র
+    if (dua.source && dua.source !== "null" && dua.source.trim() !== "") {
+        text += `সূত্র: ${replaceHonorifics(dua.source.replace(/\\n/g, '\n'))}\n\n`;
+    }
+
+    // ফুটার
+    text += `আসসালামু আলাইকুম ইসলামী বিশ্বকোষ ও আল হাদিস S2:\n`;
+    text += `ওয়েব সাইট লিংক - \nhttps://islamipedia.vercel.app/\n`;
+    text += `প্লে স্টোর লিংক - \nhttps://play.google.com/store/apps/details?id=com.srizwan.bookhozur500`;
+    
+    return text;
+}
+            
+            function convertToBanglaNumerals(number) {
+                if (!number) return "০";
+                const banglaNumerals = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+                return number.toString().replace(/[0-9]/g, digit => banglaNumerals[parseInt(digit)]);
+            }
+            
+            window.toggleAudio = function(url, element) {
+                if (currentAudio && currentAudio.src === url) {
+                    if (isPlaying) {
+                        currentAudio.pause();
+                        element.src = "play.png";
+                        element.setAttribute('data-playing', 'false');
+                        isPlaying = false;
+                    } else {
+                        currentAudio.play();
+                        element.src = "pause.png";
+                        element.setAttribute('data-playing', 'true');
+                        isPlaying = true;
+                    }
+                } else {
+                    if (currentAudio) {
+                        currentAudio.pause();
+                        document.querySelectorAll('.dua-actions img[data-playing="true"]').forEach(el => {
+                            el.src = "play.png";
+                            el.setAttribute('data-playing', 'false');
+                        });
+                    }
+                    
+                    currentAudio = new Audio(url);
+                    currentAudio.play();
+                    element.src = "pause.png";
+                    element.setAttribute('data-playing', 'true');
+                    isPlaying = true;
+                    
+                    currentAudio.onended = function() {
+                        element.src = "play.png";
+                        element.setAttribute('data-playing', 'false');
+                        isPlaying = false;
+                    };
+                }
+            };
+            
+            window.copyDua = function(element) {
+                const duaContent = element.closest('.dua-box').querySelector('.dua-content').textContent;
+                navigator.clipboard.writeText(duaContent).then(() => {
+                    showToast('কপি করা হয়েছে');
+                }).catch(err => {
+                    console.error('Could not copy text: ', err);
+                });
+            };
+            
+            window.shareDua = function(element) {
+                const duaContent = element.closest('.dua-box').querySelector('.dua-content').textContent;
+                
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'দু\'আ শেয়ার করুন',
+                        text: duaContent,
+                    }).then(() => {
+                        showToast('শেয়ার করা হচ্ছে...');
+                    }).catch(error => {
+                        console.log('Error sharing:', error);
+                    });
+                } else {
+                    const shareUrl = `whatsapp://send?text=${encodeURIComponent(duaContent)}`;
+                    window.open(shareUrl, '_blank');
+                    showToast('শেয়ার করা হচ্ছে...');
+                }
+            };
+        });
+        function replaceHonorifics(text) {
+    if (!text) return text;
+    
+    const replacements = {
+        // নবী (সা.) এর জন্য
+        '\\(সা\\.\\)': '(ﷺ)',
+        '\\(সা\\ঃ\\)': '(ﷺ)',
+        '\\(সা\\)': '(ﷺ)',
+        '\\(স\\)': '(ﷺ)',
+        '\\(সা:\\)': '(ﷺ)',
+        // সাহাবীদের (রা.) এর জন্য
+        '\\(রা\\.\\)': '(رضي الله عنهم)',
+        '\\(রা\\)': '(رضي الله عنهم)',
+        '\\(রা:\\)': '(رضي الله عنهم)',
+        '\\(রা\\ঃ\\)': '(رضي الله عنهم)',
+        '\\(রাযি\\.\\)': '(رضي الله عنه)',
+        '\\(রাযি\\)': '(رضي الله عنه)',
+        '\\(রাযি\\ঃ\\)': '(رضي الله عنه)',
+        // অন্যান্য
+        '\\(আ\\.\\)': '(عليه السلام)',
+        '\\(আ\\)': '(عليه السلام)',
+        '\\(আ:\\)': '(عليه السلام)',
+        '\\(রাহ\\.\\)': '(رحمة الله عليه)',
+        '\\(রাহ\\ঃ\\)': '(رحمة الله عليه)',
+        '\\(রহ\\ঃ\\)': '(رحمة الله عليه)',
+        '\\(রাহ\\)': '(رحمة الله عليه)',
+        '\\(র\\)': '(رحمة الله عليه)',
+        '\\(রাহ:\\)': '(رحمة الله عليه)'
+    };
+    
+    let result = text;
+    for (const [key, value] of Object.entries(replacements)) {
+        const regex = new RegExp(key, 'g');
+        result = result.replace(regex, value);
+    }
+    
+    return result;
+}
+function formatMixedText(text) {
+    return text.replace(/([\u0600-\u06FF]+)|([\u0980-\u09FF]+)/g, 
+        (match, arabic, bangla) => {
+            if (arabic) return `<span class="arabic-text">${arabic}</span>`;
+            if (bangla) return `<span class="bangla-text">${bangla}</span>`;
+            return match;
+        }
+    );
+}
+
+
+    </script>
+</body>
+</html>
