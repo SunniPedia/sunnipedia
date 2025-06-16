@@ -1,155 +1,233 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>নামাযের সময়সূচি</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>নামাযের সময়সূচি</title>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="assets/mecca 16x16.png" type="image/gif">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/mecca 16x16.png" type="image/gif">
 
-	<!-- SolaimanLipi Font -->
-	<style>
-		@font-face {
-			font-family: 'SolaimanLipi';
-			src: url('fonts/SolaimanLipi.ttf') format('truetype');
-			font-weight: normal;
-			font-style: normal;
-		}
-		body {
-			font-family: 'SolaimanLipi', sans-serif;
-		}
-		#divShowPrayTimes {
-			text-align: center;
-		}
-	</style>
+    <!-- SolaimanLipi Font -->
+    <style>
+        @font-face {
+            font-family: 'SolaimanLipi';
+            src: url('fonts/SolaimanLipi.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'SolaimanLipi', sans-serif;
+        }
+        #divShowPrayTimes {
+            text-align: center;
+        }
+        .date-display {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .hijri-date {
+            color: #28a745;
+        }
+        .bangla-date {
+            color: #17a2b8;
+        }
+    </style>
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row bg-warning p-2" id="notification_panel">
-			<div class="container">
-				<p class="m-0 text-center text-muted" id="notification_message">নোটিফিকেশন বার্তা এখানে</p>
-			</div>
-		</div>
+    <div class="container-fluid">
+        <div class="row bg-warning p-2" id="notification_panel">
+            <div class="container">
+                <p class="m-0 text-center text-muted" id="notification_message">নোটিফিকেশন বার্তা এখানে</p>
+            </div>
+        </div>
 
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-6 p-4">
-				<!-- Language Selector -->
-				<div class="btn-group btn-group-sm btn-group-toggle mb-3" data-toggle="buttons">
-					<label class="btn btn-secondary" id="btn-en">
-						<input type="radio" name="lang" value="en" autocomplete="off"> English
-					</label>
-					<label class="btn btn-secondary active" id="btn-bn">
-						<input type="radio" name="lang" value="bn" autocomplete="off" checked> বাংলা
-					</label>
-				</div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 p-4">
+                <!-- Language Selector -->
+                <div class="btn-group btn-group-sm btn-group-toggle mb-3" data-toggle="buttons">
+                    <label class="btn btn-secondary" id="btn-en">
+                        <input type="radio" name="lang" value="en" autocomplete="off"> English
+                    </label>
+                    <label class="btn btn-secondary active" id="btn-bn">
+                        <input type="radio" name="lang" value="bn" autocomplete="off" checked> বাংলা
+                    </label>
+                </div>
 
-				<div class="card">
-					<div class="card-header">
-						<h5 class="card-title mb-1" id="table_header_title">নামাযের সময়সূচি</h5>
-						<p id="hijriDate" class="mb-1 font-weight-bold text-success">হিজরি তারিখ লোড হচ্ছে...</p>
-						<p id="currentDateTime">বর্তমান সময়</p>
-					</div>
-					<div class="card-body">
-						<div id="divShowPrayTimes">নামাযের সময় এখানে দেখানো হবে</div>
-					</div>
-				</div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-1" id="table_header_title">নামাযের সময়সূচি</h5>
+                        <p id="hijriDate" class="date-display hijri-date">হিজরি তারিখ লোড হচ্ছে...</p>
+                        <p id="banglaDate" class="date-display bangla-date">বাংলা তারিখ লোড হচ্ছে...</p>
+                        <p id="currentDateTime">বর্তমান সময়</p>
+                    </div>
+                    <div class="card-body">
+                        <div id="divShowPrayTimes">নামাযের সময় এখানে দেখানো হবে</div>
+                    </div>
+                </div>
 
-				<small class="text-muted d-block text-center p-2" id="footer_note">* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে</small>
-			</div>
-		</div>
-	</div>
+                <small class="text-muted d-block text-center p-2" id="footer_note">* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে</small>
+            </div>
+        </div>
+    </div>
 
-	<!-- JS Scripts -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap/popper.min.js"></script>
-	<script src="js/bootstrap/bootstrap.min.js"></script>
-	<script src="js/moment-with-locales.min.js"></script>
-	<script src="js/PrayTimes.js"></script>
+    <!-- JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/PrayTimes.js"></script>
 
-	<script>
-		let currentLang = 'bn';
+    <script>
+        let currentLang = 'bn';
 
-		const translations = {
-			en: {
-				header: "Prayer Times",
-				currentTime: "Current Time",
-				footer: "* Highlighted row defines the current waqt",
-				notification: "Notification message here"
-			},
-			bn: {
-				header: "নামাযের সময়সূচি",
-				currentTime: "বর্তমান সময়",
-				footer: "* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে",
-				notification: "নোটিফিকেশন বার্তা এখানে"
-			}
-		};
+        const translations = {
+            en: {
+                header: "Prayer Times",
+                currentTime: "Current Time",
+                footer: "* Highlighted row defines the current waqt",
+                notification: "Notification message here"
+            },
+            bn: {
+                header: "নামাযের সময়সূচি",
+                currentTime: "বর্তমান সময়",
+                footer: "* হাইলাইট করা সারিটি বর্তমান ওয়াক্ত নির্দেশ করে",
+                notification: "নোটিফিকেশন বার্তা এখানে"
+            }
+        };
 
-		function updateLanguage(lang) {
-			currentLang = lang;
-			const t = translations[lang];
-			document.getElementById("table_header_title").innerText = t.header;
-			document.getElementById("currentDateTime").innerText = t.currentTime;
-			document.getElementById("footer_note").innerText = t.footer;
-			document.getElementById("notification_message").innerText = t.notification;
+        function updateLanguage(lang) {
+            currentLang = lang;
+            const t = translations[lang];
+            document.getElementById("table_header_title").innerText = t.header;
+            document.getElementById("currentDateTime").innerText = t.currentTime;
+            document.getElementById("footer_note").innerText = t.footer;
+            document.getElementById("notification_message").innerText = t.notification;
 
-			moment.locale(lang === 'bn' ? 'bn' : 'en');
-		}
+            moment.locale(lang === 'bn' ? 'bn' : 'en');
+        }
 
-		document.getElementById("btn-en").addEventListener("click", () => {
-			updateLanguage('en');
-			document.getElementById("btn-en").classList.add("active");
-			document.getElementById("btn-bn").classList.remove("active");
-		});
+        document.getElementById("btn-en").addEventListener("click", () => {
+            updateLanguage('en');
+            document.getElementById("btn-en").classList.add("active");
+            document.getElementById("btn-bn").classList.remove("active");
+        });
 
-		document.getElementById("btn-bn").addEventListener("click", () => {
-			updateLanguage('bn');
-			document.getElementById("btn-bn").classList.add("active");
-			document.getElementById("btn-en").classList.remove("active");
-		});
+        document.getElementById("btn-bn").addEventListener("click", () => {
+            updateLanguage('bn');
+            document.getElementById("btn-bn").classList.add("active");
+            document.getElementById("btn-en").classList.remove("active");
+        });
 
-		updateLanguage(currentLang);
-	</script>
+        updateLanguage(currentLang);
+    </script>
 
-	<script>
-		// Utility: ইংরেজি সংখ্যা → বাংলা সংখ্যা
-		function toBanglaNumber(num) {
-			const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
-			return num.toString().split('').map(n => banglaDigits[n] || n).join('');
-		}
+    <script>
+        // Utility: ইংরেজি সংখ্যা → বাংলা সংখ্যা
+        function toBanglaNumber(num) {
+            const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+            return num.toString().split('').map(n => banglaDigits[n] || n).join('');
+        }
 
-		// বাংলা মাস
-		const banglaMonths = ["জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন", "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"];
+        // বাংলা মাস (গ্রেগরিয়ান)
+        const banglaMonths = ["জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন", "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"];
 
-		async function updateDateInfo() {
-			const today = new Date();
-			const day = today.getDate();
-			const month = today.getMonth();
-			const year = today.getFullYear();
+        // বাংলা মাস (বঙ্গাব্দ)
+        const banglaMonthsBong = ["বৈশাখ", "জ্যৈষ্ঠ", "আষাঢ়", "শ্রাবণ", "ভাদ্র", "আশ্বিন", "কার্তিক", "অগ্রহায়ণ", "পৌষ", "মাঘ", "ফাল্গুন", "চৈত্র"];
 
-			const banglaDate = `${toBanglaNumber(day)} ${banglaMonths[month]} ${toBanglaNumber(year)}`;
-			document.getElementById('currentDateTime').innerText = banglaDate;
+        // হিজরি মাসের নাম বাংলায়
+        const hijriMonthsBN = {
+            "Muharram": "মুহাররম",
+            "Safar": "সফর",
+            "Rabi al-Awwal": "রবিউল আউয়াল",
+            "Rabi al-Thani": "রবিউস সানি",
+            "Jumada al-Awwal": "জুমাদাল উলা",
+            "Jumada al-Thani": "জুমাদাস সানি",
+            "Rajab": "রজব",
+            "Sha'ban": "শাবান",
+            "Ramadan": "রমজান",
+            "Shawwal": "শাওয়াল",
+            "Dhu al-Qi'dah": "জিলকদ",
+            "Dhu al-Hijjah": "জিলহজ"
+        };
 
-			try {
-				const response = await fetch("assets/dateofhijri.json");
-				const data = await response.json();
+        // গ্রেগরিয়ান থেকে বঙ্গাব্দ তারিখ রূপান্তর
+        function getBanglaBongDate(gregorianDate) {
+            const date = new Date(gregorianDate);
+            let year = date.getFullYear() - 593;
+            let month = date.getMonth();
+            let day = date.getDate();
+            
+            // বঙ্গাব্দ মাস গণনা
+            if (month < 3 || (month === 3 && day < 14)) {
+                year--;
+                month = month + 9;
+            } else {
+                month = month - 3;
+            }
+            
+            // তারিখ সামঞ্জস্য
+            if (month === 0 && day > 13) day -= 13;
+            else if (month === 1 && day > 12) day -= 12;
+            else if (month === 2 && day > 14) day -= 14;
+            else if (month === 3 && day > 13) day -= 13;
+            else if (month === 4 && day > 14) day -= 14;
+            else if (month === 5 && day > 14) day -= 14;
+            else if (month === 6 && day > 15) day -= 15;
+            else if (month === 7 && day > 15) day -= 15;
+            else if (month === 8 && day > 15) day -= 15;
+            else if (month === 9 && day > 15) day -= 15;
+            else if (month === 10 && day > 14) day -= 14;
+            else if (month === 11 && day > 14) day -= 14;
+            
+            return {
+                day: day,
+                month: month,
+                year: year
+            };
+        }
 
-				if (data && data.length > 0 && data[0].hijridate) {
-					document.getElementById('hijriDate').innerText = data[0].hijridate;
-				} else {
-					throw new Error("No hijriDate found");
-				}
-			} catch (error) {
-				console.error("হিজরি তারিখ লোড করতে সমস্যা হয়েছে:", error);
-				document.getElementById('hijriDate').innerText = "হিজরি তারিখ লোড করা যায়নি";
-			}
-		}
+        async function updateDateInfo() {
+            const today = new Date();
+            const day = today.getDate();
+            const month = today.getMonth();
+            const year = today.getFullYear();
 
-		updateDateInfo();
-	</script>
+            // গ্রেগরিয়ান তারিখ
+            const gregorianDateStr = `${toBanglaNumber(day)} ${banglaMonths[month]} ${toBanglaNumber(year)}`;
+            document.getElementById('currentDateTime').innerText = gregorianDateStr;
 
-	<script src="js/app.js"></script>
+            try {
+                // Aladhan API থেকে হিজরি তারিখ
+                const hijriResponse = await fetch("https://api.aladhan.com/v1/gToH");
+                const hijriData = await hijriResponse.json();
+
+                if (hijriData.code === 200 && hijriData.data && hijriData.data.hijri) {
+                    const hijri = hijriData.data.hijri;
+                    const hijriMonthBN = hijriMonthsBN[hijri.month.en] || hijri.month.en;
+                    const hijriDateStr = `${toBanglaNumber(hijri.day)} ${hijriMonthBN}, ${toBanglaNumber(hijri.year)} হিজরি`;
+                    document.getElementById('hijriDate').innerText = hijriDateStr;
+                } else {
+                    throw new Error("Invalid Hijri API response");
+                }
+
+                // বঙ্গাব্দ তারিখ গণনা
+                const bongDate = getBanglaBongDate(today);
+                const bongDateStr = `${toBanglaNumber(bongDate.day)} ${banglaMonthsBong[bongDate.month]}, ${toBanglaNumber(bongDate.year)} বঙ্গাব্দ`;
+                document.getElementById('banglaDate').innerText = bongDateStr;
+
+            } catch (error) {
+                console.error("তারিখ লোড করতে সমস্যা হয়েছে:", error);
+                document.getElementById('hijriDate').innerText = "হিজরি তারিখ লোড করা যায়নি";
+                document.getElementById('banglaDate').innerText = "বাংলা তারিখ লোড করা যায়নি";
+            }
+        }
+
+        updateDateInfo();
+    </script>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
