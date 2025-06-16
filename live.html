@@ -44,9 +44,23 @@
       border: 1px solid #01837A;
       border-radius: 10px;
       padding: 12px;
-      margin-bottom: 10px;
+      margin-bottom: 16px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .thumbnail {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-right: 12px;
+    }
+    .book-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
     }
   </style>
 </head>
@@ -64,23 +78,28 @@
   const books = [
     {
       "name": "বাইতুল্লাহ লাইভ",
-      "link": "2Gub8-cSH9c"
+      "link": "mvvwu8iAD8k",
+      "thumbnail": "https://img.youtube.com/vi/mvvwu8iAD8k/mqdefault.jpg"
     },
     {
       "name": "মসজিদে নভবী লাইভ",
-      "link": "SIG6tNpNcbE"
+      "link": "-jWCvRuC254",
+      "thumbnail": "https://img.youtube.com/vi/-jWCvRuC254/mqdefault.jpg"
     }
   ];
 
   const bookListContainer = document.getElementById('bookList');
 
   books.forEach((book, index) => {
-  const item = document.createElement('div');
-  item.className = 'book-item';
-  item.innerHTML = `<div>${book.name}</div>`;
-  item.onclick = () => goToPlayer(book.name, book.link); // এখানে পরিবর্তন
-  bookListContainer.appendChild(item);
-});
+    const item = document.createElement('div');
+    item.className = 'book-item';
+    item.innerHTML = `
+      <img src="${book.thumbnail}" alt="${book.name}" class="thumbnail">
+      <div class="book-name">${book.name}</div>
+    `;
+    item.onclick = () => goToPlayer(book.name, book.link);
+    bookListContainer.appendChild(item);
+  });
 
   function goToPlayer(name, link) {
     window.location.href = `player.html?name=${encodeURIComponent(name)}&link=${encodeURIComponent(link)}`;

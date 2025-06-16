@@ -90,17 +90,66 @@
     }
 
     .content-item {
-      margin-bottom: 20px;
-      padding: 15px;
+      margin-bottom: 15px;
+      padding: 12px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .content-item.with-link {
+      background-color: white;
+      border: 1px solid #01837A;
+    }
+
+    .content-item.without-link {
+      background-color: #01837A;
+      color: white;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .thumbnail {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-right: 12px;
+    }
+
+    .content-text {
+      flex: 1;
     }
 
     .content-item h2, .content-item p {
       margin: 0;
       font-size: 16px;
       line-height: 1.6;
+    }
+
+    .content-item.with-link h2, 
+    .content-item.with-link p {
+      color: #333;
+    }
+
+    .content-item.without-link h2, 
+    .content-item.without-link p {
+      color: white;
+    }
+
+    .bangla-number {
+      color: #01837A;
+      font-weight: bold;
+    }
+
+    .content-item.with-link .bangla-number {
+      color: #01837A;
+    }
+
+    .content-item.without-link .bangla-number {
+      color: white;
     }
   </style>
 </head>
@@ -174,33 +223,39 @@
       dataArray.forEach((item, index) => {
         if (!item.name) return;
 
-        const isEmptyLink = !item.link || item.link.trim() === '';
-        const bgColor = isEmptyLink ? '#01837A' : '#fff';
-        const textColor = isEmptyLink ? '#fff' : '#01837A';
-        const textAlign = isEmptyLink ? 'center' : 'left';
+        const hasLink = item.link && item.link.trim() !== '';
+        const youtubeId = hasLink ? item.link : null;
+        const thumbnailUrl = youtubeId ? `https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg` : null;
 
         const div = document.createElement('div');
-        div.className = 'content-item';
-        div.style.backgroundColor = bgColor;
+        div.className = hasLink ? 'content-item with-link' : 'content-item without-link';
         div.onclick = () => openView(item.originalIndex);
-        div.innerHTML = `
-          <h2 style="color: ${textColor}; text-align: ${textAlign}">
-            ${convertToBanglaNumber(index + 1)}
-          </h2>
-          <p style="color: ${textColor}; text-align: ${textAlign}">
-            ${item.name}
-          </p>
-        `;
+        
+        if (hasLink) {
+          div.innerHTML = `
+            <img src="${thumbnailUrl}" alt="${item.name}" class="thumbnail">
+            <div class="content-text">
+              <h2><span class="bangla-number">${convertToBanglaNumber(index + 1)}. </span>${item.name}</h2>
+            </div>
+          `;
+        } else {
+          div.innerHTML = `
+            <div class="content-text">
+              <h2><span class="bangla-number">${convertToBanglaNumber(index + 1)}. </span>${item.name}</h2>
+            </div>
+          `;
+        }
+        
         contentDiv.appendChild(div);
       });
     }
 
     function openView(index) {
-  const item = fullData[index];
-  const name = encodeURIComponent(item.name || 'ভিডিও');
-  const link = encodeURIComponent(item.link || '');
-  window.location.href = `player.html?name=${name}&link=${link}`;
-}
+      const item = fullData[index];
+      const name = encodeURIComponent(item.name || 'ভিডিও');
+      const link = encodeURIComponent(item.link || '');
+      window.location.href = `player.html?name=${name}&link=${link}`;
+    }
 
     function loadContent() {
       const loadingDiv = document.getElementById('loadingText');

@@ -16,16 +16,63 @@
       margin: 0;
     }
 
-    .header {
-      background-color: #01837A;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 20px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
+.header-toolbar {
+  background-color: #01837A;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.back-button {
+  padding: 8px 15px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+}
+
+.back-button img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.header-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 18px;
+  padding: 0 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: calc(100% - 70px);
+  margin: 0 auto;
+}
+
+.header-title span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
     .controls {
       display: flex;
@@ -68,7 +115,7 @@
   white-space: pre-wrap;
 }
 
-/* ফন্ট সবার উপর প্রয়োগ করতে */
+/* ফন্ট সাবার উপর প্রয়োগ করতে */
 .content, .content * {
   font-family: 'SolaimanLipi', sans-serif !important;
 }
@@ -84,9 +131,19 @@
 </head>
 <body>
 
-  <div class="header" id="postTitle">প্রবন্ধ</div>
+<div class="header-toolbar">  
+  <div class="header-content">  
+    <div class="back-button" onclick="goBack()">  
+      <img src="img/back.png" alt="Back">  
+    </div>  
+    <div class="header-title" id="postTitle">
+      <span>অনলাইন প্রবন্ধ</span>
+    </div>  
+  </div>  
+</div>
 
   <div class="controls">
+    
     <button onclick="increaseFont()">আকার+</button>
     <button onclick="decreaseFont()">আকার−</button>
     <button onclick="copyContent()">
@@ -108,26 +165,29 @@
     const contentEl = document.getElementById('postContent');
 
     if (post) {
-      titleEl.innerText = post.title;
+      titleEl.innerHTML = '<span>' + post.title + '</span>';
       contentEl.innerHTML = post.content;
     } else {
       contentEl.innerText = 'কোনো তথ্য পাওয়া যায়নি।';
     }
 
+    function goBack() {
+      window.history.back();
+    }
+
     function increaseFont() {
-  fontSize += 1;
-  contentEl.style.fontSize = fontSize + 'px';
-  contentEl.style.lineHeight = (1.6 + fontSize / 100) + '';  // 1.6 এর সাথে ফন্ট সাইজ যোগ করে লাইন স্পেসিং বাড়ানো হবে
-}
+      fontSize += 1;
+      contentEl.style.fontSize = fontSize + 'px';
+      contentEl.style.lineHeight = (1.6 + fontSize / 100) + '';  // 1.6 এর সাথে ফন্ট সাইজ যোগ করে লাইন স্পেসিং বাড়ানো হবে
+    }
 
-function decreaseFont() {
-  if (fontSize > 10) {
-    fontSize -= 1;
-    contentEl.style.fontSize = fontSize + 'px';
-    contentEl.style.lineHeight = (1.6 + fontSize / 100) + '';  // 1.6 এর সাথে ফন্ট সাইজ যোগ করে লাইন স্পেসিং কমানো হবে
-  }
-}
-
+    function decreaseFont() {
+      if (fontSize > 10) {
+        fontSize -= 1;
+        contentEl.style.fontSize = fontSize + 'px';
+        contentEl.style.lineHeight = (1.6 + fontSize / 100) + '';  // 1.6 এর সাথে ফন্ট সাইজ যোগ করে লাইন স্পেসিং কমানো হবে
+      }
+    }
 
     function copyContent() {
       const tempInput = document.createElement('textarea');
@@ -147,28 +207,29 @@ function decreaseFont() {
         showToast('আপনার ব্রাউজার শেয়ার সাপোর্ট করে না');
       }
     }
-     // Toast function for displaying message
-        function showToast(message) {
-            let toast = document.createElement("div");
-            toast.style.position = "fixed";
-            toast.style.bottom = "30px";
-            toast.style.left = "50%";
-            toast.style.transform = "translateX(-50%)";
-            toast.style.padding = "10px 20px";
-            toast.style.backgroundColor = "#333";
-            toast.style.color = "white";
-            toast.style.borderRadius = "5px";
-            toast.style.fontSize = "14px";
-            toast.style.zIndex = "9999";
-            toast.innerText = message;
-            document.body.appendChild(toast);
+    
+    // Toast function for displaying message
+    function showToast(message) {
+        let toast = document.createElement("div");
+        toast.style.position = "fixed";
+        toast.style.bottom = "30px";
+        toast.style.left = "50%";
+        toast.style.transform = "translateX(-50%)";
+        toast.style.padding = "10px 20px";
+        toast.style.backgroundColor = "#333";
+        toast.style.color = "white";
+        toast.style.borderRadius = "5px";
+        toast.style.fontSize = "14px";
+        toast.style.zIndex = "9999";
+        toast.innerText = message;
+        document.body.appendChild(toast);
+        setTimeout(function() {
+            toast.style.opacity = "0";
             setTimeout(function() {
-                toast.style.opacity = "0";
-                setTimeout(function() {
-                    document.body.removeChild(toast);
-                }, 500);
-            }, 3000);
-        }
+                document.body.removeChild(toast);
+            }, 500);
+        }, 3000);
+    }
   </script>
 
 </body>
