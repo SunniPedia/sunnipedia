@@ -67,7 +67,13 @@
 <body>
 
 <div class="toolbar">
-  <img src="img/back.png" alt="Back" class="back-button" onclick="history.back()">
+  <img src="img/back.png" alt="Back" class="back-button" onclick="
+    if (typeof Android !== 'undefined' && Android.backButtonClicked) {
+        Android.backButtonClicked(); // App এর জন্য
+    } else {
+        history.back(); // ব্রাউজারের জন্য
+    }
+">
   <div class="toolbar-title">লাইভ</div>
 </div>
 
