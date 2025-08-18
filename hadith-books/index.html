@@ -166,7 +166,7 @@
 </head>
 <body>
     <div class="toolbar">
-        <img src="back.png" class="back-icon" alt="Back" id="backButton">
+        <img src="back.png" class="back-icon" alt="Back" id="backButton" onclick="goBack()">
         <div class="title">হাদিস সমগ্র</div>
         <img src="search.png" class="search-icon" alt="Search" id="searchToggle">
     </div>
@@ -180,5 +180,16 @@
     </div>
     
 <script src="index.js"></script>
+<script>
+	function goBack() {
+    if (typeof Android !== 'undefined' && Android.backButtonClicked) {
+        // অ্যাপের জন্য
+        Android.backButtonClicked();
+    } else {
+        // ওয়েবের জন্য
+        window.history.back();
+    }
+}
+</script>
 </body>
 </html>
