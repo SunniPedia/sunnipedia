@@ -161,7 +161,7 @@
 </head>
 <body>
     <div class="toolbar">
-        <img src="back.png" alt="Back" onclick="history.back()">
+         <img src="back.png" alt="Back" id="backButton" onclick="goBack()">
         <div class="toolbar-title">দু'আ</div>
         <img src="search.png" alt="Search" id="searchToggle">
     </div>
@@ -281,6 +281,15 @@
                 }).join('');
             }
         });
+        function goBack() {
+    if (typeof Android !== 'undefined' && Android.backButtonClicked) {
+        // অ্যাপের জন্য
+        Android.backButtonClicked();
+    } else {
+        // ওয়েবের জন্য
+        window.history.back();
+    }
+}
     </script>
 </body>
 </html>
