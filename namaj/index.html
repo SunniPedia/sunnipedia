@@ -232,42 +232,36 @@
         }
 
         async function updateDateInfo() {
-            const today = new Date();
-            const day = today.getDate();
-            const month = today.getMonth();
-            const year = today.getFullYear();
+    const apiUrl = "https://script.google.com/macros/s/AKfycbwHaScFSxCUMvmAy5GX89UGj9zmBQDeghoI3sfDTM7EqxErxJqiRO7YQIXfZeXCNKpEbQ/exec";
 
-            // গ্রেগরিয়ান তারিখ
-            const gregorianDateStr = `${toBanglaNumber(day)} ${banglaMonths[month]} ${toBanglaNumber(year)}`;
-            document.getElementById('currentDateTime').innerText = gregorianDateStr;
+    try {
+        // আপনার তৈরি করা নতুন API থেকে ডাটা ফেচ করা
+        const response = await fetch(apiUrl);
+        const data = await response.json();
 
-            try {
-                // Aladhan API থেকে হিজরি তারিখ
-                const hijriResponse = await fetch("https://api.aladhan.com/v1/gToH");
-                const hijriData = await hijriResponse.json();
+        if (data.status === "success") {
+            // ১. ইংরেজি তারিখ সেট করা
+            document.getElementById('currentDateTime').innerText = data.english_date;
 
-                if (hijriData.code === 200 && hijriData.data && hijriData.data.hijri) {
-                    const hijri = hijriData.data.hijri;
-                    const hijriMonthBN = hijriMonthsBN[hijri.month.en] || hijri.month.en;
-                    const hijriDateStr = `${toBanglaNumber(hijri.day)} ${hijriMonthBN}, ${toBanglaNumber(hijri.year)} হিজরি`;
-                    document.getElementById('hijriDate').innerText = hijriDateStr;
-                } else {
-                    throw new Error("Invalid Hijri API response");
-                }
+            // ২. হিজরি তারিখ সেট করা
+            document.getElementById('hijriDate').innerText = data.hijri_date;
 
-                // বঙ্গাব্দ তারিখ গণনা
-                const bongDate = getBanglaBongDate(today);
-                const bongDateStr = `${toBanglaNumber(bongDate.day)} ${banglaMonthsBong[bongDate.month]}, ${toBanglaNumber(bongDate.year)} বঙ্গাব্দ`;
-                document.getElementById('banglaDate').innerText = bongDateStr;
-
-            } catch (error) {
-                console.error("তারিখ লোড করতে সমস্যা হয়েছে:", error);
-                document.getElementById('hijriDate').innerText = "হিজরি তারিখ লোড করা যায়নি";
-                document.getElementById('banglaDate').innerText = "বাংলা তারিখ লোড করা যায়নি";
-            }
+            // ৩. বঙ্গাব্দ তারিখ সেট করা
+            document.getElementById('banglaDate').innerText = data.bangla_date;
+        } else {
+            throw new Error("API response was not successful");
         }
 
-        updateDateInfo();
+    } catch (error) {
+        console.error("তারিখ লোড করতে সমস্যা হয়েছে:", error);
+        document.getElementById('currentEnglishDateTime').innerText = "ইংরেজি তারিখ লোড করা যায়নি";
+        document.getElementById('hijriDate').innerText = "হিজরি তারিখ লোড করা যায়নি";
+        document.getElementById('banglaDate').innerText = "বাংলা তারিখ লোড করা যায়নি";
+    }
+}
+
+// ফাংশনটি কল করা
+updateDateInfo();
     </script>
 
     <script src="js/app.js"></script>
