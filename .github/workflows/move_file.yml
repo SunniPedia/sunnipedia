@@ -1,0 +1,56 @@
+name: Move Hadis Folder to Target Repository
+
+on:
+  workflow_dispatch: # GitHub-এর Actions ট্যাব থেকে ম্যানুয়ালি রান করার জন্য
+
+jobs:
+  move-folder:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ১. সোর্স (বর্তমান) রিপোজিটরি চেকআউট
+      - name: Checkout Source Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+          path: source-repo
+
+      # ২. টার্গেট রিপোজিটরি (SunniPedia/SunniFiles) চেকআউট
+      - name: Checkout Target Repository
+        uses: actions/checkout@v4
+        with:
+          repository: SunniPedia/SunniFiles
+          token: ${{ secrets.GH_PAT }}
+          path: target-repo
+
+      # ৩. ফাইল কপি করা এবং সোর্স রিপোজিটরি থেকে hadis ফোল্ডার মুছে ফেলা
+      - name: Copy Hadis Folder and Clean Source
+        run: |
+          # টার্গেট রিপোজিটরিতে hadis ফোল্ডার তৈরি ও কপি করা
+          mkdir -p target-repo/hadis
+          cp -r source-repo/hadis/* target-repo/hadis/
+
+          # সোর্স রিপোজিটরি থেকে hadis ফোল্ডার সম্পূর্ণ ডিলিট করা
+          rm -rf source-repo/hadis
+
+      # ৪. টার্গেট রিপোজিটরিতে Commit ও Push
+      - name: Commit and Push to Target Repository (SunniFiles)
+        run: |
+          cd target-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git status
+          git diff-index --quiet HEAD || git commit -m "Add hadis folder from main repo"
+          git push origin main
+
+      # ৫. সোর্স রিপোজিটরিতে Commit ও Push (hadis ফোল্ডার ডিলিট নিশ্চিত করা)
+      - name: Commit and Push to Source Repository
+        run: |
+          cd source-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git status
+          git diff-index --quiet HEAD || git commit -m "Remove hadis folder to fix Vercel 300MB build size limit"
+          git push origin main
